@@ -1,0 +1,3428 @@
+[
+ {
+  "term": "account",
+  "meaning": "口座/取引先",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The new account will boost our sales."
+ },
+ {
+  "term": "agenda",
+  "meaning": "議題",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The first item on the agenda is the budget."
+ },
+ {
+  "term": "agreement",
+  "meaning": "合意/契約",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We reached an agreement after the meeting."
+ },
+ {
+  "term": "applicant",
+  "meaning": "応募者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Each applicant must submit a resume."
+ },
+ {
+  "term": "appointment",
+  "meaning": "予約/約束",
+  "type": "word",
+  "pos": "名詞",
+  "example": "I have an appointment at three."
+ },
+ {
+  "term": "approval",
+  "meaning": "承認",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The plan needs the manager's approval."
+ },
+ {
+  "term": "assembly",
+  "meaning": "組み立て/集会",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The assembly line was upgraded."
+ },
+ {
+  "term": "asset",
+  "meaning": "資産",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Experience is a valuable asset."
+ },
+ {
+  "term": "assignment",
+  "meaning": "任務/課題",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She finished the assignment early."
+ },
+ {
+  "term": "attendance",
+  "meaning": "出席",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Attendance at the seminar is required."
+ },
+ {
+  "term": "audience",
+  "meaning": "聴衆",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The audience applauded loudly."
+ },
+ {
+  "term": "authority",
+  "meaning": "権限/当局",
+  "type": "word",
+  "pos": "名詞",
+  "example": "He has the authority to sign contracts."
+ },
+ {
+  "term": "baggage",
+  "meaning": "手荷物",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please keep your baggage with you."
+ },
+ {
+  "term": "balance",
+  "meaning": "残高/均衡",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Check the balance of your account."
+ },
+ {
+  "term": "benefit",
+  "meaning": "利益/手当",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Employees enjoy many benefits."
+ },
+ {
+  "term": "bill",
+  "meaning": "請求書/紙幣",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The bill arrived by email."
+ },
+ {
+  "term": "branch",
+  "meaning": "支店",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Our new branch opens next month."
+ },
+ {
+  "term": "brochure",
+  "meaning": "パンフレット",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The brochure lists all our services."
+ },
+ {
+  "term": "budget",
+  "meaning": "予算",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We must stay within budget."
+ },
+ {
+  "term": "candidate",
+  "meaning": "候補者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The candidate impressed the panel."
+ },
+ {
+  "term": "capacity",
+  "meaning": "収容力/能力",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The hall has a capacity of 500."
+ },
+ {
+  "term": "certificate",
+  "meaning": "証明書",
+  "type": "word",
+  "pos": "名詞",
+  "example": "You will receive a certificate."
+ },
+ {
+  "term": "client",
+  "meaning": "顧客",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The client requested a refund."
+ },
+ {
+  "term": "colleague",
+  "meaning": "同僚",
+  "type": "word",
+  "pos": "名詞",
+  "example": "My colleague will help you."
+ },
+ {
+  "term": "commission",
+  "meaning": "手数料/委員会",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Salespeople earn a commission."
+ },
+ {
+  "term": "committee",
+  "meaning": "委員会",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The committee will decide tomorrow."
+ },
+ {
+  "term": "competitor",
+  "meaning": "競合他社",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Our competitor lowered its prices."
+ },
+ {
+  "term": "complaint",
+  "meaning": "苦情",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We received a complaint about delays."
+ },
+ {
+  "term": "consumer",
+  "meaning": "消費者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Consumers prefer eco-friendly products."
+ },
+ {
+  "term": "contract",
+  "meaning": "契約",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please sign the contract."
+ },
+ {
+  "term": "contribution",
+  "meaning": "貢献/寄付",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Your contribution is appreciated."
+ },
+ {
+  "term": "corporation",
+  "meaning": "企業",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The corporation expanded overseas."
+ },
+ {
+  "term": "delegate",
+  "meaning": "代表者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Each delegate gave a short speech."
+ },
+ {
+  "term": "demand",
+  "meaning": "需要",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Demand for the product is rising."
+ },
+ {
+  "term": "department",
+  "meaning": "部門",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She works in the sales department."
+ },
+ {
+  "term": "deposit",
+  "meaning": "手付金/預金",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A deposit is required to book."
+ },
+ {
+  "term": "destination",
+  "meaning": "目的地",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Our destination is Osaka."
+ },
+ {
+  "term": "discount",
+  "meaning": "割引",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Members get a 10% discount."
+ },
+ {
+  "term": "distribution",
+  "meaning": "流通/配布",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Distribution starts next week."
+ },
+ {
+  "term": "dividend",
+  "meaning": "配当",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The company paid a dividend."
+ },
+ {
+  "term": "draft",
+  "meaning": "下書き/草案",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please review the draft."
+ },
+ {
+  "term": "duration",
+  "meaning": "期間",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The duration of the trip is five days."
+ },
+ {
+  "term": "efficiency",
+  "meaning": "効率",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The upgrade improved efficiency."
+ },
+ {
+  "term": "employee",
+  "meaning": "従業員",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Every employee attended the training."
+ },
+ {
+  "term": "employer",
+  "meaning": "雇用主",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The employer offered a raise."
+ },
+ {
+  "term": "enterprise",
+  "meaning": "企業",
+  "type": "word",
+  "pos": "名詞",
+  "example": "It is a small enterprise."
+ },
+ {
+  "term": "estimate",
+  "meaning": "見積もり",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We sent an estimate to the client."
+ },
+ {
+  "term": "expense",
+  "meaning": "費用",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Travel expenses will be reimbursed."
+ },
+ {
+  "term": "facility",
+  "meaning": "施設",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The facility is open 24 hours."
+ },
+ {
+  "term": "fee",
+  "meaning": "料金",
+  "type": "word",
+  "pos": "名詞",
+  "example": "There is no entrance fee."
+ },
+ {
+  "term": "feedback",
+  "meaning": "意見/反応",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We welcome your feedback."
+ },
+ {
+  "term": "figure",
+  "meaning": "数字/人物",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Sales figures rose sharply."
+ },
+ {
+  "term": "forecast",
+  "meaning": "予測",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The weather forecast looks good."
+ },
+ {
+  "term": "fund",
+  "meaning": "資金",
+  "type": "word",
+  "pos": "名詞",
+  "example": "They raised funds for the project."
+ },
+ {
+  "term": "furniture",
+  "meaning": "家具",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The office furniture is new."
+ },
+ {
+  "term": "guarantee",
+  "meaning": "保証",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The product comes with a guarantee."
+ },
+ {
+  "term": "headquarters",
+  "meaning": "本社",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The headquarters is in Tokyo."
+ },
+ {
+  "term": "income",
+  "meaning": "収入",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Their income increased last year."
+ },
+ {
+  "term": "industry",
+  "meaning": "産業",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The tech industry is growing fast."
+ },
+ {
+  "term": "inquiry",
+  "meaning": "問い合わせ",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We answer every inquiry promptly."
+ },
+ {
+  "term": "inspection",
+  "meaning": "検査",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The inspection found no problems."
+ },
+ {
+  "term": "installment",
+  "meaning": "分割払い",
+  "type": "word",
+  "pos": "名詞",
+  "example": "You can pay in installments."
+ },
+ {
+  "term": "insurance",
+  "meaning": "保険",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Travel insurance is recommended."
+ },
+ {
+  "term": "inventory",
+  "meaning": "在庫",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We check the inventory monthly."
+ },
+ {
+  "term": "invoice",
+  "meaning": "請求書",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The invoice is due next week."
+ },
+ {
+  "term": "itinerary",
+  "meaning": "旅程",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Here is your travel itinerary."
+ },
+ {
+  "term": "landlord",
+  "meaning": "家主",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The landlord raised the rent."
+ },
+ {
+  "term": "laboratory",
+  "meaning": "実験室",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The sample was sent to the laboratory."
+ },
+ {
+  "term": "leaflet",
+  "meaning": "ちらし",
+  "type": "word",
+  "pos": "名詞",
+  "example": "They handed out leaflets."
+ },
+ {
+  "term": "lecture",
+  "meaning": "講義",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The lecture starts at nine."
+ },
+ {
+  "term": "loan",
+  "meaning": "融資/貸付",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She applied for a loan."
+ },
+ {
+  "term": "luggage",
+  "meaning": "手荷物",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Leave your luggage at the desk."
+ },
+ {
+  "term": "maintenance",
+  "meaning": "保守",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Regular maintenance is important."
+ },
+ {
+  "term": "manufacturer",
+  "meaning": "製造業者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The manufacturer recalled the item."
+ },
+ {
+  "term": "merchandise",
+  "meaning": "商品",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The store sells quality merchandise."
+ },
+ {
+  "term": "merger",
+  "meaning": "合併",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The merger was announced today."
+ },
+ {
+  "term": "negotiation",
+  "meaning": "交渉",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The negotiation lasted hours."
+ },
+ {
+  "term": "outcome",
+  "meaning": "結果",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We are happy with the outcome."
+ },
+ {
+  "term": "overtime",
+  "meaning": "残業",
+  "type": "word",
+  "pos": "名詞",
+  "example": "He worked overtime last night."
+ },
+ {
+  "term": "participant",
+  "meaning": "参加者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Each participant received a badge."
+ },
+ {
+  "term": "patron",
+  "meaning": "常連客",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Loyal patrons get rewards."
+ },
+ {
+  "term": "payment",
+  "meaning": "支払い",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Payment is due on delivery."
+ },
+ {
+  "term": "performance",
+  "meaning": "業績/公演",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The team's performance improved."
+ },
+ {
+  "term": "permit",
+  "meaning": "許可証",
+  "type": "word",
+  "pos": "名詞",
+  "example": "You need a permit to park here."
+ },
+ {
+  "term": "personnel",
+  "meaning": "人員/人事",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The personnel department is hiring."
+ },
+ {
+  "term": "policy",
+  "meaning": "方針",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The company changed its policy."
+ },
+ {
+  "term": "premises",
+  "meaning": "敷地/建物",
+  "type": "word",
+  "pos": "名詞",
+  "example": "No smoking on the premises."
+ },
+ {
+  "term": "procedure",
+  "meaning": "手順",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Follow the safety procedure."
+ },
+ {
+  "term": "productivity",
+  "meaning": "生産性",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The new tool boosts productivity."
+ },
+ {
+  "term": "profit",
+  "meaning": "利益",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The company made a profit."
+ },
+ {
+  "term": "property",
+  "meaning": "財産/物件",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The property is for sale."
+ },
+ {
+  "term": "proposal",
+  "meaning": "提案",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The proposal was accepted."
+ },
+ {
+  "term": "prospect",
+  "meaning": "見込み",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The prospects look bright."
+ },
+ {
+  "term": "quotation",
+  "meaning": "見積もり",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please send a quotation."
+ },
+ {
+  "term": "receipt",
+  "meaning": "領収書",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Keep your receipt for returns."
+ },
+ {
+  "term": "recession",
+  "meaning": "景気後退",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Sales fell during the recession."
+ },
+ {
+  "term": "recruitment",
+  "meaning": "採用",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Recruitment starts in spring."
+ },
+ {
+  "term": "referral",
+  "meaning": "紹介",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We got the job through a referral."
+ },
+ {
+  "term": "refund",
+  "meaning": "返金",
+  "type": "word",
+  "pos": "名詞",
+  "example": "You can request a refund."
+ },
+ {
+  "term": "registration",
+  "meaning": "登録",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Registration closes on Friday."
+ },
+ {
+  "term": "reimbursement",
+  "meaning": "払い戻し",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Submit receipts for reimbursement."
+ },
+ {
+  "term": "renovation",
+  "meaning": "改装",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The store is closed for renovation."
+ },
+ {
+  "term": "reputation",
+  "meaning": "評判",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The firm has a good reputation."
+ },
+ {
+  "term": "requirement",
+  "meaning": "要件",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Meeting the requirement is essential."
+ },
+ {
+  "term": "reservation",
+  "meaning": "予約",
+  "type": "word",
+  "pos": "名詞",
+  "example": "I made a reservation for two."
+ },
+ {
+  "term": "resignation",
+  "meaning": "辞職",
+  "type": "word",
+  "pos": "名詞",
+  "example": "He handed in his resignation."
+ },
+ {
+  "term": "retailer",
+  "meaning": "小売業者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The retailer offers free delivery."
+ },
+ {
+  "term": "revenue",
+  "meaning": "収益",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Annual revenue doubled."
+ },
+ {
+  "term": "schedule",
+  "meaning": "予定",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Check the schedule for changes."
+ },
+ {
+  "term": "shareholder",
+  "meaning": "株主",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Shareholders will vote next month."
+ },
+ {
+  "term": "shipment",
+  "meaning": "出荷",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The shipment arrived on time."
+ },
+ {
+  "term": "shortage",
+  "meaning": "不足",
+  "type": "word",
+  "pos": "名詞",
+  "example": "There is a staff shortage."
+ },
+ {
+  "term": "specification",
+  "meaning": "仕様",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Read the product specification."
+ },
+ {
+  "term": "stability",
+  "meaning": "安定",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Financial stability is our goal."
+ },
+ {
+  "term": "statement",
+  "meaning": "明細/声明",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Your bank statement is ready."
+ },
+ {
+  "term": "strategy",
+  "meaning": "戦略",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We need a new marketing strategy."
+ },
+ {
+  "term": "subscription",
+  "meaning": "定期購読",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Cancel your subscription anytime."
+ },
+ {
+  "term": "supervisor",
+  "meaning": "監督者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Ask your supervisor for approval."
+ },
+ {
+  "term": "supplier",
+  "meaning": "供給業者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We changed our supplier."
+ },
+ {
+  "term": "survey",
+  "meaning": "調査",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please complete the survey."
+ },
+ {
+  "term": "tenant",
+  "meaning": "借主",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The tenant signed a lease."
+ },
+ {
+  "term": "transaction",
+  "meaning": "取引",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The transaction was completed."
+ },
+ {
+  "term": "venue",
+  "meaning": "会場",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The venue holds 300 people."
+ },
+ {
+  "term": "warehouse",
+  "meaning": "倉庫",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Goods are stored in the warehouse."
+ },
+ {
+  "term": "warranty",
+  "meaning": "保証",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The warranty covers one year."
+ },
+ {
+  "term": "wholesale",
+  "meaning": "卸売",
+  "type": "word",
+  "pos": "名詞",
+  "example": "They buy at wholesale prices."
+ },
+ {
+  "term": "workforce",
+  "meaning": "労働力",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The workforce is highly skilled."
+ },
+ {
+  "term": "workshop",
+  "meaning": "研修会",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The workshop was very useful."
+ },
+ {
+  "term": "amenity",
+  "meaning": "設備/便宜",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The hotel offers many amenities."
+ },
+ {
+  "term": "applause",
+  "meaning": "拍手",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The speech received applause."
+ },
+ {
+  "term": "attire",
+  "meaning": "服装",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Business attire is required."
+ },
+ {
+  "term": "ballot",
+  "meaning": "投票用紙",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Cast your ballot by Friday."
+ },
+ {
+  "term": "beverage",
+  "meaning": "飲料",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Beverages are served in the lobby."
+ },
+ {
+  "term": "catalog",
+  "meaning": "カタログ",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Browse our online catalog."
+ },
+ {
+  "term": "clearance",
+  "meaning": "在庫一掃/許可",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Everything is on clearance."
+ },
+ {
+  "term": "collaboration",
+  "meaning": "協力",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The project was a collaboration."
+ },
+ {
+  "term": "commodity",
+  "meaning": "商品/日用品",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Oil is a key commodity."
+ },
+ {
+  "term": "compensation",
+  "meaning": "報酬/補償",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The compensation package is generous."
+ },
+ {
+  "term": "compliance",
+  "meaning": "順守",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Compliance with rules is mandatory."
+ },
+ {
+  "term": "conference",
+  "meaning": "会議",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The conference is held yearly."
+ },
+ {
+  "term": "credential",
+  "meaning": "資格/経歴",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please show your credentials."
+ },
+ {
+  "term": "deadline",
+  "meaning": "締め切り",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The deadline is next Monday."
+ },
+ {
+  "term": "discrepancy",
+  "meaning": "不一致",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We found a discrepancy in the report."
+ },
+ {
+  "term": "endorsement",
+  "meaning": "支持/推薦",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The product got a celebrity endorsement."
+ },
+ {
+  "term": "expertise",
+  "meaning": "専門知識",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Her expertise is valuable."
+ },
+ {
+  "term": "incentive",
+  "meaning": "動機/報奨",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Bonuses are a strong incentive."
+ },
+ {
+  "term": "initiative",
+  "meaning": "主導/新構想",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She took the initiative."
+ },
+ {
+  "term": "liability",
+  "meaning": "責任/負債",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The company reduced its liabilities."
+ },
+ {
+  "term": "obligation",
+  "meaning": "義務",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We have an obligation to deliver."
+ },
+ {
+  "term": "outlet",
+  "meaning": "販売店/コンセント",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The factory outlet sells cheaply."
+ },
+ {
+  "term": "overview",
+  "meaning": "概要",
+  "type": "word",
+  "pos": "名詞",
+  "example": "He gave an overview of the plan."
+ },
+ {
+  "term": "perk",
+  "meaning": "特典",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Free lunch is a nice perk."
+ },
+ {
+  "term": "premium",
+  "meaning": "割増料金/保険料",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A premium is charged for express."
+ },
+ {
+  "term": "questionnaire",
+  "meaning": "アンケート",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Fill out the questionnaire."
+ },
+ {
+  "term": "refreshment",
+  "meaning": "軽食",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Refreshments will be provided."
+ },
+ {
+  "term": "setback",
+  "meaning": "挫折/後退",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The delay was a setback."
+ },
+ {
+  "term": "subsidiary",
+  "meaning": "子会社",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The subsidiary reports to headquarters."
+ },
+ {
+  "term": "turnover",
+  "meaning": "離職率/売上高",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Staff turnover is low."
+ },
+ {
+  "term": "vendor",
+  "meaning": "販売業者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The vendor delivered late."
+ },
+ {
+  "term": "accommodate",
+  "meaning": "収容する/対応する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The hotel can accommodate 200 guests."
+ },
+ {
+  "term": "accomplish",
+  "meaning": "達成する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We accomplished our goal."
+ },
+ {
+  "term": "acquire",
+  "meaning": "獲得する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They acquired a rival firm."
+ },
+ {
+  "term": "adjust",
+  "meaning": "調整する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please adjust the settings."
+ },
+ {
+  "term": "administer",
+  "meaning": "管理する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She administers the budget."
+ },
+ {
+  "term": "advertise",
+  "meaning": "宣伝する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We advertise on social media."
+ },
+ {
+  "term": "allocate",
+  "meaning": "割り当てる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Funds were allocated to research."
+ },
+ {
+  "term": "anticipate",
+  "meaning": "予期する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We anticipate strong sales."
+ },
+ {
+  "term": "apologize",
+  "meaning": "謝る",
+  "type": "word",
+  "pos": "動詞",
+  "example": "He apologized for the delay."
+ },
+ {
+  "term": "appoint",
+  "meaning": "任命する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She was appointed manager."
+ },
+ {
+  "term": "appreciate",
+  "meaning": "感謝する/評価する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We appreciate your patience."
+ },
+ {
+  "term": "approve",
+  "meaning": "承認する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The board approved the plan."
+ },
+ {
+  "term": "arrange",
+  "meaning": "手配する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "I will arrange a meeting."
+ },
+ {
+  "term": "assess",
+  "meaning": "評価する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We assess risks carefully."
+ },
+ {
+  "term": "assign",
+  "meaning": "割り当てる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The task was assigned to me."
+ },
+ {
+  "term": "assist",
+  "meaning": "手伝う",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Staff will assist you."
+ },
+ {
+  "term": "attend",
+  "meaning": "出席する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please attend the seminar."
+ },
+ {
+  "term": "authorize",
+  "meaning": "許可する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Only managers can authorize refunds."
+ },
+ {
+  "term": "boost",
+  "meaning": "押し上げる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The ad boosted sales."
+ },
+ {
+  "term": "calculate",
+  "meaning": "計算する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Calculate the total cost."
+ },
+ {
+  "term": "cancel",
+  "meaning": "取り消す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They canceled the order."
+ },
+ {
+  "term": "certify",
+  "meaning": "証明する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The document was certified."
+ },
+ {
+  "term": "clarify",
+  "meaning": "明確にする",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please clarify the details."
+ },
+ {
+  "term": "collaborate",
+  "meaning": "協力する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Teams collaborate on projects."
+ },
+ {
+  "term": "commute",
+  "meaning": "通勤する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She commutes by train."
+ },
+ {
+  "term": "compensate",
+  "meaning": "補償する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We will compensate you."
+ },
+ {
+  "term": "compile",
+  "meaning": "まとめる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "He compiled the report."
+ },
+ {
+  "term": "comply",
+  "meaning": "従う",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We comply with regulations."
+ },
+ {
+  "term": "conduct",
+  "meaning": "行う",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They conducted a survey."
+ },
+ {
+  "term": "confirm",
+  "meaning": "確認する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please confirm your booking."
+ },
+ {
+  "term": "consult",
+  "meaning": "相談する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Consult a specialist."
+ },
+ {
+  "term": "contribute",
+  "meaning": "貢献する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Everyone contributed ideas."
+ },
+ {
+  "term": "coordinate",
+  "meaning": "調整する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She coordinates the events."
+ },
+ {
+  "term": "decline",
+  "meaning": "断る/減少する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Sales declined last month."
+ },
+ {
+  "term": "dedicate",
+  "meaning": "捧げる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "He dedicated his time."
+ },
+ {
+  "term": "demonstrate",
+  "meaning": "実演する/示す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She demonstrated the device."
+ },
+ {
+  "term": "designate",
+  "meaning": "指定する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "A room was designated for meetings."
+ },
+ {
+  "term": "determine",
+  "meaning": "決定する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We must determine the cause."
+ },
+ {
+  "term": "diminish",
+  "meaning": "減少する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Interest slowly diminished."
+ },
+ {
+  "term": "disclose",
+  "meaning": "公開する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They disclosed the results."
+ },
+ {
+  "term": "dispatch",
+  "meaning": "発送する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We dispatched the order."
+ },
+ {
+  "term": "distribute",
+  "meaning": "配布する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please distribute the handouts."
+ },
+ {
+  "term": "emphasize",
+  "meaning": "強調する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "He emphasized safety."
+ },
+ {
+  "term": "enclose",
+  "meaning": "同封する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "I enclosed the invoice."
+ },
+ {
+  "term": "endorse",
+  "meaning": "支持する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The mayor endorsed the plan."
+ },
+ {
+  "term": "enhance",
+  "meaning": "高める",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The update enhances performance."
+ },
+ {
+  "term": "enroll",
+  "meaning": "登録する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Students enroll online."
+ },
+ {
+  "term": "ensure",
+  "meaning": "保証する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Ensure the door is locked."
+ },
+ {
+  "term": "evaluate",
+  "meaning": "評価する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We evaluate all applications."
+ },
+ {
+  "term": "exceed",
+  "meaning": "超える",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Sales exceeded expectations."
+ },
+ {
+  "term": "exhibit",
+  "meaning": "展示する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They exhibited new models."
+ },
+ {
+  "term": "expand",
+  "meaning": "拡大する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The firm expanded abroad."
+ },
+ {
+  "term": "expire",
+  "meaning": "期限が切れる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The coupon expires soon."
+ },
+ {
+  "term": "extend",
+  "meaning": "延長する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We extended the deadline."
+ },
+ {
+  "term": "facilitate",
+  "meaning": "促進する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The tool facilitates teamwork."
+ },
+ {
+  "term": "finalize",
+  "meaning": "最終決定する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Let's finalize the contract."
+ },
+ {
+  "term": "fulfill",
+  "meaning": "果たす",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We fulfill every order."
+ },
+ {
+  "term": "generate",
+  "meaning": "生み出す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The campaign generated leads."
+ },
+ {
+  "term": "handle",
+  "meaning": "扱う",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She handles customer calls."
+ },
+ {
+  "term": "highlight",
+  "meaning": "強調する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The report highlights risks."
+ },
+ {
+  "term": "hire",
+  "meaning": "雇う",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We hired five new staff."
+ },
+ {
+  "term": "implement",
+  "meaning": "実施する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We implemented the plan."
+ },
+ {
+  "term": "improve",
+  "meaning": "改善する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We aim to improve quality."
+ },
+ {
+  "term": "indicate",
+  "meaning": "示す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The data indicates growth."
+ },
+ {
+  "term": "inform",
+  "meaning": "知らせる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please inform the team."
+ },
+ {
+  "term": "inspect",
+  "meaning": "検査する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Inspect the goods on arrival."
+ },
+ {
+  "term": "install",
+  "meaning": "設置する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We installed new software."
+ },
+ {
+  "term": "introduce",
+  "meaning": "紹介する/導入する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They introduced a new product."
+ },
+ {
+  "term": "invest",
+  "meaning": "投資する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We invest in training."
+ },
+ {
+  "term": "investigate",
+  "meaning": "調査する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Police investigated the case."
+ },
+ {
+  "term": "issue",
+  "meaning": "発行する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The bank issued a card."
+ },
+ {
+  "term": "launch",
+  "meaning": "開始する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They launched the app."
+ },
+ {
+  "term": "maintain",
+  "meaning": "維持する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We maintain high standards."
+ },
+ {
+  "term": "manufacture",
+  "meaning": "製造する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They manufacture parts."
+ },
+ {
+  "term": "modify",
+  "meaning": "修正する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We modified the design."
+ },
+ {
+  "term": "negotiate",
+  "meaning": "交渉する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We negotiated a better price."
+ },
+ {
+  "term": "notify",
+  "meaning": "通知する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Notify us of any changes."
+ },
+ {
+  "term": "obtain",
+  "meaning": "得る",
+  "type": "word",
+  "pos": "動詞",
+  "example": "You must obtain a permit."
+ },
+ {
+  "term": "operate",
+  "meaning": "運営する/操作する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She operates the machine."
+ },
+ {
+  "term": "organize",
+  "meaning": "準備する/整理する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They organized the event."
+ },
+ {
+  "term": "overcome",
+  "meaning": "克服する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We overcame the problem."
+ },
+ {
+  "term": "participate",
+  "meaning": "参加する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Everyone can participate."
+ },
+ {
+  "term": "postpone",
+  "meaning": "延期する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The meeting was postponed."
+ },
+ {
+  "term": "present",
+  "meaning": "提示する/贈る",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She presented the findings."
+ },
+ {
+  "term": "prioritize",
+  "meaning": "優先する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Prioritize urgent tasks."
+ },
+ {
+  "term": "process",
+  "meaning": "処理する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We process orders daily."
+ },
+ {
+  "term": "promote",
+  "meaning": "昇進させる/宣伝する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "He was promoted to director."
+ },
+ {
+  "term": "propose",
+  "meaning": "提案する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She proposed a new idea."
+ },
+ {
+  "term": "purchase",
+  "meaning": "購入する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They purchased new equipment."
+ },
+ {
+  "term": "pursue",
+  "meaning": "追求する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We pursue excellence."
+ },
+ {
+  "term": "recommend",
+  "meaning": "勧める",
+  "type": "word",
+  "pos": "動詞",
+  "example": "I recommend this service."
+ },
+ {
+  "term": "recruit",
+  "meaning": "採用する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We recruit talented people."
+ },
+ {
+  "term": "reduce",
+  "meaning": "減らす",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We reduced costs."
+ },
+ {
+  "term": "register",
+  "meaning": "登録する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Register before the event."
+ },
+ {
+  "term": "reimburse",
+  "meaning": "払い戻す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We reimburse travel costs."
+ },
+ {
+  "term": "reject",
+  "meaning": "拒否する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They rejected the offer."
+ },
+ {
+  "term": "relocate",
+  "meaning": "移転する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The office relocated downtown."
+ },
+ {
+  "term": "remind",
+  "meaning": "思い出させる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Remind me about the call."
+ },
+ {
+  "term": "renew",
+  "meaning": "更新する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Renew your membership."
+ },
+ {
+  "term": "replace",
+  "meaning": "交換する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We replaced the printer."
+ },
+ {
+  "term": "request",
+  "meaning": "要求する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She requested more time."
+ },
+ {
+  "term": "require",
+  "meaning": "必要とする",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The job requires travel."
+ },
+ {
+  "term": "reschedule",
+  "meaning": "予定を変更する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We rescheduled the meeting."
+ },
+ {
+  "term": "reserve",
+  "meaning": "予約する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Reserve a table online."
+ },
+ {
+  "term": "resign",
+  "meaning": "辞職する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "He resigned last week."
+ },
+ {
+  "term": "resolve",
+  "meaning": "解決する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We resolved the issue."
+ },
+ {
+  "term": "respond",
+  "meaning": "応答する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please respond by email."
+ },
+ {
+  "term": "restore",
+  "meaning": "復旧する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Service was restored quickly."
+ },
+ {
+  "term": "resume",
+  "meaning": "再開する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Work resumed after lunch."
+ },
+ {
+  "term": "retain",
+  "meaning": "保持する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We retain top talent."
+ },
+ {
+  "term": "retrieve",
+  "meaning": "取り戻す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Retrieve the file from storage."
+ },
+ {
+  "term": "review",
+  "meaning": "見直す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please review the draft."
+ },
+ {
+  "term": "revise",
+  "meaning": "修正する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We revised the schedule."
+ },
+ {
+  "term": "seek",
+  "meaning": "探す/求める",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We seek new partners."
+ },
+ {
+  "term": "select",
+  "meaning": "選ぶ",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Select the best option."
+ },
+ {
+  "term": "settle",
+  "meaning": "解決する/精算する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We settled the bill."
+ },
+ {
+  "term": "specify",
+  "meaning": "明記する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please specify the size."
+ },
+ {
+  "term": "streamline",
+  "meaning": "効率化する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We streamlined the process."
+ },
+ {
+  "term": "submit",
+  "meaning": "提出する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Submit the form online."
+ },
+ {
+  "term": "substitute",
+  "meaning": "代用する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We substituted a new part."
+ },
+ {
+  "term": "succeed",
+  "meaning": "成功する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The launch succeeded."
+ },
+ {
+  "term": "supervise",
+  "meaning": "監督する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She supervises the team."
+ },
+ {
+  "term": "supply",
+  "meaning": "供給する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We supply local stores."
+ },
+ {
+  "term": "suspend",
+  "meaning": "一時停止する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Service was suspended briefly."
+ },
+ {
+  "term": "sustain",
+  "meaning": "維持する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We must sustain growth."
+ },
+ {
+  "term": "terminate",
+  "meaning": "終了させる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The contract was terminated."
+ },
+ {
+  "term": "transform",
+  "meaning": "変える",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The plan transformed the firm."
+ },
+ {
+  "term": "undergo",
+  "meaning": "経験する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The system underwent testing."
+ },
+ {
+  "term": "update",
+  "meaning": "更新する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We updated the website."
+ },
+ {
+  "term": "upgrade",
+  "meaning": "改良する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They upgraded the servers."
+ },
+ {
+  "term": "utilize",
+  "meaning": "活用する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We utilize modern tools."
+ },
+ {
+  "term": "verify",
+  "meaning": "確認する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Verify your identity."
+ },
+ {
+  "term": "withdraw",
+  "meaning": "引き出す/撤回する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She withdrew some cash."
+ },
+ {
+  "term": "accelerate",
+  "meaning": "加速する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The plan accelerated growth."
+ },
+ {
+  "term": "accumulate",
+  "meaning": "蓄積する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Points accumulate over time."
+ },
+ {
+  "term": "acknowledge",
+  "meaning": "認める",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please acknowledge receipt."
+ },
+ {
+  "term": "assemble",
+  "meaning": "組み立てる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They assembled the shelf."
+ },
+ {
+  "term": "attribute",
+  "meaning": "起因させる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She attributes success to hard work."
+ },
+ {
+  "term": "outline",
+  "meaning": "概説する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "He outlined the plan."
+ },
+ {
+  "term": "oversee",
+  "meaning": "監督する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "She oversees operations."
+ },
+ {
+  "term": "undertake",
+  "meaning": "引き受ける",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We undertook a big project."
+ },
+ {
+  "term": "accurate",
+  "meaning": "正確な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The report must be accurate."
+ },
+ {
+  "term": "additional",
+  "meaning": "追加の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "There is an additional fee."
+ },
+ {
+  "term": "adequate",
+  "meaning": "十分な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We have adequate supplies."
+ },
+ {
+  "term": "affordable",
+  "meaning": "手頃な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The plan is affordable."
+ },
+ {
+  "term": "annual",
+  "meaning": "年間の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The annual report is out."
+ },
+ {
+  "term": "apparent",
+  "meaning": "明らかな",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The error was apparent."
+ },
+ {
+  "term": "appropriate",
+  "meaning": "適切な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Wear appropriate clothing."
+ },
+ {
+  "term": "available",
+  "meaning": "利用可能な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The room is available now."
+ },
+ {
+  "term": "aware",
+  "meaning": "気づいている",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We are aware of the issue."
+ },
+ {
+  "term": "beneficial",
+  "meaning": "有益な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Exercise is beneficial."
+ },
+ {
+  "term": "brief",
+  "meaning": "短い",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "He gave a brief summary."
+ },
+ {
+  "term": "competent",
+  "meaning": "有能な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She is a competent leader."
+ },
+ {
+  "term": "competitive",
+  "meaning": "競争力のある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Our prices are competitive."
+ },
+ {
+  "term": "complimentary",
+  "meaning": "無料の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Breakfast is complimentary."
+ },
+ {
+  "term": "comprehensive",
+  "meaning": "包括的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "A comprehensive guide is included."
+ },
+ {
+  "term": "confidential",
+  "meaning": "機密の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "This file is confidential."
+ },
+ {
+  "term": "consecutive",
+  "meaning": "連続した",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Sales rose for three consecutive months."
+ },
+ {
+  "term": "considerable",
+  "meaning": "かなりの",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We made considerable progress."
+ },
+ {
+  "term": "consistent",
+  "meaning": "一貫した",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "His work is consistent."
+ },
+ {
+  "term": "convenient",
+  "meaning": "便利な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The location is convenient."
+ },
+ {
+  "term": "crucial",
+  "meaning": "極めて重要な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Timing is crucial."
+ },
+ {
+  "term": "current",
+  "meaning": "現在の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The current plan is working."
+ },
+ {
+  "term": "defective",
+  "meaning": "欠陥のある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We replaced the defective item."
+ },
+ {
+  "term": "dependable",
+  "meaning": "頼れる",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "He is a dependable worker."
+ },
+ {
+  "term": "diverse",
+  "meaning": "多様な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We have a diverse team."
+ },
+ {
+  "term": "durable",
+  "meaning": "丈夫な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The bag is very durable."
+ },
+ {
+  "term": "eligible",
+  "meaning": "資格のある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "You are eligible for a discount."
+ },
+ {
+  "term": "essential",
+  "meaning": "必須の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Training is essential."
+ },
+ {
+  "term": "exclusive",
+  "meaning": "独占的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "This is an exclusive offer."
+ },
+ {
+  "term": "experienced",
+  "meaning": "経験豊富な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We hired an experienced manager."
+ },
+ {
+  "term": "extensive",
+  "meaning": "広範な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She has extensive knowledge."
+ },
+ {
+  "term": "fragile",
+  "meaning": "壊れやすい",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The package is fragile."
+ },
+ {
+  "term": "frequent",
+  "meaning": "頻繁な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "He is a frequent traveler."
+ },
+ {
+  "term": "generous",
+  "meaning": "気前のよい",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "They made a generous donation."
+ },
+ {
+  "term": "gradual",
+  "meaning": "徐々の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "There was a gradual improvement."
+ },
+ {
+  "term": "immediate",
+  "meaning": "即座の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We need an immediate response."
+ },
+ {
+  "term": "impressive",
+  "meaning": "印象的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The results were impressive."
+ },
+ {
+  "term": "inclusive",
+  "meaning": "包括的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The price is all-inclusive."
+ },
+ {
+  "term": "industrial",
+  "meaning": "産業の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The area is industrial."
+ },
+ {
+  "term": "inevitable",
+  "meaning": "避けられない",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Change is inevitable."
+ },
+ {
+  "term": "initial",
+  "meaning": "最初の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The initial plan changed."
+ },
+ {
+  "term": "innovative",
+  "meaning": "革新的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "They offer innovative solutions."
+ },
+ {
+  "term": "leading",
+  "meaning": "主要な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "They are a leading brand."
+ },
+ {
+  "term": "mandatory",
+  "meaning": "義務的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The training is mandatory."
+ },
+ {
+  "term": "numerous",
+  "meaning": "多数の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We received numerous applications."
+ },
+ {
+  "term": "outstanding",
+  "meaning": "優れた/未払いの",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She did outstanding work."
+ },
+ {
+  "term": "potential",
+  "meaning": "潜在的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We found a potential client."
+ },
+ {
+  "term": "preliminary",
+  "meaning": "予備の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "These are preliminary results."
+ },
+ {
+  "term": "previous",
+  "meaning": "以前の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "See the previous email."
+ },
+ {
+  "term": "primary",
+  "meaning": "主要な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Safety is our primary concern."
+ },
+ {
+  "term": "productive",
+  "meaning": "生産的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "It was a productive meeting."
+ },
+ {
+  "term": "profitable",
+  "meaning": "利益のある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The venture was profitable."
+ },
+ {
+  "term": "prominent",
+  "meaning": "著名な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "A prominent scientist spoke."
+ },
+ {
+  "term": "prompt",
+  "meaning": "迅速な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Thank you for your prompt reply."
+ },
+ {
+  "term": "punctual",
+  "meaning": "時間を守る",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She is always punctual."
+ },
+ {
+  "term": "qualified",
+  "meaning": "資格のある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We seek qualified candidates."
+ },
+ {
+  "term": "reasonable",
+  "meaning": "妥当な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The price is reasonable."
+ },
+ {
+  "term": "recent",
+  "meaning": "最近の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "See our recent report."
+ },
+ {
+  "term": "relevant",
+  "meaning": "関連のある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Include relevant details."
+ },
+ {
+  "term": "reliable",
+  "meaning": "信頼できる",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The service is reliable."
+ },
+ {
+  "term": "reluctant",
+  "meaning": "気が進まない",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "He was reluctant to agree."
+ },
+ {
+  "term": "renowned",
+  "meaning": "有名な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She is a renowned chef."
+ },
+ {
+  "term": "respective",
+  "meaning": "それぞれの",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "They went to their respective offices."
+ },
+ {
+  "term": "responsible",
+  "meaning": "責任がある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She is responsible for sales."
+ },
+ {
+  "term": "satisfactory",
+  "meaning": "満足のいく",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The results were satisfactory."
+ },
+ {
+  "term": "scarce",
+  "meaning": "乏しい",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Water is scarce here."
+ },
+ {
+  "term": "significant",
+  "meaning": "重要な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "There was a significant change."
+ },
+ {
+  "term": "spacious",
+  "meaning": "広々とした",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The office is spacious."
+ },
+ {
+  "term": "substantial",
+  "meaning": "かなりの",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We saw substantial growth."
+ },
+ {
+  "term": "sufficient",
+  "meaning": "十分な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We have sufficient funds."
+ },
+ {
+  "term": "suitable",
+  "meaning": "適した",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Find a suitable venue."
+ },
+ {
+  "term": "temporary",
+  "meaning": "一時的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "This is a temporary solution."
+ },
+ {
+  "term": "thorough",
+  "meaning": "徹底的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We did a thorough review."
+ },
+ {
+  "term": "tentative",
+  "meaning": "仮の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We set a tentative date."
+ },
+ {
+  "term": "upcoming",
+  "meaning": "今度の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The upcoming event is popular."
+ },
+ {
+  "term": "urgent",
+  "meaning": "緊急の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "This is an urgent matter."
+ },
+ {
+  "term": "valid",
+  "meaning": "有効な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The ticket is still valid."
+ },
+ {
+  "term": "valuable",
+  "meaning": "貴重な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Your feedback is valuable."
+ },
+ {
+  "term": "versatile",
+  "meaning": "多才な/用途の広い",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The tool is versatile."
+ },
+ {
+  "term": "vital",
+  "meaning": "極めて重要な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Teamwork is vital."
+ },
+ {
+  "term": "voluntary",
+  "meaning": "自発的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Participation is voluntary."
+ },
+ {
+  "term": "flexible",
+  "meaning": "柔軟な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We offer flexible hours."
+ },
+ {
+  "term": "efficient",
+  "meaning": "効率的な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The process is efficient."
+ },
+ {
+  "term": "profound",
+  "meaning": "深遠な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "It had a profound effect."
+ },
+ {
+  "term": "steady",
+  "meaning": "安定した",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Sales showed steady growth."
+ },
+ {
+  "term": "sophisticated",
+  "meaning": "洗練された",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The system is sophisticated."
+ },
+ {
+  "term": "mutual",
+  "meaning": "相互の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We reached a mutual agreement."
+ },
+ {
+  "term": "feasible",
+  "meaning": "実行可能な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The plan is feasible."
+ },
+ {
+  "term": "accessible",
+  "meaning": "利用しやすい",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The site is accessible to all."
+ },
+ {
+  "term": "alternative",
+  "meaning": "代替の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We have an alternative plan."
+ },
+ {
+  "term": "accordingly",
+  "meaning": "それに応じて",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Plans changed, so act accordingly."
+ },
+ {
+  "term": "apparently",
+  "meaning": "どうやら",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Apparently, the flight is delayed."
+ },
+ {
+  "term": "approximately",
+  "meaning": "おおよそ",
+  "type": "word",
+  "pos": "副詞",
+  "example": "The trip takes approximately two hours."
+ },
+ {
+  "term": "briefly",
+  "meaning": "手短に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "She spoke briefly."
+ },
+ {
+  "term": "currently",
+  "meaning": "現在",
+  "type": "word",
+  "pos": "副詞",
+  "example": "We are currently hiring."
+ },
+ {
+  "term": "eventually",
+  "meaning": "最終的に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Eventually, we agreed."
+ },
+ {
+  "term": "frequently",
+  "meaning": "頻繁に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "He travels frequently."
+ },
+ {
+  "term": "immediately",
+  "meaning": "すぐに",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Reply immediately, please."
+ },
+ {
+  "term": "initially",
+  "meaning": "最初は",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Initially, sales were slow."
+ },
+ {
+  "term": "mutually",
+  "meaning": "相互に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "It was mutually beneficial."
+ },
+ {
+  "term": "nevertheless",
+  "meaning": "それにもかかわらず",
+  "type": "word",
+  "pos": "副詞",
+  "example": "It rained; nevertheless, we went."
+ },
+ {
+  "term": "occasionally",
+  "meaning": "時々",
+  "type": "word",
+  "pos": "副詞",
+  "example": "We meet occasionally."
+ },
+ {
+  "term": "primarily",
+  "meaning": "主に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "We focus primarily on quality."
+ },
+ {
+  "term": "promptly",
+  "meaning": "迅速に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "She replied promptly."
+ },
+ {
+  "term": "rarely",
+  "meaning": "めったに〜ない",
+  "type": "word",
+  "pos": "副詞",
+  "example": "He rarely takes a day off."
+ },
+ {
+  "term": "recently",
+  "meaning": "最近",
+  "type": "word",
+  "pos": "副詞",
+  "example": "We recently moved offices."
+ },
+ {
+  "term": "relatively",
+  "meaning": "比較的",
+  "type": "word",
+  "pos": "副詞",
+  "example": "The task was relatively easy."
+ },
+ {
+  "term": "reluctantly",
+  "meaning": "しぶしぶ",
+  "type": "word",
+  "pos": "副詞",
+  "example": "He agreed reluctantly."
+ },
+ {
+  "term": "significantly",
+  "meaning": "著しく",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Costs dropped significantly."
+ },
+ {
+  "term": "subsequently",
+  "meaning": "その後",
+  "type": "word",
+  "pos": "副詞",
+  "example": "He subsequently resigned."
+ },
+ {
+  "term": "substantially",
+  "meaning": "大幅に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Profits rose substantially."
+ },
+ {
+  "term": "temporarily",
+  "meaning": "一時的に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "The road is temporarily closed."
+ },
+ {
+  "term": "thoroughly",
+  "meaning": "徹底的に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Check the report thoroughly."
+ },
+ {
+  "term": "ultimately",
+  "meaning": "最終的に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Ultimately, the choice is yours."
+ },
+ {
+  "term": "accurately",
+  "meaning": "正確に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Measure the parts accurately."
+ },
+ {
+  "term": "consistently",
+  "meaning": "一貫して",
+  "type": "word",
+  "pos": "副詞",
+  "example": "She consistently meets targets."
+ },
+ {
+  "term": "efficiently",
+  "meaning": "効率的に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "They work efficiently."
+ },
+ {
+  "term": "gradually",
+  "meaning": "徐々に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Prices rose gradually."
+ },
+ {
+  "term": "previously",
+  "meaning": "以前に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "We previously discussed this."
+ },
+ {
+  "term": "respectively",
+  "meaning": "それぞれ",
+  "type": "word",
+  "pos": "副詞",
+  "example": "They finished first and second respectively."
+ },
+ {
+  "term": "account for",
+  "meaning": "説明する/占める",
+  "type": "idiom",
+  "example": "Exports account for half of sales."
+ },
+ {
+  "term": "adhere to",
+  "meaning": "順守する",
+  "type": "idiom",
+  "example": "Please adhere to the rules."
+ },
+ {
+  "term": "apply for",
+  "meaning": "応募する",
+  "type": "idiom",
+  "example": "She applied for the position."
+ },
+ {
+  "term": "back up",
+  "meaning": "支援する/バックアップする",
+  "type": "idiom",
+  "example": "I'll back up your plan."
+ },
+ {
+  "term": "bring up",
+  "meaning": "話題に出す",
+  "type": "idiom",
+  "example": "He brought up a good point."
+ },
+ {
+  "term": "call off",
+  "meaning": "中止する",
+  "type": "idiom",
+  "example": "They called off the event."
+ },
+ {
+  "term": "carry out",
+  "meaning": "実行する",
+  "type": "idiom",
+  "example": "We carried out the survey."
+ },
+ {
+  "term": "catch up",
+  "meaning": "追いつく",
+  "type": "idiom",
+  "example": "I need to catch up on emails."
+ },
+ {
+  "term": "check in",
+  "meaning": "チェックインする",
+  "type": "idiom",
+  "example": "Guests can check in after 3."
+ },
+ {
+  "term": "check out",
+  "meaning": "精算して出る/調べる",
+  "type": "idiom",
+  "example": "Please check out by 11."
+ },
+ {
+  "term": "come up with",
+  "meaning": "思いつく",
+  "type": "idiom",
+  "example": "She came up with a great idea."
+ },
+ {
+  "term": "count on",
+  "meaning": "頼る",
+  "type": "idiom",
+  "example": "You can count on us."
+ },
+ {
+  "term": "cut down on",
+  "meaning": "減らす",
+  "type": "idiom",
+  "example": "Try to cut down on costs."
+ },
+ {
+  "term": "deal with",
+  "meaning": "対処する",
+  "type": "idiom",
+  "example": "We deal with complaints quickly."
+ },
+ {
+  "term": "drop by",
+  "meaning": "立ち寄る",
+  "type": "idiom",
+  "example": "Drop by anytime."
+ },
+ {
+  "term": "fill in",
+  "meaning": "記入する",
+  "type": "idiom",
+  "example": "Fill in the form, please."
+ },
+ {
+  "term": "fill out",
+  "meaning": "記入する",
+  "type": "idiom",
+  "example": "Fill out the application."
+ },
+ {
+  "term": "figure out",
+  "meaning": "理解する/解決する",
+  "type": "idiom",
+  "example": "Let's figure out the cause."
+ },
+ {
+  "term": "focus on",
+  "meaning": "集中する",
+  "type": "idiom",
+  "example": "We focus on customers."
+ },
+ {
+  "term": "follow up",
+  "meaning": "フォローする",
+  "type": "idiom",
+  "example": "I'll follow up next week."
+ },
+ {
+  "term": "get along",
+  "meaning": "うまくやる",
+  "type": "idiom",
+  "example": "They get along well."
+ },
+ {
+  "term": "give up",
+  "meaning": "あきらめる",
+  "type": "idiom",
+  "example": "Don't give up."
+ },
+ {
+  "term": "go over",
+  "meaning": "見直す",
+  "type": "idiom",
+  "example": "Let's go over the numbers."
+ },
+ {
+  "term": "go through",
+  "meaning": "経験する/調べる",
+  "type": "idiom",
+  "example": "We went through the report."
+ },
+ {
+  "term": "hand in",
+  "meaning": "提出する",
+  "type": "idiom",
+  "example": "Hand in your report today."
+ },
+ {
+  "term": "hand out",
+  "meaning": "配る",
+  "type": "idiom",
+  "example": "They handed out samples."
+ },
+ {
+  "term": "hold on",
+  "meaning": "待つ",
+  "type": "idiom",
+  "example": "Please hold on a moment."
+ },
+ {
+  "term": "keep up with",
+  "meaning": "遅れずについていく",
+  "type": "idiom",
+  "example": "Keep up with the trends."
+ },
+ {
+  "term": "look forward to",
+  "meaning": "楽しみにする",
+  "type": "idiom",
+  "example": "I look forward to meeting you."
+ },
+ {
+  "term": "look into",
+  "meaning": "調査する",
+  "type": "idiom",
+  "example": "We'll look into the matter."
+ },
+ {
+  "term": "look over",
+  "meaning": "ざっと見る",
+  "type": "idiom",
+  "example": "Look over the contract."
+ },
+ {
+  "term": "make sure",
+  "meaning": "確認する",
+  "type": "idiom",
+  "example": "Make sure the door is locked."
+ },
+ {
+  "term": "make up for",
+  "meaning": "埋め合わせる",
+  "type": "idiom",
+  "example": "We'll make up for the delay."
+ },
+ {
+  "term": "point out",
+  "meaning": "指摘する",
+  "type": "idiom",
+  "example": "She pointed out an error."
+ },
+ {
+  "term": "put off",
+  "meaning": "延期する",
+  "type": "idiom",
+  "example": "Don't put off the decision."
+ },
+ {
+  "term": "rule out",
+  "meaning": "除外する",
+  "type": "idiom",
+  "example": "We can't rule out that option."
+ },
+ {
+  "term": "run out of",
+  "meaning": "使い果たす",
+  "type": "idiom",
+  "example": "We ran out of paper."
+ },
+ {
+  "term": "set up",
+  "meaning": "設置する/立ち上げる",
+  "type": "idiom",
+  "example": "We set up a new office."
+ },
+ {
+  "term": "sign up",
+  "meaning": "申し込む",
+  "type": "idiom",
+  "example": "Sign up for the newsletter."
+ },
+ {
+  "term": "sort out",
+  "meaning": "整理する/解決する",
+  "type": "idiom",
+  "example": "Let's sort out the schedule."
+ },
+ {
+  "term": "stand for",
+  "meaning": "表す",
+  "type": "idiom",
+  "example": "What does the logo stand for?"
+ },
+ {
+  "term": "take advantage of",
+  "meaning": "利用する",
+  "type": "idiom",
+  "example": "Take advantage of the sale."
+ },
+ {
+  "term": "take care of",
+  "meaning": "世話をする/処理する",
+  "type": "idiom",
+  "example": "I'll take care of it."
+ },
+ {
+  "term": "take over",
+  "meaning": "引き継ぐ",
+  "type": "idiom",
+  "example": "She took over the project."
+ },
+ {
+  "term": "take place",
+  "meaning": "開催される",
+  "type": "idiom",
+  "example": "The fair takes place in May."
+ },
+ {
+  "term": "turn down",
+  "meaning": "断る",
+  "type": "idiom",
+  "example": "He turned down the offer."
+ },
+ {
+  "term": "turn out",
+  "meaning": "判明する",
+  "type": "idiom",
+  "example": "It turned out to be true."
+ },
+ {
+  "term": "work on",
+  "meaning": "取り組む",
+  "type": "idiom",
+  "example": "We are working on it."
+ },
+ {
+  "term": "be in charge of",
+  "meaning": "担当している",
+  "type": "idiom",
+  "example": "She is in charge of hiring."
+ },
+ {
+  "term": "be responsible for",
+  "meaning": "責任がある",
+  "type": "idiom",
+  "example": "He is responsible for safety."
+ },
+ {
+  "term": "in advance",
+  "meaning": "前もって",
+  "type": "idiom",
+  "example": "Book tickets in advance."
+ },
+ {
+  "term": "in charge",
+  "meaning": "担当して",
+  "type": "idiom",
+  "example": "Who is in charge here?"
+ },
+ {
+  "term": "on behalf of",
+  "meaning": "〜を代表して",
+  "type": "idiom",
+  "example": "I speak on behalf of the team."
+ },
+ {
+  "term": "on time",
+  "meaning": "時間通りに",
+  "type": "idiom",
+  "example": "The train arrived on time."
+ },
+ {
+  "term": "ahead of schedule",
+  "meaning": "予定より早く",
+  "type": "idiom",
+  "example": "We finished ahead of schedule."
+ },
+ {
+  "term": "behind schedule",
+  "meaning": "予定より遅れて",
+  "type": "idiom",
+  "example": "The project is behind schedule."
+ },
+ {
+  "term": "in stock",
+  "meaning": "在庫がある",
+  "type": "idiom",
+  "example": "The item is in stock."
+ },
+ {
+  "term": "out of stock",
+  "meaning": "在庫切れ",
+  "type": "idiom",
+  "example": "The item is out of stock."
+ },
+ {
+  "term": "up to date",
+  "meaning": "最新の",
+  "type": "idiom",
+  "example": "Keep your records up to date."
+ },
+ {
+  "term": "as soon as possible",
+  "meaning": "できるだけ早く",
+  "type": "idiom",
+  "example": "Reply as soon as possible."
+ },
+ {
+  "term": "no later than",
+  "meaning": "遅くとも",
+  "type": "idiom",
+  "example": "Submit it no later than Friday."
+ },
+ {
+  "term": "in person",
+  "meaning": "直接会って",
+  "type": "idiom",
+  "example": "Let's meet in person."
+ },
+ {
+  "term": "free of charge",
+  "meaning": "無料で",
+  "type": "idiom",
+  "example": "Delivery is free of charge."
+ },
+ {
+  "term": "out of order",
+  "meaning": "故障中",
+  "type": "idiom",
+  "example": "The elevator is out of order."
+ },
+ {
+  "term": "on sale",
+  "meaning": "販売中/セール中",
+  "type": "idiom",
+  "example": "The tickets are on sale."
+ },
+ {
+  "term": "for sale",
+  "meaning": "売り出し中",
+  "type": "idiom",
+  "example": "The house is for sale."
+ },
+ {
+  "term": "run into",
+  "meaning": "偶然出会う",
+  "type": "idiom",
+  "example": "I ran into an old client."
+ },
+ {
+  "term": "set aside",
+  "meaning": "取っておく",
+  "type": "idiom",
+  "example": "Set aside time to review."
+ },
+ {
+  "term": "break down",
+  "meaning": "故障する",
+  "type": "idiom",
+  "example": "The car broke down."
+ },
+ {
+  "term": "come across",
+  "meaning": "偶然見つける",
+  "type": "idiom",
+  "example": "I came across a useful article."
+ },
+ {
+  "term": "keep track of",
+  "meaning": "把握する",
+  "type": "idiom",
+  "example": "Keep track of your expenses."
+ },
+ {
+  "term": "get in touch",
+  "meaning": "連絡を取る",
+  "type": "idiom",
+  "example": "Get in touch with us anytime."
+ },
+ {
+  "term": "make a decision",
+  "meaning": "決定する",
+  "type": "idiom",
+  "example": "We need to make a decision."
+ },
+ {
+  "term": "take into account",
+  "meaning": "考慮する",
+  "type": "idiom",
+  "example": "Take costs into account."
+ },
+ {
+  "term": "handout",
+  "meaning": "配布資料",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please take a handout."
+ },
+ {
+  "term": "keynote",
+  "meaning": "基調講演",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The keynote speech was inspiring."
+ },
+ {
+  "term": "layout",
+  "meaning": "レイアウト",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We changed the office layout."
+ },
+ {
+  "term": "milestone",
+  "meaning": "節目",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We reached an important milestone."
+ },
+ {
+  "term": "outlook",
+  "meaning": "見通し",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The economic outlook is positive."
+ },
+ {
+  "term": "paperwork",
+  "meaning": "書類仕事",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Finish the paperwork first."
+ }
+]
