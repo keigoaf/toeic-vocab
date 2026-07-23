@@ -1,0 +1,432 @@
+[
+ {
+  "term": "arrangement",
+  "meaning": "手配/取り決め",
+  "type": "word",
+  "example": "Travel arrangements were completed before Friday.",
+  "pos": "名詞",
+  "exampleJa": "旅行の手配は金曜日より前に完了した。"
+ },
+ {
+  "term": "increase",
+  "meaning": "増加する",
+  "type": "word",
+  "example": "Sales increased during the holiday season.",
+  "pos": "動詞",
+  "exampleJa": "売上は休暇シーズン中に増加した。"
+ },
+ {
+  "term": "comply with",
+  "meaning": "順守する",
+  "type": "idiom",
+  "example": "All employees must comply with company policies.",
+  "exampleJa": "全従業員は会社の方針を順守しなければならない。"
+ },
+ {
+  "term": "access",
+  "meaning": "利用する/アクセスする",
+  "type": "word",
+  "example": "Employees can access the database remotely.",
+  "pos": "動詞",
+  "exampleJa": "従業員は遠隔でそのデータベースを利用できる。"
+ },
+ {
+  "term": "application",
+  "meaning": "申請/応募",
+  "type": "word",
+  "example": "Her application was accepted immediately.",
+  "pos": "名詞",
+  "exampleJa": "彼女の応募はすぐに受理された。"
+ },
+ {
+  "term": "board",
+  "meaning": "役員会",
+  "type": "word",
+  "example": "The board approved the proposal unanimously.",
+  "pos": "名詞",
+  "exampleJa": "役員会はその提案を満場一致で承認した。"
+ },
+ {
+  "term": "cooperate",
+  "meaning": "協力する",
+  "type": "word",
+  "example": "All departments cooperated on the project.",
+  "pos": "動詞",
+  "exampleJa": "全部門がその事業で協力した。"
+ },
+ {
+  "term": "notification",
+  "meaning": "通知",
+  "type": "word",
+  "example": "Customers received a notification by email.",
+  "pos": "名詞",
+  "exampleJa": "顧客はメールで通知を受け取った。"
+ },
+ {
+  "term": "promotion",
+  "meaning": "昇進/販促",
+  "type": "word",
+  "example": "She received a promotion last month.",
+  "pos": "名詞",
+  "exampleJa": "彼女は先月昇進した。"
+ },
+ {
+  "term": "retail",
+  "meaning": "小売りの",
+  "type": "word",
+  "example": "Retail prices will increase next month.",
+  "pos": "形容詞",
+  "exampleJa": "小売価格は来月上がる。"
+ },
+ {
+  "term": "transfer",
+  "meaning": "異動する/移す",
+  "type": "word",
+  "example": "She transferred to the marketing department.",
+  "pos": "動詞",
+  "exampleJa": "彼女は販売促進部に異動した。"
+ },
+ {
+  "term": "audit",
+  "meaning": "監査",
+  "type": "word",
+  "example": "The annual audit begins next week.",
+  "pos": "名詞",
+  "exampleJa": "年次監査は来週始まる。"
+ },
+ {
+  "term": "booklet",
+  "meaning": "小冊子",
+  "type": "word",
+  "example": "Each participant received an information booklet.",
+  "pos": "名詞",
+  "exampleJa": "各参加者は案内の小冊子を受け取った。"
+ },
+ {
+  "term": "bonus",
+  "meaning": "賞与/ボーナス",
+  "type": "word",
+  "example": "Employees received a performance bonus this month.",
+  "pos": "名詞",
+  "exampleJa": "従業員は今月、業績賞与を受け取った。"
+ },
+ {
+  "term": "construction",
+  "meaning": "建設",
+  "type": "word",
+  "example": "Construction will finish by December.",
+  "pos": "名詞",
+  "exampleJa": "建設は12月までに終わる。"
+ },
+ {
+  "term": "earnings",
+  "meaning": "収益",
+  "type": "word",
+  "example": "Quarterly earnings exceeded expectations again.",
+  "pos": "名詞",
+  "exampleJa": "四半期の収益は再び予想を上回った。"
+ },
+ {
+  "term": "elect",
+  "meaning": "選出する",
+  "type": "word",
+  "example": "Members elected a new chairperson yesterday.",
+  "pos": "動詞",
+  "exampleJa": "会員は昨日、新しい議長を選出した。"
+ },
+ {
+  "term": "renovate",
+  "meaning": "改装する",
+  "type": "word",
+  "example": "They renovated the office lobby recently.",
+  "pos": "動詞",
+  "exampleJa": "彼らは最近、事務所のロビーを改装した。"
+ },
+ {
+  "term": "representative",
+  "meaning": "代表者",
+  "type": "word",
+  "example": "A representative will contact you tomorrow.",
+  "pos": "名詞",
+  "exampleJa": "担当者が明日ご連絡します。"
+ },
+ {
+  "term": "abroad",
+  "meaning": "海外へ/海外で",
+  "type": "word",
+  "example": "She frequently travels abroad for business.",
+  "pos": "副詞",
+  "exampleJa": "彼女は仕事で頻繁に海外へ出張する。"
+ },
+ {
+  "term": "accept",
+  "meaning": "受け入れる",
+  "type": "word",
+  "example": "The client accepted our proposal immediately.",
+  "pos": "動詞",
+  "exampleJa": "その顧客は当社の提案をすぐに受け入れた。"
+ },
+ {
+  "term": "assistance",
+  "meaning": "支援/援助",
+  "type": "word",
+  "example": "Please contact us if you need assistance.",
+  "pos": "名詞",
+  "exampleJa": "支援が必要な場合はご連絡ください。"
+ },
+ {
+  "term": "automatically",
+  "meaning": "自動的に",
+  "type": "word",
+  "example": "Payments are processed automatically every month.",
+  "pos": "副詞",
+  "exampleJa": "支払いは毎月自動的に処理される。"
+ },
+ {
+  "term": "calendar",
+  "meaning": "予定表/カレンダー",
+  "type": "word",
+  "example": "Please update the shared calendar today.",
+  "pos": "名詞",
+  "exampleJa": "今日、共有の予定表を更新してください。"
+ },
+ {
+  "term": "collect",
+  "meaning": "集める/回収する",
+  "type": "word",
+  "example": "We collected customer surveys after the event.",
+  "pos": "動詞",
+  "exampleJa": "私たちは催しの後、顧客アンケートを回収した。"
+ },
+ {
+  "term": "comparison",
+  "meaning": "比較",
+  "type": "word",
+  "example": "The comparison showed significant cost savings.",
+  "pos": "名詞",
+  "exampleJa": "その比較は大きな費用削減を示した。"
+ },
+ {
+  "term": "competition",
+  "meaning": "競争/競合",
+  "type": "word",
+  "example": "Competition has increased in recent years.",
+  "pos": "名詞",
+  "exampleJa": "近年、競争が激化している。"
+ },
+ {
+  "term": "effective",
+  "meaning": "効果的な",
+  "type": "word",
+  "example": "The new strategy proved highly effective.",
+  "pos": "形容詞",
+  "exampleJa": "その新しい戦略は非常に効果的だと分かった。"
+ },
+ {
+  "term": "explanation",
+  "meaning": "説明",
+  "type": "word",
+  "example": "Thank you for your detailed explanation.",
+  "pos": "名詞",
+  "exampleJa": "詳しいご説明をありがとうございます。"
+ },
+ {
+  "term": "goal",
+  "meaning": "目標",
+  "type": "word",
+  "example": "Our sales goal was achieved early.",
+  "pos": "名詞",
+  "exampleJa": "私たちの売上目標は早期に達成された。"
+ },
+ {
+  "term": "location",
+  "meaning": "場所/所在地",
+  "type": "word",
+  "example": "The new store location is convenient.",
+  "pos": "名詞",
+  "exampleJa": "その新しい店舗の場所は便利だ。"
+ },
+ {
+  "term": "motivate",
+  "meaning": "やる気を起こさせる",
+  "type": "word",
+  "example": "Bonuses motivate employees to perform better.",
+  "pos": "動詞",
+  "exampleJa": "賞与は従業員により良い働きをする気にさせる。"
+ },
+ {
+  "term": "organization",
+  "meaning": "組織",
+  "type": "word",
+  "example": "The organization supports local businesses.",
+  "pos": "名詞",
+  "exampleJa": "その組織は地元企業を支援している。"
+ },
+ {
+  "term": "presentation",
+  "meaning": "プレゼンテーション",
+  "type": "word",
+  "example": "Her presentation impressed the audience.",
+  "pos": "名詞",
+  "exampleJa": "彼女の発表は聴衆に感銘を与えた。"
+ },
+ {
+  "term": "priority",
+  "meaning": "優先事項",
+  "type": "word",
+  "example": "Customer safety remains our top priority.",
+  "pos": "名詞",
+  "exampleJa": "顧客の安全が引き続き最優先事項だ。"
+ },
+ {
+  "term": "selection",
+  "meaning": "選択/品ぞろえ",
+  "type": "word",
+  "example": "The store offers a wide selection.",
+  "pos": "名詞",
+  "exampleJa": "その店は幅広い品ぞろえを提供している。"
+ },
+ {
+  "term": "admission",
+  "meaning": "入場料/入場",
+  "type": "word",
+  "example": "Conference admission is included in the registration fee.",
+  "pos": "名詞",
+  "exampleJa": "会議の入場料は登録料に含まれている。"
+ },
+ {
+  "term": "departure",
+  "meaning": "出発",
+  "type": "word",
+  "example": "The flight departure was delayed by an hour.",
+  "pos": "名詞",
+  "exampleJa": "その便の出発は1時間遅れた。"
+ },
+ {
+  "term": "discontinue",
+  "meaning": "中止する",
+  "type": "word",
+  "example": "The company discontinued the old product line.",
+  "pos": "動詞",
+  "exampleJa": "その会社は古い製品系列を中止した。"
+ },
+ {
+  "term": "imply",
+  "meaning": "ほのめかす",
+  "type": "word",
+  "example": "His comments implied future expansion plans.",
+  "pos": "動詞",
+  "exampleJa": "彼の発言は将来の拡大計画をほのめかしていた。"
+ },
+ {
+  "term": "proficiency",
+  "meaning": "熟達",
+  "type": "word",
+  "example": "English proficiency is required for this position.",
+  "pos": "名詞",
+  "exampleJa": "この職には英語の熟達が求められる。"
+ },
+ {
+  "term": "within",
+  "meaning": "〜以内に",
+  "type": "word",
+  "example": "Please reply within three business days.",
+  "pos": "前置詞",
+  "exampleJa": "3営業日以内にご返信ください。"
+ },
+ {
+  "term": "accomplishment",
+  "meaning": "達成/成果",
+  "type": "word",
+  "example": "Her accomplishments impressed the hiring manager.",
+  "pos": "名詞",
+  "exampleJa": "彼女の成果は採用担当者に感銘を与えた。"
+ },
+ {
+  "term": "advantage",
+  "meaning": "利点",
+  "type": "word",
+  "example": "This location offers a significant advantage.",
+  "pos": "名詞",
+  "exampleJa": "この立地は大きな利点をもたらす。"
+ },
+ {
+  "term": "applicable",
+  "meaning": "適用される",
+  "type": "word",
+  "example": "The discount is applicable to all members.",
+  "pos": "形容詞",
+  "exampleJa": "その割引は全会員に適用される。"
+ },
+ {
+  "term": "behalf",
+  "meaning": "代理",
+  "type": "word",
+  "example": "She signed the contract on behalf of the director.",
+  "pos": "名詞",
+  "exampleJa": "彼女は取締役の代理で契約書に署名した。"
+ },
+ {
+  "term": "circulate",
+  "meaning": "回覧する/配布する",
+  "type": "word",
+  "example": "Please circulate the meeting minutes today.",
+  "pos": "動詞",
+  "exampleJa": "今日、議事録を回覧してください。"
+ },
+ {
+  "term": "consumption",
+  "meaning": "消費",
+  "type": "word",
+  "example": "Electricity consumption decreased last month.",
+  "pos": "名詞",
+  "exampleJa": "電力消費は先月減少した。"
+ },
+ {
+  "term": "custom",
+  "meaning": "慣習",
+  "type": "word",
+  "example": "Learning local customs helps international business.",
+  "pos": "名詞",
+  "exampleJa": "地元の慣習を学ぶことは国際的な商売に役立つ。"
+ },
+ {
+  "term": "enrollment",
+  "meaning": "登録/入会",
+  "type": "word",
+  "example": "Course enrollment closes this Friday.",
+  "pos": "名詞",
+  "exampleJa": "講座の登録は今週金曜日に締め切られる。"
+ },
+ {
+  "term": "exclusively",
+  "meaning": "限定して",
+  "type": "word",
+  "example": "This service is available exclusively to members.",
+  "pos": "副詞",
+  "exampleJa": "このサービスは会員に限定して提供される。"
+ },
+ {
+  "term": "involvement",
+  "meaning": "関与",
+  "type": "word",
+  "example": "Employee involvement improved team performance.",
+  "pos": "名詞",
+  "exampleJa": "従業員の関与がチームの成果を改善した。"
+ },
+ {
+  "term": "regulation",
+  "meaning": "規則",
+  "type": "word",
+  "example": "The new regulation takes effect tomorrow.",
+  "pos": "名詞",
+  "exampleJa": "その新しい規則は明日発効する。"
+ },
+ {
+  "term": "pay for",
+  "meaning": "〜の代金を支払う",
+  "type": "idiom",
+  "example": "The company will pay for your airfare.",
+  "exampleJa": "会社があなたの航空運賃を支払います。"
+ }
+]

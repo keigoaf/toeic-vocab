@@ -2,10 +2,17 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 10:10 (JST)
-  バージョン: 1.8.0
+  ファイル最終更新日時: 2026-07-23 18:15 (JST)
+  バージョン: 1.9.0
 --------------------------------------------------------------------
   【更新履歴】
+    v1.9.0 (2026-07-23 18:15 JST)
+      - 外部AI生成データ287件を点検し、既存1500問と重複しない54件を
+        toeic-extra.json として追加（和訳付き）。
+        ※ 提供287件のうち229件が既存と重複、4件が表記ゆれの実質重複
+          (follow up on/take part in/be aware of/catch up on)のため除外。
+        インポート画面に「追加54問を追加」ボタンを新設。
+      - sw.js のキャッシュに toeic-extra.json を追加、CACHEを更新。
     v1.8.0 (2026-07-23 10:10 JST)
       - 【重要】アプリが更新されない問題を修正。
         iOSのホーム画面アプリで古いキャッシュが返り続けたため、
@@ -305,8 +312,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "1.8.0";
-const LAST_UPDATED = "2026-07-23 10:10 JST"; // ファイル最終更新日時
+const APP_VERSION = "1.9.0";
+const LAST_UPDATED = "2026-07-23 18:15 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -870,6 +877,7 @@ function openImport(){
     <p class="note" style="margin-top:2px">同梱データをワンタップで取り込みます（既存と同じ語は自動でスキップ）。</p>
     <button class="btn btn-primary" onclick="loadBundled('./toeic-500.json')">TOEIC頻出500問を追加</button>
     <button class="btn btn-primary" onclick="loadBundled('./toeic-1000.json')" style="margin-top:8px">追加1000問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-extra.json')" style="margin-top:8px">追加54問を追加</button>
 
     <label class="fld" style="margin-top:16px">JSONファイルを読み込む</label>
     <input type="file" id="jsonFile" accept=".json,application/json" onchange="handleJsonFile(this)">
