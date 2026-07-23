@@ -2,10 +2,21 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 01:52 (JST)
-  バージョン: 1.3.0
+  ファイル最終更新日時: 2026-07-23 09:20 (JST)
+  バージョン: 1.5.0
 --------------------------------------------------------------------
   【更新履歴】
+    v1.5.0 (2026-07-23 09:20 JST)
+      - 追加の同梱データ toeic-1000.json（既存500と重複しない1000問）を追加。
+        インポート画面に「追加1000問を追加」ボタンを新設。
+        loadBundled(url) に汎用化し、500/1000どちらもワンタップ取り込み可。
+      - sw.js のキャッシュに toeic-1000.json を追加、CACHEを更新。
+    v1.4.0 (2026-07-23 02:10 JST)
+      - 出題順を明確化。ボックスの大きい順（Box7→Box1）に出題し、
+        上位ボックスが尽きたら下位（最後にBox1）へ進む。
+        同一ボックス内は期限が古い順。従来のシャッフルは廃止。
+      - JSONを「貼り付けて取り込む」導線を追加（runJsonPaste）。
+        AI出力の ```json 囲みは自動除去。ファイル保存不要で取り込める。
     v1.3.0 (2026-07-23 01:52 JST)
       - JSONによる一括取り込みに対応（importCardObjects）。
         ・「TOEIC頻出500問を追加」ボタンで同梱 toeic-500.json を
@@ -257,8 +268,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "1.3.0";
-const LAST_UPDATED = "2026-07-23 01:52 JST"; // ファイル最終更新日時
+const APP_VERSION = "1.5.0";
+const LAST_UPDATED = "2026-07-23 09:20 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -521,16 +532,18 @@ function viewHome(){
 
 /* ---------------------------------------------------------------
    学習セッションの準備
-   - due カード（既存で期限到来）を集め、シャッフル。
-   - 新規カード（1度も正解していない box1 の当日追加分含む）は
-     due の一部として自然に含まれる。ここでは全 due を対象にする。
+   - due カード（期限到来）を集め、出題優先順位で並べる。
+   - v1.4.0: 出題順を明確化。ボックスの大きい順（Box7→Box1）に出題し、
+     上位ボックスが尽きたら下位（最後にBox1）へ進む。
+     同一ボックス内は期限が古い（より前に復習予定だった）順。
    --------------------------------------------------------------- */
 function startSession(){
   const due = STATE.cards.filter(isDue);
   if(due.length === 0){ toast('出題できる語がありません'); return; }
-  // シャッフル
-  const queue = due.slice();
-  for(let i=queue.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [queue[i],queue[j]]=[queue[j],queue[i]]; }
+  const queue = due.slice().sort((a,b)=>{
+    if(b.box !== a.box) return b.box - a.box; // ボックス降順（Box7が先）
+    return a.dueDate - b.dueDate;             // 同一ボックスは期限が古い順
+  });
   STATE.session = { queue, idx:0, revealed:false, correct:0, answered:0, done:false };
   setView('study');
 }
@@ -798,16 +811,22 @@ function openImport(){
   const html = `
     <h3>まとめて追加</h3>
 
-    <p class="note" style="margin-top:2px">同梱の <b>TOEIC頻出500問</b> をワンタップで取り込みます（重複は自動でスキップ）。</p>
-    <button class="btn btn-primary" onclick="loadBundled500()">TOEIC頻出500問を追加</button>
+    <p class="note" style="margin-top:2px">同梱データをワンタップで取り込みます（既存と同じ語は自動でスキップ）。</p>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-500.json')">TOEIC頻出500問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-1000.json')" style="margin-top:8px">追加1000問を追加</button>
 
     <label class="fld" style="margin-top:16px">JSONファイルを読み込む</label>
     <input type="file" id="jsonFile" accept=".json,application/json" onchange="handleJsonFile(this)">
     <p class="note">形式: <code>[{"term":"acquire","meaning":"獲得する","pos":"動詞","example":"..."}, ...]</code>。term と meaning が必須、熟語は <code>"type":"idiom"</code>。重複はスキップされます。</p>
 
+    <label class="fld" style="margin-top:16px">JSONを貼り付けて取り込む</label>
+    <p class="note" style="margin-top:2px">AIに作らせたJSON（配列）をそのまま貼り付けられます。<code>\`\`\`json</code> の囲みが付いていても自動で除去します。</p>
+    <textarea id="jsonPaste" rows="6" placeholder='[{"term":"acquire","meaning":"獲得する","pos":"動詞","example":"They acquired a firm."}]'></textarea>
+    <button class="btn btn-primary" onclick="runJsonPaste()" style="margin-top:8px">JSONを取り込む</button>
+
     <hr style="border:none;border-top:1px solid var(--line);margin:16px 0">
 
-    <label class="fld">またはテキストで貼り付け</label>
+    <label class="fld">またはテキストで貼り付け（CSV）</label>
     <p class="note" style="margin-top:2px">1行1語。<b>英語 , 意味 , 品詞/種別 , 例文</b>（カンマ or タブ区切り）。3列目は品詞か idiom/熟語（省略可）。</p>
     <textarea id="importText" rows="6" placeholder="acquire, 獲得する, 動詞, We plan to acquire a firm.
 comply with, 順守する, 熟語
@@ -868,18 +887,33 @@ async function importCardObjects(arr){
   toast(`${added}問を追加${skipped ? `（${skipped}件スキップ）` : ''}`);
 }
 
-/* 同梱の toeic-500.json を取得して取り込む（ワンタップ） */
-async function loadBundled500(){
+/* v1.4.0: 貼り付けたJSONテキストから取り込む。
+   AI出力に付きがちな ```json ... ``` の囲みは自動で除去する。 */
+async function runJsonPaste(){
+  let raw = (document.getElementById('jsonPaste').value || '').trim();
+  if(!raw){ toast('JSONが空です'); return; }
+  // コードフェンス（```json ... ```）を除去
+  raw = raw.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/,'').trim();
+  let arr;
+  try{ arr = JSON.parse(raw); }
+  catch(e){ console.warn('JSON貼り付け解析失敗:', e); toast('JSONを解析できませんでした（形式を確認）'); return; }
+  await importCardObjects(arr);
+}
+
+/* 同梱JSON（相対パス）を取得して取り込む（ワンタップ）。
+   v1.5.0: 500問・1000問など複数ファイルに対応するため汎用化。 */
+async function loadBundled(url){
   try{
-    const res = await fetch('./toeic-500.json', { cache: 'no-store' });
+    const res = await fetch(url, { cache: 'no-store' });
     if(!res.ok) throw new Error('HTTP ' + res.status);
     const arr = await res.json();
     await importCardObjects(arr);
   }catch(e){
-    console.warn('同梱500問の読み込み失敗:', e);
-    toast('500問ファイルを読み込めませんでした（配置を確認）');
+    console.warn('同梱ファイルの読み込み失敗:', url, e);
+    toast('ファイルを読み込めませんでした（配置を確認）');
   }
 }
+async function loadBundled500(){ return loadBundled('./toeic-500.json'); }
 
 /* ユーザーが選んだ .json ファイルを読み込む */
 function handleJsonFile(input){
