@@ -2,10 +2,21 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 09:50 (JST)
-  バージョン: 1.7.0
+  ファイル最終更新日時: 2026-07-23 10:10 (JST)
+  バージョン: 1.8.0
 --------------------------------------------------------------------
   【更新履歴】
+    v1.8.0 (2026-07-23 10:10 JST)
+      - 【重要】アプリが更新されない問題を修正。
+        iOSのホーム画面アプリで古いキャッシュが返り続けたため、
+        Service Worker を全面改訂（HTML/JSONはネットワーク優先、
+        cache:'no-store'/'reload' でHTTPキャッシュも迂回）。
+        登録側も updateViaCache:'none' + update() + SKIP_WAITING +
+        controllerchange での自動リロードに対応し、
+        起動・復帰のたびに最新版へ自動で切り替わるようにした。
+      - 設定画面に「🔄 最新版に更新する」ボタン(forceUpdate)を追加。
+        キャッシュとSWを破棄して再読み込みする。localStorageには
+        触れないため学習履歴は保持される。
     v1.7.0 (2026-07-23 09:50 JST)
       - 例文の和訳(exampleJa)に対応。裏面の例文の下に日本語訳を表示。
         makeCard/JSON取り込みが exampleJa を受け取れるよう拡張。
@@ -294,8 +305,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "1.7.0";
-const LAST_UPDATED = "2026-07-23 09:50 JST"; // ファイル最終更新日時
+const APP_VERSION = "1.8.0";
+const LAST_UPDATED = "2026-07-23 10:10 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -709,6 +720,13 @@ function viewSettings(){
     <button class="btn btn-ghost small" onclick="saveDailyLimit()" style="margin-top:10px">保存</button>
   </div>
 
+  <div class="section-title">アプリの更新</div>
+  <div class="card pad">
+    <p class="note" style="margin:0 0 10px">現在のバージョン: <b>v${APP_VERSION}</b>（${LAST_UPDATED}）</p>
+    <button class="btn btn-primary small" onclick="forceUpdate()" style="width:100%">🔄 最新版に更新する</button>
+    <p class="note">更新が反映されないときに押してください。学習履歴は消えません。</p>
+  </div>
+
   <div class="section-title">データ</div>
   <div class="card pad">
     <button class="btn btn-primary small" onclick="openBackup()" style="width:100%;margin-bottom:8px">💾 バックアップ / 復元（学習履歴ごと）</button>
@@ -936,6 +954,34 @@ async function runJsonPaste(){
   try{ arr = JSON.parse(raw); }
   catch(e){ console.warn('JSON貼り付け解析失敗:', e); toast('JSONを解析できませんでした（形式を確認）'); return; }
   await importCardObjects(arr);
+}
+
+/* ================================================================
+   v1.8.0: 手動での強制更新
+   --------------------------------------------------------------
+   自動更新が効かない環境（iOSのホーム画面アプリ等）向けの逃げ道。
+   キャッシュを削除し Service Worker を登録解除してから再読み込みする。
+   localStorage には触れないため、学習履歴は保持される。
+   ================================================================ */
+async function forceUpdate(){
+  toast('最新版を確認しています…');
+  try{
+    // 1) キャッシュを全削除（学習データはlocalStorageなので影響なし）
+    if(window.caches){
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+    }
+    // 2) Service Worker を登録解除（次回読み込みで新規に取り直す）
+    if(navigator.serviceWorker){
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+    }
+  }catch(e){
+    console.warn('更新処理で問題:', e);
+  }
+  // 3) キャッシュ回避のためクエリを付けて再読み込み
+  const url = location.origin + location.pathname + '?u=' + Date.now();
+  location.replace(url);
 }
 
 /* ================================================================
@@ -1259,15 +1305,50 @@ async function init(){
 init();
 
 /* ================================================================
-   PWA: Service Worker 登録（v1.2.0）
-   - オフライン動作と「ホーム画面に追加」でのアプリ化に必要。
-   - 相対パス './sw.js' なので、GitHub Pages のサブパス配信でも動く。
-   - file:// で開いた場合は登録されないが、アプリ本体は動作する。
+   PWA: Service Worker 登録（v1.8.0で更新検知を強化）
+   --------------------------------------------------------------
+   経緯:
+     iOSのホーム画面アプリで古いキャッシュが返り続け、アプリが
+     更新されない問題が発生した。以下で確実に最新へ切り替える:
+       - updateViaCache:'none' … SW本体をHTTPキャッシュから読まない
+       - registration.update() … 起動のたびに新版の有無を確認
+       - updatefound → 新SWが待機したら即 SKIP_WAITING を送る
+       - controllerchange → 制御が新SWに移ったら1度だけ自動リロード
    ================================================================ */
 if('serviceWorker' in navigator){
+  let reloading = false;
+  // 新しいSWが制御を取ったらページを1度だけ再読み込みして反映
+  navigator.serviceWorker.addEventListener('controllerchange', ()=>{
+    if(reloading) return;
+    reloading = true;
+    window.location.reload();
+  });
+
   window.addEventListener('load', ()=>{
-    navigator.serviceWorker.register('./sw.js')
-      .then(()=> console.log('[PWA] Service Worker 登録済み'))
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' })
+      .then((reg)=>{
+        console.log('[PWA] Service Worker 登録済み');
+
+        // 待機中の新版があればすぐ切り替える
+        if(reg.waiting) reg.waiting.postMessage('SKIP_WAITING');
+
+        // 新版が見つかったら、インストール完了時点で切り替える
+        reg.addEventListener('updatefound', ()=>{
+          const sw = reg.installing;
+          if(!sw) return;
+          sw.addEventListener('statechange', ()=>{
+            if(sw.state === 'installed' && navigator.serviceWorker.controller){
+              sw.postMessage('SKIP_WAITING');
+            }
+          });
+        });
+
+        // 起動時とアプリ復帰時に更新を確認
+        reg.update().catch(()=>{});
+        document.addEventListener('visibilitychange', ()=>{
+          if(document.visibilityState === 'visible') reg.update().catch(()=>{});
+        });
+      })
       .catch(err=> console.warn('[PWA] Service Worker 登録失敗（file://等では正常）', err));
   });
 }
