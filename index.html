@@ -2,10 +2,19 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 18:40 (JST)
-  バージョン: 2.0.0
+  ファイル最終更新日時: 2026-07-23 18:55 (JST)
+  バージョン: 2.1.0
 --------------------------------------------------------------------
   【更新履歴】
+    v2.1.0 (2026-07-23 18:55 JST)
+      - 新規1000語を toeic-new1000.json として追加（全て和訳付き）。
+        既存1691語と重複ゼロを検証済み。
+        内訳: 熟語450 / 動詞229 / 名詞145 / 形容詞144 / 副詞32。
+        テーマ: 人事・財務・IT・マーケティング・物流・オフィス業務・
+                会議・出張・法務ほか、TOEIC頻出の実務場面を網羅。
+        インポート画面に「新規1000問を追加」ボタンを新設。
+        同梱データは合計2691問に。
+      - sw.js のキャッシュに toeic-new1000.json を追加、CACHEを更新。
     v2.0.0 (2026-07-23 18:40 JST)
       - 外部AI生成データ第2弾(法務/契約/製造/品質管理テーマ)232件を点検し、
         137件を toeic-extra2.json として追加（和訳付き）。
@@ -321,8 +330,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "2.0.0";
-const LAST_UPDATED = "2026-07-23 18:40 JST"; // ファイル最終更新日時
+const APP_VERSION = "2.1.0";
+const LAST_UPDATED = "2026-07-23 18:55 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -888,6 +897,7 @@ function openImport(){
     <button class="btn btn-primary" onclick="loadBundled('./toeic-1000.json')" style="margin-top:8px">追加1000問を追加</button>
     <button class="btn btn-primary" onclick="loadBundled('./toeic-extra.json')" style="margin-top:8px">追加54問を追加</button>
     <button class="btn btn-primary" onclick="loadBundled('./toeic-extra2.json')" style="margin-top:8px">法務・製造137問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-new1000.json')" style="margin-top:8px">新規1000問を追加</button>
 
     <label class="fld" style="margin-top:16px">JSONファイルを読み込む</label>
     <input type="file" id="jsonFile" accept=".json,application/json" onchange="handleJsonFile(this)">

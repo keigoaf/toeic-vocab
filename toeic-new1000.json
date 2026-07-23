@@ -1,0 +1,7552 @@
+[
+ {
+  "term": "recruiter",
+  "meaning": "採用担当者",
+  "type": "word",
+  "example": "The recruiter contacted several promising candidates.",
+  "exampleJa": "その採用担当者は有望な候補者数名に連絡した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "resignation letter",
+  "meaning": "辞表",
+  "type": "idiom",
+  "example": "He submitted his resignation letter this morning.",
+  "exampleJa": "彼は今朝、辞表を提出した。"
+ },
+ {
+  "term": "probation",
+  "meaning": "試用期間",
+  "type": "word",
+  "example": "New staff complete a three-month probation.",
+  "exampleJa": "新入社員は3か月の試用期間を終える。",
+  "pos": "名詞"
+ },
+ {
+  "term": "severance",
+  "meaning": "退職手当",
+  "type": "word",
+  "example": "The company offered generous severance packages.",
+  "exampleJa": "その会社は手厚い退職手当を提示した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "payroll",
+  "meaning": "給与支払名簿",
+  "type": "word",
+  "example": "The payroll is processed on the 25th.",
+  "exampleJa": "給与支払いは25日に処理される。",
+  "pos": "名詞"
+ },
+ {
+  "term": "headcount",
+  "meaning": "人員数",
+  "type": "word",
+  "example": "We reduced headcount in the sales division.",
+  "exampleJa": "私たちは営業部門の人員数を削減した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "onboarding",
+  "meaning": "新人研修",
+  "type": "word",
+  "example": "Onboarding takes about two weeks.",
+  "exampleJa": "新人研修には約2週間かかる。",
+  "pos": "名詞"
+ },
+ {
+  "term": "mentor",
+  "meaning": "指導役",
+  "type": "word",
+  "example": "Each newcomer is assigned a mentor.",
+  "exampleJa": "新人にはそれぞれ指導役が割り当てられる。",
+  "pos": "名詞"
+ },
+ {
+  "term": "appraise",
+  "meaning": "査定する",
+  "type": "word",
+  "example": "Supervisors appraise staff twice a year.",
+  "exampleJa": "上司は年2回、職員を査定する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "promote from within",
+  "meaning": "内部昇進させる",
+  "type": "idiom",
+  "example": "We prefer to promote from within.",
+  "exampleJa": "私たちは内部昇進を好む。"
+ },
+ {
+  "term": "workforce planning",
+  "meaning": "要員計画",
+  "type": "idiom",
+  "example": "Workforce planning starts each October.",
+  "exampleJa": "要員計画は毎年10月に始まる。"
+ },
+ {
+  "term": "attrition",
+  "meaning": "自然減",
+  "type": "word",
+  "example": "Staff attrition remained low last year.",
+  "exampleJa": "昨年の職員の自然減は低いままだった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "apprenticeship",
+  "meaning": "見習い期間",
+  "type": "word",
+  "example": "She completed a two-year apprenticeship.",
+  "exampleJa": "彼女は2年の見習い期間を修了した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "vocational",
+  "meaning": "職業訓練の",
+  "type": "word",
+  "example": "The center offers vocational courses.",
+  "exampleJa": "そのセンターは職業訓練の講座を提供している。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "stipend",
+  "meaning": "手当",
+  "type": "word",
+  "example": "Interns receive a monthly stipend.",
+  "exampleJa": "研修生は毎月手当を受け取る。",
+  "pos": "名詞"
+ },
+ {
+  "term": "sabbatical",
+  "meaning": "長期休暇",
+  "type": "word",
+  "example": "He took a sabbatical to study abroad.",
+  "exampleJa": "彼は留学のため長期休暇を取った。",
+  "pos": "名詞"
+ },
+ {
+  "term": "nepotism",
+  "meaning": "縁故採用",
+  "type": "word",
+  "example": "The policy prevents nepotism in hiring.",
+  "exampleJa": "その方針は採用における縁故採用を防ぐ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "morale booster",
+  "meaning": "士気を高めるもの",
+  "type": "idiom",
+  "example": "The bonus was a real morale booster.",
+  "exampleJa": "その賞与は本当に士気を高めるものだった。"
+ },
+ {
+  "term": "job description",
+  "meaning": "職務内容説明書",
+  "type": "idiom",
+  "example": "Review the job description before applying.",
+  "exampleJa": "応募前に職務内容説明書を確認してください。"
+ },
+ {
+  "term": "cover letter",
+  "meaning": "添え状",
+  "type": "idiom",
+  "example": "Attach a cover letter to your resume.",
+  "exampleJa": "履歴書に添え状を添付してください。"
+ },
+ {
+  "term": "shortlist",
+  "meaning": "最終候補に残す",
+  "type": "word",
+  "example": "Three applicants were shortlisted yesterday.",
+  "exampleJa": "昨日、3名の応募者が最終候補に残された。",
+  "pos": "動詞"
+ },
+ {
+  "term": "screen",
+  "meaning": "選考する",
+  "type": "word",
+  "example": "We screen applicants by phone first.",
+  "exampleJa": "私たちはまず電話で応募者を選考する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "accreditation",
+  "meaning": "認定",
+  "type": "word",
+  "example": "The school received full accreditation.",
+  "exampleJa": "その学校は正式な認定を受けた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "proficient",
+  "meaning": "堪能な",
+  "type": "word",
+  "example": "She is proficient in three languages.",
+  "exampleJa": "彼女は3か国語に堪能だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "compensate for",
+  "meaning": "埋め合わせる",
+  "type": "idiom",
+  "example": "Overtime pay compensates for long hours.",
+  "exampleJa": "残業代が長時間労働を埋め合わせる。"
+ },
+ {
+  "term": "step in",
+  "meaning": "代役を務める",
+  "type": "idiom",
+  "example": "She stepped in when the manager left.",
+  "exampleJa": "部長が去ったとき、彼女が代役を務めた。"
+ },
+ {
+  "term": "fill a vacancy",
+  "meaning": "欠員を埋める",
+  "type": "idiom",
+  "example": "We need to fill a vacancy quickly.",
+  "exampleJa": "私たちは速やかに欠員を埋める必要がある。"
+ },
+ {
+  "term": "staffing",
+  "meaning": "人員配置",
+  "type": "word",
+  "example": "Staffing levels increased this quarter.",
+  "exampleJa": "今四半期は人員配置が増えた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "succession plan",
+  "meaning": "後継者計画",
+  "type": "idiom",
+  "example": "The board approved a succession plan.",
+  "exampleJa": "取締役会は後継者計画を承認した。"
+ },
+ {
+  "term": "workload management",
+  "meaning": "業務量管理",
+  "type": "idiom",
+  "example": "Workload management reduces employee stress.",
+  "exampleJa": "業務量管理は従業員の負担を減らす。"
+ },
+ {
+  "term": "accounts payable",
+  "meaning": "買掛金",
+  "type": "idiom",
+  "example": "Accounts payable increased last month.",
+  "exampleJa": "買掛金は先月増加した。"
+ },
+ {
+  "term": "accounts receivable",
+  "meaning": "売掛金",
+  "type": "idiom",
+  "example": "We track accounts receivable weekly.",
+  "exampleJa": "私たちは毎週売掛金を追跡している。"
+ },
+ {
+  "term": "amortize",
+  "meaning": "償却する",
+  "type": "word",
+  "example": "The firm amortizes the loan over ten years.",
+  "exampleJa": "その会社は融資を10年で償却する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "audit trail",
+  "meaning": "監査証跡",
+  "type": "idiom",
+  "example": "The system keeps a full audit trail.",
+  "exampleJa": "そのシステムは完全な監査証跡を保持する。"
+ },
+ {
+  "term": "bookkeeping",
+  "meaning": "簿記",
+  "type": "word",
+  "example": "Accurate bookkeeping prevents costly errors.",
+  "exampleJa": "正確な簿記は高くつく誤りを防ぐ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "cash flow",
+  "meaning": "資金繰り",
+  "type": "idiom",
+  "example": "Strong cash flow supports expansion.",
+  "exampleJa": "健全な資金繰りは拡大を支える。"
+ },
+ {
+  "term": "collateralize",
+  "meaning": "担保に入れる",
+  "type": "word",
+  "example": "They collateralized the property for a loan.",
+  "exampleJa": "彼らは融資のためその物件を担保に入れた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "creditworthy",
+  "meaning": "信用力のある",
+  "type": "word",
+  "example": "Only creditworthy clients receive terms.",
+  "exampleJa": "信用力のある顧客だけが掛け取引を認められる。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "depreciate",
+  "meaning": "価値が下がる",
+  "type": "word",
+  "example": "Equipment depreciates over five years.",
+  "exampleJa": "機器は5年かけて価値が下がる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "disbursement",
+  "meaning": "支出",
+  "type": "word",
+  "example": "The disbursement was approved yesterday.",
+  "exampleJa": "その支出は昨日承認された。",
+  "pos": "名詞"
+ },
+ {
+  "term": "fiscal year",
+  "meaning": "会計年度",
+  "type": "idiom",
+  "example": "Our fiscal year ends in March.",
+  "exampleJa": "当社の会計年度は3月に終わる。"
+ },
+ {
+  "term": "gross margin",
+  "meaning": "粗利益率",
+  "type": "idiom",
+  "example": "Gross margin improved this quarter.",
+  "exampleJa": "粗利益率は今四半期に改善した。"
+ },
+ {
+  "term": "insolvency",
+  "meaning": "支払不能",
+  "type": "word",
+  "example": "The firm faced insolvency last winter.",
+  "exampleJa": "その会社は昨冬、支払不能に直面した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "ledger entry",
+  "meaning": "仕訳記入",
+  "type": "idiom",
+  "example": "Every ledger entry requires approval.",
+  "exampleJa": "すべての仕訳記入には承認が必要だ。"
+ },
+ {
+  "term": "liquidity",
+  "meaning": "流動性",
+  "type": "word",
+  "example": "The bank monitors liquidity closely.",
+  "exampleJa": "その銀行は流動性を注意深く監視している。",
+  "pos": "名詞"
+ },
+ {
+  "term": "net income",
+  "meaning": "純利益",
+  "type": "idiom",
+  "example": "Net income rose by twelve percent.",
+  "exampleJa": "純利益は12%上昇した。"
+ },
+ {
+  "term": "overdue",
+  "meaning": "期限を過ぎた",
+  "type": "word",
+  "example": "Several invoices are overdue.",
+  "exampleJa": "いくつかの請求書が期限を過ぎている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "payable",
+  "meaning": "支払うべき",
+  "type": "word",
+  "example": "The balance is payable within thirty days.",
+  "exampleJa": "残額は30日以内に支払うべきものだ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "remit",
+  "meaning": "送金する",
+  "type": "word",
+  "example": "Please remit payment by Friday.",
+  "exampleJa": "金曜日までに送金してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "solvency",
+  "meaning": "支払能力",
+  "type": "word",
+  "example": "Auditors confirmed the firm's solvency.",
+  "exampleJa": "監査人はその会社の支払能力を確認した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "surtax",
+  "meaning": "付加税",
+  "type": "word",
+  "example": "A surtax applies to luxury goods.",
+  "exampleJa": "高級品には付加税が適用される。",
+  "pos": "名詞"
+ },
+ {
+  "term": "write-off",
+  "meaning": "償却/帳消し",
+  "type": "word",
+  "example": "The bad debt became a write-off.",
+  "exampleJa": "その不良債権は帳消しになった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "break even",
+  "meaning": "損益分岐点に達する",
+  "type": "idiom",
+  "example": "The project will break even next year.",
+  "exampleJa": "その事業は来年、損益分岐点に達する。"
+ },
+ {
+  "term": "balance the books",
+  "meaning": "帳簿を締める",
+  "type": "idiom",
+  "example": "The accountant balances the books monthly.",
+  "exampleJa": "会計士は毎月帳簿を締める。"
+ },
+ {
+  "term": "in the black",
+  "meaning": "黒字で",
+  "type": "idiom",
+  "example": "The company finished the year in the black.",
+  "exampleJa": "その会社は黒字で年度を終えた。"
+ },
+ {
+  "term": "in the red",
+  "meaning": "赤字で",
+  "type": "idiom",
+  "example": "The division remained in the red.",
+  "exampleJa": "その部門は赤字のままだった。"
+ },
+ {
+  "term": "cut corners",
+  "meaning": "手を抜く",
+  "type": "idiom",
+  "example": "Never cut corners on safety checks.",
+  "exampleJa": "安全点検で決して手を抜かないでください。"
+ },
+ {
+  "term": "foot the bill",
+  "meaning": "費用を負担する",
+  "type": "idiom",
+  "example": "The company will foot the bill.",
+  "exampleJa": "会社が費用を負担します。"
+ },
+ {
+  "term": "itemize",
+  "meaning": "項目別に記載する",
+  "type": "word",
+  "example": "Please itemize all travel costs.",
+  "exampleJa": "すべての旅費を項目別に記載してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "reimbursable",
+  "meaning": "払い戻し可能な",
+  "type": "word",
+  "example": "Meals are reimbursable up to a limit.",
+  "exampleJa": "食事代は上限まで払い戻し可能だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "backup",
+  "meaning": "予備/バックアップ",
+  "type": "word",
+  "example": "Run a backup before the upgrade.",
+  "exampleJa": "更新前にバックアップを取ってください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "bandwidth",
+  "meaning": "通信容量",
+  "type": "word",
+  "example": "Limited bandwidth slowed the video call.",
+  "exampleJa": "限られた通信容量がビデオ通話を遅くした。",
+  "pos": "名詞"
+ },
+ {
+  "term": "breach of data",
+  "meaning": "情報漏えい",
+  "type": "idiom",
+  "example": "A breach of data was reported immediately.",
+  "exampleJa": "情報漏えいは直ちに報告された。"
+ },
+ {
+  "term": "compatibility",
+  "meaning": "互換性",
+  "type": "word",
+  "example": "Check compatibility before installing.",
+  "exampleJa": "導入前に互換性を確認してください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "configure",
+  "meaning": "設定する",
+  "type": "word",
+  "example": "The technician configured the router.",
+  "exampleJa": "技術者がそのルーターを設定した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "credentials",
+  "meaning": "認証情報",
+  "type": "word",
+  "example": "Never share your login credentials.",
+  "exampleJa": "ログインの認証情報を決して共有しないでください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "dashboard",
+  "meaning": "管理画面",
+  "type": "word",
+  "example": "The dashboard shows real-time sales.",
+  "exampleJa": "その管理画面は実時間の売上を表示する。",
+  "pos": "名詞"
+ },
+ {
+  "term": "downtime window",
+  "meaning": "停止予定時間",
+  "type": "idiom",
+  "example": "The downtime window is two hours.",
+  "exampleJa": "停止予定時間は2時間だ。"
+ },
+ {
+  "term": "encrypt",
+  "meaning": "暗号化する",
+  "type": "word",
+  "example": "We encrypt all customer records.",
+  "exampleJa": "私たちはすべての顧客記録を暗号化している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "firewall",
+  "meaning": "防護壁",
+  "type": "word",
+  "example": "The firewall blocked the suspicious traffic.",
+  "exampleJa": "その防護壁は不審な通信を遮断した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "glitch",
+  "meaning": "不具合",
+  "type": "word",
+  "example": "A software glitch delayed the launch.",
+  "exampleJa": "ソフトの不具合が公開を遅らせた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "interface",
+  "meaning": "接続部/画面",
+  "type": "word",
+  "example": "The new interface is easier to use.",
+  "exampleJa": "その新しい画面はより使いやすい。",
+  "pos": "名詞"
+ },
+ {
+  "term": "log in",
+  "meaning": "ログインする",
+  "type": "idiom",
+  "example": "Please log in with your employee ID.",
+  "exampleJa": "社員番号でログインしてください。"
+ },
+ {
+  "term": "outsource development",
+  "meaning": "開発を外注する",
+  "type": "idiom",
+  "example": "We outsource development to a local firm.",
+  "exampleJa": "私たちは開発を地元の会社に外注している。"
+ },
+ {
+  "term": "password reset",
+  "meaning": "パスワード再設定",
+  "type": "idiom",
+  "example": "Request a password reset from the help desk.",
+  "exampleJa": "相談窓口にパスワード再設定を依頼してください。"
+ },
+ {
+  "term": "patch",
+  "meaning": "修正プログラム",
+  "type": "word",
+  "example": "Install the security patch today.",
+  "exampleJa": "今日、安全上の修正プログラムを導入してください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "phishing",
+  "meaning": "偽装詐欺",
+  "type": "word",
+  "example": "Staff learned to recognize phishing emails.",
+  "exampleJa": "職員は偽装詐欺のメールを見分けることを学んだ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "rollout",
+  "meaning": "展開",
+  "type": "word",
+  "example": "The rollout begins next Monday.",
+  "exampleJa": "その展開は来週月曜日に始まる。",
+  "pos": "名詞"
+ },
+ {
+  "term": "scalable",
+  "meaning": "拡張可能な",
+  "type": "word",
+  "example": "We need a scalable solution.",
+  "exampleJa": "私たちには拡張可能な解決策が必要だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "server outage",
+  "meaning": "サーバー障害",
+  "type": "idiom",
+  "example": "A server outage affected online orders.",
+  "exampleJa": "サーバー障害がオンライン注文に影響した。"
+ },
+ {
+  "term": "troubleshoot",
+  "meaning": "問題を解決する",
+  "type": "word",
+  "example": "Technicians troubleshoot issues remotely.",
+  "exampleJa": "技術者は遠隔で問題を解決する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "upgrade path",
+  "meaning": "移行手順",
+  "type": "idiom",
+  "example": "The vendor explained the upgrade path.",
+  "exampleJa": "その業者は移行手順を説明した。"
+ },
+ {
+  "term": "user-friendly",
+  "meaning": "使いやすい",
+  "type": "word",
+  "example": "The app is remarkably user-friendly.",
+  "exampleJa": "そのアプリは著しく使いやすい。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "sync",
+  "meaning": "同期する",
+  "type": "word",
+  "example": "The app syncs data across devices.",
+  "exampleJa": "そのアプリは端末間でデータを同期する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "log out",
+  "meaning": "ログアウトする",
+  "type": "idiom",
+  "example": "Always log out before leaving.",
+  "exampleJa": "退出前に必ずログアウトしてください。"
+ },
+ {
+  "term": "crash",
+  "meaning": "異常終了する",
+  "type": "word",
+  "example": "The system crashed during peak hours.",
+  "exampleJa": "そのシステムは繁忙時間帯に異常終了した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "downtime notice",
+  "meaning": "停止のお知らせ",
+  "type": "idiom",
+  "example": "A downtime notice was emailed yesterday.",
+  "exampleJa": "停止のお知らせが昨日メールで送られた。"
+ },
+ {
+  "term": "streamline operations",
+  "meaning": "業務を効率化する",
+  "type": "idiom",
+  "example": "The software streamlines operations significantly.",
+  "exampleJa": "そのソフトは業務を著しく効率化する。"
+ },
+ {
+  "term": "automate",
+  "meaning": "自動化する",
+  "type": "word",
+  "example": "We automated the invoicing process.",
+  "exampleJa": "私たちは請求処理を自動化した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "integration",
+  "meaning": "統合",
+  "type": "word",
+  "example": "System integration finished last week.",
+  "exampleJa": "システムの統合は先週完了した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "brand awareness",
+  "meaning": "銘柄認知度",
+  "type": "idiom",
+  "example": "The campaign raised brand awareness.",
+  "exampleJa": "その宣伝活動は銘柄認知度を高めた。"
+ },
+ {
+  "term": "target audience",
+  "meaning": "対象顧客層",
+  "type": "idiom",
+  "example": "Identify your target audience first.",
+  "exampleJa": "まず対象顧客層を特定してください。"
+ },
+ {
+  "term": "market share",
+  "meaning": "市場占有率",
+  "type": "idiom",
+  "example": "Our market share grew steadily.",
+  "exampleJa": "当社の市場占有率は着実に伸びた。"
+ },
+ {
+  "term": "word of mouth",
+  "meaning": "口コミ",
+  "type": "idiom",
+  "example": "Word of mouth brought new customers.",
+  "exampleJa": "口コミが新しい顧客を連れてきた。"
+ },
+ {
+  "term": "testimonial",
+  "meaning": "推薦の言葉",
+  "type": "word",
+  "example": "Customer testimonials appear on our site.",
+  "exampleJa": "顧客の推薦の言葉が当社のサイトに掲載されている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "endorsement deal",
+  "meaning": "推薦契約",
+  "type": "idiom",
+  "example": "The athlete signed an endorsement deal.",
+  "exampleJa": "その選手は推薦契約を結んだ。"
+ },
+ {
+  "term": "promotional",
+  "meaning": "販促の",
+  "type": "word",
+  "example": "Promotional materials arrived yesterday.",
+  "exampleJa": "販促資料が昨日届いた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "giveaway",
+  "meaning": "景品",
+  "type": "word",
+  "example": "The giveaway attracted many visitors.",
+  "exampleJa": "その景品は多くの来場者を引きつけた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "loyalty program",
+  "meaning": "顧客優待制度",
+  "type": "idiom",
+  "example": "Our loyalty program rewards repeat buyers.",
+  "exampleJa": "当社の顧客優待制度は再購入者に報いる。"
+ },
+ {
+  "term": "upsell",
+  "meaning": "上位商品を勧める",
+  "type": "word",
+  "example": "Staff upsell premium plans politely.",
+  "exampleJa": "職員は丁寧に上位のプランを勧める。",
+  "pos": "動詞"
+ },
+ {
+  "term": "cross-sell",
+  "meaning": "関連商品を勧める",
+  "type": "word",
+  "example": "We cross-sell accessories at checkout.",
+  "exampleJa": "私たちは会計時に関連商品を勧める。",
+  "pos": "動詞"
+ },
+ {
+  "term": "lead generation",
+  "meaning": "見込み客獲得",
+  "type": "idiom",
+  "example": "Lead generation improved this quarter.",
+  "exampleJa": "見込み客の獲得は今四半期に改善した。"
+ },
+ {
+  "term": "conversion rate",
+  "meaning": "成約率",
+  "type": "idiom",
+  "example": "The new page raised the conversion rate.",
+  "exampleJa": "その新しいページは成約率を高めた。"
+ },
+ {
+  "term": "outreach",
+  "meaning": "働きかけ",
+  "type": "word",
+  "example": "Community outreach improved our image.",
+  "exampleJa": "地域への働きかけは当社の印象を良くした。",
+  "pos": "名詞"
+ },
+ {
+  "term": "segment",
+  "meaning": "区分する",
+  "type": "word",
+  "example": "We segment customers by purchase history.",
+  "exampleJa": "私たちは購入履歴で顧客を区分する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "niche market",
+  "meaning": "隙間市場",
+  "type": "idiom",
+  "example": "They dominate a profitable niche market.",
+  "exampleJa": "彼らは利益の出る隙間市場を支配している。"
+ },
+ {
+  "term": "competitive edge",
+  "meaning": "競争上の強み",
+  "type": "idiom",
+  "example": "Fast delivery is our competitive edge.",
+  "exampleJa": "迅速な配達が当社の競争上の強みだ。"
+ },
+ {
+  "term": "point of sale",
+  "meaning": "販売時点",
+  "type": "idiom",
+  "example": "Data is collected at the point of sale.",
+  "exampleJa": "データは販売時点で収集される。"
+ },
+ {
+  "term": "merchandising",
+  "meaning": "商品展示",
+  "type": "word",
+  "example": "Good merchandising increases impulse buying.",
+  "exampleJa": "良い商品展示は衝動買いを増やす。",
+  "pos": "名詞"
+ },
+ {
+  "term": "sales pitch",
+  "meaning": "売り込み口上",
+  "type": "idiom",
+  "example": "She refined her sales pitch carefully.",
+  "exampleJa": "彼女は売り込み口上を入念に練り直した。"
+ },
+ {
+  "term": "close a deal",
+  "meaning": "取引をまとめる",
+  "type": "idiom",
+  "example": "He closed the deal in one meeting.",
+  "exampleJa": "彼は一度の会合で取引をまとめた。"
+ },
+ {
+  "term": "follow-up call",
+  "meaning": "追跡の電話",
+  "type": "idiom",
+  "example": "Make a follow-up call next week.",
+  "exampleJa": "来週、追跡の電話をしてください。"
+ },
+ {
+  "term": "prospecting",
+  "meaning": "見込み客開拓",
+  "type": "word",
+  "example": "Prospecting requires patience and persistence.",
+  "exampleJa": "見込み客開拓には忍耐と粘りが必要だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "referral program",
+  "meaning": "紹介制度",
+  "type": "idiom",
+  "example": "Our referral program rewards both parties.",
+  "exampleJa": "当社の紹介制度は双方に報いる。"
+ },
+ {
+  "term": "brand loyalty",
+  "meaning": "銘柄への愛着",
+  "type": "idiom",
+  "example": "Brand loyalty drives repeat purchases.",
+  "exampleJa": "銘柄への愛着が再購入を促す。"
+ },
+ {
+  "term": "market penetration",
+  "meaning": "市場浸透",
+  "type": "idiom",
+  "example": "Market penetration exceeded our targets.",
+  "exampleJa": "市場浸透は目標を上回った。"
+ },
+ {
+  "term": "focus group",
+  "meaning": "少人数調査会",
+  "type": "idiom",
+  "example": "A focus group tested the new packaging.",
+  "exampleJa": "少人数調査会が新しい包装を試した。"
+ },
+ {
+  "term": "demographic",
+  "meaning": "人口統計上の集団",
+  "type": "word",
+  "example": "This demographic prefers online shopping.",
+  "exampleJa": "この集団はオンライン購入を好む。",
+  "pos": "名詞"
+ },
+ {
+  "term": "advertise heavily",
+  "meaning": "大々的に宣伝する",
+  "type": "idiom",
+  "example": "They advertise heavily during holidays.",
+  "exampleJa": "彼らは休暇中に大々的に宣伝する。"
+ },
+ {
+  "term": "brand image",
+  "meaning": "銘柄の印象",
+  "type": "idiom",
+  "example": "The recall damaged their brand image.",
+  "exampleJa": "その回収は彼らの銘柄の印象を傷つけた。"
+ },
+ {
+  "term": "air freight",
+  "meaning": "航空貨物",
+  "type": "idiom",
+  "example": "Air freight costs more than sea shipping.",
+  "exampleJa": "航空貨物は船便より費用がかかる。"
+ },
+ {
+  "term": "bill of lading",
+  "meaning": "船荷証券",
+  "type": "idiom",
+  "example": "The bill of lading arrived by courier.",
+  "exampleJa": "船荷証券が宅配便で届いた。"
+ },
+ {
+  "term": "bonded warehouse",
+  "meaning": "保税倉庫",
+  "type": "idiom",
+  "example": "Goods are stored in a bonded warehouse.",
+  "exampleJa": "商品は保税倉庫に保管されている。"
+ },
+ {
+  "term": "consolidate shipments",
+  "meaning": "積荷をまとめる",
+  "type": "idiom",
+  "example": "We consolidate shipments to cut costs.",
+  "exampleJa": "私たちは費用削減のため積荷をまとめている。"
+ },
+ {
+  "term": "customs clearance",
+  "meaning": "通関手続き",
+  "type": "idiom",
+  "example": "Customs clearance took two days.",
+  "exampleJa": "通関手続きに2日かかった。"
+ },
+ {
+  "term": "dispatch note",
+  "meaning": "発送伝票",
+  "type": "idiom",
+  "example": "Attach a dispatch note to each parcel.",
+  "exampleJa": "各小包に発送伝票を貼付してください。"
+ },
+ {
+  "term": "expedite",
+  "meaning": "迅速に処理する",
+  "type": "word",
+  "example": "Please expedite the urgent order.",
+  "exampleJa": "その緊急注文を迅速に処理してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "forwarder",
+  "meaning": "運送取扱人",
+  "type": "word",
+  "example": "Our forwarder handles overseas shipments.",
+  "exampleJa": "当社の運送取扱人が海外出荷を扱っている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "in transit",
+  "meaning": "輸送中で",
+  "type": "idiom",
+  "example": "The goods are still in transit.",
+  "exampleJa": "その商品はまだ輸送中だ。"
+ },
+ {
+  "term": "lead time",
+  "meaning": "納期までの期間",
+  "type": "idiom",
+  "example": "Lead time increased to three weeks.",
+  "exampleJa": "納期までの期間が3週間に延びた。"
+ },
+ {
+  "term": "logistics hub",
+  "meaning": "物流拠点",
+  "type": "idiom",
+  "example": "The city became a major logistics hub.",
+  "exampleJa": "その都市は主要な物流拠点になった。"
+ },
+ {
+  "term": "pallet",
+  "meaning": "荷台",
+  "type": "word",
+  "example": "Each pallet holds fifty boxes.",
+  "exampleJa": "荷台1台につき50箱積める。",
+  "pos": "名詞"
+ },
+ {
+  "term": "perishable",
+  "meaning": "傷みやすい",
+  "type": "word",
+  "example": "Perishable goods require refrigeration.",
+  "exampleJa": "傷みやすい商品は冷蔵が必要だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "port of entry",
+  "meaning": "入国港/輸入港",
+  "type": "idiom",
+  "example": "Goods clear customs at the port of entry.",
+  "exampleJa": "商品は輸入港で通関する。"
+ },
+ {
+  "term": "quota",
+  "meaning": "割当量",
+  "type": "word",
+  "example": "Import quotas limit foreign competition.",
+  "exampleJa": "輸入割当量は外国との競争を制限する。",
+  "pos": "名詞"
+ },
+ {
+  "term": "replenish",
+  "meaning": "補充する",
+  "type": "word",
+  "example": "We replenish stock every Monday.",
+  "exampleJa": "私たちは毎週月曜日に在庫を補充する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "stockpile",
+  "meaning": "備蓄する",
+  "type": "word",
+  "example": "The factory stockpiled raw materials.",
+  "exampleJa": "その工場は原材料を備蓄した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "tariff barrier",
+  "meaning": "関税障壁",
+  "type": "idiom",
+  "example": "Tariff barriers reduced import volume.",
+  "exampleJa": "関税障壁が輸入量を減らした。"
+ },
+ {
+  "term": "tracking number",
+  "meaning": "追跡番号",
+  "type": "idiom",
+  "example": "Use the tracking number to check delivery.",
+  "exampleJa": "追跡番号で配達状況を確認してください。"
+ },
+ {
+  "term": "unload",
+  "meaning": "荷降ろしする",
+  "type": "word",
+  "example": "Workers unload trucks each morning.",
+  "exampleJa": "作業員は毎朝トラックの荷降ろしをする。",
+  "pos": "動詞"
+ },
+ {
+  "term": "cargo handling",
+  "meaning": "貨物取扱い",
+  "type": "idiom",
+  "example": "Cargo handling improved after training.",
+  "exampleJa": "研修後、貨物取扱いが改善した。"
+ },
+ {
+  "term": "just in time",
+  "meaning": "必要な時に必要なだけ",
+  "type": "idiom",
+  "example": "The plant uses just in time delivery.",
+  "exampleJa": "その工場は必要な時に必要なだけの納入方式を使っている。"
+ },
+ {
+  "term": "outbound",
+  "meaning": "出荷の",
+  "type": "word",
+  "example": "Outbound shipments peak on Fridays.",
+  "exampleJa": "出荷は金曜日に最も多くなる。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "inbound",
+  "meaning": "入荷の",
+  "type": "word",
+  "example": "Inbound deliveries arrive before noon.",
+  "exampleJa": "入荷は正午前に到着する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "freight forwarder",
+  "meaning": "貨物輸送業者",
+  "type": "idiom",
+  "example": "Our freight forwarder arranged everything.",
+  "exampleJa": "当社の貨物輸送業者がすべて手配した。"
+ },
+ {
+  "term": "bulk order",
+  "meaning": "大口注文",
+  "type": "idiom",
+  "example": "Bulk orders receive a discount.",
+  "exampleJa": "大口注文は割引を受けられる。"
+ },
+ {
+  "term": "backordered",
+  "meaning": "入荷待ちの",
+  "type": "word",
+  "example": "The item is currently backordered.",
+  "exampleJa": "その商品は現在、入荷待ちだ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "packing slip",
+  "meaning": "梱包明細書",
+  "type": "idiom",
+  "example": "Check the packing slip against the order.",
+  "exampleJa": "梱包明細書を注文と照合してください。"
+ },
+ {
+  "term": "damaged in transit",
+  "meaning": "輸送中に破損して",
+  "type": "idiom",
+  "example": "Two boxes were damaged in transit.",
+  "exampleJa": "2箱が輸送中に破損した。"
+ },
+ {
+  "term": "insured shipment",
+  "meaning": "保険付き出荷",
+  "type": "idiom",
+  "example": "All insured shipments are tracked closely.",
+  "exampleJa": "保険付き出荷はすべて厳密に追跡される。"
+ },
+ {
+  "term": "agenda item",
+  "meaning": "議題項目",
+  "type": "idiom",
+  "example": "The last agenda item was postponed.",
+  "exampleJa": "最後の議題項目は延期された。"
+ },
+ {
+  "term": "archive",
+  "meaning": "保管する",
+  "type": "word",
+  "example": "We archive old files every January.",
+  "exampleJa": "私たちは毎年1月に古い書類を保管する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "binder",
+  "meaning": "書類ばさみ",
+  "type": "word",
+  "example": "Store the reports in a binder.",
+  "exampleJa": "報告書は書類ばさみに保管してください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "circular",
+  "meaning": "回覧文書",
+  "type": "word",
+  "example": "A circular announced the new hours.",
+  "exampleJa": "回覧文書が新しい営業時間を告知した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "collate",
+  "meaning": "丁合いする",
+  "type": "word",
+  "example": "Please collate the handouts before noon.",
+  "exampleJa": "正午までに配布資料を丁合いしてください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "correspondence file",
+  "meaning": "通信記録",
+  "type": "idiom",
+  "example": "Keep the correspondence file updated.",
+  "exampleJa": "通信記録を最新に保ってください。"
+ },
+ {
+  "term": "cubicle",
+  "meaning": "仕切り席",
+  "type": "word",
+  "example": "Each employee has a private cubicle.",
+  "exampleJa": "従業員はそれぞれ個別の仕切り席を持っている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "draft an email",
+  "meaning": "メールを起草する",
+  "type": "idiom",
+  "example": "She drafted an email to the client.",
+  "exampleJa": "彼女は顧客へのメールを起草した。"
+ },
+ {
+  "term": "filing cabinet",
+  "meaning": "書類棚",
+  "type": "idiom",
+  "example": "The contracts are in the filing cabinet.",
+  "exampleJa": "契約書は書類棚にある。"
+ },
+ {
+  "term": "in-house",
+  "meaning": "社内の",
+  "type": "word",
+  "example": "We handle design in-house.",
+  "exampleJa": "私たちは設計を社内で行っている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "intranet",
+  "meaning": "社内網",
+  "type": "word",
+  "example": "The policy is posted on the intranet.",
+  "exampleJa": "その方針は社内網に掲載されている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "legible handwriting",
+  "meaning": "読みやすい筆跡",
+  "type": "idiom",
+  "example": "Legible handwriting prevents order errors.",
+  "exampleJa": "読みやすい筆跡は注文の誤りを防ぐ。"
+ },
+ {
+  "term": "letterhead",
+  "meaning": "社名入り便箋",
+  "type": "word",
+  "example": "Print the letter on company letterhead.",
+  "exampleJa": "社名入り便箋にその手紙を印刷してください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "memo",
+  "meaning": "連絡メモ",
+  "type": "word",
+  "example": "A memo explained the schedule change.",
+  "exampleJa": "連絡メモが日程変更を説明した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "minutes",
+  "meaning": "議事録",
+  "type": "word",
+  "example": "Please circulate the minutes today.",
+  "exampleJa": "今日、議事録を回覧してください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "photocopier",
+  "meaning": "複写機",
+  "type": "word",
+  "example": "The photocopier needs more paper.",
+  "exampleJa": "その複写機は紙の補充が必要だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "shred",
+  "meaning": "裁断する",
+  "type": "word",
+  "example": "Shred confidential documents daily.",
+  "exampleJa": "機密書類は毎日裁断してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "stationery",
+  "meaning": "文房具",
+  "type": "word",
+  "example": "We ordered new office stationery.",
+  "exampleJa": "私たちは新しい事務用文房具を注文した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "supply closet",
+  "meaning": "備品庫",
+  "type": "idiom",
+  "example": "Extra paper is in the supply closet.",
+  "exampleJa": "予備の紙は備品庫にある。"
+ },
+ {
+  "term": "time sheet",
+  "meaning": "勤務時間記録",
+  "type": "idiom",
+  "example": "Submit your time sheet every Friday.",
+  "exampleJa": "毎週金曜日に勤務時間記録を提出してください。"
+ },
+ {
+  "term": "voicemail",
+  "meaning": "留守番電話",
+  "type": "word",
+  "example": "She left a voicemail this morning.",
+  "exampleJa": "彼女は今朝、留守番電話に伝言を残した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "workstation setup",
+  "meaning": "作業環境の設定",
+  "type": "idiom",
+  "example": "Workstation setup takes about an hour.",
+  "exampleJa": "作業環境の設定には約1時間かかる。"
+ },
+ {
+  "term": "out of office",
+  "meaning": "不在で",
+  "type": "idiom",
+  "example": "He is out of office until Thursday.",
+  "exampleJa": "彼は木曜日まで不在だ。"
+ },
+ {
+  "term": "on-site",
+  "meaning": "現場での",
+  "type": "word",
+  "example": "On-site support is available weekdays.",
+  "exampleJa": "現場での支援は平日に利用できる。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "off-site",
+  "meaning": "社外での",
+  "type": "word",
+  "example": "The team held an off-site meeting.",
+  "exampleJa": "そのチームは社外で会議を開いた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "paperless",
+  "meaning": "紙を使わない",
+  "type": "word",
+  "example": "We are moving toward a paperless office.",
+  "exampleJa": "私たちは紙を使わない事務所へ移行しつつある。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "clock in",
+  "meaning": "出勤打刻する",
+  "type": "idiom",
+  "example": "Employees clock in before eight.",
+  "exampleJa": "従業員は8時前に出勤打刻する。"
+ },
+ {
+  "term": "clock out",
+  "meaning": "退勤打刻する",
+  "type": "idiom",
+  "example": "Remember to clock out before leaving.",
+  "exampleJa": "退出前に退勤打刻を忘れないでください。"
+ },
+ {
+  "term": "run an errand",
+  "meaning": "用事を済ませる",
+  "type": "idiom",
+  "example": "She ran an errand during lunch.",
+  "exampleJa": "彼女は昼休みに用事を済ませた。"
+ },
+ {
+  "term": "take notes",
+  "meaning": "記録を取る",
+  "type": "idiom",
+  "example": "Please take notes during the briefing.",
+  "exampleJa": "説明会中に記録を取ってください。"
+ },
+ {
+  "term": "adjournment",
+  "meaning": "休会",
+  "type": "word",
+  "example": "The adjournment lasted fifteen minutes.",
+  "exampleJa": "その休会は15分続いた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "attendee list",
+  "meaning": "出席者名簿",
+  "type": "idiom",
+  "example": "Print the attendee list before the meeting.",
+  "exampleJa": "会議前に出席者名簿を印刷してください。"
+ },
+ {
+  "term": "brainstorm",
+  "meaning": "意見を出し合う",
+  "type": "word",
+  "example": "The team brainstormed new product names.",
+  "exampleJa": "そのチームは新製品名の意見を出し合った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "chair a meeting",
+  "meaning": "会議の議長を務める",
+  "type": "idiom",
+  "example": "She will chair a meeting on Monday.",
+  "exampleJa": "彼女は月曜日に会議の議長を務める。"
+ },
+ {
+  "term": "consensus",
+  "meaning": "合意",
+  "type": "word",
+  "example": "The group reached a clear consensus.",
+  "exampleJa": "その集団は明確な合意に達した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "adjourn until",
+  "meaning": "〜まで休会する",
+  "type": "idiom",
+  "example": "The chair adjourned until next Tuesday.",
+  "exampleJa": "議長は来週火曜日まで休会した。"
+ },
+ {
+  "term": "hammer out",
+  "meaning": "まとめ上げる",
+  "type": "idiom",
+  "example": "They hammered out a fair agreement.",
+  "exampleJa": "彼らは公正な合意をまとめ上げた。"
+ },
+ {
+  "term": "keynote address",
+  "meaning": "基調演説",
+  "type": "idiom",
+  "example": "The keynote address opened the conference.",
+  "exampleJa": "基調演説が会議の幕を開けた。"
+ },
+ {
+  "term": "moderate a panel",
+  "meaning": "討論会を進行する",
+  "type": "idiom",
+  "example": "He moderated a panel on trade.",
+  "exampleJa": "彼は貿易についての討論会を進行した。"
+ },
+ {
+  "term": "quorum",
+  "meaning": "定足数",
+  "type": "word",
+  "example": "We lacked a quorum for the vote.",
+  "exampleJa": "私たちは採決の定足数を欠いていた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "recap",
+  "meaning": "要点を繰り返す",
+  "type": "word",
+  "example": "Let me recap the main decisions.",
+  "exampleJa": "主な決定の要点を繰り返させてください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "second a motion",
+  "meaning": "動議に賛成する",
+  "type": "idiom",
+  "example": "She seconded the motion immediately.",
+  "exampleJa": "彼女は直ちにその動議に賛成した。"
+ },
+ {
+  "term": "table a proposal",
+  "meaning": "提案を棚上げする",
+  "type": "idiom",
+  "example": "They tabled the proposal until June.",
+  "exampleJa": "彼らは6月までその提案を棚上げした。"
+ },
+ {
+  "term": "veto",
+  "meaning": "拒否する",
+  "type": "word",
+  "example": "The director vetoed the budget increase.",
+  "exampleJa": "取締役はその予算増額を拒否した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "common ground",
+  "meaning": "共通点",
+  "type": "idiom",
+  "example": "We found common ground quickly.",
+  "exampleJa": "私たちは素早く共通点を見つけた。"
+ },
+ {
+  "term": "counteroffer",
+  "meaning": "対案",
+  "type": "word",
+  "example": "The buyer submitted a counteroffer.",
+  "exampleJa": "買い手は対案を提出した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "bargaining power",
+  "meaning": "交渉力",
+  "type": "idiom",
+  "example": "Large orders increase bargaining power.",
+  "exampleJa": "大量注文は交渉力を高める。"
+ },
+ {
+  "term": "stalemate",
+  "meaning": "行き詰まり",
+  "type": "word",
+  "example": "Talks ended in a stalemate.",
+  "exampleJa": "話し合いは行き詰まりに終わった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "concede",
+  "meaning": "譲る",
+  "type": "word",
+  "example": "Neither side would concede on price.",
+  "exampleJa": "どちらの側も価格で譲ろうとしなかった。",
+  "pos": "動詞"
+ },
+ {
+  "term": "mediate a dispute",
+  "meaning": "紛争を調停する",
+  "type": "idiom",
+  "example": "A lawyer mediated the dispute.",
+  "exampleJa": "弁護士がその紛争を調停した。"
+ },
+ {
+  "term": "break the ice",
+  "meaning": "場を和ませる",
+  "type": "idiom",
+  "example": "A short joke broke the ice.",
+  "exampleJa": "短い冗談が場を和ませた。"
+ },
+ {
+  "term": "get down to business",
+  "meaning": "本題に入る",
+  "type": "idiom",
+  "example": "Let's get down to business now.",
+  "exampleJa": "さあ本題に入りましょう。"
+ },
+ {
+  "term": "wrap up",
+  "meaning": "締めくくる",
+  "type": "idiom",
+  "example": "We wrapped up the meeting early.",
+  "exampleJa": "私たちは会議を早く締めくくった。"
+ },
+ {
+  "term": "open the floor",
+  "meaning": "発言を求める",
+  "type": "idiom",
+  "example": "The chair opened the floor for questions.",
+  "exampleJa": "議長は質問の発言を求めた。"
+ },
+ {
+  "term": "show of hands",
+  "meaning": "挙手による採決",
+  "type": "idiom",
+  "example": "We decided by a show of hands.",
+  "exampleJa": "私たちは挙手による採決で決めた。"
+ },
+ {
+  "term": "in favor of",
+  "meaning": "賛成して",
+  "type": "idiom",
+  "example": "Most members voted in favor of it.",
+  "exampleJa": "大半の会員がそれに賛成票を投じた。"
+ },
+ {
+  "term": "abstain",
+  "meaning": "棄権する",
+  "type": "word",
+  "example": "Two directors abstained from voting.",
+  "exampleJa": "2名の取締役が投票を棄権した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "unanimously",
+  "meaning": "満場一致で",
+  "type": "word",
+  "example": "The plan passed unanimously.",
+  "exampleJa": "その計画は満場一致で可決した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "agenda-setting",
+  "meaning": "議題設定",
+  "type": "word",
+  "example": "Agenda-setting happens a week ahead.",
+  "exampleJa": "議題設定は1週間前に行われる。",
+  "pos": "名詞"
+ },
+ {
+  "term": "action item",
+  "meaning": "対応事項",
+  "type": "idiom",
+  "example": "Each action item has an owner.",
+  "exampleJa": "各対応事項には担当者がいる。"
+ },
+ {
+  "term": "boarding pass",
+  "meaning": "搭乗券",
+  "type": "idiom",
+  "example": "Show your boarding pass at the gate.",
+  "exampleJa": "搭乗口で搭乗券を提示してください。"
+ },
+ {
+  "term": "carry-on",
+  "meaning": "機内持ち込み手荷物",
+  "type": "word",
+  "example": "Only one carry-on is permitted.",
+  "exampleJa": "機内持ち込み手荷物は1個のみ許可される。",
+  "pos": "名詞"
+ },
+ {
+  "term": "checked baggage",
+  "meaning": "預け入れ手荷物",
+  "type": "idiom",
+  "example": "Checked baggage fees increased.",
+  "exampleJa": "預け入れ手荷物の料金が上がった。"
+ },
+ {
+  "term": "connecting flight",
+  "meaning": "乗り継ぎ便",
+  "type": "idiom",
+  "example": "We missed our connecting flight.",
+  "exampleJa": "私たちは乗り継ぎ便に乗り遅れた。"
+ },
+ {
+  "term": "aisle seat",
+  "meaning": "通路側の席",
+  "type": "idiom",
+  "example": "She requested an aisle seat.",
+  "exampleJa": "彼女は通路側の席を希望した。"
+ },
+ {
+  "term": "per diem",
+  "meaning": "日当",
+  "type": "word",
+  "example": "Travelers receive a daily per diem.",
+  "exampleJa": "出張者は日々の日当を受け取る。",
+  "pos": "名詞"
+ },
+ {
+  "term": "round trip",
+  "meaning": "往復",
+  "type": "idiom",
+  "example": "Book a round trip to save money.",
+  "exampleJa": "費用節約のため往復で予約してください。"
+ },
+ {
+  "term": "shuttle service",
+  "meaning": "送迎バス",
+  "type": "idiom",
+  "example": "A free shuttle service runs hourly.",
+  "exampleJa": "無料の送迎バスが1時間ごとに運行している。"
+ },
+ {
+  "term": "travel advisory",
+  "meaning": "渡航注意情報",
+  "type": "idiom",
+  "example": "Check the travel advisory before departure.",
+  "exampleJa": "出発前に渡航注意情報を確認してください。"
+ },
+ {
+  "term": "visa application",
+  "meaning": "査証申請",
+  "type": "idiom",
+  "example": "The visa application takes ten days.",
+  "exampleJa": "査証申請には10日かかる。"
+ },
+ {
+  "term": "front desk",
+  "meaning": "受付",
+  "type": "idiom",
+  "example": "Ask the front desk for directions.",
+  "exampleJa": "受付で道順を尋ねてください。"
+ },
+ {
+  "term": "concierge",
+  "meaning": "接客係",
+  "type": "word",
+  "example": "The concierge booked our tickets.",
+  "exampleJa": "接客係が私たちの切符を予約した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "amenities",
+  "meaning": "備品/設備",
+  "type": "word",
+  "example": "The room amenities include a safe.",
+  "exampleJa": "室内の備品には金庫が含まれる。",
+  "pos": "名詞"
+ },
+ {
+  "term": "complimentary breakfast",
+  "meaning": "無料の朝食",
+  "type": "idiom",
+  "example": "Guests enjoy a complimentary breakfast.",
+  "exampleJa": "宿泊客は無料の朝食を楽しめる。"
+ },
+ {
+  "term": "check-out time",
+  "meaning": "退室時刻",
+  "type": "idiom",
+  "example": "Check-out time is eleven o'clock.",
+  "exampleJa": "退室時刻は11時だ。"
+ },
+ {
+  "term": "room service",
+  "meaning": "室内サービス",
+  "type": "idiom",
+  "example": "Room service operates until midnight.",
+  "exampleJa": "室内サービスは深夜まで営業している。"
+ },
+ {
+  "term": "banquet hall",
+  "meaning": "宴会場",
+  "type": "idiom",
+  "example": "The banquet hall seats three hundred.",
+  "exampleJa": "その宴会場は300人収容できる。"
+ },
+ {
+  "term": "catering",
+  "meaning": "仕出し",
+  "type": "word",
+  "example": "We hired catering for the event.",
+  "exampleJa": "私たちはその催しの仕出しを依頼した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "reservation confirmation",
+  "meaning": "予約確認",
+  "type": "idiom",
+  "example": "Print your reservation confirmation.",
+  "exampleJa": "予約確認書を印刷してください。"
+ },
+ {
+  "term": "walk-in",
+  "meaning": "予約なしの客",
+  "type": "word",
+  "example": "Walk-ins are welcome after two.",
+  "exampleJa": "予約なしの客は2時以降歓迎される。",
+  "pos": "名詞"
+ },
+ {
+  "term": "customer retention",
+  "meaning": "顧客維持",
+  "type": "idiom",
+  "example": "Customer retention improved this year.",
+  "exampleJa": "顧客維持は今年改善した。"
+ },
+ {
+  "term": "service counter",
+  "meaning": "サービス窓口",
+  "type": "idiom",
+  "example": "Returns are handled at the service counter.",
+  "exampleJa": "返品はサービス窓口で扱われる。"
+ },
+ {
+  "term": "courteous service",
+  "meaning": "丁寧な接客",
+  "type": "idiom",
+  "example": "Courteous service builds lasting loyalty.",
+  "exampleJa": "丁寧な接客は永続的な愛顧を築く。"
+ },
+ {
+  "term": "wait staff",
+  "meaning": "給仕係",
+  "type": "idiom",
+  "example": "The wait staff were attentive throughout.",
+  "exampleJa": "給仕係は終始よく気を配っていた。"
+ },
+ {
+  "term": "gratuity",
+  "meaning": "心づけ",
+  "type": "word",
+  "example": "A gratuity is included in the bill.",
+  "exampleJa": "心づけは請求額に含まれている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "seating arrangement",
+  "meaning": "座席配置",
+  "type": "idiom",
+  "example": "The seating arrangement was changed.",
+  "exampleJa": "座席配置が変更された。"
+ },
+ {
+  "term": "accommodate a request",
+  "meaning": "要望に応じる",
+  "type": "idiom",
+  "example": "We gladly accommodate special requests.",
+  "exampleJa": "私たちは喜んで特別な要望に応じます。"
+ },
+ {
+  "term": "abolish",
+  "meaning": "廃止する",
+  "type": "word",
+  "example": "The firm abolished the outdated rule.",
+  "exampleJa": "その会社は時代遅れの規則を廃止した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "accelerate hiring",
+  "meaning": "採用を加速する",
+  "type": "idiom",
+  "example": "We accelerated hiring after the merger.",
+  "exampleJa": "私たちは合併後、採用を加速した。"
+ },
+ {
+  "term": "adjoin",
+  "meaning": "隣接する",
+  "type": "word",
+  "example": "The warehouse adjoins the main office.",
+  "exampleJa": "その倉庫は本社に隣接している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "advocate",
+  "meaning": "提唱する",
+  "type": "word",
+  "example": "She advocates flexible work arrangements.",
+  "exampleJa": "彼女は柔軟な勤務形態を提唱している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "alleviate",
+  "meaning": "和らげる",
+  "type": "word",
+  "example": "The new system alleviated staff pressure.",
+  "exampleJa": "その新しいシステムは職員の負担を和らげた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "allot",
+  "meaning": "割り当てる",
+  "type": "word",
+  "example": "We allot thirty minutes per interview.",
+  "exampleJa": "私たちは面接1件につき30分を割り当てる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "ascertain",
+  "meaning": "確かめる",
+  "type": "word",
+  "example": "Please ascertain the exact figures.",
+  "exampleJa": "正確な数値を確かめてください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "aspire",
+  "meaning": "熱望する",
+  "type": "word",
+  "example": "She aspires to lead the division.",
+  "exampleJa": "彼女はその部門を率いることを熱望している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "augment",
+  "meaning": "増強する",
+  "type": "word",
+  "example": "We augmented the team with contractors.",
+  "exampleJa": "私たちは請負業者でチームを増強した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "await approval",
+  "meaning": "承認を待つ",
+  "type": "idiom",
+  "example": "The plan awaits approval from headquarters.",
+  "exampleJa": "その計画は本社の承認を待っている。"
+ },
+ {
+  "term": "bolster",
+  "meaning": "強化する",
+  "type": "word",
+  "example": "The ad campaign bolstered weak sales.",
+  "exampleJa": "その広告活動は低迷する売上を強化した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "broker",
+  "meaning": "仲介する",
+  "type": "word",
+  "example": "A consultant brokered the agreement.",
+  "exampleJa": "コンサルタントがその合意を仲介した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "circumvent",
+  "meaning": "回避する",
+  "type": "word",
+  "example": "Never circumvent safety procedures.",
+  "exampleJa": "決して安全手順を回避しないでください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "coincide",
+  "meaning": "同時に起こる",
+  "type": "word",
+  "example": "The launch coincides with the trade fair.",
+  "exampleJa": "その発売は見本市と同時に起こる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "commend",
+  "meaning": "称賛する",
+  "type": "word",
+  "example": "The director commended the whole team.",
+  "exampleJa": "取締役はチーム全体を称賛した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "compile data",
+  "meaning": "データをまとめる",
+  "type": "idiom",
+  "example": "Analysts compile data every quarter.",
+  "exampleJa": "分析担当者は四半期ごとにデータをまとめる。"
+ },
+ {
+  "term": "comprehend",
+  "meaning": "理解する",
+  "type": "word",
+  "example": "Few staff comprehend the new formula.",
+  "exampleJa": "その新しい計算式を理解する職員は少ない。",
+  "pos": "動詞"
+ },
+ {
+  "term": "concede a point",
+  "meaning": "一点を譲る",
+  "type": "idiom",
+  "example": "He conceded a point during negotiations.",
+  "exampleJa": "彼は交渉中に一点を譲った。"
+ },
+ {
+  "term": "condense",
+  "meaning": "要約する",
+  "type": "word",
+  "example": "Condense the report to two pages.",
+  "exampleJa": "その報告書を2ページに要約してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "confide",
+  "meaning": "打ち明ける",
+  "type": "word",
+  "example": "She confided her concerns to the manager.",
+  "exampleJa": "彼女は懸念を部長に打ち明けた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "confine",
+  "meaning": "限定する",
+  "type": "word",
+  "example": "Please confine comments to the agenda.",
+  "exampleJa": "意見は議題に限定してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "conserve",
+  "meaning": "節約する",
+  "type": "word",
+  "example": "The office conserves energy at night.",
+  "exampleJa": "その事務所は夜間に電力を節約している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "constrain",
+  "meaning": "制約する",
+  "type": "word",
+  "example": "Tight budgets constrain our options.",
+  "exampleJa": "厳しい予算が私たちの選択肢を制約している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "consult with",
+  "meaning": "相談する",
+  "type": "idiom",
+  "example": "Consult with legal before signing.",
+  "exampleJa": "署名前に法務と相談してください。"
+ },
+ {
+  "term": "contemplate",
+  "meaning": "熟考する",
+  "type": "word",
+  "example": "The board contemplated several options.",
+  "exampleJa": "取締役会はいくつかの選択肢を熟考した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "convene",
+  "meaning": "招集する",
+  "type": "word",
+  "example": "The chair convened an emergency meeting.",
+  "exampleJa": "議長は緊急会議を招集した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "correlate",
+  "meaning": "相関する",
+  "type": "word",
+  "example": "Sales correlate with advertising spending.",
+  "exampleJa": "売上は広告費と相関している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "counteract",
+  "meaning": "打ち消す",
+  "type": "word",
+  "example": "Discounts counteract falling demand.",
+  "exampleJa": "割引が需要の落ち込みを打ち消す。",
+  "pos": "動詞"
+ },
+ {
+  "term": "curtail",
+  "meaning": "切り詰める",
+  "type": "word",
+  "example": "We curtailed travel expenses sharply.",
+  "exampleJa": "私たちは旅費を大幅に切り詰めた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "decipher",
+  "meaning": "解読する",
+  "type": "word",
+  "example": "Nobody could decipher the handwriting.",
+  "exampleJa": "誰もその筆跡を解読できなかった。",
+  "pos": "動詞"
+ },
+ {
+  "term": "deduce",
+  "meaning": "推論する",
+  "type": "word",
+  "example": "Analysts deduced the cause from data.",
+  "exampleJa": "分析担当者はデータから原因を推論した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "delineate",
+  "meaning": "明確に述べる",
+  "type": "word",
+  "example": "The contract delineates each duty.",
+  "exampleJa": "その契約は各義務を明確に述べている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "denote",
+  "meaning": "示す",
+  "type": "word",
+  "example": "Red labels denote urgent shipments.",
+  "exampleJa": "赤い札は緊急の出荷を示す。",
+  "pos": "動詞"
+ },
+ {
+  "term": "deplete",
+  "meaning": "使い果たす",
+  "type": "word",
+  "example": "The crisis depleted our reserves.",
+  "exampleJa": "その危機は私たちの蓄えを使い果たした。",
+  "pos": "動詞"
+ },
+ {
+  "term": "deploy staff",
+  "meaning": "人員を配置する",
+  "type": "idiom",
+  "example": "We deployed staff to three branches.",
+  "exampleJa": "私たちは3つの支店に人員を配置した。"
+ },
+ {
+  "term": "depict",
+  "meaning": "描写する",
+  "type": "word",
+  "example": "The chart depicts monthly growth.",
+  "exampleJa": "その図表は月ごとの成長を描写している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "designate a successor",
+  "meaning": "後任を指名する",
+  "type": "idiom",
+  "example": "The founder designated a successor.",
+  "exampleJa": "創業者は後任を指名した。"
+ },
+ {
+  "term": "deter fraud",
+  "meaning": "不正を防ぐ",
+  "type": "idiom",
+  "example": "Audits deter fraud effectively.",
+  "exampleJa": "監査は効果的に不正を防ぐ。"
+ },
+ {
+  "term": "devise",
+  "meaning": "考案する",
+  "type": "word",
+  "example": "Engineers devised a cheaper method.",
+  "exampleJa": "技術者はより安価な方法を考案した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "diagnose",
+  "meaning": "診断する",
+  "type": "word",
+  "example": "Technicians diagnosed the fault quickly.",
+  "exampleJa": "技術者はその故障を素早く診断した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "differentiate",
+  "meaning": "差別化する",
+  "type": "word",
+  "example": "Quality differentiates our products.",
+  "exampleJa": "品質が当社の製品を差別化している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "dilute",
+  "meaning": "薄める",
+  "type": "word",
+  "example": "New shares diluted existing ownership.",
+  "exampleJa": "新株が既存の持ち分を薄めた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "discern",
+  "meaning": "見分ける",
+  "type": "word",
+  "example": "Buyers discern quality differences easily.",
+  "exampleJa": "購入者は品質の違いを容易に見分ける。",
+  "pos": "動詞"
+ },
+ {
+  "term": "dispatch a technician",
+  "meaning": "技術者を派遣する",
+  "type": "idiom",
+  "example": "We dispatched a technician immediately.",
+  "exampleJa": "私たちは直ちに技術者を派遣した。"
+ },
+ {
+  "term": "disperse",
+  "meaning": "分散させる",
+  "type": "word",
+  "example": "The crowd dispersed after the demo.",
+  "exampleJa": "実演の後、群衆は分散した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "divert",
+  "meaning": "転用する",
+  "type": "word",
+  "example": "Funds were diverted to urgent repairs.",
+  "exampleJa": "資金は緊急修理に転用された。",
+  "pos": "動詞"
+ },
+ {
+  "term": "dwindle",
+  "meaning": "次第に減る",
+  "type": "word",
+  "example": "Reserves dwindled over the winter.",
+  "exampleJa": "蓄えは冬の間に次第に減った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "elicit",
+  "meaning": "引き出す",
+  "type": "word",
+  "example": "The survey elicited useful feedback.",
+  "exampleJa": "その調査は有用な意見を引き出した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "embark on",
+  "meaning": "着手する",
+  "type": "idiom",
+  "example": "We embarked on a major renovation.",
+  "exampleJa": "私たちは大規模な改装に着手した。"
+ },
+ {
+  "term": "encompass",
+  "meaning": "包含する",
+  "type": "word",
+  "example": "The plan encompasses all departments.",
+  "exampleJa": "その計画は全部門を包含している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "enlist",
+  "meaning": "協力を得る",
+  "type": "word",
+  "example": "We enlisted help from local partners.",
+  "exampleJa": "私たちは地元の提携先から協力を得た。",
+  "pos": "動詞"
+ },
+ {
+  "term": "entail",
+  "meaning": "伴う",
+  "type": "word",
+  "example": "The role entails frequent travel.",
+  "exampleJa": "その職務は頻繁な出張を伴う。",
+  "pos": "動詞"
+ },
+ {
+  "term": "enumerate",
+  "meaning": "列挙する",
+  "type": "word",
+  "example": "Please enumerate the main risks.",
+  "exampleJa": "主な危険を列挙してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "eradicate",
+  "meaning": "根絶する",
+  "type": "word",
+  "example": "We eradicated defects through training.",
+  "exampleJa": "私たちは研修によって欠陥を根絶した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "evade",
+  "meaning": "回避する",
+  "type": "word",
+  "example": "The company never evades its duties.",
+  "exampleJa": "その会社は決して義務を回避しない。",
+  "pos": "動詞"
+ },
+ {
+  "term": "exemplify",
+  "meaning": "例示する",
+  "type": "word",
+  "example": "This case exemplifies good practice.",
+  "exampleJa": "この事例は望ましい実践を例示している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "expedite delivery",
+  "meaning": "配達を早める",
+  "type": "idiom",
+  "example": "We can expedite delivery for a fee.",
+  "exampleJa": "有料で配達を早めることができます。"
+ },
+ {
+  "term": "exploit",
+  "meaning": "活用する",
+  "type": "word",
+  "example": "We exploit local expertise fully.",
+  "exampleJa": "私たちは地元の専門知識を十分に活用している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "extol",
+  "meaning": "激賞する",
+  "type": "word",
+  "example": "Reviewers extolled the new design.",
+  "exampleJa": "評論家はその新しい意匠を激賞した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "fabricate an excuse",
+  "meaning": "口実をでっち上げる",
+  "type": "idiom",
+  "example": "He fabricated an excuse for the delay.",
+  "exampleJa": "彼は遅延の口実をでっち上げた。"
+ },
+ {
+  "term": "falter",
+  "meaning": "勢いを失う",
+  "type": "word",
+  "example": "Sales faltered in the third quarter.",
+  "exampleJa": "売上は第3四半期に勢いを失った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "finalize terms",
+  "meaning": "条件を最終決定する",
+  "type": "idiom",
+  "example": "Both sides finalized terms yesterday.",
+  "exampleJa": "双方は昨日、条件を最終決定した。"
+ },
+ {
+  "term": "forfeit",
+  "meaning": "没収される",
+  "type": "word",
+  "example": "Late applicants forfeit their deposit.",
+  "exampleJa": "遅れた応募者は手付金を没収される。",
+  "pos": "動詞"
+ },
+ {
+  "term": "formalize",
+  "meaning": "正式化する",
+  "type": "word",
+  "example": "We formalized the partnership in May.",
+  "exampleJa": "私たちは5月にその提携を正式化した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "fortify",
+  "meaning": "強化する",
+  "type": "word",
+  "example": "The firm fortified its security systems.",
+  "exampleJa": "その会社は防護体制を強化した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "gauge demand",
+  "meaning": "需要を測る",
+  "type": "idiom",
+  "example": "Surveys gauge demand before launch.",
+  "exampleJa": "調査が発売前に需要を測る。"
+ },
+ {
+  "term": "grant access",
+  "meaning": "利用を許可する",
+  "type": "idiom",
+  "example": "We grant access to approved staff only.",
+  "exampleJa": "私たちは承認された職員だけに利用を許可する。"
+ },
+ {
+  "term": "gravitate toward",
+  "meaning": "引き寄せられる",
+  "type": "idiom",
+  "example": "Buyers gravitate toward familiar brands.",
+  "exampleJa": "購入者はなじみのある銘柄に引き寄せられる。"
+ },
+ {
+  "term": "harness",
+  "meaning": "活用する",
+  "type": "word",
+  "example": "We harness data to improve service.",
+  "exampleJa": "私たちはサービス改善のためデータを活用する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "hone",
+  "meaning": "磨きをかける",
+  "type": "word",
+  "example": "She honed her presentation skills.",
+  "exampleJa": "彼女は発表の技能に磨きをかけた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "impede",
+  "meaning": "妨げる",
+  "type": "word",
+  "example": "Poor planning impeded the rollout.",
+  "exampleJa": "不十分な計画がその展開を妨げた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "impel",
+  "meaning": "駆り立てる",
+  "type": "word",
+  "example": "Rising costs impelled the price change.",
+  "exampleJa": "上昇する費用が価格改定に駆り立てた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "incite",
+  "meaning": "扇動する",
+  "type": "word",
+  "example": "The rumor incited unnecessary panic.",
+  "exampleJa": "そのうわさは不要な混乱を扇動した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "induce",
+  "meaning": "促す",
+  "type": "word",
+  "example": "Discounts induce early purchases.",
+  "exampleJa": "割引が早期の購入を促す。",
+  "pos": "動詞"
+ },
+ {
+  "term": "infer",
+  "meaning": "推測する",
+  "type": "word",
+  "example": "We infer growth from recent orders.",
+  "exampleJa": "私たちは最近の注文から成長を推測する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "inhibit growth",
+  "meaning": "成長を妨げる",
+  "type": "idiom",
+  "example": "High taxes inhibit growth locally.",
+  "exampleJa": "高い税金は地域の成長を妨げる。"
+ },
+ {
+  "term": "instigate",
+  "meaning": "始める",
+  "type": "word",
+  "example": "Management instigated a full review.",
+  "exampleJa": "経営陣は全面的な見直しを始めた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "instill",
+  "meaning": "浸透させる",
+  "type": "word",
+  "example": "Training instills safety awareness.",
+  "exampleJa": "研修は安全意識を浸透させる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "intensify",
+  "meaning": "強める",
+  "type": "word",
+  "example": "Competition intensified this year.",
+  "exampleJa": "今年、競争が強まった。",
+  "pos": "動詞"
+ },
+ {
+  "term": "intercept",
+  "meaning": "傍受する",
+  "type": "word",
+  "example": "The filter intercepts spam messages.",
+  "exampleJa": "そのフィルターは迷惑通信を傍受する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "intertwine",
+  "meaning": "絡み合う",
+  "type": "word",
+  "example": "The two issues are closely intertwined.",
+  "exampleJa": "その2つの問題は密接に絡み合っている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "invoke a clause",
+  "meaning": "条項を援用する",
+  "type": "idiom",
+  "example": "They invoked a cancellation clause.",
+  "exampleJa": "彼らは解約条項を援用した。"
+ },
+ {
+  "term": "jeopardize",
+  "meaning": "危うくする",
+  "type": "word",
+  "example": "Delays jeopardize the whole schedule.",
+  "exampleJa": "遅延が全体の予定を危うくする。",
+  "pos": "動詞"
+ },
+ {
+  "term": "liaise",
+  "meaning": "連絡を取る",
+  "type": "word",
+  "example": "She liaises with overseas suppliers.",
+  "exampleJa": "彼女は海外の供給業者と連絡を取っている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "magnify",
+  "meaning": "拡大する",
+  "type": "word",
+  "example": "Errors magnify over long periods.",
+  "exampleJa": "誤りは長期間にわたって拡大する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "necessitate",
+  "meaning": "必要とする",
+  "type": "word",
+  "example": "Growth necessitates additional warehouse space.",
+  "exampleJa": "成長は追加の倉庫空間を必要とする。",
+  "pos": "動詞"
+ },
+ {
+  "term": "mitigate",
+  "meaning": "緩和する",
+  "type": "word",
+  "example": "Insurance mitigates financial risk.",
+  "exampleJa": "保険は財務上の危険を緩和する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "mobilize",
+  "meaning": "動員する",
+  "type": "word",
+  "example": "We mobilized staff for the event.",
+  "exampleJa": "私たちはその催しに職員を動員した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "nurture",
+  "meaning": "育てる",
+  "type": "word",
+  "example": "We nurture long-term client relations.",
+  "exampleJa": "私たちは長期的な顧客関係を育てている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "obscure the facts",
+  "meaning": "事実を曖昧にする",
+  "type": "idiom",
+  "example": "The summary obscured the facts.",
+  "exampleJa": "その要約は事実を曖昧にした。"
+ },
+ {
+  "term": "offset",
+  "meaning": "相殺する",
+  "type": "word",
+  "example": "Higher volume offset lower margins.",
+  "exampleJa": "増えた数量が薄い利ざやを相殺した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "optimize",
+  "meaning": "最適化する",
+  "type": "word",
+  "example": "We optimized the delivery routes.",
+  "exampleJa": "私たちは配達経路を最適化した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "orchestrate",
+  "meaning": "取りまとめる",
+  "type": "word",
+  "example": "She orchestrated the entire relocation.",
+  "exampleJa": "彼女は移転全体を取りまとめた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "outline a strategy",
+  "meaning": "戦略の概略を述べる",
+  "type": "idiom",
+  "example": "The CEO outlined a bold strategy.",
+  "exampleJa": "最高経営責任者は大胆な戦略の概略を述べた。"
+ },
+ {
+  "term": "outweigh",
+  "meaning": "上回る",
+  "type": "word",
+  "example": "The benefits outweigh the costs.",
+  "exampleJa": "利点が費用を上回る。",
+  "pos": "動詞"
+ },
+ {
+  "term": "penalize",
+  "meaning": "罰する",
+  "type": "word",
+  "example": "Late filings are penalized heavily.",
+  "exampleJa": "遅れた提出は重く罰せられる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "permeate",
+  "meaning": "浸透する",
+  "type": "word",
+  "example": "Quality culture permeates the factory.",
+  "exampleJa": "品質重視の風土が工場に浸透している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "perpetuate",
+  "meaning": "永続させる",
+  "type": "word",
+  "example": "Old habits perpetuate inefficiency.",
+  "exampleJa": "古い習慣が非効率を永続させる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "pinpoint",
+  "meaning": "正確に特定する",
+  "type": "word",
+  "example": "Engineers pinpointed the faulty part.",
+  "exampleJa": "技術者は故障した部品を正確に特定した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "preclude",
+  "meaning": "妨げる",
+  "type": "word",
+  "example": "The clause precludes further claims.",
+  "exampleJa": "その条項はそれ以上の請求を妨げる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "presume liability",
+  "meaning": "責任を推定する",
+  "type": "idiom",
+  "example": "Courts presume liability in such cases.",
+  "exampleJa": "裁判所はそうした場合に責任を推定する。"
+ },
+ {
+  "term": "prevail",
+  "meaning": "広く行われる",
+  "type": "word",
+  "example": "Flexible hours prevail in this industry.",
+  "exampleJa": "柔軟な勤務時間がこの業界で広く行われている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "prioritize tasks",
+  "meaning": "仕事に優先順位をつける",
+  "type": "idiom",
+  "example": "Managers prioritize tasks each morning.",
+  "exampleJa": "管理者は毎朝、仕事に優先順位をつける。"
+ },
+ {
+  "term": "probe",
+  "meaning": "詳しく調べる",
+  "type": "word",
+  "example": "Auditors probed the missing records.",
+  "exampleJa": "監査人は紛失した記録を詳しく調べた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "proclaim",
+  "meaning": "宣言する",
+  "type": "word",
+  "example": "The mayor proclaimed a public holiday.",
+  "exampleJa": "市長は公休日を宣言した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "procure",
+  "meaning": "調達する",
+  "type": "word",
+  "example": "We procure parts from three suppliers.",
+  "exampleJa": "私たちは3社の供給業者から部品を調達している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "propel",
+  "meaning": "推進する",
+  "type": "word",
+  "example": "Innovation propelled rapid expansion.",
+  "exampleJa": "革新が急速な拡大を推進した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "quantify",
+  "meaning": "数値化する",
+  "type": "word",
+  "example": "It is hard to quantify goodwill.",
+  "exampleJa": "のれんを数値化するのは難しい。",
+  "pos": "動詞"
+ },
+ {
+  "term": "rectify",
+  "meaning": "是正する",
+  "type": "word",
+  "example": "We rectified the billing error promptly.",
+  "exampleJa": "私たちは請求の誤りを速やかに是正した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "redeem a coupon",
+  "meaning": "クーポンを使う",
+  "type": "idiom",
+  "example": "Customers redeem coupons at checkout.",
+  "exampleJa": "顧客は会計時にクーポンを使う。"
+ },
+ {
+  "term": "reinstate",
+  "meaning": "復帰させる",
+  "type": "word",
+  "example": "The employee was reinstated last week.",
+  "exampleJa": "その従業員は先週、復帰した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "reiterate",
+  "meaning": "繰り返し述べる",
+  "type": "word",
+  "example": "She reiterated the safety warning.",
+  "exampleJa": "彼女はその安全警告を繰り返し述べた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "relinquish",
+  "meaning": "手放す",
+  "type": "word",
+  "example": "He relinquished control of the division.",
+  "exampleJa": "彼はその部門の指揮権を手放した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "remedy a defect",
+  "meaning": "欠陥を是正する",
+  "type": "idiom",
+  "example": "The supplier remedied the defect free.",
+  "exampleJa": "その供給業者は無料で欠陥を是正した。"
+ },
+ {
+  "term": "renounce",
+  "meaning": "放棄する",
+  "type": "word",
+  "example": "The firm renounced its earlier claim.",
+  "exampleJa": "その会社は以前の請求を放棄した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "replicate",
+  "meaning": "再現する",
+  "type": "word",
+  "example": "We replicated the test three times.",
+  "exampleJa": "私たちはその試験を3回再現した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "reprimand",
+  "meaning": "叱責する",
+  "type": "word",
+  "example": "The supervisor reprimanded him privately.",
+  "exampleJa": "上司は彼を個別に叱責した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "rescind",
+  "meaning": "撤回する",
+  "type": "word",
+  "example": "The board rescinded the earlier decision.",
+  "exampleJa": "取締役会は以前の決定を撤回した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "reshuffle",
+  "meaning": "再編する",
+  "type": "word",
+  "example": "Management reshuffled the whole team.",
+  "exampleJa": "経営陣はチーム全体を再編した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "restrain spending",
+  "meaning": "支出を抑える",
+  "type": "idiom",
+  "example": "We restrained spending all quarter.",
+  "exampleJa": "私たちは四半期中ずっと支出を抑えた。"
+ },
+ {
+  "term": "resurrect",
+  "meaning": "復活させる",
+  "type": "word",
+  "example": "They resurrected an old product line.",
+  "exampleJa": "彼らは古い製品系列を復活させた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "revamp",
+  "meaning": "刷新する",
+  "type": "word",
+  "example": "We revamped the entire website.",
+  "exampleJa": "私たちはウェブサイト全体を刷新した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "revert",
+  "meaning": "戻る",
+  "type": "word",
+  "example": "The system reverted to the old version.",
+  "exampleJa": "そのシステムは旧版に戻った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "scrutinize records",
+  "meaning": "記録を精査する",
+  "type": "idiom",
+  "example": "Inspectors scrutinize records annually.",
+  "exampleJa": "検査官は毎年、記録を精査する。"
+ },
+ {
+  "term": "solicit",
+  "meaning": "募る",
+  "type": "word",
+  "example": "We solicit feedback after every event.",
+  "exampleJa": "私たちは催しの後、毎回意見を募る。",
+  "pos": "動詞"
+ },
+ {
+  "term": "spearhead",
+  "meaning": "先頭に立つ",
+  "type": "word",
+  "example": "She spearheaded the new initiative.",
+  "exampleJa": "彼女はその新しい取り組みの先頭に立った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "stagnate",
+  "meaning": "停滞する",
+  "type": "word",
+  "example": "Sales stagnated for six months.",
+  "exampleJa": "売上は6か月間停滞した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "stem from",
+  "meaning": "起因する",
+  "type": "idiom",
+  "example": "The delay stems from a parts shortage.",
+  "exampleJa": "その遅延は部品不足に起因している。"
+ },
+ {
+  "term": "substantiate",
+  "meaning": "立証する",
+  "type": "word",
+  "example": "Please substantiate every claim.",
+  "exampleJa": "すべての主張を立証してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "supersede",
+  "meaning": "取って代わる",
+  "type": "word",
+  "example": "The new policy supersedes the old one.",
+  "exampleJa": "その新しい方針は古い方針に取って代わる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "surmount",
+  "meaning": "乗り越える",
+  "type": "word",
+  "example": "The team surmounted every obstacle.",
+  "exampleJa": "そのチームはあらゆる障害を乗り越えた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "suspend operations",
+  "meaning": "操業を停止する",
+  "type": "idiom",
+  "example": "The plant suspended operations briefly.",
+  "exampleJa": "その工場は一時的に操業を停止した。"
+ },
+ {
+  "term": "tally",
+  "meaning": "集計する",
+  "type": "word",
+  "example": "Staff tally receipts every evening.",
+  "exampleJa": "職員は毎晩、領収書を集計する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "transcend",
+  "meaning": "超える",
+  "type": "word",
+  "example": "The brand transcends national borders.",
+  "exampleJa": "その銘柄は国境を超えている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "undermine",
+  "meaning": "損なう",
+  "type": "word",
+  "example": "Rumors undermine customer confidence.",
+  "exampleJa": "うわさは顧客の信頼を損なう。",
+  "pos": "動詞"
+ },
+ {
+  "term": "unveil a product",
+  "meaning": "製品を発表する",
+  "type": "idiom",
+  "example": "They unveiled a product in Tokyo.",
+  "exampleJa": "彼らは東京で製品を発表した。"
+ },
+ {
+  "term": "uphold standards",
+  "meaning": "基準を守る",
+  "type": "idiom",
+  "example": "We uphold standards without exception.",
+  "exampleJa": "私たちは例外なく基準を守る。"
+ },
+ {
+  "term": "usher in",
+  "meaning": "到来させる",
+  "type": "idiom",
+  "example": "The merger ushered in rapid change.",
+  "exampleJa": "その合併は急速な変化を到来させた。"
+ },
+ {
+  "term": "vindicate",
+  "meaning": "正当性を証明する",
+  "type": "word",
+  "example": "The results vindicated her approach.",
+  "exampleJa": "その結果は彼女の手法の正当性を証明した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "waive a fee",
+  "meaning": "料金を免除する",
+  "type": "idiom",
+  "example": "We waived the fee for loyal clients.",
+  "exampleJa": "私たちは常連客の料金を免除した。"
+ },
+ {
+  "term": "warrant",
+  "meaning": "正当化する",
+  "type": "word",
+  "example": "The risk warrants extra caution.",
+  "exampleJa": "その危険は特別な注意を正当化する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "yield results",
+  "meaning": "成果を生む",
+  "type": "idiom",
+  "example": "The strategy yielded strong results.",
+  "exampleJa": "その戦略は力強い成果を生んだ。"
+ },
+ {
+  "term": "abrupt",
+  "meaning": "突然の",
+  "type": "word",
+  "example": "The abrupt change surprised everyone.",
+  "exampleJa": "その突然の変更は皆を驚かせた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "acclaimed",
+  "meaning": "高く評価された",
+  "type": "word",
+  "example": "The acclaimed designer joined our team.",
+  "exampleJa": "高く評価されたその設計者が当社に加わった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "adept",
+  "meaning": "熟達した",
+  "type": "word",
+  "example": "She is adept at handling complaints.",
+  "exampleJa": "彼女は苦情処理に熟達している。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "adjacent",
+  "meaning": "隣接した",
+  "type": "word",
+  "example": "The café is adjacent to our office.",
+  "exampleJa": "その喫茶店は当社の事務所に隣接している。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "adverse",
+  "meaning": "不利な",
+  "type": "word",
+  "example": "Adverse weather delayed all flights.",
+  "exampleJa": "悪天候がすべての便を遅らせた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "affluent",
+  "meaning": "裕福な",
+  "type": "word",
+  "example": "The store targets affluent shoppers.",
+  "exampleJa": "その店は裕福な買い物客を対象にしている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "aggregate",
+  "meaning": "総計の",
+  "type": "word",
+  "example": "Aggregate sales reached a record.",
+  "exampleJa": "総計の売上は記録に達した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "agile",
+  "meaning": "機敏な",
+  "type": "word",
+  "example": "Small firms are more agile.",
+  "exampleJa": "小さな会社の方がより機敏だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "amiable",
+  "meaning": "愛想の良い",
+  "type": "word",
+  "example": "Our host was remarkably amiable.",
+  "exampleJa": "主催者は著しく愛想が良かった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "ample time",
+  "meaning": "十分な時間",
+  "type": "idiom",
+  "example": "Allow ample time for customs.",
+  "exampleJa": "通関には十分な時間を見てください。"
+ },
+ {
+  "term": "arduous",
+  "meaning": "骨の折れる",
+  "type": "word",
+  "example": "It was an arduous negotiation.",
+  "exampleJa": "それは骨の折れる交渉だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "articulate",
+  "meaning": "はっきり話せる",
+  "type": "word",
+  "example": "She is an articulate presenter.",
+  "exampleJa": "彼女ははっきり話せる発表者だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "astute",
+  "meaning": "抜け目のない",
+  "type": "word",
+  "example": "His astute analysis saved money.",
+  "exampleJa": "彼の抜け目のない分析は費用を節約した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "attainable",
+  "meaning": "達成可能な",
+  "type": "word",
+  "example": "Set attainable quarterly targets.",
+  "exampleJa": "達成可能な四半期目標を設定してください。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "candid",
+  "meaning": "率直な",
+  "type": "word",
+  "example": "We welcome candid feedback.",
+  "exampleJa": "私たちは率直な意見を歓迎する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "cohesive",
+  "meaning": "結束した",
+  "type": "word",
+  "example": "They built a cohesive project team.",
+  "exampleJa": "彼らは結束した事業チームを作った。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "commendable",
+  "meaning": "称賛に値する",
+  "type": "word",
+  "example": "Her effort was truly commendable.",
+  "exampleJa": "彼女の努力は本当に称賛に値した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "compelling",
+  "meaning": "説得力のある",
+  "type": "word",
+  "example": "The report makes a compelling case.",
+  "exampleJa": "その報告書は説得力のある論拠を示している。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "concurrent",
+  "meaning": "同時の",
+  "type": "word",
+  "example": "Two concurrent projects strained staff.",
+  "exampleJa": "2つの同時進行の事業が職員を圧迫した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "conducive",
+  "meaning": "助けとなる",
+  "type": "word",
+  "example": "Quiet space is conducive to focus.",
+  "exampleJa": "静かな空間は集中の助けとなる。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "congested",
+  "meaning": "混雑した",
+  "type": "word",
+  "example": "The port was heavily congested.",
+  "exampleJa": "その港はひどく混雑していた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "conscientious",
+  "meaning": "誠実な",
+  "type": "word",
+  "example": "He is a conscientious employee.",
+  "exampleJa": "彼は誠実な従業員だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "consequential",
+  "meaning": "重大な",
+  "type": "word",
+  "example": "The error had consequential effects.",
+  "exampleJa": "その誤りは重大な影響を及ぼした。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "cost-effective",
+  "meaning": "費用対効果の高い",
+  "type": "word",
+  "example": "The method proved cost-effective.",
+  "exampleJa": "その方法は費用対効果が高いと分かった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "cumbersome",
+  "meaning": "扱いにくい",
+  "type": "word",
+  "example": "The old form was cumbersome.",
+  "exampleJa": "その古い用紙は扱いにくかった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "decisive",
+  "meaning": "決定的な",
+  "type": "word",
+  "example": "Her decisive action saved the deal.",
+  "exampleJa": "彼女の決定的な行動が取引を救った。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "deficient",
+  "meaning": "不足した",
+  "type": "word",
+  "example": "The report was deficient in detail.",
+  "exampleJa": "その報告書は詳細が不足していた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "detrimental",
+  "meaning": "有害な",
+  "type": "word",
+  "example": "Delays are detrimental to trust.",
+  "exampleJa": "遅延は信頼に有害だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "discernible",
+  "meaning": "認識できる",
+  "type": "word",
+  "example": "There was no discernible improvement.",
+  "exampleJa": "認識できる改善はなかった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "disparate",
+  "meaning": "異質な",
+  "type": "word",
+  "example": "We merged disparate data sources.",
+  "exampleJa": "私たちは異質なデータ源を統合した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "disposable",
+  "meaning": "使い捨ての",
+  "type": "word",
+  "example": "We reduced disposable packaging.",
+  "exampleJa": "私たちは使い捨ての包装を減らした。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "eco-friendly",
+  "meaning": "環境に優しい",
+  "type": "word",
+  "example": "Customers prefer eco-friendly options.",
+  "exampleJa": "顧客は環境に優しい選択肢を好む。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "elaborate plan",
+  "meaning": "入念な計画",
+  "type": "idiom",
+  "example": "They prepared an elaborate plan.",
+  "exampleJa": "彼らは入念な計画を準備した。"
+ },
+ {
+  "term": "eligible for promotion",
+  "meaning": "昇進の資格がある",
+  "type": "idiom",
+  "example": "She is eligible for promotion now.",
+  "exampleJa": "彼女は今、昇進の資格がある。"
+ },
+ {
+  "term": "equitable",
+  "meaning": "公平な",
+  "type": "word",
+  "example": "We seek an equitable solution.",
+  "exampleJa": "私たちは公平な解決策を求めている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "erratic",
+  "meaning": "不安定な",
+  "type": "word",
+  "example": "Sales were erratic all summer.",
+  "exampleJa": "売上は夏中ずっと不安定だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "exemplary",
+  "meaning": "模範的な",
+  "type": "word",
+  "example": "His attendance record is exemplary.",
+  "exampleJa": "彼の出勤記録は模範的だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "exhaustive",
+  "meaning": "徹底的な",
+  "type": "word",
+  "example": "We ran an exhaustive safety check.",
+  "exampleJa": "私たちは徹底的な安全点検を行った。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "expedient",
+  "meaning": "好都合な",
+  "type": "word",
+  "example": "A phone call was more expedient.",
+  "exampleJa": "電話の方がより好都合だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "fluctuating",
+  "meaning": "変動する",
+  "type": "word",
+  "example": "Fluctuating rates complicate planning.",
+  "exampleJa": "変動する相場が計画を複雑にする。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "forthcoming",
+  "meaning": "近く行われる",
+  "type": "word",
+  "example": "Details of the forthcoming event follow.",
+  "exampleJa": "近く行われる催しの詳細は後ほど。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "frugal",
+  "meaning": "倹約的な",
+  "type": "word",
+  "example": "The firm remains frugal with expenses.",
+  "exampleJa": "その会社は経費に倹約的なままだ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "gradual increase",
+  "meaning": "緩やかな増加",
+  "type": "idiom",
+  "example": "We expect a gradual increase in demand.",
+  "exampleJa": "私たちは需要の緩やかな増加を見込んでいる。"
+ },
+ {
+  "term": "hands-on",
+  "meaning": "実践的な",
+  "type": "word",
+  "example": "The course offers hands-on training.",
+  "exampleJa": "その講座は実践的な研修を提供する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "hectic",
+  "meaning": "慌ただしい",
+  "type": "word",
+  "example": "December is always hectic here.",
+  "exampleJa": "ここでは12月はいつも慌ただしい。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "hospitable",
+  "meaning": "もてなしの良い",
+  "type": "word",
+  "example": "Our hosts were extremely hospitable.",
+  "exampleJa": "主催者は極めてもてなしが良かった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "impartial",
+  "meaning": "公平な",
+  "type": "word",
+  "example": "An impartial auditor reviewed the books.",
+  "exampleJa": "公平な監査人が帳簿を精査した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "impeccable",
+  "meaning": "申し分のない",
+  "type": "word",
+  "example": "Her record is absolutely impeccable.",
+  "exampleJa": "彼女の実績は全く申し分ない。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "indefinite",
+  "meaning": "期限のない",
+  "type": "word",
+  "example": "The project is on indefinite hold.",
+  "exampleJa": "その事業は期限のない保留状態だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "ineffective",
+  "meaning": "効果のない",
+  "type": "word",
+  "example": "The old method proved ineffective.",
+  "exampleJa": "その古い方法は効果がないと分かった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "informal",
+  "meaning": "略式の",
+  "type": "word",
+  "example": "We held an informal discussion.",
+  "exampleJa": "私たちは略式の話し合いを行った。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "innovative approach",
+  "meaning": "革新的な手法",
+  "type": "idiom",
+  "example": "Their innovative approach won awards.",
+  "exampleJa": "彼らの革新的な手法は賞を獲得した。"
+ },
+ {
+  "term": "instrumental",
+  "meaning": "重要な役割を果たす",
+  "type": "word",
+  "example": "She was instrumental in the merger.",
+  "exampleJa": "彼女はその合併で重要な役割を果たした。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "intact packaging",
+  "meaning": "無傷の包装",
+  "type": "idiom",
+  "example": "Return items with intact packaging.",
+  "exampleJa": "無傷の包装で商品を返品してください。"
+ },
+ {
+  "term": "integral",
+  "meaning": "不可欠な",
+  "type": "word",
+  "example": "Testing is integral to our process.",
+  "exampleJa": "試験は当社の工程に不可欠だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "interim",
+  "meaning": "暫定の",
+  "type": "word",
+  "example": "An interim manager was appointed.",
+  "exampleJa": "暫定の管理者が任命された。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "intermittent",
+  "meaning": "断続的な",
+  "type": "word",
+  "example": "Intermittent outages frustrated users.",
+  "exampleJa": "断続的な障害が利用者を苛立たせた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "laborious",
+  "meaning": "骨の折れる",
+  "type": "word",
+  "example": "Manual entry is laborious work.",
+  "exampleJa": "手入力は骨の折れる作業だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "lavish",
+  "meaning": "豪華な",
+  "type": "word",
+  "example": "They hosted a lavish reception.",
+  "exampleJa": "彼らは豪華な歓迎会を主催した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "lenient",
+  "meaning": "寛大な",
+  "type": "word",
+  "example": "The policy is lenient toward newcomers.",
+  "exampleJa": "その方針は新人に寛大だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "longstanding",
+  "meaning": "長年の",
+  "type": "word",
+  "example": "We value this longstanding partnership.",
+  "exampleJa": "私たちはこの長年の提携を重んじている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "meticulous",
+  "meaning": "綿密な",
+  "type": "word",
+  "example": "Her records are meticulous.",
+  "exampleJa": "彼女の記録は綿密だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "multifaceted",
+  "meaning": "多面的な",
+  "type": "word",
+  "example": "The issue is highly multifaceted.",
+  "exampleJa": "その問題は非常に多面的だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "negotiable",
+  "meaning": "交渉可能な",
+  "type": "word",
+  "example": "The starting salary is negotiable.",
+  "exampleJa": "初任給は交渉可能だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "nominal fee",
+  "meaning": "名目上の料金",
+  "type": "idiom",
+  "example": "A nominal fee covers processing.",
+  "exampleJa": "名目上の料金が処理費用を賄う。"
+ },
+ {
+  "term": "obsolete equipment",
+  "meaning": "時代遅れの機器",
+  "type": "idiom",
+  "example": "We replaced obsolete equipment last year.",
+  "exampleJa": "私たちは昨年、時代遅れの機器を交換した。"
+ },
+ {
+  "term": "onerous",
+  "meaning": "負担の重い",
+  "type": "word",
+  "example": "The terms proved onerous for suppliers.",
+  "exampleJa": "その条件は供給業者に負担が重いと分かった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "opportune",
+  "meaning": "時宜を得た",
+  "type": "word",
+  "example": "This is an opportune moment to expand.",
+  "exampleJa": "今は拡大するのに時宜を得た瞬間だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "outdated",
+  "meaning": "旧式の",
+  "type": "word",
+  "example": "The manual is badly outdated.",
+  "exampleJa": "その手引書はひどく旧式だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "overdue payment",
+  "meaning": "延滞した支払い",
+  "type": "idiom",
+  "example": "Overdue payments incur interest.",
+  "exampleJa": "延滞した支払いには利息がかかる。"
+ },
+ {
+  "term": "painstaking",
+  "meaning": "入念な",
+  "type": "word",
+  "example": "It took painstaking preparation.",
+  "exampleJa": "それは入念な準備を要した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "pertinent",
+  "meaning": "関連する",
+  "type": "word",
+  "example": "Include only pertinent details.",
+  "exampleJa": "関連する詳細のみを含めてください。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "pivotal",
+  "meaning": "極めて重要な",
+  "type": "word",
+  "example": "The meeting was pivotal to success.",
+  "exampleJa": "その会議は成功に極めて重要だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "plentiful",
+  "meaning": "豊富な",
+  "type": "word",
+  "example": "Parking is plentiful on weekends.",
+  "exampleJa": "週末は駐車場が豊富にある。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "preventive",
+  "meaning": "予防の",
+  "type": "word",
+  "example": "Preventive maintenance cuts repair costs.",
+  "exampleJa": "予防保守は修理費用を削減する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "proactive",
+  "meaning": "先を見越した",
+  "type": "word",
+  "example": "We take a proactive approach.",
+  "exampleJa": "私たちは先を見越した手法を取る。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "profitable venture",
+  "meaning": "もうかる事業",
+  "type": "idiom",
+  "example": "It became a profitable venture quickly.",
+  "exampleJa": "それはすぐにもうかる事業になった。"
+ },
+ {
+  "term": "prolonged",
+  "meaning": "長引いた",
+  "type": "word",
+  "example": "A prolonged strike hurt production.",
+  "exampleJa": "長引いたストライキが生産に打撃を与えた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "prospective buyer",
+  "meaning": "購入見込み客",
+  "type": "idiom",
+  "example": "A prospective buyer toured the site.",
+  "exampleJa": "購入見込み客がその用地を見学した。"
+ },
+ {
+  "term": "quarterly",
+  "meaning": "四半期ごとの",
+  "type": "word",
+  "example": "Quarterly reviews start in April.",
+  "exampleJa": "四半期ごとの見直しは4月に始まる。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "redundant",
+  "meaning": "余剰の",
+  "type": "word",
+  "example": "We removed redundant steps.",
+  "exampleJa": "私たちは余剰の手順を取り除いた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "refundable",
+  "meaning": "払い戻し可能な",
+  "type": "word",
+  "example": "The deposit is fully refundable.",
+  "exampleJa": "その手付金は全額払い戻し可能だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "relentless",
+  "meaning": "絶え間ない",
+  "type": "word",
+  "example": "Relentless competition lowered prices.",
+  "exampleJa": "絶え間ない競争が価格を下げた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "reputable",
+  "meaning": "評判の良い",
+  "type": "word",
+  "example": "We deal with reputable suppliers only.",
+  "exampleJa": "私たちは評判の良い供給業者とだけ取引する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "resourceful",
+  "meaning": "機転の利く",
+  "type": "word",
+  "example": "She is a resourceful problem solver.",
+  "exampleJa": "彼女は機転の利く問題解決者だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "restrictive",
+  "meaning": "制限的な",
+  "type": "word",
+  "example": "The clause is unusually restrictive.",
+  "exampleJa": "その条項は異常に制限的だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "retroactive",
+  "meaning": "遡及する",
+  "type": "word",
+  "example": "The raise is retroactive to January.",
+  "exampleJa": "その昇給は1月に遡及する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "rewarding career",
+  "meaning": "やりがいのある職歴",
+  "type": "idiom",
+  "example": "She built a rewarding career here.",
+  "exampleJa": "彼女はここでやりがいのある職歴を築いた。"
+ },
+ {
+  "term": "seasonal demand",
+  "meaning": "季節的な需要",
+  "type": "idiom",
+  "example": "Seasonal demand peaks in December.",
+  "exampleJa": "季節的な需要は12月に最も高まる。"
+ },
+ {
+  "term": "seamless",
+  "meaning": "切れ目のない",
+  "type": "word",
+  "example": "The transition was completely seamless.",
+  "exampleJa": "その移行は完全に切れ目がなかった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "sluggish",
+  "meaning": "不振な",
+  "type": "word",
+  "example": "Sales remained sluggish all spring.",
+  "exampleJa": "売上は春中ずっと不振だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "stringent",
+  "meaning": "厳しい",
+  "type": "word",
+  "example": "Stringent rules govern food safety.",
+  "exampleJa": "厳しい規則が食品の安全を統治している。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "subsequent",
+  "meaning": "その後の",
+  "type": "word",
+  "example": "Subsequent tests confirmed the result.",
+  "exampleJa": "その後の試験が結果を裏付けた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "succinct",
+  "meaning": "簡潔な",
+  "type": "word",
+  "example": "Please keep the summary succinct.",
+  "exampleJa": "要約は簡潔に保ってください。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "superficial",
+  "meaning": "表面的な",
+  "type": "word",
+  "example": "The damage was purely superficial.",
+  "exampleJa": "その損傷は純粋に表面的だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "surplus inventory",
+  "meaning": "余剰在庫",
+  "type": "idiom",
+  "example": "We discounted surplus inventory.",
+  "exampleJa": "私たちは余剰在庫を値引きした。"
+ },
+ {
+  "term": "unanimous",
+  "meaning": "満場一致の",
+  "type": "word",
+  "example": "The decision was unanimous.",
+  "exampleJa": "その決定は満場一致だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "unattended",
+  "meaning": "放置された",
+  "type": "word",
+  "example": "Never leave bags unattended.",
+  "exampleJa": "かばんを決して放置しないでください。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "unprecedented",
+  "meaning": "前例のない",
+  "type": "word",
+  "example": "Demand reached unprecedented levels.",
+  "exampleJa": "需要は前例のない水準に達した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "unresolved",
+  "meaning": "未解決の",
+  "type": "word",
+  "example": "Two issues remain unresolved.",
+  "exampleJa": "2つの問題が未解決のままだ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "upscale",
+  "meaning": "高級な",
+  "type": "word",
+  "example": "They opened an upscale boutique.",
+  "exampleJa": "彼らは高級な専門店を開いた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "viable",
+  "meaning": "実行可能な",
+  "type": "word",
+  "example": "We need a viable alternative.",
+  "exampleJa": "私たちには実行可能な代替案が必要だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "vigilant",
+  "meaning": "警戒を怠らない",
+  "type": "word",
+  "example": "Staff remain vigilant about security.",
+  "exampleJa": "職員は防犯に警戒を怠らない。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "well-established",
+  "meaning": "定評のある",
+  "type": "word",
+  "example": "They are a well-established brand.",
+  "exampleJa": "彼らは定評のある銘柄だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "widespread adoption",
+  "meaning": "広範な普及",
+  "type": "idiom",
+  "example": "The tool saw widespread adoption.",
+  "exampleJa": "その道具は広範に普及した。"
+ },
+ {
+  "term": "adversely",
+  "meaning": "不利に",
+  "type": "word",
+  "example": "Costs adversely affected profits.",
+  "exampleJa": "費用が利益に不利に影響した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "alternatively",
+  "meaning": "あるいは",
+  "type": "word",
+  "example": "Alternatively, we can lease the space.",
+  "exampleJa": "あるいは、その空間を賃借できます。",
+  "pos": "副詞"
+ },
+ {
+  "term": "arguably",
+  "meaning": "おそらく",
+  "type": "word",
+  "example": "This is arguably our best product.",
+  "exampleJa": "これはおそらく当社最良の製品だ。",
+  "pos": "副詞"
+ },
+ {
+  "term": "beforehand",
+  "meaning": "前もって",
+  "type": "word",
+  "example": "Please confirm the details beforehand.",
+  "exampleJa": "前もって詳細を確認してください。",
+  "pos": "副詞"
+ },
+ {
+  "term": "collectively",
+  "meaning": "まとめて",
+  "type": "word",
+  "example": "The teams collectively met the target.",
+  "exampleJa": "各チームはまとめて目標を達成した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "comparatively",
+  "meaning": "比較的",
+  "type": "word",
+  "example": "Costs are comparatively low here.",
+  "exampleJa": "ここでは費用が比較的低い。",
+  "pos": "副詞"
+ },
+ {
+  "term": "concurrently",
+  "meaning": "同時に",
+  "type": "word",
+  "example": "Two trials ran concurrently.",
+  "exampleJa": "2つの試験が同時に進行した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "decidedly",
+  "meaning": "明らかに",
+  "type": "word",
+  "example": "Reviews were decidedly positive.",
+  "exampleJa": "評価は明らかに好意的だった。",
+  "pos": "副詞"
+ },
+ {
+  "term": "expressly",
+  "meaning": "明確に",
+  "type": "word",
+  "example": "The contract expressly forbids resale.",
+  "exampleJa": "その契約は転売を明確に禁じている。",
+  "pos": "副詞"
+ },
+ {
+  "term": "hence",
+  "meaning": "それゆえ",
+  "type": "word",
+  "example": "Demand fell; hence, we cut output.",
+  "exampleJa": "需要が落ちた。それゆえ生産を減らした。",
+  "pos": "副詞"
+ },
+ {
+  "term": "henceforth",
+  "meaning": "今後は",
+  "type": "word",
+  "example": "Henceforth, all requests need approval.",
+  "exampleJa": "今後は、すべての依頼に承認が必要だ。",
+  "pos": "副詞"
+ },
+ {
+  "term": "inadvertently",
+  "meaning": "うっかり",
+  "type": "word",
+  "example": "She inadvertently deleted the file.",
+  "exampleJa": "彼女はうっかりそのファイルを削除した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "indefinitely",
+  "meaning": "無期限に",
+  "type": "word",
+  "example": "The launch was postponed indefinitely.",
+  "exampleJa": "その発売は無期限に延期された。",
+  "pos": "副詞"
+ },
+ {
+  "term": "invariably",
+  "meaning": "例外なく",
+  "type": "word",
+  "example": "He invariably arrives early.",
+  "exampleJa": "彼は例外なく早く到着する。",
+  "pos": "副詞"
+ },
+ {
+  "term": "jointly",
+  "meaning": "共同で",
+  "type": "word",
+  "example": "The firms jointly developed the device.",
+  "exampleJa": "それらの会社は共同でその装置を開発した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "meanwhile",
+  "meaning": "その間に",
+  "type": "word",
+  "example": "Meanwhile, we prepared the samples.",
+  "exampleJa": "その間に、私たちは見本を準備した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "moreover",
+  "meaning": "さらに",
+  "type": "word",
+  "example": "Moreover, delivery is now free.",
+  "exampleJa": "さらに、配達が現在無料だ。",
+  "pos": "副詞"
+ },
+ {
+  "term": "markedly higher",
+  "meaning": "著しく高い",
+  "type": "idiom",
+  "example": "Output was markedly higher this year.",
+  "exampleJa": "今年は生産高が著しく高かった。"
+ },
+ {
+  "term": "nonetheless",
+  "meaning": "それでもなお",
+  "type": "word",
+  "example": "Nonetheless, we met the deadline.",
+  "exampleJa": "それでもなお、私たちは締め切りに間に合った。",
+  "pos": "副詞"
+ },
+ {
+  "term": "outright",
+  "meaning": "完全に",
+  "type": "word",
+  "example": "They rejected the offer outright.",
+  "exampleJa": "彼らはその申し出を完全に拒否した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "periodically",
+  "meaning": "定期的に",
+  "type": "word",
+  "example": "Filters are replaced periodically.",
+  "exampleJa": "フィルターは定期的に交換される。",
+  "pos": "副詞"
+ },
+ {
+  "term": "preferably",
+  "meaning": "できれば",
+  "type": "word",
+  "example": "Reply by Friday, preferably earlier.",
+  "exampleJa": "金曜日までに、できればもっと早く返信してください。",
+  "pos": "副詞"
+ },
+ {
+  "term": "presently",
+  "meaning": "まもなく",
+  "type": "word",
+  "example": "The manager will arrive presently.",
+  "exampleJa": "部長はまもなく到着します。",
+  "pos": "副詞"
+ },
+ {
+  "term": "proportionately",
+  "meaning": "比例して",
+  "type": "word",
+  "example": "Fees rise proportionately with volume.",
+  "exampleJa": "料金は数量に比例して上がる。",
+  "pos": "副詞"
+ },
+ {
+  "term": "reportedly",
+  "meaning": "報道によれば",
+  "type": "word",
+  "example": "The firm reportedly plans an expansion.",
+  "exampleJa": "報道によれば、その会社は拡大を計画している。",
+  "pos": "副詞"
+ },
+ {
+  "term": "retroactively",
+  "meaning": "遡って",
+  "type": "word",
+  "example": "The rule applies retroactively.",
+  "exampleJa": "その規則は遡って適用される。",
+  "pos": "副詞"
+ },
+ {
+  "term": "sparingly",
+  "meaning": "控えめに",
+  "type": "word",
+  "example": "Use the chemical sparingly.",
+  "exampleJa": "その薬品は控えめに使ってください。",
+  "pos": "副詞"
+ },
+ {
+  "term": "thereafter",
+  "meaning": "その後は",
+  "type": "word",
+  "example": "Thereafter, sales climbed steadily.",
+  "exampleJa": "その後は、売上が着実に伸びた。",
+  "pos": "副詞"
+ },
+ {
+  "term": "thereby",
+  "meaning": "それによって",
+  "type": "word",
+  "example": "We automated tasks, thereby saving time.",
+  "exampleJa": "私たちは作業を自動化し、それによって時間を節約した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "undoubtedly",
+  "meaning": "疑いなく",
+  "type": "word",
+  "example": "This is undoubtedly the best option.",
+  "exampleJa": "これは疑いなく最良の選択肢だ。",
+  "pos": "副詞"
+ },
+ {
+  "term": "unexpectedly",
+  "meaning": "予期せず",
+  "type": "word",
+  "example": "Demand rose unexpectedly last month.",
+  "exampleJa": "需要は先月、予期せず上昇した。",
+  "pos": "副詞"
+ },
+ {
+  "term": "wholly",
+  "meaning": "完全に",
+  "type": "word",
+  "example": "The claim was wholly unfounded.",
+  "exampleJa": "その主張は完全に根拠がなかった。",
+  "pos": "副詞"
+ },
+ {
+  "term": "abide by the rules",
+  "meaning": "規則を守る",
+  "type": "idiom",
+  "example": "All visitors abide by the rules.",
+  "exampleJa": "すべての来訪者は規則を守る。"
+ },
+ {
+  "term": "across the board",
+  "meaning": "全面的に",
+  "type": "idiom",
+  "example": "Prices rose across the board.",
+  "exampleJa": "価格は全面的に上昇した。"
+ },
+ {
+  "term": "add up",
+  "meaning": "つじつまが合う",
+  "type": "idiom",
+  "example": "The figures simply do not add up.",
+  "exampleJa": "その数字はどうもつじつまが合わない。"
+ },
+ {
+  "term": "air one's views",
+  "meaning": "意見を述べる",
+  "type": "idiom",
+  "example": "Staff aired their views openly.",
+  "exampleJa": "職員は率直に意見を述べた。"
+ },
+ {
+  "term": "all things considered",
+  "meaning": "すべてを考慮すると",
+  "type": "idiom",
+  "example": "All things considered, it went well.",
+  "exampleJa": "すべてを考慮すると、うまくいった。"
+ },
+ {
+  "term": "apply oneself",
+  "meaning": "専念する",
+  "type": "idiom",
+  "example": "He applied himself to the task.",
+  "exampleJa": "彼はその仕事に専念した。"
+ },
+ {
+  "term": "around the clock",
+  "meaning": "24時間体制で",
+  "type": "idiom",
+  "example": "The plant runs around the clock.",
+  "exampleJa": "その工場は24時間体制で稼働している。"
+ },
+ {
+  "term": "as a result of",
+  "meaning": "〜の結果として",
+  "type": "idiom",
+  "example": "Sales grew as a result of the ad.",
+  "exampleJa": "広告の結果として売上が伸びた。"
+ },
+ {
+  "term": "as of",
+  "meaning": "〜の時点で",
+  "type": "idiom",
+  "example": "As of Monday, the rule changes.",
+  "exampleJa": "月曜日の時点で、その規則は変わる。"
+ },
+ {
+  "term": "aside from",
+  "meaning": "〜は別として",
+  "type": "idiom",
+  "example": "Aside from cost, the plan works.",
+  "exampleJa": "費用は別として、その計画はうまくいく。"
+ },
+ {
+  "term": "at all costs",
+  "meaning": "何としても",
+  "type": "idiom",
+  "example": "Avoid downtime at all costs.",
+  "exampleJa": "何としても停止時間を避けてください。"
+ },
+ {
+  "term": "at any rate",
+  "meaning": "いずれにせよ",
+  "type": "idiom",
+  "example": "At any rate, we must decide today.",
+  "exampleJa": "いずれにせよ、今日決めなければならない。"
+ },
+ {
+  "term": "at odds with",
+  "meaning": "対立して",
+  "type": "idiom",
+  "example": "The report is at odds with the data.",
+  "exampleJa": "その報告書はデータと対立している。"
+ },
+ {
+  "term": "at short notice",
+  "meaning": "急な知らせで",
+  "type": "idiom",
+  "example": "She arranged the trip at short notice.",
+  "exampleJa": "彼女は急な知らせで出張を手配した。"
+ },
+ {
+  "term": "at the expense of",
+  "meaning": "〜を犠牲にして",
+  "type": "idiom",
+  "example": "Speed came at the expense of quality.",
+  "exampleJa": "速さは品質を犠牲にして得られた。"
+ },
+ {
+  "term": "at the latest",
+  "meaning": "遅くとも",
+  "type": "idiom",
+  "example": "Reply by noon at the latest.",
+  "exampleJa": "遅くとも正午までに返信してください。"
+ },
+ {
+  "term": "attend to",
+  "meaning": "対応する",
+  "type": "idiom",
+  "example": "Please attend to this matter today.",
+  "exampleJa": "本日この件に対応してください。"
+ },
+ {
+  "term": "back out of",
+  "meaning": "手を引く",
+  "type": "idiom",
+  "example": "The buyer backed out of the deal.",
+  "exampleJa": "買い手はその取引から手を引いた。"
+ },
+ {
+  "term": "bank on",
+  "meaning": "当てにする",
+  "type": "idiom",
+  "example": "Don't bank on early delivery.",
+  "exampleJa": "早期の配達を当てにしないでください。"
+ },
+ {
+  "term": "bear in mind",
+  "meaning": "心に留める",
+  "type": "idiom",
+  "example": "Bear in mind the tight deadline.",
+  "exampleJa": "厳しい締め切りを心に留めてください。"
+ },
+ {
+  "term": "beef up",
+  "meaning": "強化する",
+  "type": "idiom",
+  "example": "We beefed up the security team.",
+  "exampleJa": "私たちは警備班を強化した。"
+ },
+ {
+  "term": "beside the point",
+  "meaning": "的外れで",
+  "type": "idiom",
+  "example": "That argument is beside the point.",
+  "exampleJa": "その議論は的外れだ。"
+ },
+ {
+  "term": "bottom line",
+  "meaning": "最終的な収支",
+  "type": "idiom",
+  "example": "The bottom line improved this year.",
+  "exampleJa": "最終的な収支は今年改善した。"
+ },
+ {
+  "term": "branch out",
+  "meaning": "事業を広げる",
+  "type": "idiom",
+  "example": "The company branched out into Asia.",
+  "exampleJa": "その会社はアジアに事業を広げた。"
+ },
+ {
+  "term": "bring forward",
+  "meaning": "繰り上げる",
+  "type": "idiom",
+  "example": "We brought forward the launch date.",
+  "exampleJa": "私たちは発売日を繰り上げた。"
+ },
+ {
+  "term": "bring to light",
+  "meaning": "明るみに出す",
+  "type": "idiom",
+  "example": "The audit brought errors to light.",
+  "exampleJa": "その監査は誤りを明るみに出した。"
+ },
+ {
+  "term": "build up",
+  "meaning": "積み上げる",
+  "type": "idiom",
+  "example": "We built up a loyal customer base.",
+  "exampleJa": "私たちは忠実な顧客層を積み上げた。"
+ },
+ {
+  "term": "by and large",
+  "meaning": "概して",
+  "type": "idiom",
+  "example": "By and large, feedback was positive.",
+  "exampleJa": "概して、意見は好意的だった。"
+ },
+ {
+  "term": "by no means",
+  "meaning": "決して〜ない",
+  "type": "idiom",
+  "example": "This is by no means final.",
+  "exampleJa": "これは決して最終的なものではない。"
+ },
+ {
+  "term": "call it a day",
+  "meaning": "仕事を切り上げる",
+  "type": "idiom",
+  "example": "Let's call it a day at six.",
+  "exampleJa": "6時に仕事を切り上げましょう。"
+ },
+ {
+  "term": "call the shots",
+  "meaning": "采配を振るう",
+  "type": "idiom",
+  "example": "The head office calls the shots.",
+  "exampleJa": "本社が采配を振るっている。"
+ },
+ {
+  "term": "carry weight",
+  "meaning": "影響力がある",
+  "type": "idiom",
+  "example": "Her opinion carries real weight.",
+  "exampleJa": "彼女の意見には本当に影響力がある。"
+ },
+ {
+  "term": "cash in on",
+  "meaning": "うまく利用する",
+  "type": "idiom",
+  "example": "They cashed in on the trend.",
+  "exampleJa": "彼らはその流行をうまく利用した。"
+ },
+ {
+  "term": "catch on",
+  "meaning": "流行する",
+  "type": "idiom",
+  "example": "The service caught on quickly.",
+  "exampleJa": "そのサービスは急速に流行した。"
+ },
+ {
+  "term": "chip in",
+  "meaning": "出し合う",
+  "type": "idiom",
+  "example": "Everyone chipped in for the gift.",
+  "exampleJa": "皆が贈り物のためにお金を出し合った。"
+ },
+ {
+  "term": "clear up",
+  "meaning": "解消する",
+  "type": "idiom",
+  "example": "We cleared up the misunderstanding.",
+  "exampleJa": "私たちはその誤解を解消した。"
+ },
+ {
+  "term": "come to terms with",
+  "meaning": "折り合いをつける",
+  "type": "idiom",
+  "example": "We came to terms with the delay.",
+  "exampleJa": "私たちはその遅延に折り合いをつけた。"
+ },
+ {
+  "term": "come under fire",
+  "meaning": "批判を浴びる",
+  "type": "idiom",
+  "example": "The policy came under fire quickly.",
+  "exampleJa": "その方針はすぐに批判を浴びた。"
+ },
+ {
+  "term": "cut back on",
+  "meaning": "削減する",
+  "type": "idiom",
+  "example": "We cut back on travel this year.",
+  "exampleJa": "私たちは今年、出張を削減した。"
+ },
+ {
+  "term": "cut it close",
+  "meaning": "ぎりぎりである",
+  "type": "idiom",
+  "example": "We cut it close on the deadline.",
+  "exampleJa": "私たちは締め切りぎりぎりだった。"
+ },
+ {
+  "term": "do away with",
+  "meaning": "廃止する",
+  "type": "idiom",
+  "example": "They did away with paper forms.",
+  "exampleJa": "彼らは紙の用紙を廃止した。"
+ },
+ {
+  "term": "draw the line",
+  "meaning": "一線を引く",
+  "type": "idiom",
+  "example": "We draw the line at unpaid overtime.",
+  "exampleJa": "私たちは無給の残業に一線を引く。"
+ },
+ {
+  "term": "drum up",
+  "meaning": "かき集める",
+  "type": "idiom",
+  "example": "The ad drummed up new business.",
+  "exampleJa": "その広告は新しい商売をかき集めた。"
+ },
+ {
+  "term": "ease into",
+  "meaning": "徐々に慣らす",
+  "type": "idiom",
+  "example": "New hires ease into the routine.",
+  "exampleJa": "新入社員は徐々に日課に慣れていく。"
+ },
+ {
+  "term": "even out",
+  "meaning": "平準化する",
+  "type": "idiom",
+  "example": "Demand evens out after March.",
+  "exampleJa": "需要は3月以降に平準化する。"
+ },
+ {
+  "term": "factor in",
+  "meaning": "考慮に入れる",
+  "type": "idiom",
+  "example": "Factor in shipping when quoting.",
+  "exampleJa": "見積もり時に送料を考慮に入れてください。"
+ },
+ {
+  "term": "fall short of",
+  "meaning": "及ばない",
+  "type": "idiom",
+  "example": "Results fell short of expectations.",
+  "exampleJa": "結果は期待に及ばなかった。"
+ },
+ {
+  "term": "fend off",
+  "meaning": "かわす",
+  "type": "idiom",
+  "example": "The firm fended off a takeover bid.",
+  "exampleJa": "その会社は買収提案をかわした。"
+ },
+ {
+  "term": "field questions",
+  "meaning": "質問に応じる",
+  "type": "idiom",
+  "example": "She fielded questions for an hour.",
+  "exampleJa": "彼女は1時間、質問に応じた。"
+ },
+ {
+  "term": "fill in for",
+  "meaning": "代理を務める",
+  "type": "idiom",
+  "example": "I'll fill in for her on Friday.",
+  "exampleJa": "金曜日は私が彼女の代理を務めます。"
+ },
+ {
+  "term": "flesh out",
+  "meaning": "肉付けする",
+  "type": "idiom",
+  "example": "Please flesh out the draft proposal.",
+  "exampleJa": "提案の草案を肉付けしてください。"
+ },
+ {
+  "term": "follow suit",
+  "meaning": "追随する",
+  "type": "idiom",
+  "example": "Rivals quickly followed suit.",
+  "exampleJa": "競合他社は素早く追随した。"
+ },
+ {
+  "term": "for the time being",
+  "meaning": "当面は",
+  "type": "idiom",
+  "example": "For the time being, prices stay.",
+  "exampleJa": "当面は、価格は据え置きだ。"
+ },
+ {
+  "term": "from scratch",
+  "meaning": "一から",
+  "type": "idiom",
+  "example": "We rebuilt the system from scratch.",
+  "exampleJa": "私たちはそのシステムを一から作り直した。"
+ },
+ {
+  "term": "gear up for",
+  "meaning": "備える",
+  "type": "idiom",
+  "example": "Stores gear up for the holidays.",
+  "exampleJa": "店は休暇シーズンに備える。"
+ },
+ {
+  "term": "get the hang of",
+  "meaning": "こつをつかむ",
+  "type": "idiom",
+  "example": "She got the hang of it fast.",
+  "exampleJa": "彼女は素早くこつをつかんだ。"
+ },
+ {
+  "term": "get underway",
+  "meaning": "始まる",
+  "type": "idiom",
+  "example": "Construction got underway in May.",
+  "exampleJa": "建設は5月に始まった。"
+ },
+ {
+  "term": "give the green light",
+  "meaning": "許可を出す",
+  "type": "idiom",
+  "example": "The board gave the green light.",
+  "exampleJa": "取締役会は許可を出した。"
+ },
+ {
+  "term": "go the extra mile",
+  "meaning": "一層の努力をする",
+  "type": "idiom",
+  "example": "Our staff go the extra mile daily.",
+  "exampleJa": "当社の職員は日々一層の努力をする。"
+ },
+ {
+  "term": "go under",
+  "meaning": "倒産する",
+  "type": "idiom",
+  "example": "Two suppliers went under last year.",
+  "exampleJa": "昨年、2社の供給業者が倒産した。"
+ },
+ {
+  "term": "hand down",
+  "meaning": "申し渡す",
+  "type": "idiom",
+  "example": "The court handed down a ruling.",
+  "exampleJa": "裁判所は判決を申し渡した。"
+ },
+ {
+  "term": "hash out",
+  "meaning": "徹底的に話し合う",
+  "type": "idiom",
+  "example": "We hashed out the final details.",
+  "exampleJa": "私たちは最終的な詳細を徹底的に話し合った。"
+ },
+ {
+  "term": "have a say in",
+  "meaning": "発言権がある",
+  "type": "idiom",
+  "example": "Staff have a say in scheduling.",
+  "exampleJa": "職員は日程調整に発言権がある。"
+ },
+ {
+  "term": "hold off on",
+  "meaning": "見合わせる",
+  "type": "idiom",
+  "example": "We held off on the purchase.",
+  "exampleJa": "私たちはその購入を見合わせた。"
+ },
+ {
+  "term": "hold true",
+  "meaning": "当てはまる",
+  "type": "idiom",
+  "example": "The rule holds true in every branch.",
+  "exampleJa": "その規則はどの支店にも当てはまる。"
+ },
+ {
+  "term": "in a nutshell",
+  "meaning": "要するに",
+  "type": "idiom",
+  "example": "In a nutshell, costs must fall.",
+  "exampleJa": "要するに、費用を下げなければならない。"
+ },
+ {
+  "term": "in bulk quantities",
+  "meaning": "大量に",
+  "type": "idiom",
+  "example": "We purchase paper in bulk quantities.",
+  "exampleJa": "私たちは紙を大量に購入している。"
+ },
+ {
+  "term": "in conjunction with",
+  "meaning": "〜と併せて",
+  "type": "idiom",
+  "example": "Use it in conjunction with the manual.",
+  "exampleJa": "手引書と併せてご使用ください。"
+ },
+ {
+  "term": "in due course",
+  "meaning": "そのうちに",
+  "type": "idiom",
+  "example": "You will hear from us in due course.",
+  "exampleJa": "そのうちにご連絡いたします。"
+ },
+ {
+  "term": "in exchange for",
+  "meaning": "〜と引き換えに",
+  "type": "idiom",
+  "example": "Discounts in exchange for early payment.",
+  "exampleJa": "早期支払いと引き換えの割引。"
+ },
+ {
+  "term": "in light of",
+  "meaning": "〜を考慮して",
+  "type": "idiom",
+  "example": "In light of costs, we delayed it.",
+  "exampleJa": "費用を考慮して、私たちはそれを延期した。"
+ },
+ {
+  "term": "in place of",
+  "meaning": "〜の代わりに",
+  "type": "idiom",
+  "example": "Use email in place of faxes.",
+  "exampleJa": "ファクスの代わりにメールを使ってください。"
+ },
+ {
+  "term": "in the pipeline",
+  "meaning": "進行中で",
+  "type": "idiom",
+  "example": "Three products are in the pipeline.",
+  "exampleJa": "3つの製品が進行中だ。"
+ },
+ {
+  "term": "in the wake of",
+  "meaning": "〜を受けて",
+  "type": "idiom",
+  "example": "In the wake of the recall, sales fell.",
+  "exampleJa": "回収を受けて、売上が落ちた。"
+ },
+ {
+  "term": "iron out",
+  "meaning": "解決する",
+  "type": "idiom",
+  "example": "We ironed out the final issues.",
+  "exampleJa": "私たちは最後の問題を解決した。"
+ },
+ {
+  "term": "keep abreast of",
+  "meaning": "遅れずについていく",
+  "type": "idiom",
+  "example": "Managers keep abreast of regulations.",
+  "exampleJa": "管理者は規制に遅れずついていく。"
+ },
+ {
+  "term": "keep at bay",
+  "meaning": "寄せつけない",
+  "type": "idiom",
+  "example": "Good service keeps rivals at bay.",
+  "exampleJa": "良いサービスは競合を寄せつけない。"
+ },
+ {
+  "term": "keep in mind",
+  "meaning": "念頭に置く",
+  "type": "idiom",
+  "example": "Keep in mind the budget limit.",
+  "exampleJa": "予算の上限を念頭に置いてください。"
+ },
+ {
+  "term": "kick off",
+  "meaning": "開始する",
+  "type": "idiom",
+  "example": "The campaign kicks off Monday.",
+  "exampleJa": "その宣伝活動は月曜日に開始する。"
+ },
+ {
+  "term": "lay off staff",
+  "meaning": "従業員を一時解雇する",
+  "type": "idiom",
+  "example": "The plant laid off staff temporarily.",
+  "exampleJa": "その工場は従業員を一時的に解雇した。"
+ },
+ {
+  "term": "lay the groundwork",
+  "meaning": "下地を作る",
+  "type": "idiom",
+  "example": "We laid the groundwork last quarter.",
+  "exampleJa": "私たちは前四半期に下地を作った。"
+ },
+ {
+  "term": "level off",
+  "meaning": "横ばいになる",
+  "type": "idiom",
+  "example": "Prices leveled off in June.",
+  "exampleJa": "価格は6月に横ばいになった。"
+ },
+ {
+  "term": "look ahead",
+  "meaning": "先を見据える",
+  "type": "idiom",
+  "example": "We look ahead to a strong year.",
+  "exampleJa": "私たちは好調な一年を見据えている。"
+ },
+ {
+  "term": "look to",
+  "meaning": "期待する",
+  "type": "idiom",
+  "example": "We look to expand into Europe.",
+  "exampleJa": "私たちは欧州への進出を期待している。"
+ },
+ {
+  "term": "lose ground",
+  "meaning": "後退する",
+  "type": "idiom",
+  "example": "The brand lost ground to rivals.",
+  "exampleJa": "その銘柄は競合に対して後退した。"
+ },
+ {
+  "term": "make allowances for",
+  "meaning": "考慮する",
+  "type": "idiom",
+  "example": "Make allowances for shipping delays.",
+  "exampleJa": "配送の遅れを考慮してください。"
+ },
+ {
+  "term": "make headway",
+  "meaning": "前進する",
+  "type": "idiom",
+  "example": "We made headway on the contract.",
+  "exampleJa": "私たちは契約について前進した。"
+ },
+ {
+  "term": "make the most of",
+  "meaning": "最大限に活用する",
+  "type": "idiom",
+  "example": "Make the most of the free trial.",
+  "exampleJa": "無料試用を最大限に活用してください。"
+ },
+ {
+  "term": "meet halfway",
+  "meaning": "歩み寄る",
+  "type": "idiom",
+  "example": "Both sides agreed to meet halfway.",
+  "exampleJa": "双方は歩み寄ることに同意した。"
+ },
+ {
+  "term": "narrow down",
+  "meaning": "絞り込む",
+  "type": "idiom",
+  "example": "We narrowed down the candidates.",
+  "exampleJa": "私たちは候補者を絞り込んだ。"
+ },
+ {
+  "term": "odds and ends",
+  "meaning": "こまごまとしたもの",
+  "type": "idiom",
+  "example": "The box held odds and ends.",
+  "exampleJa": "その箱にはこまごまとしたものが入っていた。"
+ },
+ {
+  "term": "off the record",
+  "meaning": "非公式に",
+  "type": "idiom",
+  "example": "He spoke off the record briefly.",
+  "exampleJa": "彼は手短に非公式に話した。"
+ },
+ {
+  "term": "on a par with",
+  "meaning": "〜と同等で",
+  "type": "idiom",
+  "example": "Our quality is on a par with theirs.",
+  "exampleJa": "当社の品質は彼らと同等だ。"
+ },
+ {
+  "term": "on the rise",
+  "meaning": "上昇中で",
+  "type": "idiom",
+  "example": "Online orders are on the rise.",
+  "exampleJa": "オンライン注文は上昇中だ。"
+ },
+ {
+  "term": "on the whole",
+  "meaning": "全体として",
+  "type": "idiom",
+  "example": "On the whole, the year went well.",
+  "exampleJa": "全体として、その年は順調だった。"
+ },
+ {
+  "term": "once and for all",
+  "meaning": "これを最後に",
+  "type": "idiom",
+  "example": "Let's settle this once and for all.",
+  "exampleJa": "これを最後にこの件を解決しましょう。"
+ },
+ {
+  "term": "opt out of",
+  "meaning": "脱退する",
+  "type": "idiom",
+  "example": "Members may opt out of the plan.",
+  "exampleJa": "会員はその計画から脱退できる。"
+ },
+ {
+  "term": "out of pocket",
+  "meaning": "自己負担で",
+  "type": "idiom",
+  "example": "She paid out of pocket for parking.",
+  "exampleJa": "彼女は駐車代を自己負担で支払った。"
+ },
+ {
+  "term": "over the long haul",
+  "meaning": "長期にわたって",
+  "type": "idiom",
+  "example": "Quality pays over the long haul.",
+  "exampleJa": "品質は長期にわたって報われる。"
+ },
+ {
+  "term": "pave the way for",
+  "meaning": "道を開く",
+  "type": "idiom",
+  "example": "The deal paved the way for growth.",
+  "exampleJa": "その取引は成長への道を開いた。"
+ },
+ {
+  "term": "pick up the pace",
+  "meaning": "速度を上げる",
+  "type": "idiom",
+  "example": "We need to pick up the pace.",
+  "exampleJa": "私たちは速度を上げる必要がある。"
+ },
+ {
+  "term": "pin down",
+  "meaning": "確定する",
+  "type": "idiom",
+  "example": "Let's pin down the exact date.",
+  "exampleJa": "正確な日付を確定しましょう。"
+ },
+ {
+  "term": "play down",
+  "meaning": "控えめに言う",
+  "type": "idiom",
+  "example": "Officials played down the incident.",
+  "exampleJa": "当局はその出来事を控えめに言った。"
+ },
+ {
+  "term": "plow back",
+  "meaning": "再投資する",
+  "type": "idiom",
+  "example": "Profits were plowed back into research.",
+  "exampleJa": "利益は研究に再投資された。"
+ },
+ {
+  "term": "put a strain on",
+  "meaning": "負担をかける",
+  "type": "idiom",
+  "example": "Rush orders put a strain on staff.",
+  "exampleJa": "急ぎの注文は職員に負担をかける。"
+ },
+ {
+  "term": "put forth",
+  "meaning": "提出する",
+  "type": "idiom",
+  "example": "She put forth a bold proposal.",
+  "exampleJa": "彼女は大胆な提案を提出した。"
+ },
+ {
+  "term": "put in writing",
+  "meaning": "書面にする",
+  "type": "idiom",
+  "example": "Please put the request in writing.",
+  "exampleJa": "その依頼を書面にしてください。"
+ },
+ {
+  "term": "ramp up",
+  "meaning": "増強する",
+  "type": "idiom",
+  "example": "We ramped up production in July.",
+  "exampleJa": "私たちは7月に生産を増強した。"
+ },
+ {
+  "term": "rely upon",
+  "meaning": "頼りにする",
+  "type": "idiom",
+  "example": "Clients rely upon our punctuality.",
+  "exampleJa": "顧客は当社の時間厳守を頼りにしている。"
+ },
+ {
+  "term": "rest assured",
+  "meaning": "ご安心ください",
+  "type": "idiom",
+  "example": "Rest assured the order is safe.",
+  "exampleJa": "ご安心ください、注文は安全です。"
+ },
+ {
+  "term": "rule of thumb",
+  "meaning": "経験則",
+  "type": "idiom",
+  "example": "As a rule of thumb, order early.",
+  "exampleJa": "経験則として、早めに注文してください。"
+ },
+ {
+  "term": "run by",
+  "meaning": "意見を聞く",
+  "type": "idiom",
+  "example": "Run the draft by the manager.",
+  "exampleJa": "その草案について部長の意見を聞いてください。"
+ },
+ {
+  "term": "run short of",
+  "meaning": "不足する",
+  "type": "idiom",
+  "example": "We ran short of packing tape.",
+  "exampleJa": "私たちは梱包テープが不足した。"
+ },
+ {
+  "term": "scale down",
+  "meaning": "縮小する",
+  "type": "idiom",
+  "example": "The firm scaled down its operations.",
+  "exampleJa": "その会社は事業を縮小した。"
+ },
+ {
+  "term": "see eye to eye",
+  "meaning": "意見が一致する",
+  "type": "idiom",
+  "example": "The partners see eye to eye.",
+  "exampleJa": "その提携先とは意見が一致している。"
+ },
+ {
+  "term": "set a precedent",
+  "meaning": "前例を作る",
+  "type": "idiom",
+  "example": "The ruling set a clear precedent.",
+  "exampleJa": "その判決は明確な前例を作った。"
+ },
+ {
+  "term": "set forth",
+  "meaning": "明記する",
+  "type": "idiom",
+  "example": "The terms are set forth below.",
+  "exampleJa": "条件は下記に明記されている。"
+ },
+ {
+  "term": "shed light on",
+  "meaning": "解明する",
+  "type": "idiom",
+  "example": "The study shed light on the cause.",
+  "exampleJa": "その研究は原因を解明した。"
+ },
+ {
+  "term": "shore up",
+  "meaning": "下支えする",
+  "type": "idiom",
+  "example": "We shored up weak sales channels.",
+  "exampleJa": "私たちは弱い販売経路を下支えした。"
+ },
+ {
+  "term": "size up",
+  "meaning": "評価する",
+  "type": "idiom",
+  "example": "She sized up the situation quickly.",
+  "exampleJa": "彼女は状況を素早く評価した。"
+ },
+ {
+  "term": "stand to gain",
+  "meaning": "得をする見込みだ",
+  "type": "idiom",
+  "example": "Both firms stand to gain from this.",
+  "exampleJa": "両社ともこれで得をする見込みだ。"
+ },
+ {
+  "term": "stay on top of",
+  "meaning": "把握し続ける",
+  "type": "idiom",
+  "example": "Stay on top of your inbox daily.",
+  "exampleJa": "毎日、受信箱を把握し続けてください。"
+ },
+ {
+  "term": "steer clear of",
+  "meaning": "避ける",
+  "type": "idiom",
+  "example": "Steer clear of unverified suppliers.",
+  "exampleJa": "未確認の供給業者は避けてください。"
+ },
+ {
+  "term": "stem the tide",
+  "meaning": "流れを食い止める",
+  "type": "idiom",
+  "example": "Discounts stemmed the tide of losses.",
+  "exampleJa": "割引が損失の流れを食い止めた。"
+ },
+ {
+  "term": "stick with",
+  "meaning": "続ける",
+  "type": "idiom",
+  "example": "We stick with proven suppliers.",
+  "exampleJa": "私たちは実績のある供給業者を使い続ける。"
+ },
+ {
+  "term": "straighten out",
+  "meaning": "整理する",
+  "type": "idiom",
+  "example": "We straightened out the records.",
+  "exampleJa": "私たちはその記録を整理した。"
+ },
+ {
+  "term": "take a toll on",
+  "meaning": "打撃を与える",
+  "type": "idiom",
+  "example": "Long hours take a toll on staff.",
+  "exampleJa": "長時間労働は職員に打撃を与える。"
+ },
+ {
+  "term": "take into consideration",
+  "meaning": "考慮に入れる",
+  "type": "idiom",
+  "example": "Take seasonality into consideration.",
+  "exampleJa": "季節性を考慮に入れてください。"
+ },
+ {
+  "term": "take stock of",
+  "meaning": "見直す",
+  "type": "idiom",
+  "example": "Let's take stock of our progress.",
+  "exampleJa": "私たちの進捗を見直しましょう。"
+ },
+ {
+  "term": "take the initiative",
+  "meaning": "率先して行う",
+  "type": "idiom",
+  "example": "She took the initiative to fix it.",
+  "exampleJa": "彼女は率先してそれを修正した。"
+ },
+ {
+  "term": "tap into",
+  "meaning": "活用する",
+  "type": "idiom",
+  "example": "We tapped into a new market.",
+  "exampleJa": "私たちは新しい市場を活用した。"
+ },
+ {
+  "term": "tide over",
+  "meaning": "乗り切る",
+  "type": "idiom",
+  "example": "The loan tided us over the winter.",
+  "exampleJa": "その融資が私たちに冬を乗り切らせた。"
+ },
+ {
+  "term": "touch base",
+  "meaning": "連絡を取る",
+  "type": "idiom",
+  "example": "Let's touch base next Tuesday.",
+  "exampleJa": "来週火曜日に連絡を取りましょう。"
+ },
+ {
+  "term": "turn a profit",
+  "meaning": "利益を上げる",
+  "type": "idiom",
+  "example": "The branch turned a profit quickly.",
+  "exampleJa": "その支店は素早く利益を上げた。"
+ },
+ {
+  "term": "under one's belt",
+  "meaning": "経験して",
+  "type": "idiom",
+  "example": "With five years under his belt, he leads.",
+  "exampleJa": "5年の経験を積んで、彼が率いている。"
+ },
+ {
+  "term": "up in the air",
+  "meaning": "未定で",
+  "type": "idiom",
+  "example": "The schedule is still up in the air.",
+  "exampleJa": "予定はまだ未定だ。"
+ },
+ {
+  "term": "usher out",
+  "meaning": "送り出す",
+  "type": "idiom",
+  "example": "Staff ushered out the last guests.",
+  "exampleJa": "職員は最後の客を送り出した。"
+ },
+ {
+  "term": "weather the storm",
+  "meaning": "難局を乗り切る",
+  "type": "idiom",
+  "example": "The firm weathered the storm well.",
+  "exampleJa": "その会社は難局をうまく乗り切った。"
+ },
+ {
+  "term": "weigh in on",
+  "meaning": "意見を述べる",
+  "type": "idiom",
+  "example": "Legal weighed in on the contract.",
+  "exampleJa": "法務がその契約について意見を述べた。"
+ },
+ {
+  "term": "win over",
+  "meaning": "説得して味方につける",
+  "type": "idiom",
+  "example": "She won over the skeptical board.",
+  "exampleJa": "彼女は懐疑的な取締役会を説得して味方につけた。"
+ },
+ {
+  "term": "work around",
+  "meaning": "回避策を取る",
+  "type": "idiom",
+  "example": "We worked around the shortage.",
+  "exampleJa": "私たちはその不足に回避策を取った。"
+ },
+ {
+  "term": "wrap one's head around",
+  "meaning": "理解する",
+  "type": "idiom",
+  "example": "It takes time to wrap your head around it.",
+  "exampleJa": "それを理解するには時間がかかる。"
+ },
+ {
+  "term": "write up",
+  "meaning": "作成する",
+  "type": "idiom",
+  "example": "Please write up the meeting notes.",
+  "exampleJa": "会議記録を作成してください。"
+ },
+ {
+  "term": "zero tolerance",
+  "meaning": "一切容認しないこと",
+  "type": "idiom",
+  "example": "We have zero tolerance for fraud.",
+  "exampleJa": "私たちは不正を一切容認しない。"
+ },
+ {
+  "term": "aftermath",
+  "meaning": "余波",
+  "type": "word",
+  "example": "The aftermath of the recall lingered.",
+  "exampleJa": "その回収の余波は長引いた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "allotment",
+  "meaning": "割当分",
+  "type": "word",
+  "example": "Each team received its allotment.",
+  "exampleJa": "各チームは割当分を受け取った。",
+  "pos": "名詞"
+ },
+ {
+  "term": "ambiance",
+  "meaning": "雰囲気",
+  "type": "word",
+  "example": "The restaurant has a warm ambiance.",
+  "exampleJa": "そのレストランは温かい雰囲気がある。",
+  "pos": "名詞"
+ },
+ {
+  "term": "appliance warranty",
+  "meaning": "家電の保証",
+  "type": "idiom",
+  "example": "The appliance warranty lasts three years.",
+  "exampleJa": "その家電の保証は3年間続く。"
+ },
+ {
+  "term": "aptitude",
+  "meaning": "適性",
+  "type": "word",
+  "example": "The test measures numerical aptitude.",
+  "exampleJa": "その試験は数的な適性を測る。",
+  "pos": "名詞"
+ },
+ {
+  "term": "arrears",
+  "meaning": "滞納",
+  "type": "word",
+  "example": "The account fell into arrears.",
+  "exampleJa": "その口座は滞納に陥った。",
+  "pos": "名詞"
+ },
+ {
+  "term": "ascent",
+  "meaning": "上昇",
+  "type": "word",
+  "example": "The firm's ascent surprised analysts.",
+  "exampleJa": "その会社の上昇は分析担当者を驚かせた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "attendance record",
+  "meaning": "出勤記録",
+  "type": "idiom",
+  "example": "His attendance record is spotless.",
+  "exampleJa": "彼の出勤記録は完璧だ。"
+ },
+ {
+  "term": "backdrop",
+  "meaning": "背景",
+  "type": "word",
+  "example": "The talks occurred against a tense backdrop.",
+  "exampleJa": "その協議は緊迫した背景の中で行われた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "ballpark figure",
+  "meaning": "概算",
+  "type": "idiom",
+  "example": "Give me a ballpark figure today.",
+  "exampleJa": "今日、概算を教えてください。"
+ },
+ {
+  "term": "beneficiary of the plan",
+  "meaning": "計画の受益者",
+  "type": "idiom",
+  "example": "Employees are beneficiaries of the plan.",
+  "exampleJa": "従業員はその計画の受益者だ。"
+ },
+ {
+  "term": "bidder",
+  "meaning": "入札者",
+  "type": "word",
+  "example": "The highest bidder won the contract.",
+  "exampleJa": "最高額の入札者が契約を獲得した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "blueprint for growth",
+  "meaning": "成長の青写真",
+  "type": "idiom",
+  "example": "The CEO shared a blueprint for growth.",
+  "exampleJa": "最高経営責任者は成長の青写真を示した。"
+ },
+ {
+  "term": "bottleneck",
+  "meaning": "障害箇所",
+  "type": "word",
+  "example": "Packaging became the main bottleneck.",
+  "exampleJa": "包装が主な障害箇所になった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "bracket",
+  "meaning": "区分",
+  "type": "word",
+  "example": "This product fits the premium bracket.",
+  "exampleJa": "この製品は高級品の区分に当てはまる。",
+  "pos": "名詞"
+ },
+ {
+  "term": "breakeven point",
+  "meaning": "損益分岐点",
+  "type": "idiom",
+  "example": "We reached the breakeven point early.",
+  "exampleJa": "私たちは早期に損益分岐点に達した。"
+ },
+ {
+  "term": "brink",
+  "meaning": "瀬戸際",
+  "type": "word",
+  "example": "The firm stood on the brink of closure.",
+  "exampleJa": "その会社は閉鎖の瀬戸際にあった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "buildup",
+  "meaning": "蓄積",
+  "type": "word",
+  "example": "A buildup of orders strained capacity.",
+  "exampleJa": "注文の蓄積が生産能力を圧迫した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "bureaucracy",
+  "meaning": "官僚的手続き",
+  "type": "word",
+  "example": "Bureaucracy slowed the approval.",
+  "exampleJa": "官僚的手続きが承認を遅らせた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "caliber",
+  "meaning": "力量",
+  "type": "word",
+  "example": "We hire people of high caliber.",
+  "exampleJa": "私たちは力量の高い人材を雇う。",
+  "pos": "名詞"
+ },
+ {
+  "term": "caretaker",
+  "meaning": "管理人",
+  "type": "word",
+  "example": "The caretaker locks the building nightly.",
+  "exampleJa": "管理人は毎晩その建物を施錠する。",
+  "pos": "名詞"
+ },
+ {
+  "term": "census",
+  "meaning": "国勢調査",
+  "type": "word",
+  "example": "The census informs our market plans.",
+  "exampleJa": "国勢調査は当社の市場計画に情報を与える。",
+  "pos": "名詞"
+ },
+ {
+  "term": "clearance sale",
+  "meaning": "在庫一掃売出し",
+  "type": "idiom",
+  "example": "The clearance sale ends Sunday.",
+  "exampleJa": "在庫一掃売出しは日曜日に終わる。"
+ },
+ {
+  "term": "clientele base",
+  "meaning": "顧客基盤",
+  "type": "idiom",
+  "example": "Our clientele base doubled this year.",
+  "exampleJa": "当社の顧客基盤は今年倍増した。"
+ },
+ {
+  "term": "clout",
+  "meaning": "影響力",
+  "type": "word",
+  "example": "The brand has considerable clout.",
+  "exampleJa": "その銘柄はかなりの影響力を持つ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "cornerstone",
+  "meaning": "礎",
+  "type": "word",
+  "example": "Trust is the cornerstone of trade.",
+  "exampleJa": "信頼は商売の礎だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "counterargument",
+  "meaning": "反論",
+  "type": "word",
+  "example": "She offered a strong counterargument.",
+  "exampleJa": "彼女は強力な反論を示した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "crackdown",
+  "meaning": "取り締まり",
+  "type": "word",
+  "example": "A crackdown on fraud began Monday.",
+  "exampleJa": "不正の取り締まりが月曜日に始まった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "credibility",
+  "meaning": "信頼性",
+  "type": "word",
+  "example": "The recall damaged our credibility.",
+  "exampleJa": "その回収は当社の信頼性を傷つけた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "crux",
+  "meaning": "核心",
+  "type": "word",
+  "example": "Cost is the crux of the problem.",
+  "exampleJa": "費用がその問題の核心だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "cutback",
+  "meaning": "削減",
+  "type": "word",
+  "example": "Budget cutbacks affected all teams.",
+  "exampleJa": "予算削減は全チームに影響した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "dealership",
+  "meaning": "販売代理店",
+  "type": "word",
+  "example": "The dealership opened downtown.",
+  "exampleJa": "その販売代理店は中心街に開店した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "default setting",
+  "meaning": "初期設定",
+  "type": "idiom",
+  "example": "Change the default setting first.",
+  "exampleJa": "まず初期設定を変更してください。"
+ },
+ {
+  "term": "deficit spending",
+  "meaning": "赤字支出",
+  "type": "idiom",
+  "example": "Deficit spending worried shareholders.",
+  "exampleJa": "赤字支出が株主を心配させた。"
+ },
+ {
+  "term": "depot manager",
+  "meaning": "車庫責任者",
+  "type": "idiom",
+  "example": "The depot manager signed the form.",
+  "exampleJa": "車庫責任者がその用紙に署名した。"
+ },
+ {
+  "term": "deterrent",
+  "meaning": "抑止力",
+  "type": "word",
+  "example": "Heavy fines act as a deterrent.",
+  "exampleJa": "重い罰金が抑止力として働く。",
+  "pos": "名詞"
+ },
+ {
+  "term": "discrepancy report",
+  "meaning": "不一致報告",
+  "type": "idiom",
+  "example": "File a discrepancy report immediately.",
+  "exampleJa": "直ちに不一致報告を提出してください。"
+ },
+ {
+  "term": "dispatcher",
+  "meaning": "配車係",
+  "type": "word",
+  "example": "The dispatcher assigns delivery routes.",
+  "exampleJa": "配車係が配達経路を割り当てる。",
+  "pos": "名詞"
+ },
+ {
+  "term": "dossier",
+  "meaning": "一件書類",
+  "type": "word",
+  "example": "The dossier contains all evidence.",
+  "exampleJa": "その一件書類にはすべての証拠が含まれている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "downturn",
+  "meaning": "景気後退",
+  "type": "word",
+  "example": "The downturn lasted eighteen months.",
+  "exampleJa": "その景気後退は18か月続いた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "draftsman",
+  "meaning": "製図者",
+  "type": "word",
+  "example": "The draftsman revised the plans.",
+  "exampleJa": "製図者がその図面を修正した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "dropout rate",
+  "meaning": "中退率",
+  "type": "idiom",
+  "example": "The training dropout rate fell.",
+  "exampleJa": "研修の中退率が下がった。"
+ },
+ {
+  "term": "embargo",
+  "meaning": "禁輸措置",
+  "type": "word",
+  "example": "The embargo halted all exports.",
+  "exampleJa": "その禁輸措置はすべての輸出を止めた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "endowment",
+  "meaning": "寄付基金",
+  "type": "word",
+  "example": "The university received a large endowment.",
+  "exampleJa": "その大学は多額の寄付基金を受けた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "entitlement",
+  "meaning": "受給権",
+  "type": "word",
+  "example": "Check your leave entitlement online.",
+  "exampleJa": "休暇の受給権をオンラインで確認してください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "epicenter",
+  "meaning": "中心地",
+  "type": "word",
+  "example": "The city is the epicenter of trade.",
+  "exampleJa": "その都市は交易の中心地だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "equilibrium",
+  "meaning": "均衡",
+  "type": "word",
+  "example": "Supply and demand reached equilibrium.",
+  "exampleJa": "需要と供給は均衡に達した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "escalation",
+  "meaning": "段階的拡大",
+  "type": "word",
+  "example": "The escalation of costs alarmed us.",
+  "exampleJa": "費用の段階的拡大が私たちを警戒させた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "evacuation route",
+  "meaning": "避難経路",
+  "type": "idiom",
+  "example": "Memorize the evacuation route today.",
+  "exampleJa": "今日、避難経路を覚えてください。"
+ },
+ {
+  "term": "exemption form",
+  "meaning": "免除申請書",
+  "type": "idiom",
+  "example": "Submit the exemption form by Friday.",
+  "exampleJa": "金曜日までに免除申請書を提出してください。"
+ },
+ {
+  "term": "fallout",
+  "meaning": "悪影響",
+  "type": "word",
+  "example": "The fallout from the error was minor.",
+  "exampleJa": "その誤りの悪影響は軽微だった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "fine print",
+  "meaning": "細かい規定",
+  "type": "idiom",
+  "example": "Always read the fine print.",
+  "exampleJa": "必ず細かい規定を読んでください。"
+ },
+ {
+  "term": "foothold",
+  "meaning": "足がかり",
+  "type": "word",
+  "example": "We gained a foothold in Europe.",
+  "exampleJa": "私たちは欧州で足がかりを得た。",
+  "pos": "名詞"
+ },
+ {
+  "term": "forerunner",
+  "meaning": "先駆け",
+  "type": "word",
+  "example": "This model was a forerunner.",
+  "exampleJa": "この型は先駆けだった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "framework agreement",
+  "meaning": "枠組み合意",
+  "type": "idiom",
+  "example": "Both sides signed a framework agreement.",
+  "exampleJa": "双方は枠組み合意に署名した。"
+ },
+ {
+  "term": "gateway",
+  "meaning": "玄関口",
+  "type": "word",
+  "example": "The port is a gateway to Asia.",
+  "exampleJa": "その港はアジアへの玄関口だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "glut",
+  "meaning": "供給過剰",
+  "type": "word",
+  "example": "A glut of stock lowered prices.",
+  "exampleJa": "在庫の供給過剰が価格を下げた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "grace period",
+  "meaning": "猶予期間",
+  "type": "idiom",
+  "example": "There is a ten-day grace period.",
+  "exampleJa": "10日間の猶予期間がある。"
+ },
+ {
+  "term": "groundwork",
+  "meaning": "下準備",
+  "type": "word",
+  "example": "The groundwork took three months.",
+  "exampleJa": "その下準備には3か月かかった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "hallmark",
+  "meaning": "特徴",
+  "type": "word",
+  "example": "Reliability is the hallmark of our brand.",
+  "exampleJa": "信頼性が当社の銘柄の特徴だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "hindsight",
+  "meaning": "後知恵",
+  "type": "word",
+  "example": "In hindsight, we acted too slowly.",
+  "exampleJa": "後知恵では、私たちの行動は遅すぎた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "holdover",
+  "meaning": "持ち越し",
+  "type": "word",
+  "example": "The rule is a holdover from before.",
+  "exampleJa": "その規則は以前からの持ち越しだ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "hub airport",
+  "meaning": "拠点空港",
+  "type": "idiom",
+  "example": "The hub airport handles most transfers.",
+  "exampleJa": "その拠点空港が大半の乗り継ぎを扱う。"
+ },
+ {
+  "term": "incumbent",
+  "meaning": "現職者",
+  "type": "word",
+  "example": "The incumbent won reelection easily.",
+  "exampleJa": "現職者は容易に再選した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "influx of orders",
+  "meaning": "注文の殺到",
+  "type": "idiom",
+  "example": "An influx of orders strained staff.",
+  "exampleJa": "注文の殺到が職員を圧迫した。"
+ },
+ {
+  "term": "insight into",
+  "meaning": "〜への洞察",
+  "type": "idiom",
+  "example": "The survey gave insight into demand.",
+  "exampleJa": "その調査は需要への洞察を与えた。"
+ },
+ {
+  "term": "instalment plan",
+  "meaning": "分割払い制度",
+  "type": "idiom",
+  "example": "We offer a flexible instalment plan.",
+  "exampleJa": "当社は柔軟な分割払い制度を提供している。"
+ },
+ {
+  "term": "intermediary",
+  "meaning": "仲介者",
+  "type": "word",
+  "example": "An intermediary handled the sale.",
+  "exampleJa": "仲介者がその売買を扱った。",
+  "pos": "名詞"
+ },
+ {
+  "term": "juncture",
+  "meaning": "時点",
+  "type": "word",
+  "example": "At this juncture, we must decide.",
+  "exampleJa": "この時点で、私たちは決断しなければならない。",
+  "pos": "名詞"
+ },
+ {
+  "term": "keystone",
+  "meaning": "要",
+  "type": "word",
+  "example": "Service is the keystone of loyalty.",
+  "exampleJa": "サービスが愛顧の要だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "layoff notice",
+  "meaning": "解雇通知",
+  "type": "idiom",
+  "example": "Layoff notices went out yesterday.",
+  "exampleJa": "解雇通知が昨日発送された。"
+ },
+ {
+  "term": "legwork",
+  "meaning": "地道な作業",
+  "type": "word",
+  "example": "The legwork took several weeks.",
+  "exampleJa": "その地道な作業には数週間かかった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "leverage",
+  "meaning": "てこ入れ材料",
+  "type": "word",
+  "example": "Volume gives us pricing leverage.",
+  "exampleJa": "数量が私たちに価格交渉の材料を与える。",
+  "pos": "名詞"
+ },
+ {
+  "term": "linchpin",
+  "meaning": "要となる人",
+  "type": "word",
+  "example": "She is the linchpin of the team.",
+  "exampleJa": "彼女はそのチームの要となる人だ。",
+  "pos": "名詞"
+ },
+ {
+  "term": "markdown",
+  "meaning": "値下げ",
+  "type": "word",
+  "example": "The markdown cleared old stock.",
+  "exampleJa": "その値下げが古い在庫を一掃した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "markup",
+  "meaning": "上乗せ額",
+  "type": "word",
+  "example": "The markup covers handling costs.",
+  "exampleJa": "その上乗せ額が取扱費用を賄う。",
+  "pos": "名詞"
+ },
+ {
+  "term": "mishap",
+  "meaning": "小さな事故",
+  "type": "word",
+  "example": "A minor mishap delayed loading.",
+  "exampleJa": "小さな事故が積み込みを遅らせた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "mock-up",
+  "meaning": "実物大模型",
+  "type": "word",
+  "example": "The mock-up impressed the client.",
+  "exampleJa": "その実物大模型は顧客に感銘を与えた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "nominee",
+  "meaning": "被指名者",
+  "type": "word",
+  "example": "The nominee accepted the position.",
+  "exampleJa": "被指名者はその職を受諾した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "obstacle course",
+  "meaning": "難関の連続",
+  "type": "idiom",
+  "example": "Approval was an obstacle course.",
+  "exampleJa": "承認は難関の連続だった。"
+ },
+ {
+  "term": "offshoot",
+  "meaning": "派生物",
+  "type": "word",
+  "example": "The service began as an offshoot.",
+  "exampleJa": "そのサービスは派生物として始まった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "onset",
+  "meaning": "始まり",
+  "type": "word",
+  "example": "The onset of winter slowed sales.",
+  "exampleJa": "冬の始まりが売上を鈍らせた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "outflow",
+  "meaning": "流出",
+  "type": "word",
+  "example": "Cash outflow exceeded projections.",
+  "exampleJa": "現金の流出は予測を上回った。",
+  "pos": "名詞"
+ },
+ {
+  "term": "outlay",
+  "meaning": "支出",
+  "type": "word",
+  "example": "The initial outlay was substantial.",
+  "exampleJa": "初期の支出はかなりのものだった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "overtime pay",
+  "meaning": "残業手当",
+  "type": "idiom",
+  "example": "Overtime pay is calculated monthly.",
+  "exampleJa": "残業手当は毎月計算される。"
+ },
+ {
+  "term": "paperwork backlog",
+  "meaning": "書類の滞留",
+  "type": "idiom",
+  "example": "We cleared the paperwork backlog.",
+  "exampleJa": "私たちは書類の滞留を解消した。"
+ },
+ {
+  "term": "payback period",
+  "meaning": "投資回収期間",
+  "type": "idiom",
+  "example": "The payback period is two years.",
+  "exampleJa": "投資回収期間は2年だ。"
+ },
+ {
+  "term": "peak season",
+  "meaning": "繁忙期",
+  "type": "idiom",
+  "example": "Peak season begins in November.",
+  "exampleJa": "繁忙期は11月に始まる。"
+ },
+ {
+  "term": "pilot program",
+  "meaning": "試験導入計画",
+  "type": "idiom",
+  "example": "The pilot program starts in March.",
+  "exampleJa": "その試験導入計画は3月に始まる。"
+ },
+ {
+  "term": "pitfall",
+  "meaning": "落とし穴",
+  "type": "word",
+  "example": "Avoid the common pitfalls of exporting.",
+  "exampleJa": "輸出のよくある落とし穴を避けてください。",
+  "pos": "名詞"
+ },
+ {
+  "term": "portfolio review",
+  "meaning": "資産構成の見直し",
+  "type": "idiom",
+  "example": "The portfolio review happens annually.",
+  "exampleJa": "資産構成の見直しは毎年行われる。"
+ },
+ {
+  "term": "premises inspection",
+  "meaning": "敷地の検査",
+  "type": "idiom",
+  "example": "A premises inspection is scheduled.",
+  "exampleJa": "敷地の検査が予定されている。"
+ },
+ {
+  "term": "proceeds from sales",
+  "meaning": "売上収入",
+  "type": "idiom",
+  "example": "Proceeds from sales fund research.",
+  "exampleJa": "売上収入が研究の資金となる。"
+ },
+ {
+  "term": "proponent of change",
+  "meaning": "変革の支持者",
+  "type": "idiom",
+  "example": "She is a proponent of change.",
+  "exampleJa": "彼女は変革の支持者だ。"
+ },
+ {
+  "term": "purchase order",
+  "meaning": "注文書",
+  "type": "idiom",
+  "example": "Attach the purchase order number.",
+  "exampleJa": "注文書番号を添付してください。"
+ },
+ {
+  "term": "quandary",
+  "meaning": "板挟み",
+  "type": "word",
+  "example": "We faced a real quandary.",
+  "exampleJa": "私たちは本当に板挟みに直面した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "quarterly report",
+  "meaning": "四半期報告書",
+  "type": "idiom",
+  "example": "The quarterly report was released today.",
+  "exampleJa": "四半期報告書が本日公表された。"
+ },
+ {
+  "term": "rebound",
+  "meaning": "回復",
+  "type": "word",
+  "example": "Sales showed a strong rebound.",
+  "exampleJa": "売上は力強い回復を示した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "recipient of the award",
+  "meaning": "受賞者",
+  "type": "idiom",
+  "example": "She was the recipient of the award.",
+  "exampleJa": "彼女がその受賞者だった。"
+ },
+ {
+  "term": "refurbishment",
+  "meaning": "改修",
+  "type": "word",
+  "example": "The refurbishment finished ahead of time.",
+  "exampleJa": "その改修は予定より早く終わった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "relocation package",
+  "meaning": "転勤支援制度",
+  "type": "idiom",
+  "example": "The relocation package covers housing.",
+  "exampleJa": "その転勤支援制度は住居費を賄う。"
+ },
+ {
+  "term": "remuneration package",
+  "meaning": "報酬内容",
+  "type": "idiom",
+  "example": "The remuneration package is attractive.",
+  "exampleJa": "その報酬内容は魅力的だ。"
+ },
+ {
+  "term": "resurgence",
+  "meaning": "復活",
+  "type": "word",
+  "example": "We saw a resurgence in demand.",
+  "exampleJa": "私たちは需要の復活を見た。",
+  "pos": "名詞"
+ },
+ {
+  "term": "retainer",
+  "meaning": "顧問料",
+  "type": "word",
+  "example": "The firm pays a monthly retainer.",
+  "exampleJa": "その会社は毎月顧問料を支払っている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "rollback",
+  "meaning": "撤回",
+  "type": "word",
+  "example": "A price rollback boosted sales.",
+  "exampleJa": "価格の撤回が売上を押し上げた。",
+  "pos": "名詞"
+ },
+ {
+  "term": "safeguard measure",
+  "meaning": "保護措置",
+  "type": "idiom",
+  "example": "New safeguard measures took effect.",
+  "exampleJa": "新しい保護措置が発効した。"
+ },
+ {
+  "term": "shortfall",
+  "meaning": "不足額",
+  "type": "word",
+  "example": "We covered the budget shortfall.",
+  "exampleJa": "私たちは予算の不足額を補った。",
+  "pos": "名詞"
+ },
+ {
+  "term": "showroom",
+  "meaning": "展示場",
+  "type": "word",
+  "example": "The showroom opens at ten.",
+  "exampleJa": "その展示場は10時に開く。",
+  "pos": "名詞"
+ },
+ {
+  "term": "slowdown",
+  "meaning": "減速",
+  "type": "word",
+  "example": "A slowdown hit the export sector.",
+  "exampleJa": "減速が輸出部門を襲った。",
+  "pos": "名詞"
+ },
+ {
+  "term": "spinoff",
+  "meaning": "分社",
+  "type": "word",
+  "example": "The spinoff listed shares last year.",
+  "exampleJa": "その分社は昨年、株式を上場した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "stakeholder meeting",
+  "meaning": "関係者会議",
+  "type": "idiom",
+  "example": "The stakeholder meeting runs Thursday.",
+  "exampleJa": "関係者会議は木曜日に行われる。"
+ },
+ {
+  "term": "standstill",
+  "meaning": "停止状態",
+  "type": "word",
+  "example": "Production came to a standstill.",
+  "exampleJa": "生産は停止状態になった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "stopgap",
+  "meaning": "応急措置",
+  "type": "word",
+  "example": "This is only a stopgap solution.",
+  "exampleJa": "これは応急措置にすぎない。",
+  "pos": "名詞"
+ },
+ {
+  "term": "streamlining",
+  "meaning": "効率化",
+  "type": "word",
+  "example": "Streamlining cut processing time.",
+  "exampleJa": "効率化が処理時間を削減した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "surcharge fee",
+  "meaning": "追加料金",
+  "type": "idiom",
+  "example": "A surcharge fee applies after hours.",
+  "exampleJa": "時間外には追加料金が適用される。"
+ },
+ {
+  "term": "takeover bid",
+  "meaning": "買収提案",
+  "type": "idiom",
+  "example": "The takeover bid was rejected.",
+  "exampleJa": "その買収提案は拒否された。"
+ },
+ {
+  "term": "tenure track",
+  "meaning": "終身雇用の道",
+  "type": "idiom",
+  "example": "She joined the tenure track program.",
+  "exampleJa": "彼女は終身雇用の道の制度に加わった。"
+ },
+ {
+  "term": "threshold amount",
+  "meaning": "基準額",
+  "type": "idiom",
+  "example": "Orders above the threshold amount ship free.",
+  "exampleJa": "基準額を超える注文は送料無料だ。"
+ },
+ {
+  "term": "trailblazer",
+  "meaning": "先駆者",
+  "type": "word",
+  "example": "The founder was a trailblazer.",
+  "exampleJa": "その創業者は先駆者だった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "turnaround time",
+  "meaning": "所要時間",
+  "type": "idiom",
+  "example": "Turnaround time fell to two days.",
+  "exampleJa": "所要時間は2日に短縮された。"
+ },
+ {
+  "term": "undertaking cost",
+  "meaning": "事業費用",
+  "type": "idiom",
+  "example": "The undertaking cost exceeded estimates.",
+  "exampleJa": "その事業費用は見積もりを上回った。"
+ },
+ {
+  "term": "upturn",
+  "meaning": "好転",
+  "type": "word",
+  "example": "An upturn began in the spring.",
+  "exampleJa": "好転は春に始まった。",
+  "pos": "名詞"
+ },
+ {
+  "term": "vacancy rate",
+  "meaning": "空室率",
+  "type": "idiom",
+  "example": "The office vacancy rate declined.",
+  "exampleJa": "事務所の空室率は低下した。"
+ },
+ {
+  "term": "vantage point",
+  "meaning": "有利な視点",
+  "type": "idiom",
+  "example": "From this vantage point, risks are clear.",
+  "exampleJa": "この有利な視点からは、危険が明確だ。"
+ },
+ {
+  "term": "venture capital",
+  "meaning": "事業資金",
+  "type": "idiom",
+  "example": "Venture capital funded the startup.",
+  "exampleJa": "事業資金がその新興企業に出資した。"
+ },
+ {
+  "term": "wage increase",
+  "meaning": "賃上げ",
+  "type": "idiom",
+  "example": "The union secured a wage increase.",
+  "exampleJa": "組合は賃上げを勝ち取った。"
+ },
+ {
+  "term": "watchdog",
+  "meaning": "監視機関",
+  "type": "word",
+  "example": "The industry watchdog issued a warning.",
+  "exampleJa": "業界の監視機関は警告を発した。",
+  "pos": "名詞"
+ },
+ {
+  "term": "windfall",
+  "meaning": "棚ぼたの利益",
+  "type": "word",
+  "example": "The sale brought an unexpected windfall.",
+  "exampleJa": "その売却は予期せぬ棚ぼたの利益をもたらした。",
+  "pos": "名詞"
+ },
+ {
+  "term": "workmanship",
+  "meaning": "仕上がり",
+  "type": "word",
+  "example": "The workmanship is exceptional.",
+  "exampleJa": "その仕上がりは並外れている。",
+  "pos": "名詞"
+ },
+ {
+  "term": "yardstick",
+  "meaning": "判断基準",
+  "type": "word",
+  "example": "Profit is not the only yardstick.",
+  "exampleJa": "利益だけが判断基準ではない。",
+  "pos": "名詞"
+ },
+ {
+  "term": "zoning regulation",
+  "meaning": "用途地域規制",
+  "type": "idiom",
+  "example": "Zoning regulations limited the design.",
+  "exampleJa": "用途地域規制が設計を制限した。"
+ },
+ {
+  "term": "abbreviate",
+  "meaning": "省略する",
+  "type": "word",
+  "example": "Please abbreviate long product names.",
+  "exampleJa": "長い製品名は省略してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "absorb costs",
+  "meaning": "費用を吸収する",
+  "type": "idiom",
+  "example": "We absorbed costs rather than raise prices.",
+  "exampleJa": "私たちは値上げせず費用を吸収した。"
+ },
+ {
+  "term": "accustom",
+  "meaning": "慣れさせる",
+  "type": "word",
+  "example": "Training accustoms staff to new tools.",
+  "exampleJa": "研修は職員を新しい道具に慣れさせる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "adapt to change",
+  "meaning": "変化に適応する",
+  "type": "idiom",
+  "example": "Successful firms adapt to change quickly.",
+  "exampleJa": "成功する会社は変化に素早く適応する。"
+ },
+ {
+  "term": "adhere to policy",
+  "meaning": "方針を順守する",
+  "type": "idiom",
+  "example": "Every branch adheres to policy.",
+  "exampleJa": "どの支店も方針を順守している。"
+ },
+ {
+  "term": "aggravate",
+  "meaning": "悪化させる",
+  "type": "word",
+  "example": "Delays aggravated customer frustration.",
+  "exampleJa": "遅延が顧客の不満を悪化させた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "allude to",
+  "meaning": "言及する",
+  "type": "idiom",
+  "example": "She alluded to future expansion.",
+  "exampleJa": "彼女は将来の拡大に言及した。"
+ },
+ {
+  "term": "amass",
+  "meaning": "蓄積する",
+  "type": "word",
+  "example": "The firm amassed significant reserves.",
+  "exampleJa": "その会社は相当の蓄えを蓄積した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "annotate",
+  "meaning": "注釈をつける",
+  "type": "word",
+  "example": "Please annotate the revised drawings.",
+  "exampleJa": "修正された図面に注釈をつけてください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "appease",
+  "meaning": "なだめる",
+  "type": "word",
+  "example": "Refunds appeased angry customers.",
+  "exampleJa": "返金が怒った顧客をなだめた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "appraise property",
+  "meaning": "不動産を査定する",
+  "type": "idiom",
+  "example": "An expert appraised the property.",
+  "exampleJa": "専門家がその不動産を査定した。"
+ },
+ {
+  "term": "apprehend",
+  "meaning": "理解する",
+  "type": "word",
+  "example": "Few apprehended the full risk.",
+  "exampleJa": "危険の全容を理解した者は少なかった。",
+  "pos": "動詞"
+ },
+ {
+  "term": "arbitrate",
+  "meaning": "仲裁する",
+  "type": "word",
+  "example": "A neutral party arbitrated the dispute.",
+  "exampleJa": "中立の第三者がその紛争を仲裁した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "assimilate",
+  "meaning": "吸収する",
+  "type": "word",
+  "example": "New staff assimilate procedures quickly.",
+  "exampleJa": "新入社員は手順を素早く吸収する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "attest",
+  "meaning": "証明する",
+  "type": "word",
+  "example": "The records attest to steady growth.",
+  "exampleJa": "その記録は着実な成長を証明している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "avail oneself of",
+  "meaning": "利用する",
+  "type": "idiom",
+  "example": "Avail yourself of the free training.",
+  "exampleJa": "無料の研修をご利用ください。"
+ },
+ {
+  "term": "avert",
+  "meaning": "回避する",
+  "type": "word",
+  "example": "Quick action averted a shutdown.",
+  "exampleJa": "迅速な行動が操業停止を回避した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "banish",
+  "meaning": "追放する",
+  "type": "word",
+  "example": "The policy banished paper receipts.",
+  "exampleJa": "その方針は紙の領収書を追放した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "bequeath",
+  "meaning": "遺贈する",
+  "type": "word",
+  "example": "The founder bequeathed shares to staff.",
+  "exampleJa": "創業者は職員に株式を遺贈した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "brace for",
+  "meaning": "身構える",
+  "type": "idiom",
+  "example": "Retailers braced for slow demand.",
+  "exampleJa": "小売業者は需要低迷に身構えた。"
+ },
+ {
+  "term": "calibrate expectations",
+  "meaning": "期待を調整する",
+  "type": "idiom",
+  "example": "We calibrated expectations after the review.",
+  "exampleJa": "私たちは見直しの後、期待を調整した。"
+ },
+ {
+  "term": "cap",
+  "meaning": "上限を設ける",
+  "type": "word",
+  "example": "We capped travel spending at ten percent.",
+  "exampleJa": "私たちは出張費に10%の上限を設けた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "capitalize on",
+  "meaning": "活用する",
+  "type": "idiom",
+  "example": "They capitalized on strong demand.",
+  "exampleJa": "彼らは旺盛な需要を活用した。"
+ },
+ {
+  "term": "censure",
+  "meaning": "非難する",
+  "type": "word",
+  "example": "The committee censured the manager.",
+  "exampleJa": "委員会はその管理者を非難した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "certify compliance",
+  "meaning": "順守を証明する",
+  "type": "idiom",
+  "example": "Auditors certify compliance annually.",
+  "exampleJa": "監査人は毎年、順守を証明する。"
+ },
+ {
+  "term": "collate feedback",
+  "meaning": "意見をまとめる",
+  "type": "idiom",
+  "example": "We collate feedback each quarter.",
+  "exampleJa": "私たちは四半期ごとに意見をまとめる。"
+ },
+ {
+  "term": "commemorate",
+  "meaning": "記念する",
+  "type": "word",
+  "example": "The event commemorates our anniversary.",
+  "exampleJa": "その催しは当社の記念日を記念するものだ。",
+  "pos": "動詞"
+ },
+ {
+  "term": "compensate employees",
+  "meaning": "従業員に報いる",
+  "type": "idiom",
+  "example": "We compensate employees fairly.",
+  "exampleJa": "私たちは従業員に公正に報いる。"
+ },
+ {
+  "term": "comply fully",
+  "meaning": "完全に順守する",
+  "type": "idiom",
+  "example": "All plants comply fully with the rules.",
+  "exampleJa": "すべての工場は規則を完全に順守している。"
+ },
+ {
+  "term": "concur",
+  "meaning": "同意する",
+  "type": "word",
+  "example": "The auditors concur with our findings.",
+  "exampleJa": "監査人は私たちの調査結果に同意している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "condone",
+  "meaning": "黙認する",
+  "type": "word",
+  "example": "We never condone unsafe practices.",
+  "exampleJa": "私たちは危険な慣行を決して黙認しない。",
+  "pos": "動詞"
+ },
+ {
+  "term": "consult a specialist",
+  "meaning": "専門家に相談する",
+  "type": "idiom",
+  "example": "Consult a specialist before deciding.",
+  "exampleJa": "決定前に専門家に相談してください。"
+ },
+ {
+  "term": "contend",
+  "meaning": "主張する",
+  "type": "word",
+  "example": "Critics contend the price is too high.",
+  "exampleJa": "批判者はその価格が高すぎると主張している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "convert leads",
+  "meaning": "見込み客を成約させる",
+  "type": "idiom",
+  "example": "The team converts leads efficiently.",
+  "exampleJa": "そのチームは効率よく見込み客を成約させる。"
+ },
+ {
+  "term": "countermand",
+  "meaning": "撤回する",
+  "type": "word",
+  "example": "The manager countermanded the order.",
+  "exampleJa": "部長はその指示を撤回した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "cultivate loyalty",
+  "meaning": "愛顧を育てる",
+  "type": "idiom",
+  "example": "Good service cultivates loyalty.",
+  "exampleJa": "良いサービスは愛顧を育てる。"
+ },
+ {
+  "term": "dampen",
+  "meaning": "弱める",
+  "type": "word",
+  "example": "High prices dampened consumer demand.",
+  "exampleJa": "高い価格が消費者の需要を弱めた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "deem necessary",
+  "meaning": "必要と判断する",
+  "type": "idiom",
+  "example": "Take steps you deem necessary.",
+  "exampleJa": "必要と判断する措置を取ってください。"
+ },
+ {
+  "term": "defray",
+  "meaning": "負担する",
+  "type": "word",
+  "example": "The grant defrays training costs.",
+  "exampleJa": "その助成金が研修費用を負担する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "demarcate",
+  "meaning": "区分する",
+  "type": "word",
+  "example": "Signs demarcate the loading zone.",
+  "exampleJa": "標識が搬入区域を区分している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "denounce",
+  "meaning": "非難する",
+  "type": "word",
+  "example": "The union denounced the pay freeze.",
+  "exampleJa": "組合は賃金凍結を非難した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "depict growth",
+  "meaning": "成長を示す",
+  "type": "idiom",
+  "example": "The graph depicts growth clearly.",
+  "exampleJa": "そのグラフは成長を明確に示している。"
+ },
+ {
+  "term": "deprive",
+  "meaning": "奪う",
+  "type": "word",
+  "example": "The outage deprived us of data.",
+  "exampleJa": "その障害は私たちからデータを奪った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "detract from",
+  "meaning": "損なう",
+  "type": "idiom",
+  "example": "Minor flaws detract from quality.",
+  "exampleJa": "小さな欠陥が品質を損なう。"
+ },
+ {
+  "term": "dictate terms",
+  "meaning": "条件を指示する",
+  "type": "idiom",
+  "example": "No supplier can dictate terms.",
+  "exampleJa": "どの供給業者も条件を指示できない。"
+ },
+ {
+  "term": "disband",
+  "meaning": "解散する",
+  "type": "word",
+  "example": "The task force disbanded in June.",
+  "exampleJa": "その特別班は6月に解散した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "discharge duties",
+  "meaning": "職務を果たす",
+  "type": "idiom",
+  "example": "She discharges her duties faithfully.",
+  "exampleJa": "彼女は忠実に職務を果たしている。"
+ },
+ {
+  "term": "disclose earnings",
+  "meaning": "収益を開示する",
+  "type": "idiom",
+  "example": "Public firms disclose earnings quarterly.",
+  "exampleJa": "上場企業は四半期ごとに収益を開示する。"
+ },
+ {
+  "term": "disseminate",
+  "meaning": "広める",
+  "type": "word",
+  "example": "We disseminate updates by email.",
+  "exampleJa": "私たちは最新情報をメールで広める。",
+  "pos": "動詞"
+ },
+ {
+  "term": "dissuade",
+  "meaning": "思いとどまらせる",
+  "type": "word",
+  "example": "High fees dissuade casual buyers.",
+  "exampleJa": "高い料金は気軽な購入者を思いとどまらせる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "distort figures",
+  "meaning": "数字をゆがめる",
+  "type": "idiom",
+  "example": "Seasonal effects distort figures.",
+  "exampleJa": "季節要因が数字をゆがめる。"
+ },
+ {
+  "term": "divulge",
+  "meaning": "漏らす",
+  "type": "word",
+  "example": "Never divulge client information.",
+  "exampleJa": "顧客情報を決して漏らさないでください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "earmark",
+  "meaning": "充当する",
+  "type": "word",
+  "example": "Funds were earmarked for research.",
+  "exampleJa": "資金は研究に充当された。",
+  "pos": "動詞"
+ },
+ {
+  "term": "emanate",
+  "meaning": "発する",
+  "type": "word",
+  "example": "A strange noise emanated from the machine.",
+  "exampleJa": "その機械から奇妙な音が発した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "embed",
+  "meaning": "組み込む",
+  "type": "word",
+  "example": "Safety checks are embedded in the process.",
+  "exampleJa": "安全点検が工程に組み込まれている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "endanger",
+  "meaning": "危険にさらす",
+  "type": "word",
+  "example": "Shortcuts endanger worker safety.",
+  "exampleJa": "近道は作業員の安全を危険にさらす。",
+  "pos": "動詞"
+ },
+ {
+  "term": "engender",
+  "meaning": "生み出す",
+  "type": "word",
+  "example": "Transparency engenders trust.",
+  "exampleJa": "透明性が信頼を生み出す。",
+  "pos": "動詞"
+ },
+ {
+  "term": "enrich",
+  "meaning": "豊かにする",
+  "type": "word",
+  "example": "The program enriches employee skills.",
+  "exampleJa": "その制度は従業員の技能を豊かにする。",
+  "pos": "動詞"
+ },
+ {
+  "term": "entrust",
+  "meaning": "委ねる",
+  "type": "word",
+  "example": "We entrust logistics to a partner.",
+  "exampleJa": "私たちは物流を提携先に委ねている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "equip",
+  "meaning": "備え付ける",
+  "type": "word",
+  "example": "Each room is equipped with a projector.",
+  "exampleJa": "各室には映写機が備え付けられている。",
+  "pos": "動詞"
+ },
+ {
+  "term": "escalate an issue",
+  "meaning": "問題を上申する",
+  "type": "idiom",
+  "example": "Escalate the issue to your manager.",
+  "exampleJa": "その問題を上司に上申してください。"
+ },
+ {
+  "term": "evoke",
+  "meaning": "呼び起こす",
+  "type": "word",
+  "example": "The design evokes a classic style.",
+  "exampleJa": "その意匠は古典的な様式を呼び起こす。",
+  "pos": "動詞"
+ },
+ {
+  "term": "exceed capacity",
+  "meaning": "能力を超える",
+  "type": "idiom",
+  "example": "Orders exceeded capacity in December.",
+  "exampleJa": "注文は12月に能力を超えた。"
+ },
+ {
+  "term": "exert",
+  "meaning": "及ぼす",
+  "type": "word",
+  "example": "Regulations exert pressure on margins.",
+  "exampleJa": "規制が利ざやに圧力を及ぼす。",
+  "pos": "動詞"
+ },
+ {
+  "term": "expend",
+  "meaning": "費やす",
+  "type": "word",
+  "example": "We expend little on advertising.",
+  "exampleJa": "私たちは広告にほとんど費やさない。",
+  "pos": "動詞"
+ },
+ {
+  "term": "extend credit",
+  "meaning": "信用を供与する",
+  "type": "idiom",
+  "example": "We extend credit to trusted clients.",
+  "exampleJa": "私たちは信頼できる顧客に信用を供与する。"
+ },
+ {
+  "term": "fluctuate wildly",
+  "meaning": "激しく変動する",
+  "type": "idiom",
+  "example": "Prices fluctuated wildly last quarter.",
+  "exampleJa": "価格は前四半期に激しく変動した。"
+ },
+ {
+  "term": "forgo",
+  "meaning": "見送る",
+  "type": "word",
+  "example": "We forwent bonuses to protect jobs.",
+  "exampleJa": "私たちは雇用を守るため賞与を見送った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "furnish details",
+  "meaning": "詳細を提供する",
+  "type": "idiom",
+  "example": "Please furnish details in writing.",
+  "exampleJa": "詳細を書面で提供してください。"
+ },
+ {
+  "term": "hamper",
+  "meaning": "妨げる",
+  "type": "word",
+  "example": "Bad roads hampered deliveries.",
+  "exampleJa": "悪路が配達を妨げた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "heed",
+  "meaning": "心に留める",
+  "type": "word",
+  "example": "Heed the safety warnings carefully.",
+  "exampleJa": "安全警告を注意深く心に留めてください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "hinge on",
+  "meaning": "次第である",
+  "type": "idiom",
+  "example": "Approval hinges on the budget.",
+  "exampleJa": "承認は予算次第だ。"
+ },
+ {
+  "term": "implement changes",
+  "meaning": "変更を実施する",
+  "type": "idiom",
+  "example": "We implement changes gradually.",
+  "exampleJa": "私たちは変更を段階的に実施する。"
+ },
+ {
+  "term": "incorporate feedback",
+  "meaning": "意見を取り入れる",
+  "type": "idiom",
+  "example": "We incorporate feedback into design.",
+  "exampleJa": "私たちは意見を設計に取り入れる。"
+ },
+ {
+  "term": "indulge",
+  "meaning": "甘やかす",
+  "type": "word",
+  "example": "We never indulge unreasonable demands.",
+  "exampleJa": "私たちは不合理な要求を決して甘やかさない。",
+  "pos": "動詞"
+ },
+ {
+  "term": "inflate",
+  "meaning": "水増しする",
+  "type": "word",
+  "example": "Never inflate expense claims.",
+  "exampleJa": "経費請求を決して水増ししないでください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "infringe",
+  "meaning": "侵害する",
+  "type": "word",
+  "example": "The design infringes an existing patent.",
+  "exampleJa": "その意匠は既存の特許を侵害している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "initiate contact",
+  "meaning": "接触を開始する",
+  "type": "idiom",
+  "example": "Sales initiate contact within a day.",
+  "exampleJa": "営業は1日以内に接触を開始する。"
+ },
+ {
+  "term": "insulate",
+  "meaning": "守る",
+  "type": "word",
+  "example": "Long contracts insulate us from shocks.",
+  "exampleJa": "長期契約が私たちを打撃から守る。",
+  "pos": "動詞"
+ },
+ {
+  "term": "intercede",
+  "meaning": "仲裁に入る",
+  "type": "word",
+  "example": "The manager interceded in the dispute.",
+  "exampleJa": "部長がその紛争の仲裁に入った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "interpose",
+  "meaning": "割って入る",
+  "type": "word",
+  "example": "The chair interposed to keep order.",
+  "exampleJa": "議長は秩序を保つため割って入った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "invalidate a warranty",
+  "meaning": "保証を無効にする",
+  "type": "idiom",
+  "example": "Repairs may invalidate a warranty.",
+  "exampleJa": "修理は保証を無効にする恐れがある。"
+ },
+ {
+  "term": "lament",
+  "meaning": "嘆く",
+  "type": "word",
+  "example": "Staff lamented the office relocation.",
+  "exampleJa": "職員は事務所の移転を嘆いた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "levy",
+  "meaning": "課す",
+  "type": "word",
+  "example": "The city levied a new business tax.",
+  "exampleJa": "市は新しい事業税を課した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "mediate between",
+  "meaning": "間を取り持つ",
+  "type": "idiom",
+  "example": "She mediated between the two teams.",
+  "exampleJa": "彼女は2つのチームの間を取り持った。"
+ },
+ {
+  "term": "mimic",
+  "meaning": "まねる",
+  "type": "word",
+  "example": "Rivals mimic our packaging design.",
+  "exampleJa": "競合他社は当社の包装意匠をまねる。",
+  "pos": "動詞"
+ },
+ {
+  "term": "nominate a candidate",
+  "meaning": "候補者を指名する",
+  "type": "idiom",
+  "example": "Members nominate a candidate each spring.",
+  "exampleJa": "会員は毎春、候補者を指名する。"
+ },
+ {
+  "term": "obstruct",
+  "meaning": "妨害する",
+  "type": "word",
+  "example": "Parked trucks obstructed the entrance.",
+  "exampleJa": "駐車したトラックが入口を妨害した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "outbid",
+  "meaning": "競り勝つ",
+  "type": "word",
+  "example": "A rival outbid us by a small margin.",
+  "exampleJa": "競合がわずかな差で私たちに競り勝った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "outnumber",
+  "meaning": "数で上回る",
+  "type": "word",
+  "example": "Online orders now outnumber phone orders.",
+  "exampleJa": "オンライン注文が今や電話注文を数で上回る。",
+  "pos": "動詞"
+ },
+ {
+  "term": "overstate",
+  "meaning": "誇張する",
+  "type": "word",
+  "example": "The report overstates the risk.",
+  "exampleJa": "その報告書は危険を誇張している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "overturn",
+  "meaning": "覆す",
+  "type": "word",
+  "example": "The board overturned the decision.",
+  "exampleJa": "取締役会はその決定を覆した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "pledge support",
+  "meaning": "支援を約束する",
+  "type": "idiom",
+  "example": "The parent firm pledged support.",
+  "exampleJa": "親会社は支援を約束した。"
+ },
+ {
+  "term": "preempt",
+  "meaning": "先手を打つ",
+  "type": "word",
+  "example": "We preempted complaints with a notice.",
+  "exampleJa": "私たちは通知で苦情に先手を打った。",
+  "pos": "動詞"
+ },
+ {
+  "term": "prescribe",
+  "meaning": "指示する",
+  "type": "word",
+  "example": "The manual prescribes weekly checks.",
+  "exampleJa": "その手引書は週次点検を指示している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "preside",
+  "meaning": "主宰する",
+  "type": "word",
+  "example": "The chairman presided over the meeting.",
+  "exampleJa": "会長がその会議を主宰した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "proliferate",
+  "meaning": "急増する",
+  "type": "word",
+  "example": "Online stores proliferated rapidly.",
+  "exampleJa": "オンライン店舗が急速に増えた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "prompt a review",
+  "meaning": "見直しを促す",
+  "type": "idiom",
+  "example": "Complaints prompted a full review.",
+  "exampleJa": "苦情が全面的な見直しを促した。"
+ },
+ {
+  "term": "quell",
+  "meaning": "静める",
+  "type": "word",
+  "example": "The statement quelled staff concerns.",
+  "exampleJa": "その声明は職員の懸念を静めた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "ratify a treaty",
+  "meaning": "条約を批准する",
+  "type": "idiom",
+  "example": "Both nations ratified the treaty.",
+  "exampleJa": "両国はその条約を批准した。"
+ },
+ {
+  "term": "realign",
+  "meaning": "再編する",
+  "type": "word",
+  "example": "We realigned the sales territories.",
+  "exampleJa": "私たちは営業区域を再編した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "rebut",
+  "meaning": "反論する",
+  "type": "word",
+  "example": "The supplier rebutted the allegation.",
+  "exampleJa": "その供給業者はその申し立てに反論した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "reconvene",
+  "meaning": "再招集する",
+  "type": "word",
+  "example": "The committee reconvenes next month.",
+  "exampleJa": "委員会は来月再招集される。",
+  "pos": "動詞"
+ },
+ {
+  "term": "recount",
+  "meaning": "詳しく話す",
+  "type": "word",
+  "example": "She recounted the incident calmly.",
+  "exampleJa": "彼女はその出来事を落ち着いて詳しく話した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "recur",
+  "meaning": "再発する",
+  "type": "word",
+  "example": "The fault recurred after two weeks.",
+  "exampleJa": "その故障は2週間後に再発した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "redistribute",
+  "meaning": "再配分する",
+  "type": "word",
+  "example": "We redistributed the workload evenly.",
+  "exampleJa": "私たちは仕事量を均等に再配分した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "refute",
+  "meaning": "論破する",
+  "type": "word",
+  "example": "Data refuted the earlier claim.",
+  "exampleJa": "データが以前の主張を論破した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "regain",
+  "meaning": "取り戻す",
+  "type": "word",
+  "example": "The brand regained market share.",
+  "exampleJa": "その銘柄は市場占有率を取り戻した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "reimburse expenses",
+  "meaning": "経費を払い戻す",
+  "type": "idiom",
+  "example": "We reimburse expenses within a week.",
+  "exampleJa": "私たちは1週間以内に経費を払い戻す。"
+ },
+ {
+  "term": "relay",
+  "meaning": "伝える",
+  "type": "word",
+  "example": "Please relay the message to accounting.",
+  "exampleJa": "そのメッセージを経理に伝えてください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "remodel",
+  "meaning": "改装する",
+  "type": "word",
+  "example": "They remodeled the entire showroom.",
+  "exampleJa": "彼らは展示場全体を改装した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "render assistance",
+  "meaning": "援助を提供する",
+  "type": "idiom",
+  "example": "Staff rendered assistance immediately.",
+  "exampleJa": "職員は直ちに援助を提供した。"
+ },
+ {
+  "term": "renegotiate",
+  "meaning": "再交渉する",
+  "type": "word",
+  "example": "We renegotiated the annual contract.",
+  "exampleJa": "私たちは年間契約を再交渉した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "repeal",
+  "meaning": "廃止する",
+  "type": "word",
+  "example": "Lawmakers repealed the old statute.",
+  "exampleJa": "立法者はその古い法令を廃止した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "resolve a dispute",
+  "meaning": "紛争を解決する",
+  "type": "idiom",
+  "example": "Mediation resolved the dispute fast.",
+  "exampleJa": "調停がその紛争を素早く解決した。"
+ },
+ {
+  "term": "restructure",
+  "meaning": "再編する",
+  "type": "word",
+  "example": "The firm restructured its debt.",
+  "exampleJa": "その会社は債務を再編した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "retract",
+  "meaning": "撤回する",
+  "type": "word",
+  "example": "The company retracted the statement.",
+  "exampleJa": "その会社はその声明を撤回した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "reunite",
+  "meaning": "再会させる",
+  "type": "word",
+  "example": "The event reunited former colleagues.",
+  "exampleJa": "その催しは元同僚たちを再会させた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "safeguard data",
+  "meaning": "データを保護する",
+  "type": "idiom",
+  "example": "We safeguard data with encryption.",
+  "exampleJa": "私たちは暗号化でデータを保護している。"
+ },
+ {
+  "term": "saturate",
+  "meaning": "飽和させる",
+  "type": "word",
+  "example": "Cheap imports saturated the market.",
+  "exampleJa": "安価な輸入品が市場を飽和させた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "sever ties",
+  "meaning": "関係を断つ",
+  "type": "idiom",
+  "example": "The firm severed ties with the vendor.",
+  "exampleJa": "その会社はその販売業者と関係を断った。"
+ },
+ {
+  "term": "simulate",
+  "meaning": "模擬実験する",
+  "type": "word",
+  "example": "We simulate demand before launch.",
+  "exampleJa": "私たちは発売前に需要を模擬実験する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "solidify",
+  "meaning": "固める",
+  "type": "word",
+  "example": "The deal solidified our position.",
+  "exampleJa": "その取引は当社の地位を固めた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "squander",
+  "meaning": "浪費する",
+  "type": "word",
+  "example": "Never squander limited resources.",
+  "exampleJa": "限られた資源を決して浪費しないでください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "stipulate conditions",
+  "meaning": "条件を規定する",
+  "type": "idiom",
+  "example": "The contract stipulates strict conditions.",
+  "exampleJa": "その契約は厳格な条件を規定している。"
+ },
+ {
+  "term": "subsidize",
+  "meaning": "補助金を出す",
+  "type": "word",
+  "example": "The city subsidizes local businesses.",
+  "exampleJa": "市は地元企業に補助金を出している。",
+  "pos": "動詞"
+ },
+ {
+  "term": "supplant",
+  "meaning": "取って代わる",
+  "type": "word",
+  "example": "Digital forms supplanted paper ones.",
+  "exampleJa": "電子の用紙が紙の用紙に取って代わった。",
+  "pos": "動詞"
+ },
+ {
+  "term": "suppress",
+  "meaning": "抑える",
+  "type": "word",
+  "example": "Discounts suppressed profit margins.",
+  "exampleJa": "割引が利ざやを抑えた。",
+  "pos": "動詞"
+ },
+ {
+  "term": "surrender",
+  "meaning": "引き渡す",
+  "type": "word",
+  "example": "Please surrender your badge on exit.",
+  "exampleJa": "退出時にバッジを引き渡してください。",
+  "pos": "動詞"
+ },
+ {
+  "term": "tabulate",
+  "meaning": "表にする",
+  "type": "word",
+  "example": "Staff tabulate survey results weekly.",
+  "exampleJa": "職員は毎週、調査結果を表にする。",
+  "pos": "動詞"
+ },
+ {
+  "term": "terminate employment",
+  "meaning": "雇用を終了する",
+  "type": "idiom",
+  "example": "The firm terminated employment lawfully.",
+  "exampleJa": "その会社は合法的に雇用を終了した。"
+ },
+ {
+  "term": "thwart",
+  "meaning": "阻む",
+  "type": "word",
+  "example": "Strong security thwarted the attack.",
+  "exampleJa": "強固な防護がその攻撃を阻んだ。",
+  "pos": "動詞"
+ },
+ {
+  "term": "truncate",
+  "meaning": "切り詰める",
+  "type": "word",
+  "example": "The system truncates long entries.",
+  "exampleJa": "そのシステムは長い記入を切り詰める。",
+  "pos": "動詞"
+ },
+ {
+  "term": "unify",
+  "meaning": "統一する",
+  "type": "word",
+  "example": "We unified all branch procedures.",
+  "exampleJa": "私たちは全支店の手順を統一した。",
+  "pos": "動詞"
+ },
+ {
+  "term": "uphold a decision",
+  "meaning": "決定を支持する",
+  "type": "idiom",
+  "example": "The court upheld the decision.",
+  "exampleJa": "裁判所はその決定を支持した。"
+ },
+ {
+  "term": "utilize resources",
+  "meaning": "資源を活用する",
+  "type": "idiom",
+  "example": "We utilize resources efficiently.",
+  "exampleJa": "私たちは資源を効率的に活用している。"
+ },
+ {
+  "term": "validate a claim",
+  "meaning": "請求の妥当性を確認する",
+  "type": "idiom",
+  "example": "We validate every warranty claim.",
+  "exampleJa": "私たちはすべての保証請求の妥当性を確認する。"
+ },
+ {
+  "term": "vouch for",
+  "meaning": "保証する",
+  "type": "idiom",
+  "example": "I can vouch for her reliability.",
+  "exampleJa": "私は彼女の信頼性を保証できる。"
+ },
+ {
+  "term": "waive liability",
+  "meaning": "責任を放棄する",
+  "type": "idiom",
+  "example": "The form waives liability for damage.",
+  "exampleJa": "その用紙は損害の責任を放棄するものだ。"
+ },
+ {
+  "term": "wield",
+  "meaning": "行使する",
+  "type": "word",
+  "example": "The board wields final authority.",
+  "exampleJa": "取締役会が最終的な権限を行使する。",
+  "pos": "動詞"
+ },
+ {
+  "term": "withstand",
+  "meaning": "耐える",
+  "type": "word",
+  "example": "The case withstands rough handling.",
+  "exampleJa": "そのケースは乱暴な扱いに耐える。",
+  "pos": "動詞"
+ },
+ {
+  "term": "accountable party",
+  "meaning": "責任当事者",
+  "type": "idiom",
+  "example": "Name the accountable party clearly.",
+  "exampleJa": "責任当事者を明確に指名してください。"
+ },
+ {
+  "term": "advisable",
+  "meaning": "賢明な",
+  "type": "word",
+  "example": "It is advisable to book early.",
+  "exampleJa": "早めの予約が賢明だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "all-inclusive",
+  "meaning": "全て込みの",
+  "type": "word",
+  "example": "The tour is all-inclusive.",
+  "exampleJa": "その旅行は全て込みだ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "ancillary",
+  "meaning": "付随的な",
+  "type": "word",
+  "example": "Ancillary services generate extra revenue.",
+  "exampleJa": "付随的なサービスが追加収益を生む。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "attentive service",
+  "meaning": "行き届いた接客",
+  "type": "idiom",
+  "example": "Attentive service earns repeat visits.",
+  "exampleJa": "行き届いた接客が再訪を得る。"
+ },
+ {
+  "term": "binding contract",
+  "meaning": "拘束力のある契約",
+  "type": "idiom",
+  "example": "This is a binding contract.",
+  "exampleJa": "これは拘束力のある契約だ。"
+ },
+ {
+  "term": "comprehensive coverage",
+  "meaning": "包括的な補償",
+  "type": "idiom",
+  "example": "The policy offers comprehensive coverage.",
+  "exampleJa": "その保険は包括的な補償を提供する。"
+ },
+ {
+  "term": "conditional",
+  "meaning": "条件付きの",
+  "type": "word",
+  "example": "The offer is conditional on approval.",
+  "exampleJa": "その申し出は承認を条件としている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "customary practice",
+  "meaning": "慣例",
+  "type": "idiom",
+  "example": "It is customary practice here.",
+  "exampleJa": "それはここでの慣例だ。"
+ },
+ {
+  "term": "deliberate decision",
+  "meaning": "熟慮した決定",
+  "type": "idiom",
+  "example": "It was a deliberate decision.",
+  "exampleJa": "それは熟慮した決定だった。"
+ },
+ {
+  "term": "dependable supplier",
+  "meaning": "信頼できる供給業者",
+  "type": "idiom",
+  "example": "We seek dependable suppliers only.",
+  "exampleJa": "私たちは信頼できる供給業者だけを求める。"
+ },
+ {
+  "term": "disruptive",
+  "meaning": "破壊的な",
+  "type": "word",
+  "example": "The technology proved disruptive.",
+  "exampleJa": "その技術は破壊的だと分かった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "eventful",
+  "meaning": "出来事の多い",
+  "type": "word",
+  "example": "It was an eventful quarter.",
+  "exampleJa": "出来事の多い四半期だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "far-reaching",
+  "meaning": "広範囲に及ぶ",
+  "type": "word",
+  "example": "The reform had far-reaching effects.",
+  "exampleJa": "その改革は広範囲に及ぶ影響を持った。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "forthright",
+  "meaning": "率直な",
+  "type": "word",
+  "example": "Her forthright manner earns respect.",
+  "exampleJa": "彼女の率直な態度は敬意を得る。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "groundbreaking",
+  "meaning": "画期的な",
+  "type": "word",
+  "example": "The study was groundbreaking.",
+  "exampleJa": "その研究は画期的だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "indicative",
+  "meaning": "示唆する",
+  "type": "word",
+  "example": "Early sales are indicative of success.",
+  "exampleJa": "初期の売上は成功を示唆している。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "insightful",
+  "meaning": "洞察に富む",
+  "type": "word",
+  "example": "She gave insightful comments.",
+  "exampleJa": "彼女は洞察に富む意見を述べた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "labor-intensive",
+  "meaning": "労働集約的な",
+  "type": "word",
+  "example": "Assembly is labor-intensive work.",
+  "exampleJa": "組み立ては労働集約的な作業だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "mutually beneficial",
+  "meaning": "相互に有益な",
+  "type": "idiom",
+  "example": "We seek mutually beneficial terms.",
+  "exampleJa": "私たちは相互に有益な条件を求める。"
+ },
+ {
+  "term": "noteworthy",
+  "meaning": "注目に値する",
+  "type": "word",
+  "example": "The growth is truly noteworthy.",
+  "exampleJa": "その成長は本当に注目に値する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "obligatory",
+  "meaning": "義務的な",
+  "type": "word",
+  "example": "Attendance is obligatory for supervisors.",
+  "exampleJa": "出席は監督者に義務的だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "ongoing",
+  "meaning": "進行中の",
+  "type": "word",
+  "example": "This is an ongoing investigation.",
+  "exampleJa": "これは進行中の調査だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "overarching",
+  "meaning": "包括的な",
+  "type": "word",
+  "example": "Our overarching goal is trust.",
+  "exampleJa": "当社の包括的な目標は信頼だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "participatory",
+  "meaning": "参加型の",
+  "type": "word",
+  "example": "We use a participatory approach.",
+  "exampleJa": "私たちは参加型の手法を用いている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "perceptive",
+  "meaning": "洞察力のある",
+  "type": "word",
+  "example": "His perceptive analysis helped us.",
+  "exampleJa": "彼の洞察力のある分析は私たちを助けた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "preliminary findings",
+  "meaning": "予備的な調査結果",
+  "type": "idiom",
+  "example": "Preliminary findings look encouraging.",
+  "exampleJa": "予備的な調査結果は有望に見える。"
+ },
+ {
+  "term": "preventable",
+  "meaning": "防げる",
+  "type": "word",
+  "example": "Most accidents are preventable.",
+  "exampleJa": "大半の事故は防げる。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "prohibitive",
+  "meaning": "法外な",
+  "type": "word",
+  "example": "Shipping costs were prohibitive.",
+  "exampleJa": "送料は法外だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "recurring",
+  "meaning": "繰り返し起こる",
+  "type": "word",
+  "example": "We fixed a recurring software issue.",
+  "exampleJa": "私たちは繰り返し起こるソフトの問題を修正した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "respectable",
+  "meaning": "立派な",
+  "type": "word",
+  "example": "They posted respectable results.",
+  "exampleJa": "彼らは立派な業績を発表した。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "scrupulous",
+  "meaning": "綿密な",
+  "type": "word",
+  "example": "She keeps scrupulous records.",
+  "exampleJa": "彼女は綿密な記録をつけている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "self-explanatory",
+  "meaning": "説明不要の",
+  "type": "word",
+  "example": "The chart is self-explanatory.",
+  "exampleJa": "その図表は説明不要だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "sizable",
+  "meaning": "かなりの",
+  "type": "word",
+  "example": "We received a sizable order.",
+  "exampleJa": "私たちはかなりの注文を受けた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "state-of-the-art",
+  "meaning": "最先端の",
+  "type": "word",
+  "example": "The lab uses state-of-the-art tools.",
+  "exampleJa": "その研究室は最先端の道具を使っている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "time-consuming",
+  "meaning": "時間のかかる",
+  "type": "word",
+  "example": "Manual checks are time-consuming.",
+  "exampleJa": "手作業の点検は時間がかかる。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "transferable",
+  "meaning": "譲渡可能な",
+  "type": "word",
+  "example": "The ticket is not transferable.",
+  "exampleJa": "その切符は譲渡できない。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "unbiased",
+  "meaning": "偏りのない",
+  "type": "word",
+  "example": "We need an unbiased assessment.",
+  "exampleJa": "私たちには偏りのない評価が必要だ。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "unconditional",
+  "meaning": "無条件の",
+  "type": "word",
+  "example": "We offer an unconditional guarantee.",
+  "exampleJa": "当社は無条件の保証を提供している。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "understaffed",
+  "meaning": "人手不足の",
+  "type": "word",
+  "example": "The branch was badly understaffed.",
+  "exampleJa": "その支店はひどく人手不足だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "uninterrupted",
+  "meaning": "途切れない",
+  "type": "word",
+  "example": "We guarantee uninterrupted service.",
+  "exampleJa": "当社は途切れないサービスを保証する。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "unrivaled",
+  "meaning": "並ぶもののない",
+  "type": "word",
+  "example": "Their after-sales support is unrivaled.",
+  "exampleJa": "彼らの販売後の支援は並ぶものがない。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "unsatisfactory",
+  "meaning": "不満足な",
+  "type": "word",
+  "example": "The result was unsatisfactory.",
+  "exampleJa": "その結果は不満足だった。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "untapped market",
+  "meaning": "未開拓市場",
+  "type": "idiom",
+  "example": "Asia remains an untapped market.",
+  "exampleJa": "アジアは未開拓市場のままだ。"
+ },
+ {
+  "term": "verifiable",
+  "meaning": "検証可能な",
+  "type": "word",
+  "example": "Provide verifiable references.",
+  "exampleJa": "検証可能な照会先を提供してください。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "well-rounded",
+  "meaning": "多才な",
+  "type": "word",
+  "example": "We seek well-rounded candidates.",
+  "exampleJa": "私たちは多才な候補者を求めている。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "workable",
+  "meaning": "実行可能な",
+  "type": "word",
+  "example": "We found a workable compromise.",
+  "exampleJa": "私たちは実行可能な妥協点を見つけた。",
+  "pos": "形容詞"
+ },
+ {
+  "term": "adverse conditions",
+  "meaning": "悪条件",
+  "type": "idiom",
+  "example": "Work continued under adverse conditions.",
+  "exampleJa": "作業は悪条件の下で続いた。"
+ },
+ {
+  "term": "bulk discount",
+  "meaning": "大口割引",
+  "type": "idiom",
+  "example": "A bulk discount applies over fifty units.",
+  "exampleJa": "50個を超えると大口割引が適用される。"
+ },
+ {
+  "term": "chain of command",
+  "meaning": "指揮系統",
+  "type": "idiom",
+  "example": "Follow the chain of command.",
+  "exampleJa": "指揮系統に従ってください。"
+ },
+ {
+  "term": "cost overrun",
+  "meaning": "費用超過",
+  "type": "idiom",
+  "example": "A cost overrun delayed completion.",
+  "exampleJa": "費用超過が完成を遅らせた。"
+ },
+ {
+  "term": "due diligence",
+  "meaning": "適正評価手続き",
+  "type": "idiom",
+  "example": "Due diligence took six weeks.",
+  "exampleJa": "適正評価手続きに6週間かかった。"
+ },
+ {
+  "term": "economies of scale",
+  "meaning": "規模の経済",
+  "type": "idiom",
+  "example": "Economies of scale lowered unit costs.",
+  "exampleJa": "規模の経済が単位費用を下げた。"
+ },
+ {
+  "term": "exit strategy",
+  "meaning": "撤退戦略",
+  "type": "idiom",
+  "example": "Investors asked about the exit strategy.",
+  "exampleJa": "投資家は撤退戦略について尋ねた。"
+ },
+ {
+  "term": "force majeure",
+  "meaning": "不可抗力",
+  "type": "idiom",
+  "example": "The clause covers force majeure events.",
+  "exampleJa": "その条項は不可抗力の事象を対象とする。"
+ },
+ {
+  "term": "good faith",
+  "meaning": "誠意",
+  "type": "idiom",
+  "example": "Both parties negotiated in good faith.",
+  "exampleJa": "双方は誠意をもって交渉した。"
+ },
+ {
+  "term": "gross profit",
+  "meaning": "売上総利益",
+  "type": "idiom",
+  "example": "Gross profit rose eight percent.",
+  "exampleJa": "売上総利益は8%上昇した。"
+ },
+ {
+  "term": "in-depth analysis",
+  "meaning": "詳細な分析",
+  "type": "idiom",
+  "example": "The team performed in-depth analysis.",
+  "exampleJa": "そのチームは詳細な分析を行った。"
+ },
+ {
+  "term": "key performance indicator",
+  "meaning": "重要業績評価指標",
+  "type": "idiom",
+  "example": "We track key performance indicators monthly.",
+  "exampleJa": "私たちは毎月、重要業績評価指標を追跡する。"
+ },
+ {
+  "term": "letter of intent",
+  "meaning": "趣意書",
+  "type": "idiom",
+  "example": "Both firms signed a letter of intent.",
+  "exampleJa": "両社は趣意書に署名した。"
+ },
+ {
+  "term": "line of credit",
+  "meaning": "融資枠",
+  "type": "idiom",
+  "example": "The bank extended our line of credit.",
+  "exampleJa": "その銀行は当社の融資枠を拡大した。"
+ },
+ {
+  "term": "non-disclosure agreement",
+  "meaning": "秘密保持契約",
+  "type": "idiom",
+  "example": "Sign the non-disclosure agreement first.",
+  "exampleJa": "まず秘密保持契約に署名してください。"
+ },
+ {
+  "term": "operating expenses",
+  "meaning": "営業費用",
+  "type": "idiom",
+  "example": "Operating expenses fell this quarter.",
+  "exampleJa": "営業費用は今四半期に減少した。"
+ },
+ {
+  "term": "out-of-pocket expenses",
+  "meaning": "自己負担費用",
+  "type": "idiom",
+  "example": "We refund out-of-pocket expenses.",
+  "exampleJa": "私たちは自己負担費用を払い戻す。"
+ },
+ {
+  "term": "point of contact",
+  "meaning": "窓口担当者",
+  "type": "idiom",
+  "example": "She is your point of contact.",
+  "exampleJa": "彼女があなたの窓口担当者です。"
+ },
+ {
+  "term": "proof of purchase",
+  "meaning": "購入証明",
+  "type": "idiom",
+  "example": "Keep proof of purchase for returns.",
+  "exampleJa": "返品のため購入証明を保管してください。"
+ },
+ {
+  "term": "return on investment",
+  "meaning": "投資収益率",
+  "type": "idiom",
+  "example": "The return on investment exceeded forecasts.",
+  "exampleJa": "投資収益率は予測を上回った。"
+ },
+ {
+  "term": "scope of work",
+  "meaning": "作業範囲",
+  "type": "idiom",
+  "example": "The scope of work is defined clearly.",
+  "exampleJa": "作業範囲は明確に定義されている。"
+ }
+]
