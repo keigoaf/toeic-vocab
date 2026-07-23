@@ -2,10 +2,19 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 09:35 (JST)
-  バージョン: 1.6.0
+  ファイル最終更新日時: 2026-07-23 09:50 (JST)
+  バージョン: 1.7.0
 --------------------------------------------------------------------
   【更新履歴】
+    v1.7.0 (2026-07-23 09:50 JST)
+      - 例文の和訳(exampleJa)に対応。裏面の例文の下に日本語訳を表示。
+        makeCard/JSON取り込みが exampleJa を受け取れるよう拡張。
+      - 既存カードの学習履歴を保ったまま和訳だけを追加できる
+        mergeBundledTranslations() / mergeTranslations() を追加。
+        term をキーに突き合わせ、box/dueDate/正誤回数は変更しない。
+      - バックアップ/復元機能を追加（openBackup/downloadBackup/
+        handleRestoreFile）。学習履歴ごとJSONに書き出し・読み戻し可能。
+        端末変更やデータ消失時の復旧手段として設定画面に配置。
     v1.6.0 (2026-07-23 09:35 JST)
       - 発音機能を追加。カードをめくった裏面のスピーカーボタンで
         単語・例文を読み上げる（Web Speech API / speak()）。
@@ -191,6 +200,8 @@
   .flash .pos{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--primary);background:var(--primary-soft);border-radius:999px;padding:3px 12px;margin-bottom:12px;}
   .flash .meaning{font-size:22px;font-weight:700;}
   .flash .example{font-size:14px;color:var(--ink-soft);margin-top:14px;font-family:var(--font-en);font-style:italic;}
+  /* v1.7.0: 例文の和訳 */
+  .flash .example-ja{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.6;}
   .grade-row{display:flex;gap:10px;margin-top:14px;}
   .grade-row .btn{flex:1;}
 
@@ -283,8 +294,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "1.6.0";
-const LAST_UPDATED = "2026-07-23 09:35 JST"; // ファイル最終更新日時
+const APP_VERSION = "1.7.0";
+const LAST_UPDATED = "2026-07-23 09:50 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -426,7 +437,7 @@ function boxCount(){ return STATE.settings.intervals.length; }
 
 /* 新規カード生成（v1.1.0: 品詞 pos を追加）
    pos は単語のときのみ意味を持つ。熟語では空にする。 */
-function makeCard(term, meaning, type, example, pos){
+function makeCard(term, meaning, type, example, pos, exampleJa){
   const t = (type === 'idiom') ? 'idiom' : 'word';
   return {
     id: uid(),
@@ -435,6 +446,7 @@ function makeCard(term, meaning, type, example, pos){
     type: t,
     pos: (t === 'word') ? (pos||'').trim() : '', // 熟語には品詞を持たせない
     example: (example||'').trim(),
+    exampleJa: (exampleJa||'').trim(),           // v1.7.0: 例文の和訳
     box: 1,
     dueDate: now(),           // 追加直後から出題対象
     createdAt: now(),
@@ -613,6 +625,7 @@ function viewStudy(){
       ${posLabel}
       <div class="meaning">${escapeHtml(card.meaning)}</div>
       ${card.example?`<div class="example">${escapeHtml(card.example)} ${speakEx}</div>`:''}
+      ${card.exampleJa?`<div class="example-ja">${escapeHtml(card.exampleJa)}</div>`:''}
     </div>
     <div class="grade-row">
       <button class="btn btn-bad" id="gradeNo">わからなかった</button>
@@ -698,7 +711,10 @@ function viewSettings(){
 
   <div class="section-title">データ</div>
   <div class="card pad">
-    <button class="btn btn-ghost small" onclick="openExport()" style="width:100%;margin-bottom:8px">全データをエクスポート（バックアップ）</button>
+    <button class="btn btn-primary small" onclick="openBackup()" style="width:100%;margin-bottom:8px">💾 バックアップ / 復元（学習履歴ごと）</button>
+    <p class="note" style="margin:0 0 12px">端末を変えるときや、万一データが消えたときのために保存できます。</p>
+    <button class="btn btn-ghost small" onclick="mergeBundledTranslations()" style="width:100%;margin-bottom:8px">🈁 既存の語に例文の和訳を追加</button>
+    <button class="btn btn-ghost small" onclick="openExport()" style="width:100%;margin-bottom:8px">全データをエクスポート（テキスト）</button>
     <button class="btn btn-ghost small" onclick="confirmReset()" style="width:100%;color:var(--bad);border-color:var(--bad-soft)">進捗をリセット（ボックスを初期化）</button>
   </div>
 
@@ -899,7 +915,7 @@ async function importCardObjects(arr){
     if(!term || !meaning){ skipped++; continue; }
     if(existing.has(term.toLowerCase())){ skipped++; continue; } // 重複スキップ
     const type = (o.type === 'idiom' || o.type === '熟語') ? 'idiom' : 'word';
-    STATE.cards.push(makeCard(term, meaning, type, o.example || '', o.pos || ''));
+    STATE.cards.push(makeCard(term, meaning, type, o.example || '', o.pos || '', o.exampleJa || o.example_ja || o.exampleJapanese || ''));
     existing.add(term.toLowerCase());
     added++;
   }
@@ -920,6 +936,146 @@ async function runJsonPaste(){
   try{ arr = JSON.parse(raw); }
   catch(e){ console.warn('JSON貼り付け解析失敗:', e); toast('JSONを解析できませんでした（形式を確認）'); return; }
   await importCardObjects(arr);
+}
+
+/* ================================================================
+   v1.7.0: バックアップ / 復元（学習履歴ごと）
+   --------------------------------------------------------------
+   端末やブラウザを変えると localStorage は引き継がれないため、
+   カード内容だけでなく box / dueDate / 正誤回数まで含めて
+   JSONで書き出し・読み戻しできるようにする。
+   これがあれば履歴が消えても復旧できる。
+   ================================================================ */
+function openBackup(){
+  const data = JSON.stringify({
+    app: 'toeic-vocab',
+    version: APP_VERSION,
+    exportedAt: new Date().toISOString(),
+    settings: STATE.settings,
+    cards: STATE.cards
+  });
+  const html = `
+    <h3>バックアップと復元</h3>
+    <p class="note" style="margin-top:2px">学習の進み具合（ボックス・出題日・正誤回数）ごと保存できます。端末を変えるときや、万一データが消えたときの復旧に使います。</p>
+
+    <label class="fld">バックアップを保存</label>
+    <button class="btn btn-primary" onclick="downloadBackup()">ファイルに保存（${STATE.cards.length}語）</button>
+    <p class="note">保存したファイルはメールやクラウドに置いておくと安心です。</p>
+
+    <label class="fld" style="margin-top:16px">バックアップから復元</label>
+    <input type="file" id="restoreFile" accept=".json,application/json" onchange="handleRestoreFile(this)">
+    <p class="note" style="color:var(--bad)">※ 復元すると現在のデータはすべて置き換わります。</p>
+
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+  window.__backupData = data;
+}
+
+/* バックアップをファイルとしてダウンロード */
+function downloadBackup(){
+  try{
+    const blob = new Blob([window.__backupData || '{}'], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const d = new Date();
+    const stamp = `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;
+    a.href = url;
+    a.download = `toeic-backup-${stamp}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(()=> URL.revokeObjectURL(url), 1000);
+    toast('バックアップを保存しました');
+  }catch(e){
+    console.warn('バックアップ保存失敗:', e);
+    toast('保存できませんでした');
+  }
+}
+
+/* バックアップファイルから復元 */
+function handleRestoreFile(input){
+  const f = input.files && input.files[0];
+  if(!f) return;
+  const reader = new FileReader();
+  reader.onload = async ()=>{
+    try{
+      const obj = JSON.parse(reader.result);
+      const cards = Array.isArray(obj) ? obj : obj.cards;
+      if(!Array.isArray(cards)) throw new Error('cardsが配列ではありません');
+      if(!confirm(`${cards.length}語を復元します。現在のデータは置き換わります。よろしいですか？`)) return;
+      STATE.cards = cards;
+      if(obj.settings && Array.isArray(obj.settings.intervals)){
+        STATE.settings = Object.assign({}, DEFAULT_SETTINGS, obj.settings);
+        await saveSettings(STATE.settings);
+      }
+      await saveCards(STATE.cards);
+      closeModal();
+      render();
+      toast(`${cards.length}語を復元しました`);
+    }catch(e){
+      console.warn('復元失敗:', e);
+      toast('復元できませんでした（ファイルを確認）');
+    }
+  };
+  reader.readAsText(f);
+}
+
+/* ================================================================
+   v1.7.0: 既存カードへの和訳マージ
+   --------------------------------------------------------------
+   すでに登録済みのカードを消さずに、例文の和訳(exampleJa)だけを
+   後から追加・更新する。term をキーに突き合わせるため、
+   学習履歴（box/dueDate/正誤回数）は一切変更しない。
+   ================================================================ */
+async function mergeTranslations(arr){
+  if(!Array.isArray(arr)){ toast('JSONの形式が配列ではありません'); return; }
+  const map = new Map();
+  for(const o of arr){
+    if(!o || !o.term) continue;
+    const ja = o.exampleJa || o.example_ja || '';
+    if(ja) map.set(String(o.term).trim().toLowerCase(), { ja, ex: o.example || '' });
+  }
+  let updated = 0;
+  for(const c of STATE.cards){
+    const hit = map.get(c.term.trim().toLowerCase());
+    if(!hit) continue;
+    if(c.exampleJa !== hit.ja){
+      c.exampleJa = hit.ja;
+      if(!c.example && hit.ex) c.example = hit.ex; // 例文が無い場合のみ補う
+      updated++;
+    }
+  }
+  await saveCards(STATE.cards);
+  closeModal();
+  render();
+  toast(`${updated}件に和訳を追加しました`);
+}
+
+/* 同梱データから和訳だけをマージ（学習履歴はそのまま） */
+async function mergeBundledTranslations(){
+  let total = 0;
+  for(const url of ['./toeic-500.json', './toeic-1000.json']){
+    try{
+      const res = await fetch(url, { cache: 'no-store' });
+      if(!res.ok) continue;
+      const arr = await res.json();
+      const map = new Map();
+      for(const o of arr){
+        const ja = o.exampleJa || o.example_ja || '';
+        if(o.term && ja) map.set(String(o.term).trim().toLowerCase(), ja);
+      }
+      for(const c of STATE.cards){
+        const ja = map.get(c.term.trim().toLowerCase());
+        if(ja && c.exampleJa !== ja){ c.exampleJa = ja; total++; }
+      }
+    }catch(e){ console.warn('和訳マージ失敗:', url, e); }
+  }
+  await saveCards(STATE.cards);
+  closeModal();
+  render();
+  toast(total ? `${total}件に和訳を追加しました` : '追加できる和訳はありませんでした');
 }
 
 /* 同梱JSON（相対パス）を取得して取り込む（ワンタップ）。

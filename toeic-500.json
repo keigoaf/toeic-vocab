@@ -4,3425 +4,3925 @@
   "meaning": "口座/取引先",
   "type": "word",
   "pos": "名詞",
-  "example": "The new account will boost our sales."
+  "example": "The new account will boost our sales.",
+  "exampleJa": "その新しい取引先は当社の売上を押し上げるだろう。"
  },
  {
   "term": "agenda",
   "meaning": "議題",
   "type": "word",
   "pos": "名詞",
-  "example": "The first item on the agenda is the budget."
+  "example": "The first item on the agenda is the budget.",
+  "exampleJa": "議題の最初の項目は予算です。"
  },
  {
   "term": "agreement",
   "meaning": "合意/契約",
   "type": "word",
   "pos": "名詞",
-  "example": "We reached an agreement after the meeting."
+  "example": "We reached an agreement after the meeting.",
+  "exampleJa": "会議の後、私たちは合意に達した。"
  },
  {
   "term": "applicant",
   "meaning": "応募者",
   "type": "word",
   "pos": "名詞",
-  "example": "Each applicant must submit a resume."
+  "example": "Each applicant must submit a resume.",
+  "exampleJa": "応募者は各自履歴書を提出しなければならない。"
  },
  {
   "term": "appointment",
   "meaning": "予約/約束",
   "type": "word",
   "pos": "名詞",
-  "example": "I have an appointment at three."
+  "example": "I have an appointment at three.",
+  "exampleJa": "3時に約束があります。"
  },
  {
   "term": "approval",
   "meaning": "承認",
   "type": "word",
   "pos": "名詞",
-  "example": "The plan needs the manager's approval."
+  "example": "The plan needs the manager's approval.",
+  "exampleJa": "その計画には部長の承認が必要だ。"
  },
  {
   "term": "assembly",
   "meaning": "組み立て/集会",
   "type": "word",
   "pos": "名詞",
-  "example": "The assembly line was upgraded."
+  "example": "The assembly line was upgraded.",
+  "exampleJa": "その組み立てラインは改良された。"
  },
  {
   "term": "asset",
   "meaning": "資産",
   "type": "word",
   "pos": "名詞",
-  "example": "Experience is a valuable asset."
+  "example": "Experience is a valuable asset.",
+  "exampleJa": "経験は貴重な資産だ。"
  },
  {
   "term": "assignment",
   "meaning": "任務/課題",
   "type": "word",
   "pos": "名詞",
-  "example": "She finished the assignment early."
+  "example": "She finished the assignment early.",
+  "exampleJa": "彼女はその課題を早く終えた。"
  },
  {
   "term": "attendance",
   "meaning": "出席",
   "type": "word",
   "pos": "名詞",
-  "example": "Attendance at the seminar is required."
+  "example": "Attendance at the seminar is required.",
+  "exampleJa": "そのセミナーへの出席は必須です。"
  },
  {
   "term": "audience",
   "meaning": "聴衆",
   "type": "word",
   "pos": "名詞",
-  "example": "The audience applauded loudly."
+  "example": "The audience applauded loudly.",
+  "exampleJa": "聴衆は大きな拍手を送った。"
  },
  {
   "term": "authority",
   "meaning": "権限/当局",
   "type": "word",
   "pos": "名詞",
-  "example": "He has the authority to sign contracts."
+  "example": "He has the authority to sign contracts.",
+  "exampleJa": "彼には契約書に署名する権限がある。"
  },
  {
   "term": "baggage",
   "meaning": "手荷物",
   "type": "word",
   "pos": "名詞",
-  "example": "Please keep your baggage with you."
+  "example": "Please keep your baggage with you.",
+  "exampleJa": "手荷物はお手元に置いてください。"
  },
  {
   "term": "balance",
   "meaning": "残高/均衡",
   "type": "word",
   "pos": "名詞",
-  "example": "Check the balance of your account."
+  "example": "Check the balance of your account.",
+  "exampleJa": "口座の残高を確認してください。"
  },
  {
   "term": "benefit",
   "meaning": "利益/手当",
   "type": "word",
   "pos": "名詞",
-  "example": "Employees enjoy many benefits."
+  "example": "Employees enjoy many benefits.",
+  "exampleJa": "従業員は多くの手当を受けられる。"
  },
  {
   "term": "bill",
   "meaning": "請求書/紙幣",
   "type": "word",
   "pos": "名詞",
-  "example": "The bill arrived by email."
+  "example": "The bill arrived by email.",
+  "exampleJa": "請求書はメールで届いた。"
  },
  {
   "term": "branch",
   "meaning": "支店",
   "type": "word",
   "pos": "名詞",
-  "example": "Our new branch opens next month."
+  "example": "Our new branch opens next month.",
+  "exampleJa": "当社の新しい支店は来月開店する。"
  },
  {
   "term": "brochure",
   "meaning": "パンフレット",
   "type": "word",
   "pos": "名詞",
-  "example": "The brochure lists all our services."
+  "example": "The brochure lists all our services.",
+  "exampleJa": "そのパンフレットには当社の全サービスが載っている。"
  },
  {
   "term": "budget",
   "meaning": "予算",
   "type": "word",
   "pos": "名詞",
-  "example": "We must stay within budget."
+  "example": "We must stay within budget.",
+  "exampleJa": "私たちは予算内に収めなければならない。"
  },
  {
   "term": "candidate",
   "meaning": "候補者",
   "type": "word",
   "pos": "名詞",
-  "example": "The candidate impressed the panel."
+  "example": "The candidate impressed the panel.",
+  "exampleJa": "その候補者は審査員に良い印象を与えた。"
  },
  {
   "term": "capacity",
   "meaning": "収容力/能力",
   "type": "word",
   "pos": "名詞",
-  "example": "The hall has a capacity of 500."
+  "example": "The hall has a capacity of 500.",
+  "exampleJa": "そのホールの収容人数は500人だ。"
  },
  {
   "term": "certificate",
   "meaning": "証明書",
   "type": "word",
   "pos": "名詞",
-  "example": "You will receive a certificate."
+  "example": "You will receive a certificate.",
+  "exampleJa": "あなたは証明書を受け取ります。"
  },
  {
   "term": "client",
   "meaning": "顧客",
   "type": "word",
   "pos": "名詞",
-  "example": "The client requested a refund."
+  "example": "The client requested a refund.",
+  "exampleJa": "その顧客は返金を求めた。"
  },
  {
   "term": "colleague",
   "meaning": "同僚",
   "type": "word",
   "pos": "名詞",
-  "example": "My colleague will help you."
+  "example": "My colleague will help you.",
+  "exampleJa": "私の同僚があなたを手伝います。"
  },
  {
   "term": "commission",
   "meaning": "手数料/委員会",
   "type": "word",
   "pos": "名詞",
-  "example": "Salespeople earn a commission."
+  "example": "Salespeople earn a commission.",
+  "exampleJa": "営業担当者は歩合給を得る。"
  },
  {
   "term": "committee",
   "meaning": "委員会",
   "type": "word",
   "pos": "名詞",
-  "example": "The committee will decide tomorrow."
+  "example": "The committee will decide tomorrow.",
+  "exampleJa": "委員会は明日決定する。"
  },
  {
   "term": "competitor",
   "meaning": "競合他社",
   "type": "word",
   "pos": "名詞",
-  "example": "Our competitor lowered its prices."
+  "example": "Our competitor lowered its prices.",
+  "exampleJa": "競合他社は価格を下げた。"
  },
  {
   "term": "complaint",
   "meaning": "苦情",
   "type": "word",
   "pos": "名詞",
-  "example": "We received a complaint about delays."
+  "example": "We received a complaint about delays.",
+  "exampleJa": "私たちは遅延について苦情を受けた。"
  },
  {
   "term": "consumer",
   "meaning": "消費者",
   "type": "word",
   "pos": "名詞",
-  "example": "Consumers prefer eco-friendly products."
+  "example": "Consumers prefer eco-friendly products.",
+  "exampleJa": "消費者は環境に優しい製品を好む。"
  },
  {
   "term": "contract",
   "meaning": "契約",
   "type": "word",
   "pos": "名詞",
-  "example": "Please sign the contract."
+  "example": "Please sign the contract.",
+  "exampleJa": "契約書に署名してください。"
  },
  {
   "term": "contribution",
   "meaning": "貢献/寄付",
   "type": "word",
   "pos": "名詞",
-  "example": "Your contribution is appreciated."
+  "example": "Your contribution is appreciated.",
+  "exampleJa": "ご貢献に感謝します。"
  },
  {
   "term": "corporation",
   "meaning": "企業",
   "type": "word",
   "pos": "名詞",
-  "example": "The corporation expanded overseas."
+  "example": "The corporation expanded overseas.",
+  "exampleJa": "その企業は海外に進出した。"
  },
  {
   "term": "delegate",
   "meaning": "代表者",
   "type": "word",
   "pos": "名詞",
-  "example": "Each delegate gave a short speech."
+  "example": "Each delegate gave a short speech.",
+  "exampleJa": "各代表者が短いスピーチをした。"
  },
  {
   "term": "demand",
   "meaning": "需要",
   "type": "word",
   "pos": "名詞",
-  "example": "Demand for the product is rising."
+  "example": "Demand for the product is rising.",
+  "exampleJa": "その製品の需要は高まっている。"
  },
  {
   "term": "department",
   "meaning": "部門",
   "type": "word",
   "pos": "名詞",
-  "example": "She works in the sales department."
+  "example": "She works in the sales department.",
+  "exampleJa": "彼女は営業部で働いている。"
  },
  {
   "term": "deposit",
   "meaning": "手付金/預金",
   "type": "word",
   "pos": "名詞",
-  "example": "A deposit is required to book."
+  "example": "A deposit is required to book.",
+  "exampleJa": "予約には手付金が必要です。"
  },
  {
   "term": "destination",
   "meaning": "目的地",
   "type": "word",
   "pos": "名詞",
-  "example": "Our destination is Osaka."
+  "example": "Our destination is Osaka.",
+  "exampleJa": "私たちの目的地は大阪です。"
  },
  {
   "term": "discount",
   "meaning": "割引",
   "type": "word",
   "pos": "名詞",
-  "example": "Members get a 10% discount."
+  "example": "Members get a 10% discount.",
+  "exampleJa": "会員は10%の割引を受けられる。"
  },
  {
   "term": "distribution",
   "meaning": "流通/配布",
   "type": "word",
   "pos": "名詞",
-  "example": "Distribution starts next week."
+  "example": "Distribution starts next week.",
+  "exampleJa": "流通は来週始まる。"
  },
  {
   "term": "dividend",
   "meaning": "配当",
   "type": "word",
   "pos": "名詞",
-  "example": "The company paid a dividend."
+  "example": "The company paid a dividend.",
+  "exampleJa": "その会社は配当を支払った。"
  },
  {
   "term": "draft",
   "meaning": "下書き/草案",
   "type": "word",
   "pos": "名詞",
-  "example": "Please review the draft."
+  "example": "Please review the draft.",
+  "exampleJa": "草案を確認してください。"
  },
  {
   "term": "duration",
   "meaning": "期間",
   "type": "word",
   "pos": "名詞",
-  "example": "The duration of the trip is five days."
+  "example": "The duration of the trip is five days.",
+  "exampleJa": "その旅行の期間は5日間です。"
  },
  {
   "term": "efficiency",
   "meaning": "効率",
   "type": "word",
   "pos": "名詞",
-  "example": "The upgrade improved efficiency."
+  "example": "The upgrade improved efficiency.",
+  "exampleJa": "その改良によって効率が向上した。"
  },
  {
   "term": "employee",
   "meaning": "従業員",
   "type": "word",
   "pos": "名詞",
-  "example": "Every employee attended the training."
+  "example": "Every employee attended the training.",
+  "exampleJa": "全従業員が研修に出席した。"
  },
  {
   "term": "employer",
   "meaning": "雇用主",
   "type": "word",
   "pos": "名詞",
-  "example": "The employer offered a raise."
+  "example": "The employer offered a raise.",
+  "exampleJa": "雇用主は昇給を提示した。"
  },
  {
   "term": "enterprise",
   "meaning": "企業",
   "type": "word",
   "pos": "名詞",
-  "example": "It is a small enterprise."
+  "example": "It is a small enterprise.",
+  "exampleJa": "それは小さな企業です。"
  },
  {
   "term": "estimate",
   "meaning": "見積もり",
   "type": "word",
   "pos": "名詞",
-  "example": "We sent an estimate to the client."
+  "example": "We sent an estimate to the client.",
+  "exampleJa": "私たちは顧客に見積もりを送った。"
  },
  {
   "term": "expense",
   "meaning": "費用",
   "type": "word",
   "pos": "名詞",
-  "example": "Travel expenses will be reimbursed."
+  "example": "Travel expenses will be reimbursed.",
+  "exampleJa": "旅費は払い戻されます。"
  },
  {
   "term": "facility",
   "meaning": "施設",
   "type": "word",
   "pos": "名詞",
-  "example": "The facility is open 24 hours."
+  "example": "The facility is open 24 hours.",
+  "exampleJa": "その施設は24時間営業している。"
  },
  {
   "term": "fee",
   "meaning": "料金",
   "type": "word",
   "pos": "名詞",
-  "example": "There is no entrance fee."
+  "example": "There is no entrance fee.",
+  "exampleJa": "入場料は無料です。"
  },
  {
   "term": "feedback",
   "meaning": "意見/反応",
   "type": "word",
   "pos": "名詞",
-  "example": "We welcome your feedback."
+  "example": "We welcome your feedback.",
+  "exampleJa": "ご意見をお待ちしています。"
  },
  {
   "term": "figure",
   "meaning": "数字/人物",
   "type": "word",
   "pos": "名詞",
-  "example": "Sales figures rose sharply."
+  "example": "Sales figures rose sharply.",
+  "exampleJa": "売上高は急激に上昇した。"
  },
  {
   "term": "forecast",
   "meaning": "予測",
   "type": "word",
   "pos": "名詞",
-  "example": "The weather forecast looks good."
+  "example": "The weather forecast looks good.",
+  "exampleJa": "天気予報は良さそうだ。"
  },
  {
   "term": "fund",
   "meaning": "資金",
   "type": "word",
   "pos": "名詞",
-  "example": "They raised funds for the project."
+  "example": "They raised funds for the project.",
+  "exampleJa": "彼らはその事業のために資金を集めた。"
  },
  {
   "term": "furniture",
   "meaning": "家具",
   "type": "word",
   "pos": "名詞",
-  "example": "The office furniture is new."
+  "example": "The office furniture is new.",
+  "exampleJa": "そのオフィス家具は新しい。"
  },
  {
   "term": "guarantee",
   "meaning": "保証",
   "type": "word",
   "pos": "名詞",
-  "example": "The product comes with a guarantee."
+  "example": "The product comes with a guarantee.",
+  "exampleJa": "その製品には保証が付いている。"
  },
  {
   "term": "headquarters",
   "meaning": "本社",
   "type": "word",
   "pos": "名詞",
-  "example": "The headquarters is in Tokyo."
+  "example": "The headquarters is in Tokyo.",
+  "exampleJa": "本社は東京にある。"
  },
  {
   "term": "income",
   "meaning": "収入",
   "type": "word",
   "pos": "名詞",
-  "example": "Their income increased last year."
+  "example": "Their income increased last year.",
+  "exampleJa": "彼らの収入は昨年増加した。"
  },
  {
   "term": "industry",
   "meaning": "産業",
   "type": "word",
   "pos": "名詞",
-  "example": "The tech industry is growing fast."
+  "example": "The tech industry is growing fast.",
+  "exampleJa": "技術産業は急速に成長している。"
  },
  {
   "term": "inquiry",
   "meaning": "問い合わせ",
   "type": "word",
   "pos": "名詞",
-  "example": "We answer every inquiry promptly."
+  "example": "We answer every inquiry promptly.",
+  "exampleJa": "私たちはすべての問い合わせに迅速に回答する。"
  },
  {
   "term": "inspection",
   "meaning": "検査",
   "type": "word",
   "pos": "名詞",
-  "example": "The inspection found no problems."
+  "example": "The inspection found no problems.",
+  "exampleJa": "検査では問題は見つからなかった。"
  },
  {
   "term": "installment",
   "meaning": "分割払い",
   "type": "word",
   "pos": "名詞",
-  "example": "You can pay in installments."
+  "example": "You can pay in installments.",
+  "exampleJa": "分割払いが可能です。"
  },
  {
   "term": "insurance",
   "meaning": "保険",
   "type": "word",
   "pos": "名詞",
-  "example": "Travel insurance is recommended."
+  "example": "Travel insurance is recommended.",
+  "exampleJa": "旅行保険への加入をお勧めします。"
  },
  {
   "term": "inventory",
   "meaning": "在庫",
   "type": "word",
   "pos": "名詞",
-  "example": "We check the inventory monthly."
+  "example": "We check the inventory monthly.",
+  "exampleJa": "私たちは毎月在庫を確認する。"
  },
  {
   "term": "invoice",
   "meaning": "請求書",
   "type": "word",
   "pos": "名詞",
-  "example": "The invoice is due next week."
+  "example": "The invoice is due next week.",
+  "exampleJa": "その請求書の支払期限は来週です。"
  },
  {
   "term": "itinerary",
   "meaning": "旅程",
   "type": "word",
   "pos": "名詞",
-  "example": "Here is your travel itinerary."
+  "example": "Here is your travel itinerary.",
+  "exampleJa": "こちらがあなたの旅程表です。"
  },
  {
   "term": "landlord",
   "meaning": "家主",
   "type": "word",
   "pos": "名詞",
-  "example": "The landlord raised the rent."
+  "example": "The landlord raised the rent.",
+  "exampleJa": "家主は家賃を上げた。"
  },
  {
   "term": "laboratory",
   "meaning": "実験室",
   "type": "word",
   "pos": "名詞",
-  "example": "The sample was sent to the laboratory."
+  "example": "The sample was sent to the laboratory.",
+  "exampleJa": "その試料は研究所に送られた。"
  },
  {
   "term": "leaflet",
   "meaning": "ちらし",
   "type": "word",
   "pos": "名詞",
-  "example": "They handed out leaflets."
+  "example": "They handed out leaflets.",
+  "exampleJa": "彼らはちらしを配った。"
  },
  {
   "term": "lecture",
   "meaning": "講義",
   "type": "word",
   "pos": "名詞",
-  "example": "The lecture starts at nine."
+  "example": "The lecture starts at nine.",
+  "exampleJa": "講義は9時に始まる。"
  },
  {
   "term": "loan",
   "meaning": "融資/貸付",
   "type": "word",
   "pos": "名詞",
-  "example": "She applied for a loan."
+  "example": "She applied for a loan.",
+  "exampleJa": "彼女は融資を申し込んだ。"
  },
  {
   "term": "luggage",
   "meaning": "手荷物",
   "type": "word",
   "pos": "名詞",
-  "example": "Leave your luggage at the desk."
+  "example": "Leave your luggage at the desk.",
+  "exampleJa": "手荷物はデスクに預けてください。"
  },
  {
   "term": "maintenance",
   "meaning": "保守",
   "type": "word",
   "pos": "名詞",
-  "example": "Regular maintenance is important."
+  "example": "Regular maintenance is important.",
+  "exampleJa": "定期的な保守は重要だ。"
  },
  {
   "term": "manufacturer",
   "meaning": "製造業者",
   "type": "word",
   "pos": "名詞",
-  "example": "The manufacturer recalled the item."
+  "example": "The manufacturer recalled the item.",
+  "exampleJa": "その製造業者は商品を回収した。"
  },
  {
   "term": "merchandise",
   "meaning": "商品",
   "type": "word",
   "pos": "名詞",
-  "example": "The store sells quality merchandise."
+  "example": "The store sells quality merchandise.",
+  "exampleJa": "その店は良質な商品を販売している。"
  },
  {
   "term": "merger",
   "meaning": "合併",
   "type": "word",
   "pos": "名詞",
-  "example": "The merger was announced today."
+  "example": "The merger was announced today.",
+  "exampleJa": "その合併は今日発表された。"
  },
  {
   "term": "negotiation",
   "meaning": "交渉",
   "type": "word",
   "pos": "名詞",
-  "example": "The negotiation lasted hours."
+  "example": "The negotiation lasted hours.",
+  "exampleJa": "交渉は何時間も続いた。"
  },
  {
   "term": "outcome",
   "meaning": "結果",
   "type": "word",
   "pos": "名詞",
-  "example": "We are happy with the outcome."
+  "example": "We are happy with the outcome.",
+  "exampleJa": "私たちはその結果に満足している。"
  },
  {
   "term": "overtime",
   "meaning": "残業",
   "type": "word",
   "pos": "名詞",
-  "example": "He worked overtime last night."
+  "example": "He worked overtime last night.",
+  "exampleJa": "彼は昨夜残業した。"
  },
  {
   "term": "participant",
   "meaning": "参加者",
   "type": "word",
   "pos": "名詞",
-  "example": "Each participant received a badge."
+  "example": "Each participant received a badge.",
+  "exampleJa": "各参加者はバッジを受け取った。"
  },
  {
   "term": "patron",
   "meaning": "常連客",
   "type": "word",
   "pos": "名詞",
-  "example": "Loyal patrons get rewards."
+  "example": "Loyal patrons get rewards.",
+  "exampleJa": "常連客は特典を受けられる。"
  },
  {
   "term": "payment",
   "meaning": "支払い",
   "type": "word",
   "pos": "名詞",
-  "example": "Payment is due on delivery."
+  "example": "Payment is due on delivery.",
+  "exampleJa": "支払いは配達時に必要です。"
  },
  {
   "term": "performance",
   "meaning": "業績/公演",
   "type": "word",
   "pos": "名詞",
-  "example": "The team's performance improved."
+  "example": "The team's performance improved.",
+  "exampleJa": "チームの業績は向上した。"
  },
  {
   "term": "permit",
   "meaning": "許可証",
   "type": "word",
   "pos": "名詞",
-  "example": "You need a permit to park here."
+  "example": "You need a permit to park here.",
+  "exampleJa": "ここに駐車するには許可証が必要だ。"
  },
  {
   "term": "personnel",
   "meaning": "人員/人事",
   "type": "word",
   "pos": "名詞",
-  "example": "The personnel department is hiring."
+  "example": "The personnel department is hiring.",
+  "exampleJa": "人事部は採用を行っている。"
  },
  {
   "term": "policy",
   "meaning": "方針",
   "type": "word",
   "pos": "名詞",
-  "example": "The company changed its policy."
+  "example": "The company changed its policy.",
+  "exampleJa": "その会社は方針を変更した。"
  },
  {
   "term": "premises",
   "meaning": "敷地/建物",
   "type": "word",
   "pos": "名詞",
-  "example": "No smoking on the premises."
+  "example": "No smoking on the premises.",
+  "exampleJa": "敷地内は禁煙です。"
  },
  {
   "term": "procedure",
   "meaning": "手順",
   "type": "word",
   "pos": "名詞",
-  "example": "Follow the safety procedure."
+  "example": "Follow the safety procedure.",
+  "exampleJa": "安全手順に従ってください。"
  },
  {
   "term": "productivity",
   "meaning": "生産性",
   "type": "word",
   "pos": "名詞",
-  "example": "The new tool boosts productivity."
+  "example": "The new tool boosts productivity.",
+  "exampleJa": "その新しい道具は生産性を高める。"
  },
  {
   "term": "profit",
   "meaning": "利益",
   "type": "word",
   "pos": "名詞",
-  "example": "The company made a profit."
+  "example": "The company made a profit.",
+  "exampleJa": "その会社は利益を上げた。"
  },
  {
   "term": "property",
   "meaning": "財産/物件",
   "type": "word",
   "pos": "名詞",
-  "example": "The property is for sale."
+  "example": "The property is for sale.",
+  "exampleJa": "その物件は売り出し中だ。"
  },
  {
   "term": "proposal",
   "meaning": "提案",
   "type": "word",
   "pos": "名詞",
-  "example": "The proposal was accepted."
+  "example": "The proposal was accepted.",
+  "exampleJa": "その提案は受け入れられた。"
  },
  {
   "term": "prospect",
   "meaning": "見込み",
   "type": "word",
   "pos": "名詞",
-  "example": "The prospects look bright."
+  "example": "The prospects look bright.",
+  "exampleJa": "見通しは明るい。"
  },
  {
   "term": "quotation",
   "meaning": "見積もり",
   "type": "word",
   "pos": "名詞",
-  "example": "Please send a quotation."
+  "example": "Please send a quotation.",
+  "exampleJa": "見積もりを送ってください。"
  },
  {
   "term": "receipt",
   "meaning": "領収書",
   "type": "word",
   "pos": "名詞",
-  "example": "Keep your receipt for returns."
+  "example": "Keep your receipt for returns.",
+  "exampleJa": "返品のために領収書を保管してください。"
  },
  {
   "term": "recession",
   "meaning": "景気後退",
   "type": "word",
   "pos": "名詞",
-  "example": "Sales fell during the recession."
+  "example": "Sales fell during the recession.",
+  "exampleJa": "景気後退の間、売上は落ち込んだ。"
  },
  {
   "term": "recruitment",
   "meaning": "採用",
   "type": "word",
   "pos": "名詞",
-  "example": "Recruitment starts in spring."
+  "example": "Recruitment starts in spring.",
+  "exampleJa": "採用は春に始まる。"
  },
  {
   "term": "referral",
   "meaning": "紹介",
   "type": "word",
   "pos": "名詞",
-  "example": "We got the job through a referral."
+  "example": "We got the job through a referral.",
+  "exampleJa": "私たちは紹介でその仕事を得た。"
  },
  {
   "term": "refund",
   "meaning": "返金",
   "type": "word",
   "pos": "名詞",
-  "example": "You can request a refund."
+  "example": "You can request a refund.",
+  "exampleJa": "返金を請求できます。"
  },
  {
   "term": "registration",
   "meaning": "登録",
   "type": "word",
   "pos": "名詞",
-  "example": "Registration closes on Friday."
+  "example": "Registration closes on Friday.",
+  "exampleJa": "登録は金曜日に締め切られる。"
  },
  {
   "term": "reimbursement",
   "meaning": "払い戻し",
   "type": "word",
   "pos": "名詞",
-  "example": "Submit receipts for reimbursement."
+  "example": "Submit receipts for reimbursement.",
+  "exampleJa": "払い戻しのために領収書を提出してください。"
  },
  {
   "term": "renovation",
   "meaning": "改装",
   "type": "word",
   "pos": "名詞",
-  "example": "The store is closed for renovation."
+  "example": "The store is closed for renovation.",
+  "exampleJa": "その店は改装のため閉店している。"
  },
  {
   "term": "reputation",
   "meaning": "評判",
   "type": "word",
   "pos": "名詞",
-  "example": "The firm has a good reputation."
+  "example": "The firm has a good reputation.",
+  "exampleJa": "その会社は評判が良い。"
  },
  {
   "term": "requirement",
   "meaning": "要件",
   "type": "word",
   "pos": "名詞",
-  "example": "Meeting the requirement is essential."
+  "example": "Meeting the requirement is essential.",
+  "exampleJa": "その要件を満たすことが不可欠だ。"
  },
  {
   "term": "reservation",
   "meaning": "予約",
   "type": "word",
   "pos": "名詞",
-  "example": "I made a reservation for two."
+  "example": "I made a reservation for two.",
+  "exampleJa": "私は2名で予約をした。"
  },
  {
   "term": "resignation",
   "meaning": "辞職",
   "type": "word",
   "pos": "名詞",
-  "example": "He handed in his resignation."
+  "example": "He handed in his resignation.",
+  "exampleJa": "彼は辞表を提出した。"
  },
  {
   "term": "retailer",
   "meaning": "小売業者",
   "type": "word",
   "pos": "名詞",
-  "example": "The retailer offers free delivery."
+  "example": "The retailer offers free delivery.",
+  "exampleJa": "その小売業者は無料配送を行っている。"
  },
  {
   "term": "revenue",
   "meaning": "収益",
   "type": "word",
   "pos": "名詞",
-  "example": "Annual revenue doubled."
+  "example": "Annual revenue doubled.",
+  "exampleJa": "年間収益は倍増した。"
  },
  {
   "term": "schedule",
   "meaning": "予定",
   "type": "word",
   "pos": "名詞",
-  "example": "Check the schedule for changes."
+  "example": "Check the schedule for changes.",
+  "exampleJa": "変更がないか予定表を確認してください。"
  },
  {
   "term": "shareholder",
   "meaning": "株主",
   "type": "word",
   "pos": "名詞",
-  "example": "Shareholders will vote next month."
+  "example": "Shareholders will vote next month.",
+  "exampleJa": "株主は来月投票する。"
  },
  {
   "term": "shipment",
   "meaning": "出荷",
   "type": "word",
   "pos": "名詞",
-  "example": "The shipment arrived on time."
+  "example": "The shipment arrived on time.",
+  "exampleJa": "その出荷品は時間通りに到着した。"
  },
  {
   "term": "shortage",
   "meaning": "不足",
   "type": "word",
   "pos": "名詞",
-  "example": "There is a staff shortage."
+  "example": "There is a staff shortage.",
+  "exampleJa": "人手不足だ。"
  },
  {
   "term": "specification",
   "meaning": "仕様",
   "type": "word",
   "pos": "名詞",
-  "example": "Read the product specification."
+  "example": "Read the product specification.",
+  "exampleJa": "製品仕様書を読んでください。"
  },
  {
   "term": "stability",
   "meaning": "安定",
   "type": "word",
   "pos": "名詞",
-  "example": "Financial stability is our goal."
+  "example": "Financial stability is our goal.",
+  "exampleJa": "財務の安定が私たちの目標だ。"
  },
  {
   "term": "statement",
   "meaning": "明細/声明",
   "type": "word",
   "pos": "名詞",
-  "example": "Your bank statement is ready."
+  "example": "Your bank statement is ready.",
+  "exampleJa": "あなたの銀行明細の準備ができました。"
  },
  {
   "term": "strategy",
   "meaning": "戦略",
   "type": "word",
   "pos": "名詞",
-  "example": "We need a new marketing strategy."
+  "example": "We need a new marketing strategy.",
+  "exampleJa": "私たちには新しい販売戦略が必要だ。"
  },
  {
   "term": "subscription",
   "meaning": "定期購読",
   "type": "word",
   "pos": "名詞",
-  "example": "Cancel your subscription anytime."
+  "example": "Cancel your subscription anytime.",
+  "exampleJa": "購読はいつでも解約できます。"
  },
  {
   "term": "supervisor",
   "meaning": "監督者",
   "type": "word",
   "pos": "名詞",
-  "example": "Ask your supervisor for approval."
+  "example": "Ask your supervisor for approval.",
+  "exampleJa": "上司に承認を求めてください。"
  },
  {
   "term": "supplier",
   "meaning": "供給業者",
   "type": "word",
   "pos": "名詞",
-  "example": "We changed our supplier."
+  "example": "We changed our supplier.",
+  "exampleJa": "私たちは供給業者を変更した。"
  },
  {
   "term": "survey",
   "meaning": "調査",
   "type": "word",
   "pos": "名詞",
-  "example": "Please complete the survey."
+  "example": "Please complete the survey.",
+  "exampleJa": "アンケートにご記入ください。"
  },
  {
   "term": "tenant",
   "meaning": "借主",
   "type": "word",
   "pos": "名詞",
-  "example": "The tenant signed a lease."
+  "example": "The tenant signed a lease.",
+  "exampleJa": "その借主は賃貸契約に署名した。"
  },
  {
   "term": "transaction",
   "meaning": "取引",
   "type": "word",
   "pos": "名詞",
-  "example": "The transaction was completed."
+  "example": "The transaction was completed.",
+  "exampleJa": "その取引は完了した。"
  },
  {
   "term": "venue",
   "meaning": "会場",
   "type": "word",
   "pos": "名詞",
-  "example": "The venue holds 300 people."
+  "example": "The venue holds 300 people.",
+  "exampleJa": "その会場は300人収容できる。"
  },
  {
   "term": "warehouse",
   "meaning": "倉庫",
   "type": "word",
   "pos": "名詞",
-  "example": "Goods are stored in the warehouse."
+  "example": "Goods are stored in the warehouse.",
+  "exampleJa": "商品は倉庫に保管されている。"
  },
  {
   "term": "warranty",
   "meaning": "保証",
   "type": "word",
   "pos": "名詞",
-  "example": "The warranty covers one year."
+  "example": "The warranty covers one year.",
+  "exampleJa": "保証期間は1年間です。"
  },
  {
   "term": "wholesale",
   "meaning": "卸売",
   "type": "word",
   "pos": "名詞",
-  "example": "They buy at wholesale prices."
+  "example": "They buy at wholesale prices.",
+  "exampleJa": "彼らは卸売価格で購入する。"
  },
  {
   "term": "workforce",
   "meaning": "労働力",
   "type": "word",
   "pos": "名詞",
-  "example": "The workforce is highly skilled."
+  "example": "The workforce is highly skilled.",
+  "exampleJa": "その労働力は高度に熟練している。"
  },
  {
   "term": "workshop",
   "meaning": "研修会",
   "type": "word",
   "pos": "名詞",
-  "example": "The workshop was very useful."
+  "example": "The workshop was very useful.",
+  "exampleJa": "その研修会はとても有益だった。"
  },
  {
   "term": "amenity",
   "meaning": "設備/便宜",
   "type": "word",
   "pos": "名詞",
-  "example": "The hotel offers many amenities."
+  "example": "The hotel offers many amenities.",
+  "exampleJa": "そのホテルは多くの設備を備えている。"
  },
  {
   "term": "applause",
   "meaning": "拍手",
   "type": "word",
   "pos": "名詞",
-  "example": "The speech received applause."
+  "example": "The speech received applause.",
+  "exampleJa": "そのスピーチは拍手を受けた。"
  },
  {
   "term": "attire",
   "meaning": "服装",
   "type": "word",
   "pos": "名詞",
-  "example": "Business attire is required."
+  "example": "Business attire is required.",
+  "exampleJa": "ビジネス用の服装が求められる。"
  },
  {
   "term": "ballot",
   "meaning": "投票用紙",
   "type": "word",
   "pos": "名詞",
-  "example": "Cast your ballot by Friday."
+  "example": "Cast your ballot by Friday.",
+  "exampleJa": "金曜日までに投票してください。"
  },
  {
   "term": "beverage",
   "meaning": "飲料",
   "type": "word",
   "pos": "名詞",
-  "example": "Beverages are served in the lobby."
+  "example": "Beverages are served in the lobby.",
+  "exampleJa": "飲み物はロビーで提供される。"
  },
  {
   "term": "catalog",
   "meaning": "カタログ",
   "type": "word",
   "pos": "名詞",
-  "example": "Browse our online catalog."
+  "example": "Browse our online catalog.",
+  "exampleJa": "当社のオンラインカタログをご覧ください。"
  },
  {
   "term": "clearance",
   "meaning": "在庫一掃/許可",
   "type": "word",
   "pos": "名詞",
-  "example": "Everything is on clearance."
+  "example": "Everything is on clearance.",
+  "exampleJa": "全品在庫一掃セール中です。"
  },
  {
   "term": "collaboration",
   "meaning": "協力",
   "type": "word",
   "pos": "名詞",
-  "example": "The project was a collaboration."
+  "example": "The project was a collaboration.",
+  "exampleJa": "その事業は共同作業だった。"
  },
  {
   "term": "commodity",
   "meaning": "商品/日用品",
   "type": "word",
   "pos": "名詞",
-  "example": "Oil is a key commodity."
+  "example": "Oil is a key commodity.",
+  "exampleJa": "石油は主要な商品だ。"
  },
  {
   "term": "compensation",
   "meaning": "報酬/補償",
   "type": "word",
   "pos": "名詞",
-  "example": "The compensation package is generous."
+  "example": "The compensation package is generous.",
+  "exampleJa": "その報酬内容は手厚い。"
  },
  {
   "term": "compliance",
   "meaning": "順守",
   "type": "word",
   "pos": "名詞",
-  "example": "Compliance with rules is mandatory."
+  "example": "Compliance with rules is mandatory.",
+  "exampleJa": "規則の順守は義務だ。"
  },
  {
   "term": "conference",
   "meaning": "会議",
   "type": "word",
   "pos": "名詞",
-  "example": "The conference is held yearly."
+  "example": "The conference is held yearly.",
+  "exampleJa": "その会議は毎年開催される。"
  },
  {
   "term": "credential",
   "meaning": "資格/経歴",
   "type": "word",
   "pos": "名詞",
-  "example": "Please show your credentials."
+  "example": "Please show your credentials.",
+  "exampleJa": "資格証明を提示してください。"
  },
  {
   "term": "deadline",
   "meaning": "締め切り",
   "type": "word",
   "pos": "名詞",
-  "example": "The deadline is next Monday."
+  "example": "The deadline is next Monday.",
+  "exampleJa": "締め切りは来週の月曜日です。"
  },
  {
   "term": "discrepancy",
   "meaning": "不一致",
   "type": "word",
   "pos": "名詞",
-  "example": "We found a discrepancy in the report."
+  "example": "We found a discrepancy in the report.",
+  "exampleJa": "報告書に不一致が見つかった。"
  },
  {
   "term": "endorsement",
   "meaning": "支持/推薦",
   "type": "word",
   "pos": "名詞",
-  "example": "The product got a celebrity endorsement."
+  "example": "The product got a celebrity endorsement.",
+  "exampleJa": "その製品は有名人の推薦を得た。"
  },
  {
   "term": "expertise",
   "meaning": "専門知識",
   "type": "word",
   "pos": "名詞",
-  "example": "Her expertise is valuable."
+  "example": "Her expertise is valuable.",
+  "exampleJa": "彼女の専門知識は貴重だ。"
  },
  {
   "term": "incentive",
   "meaning": "動機/報奨",
   "type": "word",
   "pos": "名詞",
-  "example": "Bonuses are a strong incentive."
+  "example": "Bonuses are a strong incentive.",
+  "exampleJa": "賞与は強い動機付けになる。"
  },
  {
   "term": "initiative",
   "meaning": "主導/新構想",
   "type": "word",
   "pos": "名詞",
-  "example": "She took the initiative."
+  "example": "She took the initiative.",
+  "exampleJa": "彼女が主導権を取った。"
  },
  {
   "term": "liability",
   "meaning": "責任/負債",
   "type": "word",
   "pos": "名詞",
-  "example": "The company reduced its liabilities."
+  "example": "The company reduced its liabilities.",
+  "exampleJa": "その会社は負債を減らした。"
  },
  {
   "term": "obligation",
   "meaning": "義務",
   "type": "word",
   "pos": "名詞",
-  "example": "We have an obligation to deliver."
+  "example": "We have an obligation to deliver.",
+  "exampleJa": "私たちには納品する義務がある。"
  },
  {
   "term": "outlet",
   "meaning": "販売店/コンセント",
   "type": "word",
   "pos": "名詞",
-  "example": "The factory outlet sells cheaply."
+  "example": "The factory outlet sells cheaply.",
+  "exampleJa": "その工場直売店は安く販売している。"
  },
  {
   "term": "overview",
   "meaning": "概要",
   "type": "word",
   "pos": "名詞",
-  "example": "He gave an overview of the plan."
+  "example": "He gave an overview of the plan.",
+  "exampleJa": "彼はその計画の概要を説明した。"
  },
  {
   "term": "perk",
   "meaning": "特典",
   "type": "word",
   "pos": "名詞",
-  "example": "Free lunch is a nice perk."
+  "example": "Free lunch is a nice perk.",
+  "exampleJa": "無料の昼食はうれしい特典だ。"
  },
  {
   "term": "premium",
   "meaning": "割増料金/保険料",
   "type": "word",
   "pos": "名詞",
-  "example": "A premium is charged for express."
+  "example": "A premium is charged for express.",
+  "exampleJa": "速達には割増料金がかかる。"
  },
  {
   "term": "questionnaire",
   "meaning": "アンケート",
   "type": "word",
   "pos": "名詞",
-  "example": "Fill out the questionnaire."
+  "example": "Fill out the questionnaire.",
+  "exampleJa": "アンケートに記入してください。"
  },
  {
   "term": "refreshment",
   "meaning": "軽食",
   "type": "word",
   "pos": "名詞",
-  "example": "Refreshments will be provided."
+  "example": "Refreshments will be provided.",
+  "exampleJa": "軽食が提供されます。"
  },
  {
   "term": "setback",
   "meaning": "挫折/後退",
   "type": "word",
   "pos": "名詞",
-  "example": "The delay was a setback."
+  "example": "The delay was a setback.",
+  "exampleJa": "その遅延は痛手だった。"
  },
  {
   "term": "subsidiary",
   "meaning": "子会社",
   "type": "word",
   "pos": "名詞",
-  "example": "The subsidiary reports to headquarters."
+  "example": "The subsidiary reports to headquarters.",
+  "exampleJa": "その子会社は本社に報告する。"
  },
  {
   "term": "turnover",
   "meaning": "離職率/売上高",
   "type": "word",
   "pos": "名詞",
-  "example": "Staff turnover is low."
+  "example": "Staff turnover is low.",
+  "exampleJa": "従業員の離職率は低い。"
  },
  {
   "term": "vendor",
   "meaning": "販売業者",
   "type": "word",
   "pos": "名詞",
-  "example": "The vendor delivered late."
+  "example": "The vendor delivered late.",
+  "exampleJa": "その販売業者は納品が遅れた。"
  },
  {
   "term": "accommodate",
   "meaning": "収容する/対応する",
   "type": "word",
   "pos": "動詞",
-  "example": "The hotel can accommodate 200 guests."
+  "example": "The hotel can accommodate 200 guests.",
+  "exampleJa": "そのホテルは200人の客を収容できる。"
  },
  {
   "term": "accomplish",
   "meaning": "達成する",
   "type": "word",
   "pos": "動詞",
-  "example": "We accomplished our goal."
+  "example": "We accomplished our goal.",
+  "exampleJa": "私たちは目標を達成した。"
  },
  {
   "term": "acquire",
   "meaning": "獲得する",
   "type": "word",
   "pos": "動詞",
-  "example": "They acquired a rival firm."
+  "example": "They acquired a rival firm.",
+  "exampleJa": "彼らは競合会社を買収した。"
  },
  {
   "term": "adjust",
   "meaning": "調整する",
   "type": "word",
   "pos": "動詞",
-  "example": "Please adjust the settings."
+  "example": "Please adjust the settings.",
+  "exampleJa": "設定を調整してください。"
  },
  {
   "term": "administer",
   "meaning": "管理する",
   "type": "word",
   "pos": "動詞",
-  "example": "She administers the budget."
+  "example": "She administers the budget.",
+  "exampleJa": "彼女が予算を管理している。"
  },
  {
   "term": "advertise",
   "meaning": "宣伝する",
   "type": "word",
   "pos": "動詞",
-  "example": "We advertise on social media."
+  "example": "We advertise on social media.",
+  "exampleJa": "私たちは交流サイトで宣伝している。"
  },
  {
   "term": "allocate",
   "meaning": "割り当てる",
   "type": "word",
   "pos": "動詞",
-  "example": "Funds were allocated to research."
+  "example": "Funds were allocated to research.",
+  "exampleJa": "資金は研究に割り当てられた。"
  },
  {
   "term": "anticipate",
   "meaning": "予期する",
   "type": "word",
   "pos": "動詞",
-  "example": "We anticipate strong sales."
+  "example": "We anticipate strong sales.",
+  "exampleJa": "私たちは好調な売上を予期している。"
  },
  {
   "term": "apologize",
   "meaning": "謝る",
   "type": "word",
   "pos": "動詞",
-  "example": "He apologized for the delay."
+  "example": "He apologized for the delay.",
+  "exampleJa": "彼は遅延について謝罪した。"
  },
  {
   "term": "appoint",
   "meaning": "任命する",
   "type": "word",
   "pos": "動詞",
-  "example": "She was appointed manager."
+  "example": "She was appointed manager.",
+  "exampleJa": "彼女は部長に任命された。"
  },
  {
   "term": "appreciate",
   "meaning": "感謝する/評価する",
   "type": "word",
   "pos": "動詞",
-  "example": "We appreciate your patience."
+  "example": "We appreciate your patience.",
+  "exampleJa": "ご辛抱に感謝します。"
  },
  {
   "term": "approve",
   "meaning": "承認する",
   "type": "word",
   "pos": "動詞",
-  "example": "The board approved the plan."
+  "example": "The board approved the plan.",
+  "exampleJa": "取締役会はその計画を承認した。"
  },
  {
   "term": "arrange",
   "meaning": "手配する",
   "type": "word",
   "pos": "動詞",
-  "example": "I will arrange a meeting."
+  "example": "I will arrange a meeting.",
+  "exampleJa": "私が会議を手配します。"
  },
  {
   "term": "assess",
   "meaning": "評価する",
   "type": "word",
   "pos": "動詞",
-  "example": "We assess risks carefully."
+  "example": "We assess risks carefully.",
+  "exampleJa": "私たちは危険を慎重に評価する。"
  },
  {
   "term": "assign",
   "meaning": "割り当てる",
   "type": "word",
   "pos": "動詞",
-  "example": "The task was assigned to me."
+  "example": "The task was assigned to me.",
+  "exampleJa": "その仕事は私に割り当てられた。"
  },
  {
   "term": "assist",
   "meaning": "手伝う",
   "type": "word",
   "pos": "動詞",
-  "example": "Staff will assist you."
+  "example": "Staff will assist you.",
+  "exampleJa": "スタッフがお手伝いします。"
  },
  {
   "term": "attend",
   "meaning": "出席する",
   "type": "word",
   "pos": "動詞",
-  "example": "Please attend the seminar."
+  "example": "Please attend the seminar.",
+  "exampleJa": "セミナーにご出席ください。"
  },
  {
   "term": "authorize",
   "meaning": "許可する",
   "type": "word",
   "pos": "動詞",
-  "example": "Only managers can authorize refunds."
+  "example": "Only managers can authorize refunds.",
+  "exampleJa": "返金を承認できるのは管理職だけだ。"
  },
  {
   "term": "boost",
   "meaning": "押し上げる",
   "type": "word",
   "pos": "動詞",
-  "example": "The ad boosted sales."
+  "example": "The ad boosted sales.",
+  "exampleJa": "その広告は売上を押し上げた。"
  },
  {
   "term": "calculate",
   "meaning": "計算する",
   "type": "word",
   "pos": "動詞",
-  "example": "Calculate the total cost."
+  "example": "Calculate the total cost.",
+  "exampleJa": "総費用を計算してください。"
  },
  {
   "term": "cancel",
   "meaning": "取り消す",
   "type": "word",
   "pos": "動詞",
-  "example": "They canceled the order."
+  "example": "They canceled the order.",
+  "exampleJa": "彼らは注文を取り消した。"
  },
  {
   "term": "certify",
   "meaning": "証明する",
   "type": "word",
   "pos": "動詞",
-  "example": "The document was certified."
+  "example": "The document was certified.",
+  "exampleJa": "その書類は証明された。"
  },
  {
   "term": "clarify",
   "meaning": "明確にする",
   "type": "word",
   "pos": "動詞",
-  "example": "Please clarify the details."
+  "example": "Please clarify the details.",
+  "exampleJa": "詳細を明確にしてください。"
  },
  {
   "term": "collaborate",
   "meaning": "協力する",
   "type": "word",
   "pos": "動詞",
-  "example": "Teams collaborate on projects."
+  "example": "Teams collaborate on projects.",
+  "exampleJa": "各チームは事業で協力する。"
  },
  {
   "term": "commute",
   "meaning": "通勤する",
   "type": "word",
   "pos": "動詞",
-  "example": "She commutes by train."
+  "example": "She commutes by train.",
+  "exampleJa": "彼女は電車で通勤している。"
  },
  {
   "term": "compensate",
   "meaning": "補償する",
   "type": "word",
   "pos": "動詞",
-  "example": "We will compensate you."
+  "example": "We will compensate you.",
+  "exampleJa": "私たちがあなたに補償します。"
  },
  {
   "term": "compile",
   "meaning": "まとめる",
   "type": "word",
   "pos": "動詞",
-  "example": "He compiled the report."
+  "example": "He compiled the report.",
+  "exampleJa": "彼はその報告書をまとめた。"
  },
  {
   "term": "comply",
   "meaning": "従う",
   "type": "word",
   "pos": "動詞",
-  "example": "We comply with regulations."
+  "example": "We comply with regulations.",
+  "exampleJa": "私たちは規制に従っている。"
  },
  {
   "term": "conduct",
   "meaning": "行う",
   "type": "word",
   "pos": "動詞",
-  "example": "They conducted a survey."
+  "example": "They conducted a survey.",
+  "exampleJa": "彼らは調査を行った。"
  },
  {
   "term": "confirm",
   "meaning": "確認する",
   "type": "word",
   "pos": "動詞",
-  "example": "Please confirm your booking."
+  "example": "Please confirm your booking.",
+  "exampleJa": "ご予約を確認してください。"
  },
  {
   "term": "consult",
   "meaning": "相談する",
   "type": "word",
   "pos": "動詞",
-  "example": "Consult a specialist."
+  "example": "Consult a specialist.",
+  "exampleJa": "専門家に相談してください。"
  },
  {
   "term": "contribute",
   "meaning": "貢献する",
   "type": "word",
   "pos": "動詞",
-  "example": "Everyone contributed ideas."
+  "example": "Everyone contributed ideas.",
+  "exampleJa": "全員が意見を出した。"
  },
  {
   "term": "coordinate",
   "meaning": "調整する",
   "type": "word",
   "pos": "動詞",
-  "example": "She coordinates the events."
+  "example": "She coordinates the events.",
+  "exampleJa": "彼女が催しを取りまとめている。"
  },
  {
   "term": "decline",
   "meaning": "断る/減少する",
   "type": "word",
   "pos": "動詞",
-  "example": "Sales declined last month."
+  "example": "Sales declined last month.",
+  "exampleJa": "売上は先月減少した。"
  },
  {
   "term": "dedicate",
   "meaning": "捧げる",
   "type": "word",
   "pos": "動詞",
-  "example": "He dedicated his time."
+  "example": "He dedicated his time.",
+  "exampleJa": "彼は自分の時間を捧げた。"
  },
  {
   "term": "demonstrate",
   "meaning": "実演する/示す",
   "type": "word",
   "pos": "動詞",
-  "example": "She demonstrated the device."
+  "example": "She demonstrated the device.",
+  "exampleJa": "彼女はその装置を実演した。"
  },
  {
   "term": "designate",
   "meaning": "指定する",
   "type": "word",
   "pos": "動詞",
-  "example": "A room was designated for meetings."
+  "example": "A room was designated for meetings.",
+  "exampleJa": "1室が会議用に指定された。"
  },
  {
   "term": "determine",
   "meaning": "決定する",
   "type": "word",
   "pos": "動詞",
-  "example": "We must determine the cause."
+  "example": "We must determine the cause.",
+  "exampleJa": "私たちは原因を突き止めなければならない。"
  },
  {
   "term": "diminish",
   "meaning": "減少する",
   "type": "word",
   "pos": "動詞",
-  "example": "Interest slowly diminished."
+  "example": "Interest slowly diminished.",
+  "exampleJa": "関心は徐々に薄れた。"
  },
  {
   "term": "disclose",
   "meaning": "公開する",
   "type": "word",
   "pos": "動詞",
-  "example": "They disclosed the results."
+  "example": "They disclosed the results.",
+  "exampleJa": "彼らは結果を公表した。"
  },
  {
   "term": "dispatch",
   "meaning": "発送する",
   "type": "word",
   "pos": "動詞",
-  "example": "We dispatched the order."
+  "example": "We dispatched the order.",
+  "exampleJa": "私たちは注文品を発送した。"
  },
  {
   "term": "distribute",
   "meaning": "配布する",
   "type": "word",
   "pos": "動詞",
-  "example": "Please distribute the handouts."
+  "example": "Please distribute the handouts.",
+  "exampleJa": "配布資料を配ってください。"
  },
  {
   "term": "emphasize",
   "meaning": "強調する",
   "type": "word",
   "pos": "動詞",
-  "example": "He emphasized safety."
+  "example": "He emphasized safety.",
+  "exampleJa": "彼は安全性を強調した。"
  },
  {
   "term": "enclose",
   "meaning": "同封する",
   "type": "word",
   "pos": "動詞",
-  "example": "I enclosed the invoice."
+  "example": "I enclosed the invoice.",
+  "exampleJa": "私は請求書を同封した。"
  },
  {
   "term": "endorse",
   "meaning": "支持する",
   "type": "word",
   "pos": "動詞",
-  "example": "The mayor endorsed the plan."
+  "example": "The mayor endorsed the plan.",
+  "exampleJa": "市長はその計画を支持した。"
  },
  {
   "term": "enhance",
   "meaning": "高める",
   "type": "word",
   "pos": "動詞",
-  "example": "The update enhances performance."
+  "example": "The update enhances performance.",
+  "exampleJa": "その更新は性能を高める。"
  },
  {
   "term": "enroll",
   "meaning": "登録する",
   "type": "word",
   "pos": "動詞",
-  "example": "Students enroll online."
+  "example": "Students enroll online.",
+  "exampleJa": "学生はオンラインで登録する。"
  },
  {
   "term": "ensure",
   "meaning": "保証する",
   "type": "word",
   "pos": "動詞",
-  "example": "Ensure the door is locked."
+  "example": "Ensure the door is locked.",
+  "exampleJa": "扉が施錠されていることを確認してください。"
  },
  {
   "term": "evaluate",
   "meaning": "評価する",
   "type": "word",
   "pos": "動詞",
-  "example": "We evaluate all applications."
+  "example": "We evaluate all applications.",
+  "exampleJa": "私たちはすべての応募を評価する。"
  },
  {
   "term": "exceed",
   "meaning": "超える",
   "type": "word",
   "pos": "動詞",
-  "example": "Sales exceeded expectations."
+  "example": "Sales exceeded expectations.",
+  "exampleJa": "売上は予想を上回った。"
  },
  {
   "term": "exhibit",
   "meaning": "展示する",
   "type": "word",
   "pos": "動詞",
-  "example": "They exhibited new models."
+  "example": "They exhibited new models.",
+  "exampleJa": "彼らは新型を展示した。"
  },
  {
   "term": "expand",
   "meaning": "拡大する",
   "type": "word",
   "pos": "動詞",
-  "example": "The firm expanded abroad."
+  "example": "The firm expanded abroad.",
+  "exampleJa": "その会社は海外に拡大した。"
  },
  {
   "term": "expire",
   "meaning": "期限が切れる",
   "type": "word",
   "pos": "動詞",
-  "example": "The coupon expires soon."
+  "example": "The coupon expires soon.",
+  "exampleJa": "そのクーポンはまもなく期限が切れる。"
  },
  {
   "term": "extend",
   "meaning": "延長する",
   "type": "word",
   "pos": "動詞",
-  "example": "We extended the deadline."
+  "example": "We extended the deadline.",
+  "exampleJa": "私たちは締め切りを延長した。"
  },
  {
   "term": "facilitate",
   "meaning": "促進する",
   "type": "word",
   "pos": "動詞",
-  "example": "The tool facilitates teamwork."
+  "example": "The tool facilitates teamwork.",
+  "exampleJa": "その道具は共同作業を促進する。"
  },
  {
   "term": "finalize",
   "meaning": "最終決定する",
   "type": "word",
   "pos": "動詞",
-  "example": "Let's finalize the contract."
+  "example": "Let's finalize the contract.",
+  "exampleJa": "契約を最終決定しましょう。"
  },
  {
   "term": "fulfill",
   "meaning": "果たす",
   "type": "word",
   "pos": "動詞",
-  "example": "We fulfill every order."
+  "example": "We fulfill every order.",
+  "exampleJa": "私たちはすべての注文に応じる。"
  },
  {
   "term": "generate",
   "meaning": "生み出す",
   "type": "word",
   "pos": "動詞",
-  "example": "The campaign generated leads."
+  "example": "The campaign generated leads.",
+  "exampleJa": "その宣伝活動は見込み客を生んだ。"
  },
  {
   "term": "handle",
   "meaning": "扱う",
   "type": "word",
   "pos": "動詞",
-  "example": "She handles customer calls."
+  "example": "She handles customer calls.",
+  "exampleJa": "彼女は顧客からの電話に対応している。"
  },
  {
   "term": "highlight",
   "meaning": "強調する",
   "type": "word",
   "pos": "動詞",
-  "example": "The report highlights risks."
+  "example": "The report highlights risks.",
+  "exampleJa": "その報告書は危険性を強調している。"
  },
  {
   "term": "hire",
   "meaning": "雇う",
   "type": "word",
   "pos": "動詞",
-  "example": "We hired five new staff."
+  "example": "We hired five new staff.",
+  "exampleJa": "私たちは新しい職員を5人雇った。"
  },
  {
   "term": "implement",
   "meaning": "実施する",
   "type": "word",
   "pos": "動詞",
-  "example": "We implemented the plan."
+  "example": "We implemented the plan.",
+  "exampleJa": "私たちはその計画を実施した。"
  },
  {
   "term": "improve",
   "meaning": "改善する",
   "type": "word",
   "pos": "動詞",
-  "example": "We aim to improve quality."
+  "example": "We aim to improve quality.",
+  "exampleJa": "私たちは品質の改善を目指している。"
  },
  {
   "term": "indicate",
   "meaning": "示す",
   "type": "word",
   "pos": "動詞",
-  "example": "The data indicates growth."
+  "example": "The data indicates growth.",
+  "exampleJa": "そのデータは成長を示している。"
  },
  {
   "term": "inform",
   "meaning": "知らせる",
   "type": "word",
   "pos": "動詞",
-  "example": "Please inform the team."
+  "example": "Please inform the team.",
+  "exampleJa": "チームに知らせてください。"
  },
  {
   "term": "inspect",
   "meaning": "検査する",
   "type": "word",
   "pos": "動詞",
-  "example": "Inspect the goods on arrival."
+  "example": "Inspect the goods on arrival.",
+  "exampleJa": "到着時に商品を検査してください。"
  },
  {
   "term": "install",
   "meaning": "設置する",
   "type": "word",
   "pos": "動詞",
-  "example": "We installed new software."
+  "example": "We installed new software.",
+  "exampleJa": "私たちは新しいソフトを導入した。"
  },
  {
   "term": "introduce",
   "meaning": "紹介する/導入する",
   "type": "word",
   "pos": "動詞",
-  "example": "They introduced a new product."
+  "example": "They introduced a new product.",
+  "exampleJa": "彼らは新製品を発表した。"
  },
  {
   "term": "invest",
   "meaning": "投資する",
   "type": "word",
   "pos": "動詞",
-  "example": "We invest in training."
+  "example": "We invest in training.",
+  "exampleJa": "私たちは研修に投資している。"
  },
  {
   "term": "investigate",
   "meaning": "調査する",
   "type": "word",
   "pos": "動詞",
-  "example": "Police investigated the case."
+  "example": "Police investigated the case.",
+  "exampleJa": "警察はその事件を捜査した。"
  },
  {
   "term": "issue",
   "meaning": "発行する",
   "type": "word",
   "pos": "動詞",
-  "example": "The bank issued a card."
+  "example": "The bank issued a card.",
+  "exampleJa": "銀行はカードを発行した。"
  },
  {
   "term": "launch",
   "meaning": "開始する",
   "type": "word",
   "pos": "動詞",
-  "example": "They launched the app."
+  "example": "They launched the app.",
+  "exampleJa": "彼らはそのアプリを公開した。"
  },
  {
   "term": "maintain",
   "meaning": "維持する",
   "type": "word",
   "pos": "動詞",
-  "example": "We maintain high standards."
+  "example": "We maintain high standards.",
+  "exampleJa": "私たちは高い水準を維持している。"
  },
  {
   "term": "manufacture",
   "meaning": "製造する",
   "type": "word",
   "pos": "動詞",
-  "example": "They manufacture parts."
+  "example": "They manufacture parts.",
+  "exampleJa": "彼らは部品を製造している。"
  },
  {
   "term": "modify",
   "meaning": "修正する",
   "type": "word",
   "pos": "動詞",
-  "example": "We modified the design."
+  "example": "We modified the design.",
+  "exampleJa": "私たちは設計を修正した。"
  },
  {
   "term": "negotiate",
   "meaning": "交渉する",
   "type": "word",
   "pos": "動詞",
-  "example": "We negotiated a better price."
+  "example": "We negotiated a better price.",
+  "exampleJa": "私たちはより良い価格を交渉した。"
  },
  {
   "term": "notify",
   "meaning": "通知する",
   "type": "word",
   "pos": "動詞",
-  "example": "Notify us of any changes."
+  "example": "Notify us of any changes.",
+  "exampleJa": "変更があればお知らせください。"
  },
  {
   "term": "obtain",
   "meaning": "得る",
   "type": "word",
   "pos": "動詞",
-  "example": "You must obtain a permit."
+  "example": "You must obtain a permit.",
+  "exampleJa": "あなたは許可証を取得しなければならない。"
  },
  {
   "term": "operate",
   "meaning": "運営する/操作する",
   "type": "word",
   "pos": "動詞",
-  "example": "She operates the machine."
+  "example": "She operates the machine.",
+  "exampleJa": "彼女がその機械を操作している。"
  },
  {
   "term": "organize",
   "meaning": "準備する/整理する",
   "type": "word",
   "pos": "動詞",
-  "example": "They organized the event."
+  "example": "They organized the event.",
+  "exampleJa": "彼らはその催しを企画した。"
  },
  {
   "term": "overcome",
   "meaning": "克服する",
   "type": "word",
   "pos": "動詞",
-  "example": "We overcame the problem."
+  "example": "We overcame the problem.",
+  "exampleJa": "私たちはその問題を克服した。"
  },
  {
   "term": "participate",
   "meaning": "参加する",
   "type": "word",
   "pos": "動詞",
-  "example": "Everyone can participate."
+  "example": "Everyone can participate.",
+  "exampleJa": "誰でも参加できます。"
  },
  {
   "term": "postpone",
   "meaning": "延期する",
   "type": "word",
   "pos": "動詞",
-  "example": "The meeting was postponed."
+  "example": "The meeting was postponed.",
+  "exampleJa": "その会議は延期された。"
  },
  {
   "term": "present",
   "meaning": "提示する/贈る",
   "type": "word",
   "pos": "動詞",
-  "example": "She presented the findings."
+  "example": "She presented the findings.",
+  "exampleJa": "彼女は調査結果を発表した。"
  },
  {
   "term": "prioritize",
   "meaning": "優先する",
   "type": "word",
   "pos": "動詞",
-  "example": "Prioritize urgent tasks."
+  "example": "Prioritize urgent tasks.",
+  "exampleJa": "緊急の仕事を優先してください。"
  },
  {
   "term": "process",
   "meaning": "処理する",
   "type": "word",
   "pos": "動詞",
-  "example": "We process orders daily."
+  "example": "We process orders daily.",
+  "exampleJa": "私たちは毎日注文を処理している。"
  },
  {
   "term": "promote",
   "meaning": "昇進させる/宣伝する",
   "type": "word",
   "pos": "動詞",
-  "example": "He was promoted to director."
+  "example": "He was promoted to director.",
+  "exampleJa": "彼は取締役に昇進した。"
  },
  {
   "term": "propose",
   "meaning": "提案する",
   "type": "word",
   "pos": "動詞",
-  "example": "She proposed a new idea."
+  "example": "She proposed a new idea.",
+  "exampleJa": "彼女は新しい案を提案した。"
  },
  {
   "term": "purchase",
   "meaning": "購入する",
   "type": "word",
   "pos": "動詞",
-  "example": "They purchased new equipment."
+  "example": "They purchased new equipment.",
+  "exampleJa": "彼らは新しい機器を購入した。"
  },
  {
   "term": "pursue",
   "meaning": "追求する",
   "type": "word",
   "pos": "動詞",
-  "example": "We pursue excellence."
+  "example": "We pursue excellence.",
+  "exampleJa": "私たちは卓越性を追求する。"
  },
  {
   "term": "recommend",
   "meaning": "勧める",
   "type": "word",
   "pos": "動詞",
-  "example": "I recommend this service."
+  "example": "I recommend this service.",
+  "exampleJa": "私はこのサービスをお勧めします。"
  },
  {
   "term": "recruit",
   "meaning": "採用する",
   "type": "word",
   "pos": "動詞",
-  "example": "We recruit talented people."
+  "example": "We recruit talented people.",
+  "exampleJa": "私たちは有能な人材を採用する。"
  },
  {
   "term": "reduce",
   "meaning": "減らす",
   "type": "word",
   "pos": "動詞",
-  "example": "We reduced costs."
+  "example": "We reduced costs.",
+  "exampleJa": "私たちは費用を削減した。"
  },
  {
   "term": "register",
   "meaning": "登録する",
   "type": "word",
   "pos": "動詞",
-  "example": "Register before the event."
+  "example": "Register before the event.",
+  "exampleJa": "催しの前に登録してください。"
  },
  {
   "term": "reimburse",
   "meaning": "払い戻す",
   "type": "word",
   "pos": "動詞",
-  "example": "We reimburse travel costs."
+  "example": "We reimburse travel costs.",
+  "exampleJa": "私たちは旅費を払い戻します。"
  },
  {
   "term": "reject",
   "meaning": "拒否する",
   "type": "word",
   "pos": "動詞",
-  "example": "They rejected the offer."
+  "example": "They rejected the offer.",
+  "exampleJa": "彼らはその申し出を断った。"
  },
  {
   "term": "relocate",
   "meaning": "移転する",
   "type": "word",
   "pos": "動詞",
-  "example": "The office relocated downtown."
+  "example": "The office relocated downtown.",
+  "exampleJa": "事務所は中心街に移転した。"
  },
  {
   "term": "remind",
   "meaning": "思い出させる",
   "type": "word",
   "pos": "動詞",
-  "example": "Remind me about the call."
+  "example": "Remind me about the call.",
+  "exampleJa": "その電話について私に念を押してください。"
  },
  {
   "term": "renew",
   "meaning": "更新する",
   "type": "word",
   "pos": "動詞",
-  "example": "Renew your membership."
+  "example": "Renew your membership.",
+  "exampleJa": "会員資格を更新してください。"
  },
  {
   "term": "replace",
   "meaning": "交換する",
   "type": "word",
   "pos": "動詞",
-  "example": "We replaced the printer."
+  "example": "We replaced the printer.",
+  "exampleJa": "私たちはプリンターを交換した。"
  },
  {
   "term": "request",
   "meaning": "要求する",
   "type": "word",
   "pos": "動詞",
-  "example": "She requested more time."
+  "example": "She requested more time.",
+  "exampleJa": "彼女はもっと時間を求めた。"
  },
  {
   "term": "require",
   "meaning": "必要とする",
   "type": "word",
   "pos": "動詞",
-  "example": "The job requires travel."
+  "example": "The job requires travel.",
+  "exampleJa": "その仕事には出張が必要だ。"
  },
  {
   "term": "reschedule",
   "meaning": "予定を変更する",
   "type": "word",
   "pos": "動詞",
-  "example": "We rescheduled the meeting."
+  "example": "We rescheduled the meeting.",
+  "exampleJa": "私たちは会議の日程を変更した。"
  },
  {
   "term": "reserve",
   "meaning": "予約する",
   "type": "word",
   "pos": "動詞",
-  "example": "Reserve a table online."
+  "example": "Reserve a table online.",
+  "exampleJa": "オンラインで席を予約してください。"
  },
  {
   "term": "resign",
   "meaning": "辞職する",
   "type": "word",
   "pos": "動詞",
-  "example": "He resigned last week."
+  "example": "He resigned last week.",
+  "exampleJa": "彼は先週辞職した。"
  },
  {
   "term": "resolve",
   "meaning": "解決する",
   "type": "word",
   "pos": "動詞",
-  "example": "We resolved the issue."
+  "example": "We resolved the issue.",
+  "exampleJa": "私たちはその問題を解決した。"
  },
  {
   "term": "respond",
   "meaning": "応答する",
   "type": "word",
   "pos": "動詞",
-  "example": "Please respond by email."
+  "example": "Please respond by email.",
+  "exampleJa": "メールでご返信ください。"
  },
  {
   "term": "restore",
   "meaning": "復旧する",
   "type": "word",
   "pos": "動詞",
-  "example": "Service was restored quickly."
+  "example": "Service was restored quickly.",
+  "exampleJa": "サービスは速やかに復旧した。"
  },
  {
   "term": "resume",
   "meaning": "再開する",
   "type": "word",
   "pos": "動詞",
-  "example": "Work resumed after lunch."
+  "example": "Work resumed after lunch.",
+  "exampleJa": "作業は昼食後に再開した。"
  },
  {
   "term": "retain",
   "meaning": "保持する",
   "type": "word",
   "pos": "動詞",
-  "example": "We retain top talent."
+  "example": "We retain top talent.",
+  "exampleJa": "私たちは優秀な人材を確保している。"
  },
  {
   "term": "retrieve",
   "meaning": "取り戻す",
   "type": "word",
   "pos": "動詞",
-  "example": "Retrieve the file from storage."
+  "example": "Retrieve the file from storage.",
+  "exampleJa": "保管庫からその書類を取り出してください。"
  },
  {
   "term": "review",
   "meaning": "見直す",
   "type": "word",
   "pos": "動詞",
-  "example": "Please review the draft."
+  "example": "Please review the draft.",
+  "exampleJa": "草案を確認してください。"
  },
  {
   "term": "revise",
   "meaning": "修正する",
   "type": "word",
   "pos": "動詞",
-  "example": "We revised the schedule."
+  "example": "We revised the schedule.",
+  "exampleJa": "私たちは予定を修正した。"
  },
  {
   "term": "seek",
   "meaning": "探す/求める",
   "type": "word",
   "pos": "動詞",
-  "example": "We seek new partners."
+  "example": "We seek new partners.",
+  "exampleJa": "私たちは新しい提携先を探している。"
  },
  {
   "term": "select",
   "meaning": "選ぶ",
   "type": "word",
   "pos": "動詞",
-  "example": "Select the best option."
+  "example": "Select the best option.",
+  "exampleJa": "最良の選択肢を選んでください。"
  },
  {
   "term": "settle",
   "meaning": "解決する/精算する",
   "type": "word",
   "pos": "動詞",
-  "example": "We settled the bill."
+  "example": "We settled the bill.",
+  "exampleJa": "私たちは勘定を精算した。"
  },
  {
   "term": "specify",
   "meaning": "明記する",
   "type": "word",
   "pos": "動詞",
-  "example": "Please specify the size."
+  "example": "Please specify the size.",
+  "exampleJa": "寸法を明記してください。"
  },
  {
   "term": "streamline",
   "meaning": "効率化する",
   "type": "word",
   "pos": "動詞",
-  "example": "We streamlined the process."
+  "example": "We streamlined the process.",
+  "exampleJa": "私たちは工程を効率化した。"
  },
  {
   "term": "submit",
   "meaning": "提出する",
   "type": "word",
   "pos": "動詞",
-  "example": "Submit the form online."
+  "example": "Submit the form online.",
+  "exampleJa": "用紙をオンラインで提出してください。"
  },
  {
   "term": "substitute",
   "meaning": "代用する",
   "type": "word",
   "pos": "動詞",
-  "example": "We substituted a new part."
+  "example": "We substituted a new part.",
+  "exampleJa": "私たちは新しい部品で代用した。"
  },
  {
   "term": "succeed",
   "meaning": "成功する",
   "type": "word",
   "pos": "動詞",
-  "example": "The launch succeeded."
+  "example": "The launch succeeded.",
+  "exampleJa": "その発売は成功した。"
  },
  {
   "term": "supervise",
   "meaning": "監督する",
   "type": "word",
   "pos": "動詞",
-  "example": "She supervises the team."
+  "example": "She supervises the team.",
+  "exampleJa": "彼女がそのチームを監督している。"
  },
  {
   "term": "supply",
   "meaning": "供給する",
   "type": "word",
   "pos": "動詞",
-  "example": "We supply local stores."
+  "example": "We supply local stores.",
+  "exampleJa": "私たちは地元の店に供給している。"
  },
  {
   "term": "suspend",
   "meaning": "一時停止する",
   "type": "word",
   "pos": "動詞",
-  "example": "Service was suspended briefly."
+  "example": "Service was suspended briefly.",
+  "exampleJa": "サービスは一時的に停止された。"
  },
  {
   "term": "sustain",
   "meaning": "維持する",
   "type": "word",
   "pos": "動詞",
-  "example": "We must sustain growth."
+  "example": "We must sustain growth.",
+  "exampleJa": "私たちは成長を維持しなければならない。"
  },
  {
   "term": "terminate",
   "meaning": "終了させる",
   "type": "word",
   "pos": "動詞",
-  "example": "The contract was terminated."
+  "example": "The contract was terminated.",
+  "exampleJa": "その契約は終了した。"
  },
  {
   "term": "transform",
   "meaning": "変える",
   "type": "word",
   "pos": "動詞",
-  "example": "The plan transformed the firm."
+  "example": "The plan transformed the firm.",
+  "exampleJa": "その計画は会社を変えた。"
  },
  {
   "term": "undergo",
   "meaning": "経験する",
   "type": "word",
   "pos": "動詞",
-  "example": "The system underwent testing."
+  "example": "The system underwent testing.",
+  "exampleJa": "そのシステムは試験を受けた。"
  },
  {
   "term": "update",
   "meaning": "更新する",
   "type": "word",
   "pos": "動詞",
-  "example": "We updated the website."
+  "example": "We updated the website.",
+  "exampleJa": "私たちはウェブサイトを更新した。"
  },
  {
   "term": "upgrade",
   "meaning": "改良する",
   "type": "word",
   "pos": "動詞",
-  "example": "They upgraded the servers."
+  "example": "They upgraded the servers.",
+  "exampleJa": "彼らはサーバーを改良した。"
  },
  {
   "term": "utilize",
   "meaning": "活用する",
   "type": "word",
   "pos": "動詞",
-  "example": "We utilize modern tools."
+  "example": "We utilize modern tools.",
+  "exampleJa": "私たちは最新の道具を活用している。"
  },
  {
   "term": "verify",
   "meaning": "確認する",
   "type": "word",
   "pos": "動詞",
-  "example": "Verify your identity."
+  "example": "Verify your identity.",
+  "exampleJa": "本人確認を行ってください。"
  },
  {
   "term": "withdraw",
   "meaning": "引き出す/撤回する",
   "type": "word",
   "pos": "動詞",
-  "example": "She withdrew some cash."
+  "example": "She withdrew some cash.",
+  "exampleJa": "彼女は現金をいくらか引き出した。"
  },
  {
   "term": "accelerate",
   "meaning": "加速する",
   "type": "word",
   "pos": "動詞",
-  "example": "The plan accelerated growth."
+  "example": "The plan accelerated growth.",
+  "exampleJa": "その計画は成長を加速させた。"
  },
  {
   "term": "accumulate",
   "meaning": "蓄積する",
   "type": "word",
   "pos": "動詞",
-  "example": "Points accumulate over time."
+  "example": "Points accumulate over time.",
+  "exampleJa": "ポイントは時間とともに貯まる。"
  },
  {
   "term": "acknowledge",
   "meaning": "認める",
   "type": "word",
   "pos": "動詞",
-  "example": "Please acknowledge receipt."
+  "example": "Please acknowledge receipt.",
+  "exampleJa": "受領をご確認ください。"
  },
  {
   "term": "assemble",
   "meaning": "組み立てる",
   "type": "word",
   "pos": "動詞",
-  "example": "They assembled the shelf."
+  "example": "They assembled the shelf.",
+  "exampleJa": "彼らはその棚を組み立てた。"
  },
  {
   "term": "attribute",
   "meaning": "起因させる",
   "type": "word",
   "pos": "動詞",
-  "example": "She attributes success to hard work."
+  "example": "She attributes success to hard work.",
+  "exampleJa": "彼女は成功を努力のおかげだとしている。"
  },
  {
   "term": "outline",
   "meaning": "概説する",
   "type": "word",
   "pos": "動詞",
-  "example": "He outlined the plan."
+  "example": "He outlined the plan.",
+  "exampleJa": "彼はその計画の概略を述べた。"
  },
  {
   "term": "oversee",
   "meaning": "監督する",
   "type": "word",
   "pos": "動詞",
-  "example": "She oversees operations."
+  "example": "She oversees operations.",
+  "exampleJa": "彼女が業務を監督している。"
  },
  {
   "term": "undertake",
   "meaning": "引き受ける",
   "type": "word",
   "pos": "動詞",
-  "example": "We undertook a big project."
+  "example": "We undertook a big project.",
+  "exampleJa": "私たちは大きな事業を引き受けた。"
  },
  {
   "term": "accurate",
   "meaning": "正確な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The report must be accurate."
+  "example": "The report must be accurate.",
+  "exampleJa": "その報告書は正確でなければならない。"
  },
  {
   "term": "additional",
   "meaning": "追加の",
   "type": "word",
   "pos": "形容詞",
-  "example": "There is an additional fee."
+  "example": "There is an additional fee.",
+  "exampleJa": "追加料金がかかります。"
  },
  {
   "term": "adequate",
   "meaning": "十分な",
   "type": "word",
   "pos": "形容詞",
-  "example": "We have adequate supplies."
+  "example": "We have adequate supplies.",
+  "exampleJa": "私たちには十分な備品がある。"
  },
  {
   "term": "affordable",
   "meaning": "手頃な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The plan is affordable."
+  "example": "The plan is affordable.",
+  "exampleJa": "その料金プランは手頃だ。"
  },
  {
   "term": "annual",
   "meaning": "年間の",
   "type": "word",
   "pos": "形容詞",
-  "example": "The annual report is out."
+  "example": "The annual report is out.",
+  "exampleJa": "年次報告書が出た。"
  },
  {
   "term": "apparent",
   "meaning": "明らかな",
   "type": "word",
   "pos": "形容詞",
-  "example": "The error was apparent."
+  "example": "The error was apparent.",
+  "exampleJa": "その誤りは明らかだった。"
  },
  {
   "term": "appropriate",
   "meaning": "適切な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Wear appropriate clothing."
+  "example": "Wear appropriate clothing.",
+  "exampleJa": "適切な服装を着用してください。"
  },
  {
   "term": "available",
   "meaning": "利用可能な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The room is available now."
+  "example": "The room is available now.",
+  "exampleJa": "その部屋は今空いています。"
  },
  {
   "term": "aware",
   "meaning": "気づいている",
   "type": "word",
   "pos": "形容詞",
-  "example": "We are aware of the issue."
+  "example": "We are aware of the issue.",
+  "exampleJa": "私たちはその問題を認識している。"
  },
  {
   "term": "beneficial",
   "meaning": "有益な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Exercise is beneficial."
+  "example": "Exercise is beneficial.",
+  "exampleJa": "運動は有益だ。"
  },
  {
   "term": "brief",
   "meaning": "短い",
   "type": "word",
   "pos": "形容詞",
-  "example": "He gave a brief summary."
+  "example": "He gave a brief summary.",
+  "exampleJa": "彼は短い要約を述べた。"
  },
  {
   "term": "competent",
   "meaning": "有能な",
   "type": "word",
   "pos": "形容詞",
-  "example": "She is a competent leader."
+  "example": "She is a competent leader.",
+  "exampleJa": "彼女は有能な指導者だ。"
  },
  {
   "term": "competitive",
   "meaning": "競争力のある",
   "type": "word",
   "pos": "形容詞",
-  "example": "Our prices are competitive."
+  "example": "Our prices are competitive.",
+  "exampleJa": "当社の価格は競争力がある。"
  },
  {
   "term": "complimentary",
   "meaning": "無料の",
   "type": "word",
   "pos": "形容詞",
-  "example": "Breakfast is complimentary."
+  "example": "Breakfast is complimentary.",
+  "exampleJa": "朝食は無料です。"
  },
  {
   "term": "comprehensive",
   "meaning": "包括的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "A comprehensive guide is included."
+  "example": "A comprehensive guide is included.",
+  "exampleJa": "包括的な手引きが同梱されている。"
  },
  {
   "term": "confidential",
   "meaning": "機密の",
   "type": "word",
   "pos": "形容詞",
-  "example": "This file is confidential."
+  "example": "This file is confidential.",
+  "exampleJa": "この書類は機密だ。"
  },
  {
   "term": "consecutive",
   "meaning": "連続した",
   "type": "word",
   "pos": "形容詞",
-  "example": "Sales rose for three consecutive months."
+  "example": "Sales rose for three consecutive months.",
+  "exampleJa": "売上は3か月連続で上昇した。"
  },
  {
   "term": "considerable",
   "meaning": "かなりの",
   "type": "word",
   "pos": "形容詞",
-  "example": "We made considerable progress."
+  "example": "We made considerable progress.",
+  "exampleJa": "私たちはかなりの進展を遂げた。"
  },
  {
   "term": "consistent",
   "meaning": "一貫した",
   "type": "word",
   "pos": "形容詞",
-  "example": "His work is consistent."
+  "example": "His work is consistent.",
+  "exampleJa": "彼の仕事は一貫している。"
  },
  {
   "term": "convenient",
   "meaning": "便利な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The location is convenient."
+  "example": "The location is convenient.",
+  "exampleJa": "その場所は便利だ。"
  },
  {
   "term": "crucial",
   "meaning": "極めて重要な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Timing is crucial."
+  "example": "Timing is crucial.",
+  "exampleJa": "時機が極めて重要だ。"
  },
  {
   "term": "current",
   "meaning": "現在の",
   "type": "word",
   "pos": "形容詞",
-  "example": "The current plan is working."
+  "example": "The current plan is working.",
+  "exampleJa": "現在の計画はうまくいっている。"
  },
  {
   "term": "defective",
   "meaning": "欠陥のある",
   "type": "word",
   "pos": "形容詞",
-  "example": "We replaced the defective item."
+  "example": "We replaced the defective item.",
+  "exampleJa": "私たちは欠陥品を交換した。"
  },
  {
   "term": "dependable",
   "meaning": "頼れる",
   "type": "word",
   "pos": "形容詞",
-  "example": "He is a dependable worker."
+  "example": "He is a dependable worker.",
+  "exampleJa": "彼は頼れる働き手だ。"
  },
  {
   "term": "diverse",
   "meaning": "多様な",
   "type": "word",
   "pos": "形容詞",
-  "example": "We have a diverse team."
+  "example": "We have a diverse team.",
+  "exampleJa": "私たちには多様なチームがある。"
  },
  {
   "term": "durable",
   "meaning": "丈夫な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The bag is very durable."
+  "example": "The bag is very durable.",
+  "exampleJa": "そのかばんはとても丈夫だ。"
  },
  {
   "term": "eligible",
   "meaning": "資格のある",
   "type": "word",
   "pos": "形容詞",
-  "example": "You are eligible for a discount."
+  "example": "You are eligible for a discount.",
+  "exampleJa": "あなたは割引を受ける資格がある。"
  },
  {
   "term": "essential",
   "meaning": "必須の",
   "type": "word",
   "pos": "形容詞",
-  "example": "Training is essential."
+  "example": "Training is essential.",
+  "exampleJa": "研修は必須だ。"
  },
  {
   "term": "exclusive",
   "meaning": "独占的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "This is an exclusive offer."
+  "example": "This is an exclusive offer.",
+  "exampleJa": "これは特別なご提供です。"
  },
  {
   "term": "experienced",
   "meaning": "経験豊富な",
   "type": "word",
   "pos": "形容詞",
-  "example": "We hired an experienced manager."
+  "example": "We hired an experienced manager.",
+  "exampleJa": "私たちは経験豊富な管理者を雇った。"
  },
  {
   "term": "extensive",
   "meaning": "広範な",
   "type": "word",
   "pos": "形容詞",
-  "example": "She has extensive knowledge."
+  "example": "She has extensive knowledge.",
+  "exampleJa": "彼女は幅広い知識を持っている。"
  },
  {
   "term": "fragile",
   "meaning": "壊れやすい",
   "type": "word",
   "pos": "形容詞",
-  "example": "The package is fragile."
+  "example": "The package is fragile.",
+  "exampleJa": "その荷物は壊れやすい。"
  },
  {
   "term": "frequent",
   "meaning": "頻繁な",
   "type": "word",
   "pos": "形容詞",
-  "example": "He is a frequent traveler."
+  "example": "He is a frequent traveler.",
+  "exampleJa": "彼は頻繁に旅行する人だ。"
  },
  {
   "term": "generous",
   "meaning": "気前のよい",
   "type": "word",
   "pos": "形容詞",
-  "example": "They made a generous donation."
+  "example": "They made a generous donation.",
+  "exampleJa": "彼らは気前の良い寄付をした。"
  },
  {
   "term": "gradual",
   "meaning": "徐々の",
   "type": "word",
   "pos": "形容詞",
-  "example": "There was a gradual improvement."
+  "example": "There was a gradual improvement.",
+  "exampleJa": "徐々に改善が見られた。"
  },
  {
   "term": "immediate",
   "meaning": "即座の",
   "type": "word",
   "pos": "形容詞",
-  "example": "We need an immediate response."
+  "example": "We need an immediate response.",
+  "exampleJa": "私たちは即座の返答を必要としている。"
  },
  {
   "term": "impressive",
   "meaning": "印象的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The results were impressive."
+  "example": "The results were impressive.",
+  "exampleJa": "その結果は印象的だった。"
  },
  {
   "term": "inclusive",
   "meaning": "包括的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The price is all-inclusive."
+  "example": "The price is all-inclusive.",
+  "exampleJa": "その価格は全て込みです。"
  },
  {
   "term": "industrial",
   "meaning": "産業の",
   "type": "word",
   "pos": "形容詞",
-  "example": "The area is industrial."
+  "example": "The area is industrial.",
+  "exampleJa": "その地域は工業地帯だ。"
  },
  {
   "term": "inevitable",
   "meaning": "避けられない",
   "type": "word",
   "pos": "形容詞",
-  "example": "Change is inevitable."
+  "example": "Change is inevitable.",
+  "exampleJa": "変化は避けられない。"
  },
  {
   "term": "initial",
   "meaning": "最初の",
   "type": "word",
   "pos": "形容詞",
-  "example": "The initial plan changed."
+  "example": "The initial plan changed.",
+  "exampleJa": "当初の計画は変わった。"
  },
  {
   "term": "innovative",
   "meaning": "革新的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "They offer innovative solutions."
+  "example": "They offer innovative solutions.",
+  "exampleJa": "彼らは革新的な解決策を提供している。"
  },
  {
   "term": "leading",
   "meaning": "主要な",
   "type": "word",
   "pos": "形容詞",
-  "example": "They are a leading brand."
+  "example": "They are a leading brand.",
+  "exampleJa": "彼らは主要な銘柄だ。"
  },
  {
   "term": "mandatory",
   "meaning": "義務的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The training is mandatory."
+  "example": "The training is mandatory.",
+  "exampleJa": "その研修は義務だ。"
  },
  {
   "term": "numerous",
   "meaning": "多数の",
   "type": "word",
   "pos": "形容詞",
-  "example": "We received numerous applications."
+  "example": "We received numerous applications.",
+  "exampleJa": "私たちは多数の応募を受け取った。"
  },
  {
   "term": "outstanding",
   "meaning": "優れた/未払いの",
   "type": "word",
   "pos": "形容詞",
-  "example": "She did outstanding work."
+  "example": "She did outstanding work.",
+  "exampleJa": "彼女は優れた仕事をした。"
  },
  {
   "term": "potential",
   "meaning": "潜在的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "We found a potential client."
+  "example": "We found a potential client.",
+  "exampleJa": "私たちは見込み客を見つけた。"
  },
  {
   "term": "preliminary",
   "meaning": "予備の",
   "type": "word",
   "pos": "形容詞",
-  "example": "These are preliminary results."
+  "example": "These are preliminary results.",
+  "exampleJa": "これらは予備的な結果だ。"
  },
  {
   "term": "previous",
   "meaning": "以前の",
   "type": "word",
   "pos": "形容詞",
-  "example": "See the previous email."
+  "example": "See the previous email.",
+  "exampleJa": "前回のメールをご覧ください。"
  },
  {
   "term": "primary",
   "meaning": "主要な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Safety is our primary concern."
+  "example": "Safety is our primary concern.",
+  "exampleJa": "安全が私たちの第一の関心事だ。"
  },
  {
   "term": "productive",
   "meaning": "生産的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "It was a productive meeting."
+  "example": "It was a productive meeting.",
+  "exampleJa": "それは生産的な会議だった。"
  },
  {
   "term": "profitable",
   "meaning": "利益のある",
   "type": "word",
   "pos": "形容詞",
-  "example": "The venture was profitable."
+  "example": "The venture was profitable.",
+  "exampleJa": "その事業は利益を生んだ。"
  },
  {
   "term": "prominent",
   "meaning": "著名な",
   "type": "word",
   "pos": "形容詞",
-  "example": "A prominent scientist spoke."
+  "example": "A prominent scientist spoke.",
+  "exampleJa": "著名な科学者が講演した。"
  },
  {
   "term": "prompt",
   "meaning": "迅速な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Thank you for your prompt reply."
+  "example": "Thank you for your prompt reply.",
+  "exampleJa": "迅速なご返信をありがとうございます。"
  },
  {
   "term": "punctual",
   "meaning": "時間を守る",
   "type": "word",
   "pos": "形容詞",
-  "example": "She is always punctual."
+  "example": "She is always punctual.",
+  "exampleJa": "彼女はいつも時間を守る。"
  },
  {
   "term": "qualified",
   "meaning": "資格のある",
   "type": "word",
   "pos": "形容詞",
-  "example": "We seek qualified candidates."
+  "example": "We seek qualified candidates.",
+  "exampleJa": "私たちは資格のある候補者を求めている。"
  },
  {
   "term": "reasonable",
   "meaning": "妥当な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The price is reasonable."
+  "example": "The price is reasonable.",
+  "exampleJa": "その価格は妥当だ。"
  },
  {
   "term": "recent",
   "meaning": "最近の",
   "type": "word",
   "pos": "形容詞",
-  "example": "See our recent report."
+  "example": "See our recent report.",
+  "exampleJa": "当社の最近の報告書をご覧ください。"
  },
  {
   "term": "relevant",
   "meaning": "関連のある",
   "type": "word",
   "pos": "形容詞",
-  "example": "Include relevant details."
+  "example": "Include relevant details.",
+  "exampleJa": "関連する詳細を含めてください。"
  },
  {
   "term": "reliable",
   "meaning": "信頼できる",
   "type": "word",
   "pos": "形容詞",
-  "example": "The service is reliable."
+  "example": "The service is reliable.",
+  "exampleJa": "そのサービスは信頼できる。"
  },
  {
   "term": "reluctant",
   "meaning": "気が進まない",
   "type": "word",
   "pos": "形容詞",
-  "example": "He was reluctant to agree."
+  "example": "He was reluctant to agree.",
+  "exampleJa": "彼は同意するのに気が進まなかった。"
  },
  {
   "term": "renowned",
   "meaning": "有名な",
   "type": "word",
   "pos": "形容詞",
-  "example": "She is a renowned chef."
+  "example": "She is a renowned chef.",
+  "exampleJa": "彼女は有名な料理人だ。"
  },
  {
   "term": "respective",
   "meaning": "それぞれの",
   "type": "word",
   "pos": "形容詞",
-  "example": "They went to their respective offices."
+  "example": "They went to their respective offices.",
+  "exampleJa": "彼らはそれぞれの事務所へ向かった。"
  },
  {
   "term": "responsible",
   "meaning": "責任がある",
   "type": "word",
   "pos": "形容詞",
-  "example": "She is responsible for sales."
+  "example": "She is responsible for sales.",
+  "exampleJa": "彼女は営業を担当している。"
  },
  {
   "term": "satisfactory",
   "meaning": "満足のいく",
   "type": "word",
   "pos": "形容詞",
-  "example": "The results were satisfactory."
+  "example": "The results were satisfactory.",
+  "exampleJa": "その結果は満足のいくものだった。"
  },
  {
   "term": "scarce",
   "meaning": "乏しい",
   "type": "word",
   "pos": "形容詞",
-  "example": "Water is scarce here."
+  "example": "Water is scarce here.",
+  "exampleJa": "ここでは水が乏しい。"
  },
  {
   "term": "significant",
   "meaning": "重要な",
   "type": "word",
   "pos": "形容詞",
-  "example": "There was a significant change."
+  "example": "There was a significant change.",
+  "exampleJa": "重要な変化があった。"
  },
  {
   "term": "spacious",
   "meaning": "広々とした",
   "type": "word",
   "pos": "形容詞",
-  "example": "The office is spacious."
+  "example": "The office is spacious.",
+  "exampleJa": "その事務所は広々としている。"
  },
  {
   "term": "substantial",
   "meaning": "かなりの",
   "type": "word",
   "pos": "形容詞",
-  "example": "We saw substantial growth."
+  "example": "We saw substantial growth.",
+  "exampleJa": "私たちはかなりの成長を見た。"
  },
  {
   "term": "sufficient",
   "meaning": "十分な",
   "type": "word",
   "pos": "形容詞",
-  "example": "We have sufficient funds."
+  "example": "We have sufficient funds.",
+  "exampleJa": "私たちには十分な資金がある。"
  },
  {
   "term": "suitable",
   "meaning": "適した",
   "type": "word",
   "pos": "形容詞",
-  "example": "Find a suitable venue."
+  "example": "Find a suitable venue.",
+  "exampleJa": "適した会場を見つけてください。"
  },
  {
   "term": "temporary",
   "meaning": "一時的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "This is a temporary solution."
+  "example": "This is a temporary solution.",
+  "exampleJa": "これは一時的な解決策だ。"
  },
  {
   "term": "thorough",
   "meaning": "徹底的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "We did a thorough review."
+  "example": "We did a thorough review.",
+  "exampleJa": "私たちは徹底的な見直しを行った。"
  },
  {
   "term": "tentative",
   "meaning": "仮の",
   "type": "word",
   "pos": "形容詞",
-  "example": "We set a tentative date."
+  "example": "We set a tentative date.",
+  "exampleJa": "私たちは仮の日程を設定した。"
  },
  {
   "term": "upcoming",
   "meaning": "今度の",
   "type": "word",
   "pos": "形容詞",
-  "example": "The upcoming event is popular."
+  "example": "The upcoming event is popular.",
+  "exampleJa": "今度の催しは人気がある。"
  },
  {
   "term": "urgent",
   "meaning": "緊急の",
   "type": "word",
   "pos": "形容詞",
-  "example": "This is an urgent matter."
+  "example": "This is an urgent matter.",
+  "exampleJa": "これは緊急の用件だ。"
  },
  {
   "term": "valid",
   "meaning": "有効な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The ticket is still valid."
+  "example": "The ticket is still valid.",
+  "exampleJa": "その切符はまだ有効だ。"
  },
  {
   "term": "valuable",
   "meaning": "貴重な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Your feedback is valuable."
+  "example": "Your feedback is valuable.",
+  "exampleJa": "あなたのご意見は貴重です。"
  },
  {
   "term": "versatile",
   "meaning": "多才な/用途の広い",
   "type": "word",
   "pos": "形容詞",
-  "example": "The tool is versatile."
+  "example": "The tool is versatile.",
+  "exampleJa": "その道具は用途が広い。"
  },
  {
   "term": "vital",
   "meaning": "極めて重要な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Teamwork is vital."
+  "example": "Teamwork is vital.",
+  "exampleJa": "連携が極めて重要だ。"
  },
  {
   "term": "voluntary",
   "meaning": "自発的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "Participation is voluntary."
+  "example": "Participation is voluntary.",
+  "exampleJa": "参加は任意です。"
  },
  {
   "term": "flexible",
   "meaning": "柔軟な",
   "type": "word",
   "pos": "形容詞",
-  "example": "We offer flexible hours."
+  "example": "We offer flexible hours.",
+  "exampleJa": "私たちは柔軟な勤務時間を提供している。"
  },
  {
   "term": "efficient",
   "meaning": "効率的な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The process is efficient."
+  "example": "The process is efficient.",
+  "exampleJa": "その工程は効率的だ。"
  },
  {
   "term": "profound",
   "meaning": "深遠な",
   "type": "word",
   "pos": "形容詞",
-  "example": "It had a profound effect."
+  "example": "It had a profound effect.",
+  "exampleJa": "それは深い影響を与えた。"
  },
  {
   "term": "steady",
   "meaning": "安定した",
   "type": "word",
   "pos": "形容詞",
-  "example": "Sales showed steady growth."
+  "example": "Sales showed steady growth.",
+  "exampleJa": "売上は安定した成長を示した。"
  },
  {
   "term": "sophisticated",
   "meaning": "洗練された",
   "type": "word",
   "pos": "形容詞",
-  "example": "The system is sophisticated."
+  "example": "The system is sophisticated.",
+  "exampleJa": "そのシステムは洗練されている。"
  },
  {
   "term": "mutual",
   "meaning": "相互の",
   "type": "word",
   "pos": "形容詞",
-  "example": "We reached a mutual agreement."
+  "example": "We reached a mutual agreement.",
+  "exampleJa": "私たちは相互の合意に達した。"
  },
  {
   "term": "feasible",
   "meaning": "実行可能な",
   "type": "word",
   "pos": "形容詞",
-  "example": "The plan is feasible."
+  "example": "The plan is feasible.",
+  "exampleJa": "その計画は実行可能だ。"
  },
  {
   "term": "accessible",
   "meaning": "利用しやすい",
   "type": "word",
   "pos": "形容詞",
-  "example": "The site is accessible to all."
+  "example": "The site is accessible to all.",
+  "exampleJa": "その施設は誰もが利用しやすい。"
  },
  {
   "term": "alternative",
   "meaning": "代替の",
   "type": "word",
   "pos": "形容詞",
-  "example": "We have an alternative plan."
+  "example": "We have an alternative plan.",
+  "exampleJa": "私たちには代わりの計画がある。"
  },
  {
   "term": "accordingly",
   "meaning": "それに応じて",
   "type": "word",
   "pos": "副詞",
-  "example": "Plans changed, so act accordingly."
+  "example": "Plans changed, so act accordingly.",
+  "exampleJa": "計画が変わったので、それに応じて行動してください。"
  },
  {
   "term": "apparently",
   "meaning": "どうやら",
   "type": "word",
   "pos": "副詞",
-  "example": "Apparently, the flight is delayed."
+  "example": "Apparently, the flight is delayed.",
+  "exampleJa": "どうやらその便は遅れているようだ。"
  },
  {
   "term": "approximately",
   "meaning": "おおよそ",
   "type": "word",
   "pos": "副詞",
-  "example": "The trip takes approximately two hours."
+  "example": "The trip takes approximately two hours.",
+  "exampleJa": "その移動はおよそ2時間かかる。"
  },
  {
   "term": "briefly",
   "meaning": "手短に",
   "type": "word",
   "pos": "副詞",
-  "example": "She spoke briefly."
+  "example": "She spoke briefly.",
+  "exampleJa": "彼女は手短に話した。"
  },
  {
   "term": "currently",
   "meaning": "現在",
   "type": "word",
   "pos": "副詞",
-  "example": "We are currently hiring."
+  "example": "We are currently hiring.",
+  "exampleJa": "私たちは現在採用を行っている。"
  },
  {
   "term": "eventually",
   "meaning": "最終的に",
   "type": "word",
   "pos": "副詞",
-  "example": "Eventually, we agreed."
+  "example": "Eventually, we agreed.",
+  "exampleJa": "最終的に私たちは同意した。"
  },
  {
   "term": "frequently",
   "meaning": "頻繁に",
   "type": "word",
   "pos": "副詞",
-  "example": "He travels frequently."
+  "example": "He travels frequently.",
+  "exampleJa": "彼は頻繁に出張する。"
  },
  {
   "term": "immediately",
   "meaning": "すぐに",
   "type": "word",
   "pos": "副詞",
-  "example": "Reply immediately, please."
+  "example": "Reply immediately, please.",
+  "exampleJa": "すぐにご返信ください。"
  },
  {
   "term": "initially",
   "meaning": "最初は",
   "type": "word",
   "pos": "副詞",
-  "example": "Initially, sales were slow."
+  "example": "Initially, sales were slow.",
+  "exampleJa": "最初のうち、売上は伸び悩んだ。"
  },
  {
   "term": "mutually",
   "meaning": "相互に",
   "type": "word",
   "pos": "副詞",
-  "example": "It was mutually beneficial."
+  "example": "It was mutually beneficial.",
+  "exampleJa": "それは互いに有益だった。"
  },
  {
   "term": "nevertheless",
   "meaning": "それにもかかわらず",
   "type": "word",
   "pos": "副詞",
-  "example": "It rained; nevertheless, we went."
+  "example": "It rained; nevertheless, we went.",
+  "exampleJa": "雨が降ったが、それでも私たちは行った。"
  },
  {
   "term": "occasionally",
   "meaning": "時々",
   "type": "word",
   "pos": "副詞",
-  "example": "We meet occasionally."
+  "example": "We meet occasionally.",
+  "exampleJa": "私たちは時々会う。"
  },
  {
   "term": "primarily",
   "meaning": "主に",
   "type": "word",
   "pos": "副詞",
-  "example": "We focus primarily on quality."
+  "example": "We focus primarily on quality.",
+  "exampleJa": "私たちは主に品質を重視している。"
  },
  {
   "term": "promptly",
   "meaning": "迅速に",
   "type": "word",
   "pos": "副詞",
-  "example": "She replied promptly."
+  "example": "She replied promptly.",
+  "exampleJa": "彼女は迅速に返信した。"
  },
  {
   "term": "rarely",
   "meaning": "めったに〜ない",
   "type": "word",
   "pos": "副詞",
-  "example": "He rarely takes a day off."
+  "example": "He rarely takes a day off.",
+  "exampleJa": "彼はめったに休みを取らない。"
  },
  {
   "term": "recently",
   "meaning": "最近",
   "type": "word",
   "pos": "副詞",
-  "example": "We recently moved offices."
+  "example": "We recently moved offices.",
+  "exampleJa": "私たちは最近事務所を移転した。"
  },
  {
   "term": "relatively",
   "meaning": "比較的",
   "type": "word",
   "pos": "副詞",
-  "example": "The task was relatively easy."
+  "example": "The task was relatively easy.",
+  "exampleJa": "その作業は比較的簡単だった。"
  },
  {
   "term": "reluctantly",
   "meaning": "しぶしぶ",
   "type": "word",
   "pos": "副詞",
-  "example": "He agreed reluctantly."
+  "example": "He agreed reluctantly.",
+  "exampleJa": "彼はしぶしぶ同意した。"
  },
  {
   "term": "significantly",
   "meaning": "著しく",
   "type": "word",
   "pos": "副詞",
-  "example": "Costs dropped significantly."
+  "example": "Costs dropped significantly.",
+  "exampleJa": "費用は著しく下がった。"
  },
  {
   "term": "subsequently",
   "meaning": "その後",
   "type": "word",
   "pos": "副詞",
-  "example": "He subsequently resigned."
+  "example": "He subsequently resigned.",
+  "exampleJa": "彼はその後辞職した。"
  },
  {
   "term": "substantially",
   "meaning": "大幅に",
   "type": "word",
   "pos": "副詞",
-  "example": "Profits rose substantially."
+  "example": "Profits rose substantially.",
+  "exampleJa": "利益は大幅に増加した。"
  },
  {
   "term": "temporarily",
   "meaning": "一時的に",
   "type": "word",
   "pos": "副詞",
-  "example": "The road is temporarily closed."
+  "example": "The road is temporarily closed.",
+  "exampleJa": "その道路は一時的に閉鎖されている。"
  },
  {
   "term": "thoroughly",
   "meaning": "徹底的に",
   "type": "word",
   "pos": "副詞",
-  "example": "Check the report thoroughly."
+  "example": "Check the report thoroughly.",
+  "exampleJa": "報告書を徹底的に確認してください。"
  },
  {
   "term": "ultimately",
   "meaning": "最終的に",
   "type": "word",
   "pos": "副詞",
-  "example": "Ultimately, the choice is yours."
+  "example": "Ultimately, the choice is yours.",
+  "exampleJa": "最終的に、選択はあなた次第だ。"
  },
  {
   "term": "accurately",
   "meaning": "正確に",
   "type": "word",
   "pos": "副詞",
-  "example": "Measure the parts accurately."
+  "example": "Measure the parts accurately.",
+  "exampleJa": "部品を正確に測定してください。"
  },
  {
   "term": "consistently",
   "meaning": "一貫して",
   "type": "word",
   "pos": "副詞",
-  "example": "She consistently meets targets."
+  "example": "She consistently meets targets.",
+  "exampleJa": "彼女は一貫して目標を達成している。"
  },
  {
   "term": "efficiently",
   "meaning": "効率的に",
   "type": "word",
   "pos": "副詞",
-  "example": "They work efficiently."
+  "example": "They work efficiently.",
+  "exampleJa": "彼らは効率的に働く。"
  },
  {
   "term": "gradually",
   "meaning": "徐々に",
   "type": "word",
   "pos": "副詞",
-  "example": "Prices rose gradually."
+  "example": "Prices rose gradually.",
+  "exampleJa": "価格は徐々に上昇した。"
  },
  {
   "term": "previously",
   "meaning": "以前に",
   "type": "word",
   "pos": "副詞",
-  "example": "We previously discussed this."
+  "example": "We previously discussed this.",
+  "exampleJa": "私たちは以前これについて話し合った。"
  },
  {
   "term": "respectively",
   "meaning": "それぞれ",
   "type": "word",
   "pos": "副詞",
-  "example": "They finished first and second respectively."
+  "example": "They finished first and second respectively.",
+  "exampleJa": "彼らはそれぞれ1位と2位で終えた。"
  },
  {
   "term": "account for",
   "meaning": "説明する/占める",
   "type": "idiom",
-  "example": "Exports account for half of sales."
+  "example": "Exports account for half of sales.",
+  "exampleJa": "輸出が売上の半分を占めている。"
  },
  {
   "term": "adhere to",
   "meaning": "順守する",
   "type": "idiom",
-  "example": "Please adhere to the rules."
+  "example": "Please adhere to the rules.",
+  "exampleJa": "規則を順守してください。"
  },
  {
   "term": "apply for",
   "meaning": "応募する",
   "type": "idiom",
-  "example": "She applied for the position."
+  "example": "She applied for the position.",
+  "exampleJa": "彼女はその職に応募した。"
  },
  {
   "term": "back up",
   "meaning": "支援する/バックアップする",
   "type": "idiom",
-  "example": "I'll back up your plan."
+  "example": "I'll back up your plan.",
+  "exampleJa": "私はあなたの計画を支持します。"
  },
  {
   "term": "bring up",
   "meaning": "話題に出す",
   "type": "idiom",
-  "example": "He brought up a good point."
+  "example": "He brought up a good point.",
+  "exampleJa": "彼は良い点を話題に出した。"
  },
  {
   "term": "call off",
   "meaning": "中止する",
   "type": "idiom",
-  "example": "They called off the event."
+  "example": "They called off the event.",
+  "exampleJa": "彼らはその催しを中止した。"
  },
  {
   "term": "carry out",
   "meaning": "実行する",
   "type": "idiom",
-  "example": "We carried out the survey."
+  "example": "We carried out the survey.",
+  "exampleJa": "私たちはその調査を実施した。"
  },
  {
   "term": "catch up",
   "meaning": "追いつく",
   "type": "idiom",
-  "example": "I need to catch up on emails."
+  "example": "I need to catch up on emails.",
+  "exampleJa": "私はメールの遅れを取り戻す必要がある。"
  },
  {
   "term": "check in",
   "meaning": "チェックインする",
   "type": "idiom",
-  "example": "Guests can check in after 3."
+  "example": "Guests can check in after 3.",
+  "exampleJa": "お客様は3時以降にチェックインできます。"
  },
  {
   "term": "check out",
   "meaning": "精算して出る/調べる",
   "type": "idiom",
-  "example": "Please check out by 11."
+  "example": "Please check out by 11.",
+  "exampleJa": "11時までにチェックアウトしてください。"
  },
  {
   "term": "come up with",
   "meaning": "思いつく",
   "type": "idiom",
-  "example": "She came up with a great idea."
+  "example": "She came up with a great idea.",
+  "exampleJa": "彼女は素晴らしい案を思いついた。"
  },
  {
   "term": "count on",
   "meaning": "頼る",
   "type": "idiom",
-  "example": "You can count on us."
+  "example": "You can count on us.",
+  "exampleJa": "私たちを頼りにしてください。"
  },
  {
   "term": "cut down on",
   "meaning": "減らす",
   "type": "idiom",
-  "example": "Try to cut down on costs."
+  "example": "Try to cut down on costs.",
+  "exampleJa": "費用を減らすようにしてください。"
  },
  {
   "term": "deal with",
   "meaning": "対処する",
   "type": "idiom",
-  "example": "We deal with complaints quickly."
+  "example": "We deal with complaints quickly.",
+  "exampleJa": "私たちは苦情に迅速に対処する。"
  },
  {
   "term": "drop by",
   "meaning": "立ち寄る",
   "type": "idiom",
-  "example": "Drop by anytime."
+  "example": "Drop by anytime.",
+  "exampleJa": "いつでも立ち寄ってください。"
  },
  {
   "term": "fill in",
   "meaning": "記入する",
   "type": "idiom",
-  "example": "Fill in the form, please."
+  "example": "Fill in the form, please.",
+  "exampleJa": "用紙に記入してください。"
  },
  {
   "term": "fill out",
   "meaning": "記入する",
   "type": "idiom",
-  "example": "Fill out the application."
+  "example": "Fill out the application.",
+  "exampleJa": "申込書に記入してください。"
  },
  {
   "term": "figure out",
   "meaning": "理解する/解決する",
   "type": "idiom",
-  "example": "Let's figure out the cause."
+  "example": "Let's figure out the cause.",
+  "exampleJa": "原因を突き止めましょう。"
  },
  {
   "term": "focus on",
   "meaning": "集中する",
   "type": "idiom",
-  "example": "We focus on customers."
+  "example": "We focus on customers.",
+  "exampleJa": "私たちは顧客を重視している。"
  },
  {
   "term": "follow up",
   "meaning": "フォローする",
   "type": "idiom",
-  "example": "I'll follow up next week."
+  "example": "I'll follow up next week.",
+  "exampleJa": "来週フォローします。"
  },
  {
   "term": "get along",
   "meaning": "うまくやる",
   "type": "idiom",
-  "example": "They get along well."
+  "example": "They get along well.",
+  "exampleJa": "彼らはうまくやっている。"
  },
  {
   "term": "give up",
   "meaning": "あきらめる",
   "type": "idiom",
-  "example": "Don't give up."
+  "example": "Don't give up.",
+  "exampleJa": "あきらめないで。"
  },
  {
   "term": "go over",
   "meaning": "見直す",
   "type": "idiom",
-  "example": "Let's go over the numbers."
+  "example": "Let's go over the numbers.",
+  "exampleJa": "数字を見直しましょう。"
  },
  {
   "term": "go through",
   "meaning": "経験する/調べる",
   "type": "idiom",
-  "example": "We went through the report."
+  "example": "We went through the report.",
+  "exampleJa": "私たちはその報告書に目を通した。"
  },
  {
   "term": "hand in",
   "meaning": "提出する",
   "type": "idiom",
-  "example": "Hand in your report today."
+  "example": "Hand in your report today.",
+  "exampleJa": "今日報告書を提出してください。"
  },
  {
   "term": "hand out",
   "meaning": "配る",
   "type": "idiom",
-  "example": "They handed out samples."
+  "example": "They handed out samples.",
+  "exampleJa": "彼らは試供品を配った。"
  },
  {
   "term": "hold on",
   "meaning": "待つ",
   "type": "idiom",
-  "example": "Please hold on a moment."
+  "example": "Please hold on a moment.",
+  "exampleJa": "少々お待ちください。"
  },
  {
   "term": "keep up with",
   "meaning": "遅れずについていく",
   "type": "idiom",
-  "example": "Keep up with the trends."
+  "example": "Keep up with the trends.",
+  "exampleJa": "流行に遅れずついていってください。"
  },
  {
   "term": "look forward to",
   "meaning": "楽しみにする",
   "type": "idiom",
-  "example": "I look forward to meeting you."
+  "example": "I look forward to meeting you.",
+  "exampleJa": "お会いできるのを楽しみにしています。"
  },
  {
   "term": "look into",
   "meaning": "調査する",
   "type": "idiom",
-  "example": "We'll look into the matter."
+  "example": "We'll look into the matter.",
+  "exampleJa": "私たちがその件を調査します。"
  },
  {
   "term": "look over",
   "meaning": "ざっと見る",
   "type": "idiom",
-  "example": "Look over the contract."
+  "example": "Look over the contract.",
+  "exampleJa": "契約書にざっと目を通してください。"
  },
  {
   "term": "make sure",
   "meaning": "確認する",
   "type": "idiom",
-  "example": "Make sure the door is locked."
+  "example": "Make sure the door is locked.",
+  "exampleJa": "扉が施錠されているか確認してください。"
  },
  {
   "term": "make up for",
   "meaning": "埋め合わせる",
   "type": "idiom",
-  "example": "We'll make up for the delay."
+  "example": "We'll make up for the delay.",
+  "exampleJa": "私たちが遅延の埋め合わせをします。"
  },
  {
   "term": "point out",
   "meaning": "指摘する",
   "type": "idiom",
-  "example": "She pointed out an error."
+  "example": "She pointed out an error.",
+  "exampleJa": "彼女は誤りを指摘した。"
  },
  {
   "term": "put off",
   "meaning": "延期する",
   "type": "idiom",
-  "example": "Don't put off the decision."
+  "example": "Don't put off the decision.",
+  "exampleJa": "決定を先延ばしにしないでください。"
  },
  {
   "term": "rule out",
   "meaning": "除外する",
   "type": "idiom",
-  "example": "We can't rule out that option."
+  "example": "We can't rule out that option.",
+  "exampleJa": "私たちはその選択肢を除外できない。"
  },
  {
   "term": "run out of",
   "meaning": "使い果たす",
   "type": "idiom",
-  "example": "We ran out of paper."
+  "example": "We ran out of paper.",
+  "exampleJa": "私たちは紙を使い果たした。"
  },
  {
   "term": "set up",
   "meaning": "設置する/立ち上げる",
   "type": "idiom",
-  "example": "We set up a new office."
+  "example": "We set up a new office.",
+  "exampleJa": "私たちは新しい事務所を設立した。"
  },
  {
   "term": "sign up",
   "meaning": "申し込む",
   "type": "idiom",
-  "example": "Sign up for the newsletter."
+  "example": "Sign up for the newsletter.",
+  "exampleJa": "会報にお申し込みください。"
  },
  {
   "term": "sort out",
   "meaning": "整理する/解決する",
   "type": "idiom",
-  "example": "Let's sort out the schedule."
+  "example": "Let's sort out the schedule.",
+  "exampleJa": "予定を整理しましょう。"
  },
  {
   "term": "stand for",
   "meaning": "表す",
   "type": "idiom",
-  "example": "What does the logo stand for?"
+  "example": "What does the logo stand for?",
+  "exampleJa": "そのロゴは何を表しているのですか。"
  },
  {
   "term": "take advantage of",
   "meaning": "利用する",
   "type": "idiom",
-  "example": "Take advantage of the sale."
+  "example": "Take advantage of the sale.",
+  "exampleJa": "セールを利用してください。"
  },
  {
   "term": "take care of",
   "meaning": "世話をする/処理する",
   "type": "idiom",
-  "example": "I'll take care of it."
+  "example": "I'll take care of it.",
+  "exampleJa": "私が対応します。"
  },
  {
   "term": "take over",
   "meaning": "引き継ぐ",
   "type": "idiom",
-  "example": "She took over the project."
+  "example": "She took over the project.",
+  "exampleJa": "彼女がその事業を引き継いだ。"
  },
  {
   "term": "take place",
   "meaning": "開催される",
   "type": "idiom",
-  "example": "The fair takes place in May."
+  "example": "The fair takes place in May.",
+  "exampleJa": "その見本市は5月に開催される。"
  },
  {
   "term": "turn down",
   "meaning": "断る",
   "type": "idiom",
-  "example": "He turned down the offer."
+  "example": "He turned down the offer.",
+  "exampleJa": "彼はその申し出を断った。"
  },
  {
   "term": "turn out",
   "meaning": "判明する",
   "type": "idiom",
-  "example": "It turned out to be true."
+  "example": "It turned out to be true.",
+  "exampleJa": "それは本当だと判明した。"
  },
  {
   "term": "work on",
   "meaning": "取り組む",
   "type": "idiom",
-  "example": "We are working on it."
+  "example": "We are working on it.",
+  "exampleJa": "私たちはそれに取り組んでいる。"
  },
  {
   "term": "be in charge of",
   "meaning": "担当している",
   "type": "idiom",
-  "example": "She is in charge of hiring."
+  "example": "She is in charge of hiring.",
+  "exampleJa": "彼女は採用を担当している。"
  },
  {
   "term": "be responsible for",
   "meaning": "責任がある",
   "type": "idiom",
-  "example": "He is responsible for safety."
+  "example": "He is responsible for safety.",
+  "exampleJa": "彼は安全に責任を負っている。"
  },
  {
   "term": "in advance",
   "meaning": "前もって",
   "type": "idiom",
-  "example": "Book tickets in advance."
+  "example": "Book tickets in advance.",
+  "exampleJa": "前もって切符を予約してください。"
  },
  {
   "term": "in charge",
   "meaning": "担当して",
   "type": "idiom",
-  "example": "Who is in charge here?"
+  "example": "Who is in charge here?",
+  "exampleJa": "ここの担当者は誰ですか。"
  },
  {
   "term": "on behalf of",
   "meaning": "〜を代表して",
   "type": "idiom",
-  "example": "I speak on behalf of the team."
+  "example": "I speak on behalf of the team.",
+  "exampleJa": "私はチームを代表して話します。"
  },
  {
   "term": "on time",
   "meaning": "時間通りに",
   "type": "idiom",
-  "example": "The train arrived on time."
+  "example": "The train arrived on time.",
+  "exampleJa": "その電車は時間通りに到着した。"
  },
  {
   "term": "ahead of schedule",
   "meaning": "予定より早く",
   "type": "idiom",
-  "example": "We finished ahead of schedule."
+  "example": "We finished ahead of schedule.",
+  "exampleJa": "私たちは予定より早く終えた。"
  },
  {
   "term": "behind schedule",
   "meaning": "予定より遅れて",
   "type": "idiom",
-  "example": "The project is behind schedule."
+  "example": "The project is behind schedule.",
+  "exampleJa": "その事業は予定より遅れている。"
  },
  {
   "term": "in stock",
   "meaning": "在庫がある",
   "type": "idiom",
-  "example": "The item is in stock."
+  "example": "The item is in stock.",
+  "exampleJa": "その商品は在庫があります。"
  },
  {
   "term": "out of stock",
   "meaning": "在庫切れ",
   "type": "idiom",
-  "example": "The item is out of stock."
+  "example": "The item is out of stock.",
+  "exampleJa": "その商品は在庫切れです。"
  },
  {
   "term": "up to date",
   "meaning": "最新の",
   "type": "idiom",
-  "example": "Keep your records up to date."
+  "example": "Keep your records up to date.",
+  "exampleJa": "記録を最新の状態に保ってください。"
  },
  {
   "term": "as soon as possible",
   "meaning": "できるだけ早く",
   "type": "idiom",
-  "example": "Reply as soon as possible."
+  "example": "Reply as soon as possible.",
+  "exampleJa": "できるだけ早くご返信ください。"
  },
  {
   "term": "no later than",
   "meaning": "遅くとも",
   "type": "idiom",
-  "example": "Submit it no later than Friday."
+  "example": "Submit it no later than Friday.",
+  "exampleJa": "遅くとも金曜日までに提出してください。"
  },
  {
   "term": "in person",
   "meaning": "直接会って",
   "type": "idiom",
-  "example": "Let's meet in person."
+  "example": "Let's meet in person.",
+  "exampleJa": "直接会いましょう。"
  },
  {
   "term": "free of charge",
   "meaning": "無料で",
   "type": "idiom",
-  "example": "Delivery is free of charge."
+  "example": "Delivery is free of charge.",
+  "exampleJa": "配達は無料です。"
  },
  {
   "term": "out of order",
   "meaning": "故障中",
   "type": "idiom",
-  "example": "The elevator is out of order."
+  "example": "The elevator is out of order.",
+  "exampleJa": "そのエレベーターは故障中だ。"
  },
  {
   "term": "on sale",
   "meaning": "販売中/セール中",
   "type": "idiom",
-  "example": "The tickets are on sale."
+  "example": "The tickets are on sale.",
+  "exampleJa": "その切符は販売中だ。"
  },
  {
   "term": "for sale",
   "meaning": "売り出し中",
   "type": "idiom",
-  "example": "The house is for sale."
+  "example": "The house is for sale.",
+  "exampleJa": "その家は売り出し中だ。"
  },
  {
   "term": "run into",
   "meaning": "偶然出会う",
   "type": "idiom",
-  "example": "I ran into an old client."
+  "example": "I ran into an old client.",
+  "exampleJa": "私は昔の顧客に偶然会った。"
  },
  {
   "term": "set aside",
   "meaning": "取っておく",
   "type": "idiom",
-  "example": "Set aside time to review."
+  "example": "Set aside time to review.",
+  "exampleJa": "見直すための時間を取っておいてください。"
  },
  {
   "term": "break down",
   "meaning": "故障する",
   "type": "idiom",
-  "example": "The car broke down."
+  "example": "The car broke down.",
+  "exampleJa": "その車は故障した。"
  },
  {
   "term": "come across",
   "meaning": "偶然見つける",
   "type": "idiom",
-  "example": "I came across a useful article."
+  "example": "I came across a useful article.",
+  "exampleJa": "私は役に立つ記事を偶然見つけた。"
  },
  {
   "term": "keep track of",
   "meaning": "把握する",
   "type": "idiom",
-  "example": "Keep track of your expenses."
+  "example": "Keep track of your expenses.",
+  "exampleJa": "支出を把握しておいてください。"
  },
  {
   "term": "get in touch",
   "meaning": "連絡を取る",
   "type": "idiom",
-  "example": "Get in touch with us anytime."
+  "example": "Get in touch with us anytime.",
+  "exampleJa": "いつでも私たちにご連絡ください。"
  },
  {
   "term": "make a decision",
   "meaning": "決定する",
   "type": "idiom",
-  "example": "We need to make a decision."
+  "example": "We need to make a decision.",
+  "exampleJa": "私たちは決定を下す必要がある。"
  },
  {
   "term": "take into account",
   "meaning": "考慮する",
   "type": "idiom",
-  "example": "Take costs into account."
+  "example": "Take costs into account.",
+  "exampleJa": "費用を考慮に入れてください。"
  },
  {
   "term": "handout",
   "meaning": "配布資料",
   "type": "word",
   "pos": "名詞",
-  "example": "Please take a handout."
+  "example": "Please take a handout.",
+  "exampleJa": "配布資料をお取りください。"
  },
  {
   "term": "keynote",
   "meaning": "基調講演",
   "type": "word",
   "pos": "名詞",
-  "example": "The keynote speech was inspiring."
+  "example": "The keynote speech was inspiring.",
+  "exampleJa": "その基調講演は感銘を与えるものだった。"
  },
  {
   "term": "layout",
   "meaning": "レイアウト",
   "type": "word",
   "pos": "名詞",
-  "example": "We changed the office layout."
+  "example": "We changed the office layout.",
+  "exampleJa": "私たちは事務所の配置を変えた。"
  },
  {
   "term": "milestone",
   "meaning": "節目",
   "type": "word",
   "pos": "名詞",
-  "example": "We reached an important milestone."
+  "example": "We reached an important milestone.",
+  "exampleJa": "私たちは重要な節目に達した。"
  },
  {
   "term": "outlook",
   "meaning": "見通し",
   "type": "word",
   "pos": "名詞",
-  "example": "The economic outlook is positive."
+  "example": "The economic outlook is positive.",
+  "exampleJa": "経済見通しは明るい。"
  },
  {
   "term": "paperwork",
   "meaning": "書類仕事",
   "type": "word",
   "pos": "名詞",
-  "example": "Finish the paperwork first."
+  "example": "Finish the paperwork first.",
+  "exampleJa": "まず書類仕事を終わらせてください。"
  }
 ]
