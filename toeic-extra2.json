@@ -1,0 +1,1070 @@
+[
+ {
+  "term": "arbitration",
+  "meaning": "仲裁",
+  "type": "word",
+  "example": "The dispute was settled through arbitration.",
+  "pos": "名詞",
+  "exampleJa": "その紛争は仲裁によって解決された。"
+ },
+ {
+  "term": "breach",
+  "meaning": "違反",
+  "type": "word",
+  "example": "A breach of contract may result in penalties.",
+  "pos": "名詞",
+  "exampleJa": "契約違反は罰則につながる可能性がある。"
+ },
+ {
+  "term": "enforce",
+  "meaning": "施行する/実施する",
+  "type": "word",
+  "example": "The company strictly enforces safety regulations.",
+  "pos": "動詞",
+  "exampleJa": "その会社は安全規則を厳格に施行している。"
+ },
+ {
+  "term": "indemnify",
+  "meaning": "補償する",
+  "type": "word",
+  "example": "The supplier agreed to indemnify the buyer.",
+  "pos": "動詞",
+  "exampleJa": "その供給業者は買い手に補償することに同意した。"
+ },
+ {
+  "term": "litigation",
+  "meaning": "訴訟",
+  "type": "word",
+  "example": "The dispute eventually led to litigation.",
+  "pos": "名詞",
+  "exampleJa": "その紛争は最終的に訴訟に至った。"
+ },
+ {
+  "term": "provision",
+  "meaning": "条項/規定",
+  "type": "word",
+  "example": "The provision protects confidential information.",
+  "pos": "名詞",
+  "exampleJa": "その条項は機密情報を保護している。"
+ },
+ {
+  "term": "ratify",
+  "meaning": "承認する/批准する",
+  "type": "word",
+  "example": "The board ratified the final agreement.",
+  "pos": "動詞",
+  "exampleJa": "取締役会は最終合意を承認した。"
+ },
+ {
+  "term": "waive",
+  "meaning": "放棄する",
+  "type": "word",
+  "example": "The customer agreed to waive the penalty.",
+  "pos": "動詞",
+  "exampleJa": "その顧客は罰金を放棄することに同意した。"
+ },
+ {
+  "term": "calibrate",
+  "meaning": "校正する",
+  "type": "word",
+  "example": "Technicians calibrate the equipment every month.",
+  "pos": "動詞",
+  "exampleJa": "技術者は毎月その機器を校正している。"
+ },
+ {
+  "term": "contaminate",
+  "meaning": "汚染する",
+  "type": "word",
+  "example": "Improper handling may contaminate the materials.",
+  "pos": "動詞",
+  "exampleJa": "不適切な取り扱いは材料を汚染する恐れがある。"
+ },
+ {
+  "term": "downtime",
+  "meaning": "停止時間",
+  "type": "word",
+  "example": "Machine downtime reduced overall productivity.",
+  "pos": "名詞",
+  "exampleJa": "機械の停止時間が全体の生産性を低下させた。"
+ },
+ {
+  "term": "malfunction",
+  "meaning": "故障",
+  "type": "word",
+  "example": "A machine malfunction delayed production.",
+  "pos": "名詞",
+  "exampleJa": "機械の故障が生産を遅らせた。"
+ },
+ {
+  "term": "precision",
+  "meaning": "精密さ",
+  "type": "word",
+  "example": "The equipment operates with remarkable precision.",
+  "pos": "名詞",
+  "exampleJa": "その機器は著しい精密さで動作する。"
+ },
+ {
+  "term": "raw material",
+  "meaning": "原材料",
+  "type": "word",
+  "example": "Raw materials arrived ahead of schedule.",
+  "pos": "名詞",
+  "exampleJa": "原材料は予定より早く到着した。"
+ },
+ {
+  "term": "tolerance",
+  "meaning": "許容誤差",
+  "type": "word",
+  "example": "The measurements remained within tolerance.",
+  "pos": "名詞",
+  "exampleJa": "測定値は許容誤差の範囲内に収まった。"
+ },
+ {
+  "term": "yield",
+  "meaning": "生産量/歩留まり",
+  "type": "word",
+  "example": "The new process improved production yield.",
+  "pos": "名詞",
+  "exampleJa": "その新しい工程は生産の歩留まりを改善した。"
+ },
+ {
+  "term": "abide by",
+  "meaning": "〜を順守する",
+  "type": "idiom",
+  "example": "All suppliers must abide by safety standards.",
+  "exampleJa": "すべての供給業者は安全基準を順守しなければならない。"
+ },
+ {
+  "term": "be subject to",
+  "meaning": "〜の対象となる",
+  "type": "idiom",
+  "example": "Late payments are subject to additional fees.",
+  "exampleJa": "支払いの遅延は追加料金の対象となる。"
+ },
+ {
+  "term": "enter into",
+  "meaning": "〜を締結する",
+  "type": "idiom",
+  "example": "The companies entered into a licensing agreement.",
+  "exampleJa": "それらの会社は使用許諾契約を締結した。"
+ },
+ {
+  "term": "in accordance with",
+  "meaning": "〜に従って",
+  "type": "idiom",
+  "example": "Products are manufactured in accordance with regulations.",
+  "exampleJa": "製品は規制に従って製造されている。"
+ },
+ {
+  "term": "under warranty",
+  "meaning": "保証期間内で",
+  "type": "idiom",
+  "example": "The printer is still under warranty.",
+  "exampleJa": "そのプリンターはまだ保証期間内だ。"
+ },
+ {
+  "term": "with respect to",
+  "meaning": "〜に関して",
+  "type": "idiom",
+  "example": "We have questions with respect to pricing.",
+  "exampleJa": "価格設定に関して質問がある。"
+ },
+ {
+  "term": "adhere",
+  "meaning": "順守する",
+  "type": "word",
+  "example": "All employees must adhere to company policies.",
+  "pos": "動詞",
+  "exampleJa": "全従業員は会社の方針を順守しなければならない。"
+ },
+ {
+  "term": "binding",
+  "meaning": "拘束力のある",
+  "type": "word",
+  "example": "The agreement is legally binding on both parties.",
+  "pos": "形容詞",
+  "exampleJa": "その合意は両当事者に法的な拘束力がある。"
+ },
+ {
+  "term": "commence",
+  "meaning": "開始する",
+  "type": "word",
+  "example": "Construction will commence next Monday.",
+  "pos": "動詞",
+  "exampleJa": "建設は来週の月曜日に開始する。"
+ },
+ {
+  "term": "concession",
+  "meaning": "譲歩",
+  "type": "word",
+  "example": "The supplier offered a price concession.",
+  "pos": "名詞",
+  "exampleJa": "その供給業者は価格の譲歩を申し出た。"
+ },
+ {
+  "term": "deem",
+  "meaning": "見なす",
+  "type": "word",
+  "example": "The proposal was deemed acceptable.",
+  "pos": "動詞",
+  "exampleJa": "その提案は受け入れ可能と見なされた。"
+ },
+ {
+  "term": "default",
+  "meaning": "債務不履行",
+  "type": "word",
+  "example": "The borrower was in default last month.",
+  "pos": "名詞",
+  "exampleJa": "その借り手は先月、債務不履行の状態にあった。"
+ },
+ {
+  "term": "exemption",
+  "meaning": "免除",
+  "type": "word",
+  "example": "The organization requested a tax exemption.",
+  "pos": "名詞",
+  "exampleJa": "その組織は税の免除を申請した。"
+ },
+ {
+  "term": "hereby",
+  "meaning": "ここに",
+  "type": "word",
+  "example": "We hereby confirm the revised agreement.",
+  "pos": "副詞",
+  "exampleJa": "ここに改訂された合意を確認します。"
+ },
+ {
+  "term": "invalidate",
+  "meaning": "無効にする",
+  "type": "word",
+  "example": "Missing signatures may invalidate the contract.",
+  "pos": "動詞",
+  "exampleJa": "署名の欠落は契約を無効にする恐れがある。"
+ },
+ {
+  "term": "noncompliance",
+  "meaning": "不順守",
+  "type": "word",
+  "example": "Noncompliance may result in penalties.",
+  "pos": "名詞",
+  "exampleJa": "不順守は罰則につながる可能性がある。"
+ },
+ {
+  "term": "notwithstanding",
+  "meaning": "〜にもかかわらず",
+  "type": "word",
+  "example": "Notwithstanding the delay, production continued.",
+  "pos": "前置詞",
+  "exampleJa": "遅延にもかかわらず、生産は続いた。"
+ },
+ {
+  "term": "renewal",
+  "meaning": "更新",
+  "type": "word",
+  "example": "Contract renewal is scheduled for August.",
+  "pos": "名詞",
+  "exampleJa": "契約の更新は8月に予定されている。"
+ },
+ {
+  "term": "revoke",
+  "meaning": "取り消す",
+  "type": "word",
+  "example": "The company revoked the previous authorization.",
+  "pos": "動詞",
+  "exampleJa": "その会社は以前の認可を取り消した。"
+ },
+ {
+  "term": "stipulate",
+  "meaning": "規定する",
+  "type": "word",
+  "example": "The contract stipulates payment within thirty days.",
+  "pos": "動詞",
+  "exampleJa": "その契約は30日以内の支払いを規定している。"
+ },
+ {
+  "term": "batch",
+  "meaning": "ロット/一括",
+  "type": "word",
+  "example": "The latest batch passed every quality test.",
+  "pos": "名詞",
+  "exampleJa": "最新のロットはすべての品質試験に合格した。"
+ },
+ {
+  "term": "coating",
+  "meaning": "被膜/コーティング",
+  "type": "word",
+  "example": "The protective coating prevents corrosion.",
+  "pos": "名詞",
+  "exampleJa": "その保護被膜は腐食を防ぐ。"
+ },
+ {
+  "term": "consistency",
+  "meaning": "一貫性",
+  "type": "word",
+  "example": "Consistency is essential for product quality.",
+  "pos": "名詞",
+  "exampleJa": "一貫性は製品の品質に不可欠だ。"
+ },
+ {
+  "term": "corrosion",
+  "meaning": "腐食",
+  "type": "word",
+  "example": "The inspection found signs of corrosion.",
+  "pos": "名詞",
+  "exampleJa": "その検査で腐食の兆候が見つかった。"
+ },
+ {
+  "term": "deviation",
+  "meaning": "逸脱/ずれ",
+  "type": "word",
+  "example": "Any process deviation must be reported.",
+  "pos": "名詞",
+  "exampleJa": "工程のいかなる逸脱も報告されなければならない。"
+ },
+ {
+  "term": "durability",
+  "meaning": "耐久性",
+  "type": "word",
+  "example": "The durability of the material was tested.",
+  "pos": "名詞",
+  "exampleJa": "その材料の耐久性が試験された。"
+ },
+ {
+  "term": "faulty",
+  "meaning": "欠陥のある",
+  "type": "word",
+  "example": "Faulty products were removed from inventory.",
+  "pos": "形容詞",
+  "exampleJa": "欠陥のある製品は在庫から取り除かれた。"
+ },
+ {
+  "term": "lubricate",
+  "meaning": "潤滑する",
+  "type": "word",
+  "example": "Workers lubricate the machines every week.",
+  "pos": "動詞",
+  "exampleJa": "作業員は毎週その機械に潤滑を行っている。"
+ },
+ {
+  "term": "outage",
+  "meaning": "停止/故障",
+  "type": "word",
+  "example": "The power outage interrupted production.",
+  "pos": "名詞",
+  "exampleJa": "停電が生産を中断させた。"
+ },
+ {
+  "term": "overhaul",
+  "meaning": "全面点検する",
+  "type": "word",
+  "example": "Engineers overhauled the production equipment.",
+  "pos": "動詞",
+  "exampleJa": "技術者は生産設備を全面点検した。"
+ },
+ {
+  "term": "prototype",
+  "meaning": "試作品",
+  "type": "word",
+  "example": "The prototype performed better than expected.",
+  "pos": "名詞",
+  "exampleJa": "その試作品は予想より良い性能を示した。"
+ },
+ {
+  "term": "sanitize",
+  "meaning": "殺菌する",
+  "type": "word",
+  "example": "Operators sanitize the equipment before use.",
+  "pos": "動詞",
+  "exampleJa": "操作者は使用前に機器を殺菌する。"
+ },
+ {
+  "term": "scrap",
+  "meaning": "廃棄する",
+  "type": "word",
+  "example": "The factory scrapped damaged components.",
+  "pos": "動詞",
+  "exampleJa": "その工場は損傷した部品を廃棄した。"
+ },
+ {
+  "term": "sterile",
+  "meaning": "無菌の",
+  "type": "word",
+  "example": "The products were packaged in a sterile environment.",
+  "pos": "形容詞",
+  "exampleJa": "その製品は無菌の環境で包装された。"
+ },
+ {
+  "term": "traceability",
+  "meaning": "追跡可能性",
+  "type": "word",
+  "example": "Traceability improves product safety significantly.",
+  "pos": "名詞",
+  "exampleJa": "追跡可能性は製品の安全性を著しく高める。"
+ },
+ {
+  "term": "validate",
+  "meaning": "妥当性を確認する",
+  "type": "word",
+  "example": "Engineers validated the manufacturing process.",
+  "pos": "動詞",
+  "exampleJa": "技術者はその製造工程の妥当性を確認した。"
+ },
+ {
+  "term": "be liable for",
+  "meaning": "〜に責任を負う",
+  "type": "idiom",
+  "example": "The vendor is liable for any defects.",
+  "exampleJa": "その販売業者はいかなる欠陥にも責任を負う。"
+ },
+ {
+  "term": "call into question",
+  "meaning": "疑問視する",
+  "type": "idiom",
+  "example": "The findings call into question the results.",
+  "exampleJa": "その調査結果は結論を疑問視させる。"
+ },
+ {
+  "term": "for the purpose of",
+  "meaning": "〜を目的として",
+  "type": "idiom",
+  "example": "The data were collected for the purpose of analysis.",
+  "exampleJa": "そのデータは分析を目的として収集された。"
+ },
+ {
+  "term": "in the event of",
+  "meaning": "〜の場合には",
+  "type": "idiom",
+  "example": "Follow this procedure in the event of failure.",
+  "exampleJa": "故障の場合にはこの手順に従ってください。"
+ },
+ {
+  "term": "on condition that",
+  "meaning": "〜という条件で",
+  "type": "idiom",
+  "example": "The offer stands on condition that payment is prompt.",
+  "exampleJa": "その申し出は支払いが迅速であるという条件で有効だ。"
+ },
+ {
+  "term": "prior to",
+  "meaning": "〜に先立って",
+  "type": "idiom",
+  "example": "Inspect the equipment prior to operation.",
+  "exampleJa": "稼働に先立って機器を検査してください。"
+ },
+ {
+  "term": "up to standard",
+  "meaning": "基準を満たして",
+  "type": "idiom",
+  "example": "The finished products are up to standard.",
+  "exampleJa": "完成品は基準を満たしている。"
+ },
+ {
+  "term": "without delay",
+  "meaning": "遅滞なく",
+  "type": "idiom",
+  "example": "Please report any defects without delay.",
+  "exampleJa": "欠陥があれば遅滞なく報告してください。"
+ },
+ {
+  "term": "without prejudice",
+  "meaning": "権利を放棄することなく",
+  "type": "idiom",
+  "example": "The settlement was offered without prejudice.",
+  "exampleJa": "その和解案は権利を放棄することなく提示された。"
+ },
+ {
+  "term": "acceptance",
+  "meaning": "受領/承諾",
+  "type": "word",
+  "example": "Acceptance of the goods was confirmed yesterday.",
+  "pos": "名詞",
+  "exampleJa": "商品の受領は昨日確認された。"
+ },
+ {
+  "term": "accredit",
+  "meaning": "認定する",
+  "type": "word",
+  "example": "The agency accredited the testing laboratory.",
+  "pos": "動詞",
+  "exampleJa": "その機関はその試験所を認定した。"
+ },
+ {
+  "term": "assurance",
+  "meaning": "保証/確約",
+  "type": "word",
+  "example": "Quality assurance is essential for every product.",
+  "pos": "名詞",
+  "exampleJa": "品質保証はすべての製品に不可欠だ。"
+ },
+ {
+  "term": "authenticate",
+  "meaning": "認証する",
+  "type": "word",
+  "example": "Please authenticate all official documents.",
+  "pos": "動詞",
+  "exampleJa": "すべての公式書類を認証してください。"
+ },
+ {
+  "term": "certification",
+  "meaning": "認証/証明",
+  "type": "word",
+  "example": "The factory obtained international certification.",
+  "pos": "名詞",
+  "exampleJa": "その工場は国際的な認証を取得した。"
+ },
+ {
+  "term": "conform",
+  "meaning": "従う/適合する",
+  "type": "word",
+  "example": "The product conforms to industry standards.",
+  "pos": "動詞",
+  "exampleJa": "その製品は業界標準に適合している。"
+ },
+ {
+  "term": "contractual",
+  "meaning": "契約上の",
+  "type": "word",
+  "example": "Both companies fulfilled their contractual obligations.",
+  "pos": "形容詞",
+  "exampleJa": "両社は契約上の義務を果たした。"
+ },
+ {
+  "term": "counterfeit",
+  "meaning": "偽造の",
+  "type": "word",
+  "example": "Counterfeit products were removed from the market.",
+  "pos": "形容詞",
+  "exampleJa": "偽造品は市場から取り除かれた。"
+ },
+ {
+  "term": "dispense",
+  "meaning": "配布する",
+  "type": "word",
+  "example": "The machine dispenses protective equipment automatically.",
+  "pos": "動詞",
+  "exampleJa": "その機械は保護具を自動的に配布する。"
+ },
+ {
+  "term": "eligibility",
+  "meaning": "資格",
+  "type": "word",
+  "example": "Eligibility depends on employment status.",
+  "pos": "名詞",
+  "exampleJa": "資格は雇用形態によって決まる。"
+ },
+ {
+  "term": "governing",
+  "meaning": "適用される/支配する",
+  "type": "word",
+  "example": "The governing law is stated clearly.",
+  "pos": "形容詞",
+  "exampleJa": "適用される法律は明確に記載されている。"
+ },
+ {
+  "term": "infringement",
+  "meaning": "侵害",
+  "type": "word",
+  "example": "The lawsuit alleged patent infringement.",
+  "pos": "名詞",
+  "exampleJa": "その訴訟は特許侵害を主張した。"
+ },
+ {
+  "term": "irrevocable",
+  "meaning": "取り消せない",
+  "type": "word",
+  "example": "The offer became irrevocable after signing.",
+  "pos": "形容詞",
+  "exampleJa": "その申し出は署名後に取り消せなくなった。"
+ },
+ {
+  "term": "precedent",
+  "meaning": "前例",
+  "type": "word",
+  "example": "The decision established an important precedent.",
+  "pos": "名詞",
+  "exampleJa": "その決定は重要な前例を確立した。"
+ },
+ {
+  "term": "compress",
+  "meaning": "圧縮する",
+  "type": "word",
+  "example": "The machine compresses recycled materials.",
+  "pos": "動詞",
+  "exampleJa": "その機械は再生材料を圧縮する。"
+ },
+ {
+  "term": "contamination",
+  "meaning": "汚染",
+  "type": "word",
+  "example": "Contamination was detected during inspection.",
+  "pos": "名詞",
+  "exampleJa": "検査中に汚染が検出された。"
+ },
+ {
+  "term": "deteriorate",
+  "meaning": "悪化する",
+  "type": "word",
+  "example": "Storage conditions caused the materials to deteriorate.",
+  "pos": "動詞",
+  "exampleJa": "保管状態がその材料を悪化させた。"
+ },
+ {
+  "term": "distortion",
+  "meaning": "ゆがみ/変形",
+  "type": "word",
+  "example": "The inspection found slight distortion in the panel.",
+  "pos": "名詞",
+  "exampleJa": "その検査でパネルにわずかなゆがみが見つかった。"
+ },
+ {
+  "term": "fabrication",
+  "meaning": "製造",
+  "type": "word",
+  "example": "The fabrication process meets strict standards.",
+  "pos": "名詞",
+  "exampleJa": "その製造工程は厳格な基準を満たしている。"
+ },
+ {
+  "term": "operator",
+  "meaning": "機械操作者",
+  "type": "word",
+  "example": "Each operator completed safety training.",
+  "pos": "名詞",
+  "exampleJa": "各操作者は安全研修を修了した。"
+ },
+ {
+  "term": "refurbish",
+  "meaning": "改修する",
+  "type": "word",
+  "example": "The company refurbished the manufacturing facility.",
+  "pos": "動詞",
+  "exampleJa": "その会社は製造施設を改修した。"
+ },
+ {
+  "term": "residue",
+  "meaning": "残留物",
+  "type": "word",
+  "example": "No chemical residue remained after cleaning.",
+  "pos": "名詞",
+  "exampleJa": "清掃後に化学的な残留物は残らなかった。"
+ },
+ {
+  "term": "rigorous",
+  "meaning": "厳格な",
+  "type": "word",
+  "example": "The product passed rigorous quality testing.",
+  "pos": "形容詞",
+  "exampleJa": "その製品は厳格な品質試験に合格した。"
+ },
+ {
+  "term": "specimen",
+  "meaning": "試料",
+  "type": "word",
+  "example": "The laboratory analyzed each specimen carefully.",
+  "pos": "名詞",
+  "exampleJa": "その研究所は各試料を慎重に分析した。"
+ },
+ {
+  "term": "withhold",
+  "meaning": "差し控える",
+  "type": "word",
+  "example": "The customer withheld payment temporarily.",
+  "pos": "動詞",
+  "exampleJa": "その顧客は一時的に支払いを差し控えた。"
+ },
+ {
+  "term": "act on",
+  "meaning": "〜に基づいて行動する",
+  "type": "idiom",
+  "example": "We acted on the auditor's recommendations.",
+  "exampleJa": "私たちは監査人の勧告に基づいて行動した。"
+ },
+ {
+  "term": "be consistent with",
+  "meaning": "〜と一致している",
+  "type": "idiom",
+  "example": "The results are consistent with previous tests.",
+  "exampleJa": "その結果は以前の試験と一致している。"
+ },
+ {
+  "term": "fall under",
+  "meaning": "〜に該当する",
+  "type": "idiom",
+  "example": "This issue falls under quality management.",
+  "exampleJa": "この問題は品質管理に該当する。"
+ },
+ {
+  "term": "adjourn",
+  "meaning": "（会議を）休会する",
+  "type": "word",
+  "example": "The chair adjourned the meeting until Friday.",
+  "pos": "動詞",
+  "exampleJa": "議長は金曜日まで会議を休会した。"
+ },
+ {
+  "term": "allegation",
+  "meaning": "申し立て",
+  "type": "word",
+  "example": "The allegation was investigated thoroughly.",
+  "pos": "名詞",
+  "exampleJa": "その申し立ては徹底的に調査された。"
+ },
+ {
+  "term": "comparable",
+  "meaning": "同等の/匹敵する",
+  "type": "word",
+  "example": "Their prices are comparable to ours.",
+  "pos": "形容詞",
+  "exampleJa": "彼らの価格は当社と同等だ。"
+ },
+ {
+  "term": "confer",
+  "meaning": "協議する/授与する",
+  "type": "word",
+  "example": "The managers conferred before signing the agreement.",
+  "pos": "動詞",
+  "exampleJa": "管理者たちは合意に署名する前に協議した。"
+ },
+ {
+  "term": "consolidate",
+  "meaning": "統合する",
+  "type": "word",
+  "example": "The company consolidated its regional offices.",
+  "pos": "動詞",
+  "exampleJa": "その会社は地域の事務所を統合した。"
+ },
+ {
+  "term": "discretion",
+  "meaning": "裁量",
+  "type": "word",
+  "example": "Approval is at the manager's discretion.",
+  "pos": "名詞",
+  "exampleJa": "承認は管理者の裁量による。"
+ },
+ {
+  "term": "enact",
+  "meaning": "制定する",
+  "type": "word",
+  "example": "The government enacted new labor regulations.",
+  "pos": "動詞",
+  "exampleJa": "政府は新しい労働規制を制定した。"
+ },
+ {
+  "term": "grievance",
+  "meaning": "苦情/不満",
+  "type": "word",
+  "example": "Employees filed a formal grievance yesterday.",
+  "pos": "名詞",
+  "exampleJa": "従業員は昨日、正式な苦情を申し立てた。"
+ },
+ {
+  "term": "mediation",
+  "meaning": "調停",
+  "type": "word",
+  "example": "The dispute was resolved through mediation.",
+  "pos": "名詞",
+  "exampleJa": "その紛争は調停によって解決された。"
+ },
+ {
+  "term": "negligence",
+  "meaning": "過失",
+  "type": "word",
+  "example": "The lawsuit alleged professional negligence.",
+  "pos": "名詞",
+  "exampleJa": "その訴訟は職務上の過失を主張した。"
+ },
+ {
+  "term": "statutory",
+  "meaning": "法律で定められた",
+  "type": "word",
+  "example": "The company meets all statutory requirements.",
+  "pos": "形容詞",
+  "exampleJa": "その会社は法律で定められたすべての要件を満たしている。"
+ },
+ {
+  "term": "benchmark",
+  "meaning": "基準",
+  "type": "word",
+  "example": "The benchmark defines acceptable quality levels.",
+  "pos": "名詞",
+  "exampleJa": "その基準は許容できる品質水準を定めている。"
+ },
+ {
+  "term": "contingent",
+  "meaning": "条件付きの",
+  "type": "word",
+  "example": "Production is contingent on material availability.",
+  "pos": "形容詞",
+  "exampleJa": "生産は材料の入手可能性を条件としている。"
+ },
+ {
+  "term": "deficiency",
+  "meaning": "欠陥/不足",
+  "type": "word",
+  "example": "The audit identified several deficiencies.",
+  "pos": "名詞",
+  "exampleJa": "その監査はいくつかの欠陥を特定した。"
+ },
+ {
+  "term": "imperfection",
+  "meaning": "欠点/不完全さ",
+  "type": "word",
+  "example": "No visible imperfections were detected.",
+  "pos": "名詞",
+  "exampleJa": "目に見える欠点は検出されなかった。"
+ },
+ {
+  "term": "laminate",
+  "meaning": "積層する",
+  "type": "word",
+  "example": "The factory laminates protective materials.",
+  "pos": "動詞",
+  "exampleJa": "その工場は保護材を積層している。"
+ },
+ {
+  "term": "mold",
+  "meaning": "型/金型",
+  "type": "word",
+  "example": "The mold requires regular maintenance.",
+  "pos": "名詞",
+  "exampleJa": "その金型は定期的な保守を必要とする。"
+ },
+ {
+  "term": "rework",
+  "meaning": "手直しする",
+  "type": "word",
+  "example": "Workers reworked the defective units immediately.",
+  "pos": "動詞",
+  "exampleJa": "作業員は欠陥のある製品を直ちに手直しした。"
+ },
+ {
+  "term": "weld",
+  "meaning": "溶接する",
+  "type": "word",
+  "example": "The robots weld the components automatically.",
+  "pos": "動詞",
+  "exampleJa": "そのロボットは部品を自動的に溶接する。"
+ },
+ {
+  "term": "at one's discretion",
+  "meaning": "〜の裁量で",
+  "type": "idiom",
+  "example": "Refunds are issued at the manager's discretion.",
+  "exampleJa": "返金は管理者の裁量で行われる。"
+ },
+ {
+  "term": "be contingent on",
+  "meaning": "〜次第である",
+  "type": "idiom",
+  "example": "Production is contingent on supplier deliveries.",
+  "exampleJa": "生産は供給業者の納入次第だ。"
+ },
+ {
+  "term": "hold harmless",
+  "meaning": "免責する",
+  "type": "idiom",
+  "example": "The clause holds the supplier harmless.",
+  "exampleJa": "その条項は供給業者を免責している。"
+ },
+ {
+  "term": "in breach of",
+  "meaning": "〜に違反して",
+  "type": "idiom",
+  "example": "The contractor was in breach of the agreement.",
+  "exampleJa": "その請負業者は合意に違反していた。"
+ },
+ {
+  "term": "pass inspection",
+  "meaning": "検査に合格する",
+  "type": "idiom",
+  "example": "All finished products passed inspection.",
+  "exampleJa": "すべての完成品が検査に合格した。"
+ },
+ {
+  "term": "pending approval",
+  "meaning": "承認待ちで",
+  "type": "idiom",
+  "example": "The contract is pending approval from headquarters.",
+  "exampleJa": "その契約は本社の承認待ちだ。"
+ },
+ {
+  "term": "under the terms of",
+  "meaning": "〜の条件に基づいて",
+  "type": "idiom",
+  "example": "Under the terms of the agreement, payment is due.",
+  "exampleJa": "その合意の条件に基づき、支払期日が来ている。"
+ },
+ {
+  "term": "without exception",
+  "meaning": "例外なく",
+  "type": "idiom",
+  "example": "All employees must attend without exception.",
+  "exampleJa": "全従業員は例外なく出席しなければならない。"
+ },
+ {
+  "term": "accrue",
+  "meaning": "蓄積する/発生する",
+  "type": "word",
+  "example": "Interest will accrue on the unpaid balance.",
+  "pos": "動詞",
+  "exampleJa": "未払い残高には利息が発生する。"
+ },
+ {
+  "term": "amendment",
+  "meaning": "修正/改正",
+  "type": "word",
+  "example": "The contract amendment was approved yesterday.",
+  "pos": "名詞",
+  "exampleJa": "その契約の修正は昨日承認された。"
+ },
+ {
+  "term": "arbitrator",
+  "meaning": "仲裁人",
+  "type": "word",
+  "example": "The arbitrator reviewed both sides' arguments.",
+  "pos": "名詞",
+  "exampleJa": "その仲裁人は双方の主張を検討した。"
+ },
+ {
+  "term": "confidentiality",
+  "meaning": "機密保持",
+  "type": "word",
+  "example": "The agreement requires strict confidentiality.",
+  "pos": "名詞",
+  "exampleJa": "その合意は厳格な機密保持を求めている。"
+ },
+ {
+  "term": "consignment",
+  "meaning": "委託販売品/貨物",
+  "type": "word",
+  "example": "The consignment arrived at the warehouse today.",
+  "pos": "名詞",
+  "exampleJa": "その委託貨物は今日、倉庫に到着した。"
+ },
+ {
+  "term": "dispute",
+  "meaning": "紛争/論争",
+  "type": "word",
+  "example": "The companies resolved the dispute quickly.",
+  "pos": "名詞",
+  "exampleJa": "それらの会社はその紛争を速やかに解決した。"
+ },
+ {
+  "term": "indemnity",
+  "meaning": "補償/賠償",
+  "type": "word",
+  "example": "The contract includes an indemnity clause.",
+  "pos": "名詞",
+  "exampleJa": "その契約には補償条項が含まれている。"
+ },
+ {
+  "term": "outsource",
+  "meaning": "外部委託する",
+  "type": "word",
+  "example": "Many firms outsource their logistics operations.",
+  "pos": "動詞",
+  "exampleJa": "多くの会社は物流業務を外部委託している。"
+ },
+ {
+  "term": "parameter",
+  "meaning": "基準/範囲",
+  "type": "word",
+  "example": "The machine operates within set parameters.",
+  "pos": "名詞",
+  "exampleJa": "その機械は定められた範囲内で動作する。"
+ },
+ {
+  "term": "procurement",
+  "meaning": "調達",
+  "type": "word",
+  "example": "The procurement department manages suppliers.",
+  "pos": "名詞",
+  "exampleJa": "調達部門が供給業者を管理している。"
+ },
+ {
+  "term": "qualification",
+  "meaning": "資格/条件",
+  "type": "word",
+  "example": "Applicants must meet the qualification requirements.",
+  "pos": "名詞",
+  "exampleJa": "応募者は資格要件を満たさなければならない。"
+ },
+ {
+  "term": "reconcile",
+  "meaning": "調整する/一致させる",
+  "type": "word",
+  "example": "The accountant reconciled the financial records.",
+  "pos": "動詞",
+  "exampleJa": "その会計士は財務記録を調整した。"
+ },
+ {
+  "term": "regulate",
+  "meaning": "規制する",
+  "type": "word",
+  "example": "The law regulates product safety standards.",
+  "pos": "動詞",
+  "exampleJa": "その法律は製品の安全基準を規制している。"
+ },
+ {
+  "term": "revision",
+  "meaning": "改訂",
+  "type": "word",
+  "example": "The manual requires revision this year.",
+  "pos": "名詞",
+  "exampleJa": "その手引書は今年、改訂を必要としている。"
+ },
+ {
+  "term": "secure",
+  "meaning": "確保する/安全な",
+  "type": "word",
+  "example": "They secured funding for the project.",
+  "pos": "動詞",
+  "exampleJa": "彼らはその事業の資金を確保した。"
+ },
+ {
+  "term": "settlement",
+  "meaning": "解決/和解",
+  "type": "word",
+  "example": "The dispute ended with a settlement.",
+  "pos": "名詞",
+  "exampleJa": "その紛争は和解で終わった。"
+ },
+ {
+  "term": "subcontract",
+  "meaning": "下請け契約",
+  "type": "word",
+  "example": "The company signed a subcontract agreement.",
+  "pos": "名詞",
+  "exampleJa": "その会社は下請け契約を結んだ。"
+ },
+ {
+  "term": "transparency",
+  "meaning": "透明性",
+  "type": "word",
+  "example": "The company values transparency in operations.",
+  "pos": "名詞",
+  "exampleJa": "その会社は業務における透明性を重視している。"
+ },
+ {
+  "term": "void",
+  "meaning": "無効な",
+  "type": "word",
+  "example": "The agreement becomes void without signatures.",
+  "pos": "形容詞",
+  "exampleJa": "その合意は署名がなければ無効になる。"
+ },
+ {
+  "term": "draw attention to",
+  "meaning": "〜に注意を向ける",
+  "type": "idiom",
+  "example": "The report draws attention to safety issues.",
+  "exampleJa": "その報告書は安全上の問題に注意を向けている。"
+ },
+ {
+  "term": "follow through on",
+  "meaning": "最後まで実行する",
+  "type": "idiom",
+  "example": "The team followed through on the agreement.",
+  "exampleJa": "そのチームは合意を最後まで実行した。"
+ }
+]
