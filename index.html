@@ -2,10 +2,16 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 09:20 (JST)
-  バージョン: 1.5.0
+  ファイル最終更新日時: 2026-07-23 09:35 (JST)
+  バージョン: 1.6.0
 --------------------------------------------------------------------
   【更新履歴】
+    v1.6.0 (2026-07-23 09:35 JST)
+      - 発音機能を追加。カードをめくった裏面のスピーカーボタンで
+        単語・例文を読み上げる（Web Speech API / speak()）。
+        追加ファイルや通信は不要で、オフラインでも動作する。
+        英語音声(en-US)を優先選択、無ければ既定音声にフォールバック。
+      - onclick埋め込み用のエスケープ関数 attrEsc() を追加。
     v1.5.0 (2026-07-23 09:20 JST)
       - 追加の同梱データ toeic-1000.json（既存500と重複しない1000問）を追加。
         インポート画面に「追加1000問を追加」ボタンを新設。
@@ -173,6 +179,15 @@
   .flash .term{font-family:var(--font-en);font-size:34px;font-weight:600;line-height:1.25;word-break:break-word;}
   .flash .hint{font-size:12px;color:var(--ink-soft);margin-top:18px;}
   .flash .divider{width:44px;height:2px;background:var(--line);margin:18px 0;border-radius:2px;}
+  /* v1.6.0: 発音ボタン。単語の右に並べる */
+  .flash .term-row{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;}
+  .speaker{
+    border:1.5px solid var(--line);background:var(--surface);color:var(--primary);
+    font-size:20px;line-height:1;padding:8px 12px;border-radius:12px;cursor:pointer;
+    transition:transform .06s ease, background .15s;
+  }
+  .speaker:active{transform:scale(.92);background:var(--primary-soft);}
+  .speaker.small{font-size:14px;padding:4px 8px;border-radius:9px;vertical-align:middle;}
   .flash .pos{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--primary);background:var(--primary-soft);border-radius:999px;padding:3px 12px;margin-bottom:12px;}
   .flash .meaning{font-size:22px;font-weight:700;}
   .flash .example{font-size:14px;color:var(--ink-soft);margin-top:14px;font-family:var(--font-en);font-style:italic;}
@@ -268,8 +283,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "1.5.0";
-const LAST_UPDATED = "2026-07-23 09:20 JST"; // ファイル最終更新日時
+const APP_VERSION = "1.6.0";
+const LAST_UPDATED = "2026-07-23 09:35 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -583,14 +598,21 @@ function viewStudy(){
   // v1.1.0: 単語かつ品詞があれば裏面に品詞を表示
   const posLabel = (card.type==='word' && card.pos)
     ? `<div class="pos">${escapeHtml(card.pos)}</div>` : '';
+  // v1.6.0: 発音ボタン。onclick内で引用符が壊れないようattrEsc()でエスケープする。
+  const speakTerm = `<button class="speaker" onclick="speak('${attrEsc(card.term)}')" aria-label="単語を読み上げる">🔊</button>`;
+  const speakEx = card.example
+    ? `<button class="speaker small" onclick="speak('${attrEsc(card.example)}')" aria-label="例文を読み上げる">🔊</button>` : '';
   const back = `
     <div class="card flash">
       <span class="${tagCls}">${tagTxt}</span>
-      <div class="term">${escapeHtml(card.term)}</div>
+      <div class="term-row">
+        <div class="term">${escapeHtml(card.term)}</div>
+        ${speakTerm}
+      </div>
       <div class="divider"></div>
       ${posLabel}
       <div class="meaning">${escapeHtml(card.meaning)}</div>
-      ${card.example?`<div class="example">${escapeHtml(card.example)}</div>`:''}
+      ${card.example?`<div class="example">${escapeHtml(card.example)} ${speakEx}</div>`:''}
     </div>
     <div class="grade-row">
       <button class="btn btn-bad" id="gradeNo">わからなかった</button>
@@ -990,6 +1012,64 @@ async function confirmReset(){
 /* ================================================================
    ユーティリティ
    ================================================================ */
+/* ================================================================
+   v1.6.0: 発音（音声読み上げ）
+   --------------------------------------------------------------
+   ブラウザ標準の Web Speech API を使用。追加ファイル・通信は不要で
+   オフラインでも動作する（端末内蔵の音声エンジンを利用）。
+   - 英語音声(en-US等)を優先して選択。無ければ既定の音声にフォールバック。
+   - 連打対策として、話す前に cancel() で直前の発話を止める。
+   - iOSは音声リストの読み込みが遅延することがあるため、
+     voiceschanged で再取得する。
+   ================================================================ */
+let VOICES = [];
+function loadVoices(){
+  try{ VOICES = window.speechSynthesis ? window.speechSynthesis.getVoices() : []; }
+  catch(e){ VOICES = []; }
+}
+if(typeof window !== 'undefined' && window.speechSynthesis){
+  loadVoices();
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+/* 英語の音声を選ぶ（en-US優先 → 任意のen → null=既定） */
+function pickEnglishVoice(){
+  if(!VOICES.length) loadVoices();
+  return VOICES.find(v => v.lang === 'en-US')
+      || VOICES.find(v => (v.lang||'').toLowerCase().startsWith('en'))
+      || null;
+}
+
+/* 読み上げ実行。ボタンのonclickから呼ばれる。 */
+function speak(text){
+  if(!text) return;
+  if(!('speechSynthesis' in window)){
+    toast('この端末では音声読み上げに対応していません');
+    return;
+  }
+  try{
+    window.speechSynthesis.cancel();          // 連打時に前の発話を止める
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    const v = pickEnglishVoice();
+    if(v) u.voice = v;
+    u.rate = 0.95;                            // やや遅めで聞き取りやすく
+    window.speechSynthesis.speak(u);
+  }catch(e){
+    console.warn('読み上げ失敗:', e);
+    toast('読み上げできませんでした');
+  }
+}
+
+/* onclick属性に文字列を埋め込む際のエスケープ（引用符・改行対策） */
+function attrEsc(s){
+  return String(s||'')
+    .replace(/\\/g,'\\\\')
+    .replace(/'/g,"\\'")
+    .replace(/"/g,'&quot;')
+    .replace(/\r?\n/g,' ');
+}
+
 function escapeHtml(s){
   return String(s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
