@@ -137,7 +137,7 @@
  },
  {
   "term": "brochure",
-  "meaning": "パンフレット",
+  "meaning": "商品案内の小冊子/パンフレット",
   "type": "word",
   "pos": "名詞",
   "example": "The brochure lists all our services.",
@@ -1065,7 +1065,7 @@
  },
  {
   "term": "catalog",
-  "meaning": "カタログ",
+  "meaning": "商品目録/カタログ",
   "type": "word",
   "pos": "名詞",
   "example": "Browse our online catalog.",
@@ -1225,7 +1225,7 @@
  },
  {
   "term": "questionnaire",
-  "meaning": "アンケート",
+  "meaning": "質問票/アンケート",
   "type": "word",
   "pos": "名詞",
   "example": "Fill out the questionnaire.",
@@ -3417,7 +3417,7 @@
  },
  {
   "term": "check in",
-  "meaning": "チェックインする",
+  "meaning": "到着手続きをする/チェックインする",
   "type": "idiom",
   "example": "Guests can check in after 3.",
   "exampleJa": "お客様は3時以降にチェックインできます。"
@@ -3494,7 +3494,7 @@
  },
  {
   "term": "follow up",
-  "meaning": "フォローする",
+  "meaning": "追って確認する/フォローする",
   "type": "idiom",
   "example": "I'll follow up next week.",
   "exampleJa": "来週フォローします。"
@@ -3895,7 +3895,7 @@
  },
  {
   "term": "layout",
-  "meaning": "レイアウト",
+  "meaning": "配置/割り付け",
   "type": "word",
   "pos": "名詞",
   "example": "We changed the office layout.",

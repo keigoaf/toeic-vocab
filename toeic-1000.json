@@ -81,7 +81,7 @@
  },
  {
   "term": "analyst",
-  "meaning": "アナリスト",
+  "meaning": "分析専門家/アナリスト",
   "type": "word",
   "pos": "名詞",
   "example": "The analyst predicted growth.",
@@ -265,7 +265,7 @@
  },
  {
   "term": "badge",
-  "meaning": "バッジ",
+  "meaning": "身分証の名札/バッジ",
   "type": "word",
   "pos": "名詞",
   "example": "Wear your badge at all times.",
@@ -313,7 +313,7 @@
  },
  {
   "term": "booth",
-  "meaning": "ブース",
+  "meaning": "仕切られた展示区画/ブース",
   "type": "word",
   "pos": "名詞",
   "example": "Visit our booth at the fair.",
@@ -657,7 +657,7 @@
  },
  {
   "term": "consultant",
-  "meaning": "コンサルタント",
+  "meaning": "経営助言者/コンサルタント",
   "type": "word",
   "pos": "名詞",
   "example": "We hired a consultant.",
@@ -761,7 +761,7 @@
  },
  {
   "term": "coupon",
-  "meaning": "クーポン",
+  "meaning": "割引券/クーポン",
   "type": "word",
   "pos": "名詞",
   "example": "Use the coupon at checkout.",
@@ -809,7 +809,7 @@
  },
  {
   "term": "curriculum",
-  "meaning": "カリキュラム",
+  "meaning": "教育課程/カリキュラム",
   "type": "word",
   "pos": "名詞",
   "example": "The curriculum was updated.",
@@ -833,7 +833,7 @@
  },
  {
   "term": "database",
-  "meaning": "データベース",
+  "meaning": "情報の集積庫/データベース",
   "type": "word",
   "pos": "名詞",
   "example": "Update the customer database.",
@@ -841,7 +841,7 @@
  },
  {
   "term": "debut",
-  "meaning": "デビュー",
+  "meaning": "初登場/初公開",
   "type": "word",
   "pos": "名詞",
   "example": "The product made its debut.",
@@ -1481,7 +1481,7 @@
  },
  {
   "term": "franchise",
-  "meaning": "フランチャイズ",
+  "meaning": "営業権を与える事業形態/フランチャイズ",
   "type": "word",
   "pos": "名詞",
   "example": "She bought a coffee franchise.",
@@ -1569,7 +1569,7 @@
  },
  {
   "term": "genre",
-  "meaning": "ジャンル",
+  "meaning": "分野/種類",
   "type": "word",
   "pos": "名詞",
   "example": "The store covers every genre.",
@@ -1801,7 +1801,7 @@
  },
  {
   "term": "infrastructure",
-  "meaning": "インフラ",
+  "meaning": "社会基盤/インフラ",
   "type": "word",
   "pos": "名詞",
   "example": "The city improved its infrastructure.",
@@ -1945,7 +1945,7 @@
  },
  {
   "term": "internship",
-  "meaning": "インターンシップ",
+  "meaning": "就業体験/インターンシップ",
   "type": "word",
   "pos": "名詞",
   "example": "She completed an internship.",
@@ -2057,7 +2057,7 @@
  },
  {
   "term": "kiosk",
-  "meaning": "キオスク",
+  "meaning": "小型売店/キオスク",
   "type": "word",
   "pos": "名詞",
   "example": "Buy tickets at the kiosk.",
@@ -2065,7 +2065,7 @@
  },
  {
   "term": "label",
-  "meaning": "ラベル",
+  "meaning": "表示札/ラベル",
   "type": "word",
   "pos": "名詞",
   "example": "Read the product label.",
@@ -2153,7 +2153,7 @@
  },
  {
   "term": "lens",
-  "meaning": "レンズ",
+  "meaning": "凸凹のある透明体/レンズ",
   "type": "word",
   "pos": "名詞",
   "example": "The camera lens is scratched.",
@@ -2217,7 +2217,7 @@
  },
  {
   "term": "lobby",
-  "meaning": "ロビー",
+  "meaning": "建物の玄関広間/ロビー",
   "type": "word",
   "pos": "名詞",
   "example": "Wait in the lobby, please.",
@@ -2961,7 +2961,7 @@
  },
  {
   "term": "comment",
-  "meaning": "コメントする",
+  "meaning": "意見を述べる/論評する",
   "type": "word",
   "pos": "動詞",
   "example": "The manager commented on the plan.",
@@ -3177,7 +3177,7 @@
  },
  {
   "term": "customize",
-  "meaning": "カスタマイズする",
+  "meaning": "好みに合わせて変える/カスタマイズする",
   "type": "word",
   "pos": "動詞",
   "example": "Customize your order online.",
@@ -5097,7 +5097,7 @@
  },
  {
   "term": "digital",
-  "meaning": "デジタルの",
+  "meaning": "電子式の/数値化された",
   "type": "word",
   "pos": "形容詞",
   "example": "We went fully digital.",

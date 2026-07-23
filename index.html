@@ -2,10 +2,40 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 18:55 (JST)
-  バージョン: 2.1.0
+  ファイル最終更新日時: 2026-07-23 19:25 (JST)
+  バージョン: 2.3.0
 --------------------------------------------------------------------
   【更新履歴】
+    v2.3.0 (2026-07-23 19:25 JST)
+      - カタカナだけの訳を日本語の説明入りに修正（全28語）。
+        経緯: 「プレゼンテーション」「スケジュール」のような訳は
+        読み方を示しているだけで意味の説明になっておらず、
+        学習効果がないという指摘を受けたため。
+        例: presentation「プレゼンテーション」→「発表/提示」
+            brochure「パンフレット」→「商品案内の小冊子/パンフレット」
+        カタカナ語として定着しているものは補足として残した。
+      - 和訳マージ機能を拡張し、意味(meaning)の更新にも対応。
+        既に端末へ取り込み済みのカードにも修正を反映できる。
+        設定画面のボタン名を「和訳・意味を最新に更新」に変更。
+    v2.2.0 (2026-07-23 19:10 JST)
+      - 【重要】出題の仕組みを「学習日」単位に変更。
+        経緯: 従来は dueDate を時刻で比較していたため、前日21時に
+        学習すると翌日21時まで復習分が出ず、朝に開くと未習の語ばかり
+        並んだ。「翌朝には前日の復習から始めたい」という要望に対応。
+        ・1日の境目を朝6時(DAY_START_HOUR)に設定。深夜は前日扱い。
+        ・dueDateを学習日の開始時刻に丸め、isDueを日付比較に変更。
+          → 同じ日なら何時に開いても同じ顔ぶれが出る。
+      - 出題順を「復習優先」に変更（buildQueue）。
+        1) Box2以上の復習分（Box降順・期限が古い順）
+        2) 前回不正解だった語
+        3) 未習の語（登録順）
+      - 不正解の語を当日セッション内で繰り返す挙動を廃止し、翌日回しに。
+        当日中に正解するまで繰り返すと復習間隔が空かず定着しないため。
+      - 1日の新規語数の上限(dailyNewLimit)を実際に機能させた。
+        復習分と再挑戦分は上限の対象外とし、必ず出題する。
+      - ホーム画面に今日の内訳(復習/再挑戦/新規)を表示。
+      - 和訳マージの対象に extra/extra2/new1000 を追加。
+        既に取り込み済みで和訳のないカードを後から補える。
     v2.1.0 (2026-07-23 18:55 JST)
       - 新規1000語を toeic-new1000.json として追加（全て和訳付き）。
         既存1691語と重複ゼロを検証済み。
@@ -330,8 +360,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "2.1.0";
-const LAST_UPDATED = "2026-07-23 18:55 JST"; // ファイル最終更新日時
+const APP_VERSION = "2.3.0";
+const LAST_UPDATED = "2026-07-23 19:25 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -468,7 +498,41 @@ const now = () => Date.now();
 const uid = () => 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2,6);
 
 /* 期限到来（due）判定: dueDate が現在時刻以下なら出題対象 */
-function isDue(card){ return card.dueDate <= now(); }
+/* ================================================================
+   v2.2.0: 「学習日」の概念（1日の境目 = 朝6時）
+   --------------------------------------------------------------
+   経緯:
+     従来は dueDate を「時刻」で比較していたため、前日21時に学習すると
+     翌日21時までBox2の語が出てこず、朝に開くと未習の語ばかりが並んだ。
+     「翌朝になったら前日の復習分から始めたい」という要望に合わせ、
+     判定を時刻ではなく「学習日」単位に変更する。
+   仕様:
+     - 毎日 DAY_START_HOUR(既定6時) を1日の境目とする。
+       例: 深夜1時に開いた場合は「前日」の学習日として扱う。
+     - カードの dueDate は「その学習日の開始時刻」に丸めて保存する。
+     - isDue は「dueDateの学習日 <= 今日の学習日」で判定する。
+       → 同じ日のうちは何時に開いても同じ顔ぶれが出る。
+   ================================================================ */
+const DAY_START_HOUR = 6;   // 1日の境目（朝6時）
+
+/* 指定時刻が属する「学習日」の開始時刻(ms)を返す */
+function dayStart(ts){
+  const d = new Date(ts);
+  if(d.getHours() < DAY_START_HOUR) d.setDate(d.getDate() - 1); // 深夜は前日扱い
+  d.setHours(DAY_START_HOUR, 0, 0, 0);
+  return d.getTime();
+}
+/* 今日の学習日の開始時刻 */
+function todayStart(){ return dayStart(now()); }
+/* n日後の学習日の開始時刻 */
+function addDays(ts, n){
+  const d = new Date(ts);
+  d.setDate(d.getDate() + n);
+  return d.getTime();
+}
+
+/* 期限到来の判定（時刻ではなく学習日で比較） */
+function isDue(card){ return dayStart(card.dueDate) <= todayStart(); }
 function boxCount(){ return STATE.settings.intervals.length; }
 
 /* 新規カード生成（v1.1.0: 品詞 pos を追加）
@@ -496,17 +560,29 @@ function makeCard(term, meaning, type, example, pos, exampleJa){
    - 正解(know=true): ボックスを1つ上げ、そのボックスの周期後に再出題。
    - 不正解(know=false): ボックス1へ戻し、当日中に再出題。
    ================================================================ */
+/* ================================================================
+   間隔反復（Leitner）ロジック
+   - 正解(know=true): ボックスを1つ上げ、そのボックスの周期後に再出題。
+   - 不正解(know=false): ボックス1へ戻し、翌日に再出題。
+   v2.2.0の変更:
+     dueDate を「学習日の開始時刻」に丸めて保存する。これにより
+     何時に学習しても、その日に解くべき語が同じ顔ぶれになる。
+     また不正解の語は当日セッション内で繰り返さず翌日に回す。
+     （当日中に正解するまで繰り返すと復習間隔が空かず定着しないため）
+   ================================================================ */
 function grade(card, know){
   const N = boxCount();
+  const base = todayStart();
   if(know){
     card.correct++;
     card.box = Math.min(card.box + 1, N);
     const days = STATE.settings.intervals[card.box - 1];
-    card.dueDate = now() + days * DAY;
+    // 周期0日の場合も翌日に回す（当日の無限ループを避ける）
+    card.dueDate = addDays(base, Math.max(1, days));
   }else{
     card.wrong++;
     card.box = 1;
-    card.dueDate = now(); // すぐ再出題（セッション内で再登場）
+    card.dueDate = addDays(base, 1);   // 翌日に再挑戦
   }
 }
 
@@ -547,7 +623,8 @@ function render(){
    ホーム画面
    --------------------------------------------------------------- */
 function viewHome(){
-  const dueCards = STATE.cards.filter(isDue);
+  const { queue, review, retry, brand } = buildQueue();
+  const dueCards = queue;
   const total = STATE.cards.length;
   const mastered = STATE.cards.filter(c=>c.box === boxCount()).length;
 
@@ -578,8 +655,11 @@ function viewHome(){
   return `
   <div class="card today">
     <div class="due-num">${dueCards.length}</div>
-    <div class="due-label">今すぐ出題できる語（due）</div>
-    <div class="sub">登録 ${total} 語 ／ 習得済み ${mastered} 語</div>
+    <div class="due-label">今日の学習</div>
+    <div class="sub">
+      復習 ${review.length}語 ／ 再挑戦 ${retry.length}語 ／ 新規 ${brand.length}語
+    </div>
+    <div class="sub" style="margin-top:4px">登録 ${total} 語 ／ 習得済み ${mastered} 語</div>
     <div style="margin-top:16px">${startBtn}</div>
   </div>
 
@@ -595,18 +675,41 @@ function viewHome(){
 
 /* ---------------------------------------------------------------
    学習セッションの準備
-   - due カード（期限到来）を集め、出題優先順位で並べる。
-   - v1.4.0: 出題順を明確化。ボックスの大きい順（Box7→Box1）に出題し、
-     上位ボックスが尽きたら下位（最後にBox1）へ進む。
-     同一ボックス内は期限が古い（より前に復習予定だった）順。
+   v2.2.0: 出題順を「復習優先」に変更。
+     1) まず Box2以上（前日までに一度正解した復習分）を出す。
+        その中はボックスの大きい順（Box7→Box2）。
+        同一ボックス内は期限が古い順。
+     2) 次に Box1（未習の語と、前回不正解だった語）を登録順に出す。
+        → 1〜50を解いた翌日は、前日の正解分(Box2)から始まり、
+          続いて前日の不正解分、その後51番以降へ自然に進む。
+   1日の境目は朝6時(DAY_START_HOUR)。同じ日のうちは何時に開いても
+   同じ顔ぶれが出る。
    --------------------------------------------------------------- */
-function startSession(){
+function buildQueue(){
   const due = STATE.cards.filter(isDue);
-  if(due.length === 0){ toast('出題できる語がありません'); return; }
-  const queue = due.slice().sort((a,b)=>{
-    if(b.box !== a.box) return b.box - a.box; // ボックス降順（Box7が先）
-    return a.dueDate - b.dueDate;             // 同一ボックスは期限が古い順
+  const review = due.filter(c => c.box >= 2).sort((a,b)=>{
+    if(b.box !== a.box) return b.box - a.box;   // ボックス降順（Box7が先）
+    return a.dueDate - b.dueDate;               // 同一ボックスは期限が古い順
   });
+  let fresh = due.filter(c => c.box < 2).sort((a,b)=>{
+    // 前回不正解の語(wrong>0)を、未習の語より先に出す
+    if((b.wrong>0) !== (a.wrong>0)) return (b.wrong>0) ? 1 : -1;
+    return a.createdAt - b.createdAt;           // 登録順（1番→2番→…）
+  });
+
+  // v2.2.0: 1日に投入する「まだ一度も正解していない語」の上限を適用。
+  // 復習分(Box2以上)と、前回不正解だった語は制限せず必ず出す。
+  const limit = STATE.settings.dailyNewLimit || 20;
+  const retry  = fresh.filter(c => c.wrong > 0);
+  const brand  = fresh.filter(c => c.wrong === 0).slice(0, limit);
+  fresh = retry.concat(brand);
+
+  return { queue: review.concat(fresh), review, retry, brand };
+}
+
+function startSession(){
+  const { queue } = buildQueue();
+  if(queue.length === 0){ toast('今日の学習は完了しています'); return; }
   STATE.session = { queue, idx:0, revealed:false, correct:0, answered:0, done:false };
   setView('study');
 }
@@ -737,11 +840,11 @@ function viewSettings(){
     </div>
   </div>
 
-  <div class="section-title">1回の新規上限</div>
+  <div class="section-title">1日の新規語数</div>
   <div class="card pad">
-    <label class="fld">1回の学習で新しく投入する語数の上限</label>
+    <label class="fld">1日に新しく取り組む語数の上限</label>
     <input type="number" min="1" step="1" id="dailyLimit" value="${STATE.settings.dailyNewLimit}">
-    <p class="note">※ 現バージョンは due（期限到来）の語をすべて出題します。この値は今後の拡張用です。</p>
+    <p class="note">まだ一度も正解していない語を、1日にこの数だけ投入します。復習分（Box2以上）と前回不正解だった語は、この上限とは別に必ず出題されます。</p>
     <button class="btn btn-ghost small" onclick="saveDailyLimit()" style="margin-top:10px">保存</button>
   </div>
 
@@ -756,7 +859,7 @@ function viewSettings(){
   <div class="card pad">
     <button class="btn btn-primary small" onclick="openBackup()" style="width:100%;margin-bottom:8px">💾 バックアップ / 復元（学習履歴ごと）</button>
     <p class="note" style="margin:0 0 12px">端末を変えるときや、万一データが消えたときのために保存できます。</p>
-    <button class="btn btn-ghost small" onclick="mergeBundledTranslations()" style="width:100%;margin-bottom:8px">🈁 既存の語に例文の和訳を追加</button>
+    <button class="btn btn-ghost small" onclick="mergeBundledTranslations()" style="width:100%;margin-bottom:8px">🈁 既存の語の和訳・意味を最新に更新</button>
     <button class="btn btn-ghost small" onclick="openExport()" style="width:100%;margin-bottom:8px">全データをエクスポート（テキスト）</button>
     <button class="btn btn-ghost small" onclick="confirmReset()" style="width:100%;color:var(--bad);border-color:var(--bad-soft)">進捗をリセット（ボックスを初期化）</button>
   </div>
@@ -797,8 +900,8 @@ async function answer(know){
   s.answered++;
   if(know) s.correct++;
 
-  // 不正解なら同一セッションの後方へ再投入（当日中に再挑戦）
-  if(!know){ s.queue.push(card); }
+  // v2.2.0: 不正解でも当日は再出題しない（翌日に回す）。
+  // 当日中に正解するまで繰り返すと復習間隔が空かず、定着しにくいため。
 
   await saveCards(STATE.cards);
   s.idx++;
@@ -1127,29 +1230,41 @@ async function mergeTranslations(arr){
   toast(`${updated}件に和訳を追加しました`);
 }
 
-/* 同梱データから和訳だけをマージ（学習履歴はそのまま） */
+/* 同梱データから和訳・意味をマージ（学習履歴はそのまま）
+   v2.3.0: 例文の和訳に加え、意味(meaning)の更新にも対応。
+   カタカナだけの訳を日本語の説明入りに差し替えた際、既に端末へ
+   取り込み済みのカードにも反映できるようにするため。 */
 async function mergeBundledTranslations(){
-  let total = 0;
-  for(const url of ['./toeic-500.json', './toeic-1000.json']){
+  let jaCount = 0, meanCount = 0;
+  for(const url of ['./toeic-500.json', './toeic-1000.json', './toeic-extra.json',
+                    './toeic-extra2.json', './toeic-new1000.json']){
     try{
       const res = await fetch(url, { cache: 'no-store' });
       if(!res.ok) continue;
       const arr = await res.json();
       const map = new Map();
       for(const o of arr){
-        const ja = o.exampleJa || o.example_ja || '';
-        if(o.term && ja) map.set(String(o.term).trim().toLowerCase(), ja);
+        if(!o.term) continue;
+        map.set(String(o.term).trim().toLowerCase(), {
+          ja: o.exampleJa || o.example_ja || '',
+          meaning: o.meaning || ''
+        });
       }
       for(const c of STATE.cards){
-        const ja = map.get(c.term.trim().toLowerCase());
-        if(ja && c.exampleJa !== ja){ c.exampleJa = ja; total++; }
+        const hit = map.get(c.term.trim().toLowerCase());
+        if(!hit) continue;
+        if(hit.ja && c.exampleJa !== hit.ja){ c.exampleJa = hit.ja; jaCount++; }
+        if(hit.meaning && c.meaning !== hit.meaning){ c.meaning = hit.meaning; meanCount++; }
       }
-    }catch(e){ console.warn('和訳マージ失敗:', url, e); }
+    }catch(e){ console.warn('マージ失敗:', url, e); }
   }
   await saveCards(STATE.cards);
   closeModal();
   render();
-  toast(total ? `${total}件に和訳を追加しました` : '追加できる和訳はありませんでした');
+  const msg = [];
+  if(jaCount) msg.push(`和訳${jaCount}件`);
+  if(meanCount) msg.push(`意味${meanCount}件`);
+  toast(msg.length ? `${msg.join(' / ')}を更新しました` : '更新はありませんでした');
 }
 
 /* 同梱JSON（相対パス）を取得して取り込む（ワンタップ）。
