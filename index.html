@@ -2,10 +2,23 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 19:25 (JST)
-  バージョン: 2.3.0
+  ファイル最終更新日時: 2026-07-23 19:40 (JST)
+  バージョン: 2.4.0
 --------------------------------------------------------------------
   【更新履歴】
+    v2.4.0 (2026-07-23 19:40 JST)
+      - 【不具合修正】例文と和訳が食い違う問題を修正。
+        症状: "I am writing on behalf of my manager." に
+              "私はチームを代表して話します。" という別例文の訳が
+              表示されていた。
+        原因: 初期サンプル10語は和訳が空だったため、後から和訳を
+              マージする際に「見出し語が同じなら付ける」という判定で
+              同じ語(on behalf of)の別例文の訳が入ってしまっていた。
+        対策: (1) サンプル10語に正しい和訳を付与。
+              (2) 和訳マージの照合条件に例文の一致を追加し、
+                  例文が違う場合は訳を付けないようにした。
+              (3) 既に誤訳が付いたカードを正しい訳へ戻す修復処理を
+                  mergeBundledTranslations に追加。
     v2.3.0 (2026-07-23 19:25 JST)
       - カタカナだけの訳を日本語の説明入りに修正（全28語）。
         経緯: 「プレゼンテーション」「スケジュール」のような訳は
@@ -360,8 +373,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "2.3.0";
-const LAST_UPDATED = "2026-07-23 19:25 JST"; // ファイル最終更新日時
+const APP_VERSION = "2.4.0";
+const LAST_UPDATED = "2026-07-23 19:40 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -404,18 +417,22 @@ function normalizeTypePos(raw){
 }
 
 /* サンプル単語（初回起動時のみ投入。TOEIC頻出語の一例）
-   形式: [英語, 意味, 種別, 例文, 品詞] */
+   形式: [英語, 意味, 種別, 例文, 品詞, 例文の和訳]
+   v2.4.0: 和訳を追加。従来は和訳が空だったため、後から和訳マージを
+   行うと同じ見出し語の別例文の訳が誤って付く不具合があった。
+   (例: "I am writing on behalf of my manager." に
+        "私はチームを代表して話します。" が付いてしまう) */
 const SAMPLE_CARDS = [
-  ["acquire","獲得する、身につける","word","The company plans to acquire a smaller firm.","動詞"],
-  ["comply with","〜に従う、順守する","idiom","All staff must comply with the safety rules.",""],
-  ["invoice","請求書","word","Please send the invoice by the end of the month.","名詞"],
-  ["in charge of","〜を担当して","idiom","She is in charge of the marketing team.",""],
-  ["reimburse","払い戻す、返済する","word","We will reimburse your travel expenses.","動詞"],
-  ["on behalf of","〜を代表して、〜の代わりに","idiom","I am writing on behalf of my manager.",""],
-  ["itinerary","旅程表","word","Here is the itinerary for your business trip.","名詞"],
-  ["take place","開催される、起こる","idiom","The conference will take place next Friday.",""],
-  ["tentative","仮の、暫定的な","word","We set a tentative date for the meeting.","形容詞"],
-  ["deal with","〜に対処する、〜を扱う","idiom","Our support team will deal with the issue.",""]
+  ["acquire","獲得する、身につける","word","The company plans to acquire a smaller firm.","動詞","その会社はより小さな会社を買収する計画だ。"],
+  ["comply with","〜に従う、順守する","idiom","All staff must comply with the safety rules.","","全職員は安全規則を順守しなければならない。"],
+  ["invoice","請求書","word","Please send the invoice by the end of the month.","名詞","月末までに請求書を送ってください。"],
+  ["in charge of","〜を担当して","idiom","She is in charge of the marketing team.","","彼女は販売促進チームを担当している。"],
+  ["reimburse","払い戻す、返済する","word","We will reimburse your travel expenses.","動詞","私たちはあなたの旅費を払い戻します。"],
+  ["on behalf of","〜を代表して、〜の代わりに","idiom","I am writing on behalf of my manager.","","私は上司の代理でこの手紙を書いています。"],
+  ["itinerary","旅程表","word","Here is the itinerary for your business trip.","名詞","こちらがあなたの出張の旅程表です。"],
+  ["take place","開催される、起こる","idiom","The conference will take place next Friday.","","その会議は次の金曜日に開催される。"],
+  ["tentative","仮の、暫定的な","word","We set a tentative date for the meeting.","形容詞","私たちはその会議の仮の日程を設定した。"],
+  ["deal with","〜に対処する、〜を扱う","idiom","Our support team will deal with the issue.","","当社の支援チームがその問題に対処します。"]
 ];
 
 /* ================================================================
@@ -1235,7 +1252,22 @@ async function mergeTranslations(arr){
    カタカナだけの訳を日本語の説明入りに差し替えた際、既に端末へ
    取り込み済みのカードにも反映できるようにするため。 */
 async function mergeBundledTranslations(){
-  let jaCount = 0, meanCount = 0;
+  let jaCount = 0, meanCount = 0, fixCount = 0;
+
+  // v2.4.0: 先にサンプル10語を正しい和訳へ修復する。
+  // 初期サンプルは和訳が空だったため、以前の版で和訳マージを行うと
+  // 同じ見出し語の別例文の訳が誤って付いていた。
+  for(const [t,,,ex,,ja] of SAMPLE_CARDS){
+    if(!ja) continue;
+    for(const c of STATE.cards){
+      if(c.term.trim().toLowerCase() === t.toLowerCase()
+         && c.example.trim() === ex.trim()
+         && c.exampleJa !== ja){
+        c.exampleJa = ja; fixCount++;
+      }
+    }
+  }
+
   for(const url of ['./toeic-500.json', './toeic-1000.json', './toeic-extra.json',
                     './toeic-extra2.json', './toeic-new1000.json']){
     try{
@@ -1247,13 +1279,18 @@ async function mergeBundledTranslations(){
         if(!o.term) continue;
         map.set(String(o.term).trim().toLowerCase(), {
           ja: o.exampleJa || o.example_ja || '',
-          meaning: o.meaning || ''
+          meaning: o.meaning || '',
+          example: o.example || ''
         });
       }
       for(const c of STATE.cards){
         const hit = map.get(c.term.trim().toLowerCase());
         if(!hit) continue;
-        if(hit.ja && c.exampleJa !== hit.ja){ c.exampleJa = hit.ja; jaCount++; }
+        // v2.4.0: 例文が一致する場合のみ和訳を付ける。
+        // 同じ見出し語でも例文が異なることがあり(例: on behalf of)、
+        // 無条件に付けると別の例文の訳が入ってしまうため。
+        const sameExample = c.example.trim() === (hit.example||'').trim();
+        if(hit.ja && sameExample && c.exampleJa !== hit.ja){ c.exampleJa = hit.ja; jaCount++; }
         if(hit.meaning && c.meaning !== hit.meaning){ c.meaning = hit.meaning; meanCount++; }
       }
     }catch(e){ console.warn('マージ失敗:', url, e); }
@@ -1264,6 +1301,7 @@ async function mergeBundledTranslations(){
   const msg = [];
   if(jaCount) msg.push(`和訳${jaCount}件`);
   if(meanCount) msg.push(`意味${meanCount}件`);
+  if(fixCount) msg.push(`誤訳${fixCount}件を修正`);
   toast(msg.length ? `${msg.join(' / ')}を更新しました` : '更新はありませんでした');
 }
 
@@ -1439,7 +1477,7 @@ async function init(){
   let cards = await loadCards();
   if(cards === null){
     // 初回起動: サンプル投入
-    cards = SAMPLE_CARDS.map(([t,m,ty,ex,pos])=> makeCard(t,m,ty,ex,pos));
+    cards = SAMPLE_CARDS.map(([t,m,ty,ex,pos,ja])=> makeCard(t,m,ty,ex,pos,ja));
     await saveCards(cards);
   }
   STATE.cards = cards;
