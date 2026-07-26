@@ -2,10 +2,15 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 20:40 (JST)
-  バージョン: 2.6.0
+  ファイル最終更新日時: 2026-07-23 21:00 (JST)
+  バージョン: 2.7.0
 --------------------------------------------------------------------
   【更新履歴】
+    v2.7.0 (2026-07-23 21:00 JST)
+      - 単語一覧で語をタップすると、学習時の裏面(答え)と同じ詳細を
+        ポップアップ表示するようにした。品詞・意味・例文・和訳・発音・
+        派生語・語源解説をまとめて確認できる。
+        裏面の描画を cardBackInner() に共通化し、学習画面と共用。
     v2.6.0 (2026-07-23 20:40 JST)
       - 派生語をまとめて学習する機能を追加。カード裏に「同じ語根の
         仲間」を品詞つきで表示（例: exclusive の裏に exclusively）。
@@ -353,6 +358,11 @@
   .word-item .wm{font-size:13px;color:var(--ink-soft);}
   .word-item .grow{flex:1;min-width:0;}
   .word-item .grow>div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  /* v2.7.0: タップで詳細表示 */
+  .word-item .tappable{cursor:pointer;}
+  .word-item .tappable:active{opacity:.6;}
+  .detail-flash{box-shadow:none;margin:0;}
+  .detail-flash .term{font-size:26px;}
   .boxchip{font-size:11px;font-weight:800;color:var(--primary);background:var(--primary-soft);border-radius:8px;padding:3px 8px;white-space:nowrap;}
   .iconbtn{border:none;background:transparent;color:var(--ink-soft);font-size:18px;padding:6px;cursor:pointer;border-radius:8px;}
   .iconbtn:active{background:var(--bg);}
@@ -419,8 +429,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "2.6.0";
-const LAST_UPDATED = "2026-07-23 20:40 JST"; // ファイル最終更新日時
+const APP_VERSION = "2.7.0";
+const LAST_UPDATED = "2026-07-23 21:00 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -639,6 +649,47 @@ function showTodayReview(){
      語源解説がある語には 💡 を付け、タップでポップアップ表示。
    - showEtymology: 語源・意味の派生の解説をポップアップで出す。
    ================================================================ */
+/* ================================================================
+   v2.7.0: カード裏面（答え）の中身を共通化
+   学習画面のフラッシュカード裏と、単語一覧のタップ詳細で
+   同じ表示を再利用するために関数化する。
+   ================================================================ */
+function cardBackInner(card){
+  const tagCls = card.type==='idiom' ? 'tag idiom' : 'tag';
+  const tagTxt = card.type==='idiom' ? '熟語' : '単語';
+  const posLabel = (card.type==='word' && card.pos)
+    ? `<div class="pos">${escapeHtml(card.pos)}</div>` : '';
+  const speakTerm = `<button class="speaker" onclick="speak('${attrEsc(card.term)}')" aria-label="単語を読み上げる">🔊</button>`;
+  const speakEx = card.example
+    ? `<button class="speaker small" onclick="speak('${attrEsc(card.example)}')" aria-label="例文を読み上げる">🔊</button>` : '';
+  return `
+      <span class="${tagCls}">${tagTxt}</span>
+      <div class="term-row">
+        <div class="term">${escapeHtml(card.term)}</div>
+        ${speakTerm}
+      </div>
+      <div class="divider"></div>
+      ${posLabel}
+      <div class="meaning">${escapeHtml(card.meaning)}</div>
+      ${card.example?`<div class="example">${escapeHtml(card.example)} ${speakEx}</div>`:''}
+      ${card.exampleJa?`<div class="example-ja">${escapeHtml(card.exampleJa)}</div>`:''}
+      ${renderRelations(card.term)}`;
+}
+
+/* v2.7.0: 単語一覧で語をタップしたとき、答えをポップアップ表示 */
+function showWordDetail(id){
+  const card = STATE.cards.find(c=> c.id === id);
+  if(!card) return;
+  const html = `
+    <div class="card flash detail-flash">${cardBackInner(card)}
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="openEdit('${card.id}')">✏️ 編集</button>
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+}
+
 function renderRelations(term){
   const key = term.trim().toLowerCase();
   const fam = RELATIONS.family[key] || [];
@@ -911,18 +962,7 @@ function viewStudy(){
   const speakEx = card.example
     ? `<button class="speaker small" onclick="speak('${attrEsc(card.example)}')" aria-label="例文を読み上げる">🔊</button>` : '';
   const back = `
-    <div class="card flash">
-      <span class="${tagCls}">${tagTxt}</span>
-      <div class="term-row">
-        <div class="term">${escapeHtml(card.term)}</div>
-        ${speakTerm}
-      </div>
-      <div class="divider"></div>
-      ${posLabel}
-      <div class="meaning">${escapeHtml(card.meaning)}</div>
-      ${card.example?`<div class="example">${escapeHtml(card.example)} ${speakEx}</div>`:''}
-      ${card.exampleJa?`<div class="example-ja">${escapeHtml(card.exampleJa)}</div>`:''}
-      ${renderRelations(card.term)}
+    <div class="card flash">${cardBackInner(card)}
     </div>
     <div class="grade-row">
       <button class="btn btn-bad" id="gradeNo">わからなかった</button>
@@ -951,7 +991,7 @@ function viewManage(){
 
   const rows = list.map(c=>`
     <div class="card word-item">
-      <div class="grow">
+      <div class="grow tappable" onclick="showWordDetail('${c.id}')">
         <div class="wt">${escapeHtml(c.term)} ${c.type==='idiom'?'<span style="font-size:11px;color:var(--accent)">熟</span>':''}</div>
         <div class="wm">${(c.type==='word'&&c.pos)?`<span style="font-size:11px;font-weight:700;color:var(--primary)">${escapeHtml(c.pos)}</span> ・ `:''}${escapeHtml(c.meaning)}</div>
       </div>
