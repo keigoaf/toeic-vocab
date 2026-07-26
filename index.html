@@ -2,10 +2,31 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 21:00 (JST)
-  バージョン: 2.7.0
+  ファイル最終更新日時: 2026-07-23 21:55 (JST)
+  バージョン: 3.0.0
 --------------------------------------------------------------------
   【更新履歴】
+    v3.0.0 (2026-07-23 21:55 JST)
+      - 「今日解いた語」の一覧でも、語をタップすると裏面(答え)の詳細を
+        表示するようにした。詳細から「← 一覧に戻る」で一覧へ戻れる。
+        showWordDetail に戻り先(backTo)引数を追加して実現。
+    v2.9.0 (2026-07-23 21:40 JST)
+      - 語源解説を44語→69語にさらに拡充。
+      - 解説内で挙げる同語根の単語すべてに日本語の意味を併記。
+        例:「fer(運ぶ)の仲間: refer(参照する)、offer(提供する)、
+            confer(協議する)」のように、語根の共通性だけでなく
+            各語の意味も同時に確認できるようにした。
+        追加した語根グループ: loc(場所)=allocate/relocate、
+        gen(生む)=generate、cip(取る)=anticipate/participate、
+        tribute(与える)=contribute/distribute、sign(印)=assign/resign、
+        vis(見る)=revise/supervise、min(小さい)=minimize/diminish ほか。
+    v2.8.0 (2026-07-23 21:20 JST)
+      - 語源解説を10語→44語に拡充（word-relations.json）。
+        接頭辞・語根から意味を読み解ける語を追加。共通の語根を持つ
+        語をまとめて覚えられるよう相互に言及。
+        例: mit(送る)=submit/remit、pos/pon(置く)=postpone/impose/dispose、
+            tain(保つ)=retain/sustain/obtain、fer(運ぶ)=transfer/refer/confer、
+            ceed(行く)=proceed/exceed、sume(取る)=presume/assume など。
     v2.7.0 (2026-07-23 21:00 JST)
       - 単語一覧で語をタップすると、学習時の裏面(答え)と同じ詳細を
         ポップアップ表示するようにした。品詞・意味・例文・和訳・発音・
@@ -326,6 +347,10 @@
   .today-done .done-head b{font-size:20px;color:var(--primary);}
   .rv-list{max-height:52vh;overflow-y:auto;margin-top:8px;}
   .rv-row{display:flex;gap:10px;align-items:flex-start;padding:9px 2px;border-bottom:1px solid var(--line);}
+  /* v3.0.0: タップで詳細表示 */
+  .rv-tappable{cursor:pointer;}
+  .rv-tappable:active{background:var(--bg-soft);}
+  .rv-arrow{color:var(--ink-soft);font-size:20px;line-height:1;align-self:center;}
   .rv-o{color:var(--good);font-weight:800;}
   .rv-x{color:var(--bad);font-weight:800;}
   .rv-body{flex:1;}
@@ -429,8 +454,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "2.7.0";
-const LAST_UPDATED = "2026-07-23 21:00 JST"; // ファイル最終更新日時
+const APP_VERSION = "3.0.0";
+const LAST_UPDATED = "2026-07-23 21:55 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -623,18 +648,19 @@ function showTodayReview(){
     const mark = c.lastResult==='o'
       ? '<span class="rv-o">○</span>' : '<span class="rv-x">×</span>';
     const pos = c.pos ? `<small>${escapeHtml(c.pos)}</small>` : '';
-    return `<div class="rv-row">
+    return `<div class="rv-row rv-tappable" onclick="showWordDetail('${c.id}','today')">
       ${mark}
       <div class="rv-body">
         <div class="rv-term">${escapeHtml(c.term)} ${pos}</div>
         <div class="rv-mean">${escapeHtml(c.meaning)}</div>
       </div>
+      <span class="rv-arrow">›</span>
     </div>`;
   }).join('');
   const ok = done.filter(c=>c.lastResult==='o').length;
   const html = `
     <h3>今日解いた語（${done.length}）</h3>
-    <p class="note" style="margin-top:2px">正解 ${ok} ／ 不正解 ${done.length-ok}　※不正解を上に表示</p>
+    <p class="note" style="margin-top:2px">正解 ${ok} ／ 不正解 ${done.length-ok}　※タップで解説を表示</p>
     <div class="rv-list">${rows}</div>
     <div class="modal-actions">
       <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
@@ -677,14 +703,17 @@ function cardBackInner(card){
 }
 
 /* v2.7.0: 単語一覧で語をタップしたとき、答えをポップアップ表示 */
-function showWordDetail(id){
+function showWordDetail(id, backTo){
   const card = STATE.cards.find(c=> c.id === id);
   if(!card) return;
+  const backBtn = backTo === 'today'
+    ? `<button class="btn btn-ghost" onclick="showTodayReview()">← 一覧に戻る</button>`
+    : `<button class="btn btn-ghost" onclick="openEdit('${card.id}')">✏️ 編集</button>`;
   const html = `
     <div class="card flash detail-flash">${cardBackInner(card)}
     </div>
     <div class="modal-actions">
-      <button class="btn btn-ghost" onclick="openEdit('${card.id}')">✏️ 編集</button>
+      ${backBtn}
       <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
     </div>`;
   openModal(html);
