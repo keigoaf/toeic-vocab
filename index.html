@@ -2,10 +2,22 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 20:05 (JST)
-  バージョン: 2.5.0
+  ファイル最終更新日時: 2026-07-23 20:40 (JST)
+  バージョン: 2.6.0
 --------------------------------------------------------------------
   【更新履歴】
+    v2.6.0 (2026-07-23 20:40 JST)
+      - 派生語をまとめて学習する機能を追加。カード裏に「同じ語根の
+        仲間」を品詞つきで表示（例: exclusive の裏に exclusively）。
+        word-relations.json に181グループ375語の派生関係を収録。
+      - 意味が派生・変化した語に語源解説を追加（代表10語で試行）。
+        見出し語の💡または「意味の成り立ちを見る」をタップすると
+        ポップアップで表示。例: appreciate(感謝する/理解する/値上がりする)、
+        comprehend(つかむ→理解する)、economy(家計→経済)など。
+        対象: appreciate/accompany/economy/define/novelty/custom/
+              apparent/comprehend/substantial/initiative
+      - 「今日解いた語」機能を追加。学習した日と正誤を記録し、
+        ホームから当日分の一覧（正誤つき）を見返せるようにした。
     v2.5.0 (2026-07-23 20:05 JST)
       - 複数品詞を持つ語の品詞・意味を補完（108語）。
         例: account「名詞」→「名詞/動詞」、present→「名詞/形容詞/動詞」、
@@ -291,6 +303,30 @@
   .flash .example{font-size:14px;color:var(--ink-soft);margin-top:14px;font-family:var(--font-en);font-style:italic;}
   /* v1.7.0: 例文の和訳 */
   .flash .example-ja{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.6;}
+  /* v2.6.0: 派生語・語源解説 */
+  .relations{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);text-align:left;}
+  .rel-title{font-size:11px;font-weight:800;color:var(--ink-soft);letter-spacing:.08em;margin-bottom:8px;}
+  .rel-list{display:flex;flex-wrap:wrap;gap:6px;}
+  .rel-item{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-family:var(--font-en);
+    background:var(--bg-soft);border:1px solid var(--line);border-radius:8px;padding:4px 9px;}
+  .rel-item small{font-family:var(--font-jp);font-size:10px;color:var(--ink-soft);}
+  .rel-self{background:var(--primary-soft);border-color:var(--primary);font-weight:700;}
+  .rel-bulb{cursor:pointer;font-size:13px;}
+  .rel-ety-btn{margin-top:10px;width:100%;background:none;border:1px solid var(--primary);
+    color:var(--primary);border-radius:10px;padding:8px;font-size:13px;font-weight:700;cursor:pointer;}
+  .rel-ety-btn:active{background:var(--primary-soft);}
+  .ety-text{font-size:14px;line-height:1.85;color:var(--ink);margin-top:6px;}
+  /* v2.6.0: 今日解いた語 */
+  .today-done .done-head{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:800;}
+  .today-done .done-head b{font-size:20px;color:var(--primary);}
+  .rv-list{max-height:52vh;overflow-y:auto;margin-top:8px;}
+  .rv-row{display:flex;gap:10px;align-items:flex-start;padding:9px 2px;border-bottom:1px solid var(--line);}
+  .rv-o{color:var(--good);font-weight:800;}
+  .rv-x{color:var(--bad);font-weight:800;}
+  .rv-body{flex:1;}
+  .rv-term{font-family:var(--font-en);font-weight:700;font-size:15px;}
+  .rv-term small{font-family:var(--font-jp);font-size:10px;color:var(--ink-soft);font-weight:400;margin-left:4px;}
+  .rv-mean{font-size:13px;color:var(--ink-soft);margin-top:2px;}
   .grade-row{display:flex;gap:10px;margin-top:14px;}
   .grade-row .btn{flex:1;}
 
@@ -383,8 +419,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "2.5.0";
-const LAST_UPDATED = "2026-07-23 20:05 JST"; // ファイル最終更新日時
+const APP_VERSION = "2.6.0";
+const LAST_UPDATED = "2026-07-23 20:40 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -564,6 +600,85 @@ function boxCount(){ return STATE.settings.intervals.length; }
 
 /* 新規カード生成（v1.1.0: 品詞 pos を追加）
    pos は単語のときのみ意味を持つ。熟語では空にする。 */
+/* v2.6.0: 今日解いた語の一覧を表示（正誤つき） */
+function showTodayReview(){
+  const done = STATE.cards.filter(c=> c.lastStudied === todayStart());
+  if(done.length === 0){ toast('今日はまだ学習していません'); return; }
+  // 不正解を先に、その後正解。各内は語順（登録順）
+  done.sort((a,b)=>{
+    if(a.lastResult !== b.lastResult) return a.lastResult==='x' ? -1 : 1;
+    return a.createdAt - b.createdAt;
+  });
+  const rows = done.map(c=>{
+    const mark = c.lastResult==='o'
+      ? '<span class="rv-o">○</span>' : '<span class="rv-x">×</span>';
+    const pos = c.pos ? `<small>${escapeHtml(c.pos)}</small>` : '';
+    return `<div class="rv-row">
+      ${mark}
+      <div class="rv-body">
+        <div class="rv-term">${escapeHtml(c.term)} ${pos}</div>
+        <div class="rv-mean">${escapeHtml(c.meaning)}</div>
+      </div>
+    </div>`;
+  }).join('');
+  const ok = done.filter(c=>c.lastResult==='o').length;
+  const html = `
+    <h3>今日解いた語（${done.length}）</h3>
+    <p class="note" style="margin-top:2px">正解 ${ok} ／ 不正解 ${done.length-ok}　※不正解を上に表示</p>
+    <div class="rv-list">${rows}</div>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+}
+
+/* ================================================================
+   v2.6.0: 派生語・語源解説の表示
+   --------------------------------------------------------------
+   - renderRelations: カード裏に「同じ語根の仲間」を品詞つきで並べる。
+     語源解説がある語には 💡 を付け、タップでポップアップ表示。
+   - showEtymology: 語源・意味の派生の解説をポップアップで出す。
+   ================================================================ */
+function renderRelations(term){
+  const key = term.trim().toLowerCase();
+  const fam = RELATIONS.family[key] || [];
+  const hasEty = !!RELATIONS.etymology[key];
+  if(fam.length === 0 && !hasEty) return '';
+
+  let html = '<div class="relations">';
+  if(fam.length > 0){
+    html += '<div class="rel-title">同じ語根の仲間</div><div class="rel-list">';
+    // 自分自身も含めて表示（品詞つき）
+    const self = { term: term, pos: (STATE.cards.find(c=>c.term.toLowerCase()===key)?.pos)||'' };
+    const items = [self].concat(fam);
+    for(const it of items){
+      const isSelf = it.term.toLowerCase() === key;
+      const ety = RELATIONS.etymology[it.term.toLowerCase()];
+      const bulb = ety ? ` <span class="rel-bulb" onclick="showEtymology('${attrEsc(it.term)}')">💡</span>` : '';
+      html += `<span class="rel-item ${isSelf?'rel-self':''}">`
+            + `${escapeHtml(it.term)}${it.pos?`<small>${escapeHtml(it.pos)}</small>`:''}${bulb}</span>`;
+    }
+    html += '</div>';
+  }
+  if(hasEty){
+    html += `<button class="rel-ety-btn" onclick="showEtymology('${attrEsc(term)}')">💡 意味の成り立ちを見る</button>`;
+  }
+  html += '</div>';
+  return html;
+}
+
+function showEtymology(term){
+  const ety = RELATIONS.etymology[term.trim().toLowerCase()];
+  if(!ety) return;
+  const html = `
+    <h3>💡 ${escapeHtml(term)} の成り立ち</h3>
+    <p class="ety-text">${escapeHtml(ety)}</p>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+}
+
 function makeCard(term, meaning, type, example, pos, exampleJa){
   const t = (type === 'idiom') ? 'idiom' : 'word';
   return {
@@ -690,6 +805,21 @@ function viewHome(){
     <div style="margin-top:16px">${startBtn}</div>
   </div>
 
+  ${(()=>{
+    // v2.6.0: 今日解いた語（学習日が今日のもの）
+    const done = STATE.cards.filter(c=> c.lastStudied === todayStart());
+    if(done.length === 0) return '';
+    const ok = done.filter(c=>c.lastResult==='o').length;
+    return `<div class="card pad today-done">
+      <div class="done-head">
+        <span>今日解いた語</span>
+        <b>${done.length}語</b>
+      </div>
+      <div class="sub">正解 ${ok} ／ 不正解 ${done.length-ok}</div>
+      <button class="btn btn-ghost small" onclick="showTodayReview()" style="width:100%;margin-top:10px">一覧を見返す</button>
+    </div>`;
+  })()}
+
   <div class="section-title">習得の進み具合</div>
   <div class="card pad">
     <div class="ladder">${ladder}</div>
@@ -792,6 +922,7 @@ function viewStudy(){
       <div class="meaning">${escapeHtml(card.meaning)}</div>
       ${card.example?`<div class="example">${escapeHtml(card.example)} ${speakEx}</div>`:''}
       ${card.exampleJa?`<div class="example-ja">${escapeHtml(card.exampleJa)}</div>`:''}
+      ${renderRelations(card.term)}
     </div>
     <div class="grade-row">
       <button class="btn btn-bad" id="gradeNo">わからなかった</button>
@@ -924,11 +1055,12 @@ async function answer(know){
   const s = STATE.session;
   const card = s.queue[s.idx];
   grade(card, know);
+  // v2.6.0: 「今日解いた語」を後で振り返れるよう、最後に学習した
+  // 学習日と、そのときの正誤を記録する。
+  card.lastStudied = todayStart();
+  card.lastResult = know ? 'o' : 'x';
   s.answered++;
   if(know) s.correct++;
-
-  // v2.2.0: 不正解でも当日は再出題しない（翌日に回す）。
-  // 当日中に正解するまで繰り返すと復習間隔が空かず、定着しにくいため。
 
   await saveCards(STATE.cards);
   s.idx++;
@@ -1484,6 +1616,7 @@ document.querySelectorAll('nav button').forEach(b=>{
    ================================================================ */
 async function init(){
   STATE.settings = await loadSettings();
+  await loadRelations();     // v2.6.0: 派生語・語源解説データを読み込む
   let cards = await loadCards();
   if(cards === null){
     // 初回起動: サンプル投入
@@ -1494,6 +1627,26 @@ async function init(){
   setView('home');
 }
 init();
+
+/* ================================================================
+   v2.6.0: 派生語ファミリー・語源解説の読み込み
+   --------------------------------------------------------------
+   word-relations.json から以下を読み込む:
+     - family: 各語 → 同じ語根の派生語リスト（品詞つき）
+     - etymology: 意味が派生・変化した語の解説文
+   カード裏で関連語を並べ、見出し語タップで解説ポップアップを出す。
+   ================================================================ */
+const RELATIONS = { family:{}, etymology:{} };
+async function loadRelations(){
+  try{
+    const res = await fetch('./word-relations.json', { cache:'no-store' });
+    if(res.ok){
+      const j = await res.json();
+      RELATIONS.family = j.family || {};
+      RELATIONS.etymology = j.etymology || {};
+    }
+  }catch(e){ console.warn('関連語データの読み込み失敗:', e); }
+}
 
 /* ================================================================
    PWA: Service Worker 登録（v1.8.0で更新検知を強化）
