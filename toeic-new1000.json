@@ -163,11 +163,11 @@
  },
  {
   "term": "screen",
-  "meaning": "選考する",
+  "meaning": "画面（名）、選考する/仕切る（動）",
   "type": "word",
   "example": "We screen applicants by phone first.",
   "exampleJa": "私たちはまず電話で応募者を選考する。",
-  "pos": "動詞"
+  "pos": "名詞/動詞"
  },
  {
   "term": "accreditation",
@@ -550,7 +550,7 @@
  },
  {
   "term": "log in",
-  "meaning": "ログインする",
+  "meaning": "接続して利用を始める/ログインする",
   "type": "idiom",
   "example": "Please log in with your employee ID.",
   "exampleJa": "社員番号でログインしてください。"
@@ -641,7 +641,7 @@
  },
  {
   "term": "log out",
-  "meaning": "ログアウトする",
+  "meaning": "接続を終える/ログアウトする",
   "type": "idiom",
   "example": "Always log out before leaving.",
   "exampleJa": "退出前に必ずログアウトしてください。"
@@ -790,11 +790,11 @@
  },
  {
   "term": "segment",
-  "meaning": "区分する",
+  "meaning": "区分（名）、区分する（動）",
   "type": "word",
   "example": "We segment customers by purchase history.",
   "exampleJa": "私たちは購入履歴で顧客を区分する。",
-  "pos": "動詞"
+  "pos": "名詞/動詞"
  },
  {
   "term": "niche market",
@@ -1450,11 +1450,11 @@
  },
  {
   "term": "veto",
-  "meaning": "拒否する",
+  "meaning": "拒否権（名）、拒否する（動）",
   "type": "word",
   "example": "The director vetoed the budget increase.",
   "exampleJa": "取締役はその予算増額を拒否した。",
-  "pos": "動詞"
+  "pos": "名詞/動詞"
  },
  {
   "term": "common ground",
@@ -2860,11 +2860,11 @@
  },
  {
   "term": "warrant",
-  "meaning": "正当化する",
+  "meaning": "令状/正当な理由（名）、正当化する（動）",
   "type": "word",
   "example": "The risk warrants extra caution.",
   "exampleJa": "その危険は特別な注意を正当化する。",
-  "pos": "動詞"
+  "pos": "名詞/動詞"
  },
  {
   "term": "yield results",
@@ -2923,11 +2923,11 @@
  },
  {
   "term": "aggregate",
-  "meaning": "総計の",
+  "meaning": "総計の（形）、総計（名）、集計する（動）",
   "type": "word",
   "example": "Aggregate sales reached a record.",
   "exampleJa": "総計の売上は記録に達した。",
-  "pos": "形容詞"
+  "pos": "形容詞/名詞/動詞"
  },
  {
   "term": "agile",
@@ -3851,11 +3851,11 @@
  },
  {
   "term": "outright",
-  "meaning": "完全に",
+  "meaning": "完全に（副）、完全な（形）",
   "type": "word",
   "example": "They rejected the offer outright.",
   "exampleJa": "彼らはその申し出を完全に拒否した。",
-  "pos": "副詞"
+  "pos": "副詞/形容詞"
  },
  {
   "term": "periodically",
@@ -6120,11 +6120,11 @@
  },
  {
   "term": "cap",
-  "meaning": "上限を設ける",
+  "meaning": "上限/帽子（名）、上限を設ける（動）",
   "type": "word",
   "example": "We capped travel spending at ten percent.",
   "exampleJa": "私たちは出張費に10%の上限を設けた。",
-  "pos": "動詞"
+  "pos": "名詞/動詞"
  },
  {
   "term": "capitalize on",

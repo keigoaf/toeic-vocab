@@ -57,7 +57,7 @@
  },
  {
   "term": "waive",
-  "meaning": "放棄する",
+  "meaning": "放棄する/免除する",
   "type": "word",
   "example": "The customer agreed to waive the penalty.",
   "pos": "動詞",
@@ -121,10 +121,10 @@
  },
  {
   "term": "yield",
-  "meaning": "生産量/歩留まり",
+  "meaning": "収穫/利回り（名）、生む/譲る（動）",
   "type": "word",
   "example": "The new process improved production yield.",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "exampleJa": "その新しい工程は生産の歩留まりを改善した。"
  },
  {
@@ -355,10 +355,10 @@
  },
  {
   "term": "overhaul",
-  "meaning": "全面点検する",
+  "meaning": "全面点検（名）、全面点検する（動）",
   "type": "word",
   "example": "Engineers overhauled the production equipment.",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "exampleJa": "技術者は生産設備を全面点検した。"
  },
  {
@@ -379,10 +379,10 @@
  },
  {
   "term": "scrap",
-  "meaning": "廃棄する",
+  "meaning": "くず/廃材（名）、廃棄する（動）",
   "type": "word",
   "example": "The factory scrapped damaged components.",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "exampleJa": "その工場は損傷した部品を廃棄した。"
  },
  {
@@ -943,10 +943,10 @@
  },
  {
   "term": "dispute",
-  "meaning": "紛争/論争",
+  "meaning": "紛争（名）、異議を唱える（動）",
   "type": "word",
   "example": "The companies resolved the dispute quickly.",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "exampleJa": "それらの会社はその紛争を速やかに解決した。"
  },
  {
@@ -1015,10 +1015,10 @@
  },
  {
   "term": "secure",
-  "meaning": "確保する/安全な",
+  "meaning": "安全な（形）、確保する（動）",
   "type": "word",
   "example": "They secured funding for the project.",
-  "pos": "動詞",
+  "pos": "形容詞/動詞",
   "exampleJa": "彼らはその事業の資金を確保した。"
  },
  {
@@ -1047,10 +1047,10 @@
  },
  {
   "term": "void",
-  "meaning": "無効な",
+  "meaning": "無効な（形）、無効にする（動）",
   "type": "word",
   "example": "The agreement becomes void without signatures.",
-  "pos": "形容詞",
+  "pos": "形容詞/動詞",
   "exampleJa": "その合意は署名がなければ無効になる。"
  },
  {

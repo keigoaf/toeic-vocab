@@ -9,10 +9,10 @@
  },
  {
   "term": "increase",
-  "meaning": "増加する",
+  "meaning": "増加（名）、増加する（動）※強勢が異なる",
   "type": "word",
   "example": "Sales increased during the holiday season.",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "exampleJa": "売上は休暇シーズン中に増加した。"
  },
  {
@@ -80,10 +80,10 @@
  },
  {
   "term": "transfer",
-  "meaning": "異動する/移す",
+  "meaning": "移動/異動（名）、移す/異動する（動）※強勢が異なる",
   "type": "word",
   "example": "She transferred to the marketing department.",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "exampleJa": "彼女は販売促進部に異動した。"
  },
  {
@@ -144,10 +144,10 @@
  },
  {
   "term": "representative",
-  "meaning": "代表者",
+  "meaning": "代表者（名）、代表的な（形）",
   "type": "word",
   "example": "A representative will contact you tomorrow.",
-  "pos": "名詞",
+  "pos": "名詞/形容詞",
   "exampleJa": "担当者が明日ご連絡します。"
  },
  {

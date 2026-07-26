@@ -1,9 +1,9 @@
 [
  {
   "term": "account",
-  "meaning": "口座/取引先",
+  "meaning": "口座/取引先（名）、説明する（動, ～ for）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The new account will boost our sales.",
   "exampleJa": "その新しい取引先は当社の売上を押し上げるだろう。"
  },
@@ -113,9 +113,9 @@
  },
  {
   "term": "benefit",
-  "meaning": "利益/手当",
+  "meaning": "利益/手当（名）、利益を得る（動, ～ from）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Employees enjoy many benefits.",
   "exampleJa": "従業員は多くの手当を受けられる。"
  },
@@ -145,9 +145,9 @@
  },
  {
   "term": "budget",
-  "meaning": "予算",
+  "meaning": "予算（名）、予算を組む（動）、格安の（形）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞/形容詞",
   "example": "We must stay within budget.",
   "exampleJa": "私たちは予算内に収めなければならない。"
  },
@@ -193,9 +193,9 @@
  },
  {
   "term": "commission",
-  "meaning": "手数料/委員会",
+  "meaning": "手数料/委託（名）、委託する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Salespeople earn a commission.",
   "exampleJa": "営業担当者は歩合給を得る。"
  },
@@ -233,9 +233,9 @@
  },
  {
   "term": "contract",
-  "meaning": "契約",
+  "meaning": "契約（名）、契約する/収縮する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Please sign the contract.",
   "exampleJa": "契約書に署名してください。"
  },
@@ -265,9 +265,9 @@
  },
  {
   "term": "demand",
-  "meaning": "需要",
+  "meaning": "需要/要求（名）、要求する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Demand for the product is rising.",
   "exampleJa": "その製品の需要は高まっている。"
  },
@@ -281,9 +281,9 @@
  },
  {
   "term": "deposit",
-  "meaning": "手付金/預金",
+  "meaning": "手付金/預金（名）、預金する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "A deposit is required to book.",
   "exampleJa": "予約には手付金が必要です。"
  },
@@ -297,9 +297,9 @@
  },
  {
   "term": "discount",
-  "meaning": "割引",
+  "meaning": "割引（名）、割り引く（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Members get a 10% discount.",
   "exampleJa": "会員は10%の割引を受けられる。"
  },
@@ -321,9 +321,9 @@
  },
  {
   "term": "draft",
-  "meaning": "下書き/草案",
+  "meaning": "下書き/為替手形（名）、起草する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Please review the draft.",
   "exampleJa": "草案を確認してください。"
  },
@@ -369,9 +369,9 @@
  },
  {
   "term": "estimate",
-  "meaning": "見積もり",
+  "meaning": "見積もり（名）、見積もる（動）※発音が異なる",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "We sent an estimate to the client.",
   "exampleJa": "私たちは顧客に見積もりを送った。"
  },
@@ -417,17 +417,17 @@
  },
  {
   "term": "forecast",
-  "meaning": "予測",
+  "meaning": "予測（名）、予測する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The weather forecast looks good.",
   "exampleJa": "天気予報は良さそうだ。"
  },
  {
   "term": "fund",
-  "meaning": "資金",
+  "meaning": "資金（名）、資金を出す（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "They raised funds for the project.",
   "exampleJa": "彼らはその事業のために資金を集めた。"
  },
@@ -441,9 +441,9 @@
  },
  {
   "term": "guarantee",
-  "meaning": "保証",
+  "meaning": "保証（名）、保証する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The product comes with a guarantee.",
   "exampleJa": "その製品には保証が付いている。"
  },
@@ -625,9 +625,9 @@
  },
  {
   "term": "overtime",
-  "meaning": "残業",
+  "meaning": "残業（名）、時間外に（副）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/副詞",
   "example": "He worked overtime last night.",
   "exampleJa": "彼は昨夜残業した。"
  },
@@ -665,9 +665,9 @@
  },
  {
   "term": "permit",
-  "meaning": "許可証",
+  "meaning": "許可証（名）、許可する（動）※強勢が異なる",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "You need a permit to park here.",
   "exampleJa": "ここに駐車するには許可証が必要だ。"
  },
@@ -713,9 +713,9 @@
  },
  {
   "term": "profit",
-  "meaning": "利益",
+  "meaning": "利益（名）、利益を得る（動, ～ from）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The company made a profit.",
   "exampleJa": "その会社は利益を上げた。"
  },
@@ -865,9 +865,9 @@
  },
  {
   "term": "schedule",
-  "meaning": "予定",
+  "meaning": "予定表（名）、予定を組む（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Check the schedule for changes.",
   "exampleJa": "変更がないか予定表を確認してください。"
  },
@@ -953,9 +953,9 @@
  },
  {
   "term": "survey",
-  "meaning": "調査",
+  "meaning": "調査（名）、調査する（動）※強勢が異なる",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Please complete the survey.",
   "exampleJa": "アンケートにご記入ください。"
  },
@@ -1417,9 +1417,9 @@
  },
  {
   "term": "boost",
-  "meaning": "押し上げる",
+  "meaning": "増加/後押し（名）、押し上げる（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The ad boosted sales.",
   "exampleJa": "その広告は売上を押し上げた。"
  },
@@ -1497,9 +1497,9 @@
  },
  {
   "term": "conduct",
-  "meaning": "行う",
+  "meaning": "行動（名）、実施する（動）※発音・強勢が異なる",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "They conducted a survey.",
   "exampleJa": "彼らは調査を行った。"
  },
@@ -1537,9 +1537,9 @@
  },
  {
   "term": "decline",
-  "meaning": "断る/減少する",
+  "meaning": "減少（名）、断る/減少する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Sales declined last month.",
   "exampleJa": "売上は先月減少した。"
  },
@@ -1593,9 +1593,9 @@
  },
  {
   "term": "dispatch",
-  "meaning": "発送する",
+  "meaning": "発送（名）、発送する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We dispatched the order.",
   "exampleJa": "私たちは注文品を発送した。"
  },
@@ -1833,17 +1833,17 @@
  },
  {
   "term": "issue",
-  "meaning": "発行する",
+  "meaning": "問題/発行物（名）、発行する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The bank issued a card.",
   "exampleJa": "銀行はカードを発行した。"
  },
  {
   "term": "launch",
-  "meaning": "開始する",
+  "meaning": "開始/発売（名）、開始する/発売する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "They launched the app.",
   "exampleJa": "彼らはそのアプリを公開した。"
  },
@@ -1937,9 +1937,9 @@
  },
  {
   "term": "present",
-  "meaning": "提示する/贈る",
+  "meaning": "贈り物/現在（名）、現在の/出席の（形）、提示する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/形容詞/動詞",
   "example": "She presented the findings.",
   "exampleJa": "彼女は調査結果を発表した。"
  },
@@ -1953,9 +1953,9 @@
  },
  {
   "term": "process",
-  "meaning": "処理する",
+  "meaning": "過程（名）、処理する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We process orders daily.",
   "exampleJa": "私たちは毎日注文を処理している。"
  },
@@ -1977,9 +1977,9 @@
  },
  {
   "term": "purchase",
-  "meaning": "購入する",
+  "meaning": "購入（名）、購入する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "They purchased new equipment.",
   "exampleJa": "彼らは新しい機器を購入した。"
  },
@@ -2097,9 +2097,9 @@
  },
  {
   "term": "reserve",
-  "meaning": "予約する",
+  "meaning": "蓄え/予備（名）、予約する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Reserve a table online.",
   "exampleJa": "オンラインで席を予約してください。"
  },
@@ -2161,9 +2161,9 @@
  },
  {
   "term": "review",
-  "meaning": "見直す",
+  "meaning": "見直し/批評（名）、見直す（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Please review the draft.",
   "exampleJa": "草案を確認してください。"
  },
@@ -2297,17 +2297,17 @@
  },
  {
   "term": "update",
-  "meaning": "更新する",
+  "meaning": "最新情報/更新（名）、更新する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We updated the website.",
   "exampleJa": "私たちはウェブサイトを更新した。"
  },
  {
   "term": "upgrade",
-  "meaning": "改良する",
+  "meaning": "改良（名）、改良する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "They upgraded the servers.",
   "exampleJa": "彼らはサーバーを改良した。"
  },
@@ -2377,9 +2377,9 @@
  },
  {
   "term": "outline",
-  "meaning": "概説する",
+  "meaning": "概要（名）、概略を述べる（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "He outlined the plan.",
   "exampleJa": "彼はその計画の概略を述べた。"
  },
@@ -2769,9 +2769,9 @@
  },
  {
   "term": "potential",
-  "meaning": "潜在的な",
+  "meaning": "可能性のある（形）、可能性/潜在能力（名）",
   "type": "word",
-  "pos": "形容詞",
+  "pos": "形容詞/名詞",
   "example": "We found a potential client.",
   "exampleJa": "私たちは見込み客を見つけた。"
  },
@@ -3113,9 +3113,9 @@
  },
  {
   "term": "alternative",
-  "meaning": "代替の",
+  "meaning": "代替の（形）、代替案（名）",
   "type": "word",
-  "pos": "形容詞",
+  "pos": "形容詞/名詞",
   "example": "We have an alternative plan.",
   "exampleJa": "私たちには代わりの計画がある。"
  },

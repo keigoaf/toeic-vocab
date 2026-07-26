@@ -2,10 +2,20 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 19:40 (JST)
-  バージョン: 2.4.0
+  ファイル最終更新日時: 2026-07-23 20:05 (JST)
+  バージョン: 2.5.0
 --------------------------------------------------------------------
   【更新履歴】
+    v2.5.0 (2026-07-23 20:05 JST)
+      - 複数品詞を持つ語の品詞・意味を補完（108語）。
+        例: account「名詞」→「名詞/動詞」、present→「名詞/形容詞/動詞」、
+            budget→「名詞/動詞/形容詞」。
+        英語として複数品詞を持ち、かつTOEICでその用法が問われる語のみを
+        対象とし、意味も品詞に対応させて併記した。
+        （例文の意味とずれないよう、名詞・動詞など同形語を優先）
+      - 品詞バッジが複数でも折り返して収まるようスタイルを調整。
+        意味も更新したため、設定「和訳・意味を最新に更新」で
+        取り込み済みカードにも反映できる。
     v2.4.0 (2026-07-23 19:40 JST)
       - 【不具合修正】例文と和訳が食い違う問題を修正。
         症状: "I am writing on behalf of my manager." に
@@ -276,7 +286,7 @@
   }
   .speaker:active{transform:scale(.92);background:var(--primary-soft);}
   .speaker.small{font-size:14px;padding:4px 8px;border-radius:9px;vertical-align:middle;}
-  .flash .pos{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--primary);background:var(--primary-soft);border-radius:999px;padding:3px 12px;margin-bottom:12px;}
+  .flash .pos{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--primary);background:var(--primary-soft);border-radius:999px;padding:3px 12px;margin-bottom:12px;max-width:90%;line-height:1.5;}
   .flash .meaning{font-size:22px;font-weight:700;}
   .flash .example{font-size:14px;color:var(--ink-soft);margin-top:14px;font-family:var(--font-en);font-style:italic;}
   /* v1.7.0: 例文の和訳 */
@@ -373,8 +383,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "2.4.0";
-const LAST_UPDATED = "2026-07-23 19:40 JST"; // ファイル最終更新日時
+const APP_VERSION = "2.5.0";
+const LAST_UPDATED = "2026-07-23 20:05 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 

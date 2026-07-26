@@ -241,9 +241,9 @@
  },
  {
   "term": "award",
-  "meaning": "賞",
+  "meaning": "賞（名）、授与する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "She won a design award.",
   "exampleJa": "彼女は設計の賞を受賞した。"
  },
@@ -561,9 +561,9 @@
  },
  {
   "term": "compromise",
-  "meaning": "妥協",
+  "meaning": "妥協（名）、妥協する/危うくする（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "They reached a compromise.",
   "exampleJa": "彼らは妥協に至った。"
  },
@@ -577,9 +577,9 @@
  },
  {
   "term": "concern",
-  "meaning": "懸念",
+  "meaning": "懸念/関心事（名）、関係する/心配させる（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Safety is our main concern.",
   "exampleJa": "安全が私たちの主な懸念だ。"
  },
@@ -617,9 +617,9 @@
  },
  {
   "term": "consent",
-  "meaning": "同意",
+  "meaning": "同意（名）、同意する（動, ～ to）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "We need written consent.",
   "exampleJa": "私たちは書面による同意が必要だ。"
  },
@@ -1185,9 +1185,9 @@
  },
  {
   "term": "endeavor",
-  "meaning": "努力",
+  "meaning": "努力（名）、努力する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "We wish you well in your endeavor.",
   "exampleJa": "あなたの取り組みが実を結ぶことを願っています。"
  },
@@ -1289,9 +1289,9 @@
  },
  {
   "term": "exchange",
-  "meaning": "交換",
+  "meaning": "交換/両替（名）、交換する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The exchange rate changed.",
   "exampleJa": "為替相場が変動した。"
  },
@@ -1305,9 +1305,9 @@
  },
  {
   "term": "executive",
-  "meaning": "幹部",
+  "meaning": "幹部（名）、経営の（形）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/形容詞",
   "example": "The executive approved the deal.",
   "exampleJa": "その幹部はその取引を承認した。"
  },
@@ -1409,9 +1409,9 @@
  },
  {
   "term": "feature",
-  "meaning": "特徴",
+  "meaning": "特徴（名）、呼び物にする（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The app has a new feature.",
   "exampleJa": "そのアプリには新機能がある。"
  },
@@ -1545,9 +1545,9 @@
  },
  {
   "term": "gauge",
-  "meaning": "計器",
+  "meaning": "計器（名）、測定する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Check the pressure gauge.",
   "exampleJa": "圧力計を確認してください。"
  },
@@ -1593,9 +1593,9 @@
  },
  {
   "term": "grant",
-  "meaning": "助成金",
+  "meaning": "助成金（名）、与える（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The lab received a grant.",
   "exampleJa": "その研究室は助成金を受けた。"
  },
@@ -1745,9 +1745,9 @@
  },
  {
   "term": "impact",
-  "meaning": "影響",
+  "meaning": "影響（名）、影響を与える（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The change had a big impact.",
   "exampleJa": "その変更は大きな影響を与えた。"
  },
@@ -2065,9 +2065,9 @@
  },
  {
   "term": "label",
-  "meaning": "表示札/ラベル",
+  "meaning": "表示札/ラベル（名）、ラベルを貼る（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Read the product label.",
   "exampleJa": "製品ラベルを読んでください。"
  },
@@ -2121,9 +2121,9 @@
  },
  {
   "term": "lease",
-  "meaning": "賃貸契約",
+  "meaning": "賃貸契約（名）、賃貸する（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "The lease expires in May.",
   "exampleJa": "その賃貸契約は5月に切れる。"
  },
@@ -2513,9 +2513,9 @@
  },
  {
   "term": "notice",
-  "meaning": "通知/掲示",
+  "meaning": "通知/掲示（名）、気づく（動）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/動詞",
   "example": "Give two weeks' notice.",
   "exampleJa": "2週間前に通知してください。"
  },
@@ -2545,9 +2545,9 @@
  },
  {
   "term": "objective",
-  "meaning": "目的",
+  "meaning": "目標（名）、客観的な（形）",
   "type": "word",
-  "pos": "名詞",
+  "pos": "名詞/形容詞",
   "example": "Our main objective is growth.",
   "exampleJa": "私たちの主な目的は成長だ。"
  },
@@ -2673,9 +2673,9 @@
  },
  {
   "term": "address",
-  "meaning": "対処する/演説する",
+  "meaning": "住所/演説（名）、対処する/演説する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The CEO addressed the staff.",
   "exampleJa": "最高経営責任者が社員に向けて演説した。"
  },
@@ -2713,17 +2713,17 @@
  },
  {
   "term": "aim",
-  "meaning": "目指す",
+  "meaning": "目標（名）、目指す（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We aim to lead the market.",
   "exampleJa": "私たちは市場を牽引することを目指している。"
  },
  {
   "term": "alert",
-  "meaning": "警告する",
+  "meaning": "警報（名）、警戒した（形）、警告する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/形容詞/動詞",
   "example": "The system alerts staff to errors.",
   "exampleJa": "そのシステムは職員に誤りを警告する。"
  },
@@ -2761,17 +2761,17 @@
  },
  {
   "term": "appeal",
-  "meaning": "訴える/魅力がある",
+  "meaning": "訴え/魅力（名）、訴える/魅力がある（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The design appeals to young buyers.",
   "exampleJa": "その意匠は若い購買層に受ける。"
  },
  {
   "term": "approach",
-  "meaning": "近づく/取り組む",
+  "meaning": "手法/接近（名）、近づく/取り組む（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We approach each client personally.",
   "exampleJa": "私たちは各顧客に個別に対応する。"
  },
@@ -2817,9 +2817,9 @@
  },
  {
   "term": "attempt",
-  "meaning": "試みる",
+  "meaning": "試み（名）、試みる（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We attempted a new method.",
   "exampleJa": "私たちは新しい方法を試みた。"
  },
@@ -2857,9 +2857,9 @@
  },
  {
   "term": "bid",
-  "meaning": "入札する",
+  "meaning": "入札（名）、入札する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Three firms bid on the project.",
   "exampleJa": "3社がその事業に入札した。"
  },
@@ -2873,9 +2873,9 @@
  },
  {
   "term": "book",
-  "meaning": "予約する",
+  "meaning": "本（名）、予約する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Book your seat early.",
   "exampleJa": "早めに席を予約してください。"
  },
@@ -2921,17 +2921,17 @@
  },
  {
   "term": "challenge",
-  "meaning": "異議を唱える/挑む",
+  "meaning": "課題/挑戦（名）、異議を唱える/挑む（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "She challenged the decision.",
   "exampleJa": "彼女はその決定に異議を唱えた。"
  },
  {
   "term": "charge",
-  "meaning": "請求する",
+  "meaning": "料金/責任（名）、請求する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We charge a small fee.",
   "exampleJa": "私たちは少額の料金を請求します。"
  },
@@ -2945,9 +2945,9 @@
  },
  {
   "term": "claim",
-  "meaning": "主張する/請求する",
+  "meaning": "主張/請求（名）、主張する/請求する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "She claimed a refund.",
   "exampleJa": "彼女は返金を請求した。"
  },
@@ -2961,9 +2961,9 @@
  },
  {
   "term": "comment",
-  "meaning": "意見を述べる/論評する",
+  "meaning": "意見/論評（名）、意見を述べる（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The manager commented on the plan.",
   "exampleJa": "その管理者はその計画について意見を述べた。"
  },
@@ -3009,9 +3009,9 @@
  },
  {
   "term": "complete",
-  "meaning": "完成させる",
+  "meaning": "完全な（形）、完成させる（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "形容詞/動詞",
   "example": "Complete the form online.",
   "exampleJa": "オンラインで用紙に記入してください。"
  },
@@ -3073,9 +3073,9 @@
  },
  {
   "term": "contact",
-  "meaning": "連絡する",
+  "meaning": "連絡/連絡先（名）、連絡する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Contact us for details.",
   "exampleJa": "詳細はご連絡ください。"
  },
@@ -3137,9 +3137,9 @@
  },
  {
   "term": "cover",
-  "meaning": "覆う/補償する",
+  "meaning": "覆い/表紙（名）、覆う/補償する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The plan covers repairs.",
   "exampleJa": "その保険は修理を補償する。"
  },
@@ -3153,9 +3153,9 @@
  },
  {
   "term": "credit",
-  "meaning": "信用する/入金する",
+  "meaning": "信用/功績（名）、入金する/信用する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We credited your account.",
   "exampleJa": "私たちはあなたの口座に入金しました。"
  },
@@ -3225,9 +3225,9 @@
  },
  {
   "term": "delay",
-  "meaning": "遅らせる",
+  "meaning": "遅れ（名）、遅らせる（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The storm delayed the flight.",
   "exampleJa": "その嵐がその便を遅らせた。"
  },
@@ -3377,9 +3377,9 @@
  },
  {
   "term": "display",
-  "meaning": "展示する",
+  "meaning": "展示（名）、展示する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We display new items weekly.",
   "exampleJa": "私たちは毎週新商品を展示している。"
  },
@@ -3625,9 +3625,9 @@
  },
  {
   "term": "experience",
-  "meaning": "経験する",
+  "meaning": "経験（名）、経験する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We experienced high demand.",
   "exampleJa": "私たちは高い需要を経験した。"
  },
@@ -3649,9 +3649,9 @@
  },
  {
   "term": "export",
-  "meaning": "輸出する",
+  "meaning": "輸出（名）、輸出する（動）※強勢が異なる",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We export to Asia.",
   "exampleJa": "私たちはアジアへ輸出している。"
  },
@@ -3721,9 +3721,9 @@
  },
  {
   "term": "finance",
-  "meaning": "融資する",
+  "meaning": "財政（名）、融資する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The bank financed the deal.",
   "exampleJa": "その銀行がその取引に融資した。"
  },
@@ -3793,9 +3793,9 @@
  },
  {
   "term": "function",
-  "meaning": "機能する",
+  "meaning": "機能/式典（名）、機能する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The device functions well.",
   "exampleJa": "その装置はよく機能する。"
  },
@@ -3881,9 +3881,9 @@
  },
  {
   "term": "host",
-  "meaning": "主催する",
+  "meaning": "主催者（名）、主催する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We host an annual event.",
   "exampleJa": "私たちは毎年催しを主催している。"
  },
@@ -3961,9 +3961,9 @@
  },
  {
   "term": "influence",
-  "meaning": "影響する",
+  "meaning": "影響（名）、影響する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Reviews influence buyers.",
   "exampleJa": "評価は購入者に影響する。"
  },
@@ -4153,33 +4153,33 @@
  },
  {
   "term": "lift",
-  "meaning": "持ち上げる/解除する",
+  "meaning": "上昇/（英）昇降機（名）、持ち上げる/解除する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "They lifted the ban.",
   "exampleJa": "彼らはその禁止を解除した。"
  },
  {
   "term": "limit",
-  "meaning": "制限する",
+  "meaning": "限界/制限（名）、制限する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We limit orders to ten.",
   "exampleJa": "私たちは注文を10個までに制限している。"
  },
  {
   "term": "link",
-  "meaning": "結びつける",
+  "meaning": "関連/連結（名）、結びつける（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The report links both issues.",
   "exampleJa": "その報告書は両方の問題を結びつけている。"
  },
  {
   "term": "load",
-  "meaning": "積む",
+  "meaning": "積荷/負荷（名）、積む（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Load the truck carefully.",
   "exampleJa": "トラックに慎重に積んでください。"
  },
@@ -4209,17 +4209,17 @@
  },
  {
   "term": "mark",
-  "meaning": "印をつける",
+  "meaning": "印/記号（名）、印をつける（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Mark the fragile boxes.",
   "exampleJa": "壊れやすい箱に印をつけてください。"
  },
  {
   "term": "market",
-  "meaning": "販売する",
+  "meaning": "市場（名）、販売する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We market to young adults.",
   "exampleJa": "私たちは若年層に販売している。"
  },
@@ -4233,9 +4233,9 @@
  },
  {
   "term": "measure",
-  "meaning": "測る",
+  "meaning": "対策/寸法（名）、測る（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Measure the room first.",
   "exampleJa": "まず部屋を測ってください。"
  },
@@ -4321,9 +4321,9 @@
  },
  {
   "term": "note",
-  "meaning": "書き留める",
+  "meaning": "メモ/注記（名）、書き留める/気づく（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Note the new hours.",
   "exampleJa": "新しい営業時間を書き留めてください。"
  },
@@ -4353,9 +4353,9 @@
  },
  {
   "term": "offer",
-  "meaning": "提供する",
+  "meaning": "申し出（名）、提供する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We offer free shipping.",
   "exampleJa": "当社は送料無料を提供している。"
  },
@@ -4385,9 +4385,9 @@
  },
  {
   "term": "order",
-  "meaning": "注文する",
+  "meaning": "注文/順序/命令（名）、注文する/命じる（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "Order online for delivery.",
   "exampleJa": "配達にはオンラインで注文してください。"
  },
@@ -4497,9 +4497,9 @@
  },
  {
   "term": "praise",
-  "meaning": "称賛する",
+  "meaning": "称賛（名）、称賛する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The boss praised the team.",
   "exampleJa": "上司はそのチームを称賛した。"
  },
@@ -4569,9 +4569,9 @@
  },
  {
   "term": "progress",
-  "meaning": "前進する",
+  "meaning": "進歩（名）、前進する（動）※強勢が異なる",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "The project is progressing.",
   "exampleJa": "その事業は進展している。"
  },
@@ -4585,9 +4585,9 @@
  },
  {
   "term": "project",
-  "meaning": "予測する/投影する",
+  "meaning": "計画（名）、予測する/投影する（動）※強勢が異なる",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "We project steady growth.",
   "exampleJa": "私たちは安定した成長を予測している。"
  },
@@ -4633,9 +4633,9 @@
  },
  {
   "term": "quote",
-  "meaning": "見積もる/引用する",
+  "meaning": "見積もり/引用（名）、見積もる/引用する（動）",
   "type": "word",
-  "pos": "動詞",
+  "pos": "名詞/動詞",
   "example": "They quoted a fair price.",
   "exampleJa": "彼らは妥当な価格を見積もった。"
  },
@@ -4825,9 +4825,9 @@
  },
  {
   "term": "clear",
-  "meaning": "明確な",
+  "meaning": "明確な（形）、取り除く/片付ける（動）",
   "type": "word",
-  "pos": "形容詞",
+  "pos": "形容詞/動詞",
   "example": "Give clear instructions.",
   "exampleJa": "明確な指示を出してください。"
  },
@@ -5225,9 +5225,9 @@
  },
  {
   "term": "empty",
-  "meaning": "空の",
+  "meaning": "空の（形）、空にする（動）",
   "type": "word",
-  "pos": "形容詞",
+  "pos": "形容詞/動詞",
   "example": "The warehouse is empty.",
   "exampleJa": "その倉庫は空だ。"
  },
@@ -5425,9 +5425,9 @@
  },
  {
   "term": "firm",
-  "meaning": "堅い/確固たる",
+  "meaning": "会社（名）、堅い/確固たる（形）",
   "type": "word",
-  "pos": "形容詞",
+  "pos": "名詞/形容詞",
   "example": "We hold firm on price.",
   "exampleJa": "私たちは価格を堅持する。"
  },
@@ -5977,9 +5977,9 @@
  },
  {
   "term": "loose",
-  "meaning": "ゆるい",
+  "meaning": "緩い（形）、緩める（動）",
   "type": "word",
-  "pos": "形容詞",
+  "pos": "形容詞/動詞",
   "example": "The bolt is loose.",
   "exampleJa": "そのボルトは緩んでいる。"
  },
