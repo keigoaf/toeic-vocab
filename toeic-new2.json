@@ -1,0 +1,1354 @@
+[
+ {
+  "term": "abide",
+  "meaning": "(規則に)従う",
+  "type": "word",
+  "pos": "動詞",
+  "example": "All members must abide by the rules.",
+  "exampleJa": "全会員は規則に従わなければならない。"
+ },
+ {
+  "term": "abolition",
+  "meaning": "廃止",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The abolition of the fee pleased customers.",
+  "exampleJa": "その料金の廃止は顧客を喜ばせた。"
+ },
+ {
+  "term": "abound",
+  "meaning": "豊富にある",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Opportunities abound in this market.",
+  "exampleJa": "この市場には機会が豊富にある。"
+ },
+ {
+  "term": "acclaim",
+  "meaning": "称賛",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The product won critical acclaim.",
+  "exampleJa": "その製品は批評家の称賛を得た。"
+ },
+ {
+  "term": "acquaint",
+  "meaning": "詳しく知らせる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please acquaint yourself with the rules.",
+  "exampleJa": "規則をよく知っておいてください。"
+ },
+ {
+  "term": "addendum",
+  "meaning": "追加条項/補遺",
+  "type": "word",
+  "pos": "名詞",
+  "example": "An addendum was attached to the contract.",
+  "exampleJa": "契約書に追加条項が添付された。"
+ },
+ {
+  "term": "adherence",
+  "meaning": "順守",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Strict adherence to rules is expected.",
+  "exampleJa": "規則の厳格な順守が求められる。"
+ },
+ {
+  "term": "affix",
+  "meaning": "貼付する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Affix the label to the box.",
+  "exampleJa": "その箱にラベルを貼付してください。"
+ },
+ {
+  "term": "align",
+  "meaning": "一致させる/整える",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We aligned our goals with the client's.",
+  "exampleJa": "私たちは目標を顧客のものと一致させた。"
+ },
+ {
+  "term": "allergic",
+  "meaning": "アレルギーの",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Some guests are allergic to nuts.",
+  "exampleJa": "一部の客はナッツにアレルギーがある。"
+ },
+ {
+  "term": "amplify",
+  "meaning": "増幅する/強める",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Social media amplified the message.",
+  "exampleJa": "会員制交流サイトがその発信を強めた。"
+ },
+ {
+  "term": "apparatus",
+  "meaning": "装置/機構",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The lab installed new apparatus.",
+  "exampleJa": "研究室は新しい装置を設置した。"
+ },
+ {
+  "term": "apparel",
+  "meaning": "衣料品",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The store sells sports apparel.",
+  "exampleJa": "その店は運動用衣料品を売っている。"
+ },
+ {
+  "term": "appendix",
+  "meaning": "付録",
+  "type": "word",
+  "pos": "名詞",
+  "example": "See the appendix for full data.",
+  "exampleJa": "詳細なデータは付録を参照してください。"
+ },
+ {
+  "term": "appraiser",
+  "meaning": "鑑定士",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The appraiser valued the property fairly.",
+  "exampleJa": "その鑑定士は物件を公正に評価した。"
+ },
+ {
+  "term": "apprise",
+  "meaning": "通知する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Keep me apprised of any changes.",
+  "exampleJa": "変更があれば知らせ続けてください。"
+ },
+ {
+  "term": "backer",
+  "meaning": "支援者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The startup found a wealthy backer.",
+  "exampleJa": "その新興企業は裕福な支援者を見つけた。"
+ },
+ {
+  "term": "breakthrough",
+  "meaning": "躍進/大発見",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The team made a major breakthrough.",
+  "exampleJa": "そのチームは大きな躍進を遂げた。"
+ },
+ {
+  "term": "brisk",
+  "meaning": "活発な/きびきびした",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Sales were brisk over the weekend.",
+  "exampleJa": "週末の売れ行きは活発だった。"
+ },
+ {
+  "term": "bystander",
+  "meaning": "傍観者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A bystander reported the accident.",
+  "exampleJa": "傍観者がその事故を通報した。"
+ },
+ {
+  "term": "catalyst",
+  "meaning": "触媒/きっかけ",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The merger was a catalyst for growth.",
+  "exampleJa": "その合併は成長のきっかけとなった。"
+ },
+ {
+  "term": "checkout",
+  "meaning": "会計/精算",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please pay at the checkout.",
+  "exampleJa": "会計でお支払いください。"
+ },
+ {
+  "term": "clerk",
+  "meaning": "店員/事務員",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The clerk wrapped the gift neatly.",
+  "exampleJa": "店員はその贈り物をきれいに包んだ。"
+ },
+ {
+  "term": "coherent",
+  "meaning": "首尾一貫した",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The plan is clear and coherent.",
+  "exampleJa": "その計画は明確で首尾一貫している。"
+ },
+ {
+  "term": "collaborator",
+  "meaning": "協力者/共同制作者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She thanked her collaborators.",
+  "exampleJa": "彼女は協力者たちに感謝した。"
+ },
+ {
+  "term": "compilation",
+  "meaning": "編集/収集物",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The report is a compilation of data.",
+  "exampleJa": "その報告書はデータの収集物だ。"
+ },
+ {
+  "term": "consecutively",
+  "meaning": "連続して",
+  "type": "word",
+  "pos": "副詞",
+  "example": "The store opened stores consecutively.",
+  "exampleJa": "その店は連続して店舗を開いた。"
+ },
+ {
+  "term": "conveyor",
+  "meaning": "搬送装置",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The conveyor moves parts along the line.",
+  "exampleJa": "搬送装置が部品をラインに沿って運ぶ。"
+ },
+ {
+  "term": "cuisine",
+  "meaning": "料理(様式)",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The restaurant serves local cuisine.",
+  "exampleJa": "そのレストランは郷土料理を出す。"
+ },
+ {
+  "term": "culminate",
+  "meaning": "(最高潮に)達する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The project culminated in a launch event.",
+  "exampleJa": "その事業は発表会で最高潮に達した。"
+ },
+ {
+  "term": "deliverable",
+  "meaning": "成果物",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The final deliverable is due Friday.",
+  "exampleJa": "最終成果物は金曜日が期限だ。"
+ },
+ {
+  "term": "depletion",
+  "meaning": "枯渇",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The depletion of stock worried us.",
+  "exampleJa": "在庫の枯渇が私たちを心配させた。"
+ },
+ {
+  "term": "deploy",
+  "meaning": "配置する/展開する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We deployed staff to three branches.",
+  "exampleJa": "私たちは3つの支店に職員を配置した。"
+ },
+ {
+  "term": "designation",
+  "meaning": "指定/名称",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The product carries an eco designation.",
+  "exampleJa": "その製品には環境認定の名称が付いている。"
+ },
+ {
+  "term": "dignitary",
+  "meaning": "要人",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Several dignitaries attended the opening.",
+  "exampleJa": "数人の要人が開会式に出席した。"
+ },
+ {
+  "term": "dilemma",
+  "meaning": "板挟み",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Management faced a difficult dilemma.",
+  "exampleJa": "経営陣は難しい板挟みに直面した。"
+ },
+ {
+  "term": "directive",
+  "meaning": "指令",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A new safety directive was issued.",
+  "exampleJa": "新しい安全指令が出された。"
+ },
+ {
+  "term": "disclaimer",
+  "meaning": "免責事項",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Please read the disclaimer carefully.",
+  "exampleJa": "免責事項をよくお読みください。"
+ },
+ {
+  "term": "diversify",
+  "meaning": "多様化する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The firm diversified its product line.",
+  "exampleJa": "その会社は製品系列を多様化した。"
+ },
+ {
+  "term": "downside",
+  "meaning": "不利な面",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The downside is the longer wait.",
+  "exampleJa": "不利な面は待ち時間が長いことだ。"
+ },
+ {
+  "term": "embark",
+  "meaning": "乗り出す/着手する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We embarked on a major project.",
+  "exampleJa": "私たちは大きな事業に着手した。"
+ },
+ {
+  "term": "emblem",
+  "meaning": "象徴/紋章",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The logo is an emblem of quality.",
+  "exampleJa": "そのロゴは品質の象徴だ。"
+ },
+ {
+  "term": "eminent",
+  "meaning": "著名な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "An eminent scholar gave the talk.",
+  "exampleJa": "著名な学者が講演を行った。"
+ },
+ {
+  "term": "emulate",
+  "meaning": "見習う/模倣する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "New staff emulate top performers.",
+  "exampleJa": "新人は優秀者を見習う。"
+ },
+ {
+  "term": "envision",
+  "meaning": "思い描く",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We envision a paperless office.",
+  "exampleJa": "私たちは紙を使わない事務所を思い描いている。"
+ },
+ {
+  "term": "epidemic",
+  "meaning": "流行病",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The epidemic disrupted global supply.",
+  "exampleJa": "その流行病は世界の供給を混乱させた。"
+ },
+ {
+  "term": "errata",
+  "meaning": "正誤表",
+  "type": "word",
+  "pos": "名詞",
+  "example": "An errata sheet lists the corrections.",
+  "exampleJa": "正誤表に訂正が列挙されている。"
+ },
+ {
+  "term": "excerpt",
+  "meaning": "抜粋",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She read an excerpt from the report.",
+  "exampleJa": "彼女はその報告書から抜粋を読んだ。"
+ },
+ {
+  "term": "explicitly",
+  "meaning": "明確に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "The rule is explicitly stated.",
+  "exampleJa": "その規則は明確に述べられている。"
+ },
+ {
+  "term": "footnote",
+  "meaning": "脚注",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The source is given in a footnote.",
+  "exampleJa": "出典は脚注に記されている。"
+ },
+ {
+  "term": "forefront",
+  "meaning": "最前線",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The firm is at the forefront of design.",
+  "exampleJa": "その会社は設計の最前線にいる。"
+ },
+ {
+  "term": "formation",
+  "meaning": "形成/編成",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The formation of the team took weeks.",
+  "exampleJa": "そのチームの編成には数週間かかった。"
+ },
+ {
+  "term": "frontier",
+  "meaning": "最先端/辺境",
+  "type": "word",
+  "pos": "名詞",
+  "example": "AI is a new business frontier.",
+  "exampleJa": "人工知能は新しい商売の最先端だ。"
+ },
+ {
+  "term": "garner",
+  "meaning": "獲得する/集める",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The product garnered great reviews.",
+  "exampleJa": "その製品は高い評価を獲得した。"
+ },
+ {
+  "term": "heighten",
+  "meaning": "高める",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The ad heightened brand awareness.",
+  "exampleJa": "その広告は銘柄の認知度を高めた。"
+ },
+ {
+  "term": "hindrance",
+  "meaning": "妨げ",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Poor signage was a hindrance.",
+  "exampleJa": "分かりにくい標識が妨げだった。"
+ },
+ {
+  "term": "increment",
+  "meaning": "増加分",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Salaries rise in small increments.",
+  "exampleJa": "給与は小さな増加分で上がる。"
+ },
+ {
+  "term": "inevitably",
+  "meaning": "必然的に",
+  "type": "word",
+  "pos": "副詞",
+  "example": "Delays inevitably raise costs.",
+  "exampleJa": "遅延は必然的に費用を上げる。"
+ },
+ {
+  "term": "ingenuity",
+  "meaning": "創意工夫",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Their ingenuity solved the problem.",
+  "exampleJa": "彼らの創意工夫がその問題を解決した。"
+ },
+ {
+  "term": "layoff",
+  "meaning": "一時解雇",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The layoffs affected fifty workers.",
+  "exampleJa": "その一時解雇は50人の労働者に影響した。"
+ },
+ {
+  "term": "lodging",
+  "meaning": "宿泊(施設)",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Lodging is provided for out-of-town guests.",
+  "exampleJa": "遠方からの客には宿泊施設が提供される。"
+ },
+ {
+  "term": "lucid",
+  "meaning": "明快な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She gave a lucid explanation.",
+  "exampleJa": "彼女は明快な説明をした。"
+ },
+ {
+  "term": "mainstay",
+  "meaning": "主力/大黒柱",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Exports are the mainstay of the economy.",
+  "exampleJa": "輸出はその経済の主力だ。"
+ },
+ {
+  "term": "maximize",
+  "meaning": "最大化する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We aim to maximize efficiency.",
+  "exampleJa": "私たちは効率の最大化を目指している。"
+ },
+ {
+  "term": "mediator",
+  "meaning": "調停者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A mediator resolved the dispute.",
+  "exampleJa": "調停者がその紛争を解決した。"
+ },
+ {
+  "term": "nominal",
+  "meaning": "名目上の/わずかな",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "A nominal fee covers processing.",
+  "exampleJa": "名目上の料金が処理費用を賄う。"
+ },
+ {
+  "term": "nullify",
+  "meaning": "無効にする",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Missing signatures nullify the form.",
+  "exampleJa": "署名の欠落はその用紙を無効にする。"
+ },
+ {
+  "term": "obsolete",
+  "meaning": "時代遅れの",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We replaced obsolete equipment.",
+  "exampleJa": "私たちは時代遅れの機器を交換した。"
+ },
+ {
+  "term": "optimal",
+  "meaning": "最適な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We found the optimal solution.",
+  "exampleJa": "私たちは最適な解決策を見つけた。"
+ },
+ {
+  "term": "outskirts",
+  "meaning": "郊外",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The plant is on the outskirts of town.",
+  "exampleJa": "その工場は町の郊外にある。"
+ },
+ {
+  "term": "overdraft",
+  "meaning": "当座貸越",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The bank charged an overdraft fee.",
+  "exampleJa": "銀行は当座貸越の手数料を課した。"
+ },
+ {
+  "term": "packaging",
+  "meaning": "包装",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Eco-friendly packaging reduces waste.",
+  "exampleJa": "環境に優しい包装は廃棄物を減らす。"
+ },
+ {
+  "term": "paradigm",
+  "meaning": "模範/枠組み",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The launch marked a new paradigm.",
+  "exampleJa": "その発売は新しい枠組みを記した。"
+ },
+ {
+  "term": "paramount",
+  "meaning": "最重要の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Safety is of paramount importance.",
+  "exampleJa": "安全は最重要だ。"
+ },
+ {
+  "term": "patronage",
+  "meaning": "愛顧/後援",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Thank you for your continued patronage.",
+  "exampleJa": "いつものご愛顧に感謝します。"
+ },
+ {
+  "term": "pertain",
+  "meaning": "関係する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "This rule pertains to all staff.",
+  "exampleJa": "この規則は全職員に関係する。"
+ },
+ {
+  "term": "pinnacle",
+  "meaning": "頂点",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The award marked the pinnacle of her career.",
+  "exampleJa": "その賞は彼女の経歴の頂点を記した。"
+ },
+ {
+  "term": "plausible",
+  "meaning": "もっともらしい",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "That is a plausible explanation.",
+  "exampleJa": "それはもっともらしい説明だ。"
+ },
+ {
+  "term": "pledge",
+  "meaning": "誓約",
+  "type": "word",
+  "pos": "名詞/動詞",
+  "example": "The firm made a pledge to reduce waste.",
+  "exampleJa": "その会社は廃棄物削減の誓約をした。"
+ },
+ {
+  "term": "populate",
+  "meaning": "(データを)入れる/居住する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The form auto-populates your details.",
+  "exampleJa": "その用紙は詳細を自動で入力する。"
+ },
+ {
+  "term": "portfolio",
+  "meaning": "作品集/資産構成",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She presented her design portfolio.",
+  "exampleJa": "彼女は自分の設計作品集を提示した。"
+ },
+ {
+  "term": "precaution",
+  "meaning": "予防策",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Take precautions against theft.",
+  "exampleJa": "盗難への予防策を取ってください。"
+ },
+ {
+  "term": "preceding",
+  "meaning": "前の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "See the preceding paragraph.",
+  "exampleJa": "前の段落を参照してください。"
+ },
+ {
+  "term": "predecessor",
+  "meaning": "前任者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Her predecessor left detailed notes.",
+  "exampleJa": "彼女の前任者は詳細な記録を残した。"
+ },
+ {
+  "term": "predominantly",
+  "meaning": "主として",
+  "type": "word",
+  "pos": "副詞",
+  "example": "The staff are predominantly local.",
+  "exampleJa": "職員は主として地元の人だ。"
+ },
+ {
+  "term": "premise",
+  "meaning": "前提/敷地",
+  "type": "word",
+  "pos": "名詞",
+  "example": "No smoking is allowed on the premises.",
+  "exampleJa": "敷地内は禁煙だ。"
+ },
+ {
+  "term": "prerequisite",
+  "meaning": "前提条件",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Experience is a prerequisite for the role.",
+  "exampleJa": "経験がその職の前提条件だ。"
+ },
+ {
+  "term": "prevalent",
+  "meaning": "広く行き渡った",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Remote work is now prevalent.",
+  "exampleJa": "在宅勤務は今や広く行き渡っている。"
+ },
+ {
+  "term": "proceeds",
+  "meaning": "収益金",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Proceeds from the sale fund research.",
+  "exampleJa": "その売却の収益金が研究の資金となる。"
+ },
+ {
+  "term": "proponent",
+  "meaning": "支持者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She is a proponent of flexible hours.",
+  "exampleJa": "彼女は柔軟な勤務時間の支持者だ。"
+ },
+ {
+  "term": "prospectus",
+  "meaning": "目論見書",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Read the prospectus before investing.",
+  "exampleJa": "投資の前に目論見書を読んでください。"
+ },
+ {
+  "term": "provisional",
+  "meaning": "暫定の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We set a provisional date.",
+  "exampleJa": "私たちは暫定の日程を設定した。"
+ },
+ {
+  "term": "proximity",
+  "meaning": "近接",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The office's proximity to the station helps.",
+  "exampleJa": "事務所の駅への近さが役立つ。"
+ },
+ {
+  "term": "prudent",
+  "meaning": "慎重な/賢明な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "It is prudent to keep a reserve.",
+  "exampleJa": "蓄えを持つのは賢明だ。"
+ },
+ {
+  "term": "rapport",
+  "meaning": "信頼関係",
+  "type": "word",
+  "pos": "名詞",
+  "example": "She built a good rapport with clients.",
+  "exampleJa": "彼女は顧客と良い信頼関係を築いた。"
+ },
+ {
+  "term": "rationale",
+  "meaning": "論理的根拠",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Explain the rationale behind the change.",
+  "exampleJa": "その変更の根拠を説明してください。"
+ },
+ {
+  "term": "receivable",
+  "meaning": "売掛金",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Accounts receivable increased.",
+  "exampleJa": "売掛金が増加した。"
+ },
+ {
+  "term": "reception",
+  "meaning": "歓迎会/受付",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A welcome reception follows the tour.",
+  "exampleJa": "見学の後に歓迎会がある。"
+ },
+ {
+  "term": "recipient",
+  "meaning": "受取人",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The recipient signed for the parcel.",
+  "exampleJa": "受取人がその小包に署名した。"
+ },
+ {
+  "term": "reciprocal",
+  "meaning": "相互の",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We have a reciprocal agreement.",
+  "exampleJa": "私たちは相互の合意を持っている。"
+ },
+ {
+  "term": "redeem",
+  "meaning": "(クーポンを)使う/取り戻す",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Customers redeem points at checkout.",
+  "exampleJa": "顧客は会計時にポイントを使う。"
+ },
+ {
+  "term": "redundancy",
+  "meaning": "余剰/人員削減",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The merger caused some redundancies.",
+  "exampleJa": "その合併はいくらかの人員削減を招いた。"
+ },
+ {
+  "term": "refinement",
+  "meaning": "改良/洗練",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The design needs further refinement.",
+  "exampleJa": "その意匠にはさらなる改良が必要だ。"
+ },
+ {
+  "term": "refrain",
+  "meaning": "控える",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Please refrain from smoking here.",
+  "exampleJa": "ここでは喫煙をお控えください。"
+ },
+ {
+  "term": "reinforce",
+  "meaning": "補強する/強化する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The training reinforces good habits.",
+  "exampleJa": "その研修は良い習慣を強化する。"
+ },
+ {
+  "term": "remainder",
+  "meaning": "残り",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The remainder will ship next week.",
+  "exampleJa": "残りは来週出荷される。"
+ },
+ {
+  "term": "remittance",
+  "meaning": "送金",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The remittance arrived within a day.",
+  "exampleJa": "その送金は1日以内に届いた。"
+ },
+ {
+  "term": "remnant",
+  "meaning": "残り/名残",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We sold the remnants at a discount.",
+  "exampleJa": "私たちは残りを割引で売った。"
+ },
+ {
+  "term": "remuneration",
+  "meaning": "報酬",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The remuneration reflects experience.",
+  "exampleJa": "その報酬は経験を反映している。"
+ },
+ {
+  "term": "render",
+  "meaning": "(状態に)する/提供する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The update rendered the app faster.",
+  "exampleJa": "その更新はアプリを速くした。"
+ },
+ {
+  "term": "repercussion",
+  "meaning": "悪影響/余波",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The decision had serious repercussions.",
+  "exampleJa": "その決定は深刻な余波を及ぼした。"
+ },
+ {
+  "term": "resilience",
+  "meaning": "回復力",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The firm showed great resilience.",
+  "exampleJa": "その会社は大きな回復力を示した。"
+ },
+ {
+  "term": "resilient",
+  "meaning": "回復力のある",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The market proved resilient.",
+  "exampleJa": "その市場は回復力があると分かった。"
+ },
+ {
+  "term": "resonate",
+  "meaning": "共鳴する/響く",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The message resonated with buyers.",
+  "exampleJa": "その発信は購入者の心に響いた。"
+ },
+ {
+  "term": "restraint",
+  "meaning": "抑制/自制",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The firm showed spending restraint.",
+  "exampleJa": "その会社は支出の抑制を示した。"
+ },
+ {
+  "term": "retention",
+  "meaning": "維持/保持",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Staff retention improved this year.",
+  "exampleJa": "職員の定着は今年改善した。"
+ },
+ {
+  "term": "robust",
+  "meaning": "頑丈な/強固な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The system has robust security.",
+  "exampleJa": "そのシステムは強固な防護を持つ。"
+ },
+ {
+  "term": "scarcity",
+  "meaning": "不足/希少",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A scarcity of parts slowed production.",
+  "exampleJa": "部品の不足が生産を鈍らせた。"
+ },
+ {
+  "term": "scrutinize",
+  "meaning": "精査する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Auditors scrutinize the records.",
+  "exampleJa": "監査人は記録を精査する。"
+ },
+ {
+  "term": "scrutiny",
+  "meaning": "精査",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The accounts came under scrutiny.",
+  "exampleJa": "その会計は精査を受けた。"
+ },
+ {
+  "term": "shortcoming",
+  "meaning": "欠点",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The report noted several shortcomings.",
+  "exampleJa": "その報告書はいくつかの欠点を指摘した。"
+ },
+ {
+  "term": "spectrum",
+  "meaning": "範囲/連続体",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We serve a wide spectrum of clients.",
+  "exampleJa": "私たちは幅広い範囲の顧客に応対する。"
+ },
+ {
+  "term": "stagnant",
+  "meaning": "停滞した",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "Sales remained stagnant for months.",
+  "exampleJa": "売上は数か月停滞したままだった。"
+ },
+ {
+  "term": "stakeholder",
+  "meaning": "利害関係者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "All stakeholders attended the meeting.",
+  "exampleJa": "すべての利害関係者が会議に出席した。"
+ },
+ {
+  "term": "standby",
+  "meaning": "待機",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Extra staff are on standby.",
+  "exampleJa": "予備の職員が待機している。"
+ },
+ {
+  "term": "standpoint",
+  "meaning": "観点",
+  "type": "word",
+  "pos": "名詞",
+  "example": "From a legal standpoint, it is risky.",
+  "exampleJa": "法的観点からは、それは危険だ。"
+ },
+ {
+  "term": "stem",
+  "meaning": "(問題を)食い止める/生じる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The delay stems from a parts shortage.",
+  "exampleJa": "その遅延は部品不足から生じている。"
+ },
+ {
+  "term": "stipulation",
+  "meaning": "規定/条件",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The contract has one key stipulation.",
+  "exampleJa": "その契約には一つ重要な条件がある。"
+ },
+ {
+  "term": "sturdy",
+  "meaning": "頑丈な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The shelves are sturdy enough for tools.",
+  "exampleJa": "その棚は道具に十分耐えるほど頑丈だ。"
+ },
+ {
+  "term": "succession",
+  "meaning": "継承",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The board approved a succession plan.",
+  "exampleJa": "取締役会は継承計画を承認した。"
+ },
+ {
+  "term": "suffice",
+  "meaning": "足りる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "One sample will suffice for the test.",
+  "exampleJa": "試験には見本1つで足りる。"
+ },
+ {
+  "term": "supplement",
+  "meaning": "補う",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We supplement the team with contractors.",
+  "exampleJa": "私たちは請負業者でチームを補う。"
+ },
+ {
+  "term": "surge",
+  "meaning": "急増",
+  "type": "word",
+  "pos": "名詞",
+  "example": "There was a surge in online orders.",
+  "exampleJa": "オンライン注文の急増があった。"
+ },
+ {
+  "term": "surpass",
+  "meaning": "上回る/しのぐ",
+  "type": "word",
+  "pos": "動詞",
+  "example": "Sales surpassed all expectations.",
+  "exampleJa": "売上はすべての予想を上回った。"
+ },
+ {
+  "term": "surplus",
+  "meaning": "余剰",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We sold the surplus at a discount.",
+  "exampleJa": "私たちは余剰分を割引で売った。"
+ },
+ {
+  "term": "tailor",
+  "meaning": "仕立てる/合わせる",
+  "type": "word",
+  "pos": "動詞",
+  "example": "We tailor the service to each client.",
+  "exampleJa": "私たちは各顧客にサービスを合わせる。"
+ },
+ {
+  "term": "technician",
+  "meaning": "技術者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A technician repaired the machine.",
+  "exampleJa": "技術者がその機械を修理した。"
+ },
+ {
+  "term": "template",
+  "meaning": "ひな型",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Use the template for consistency.",
+  "exampleJa": "一貫性のためにひな型を使ってください。"
+ },
+ {
+  "term": "testimony",
+  "meaning": "証言",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Her testimony supported the claim.",
+  "exampleJa": "彼女の証言はその主張を裏付けた。"
+ },
+ {
+  "term": "threshold",
+  "meaning": "敷居/基準値",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Orders above the threshold ship free.",
+  "exampleJa": "基準値を超える注文は送料無料だ。"
+ },
+ {
+  "term": "tier",
+  "meaning": "階層/段",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The service has three pricing tiers.",
+  "exampleJa": "そのサービスには3つの価格階層がある。"
+ },
+ {
+  "term": "trait",
+  "meaning": "特性/特徴",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Reliability is a valued trait.",
+  "exampleJa": "信頼性は重んじられる特性だ。"
+ },
+ {
+  "term": "trajectory",
+  "meaning": "軌道/推移",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Sales are on an upward trajectory.",
+  "exampleJa": "売上は上昇軌道にある。"
+ },
+ {
+  "term": "transcript",
+  "meaning": "記録/写し",
+  "type": "word",
+  "pos": "名詞",
+  "example": "A transcript of the call was kept.",
+  "exampleJa": "その通話の記録が保管された。"
+ },
+ {
+  "term": "transition",
+  "meaning": "移行",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The transition to new software went well.",
+  "exampleJa": "新しいソフトへの移行はうまくいった。"
+ },
+ {
+  "term": "transparent",
+  "meaning": "透明な/明快な",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "We keep transparent pricing.",
+  "exampleJa": "当社は明快な価格設定を保っている。"
+ },
+ {
+  "term": "turnout",
+  "meaning": "参加者数/人出",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The turnout at the fair was excellent.",
+  "exampleJa": "その見本市の人出は素晴らしかった。"
+ },
+ {
+  "term": "undersigned",
+  "meaning": "署名者(下記署名者)",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The undersigned agrees to the terms.",
+  "exampleJa": "下記署名者は条件に同意する。"
+ },
+ {
+  "term": "undertaking",
+  "meaning": "事業/約束",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The project was a huge undertaking.",
+  "exampleJa": "その事業は大きな取り組みだった。"
+ },
+ {
+  "term": "unveil",
+  "meaning": "発表する/公開する",
+  "type": "word",
+  "pos": "動詞",
+  "example": "They unveiled a new model in Tokyo.",
+  "exampleJa": "彼らは東京で新型を発表した。"
+ },
+ {
+  "term": "uphold",
+  "meaning": "支持する/守る",
+  "type": "word",
+  "pos": "動詞",
+  "example": "The court upheld the decision.",
+  "exampleJa": "裁判所はその決定を支持した。"
+ },
+ {
+  "term": "upkeep",
+  "meaning": "維持費/保守",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The upkeep of the building is costly.",
+  "exampleJa": "その建物の維持費は高い。"
+ },
+ {
+  "term": "upside",
+  "meaning": "良い面/上昇",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The upside is lower running costs.",
+  "exampleJa": "良い面は運用費が安いことだ。"
+ },
+ {
+  "term": "uptake",
+  "meaning": "(利用の)取り込み/普及",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The uptake of the new app was fast.",
+  "exampleJa": "その新しいアプリの普及は速かった。"
+ },
+ {
+  "term": "utensil",
+  "meaning": "器具/用具",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Kitchen utensils are on the shelf.",
+  "exampleJa": "台所用具は棚にある。"
+ },
+ {
+  "term": "vacant",
+  "meaning": "空いている",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "The corner office is now vacant.",
+  "exampleJa": "角の事務所は今空いている。"
+ },
+ {
+  "term": "valuation",
+  "meaning": "評価額",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The valuation exceeded expectations.",
+  "exampleJa": "その評価額は予想を上回った。"
+ },
+ {
+  "term": "variance",
+  "meaning": "差異/ばらつき",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The variance from budget was small.",
+  "exampleJa": "予算との差異は小さかった。"
+ },
+ {
+  "term": "venture",
+  "meaning": "冒険的事業",
+  "type": "word",
+  "pos": "名詞/動詞",
+  "example": "The venture attracted many investors.",
+  "exampleJa": "その事業は多くの投資家を引きつけた。"
+ },
+ {
+  "term": "versed",
+  "meaning": "精通した",
+  "type": "word",
+  "pos": "形容詞",
+  "example": "She is well versed in tax law.",
+  "exampleJa": "彼女は税法に精通している。"
+ },
+ {
+  "term": "viability",
+  "meaning": "実行可能性",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We studied the plan's viability.",
+  "exampleJa": "私たちはその計画の実行可能性を検討した。"
+ },
+ {
+  "term": "vicinity",
+  "meaning": "近辺",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Several hotels are in the vicinity.",
+  "exampleJa": "近辺にいくつかのホテルがある。"
+ },
+ {
+  "term": "vocation",
+  "meaning": "天職/職業",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Teaching is her true vocation.",
+  "exampleJa": "教えることが彼女の本当の天職だ。"
+ },
+ {
+  "term": "voucher",
+  "meaning": "引換券/伝票",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The voucher entitles you to a discount.",
+  "exampleJa": "その引換券で割引が受けられる。"
+ },
+ {
+  "term": "walkway",
+  "meaning": "通路",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Keep the walkway clear at all times.",
+  "exampleJa": "通路は常に空けておいてください。"
+ },
+ {
+  "term": "wardrobe",
+  "meaning": "衣装/衣類一式",
+  "type": "word",
+  "pos": "名詞",
+  "example": "Business attire fills her wardrobe.",
+  "exampleJa": "彼女の衣装はビジネス用の服で埋まっている。"
+ },
+ {
+  "term": "wholesaler",
+  "meaning": "卸売業者",
+  "type": "word",
+  "pos": "名詞",
+  "example": "We buy directly from the wholesaler.",
+  "exampleJa": "私たちは卸売業者から直接買う。"
+ },
+ {
+  "term": "workflow",
+  "meaning": "作業の流れ",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The new tool improved our workflow.",
+  "exampleJa": "その新しい道具は作業の流れを改善した。"
+ },
+ {
+  "term": "workload",
+  "meaning": "仕事量",
+  "type": "word",
+  "pos": "名詞",
+  "example": "The workload increased before the holidays.",
+  "exampleJa": "休暇前に仕事量が増えた。"
+ }
+]

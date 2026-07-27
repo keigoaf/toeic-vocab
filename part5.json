@@ -1,0 +1,1144 @@
+[
+ {
+  "id": "p5_001",
+  "level": 600,
+  "category": "品詞",
+  "sentence": "The new software update will significantly ____ the speed of data processing.",
+  "choices": [
+   "improve",
+   "improvement",
+   "improved",
+   "improvingly"
+  ],
+  "answer": 0,
+  "explanation": "助動詞 will の後ろは動詞の原形が入る。空所の前に副詞 significantly（大いに）があり、その後ろで the speed を目的語に取れるのは動詞。したがって原形の improve が正解。",
+  "choiceNotes": [
+   "improve：動詞「改善する」。will＋副詞＋（動詞原形）の形にちょうど当てはまる。正解。",
+   "improvement：名詞「改善」。will の後ろに名詞は置けない（動詞が必要）。不正解。",
+   "improved：過去形・過去分詞。will の後ろは原形なので過去形は不可。不正解。",
+   "improvingly：このような副詞は存在しない。造語。不正解。"
+  ],
+  "vocab": [
+   [
+    "significantly",
+    "著しく・大いに"
+   ],
+   [
+    "data processing",
+    "データ処理"
+   ],
+   [
+    "update",
+    "更新"
+   ]
+  ],
+  "translation": "新しいソフトウェアの更新は、データ処理の速度を著しく改善するだろう。"
+ },
+ {
+  "id": "p5_002",
+  "level": 600,
+  "category": "品詞",
+  "sentence": "All employees must complete the safety training ____ the end of the month.",
+  "choices": [
+   "by",
+   "until",
+   "during",
+   "among"
+  ],
+  "answer": 0,
+  "explanation": "「〜までに（完了）」という期限を表すのは by。動作の完了の締め切りには by を使う。until は「〜までずっと」という継続で、complete（完了する）とは合わない。",
+  "choiceNotes": [
+   "by：前置詞「〜までに」。期限・締め切りを表し、complete と好相性。正解。",
+   "until：前置詞「〜までずっと」。継続を表すため、一度きりの完了動作 complete とは合わない。不正解。",
+   "during：前置詞「〜の間」。後ろは期間を表す名詞が必要で「月末」という一点とは合わない。不正解。",
+   "among：前置詞「〜の中で」。3つ以上の集団の中を表し、時の期限とは無関係。不正解。"
+  ],
+  "vocab": [
+   [
+    "employee",
+    "従業員"
+   ],
+   [
+    "complete",
+    "完了する"
+   ],
+   [
+    "safety training",
+    "安全研修"
+   ]
+  ],
+  "translation": "全従業員は月末までに安全研修を修了しなければならない。"
+ },
+ {
+  "id": "p5_003",
+  "level": 600,
+  "category": "文法",
+  "sentence": "The manager asked the team to submit the report ____ possible.",
+  "choices": [
+   "as soon as",
+   "so soon as",
+   "as soon",
+   "sooner than"
+  ],
+  "answer": 0,
+  "explanation": "「できるだけ早く」は as soon as possible という決まった表現。as ... as possible の形を覚えておく。",
+  "choiceNotes": [
+   "as soon as：「as soon as possible＝できるだけ早く」の定型表現。正解。",
+   "so soon as：この形は現代英語では使わない。不正解。",
+   "as soon：as が1つでは as ... as の相関にならず possible とつながらない。不正解。",
+   "sooner than：比較級の表現で「〜より早く」。possible とは結びつかない。不正解。"
+  ],
+  "vocab": [
+   [
+    "submit",
+    "提出する"
+   ],
+   [
+    "report",
+    "報告書"
+   ],
+   [
+    "as soon as possible",
+    "できるだけ早く"
+   ]
+  ],
+  "translation": "部長はチームにできるだけ早く報告書を提出するよう求めた。"
+ },
+ {
+  "id": "p5_004",
+  "level": 730,
+  "category": "品詞",
+  "sentence": "The committee found the proposal ____ and approved it without changes.",
+  "choices": [
+   "accept",
+   "acceptance",
+   "acceptable",
+   "accepting"
+  ],
+  "answer": 2,
+  "explanation": "find＋目的語＋補語（形容詞）の第5文型。「その提案を（受け入れ可能だ）と思った」となるので、補語になる形容詞 acceptable が正解。",
+  "choiceNotes": [
+   "accept：動詞「受け入れる」。補語の位置に動詞原形は置けない。不正解。",
+   "acceptance：名詞「受諾」。find O C の C に名詞を置くと「提案＝受諾」の関係が不自然。不正解。",
+   "acceptable：形容詞「受け入れられる」。find O C の C（補語）にちょうど当てはまる。正解。",
+   "accepting：現在分詞・動名詞。ここでは形容詞的にも意味が通らない。不正解。"
+  ],
+  "vocab": [
+   [
+    "committee",
+    "委員会"
+   ],
+   [
+    "proposal",
+    "提案"
+   ],
+   [
+    "approve",
+    "承認する"
+   ],
+   [
+    "acceptable",
+    "受け入れられる"
+   ]
+  ],
+  "translation": "委員会はその提案を受け入れ可能だと判断し、変更なしで承認した。"
+ },
+ {
+  "id": "p5_005",
+  "level": 730,
+  "category": "語彙",
+  "sentence": "Sales figures for the last quarter ____ that demand is steadily increasing.",
+  "choices": [
+   "indicate",
+   "inspire",
+   "include",
+   "inform"
+  ],
+  "answer": 0,
+  "explanation": "「売上高が〜を示す」という意味で、that節（需要が着実に増えていること）を目的語に取れるのは indicate（示す）。データが何かを示す、という典型パターン。",
+  "choiceNotes": [
+   "indicate：動詞「示す・指し示す」。data indicate that ... の形が頻出。正解。",
+   "inspire：動詞「鼓舞する」。人を励ます意味で、データが示す文脈に合わない。不正解。",
+   "include：動詞「含む」。that節を目的語に取らず、意味も「含む」で不自然。不正解。",
+   "inform：動詞「知らせる」。inform は人を目的語に取る（inform someone that）。ここは主語がデータで不適。不正解。"
+  ],
+  "vocab": [
+   [
+    "sales figures",
+    "売上高"
+   ],
+   [
+    "quarter",
+    "四半期"
+   ],
+   [
+    "demand",
+    "需要"
+   ],
+   [
+    "steadily",
+    "着実に"
+   ],
+   [
+    "indicate",
+    "示す"
+   ]
+  ],
+  "translation": "前四半期の売上高は、需要が着実に増加していることを示している。"
+ },
+ {
+  "id": "p5_006",
+  "level": 600,
+  "category": "文法",
+  "sentence": "____ the heavy rain, the outdoor event was held as scheduled.",
+  "choices": [
+   "Despite",
+   "Although",
+   "Because",
+   "However"
+  ],
+  "answer": 0,
+  "explanation": "後ろが the heavy rain という名詞句なので、前置詞が必要。「〜にもかかわらず」の意味で名詞を続けられるのは Despite。Although は接続詞で後ろに文（S＋V）が必要。",
+  "choiceNotes": [
+   "Despite：前置詞「〜にもかかわらず」。後ろに名詞句を取れる。正解。",
+   "Although：接続詞「〜だけれども」。後ろに S＋V の文が必要で、名詞句だけは不可。不正解。",
+   "Because：接続詞「〜なので」。後ろに文が必要。また意味も逆接が自然で不適。不正解。",
+   "However：副詞「しかしながら」。前置詞ではなく名詞句を導けない。不正解。"
+  ],
+  "vocab": [
+   [
+    "despite",
+    "〜にもかかわらず"
+   ],
+   [
+    "outdoor",
+    "屋外の"
+   ],
+   [
+    "as scheduled",
+    "予定通りに"
+   ]
+  ],
+  "translation": "大雨にもかかわらず、その屋外イベントは予定通り開催された。"
+ },
+ {
+  "id": "p5_007",
+  "level": 730,
+  "category": "品詞",
+  "sentence": "The technician repaired the machine ____ so that production could resume quickly.",
+  "choices": [
+   "efficiency",
+   "efficient",
+   "efficiently",
+   "efficiencies"
+  ],
+  "answer": 2,
+  "explanation": "動詞 repaired を修飾するのは副詞。「効率的に修理した」となる efficiently が正解。動詞を説明するのは副詞、と押さえる。",
+  "choiceNotes": [
+   "efficiency：名詞「効率」。動詞を修飾できない。不正解。",
+   "efficient：形容詞「効率的な」。名詞を修飾する語で、動詞 repaired は修飾できない。不正解。",
+   "efficiently：副詞「効率的に」。動詞 repaired を修飾でき、意味も通る。正解。",
+   "efficiencies：名詞の複数形。やはり動詞は修飾できない。不正解。"
+  ],
+  "vocab": [
+   [
+    "technician",
+    "技術者"
+   ],
+   [
+    "repair",
+    "修理する"
+   ],
+   [
+    "resume",
+    "再開する"
+   ],
+   [
+    "efficiently",
+    "効率的に"
+   ]
+  ],
+  "translation": "技術者はその機械を効率的に修理したので、生産をすぐに再開できた。"
+ },
+ {
+  "id": "p5_008",
+  "level": 600,
+  "category": "文法",
+  "sentence": "The documents ____ by the assistant are ready for your review.",
+  "choices": [
+   "prepared",
+   "preparing",
+   "prepare",
+   "prepares"
+  ],
+  "answer": 0,
+  "explanation": "「助手によって準備された書類」と、書類は準備される側なので受け身の意味。過去分詞 prepared が名詞 documents を後ろから修飾する（分詞の後置修飾）。",
+  "choiceNotes": [
+   "prepared：過去分詞「準備された」。documents を受け身で後置修飾でき、by とも合う。正解。",
+   "preparing：現在分詞「準備している」。能動の意味になり「書類が準備する」と不自然。不正解。",
+   "prepare：動詞の原形。ここは修飾語が必要で、原形では文の構造が壊れる。不正解。",
+   "prepares：三単現。主語 documents は複数で数も合わず、構造上も不可。不正解。"
+  ],
+  "vocab": [
+   [
+    "document",
+    "書類"
+   ],
+   [
+    "assistant",
+    "助手"
+   ],
+   [
+    "review",
+    "確認・見直し"
+   ]
+  ],
+  "translation": "助手によって準備された書類は、あなたの確認の準備ができている。"
+ },
+ {
+  "id": "p5_009",
+  "level": 730,
+  "category": "語彙",
+  "sentence": "The company offers a ____ discount to customers who purchase in bulk.",
+  "choices": [
+   "substantial",
+   "substance",
+   "substantially",
+   "substantiate"
+  ],
+  "answer": 0,
+  "explanation": "名詞 discount を修飾する形容詞が必要。「かなりの割引」となる substantial（かなりの）が正解。品詞（形容詞）と意味の両方で選ぶ。",
+  "choiceNotes": [
+   "substantial：形容詞「かなりの」。名詞 discount を修飾でき、意味も自然。正解。",
+   "substance：名詞「物質・実体」。名詞は名詞 discount を直接修飾できない。不正解。",
+   "substantially：副詞「大幅に」。名詞 discount を修飾できない。不正解。",
+   "substantiate：動詞「立証する」。品詞が動詞で、ここには入らない。不正解。"
+  ],
+  "vocab": [
+   [
+    "discount",
+    "割引"
+   ],
+   [
+    "purchase",
+    "購入する"
+   ],
+   [
+    "in bulk",
+    "大量に・まとめて"
+   ],
+   [
+    "substantial",
+    "かなりの"
+   ]
+  ],
+  "translation": "その会社は、まとめて購入する顧客にかなりの割引を提供している。"
+ },
+ {
+  "id": "p5_010",
+  "level": 600,
+  "category": "文法",
+  "sentence": "Neither the manager ____ the staff were aware of the schedule change.",
+  "choices": [
+   "nor",
+   "or",
+   "and",
+   "but"
+  ],
+  "answer": 0,
+  "explanation": "Neither A nor B（AもBも〜ない）の相関表現。Neither とペアになるのは nor。定型としてセットで覚える。",
+  "choiceNotes": [
+   "nor：Neither ... nor ... の相関接続詞。「どちらも〜ない」を作る。正解。",
+   "or：Either ... or ... のペア。Neither とは組み合わせない。不正解。",
+   "and：単なる並列で、Neither との相関にならない。不正解。",
+   "but：逆接で、Neither とペアにならない。不正解。"
+  ],
+  "vocab": [
+   [
+    "neither A nor B",
+    "AもBも〜ない"
+   ],
+   [
+    "be aware of",
+    "〜に気づいている"
+   ],
+   [
+    "schedule change",
+    "予定変更"
+   ]
+  ],
+  "translation": "部長も職員も、その予定変更に気づいていなかった。"
+ },
+ {
+  "id": "p5_011",
+  "level": 730,
+  "category": "品詞",
+  "sentence": "The firm's success is largely ____ to its dedicated and skilled workforce.",
+  "choices": [
+   "attribute",
+   "attributable",
+   "attribution",
+   "attributed"
+  ],
+  "answer": 1,
+  "explanation": "be動詞 is の後ろで補語になり、「〜に起因する」の意味を作る。be attributable to（〜に起因する）という形容詞の定型表現。attributed でも受け身で近い意味だが、to と結ぶ形容詞句としては attributable が最も自然で頻出。",
+  "choiceNotes": [
+   "attribute：動詞「〜のせいにする」/名詞「特性」。is の直後に原形動詞は置けない。不正解。",
+   "attributable：形容詞「起因する」。be attributable to の形で頻出。正解。",
+   "attribution：名詞「帰属」。is の補語に名詞を置くと to と自然に結べない。不正解。",
+   "attributed：過去分詞。be attributed to も使うが、ここは形容詞 attributable が定型でより適切。不正解。"
+  ],
+  "vocab": [
+   [
+    "largely",
+    "主に"
+   ],
+   [
+    "dedicated",
+    "献身的な"
+   ],
+   [
+    "skilled",
+    "熟練した"
+   ],
+   [
+    "workforce",
+    "労働力・従業員"
+   ],
+   [
+    "be attributable to",
+    "〜に起因する"
+   ]
+  ],
+  "translation": "その会社の成功は、主に献身的で熟練した従業員によるものだ。"
+ },
+ {
+  "id": "p5_012",
+  "level": 600,
+  "category": "語彙",
+  "sentence": "Please ____ your seatbelt while the aircraft is taking off.",
+  "choices": [
+   "fasten",
+   "attach",
+   "connect",
+   "tie"
+  ],
+  "answer": 0,
+  "explanation": "「シートベルトを締める」は fasten your seatbelt という定型表現。機内アナウンスでも頻出。",
+  "choiceNotes": [
+   "fasten：動詞「(ベルトを)締める」。seatbelt との定番の組み合わせ。正解。",
+   "attach：動詞「取り付ける・添付する」。物を貼り付ける意味で、ベルトを締めるには使わない。不正解。",
+   "connect：動詞「接続する」。機器などをつなぐ意味で不適。不正解。",
+   "tie：動詞「結ぶ」。ひもを結ぶ意味で、留め具のあるシートベルトには fasten が自然。不正解。"
+  ],
+  "vocab": [
+   [
+    "fasten",
+    "締める"
+   ],
+   [
+    "seatbelt",
+    "シートベルト"
+   ],
+   [
+    "aircraft",
+    "航空機"
+   ],
+   [
+    "take off",
+    "離陸する"
+   ]
+  ],
+  "translation": "航空機が離陸する間は、シートベルトをお締めください。"
+ },
+ {
+  "id": "p5_013",
+  "level": 860,
+  "category": "文法",
+  "sentence": "____ approved by the board, the merger will proceed in the first quarter.",
+  "choices": [
+   "Once",
+   "Despite",
+   "Whether",
+   "During"
+  ],
+  "answer": 0,
+  "explanation": "「いったん〜されれば」の意味で分詞構文（Once (it is) approved）を導く接続詞 Once が正解。Once approved は Once it is approved の省略形。",
+  "choiceNotes": [
+   "Once：接続詞「いったん〜すると」。Once (being) approved の省略で自然。正解。",
+   "Despite：前置詞「〜にもかかわらず」。後ろに approved（分詞）を導くと意味が逆接で不自然。不正解。",
+   "Whether：接続詞「〜かどうか」。approved と結ぶと意味が通らない。不正解。",
+   "During：前置詞「〜の間」。後ろは名詞が必要で、分詞 approved を導けない。不正解。"
+  ],
+  "vocab": [
+   [
+    "approve",
+    "承認する"
+   ],
+   [
+    "board",
+    "取締役会"
+   ],
+   [
+    "merger",
+    "合併"
+   ],
+   [
+    "proceed",
+    "進む"
+   ],
+   [
+    "quarter",
+    "四半期"
+   ]
+  ],
+  "translation": "取締役会に承認され次第、その合併は第1四半期に進められる。"
+ },
+ {
+  "id": "p5_014",
+  "level": 730,
+  "category": "品詞",
+  "sentence": "The instructions were written so ____ that even beginners could follow them.",
+  "choices": [
+   "clear",
+   "clearly",
+   "clarity",
+   "clearance"
+  ],
+  "answer": 1,
+  "explanation": "were written（書かれた）という動詞を修飾するので副詞。so ... that 構文の中でも「明確に書かれた」となる副詞 clearly が正解。",
+  "choiceNotes": [
+   "clear：形容詞「明確な」。動詞 were written を修飾できない。不正解。",
+   "clearly：副詞「明確に」。written を修飾し、so ... that 構文にも合う。正解。",
+   "clarity：名詞「明快さ」。副詞の位置に名詞は不可。不正解。",
+   "clearance：名詞「許可・在庫一掃」。品詞も意味も合わない。不正解。"
+  ],
+  "vocab": [
+   [
+    "instructions",
+    "説明書・指示"
+   ],
+   [
+    "beginner",
+    "初心者"
+   ],
+   [
+    "follow",
+    "従う・理解する"
+   ],
+   [
+    "clearly",
+    "明確に"
+   ]
+  ],
+  "translation": "その説明書はとても明確に書かれていたので、初心者でも理解できた。"
+ },
+ {
+  "id": "p5_015",
+  "level": 600,
+  "category": "語彙",
+  "sentence": "The hotel is conveniently ____ near the train station and the shopping district.",
+  "choices": [
+   "located",
+   "arrived",
+   "placed",
+   "stayed"
+  ],
+  "answer": 0,
+  "explanation": "「（施設が）位置している」は be located。建物が場所にある、を表す定番表現。near ... と場所を続ける形で頻出。",
+  "choiceNotes": [
+   "located：過去分詞「位置している」。be located near ... の定型。正解。",
+   "arrived：動詞「到着した」。人や物が着く意味で、施設の所在には使わない。不正解。",
+   "placed：過去分詞「置かれた」。物を置く意味で、建物の立地には located が自然。不正解。",
+   "stayed：動詞「滞在した」。滞在の意味で所在を表さない。不正解。"
+  ],
+  "vocab": [
+   [
+    "conveniently",
+    "便利に"
+   ],
+   [
+    "be located",
+    "位置する"
+   ],
+   [
+    "district",
+    "地区"
+   ]
+  ],
+  "translation": "そのホテルは駅と商業地区の近くという便利な場所にある。"
+ },
+ {
+  "id": "p5_016",
+  "level": 730,
+  "category": "語彙",
+  "sentence": "The new policy aims to ____ the gap between departments and improve communication.",
+  "choices": [
+   "bridge",
+   "build",
+   "break",
+   "borrow"
+  ],
+  "answer": 0,
+  "explanation": "「(隔たり)を埋める・橋渡しする」は bridge the gap という定型表現。名詞 bridge（橋）が動詞として「橋渡しする」に転じたもの。",
+  "choiceNotes": [
+   "bridge：動詞「橋渡しする・埋める」。bridge the gap で「隔たりを埋める」の定番。正解。",
+   "build：動詞「建てる」。build the gap とは言わず、意味も不自然。不正解。",
+   "break：動詞「壊す」。gap を「壊す」では意味が通らない。不正解。",
+   "borrow：動詞「借りる」。文脈と無関係。不正解。"
+  ],
+  "vocab": [
+   [
+    "policy",
+    "方針"
+   ],
+   [
+    "aim to",
+    "〜を目指す"
+   ],
+   [
+    "bridge the gap",
+    "隔たりを埋める"
+   ],
+   [
+    "department",
+    "部署"
+   ]
+  ],
+  "translation": "新しい方針は、部署間の隔たりを埋め、意思疎通を改善することを目指している。"
+ },
+ {
+  "id": "p5_017",
+  "level": 600,
+  "category": "品詞",
+  "sentence": "Employees are encouraged to share their ____ during the monthly meeting.",
+  "choices": [
+   "suggest",
+   "suggestion",
+   "suggestions",
+   "suggesting"
+  ],
+  "answer": 2,
+  "explanation": "their（彼らの）の後ろは名詞。share の目的語にもなる。「意見・提案」は複数出し合うのが自然で、可算名詞の複数形 suggestions が最適。",
+  "choiceNotes": [
+   "suggest：動詞「提案する」。their の後ろ・share の目的語に動詞は置けない。不正解。",
+   "suggestion：名詞の単数形。可算名詞で通常は冠詞が必要。ここは複数形が自然で、単数は不適。不正解。",
+   "suggestions：名詞の複数形。their に続き share の目的語になる。正解。",
+   "suggesting：動名詞・現在分詞。their の後ろの目的語としては suggestions が自然で不適。不正解。"
+  ],
+  "vocab": [
+   [
+    "employee",
+    "従業員"
+   ],
+   [
+    "be encouraged to",
+    "〜するよう勧められる"
+   ],
+   [
+    "suggestion",
+    "提案"
+   ]
+  ],
+  "translation": "従業員は毎月の会議で自分の提案を共有するよう促されている。"
+ },
+ {
+  "id": "p5_018",
+  "level": 860,
+  "category": "文法",
+  "sentence": "The report must be revised, ____ will require at least two more days.",
+  "choices": [
+   "which",
+   "that",
+   "what",
+   "it"
+  ],
+  "answer": 0,
+  "explanation": "前の文全体（報告書を修正すること）を先行詞として受け、非制限用法（コンマ＋関係詞）で説明を加える which が正解。that は非制限用法では使えない。",
+  "choiceNotes": [
+   "which：関係代名詞。コンマの後で前の内容全体を受ける非制限用法。正解。",
+   "that：関係代名詞だがコンマ付き（非制限用法）では使えない。不正解。",
+   "what：先行詞を含む関係詞。すでに先行詞（前の文）があるため重複し不可。不正解。",
+   "it：代名詞。接続詞なしで2つの文をつなげず、文法的に不可。不正解。"
+  ],
+  "vocab": [
+   [
+    "revise",
+    "修正する"
+   ],
+   [
+    "require",
+    "必要とする"
+   ],
+   [
+    "at least",
+    "少なくとも"
+   ]
+  ],
+  "translation": "その報告書は修正されなければならず、それには少なくともあと2日かかるだろう。"
+ },
+ {
+  "id": "p5_019",
+  "level": 730,
+  "category": "語彙",
+  "sentence": "All applicants must ____ with the eligibility requirements before submitting the form.",
+  "choices": [
+   "comply",
+   "apply",
+   "reply",
+   "supply"
+  ],
+  "answer": 0,
+  "explanation": "「(規則・要件)に従う」は comply with。要件を満たす・順守する、の意味で TOEIC 頻出。前置詞 with とセットで覚える。",
+  "choiceNotes": [
+   "comply：動詞「従う」。comply with（〜に従う）の形で要件・規則と結ぶ。正解。",
+   "apply：動詞「申し込む・適用する」。apply for/to は使うが apply with は不自然。不正解。",
+   "reply：動詞「返答する」。reply to は使うが要件に「返答」では意味が通らない。不正解。",
+   "supply：動詞「供給する」。要件を「供給」では意味が合わない。不正解。"
+  ],
+  "vocab": [
+   [
+    "applicant",
+    "応募者"
+   ],
+   [
+    "comply with",
+    "〜に従う"
+   ],
+   [
+    "eligibility",
+    "資格"
+   ],
+   [
+    "requirement",
+    "要件"
+   ],
+   [
+    "submit",
+    "提出する"
+   ]
+  ],
+  "translation": "すべての応募者は、用紙を提出する前に資格要件を満たさなければならない。"
+ },
+ {
+  "id": "p5_020",
+  "level": 600,
+  "category": "文法",
+  "sentence": "The seminar was ____ informative that many attendees stayed for the extra session.",
+  "choices": [
+   "so",
+   "such",
+   "very",
+   "too"
+  ],
+  "answer": 0,
+  "explanation": "so＋形容詞＋that（とても〜なので…）の構文。informative は形容詞なので so が正解。such は such＋（形容詞＋）名詞の形を取る。",
+  "choiceNotes": [
+   "so：副詞。so＋形容詞＋that 構文を作る。informative（形容詞）と結ぶ。正解。",
+   "such：限定詞。such a(n)＋形容詞＋名詞 の形で、名詞が必要。ここは形容詞単独で不適。不正解。",
+   "very：副詞「とても」。that 節と相関しない（very ... that 構文はない）。不正解。",
+   "too：副詞「〜すぎる」。too ... to 不定詞の形で、that 節とは組まない。不正解。"
+  ],
+  "vocab": [
+   [
+    "seminar",
+    "セミナー"
+   ],
+   [
+    "informative",
+    "有益な"
+   ],
+   [
+    "attendee",
+    "出席者"
+   ],
+   [
+    "extra",
+    "追加の"
+   ]
+  ],
+  "translation": "そのセミナーはとても有益だったので、多くの出席者が追加の回にも残った。"
+ },
+ {
+  "id": "p5_021",
+  "level": 730,
+  "category": "品詞",
+  "sentence": "The manager praised the team for its ____ to complete the project ahead of schedule.",
+  "choices": [
+   "able",
+   "ability",
+   "ably",
+   "enable"
+  ],
+  "answer": 1,
+  "explanation": "its（その）の後ろは名詞。「〜する能力」で to 不定詞を続けられる名詞 ability が正解。its ability to do（〜する能力）の形。",
+  "choiceNotes": [
+   "able：形容詞「〜できる」。its の後ろに形容詞は置けない（名詞が必要）。不正解。",
+   "ability：名詞「能力」。its ability to do の形で自然。正解。",
+   "ably：副詞「上手に」。its の後ろに副詞は不可。不正解。",
+   "enable：動詞「可能にする」。its の後ろに動詞は置けない。不正解。"
+  ],
+  "vocab": [
+   [
+    "praise",
+    "称賛する"
+   ],
+   [
+    "ability",
+    "能力"
+   ],
+   [
+    "ahead of schedule",
+    "予定より早く"
+   ]
+  ],
+  "translation": "部長は、予定より早くその事業を完了させたチームの能力を称賛した。"
+ },
+ {
+  "id": "p5_022",
+  "level": 600,
+  "category": "語彙",
+  "sentence": "Due to the ____ demand for the product, the factory increased its output.",
+  "choices": [
+   "rising",
+   "raising",
+   "risen",
+   "rose"
+  ],
+  "answer": 0,
+  "explanation": "名詞 demand を修飾する形容詞的な現在分詞。「高まる需要」で rising（上昇している）が正解。rise は自動詞で「上がる」、現在分詞 rising が名詞を修飾する。",
+  "choiceNotes": [
+   "rising：現在分詞「高まっている」。自動詞 rise から。demand を修飾し「高まる需要」。正解。",
+   "raising：他動詞 raise の分詞で、後ろに目的語が必要。ここは目的語がなく不適。不正解。",
+   "risen：過去分詞。完了形（has risen）で使う形で、名詞を単独修飾しにくい。不正解。",
+   "rose：過去形（または名詞「バラ」）。名詞を修飾できない。不正解。"
+  ],
+  "vocab": [
+   [
+    "due to",
+    "〜のため"
+   ],
+   [
+    "demand",
+    "需要"
+   ],
+   [
+    "output",
+    "生産量"
+   ],
+   [
+    "rising",
+    "高まっている"
+   ]
+  ],
+  "translation": "その製品への需要の高まりのため、工場は生産量を増やした。"
+ },
+ {
+  "id": "p5_023",
+  "level": 860,
+  "category": "語彙",
+  "sentence": "The two companies reached an agreement after several rounds of ____ negotiations.",
+  "choices": [
+   "intense",
+   "intent",
+   "intend",
+   "intently"
+  ],
+  "answer": 0,
+  "explanation": "名詞 negotiations を修飾する形容詞。「激しい交渉」で intense（激しい）が正解。似た intent（意図）は名詞・形容詞だが意味が合わない。",
+  "choiceNotes": [
+   "intense：形容詞「激しい」。negotiations を修飾し「激しい交渉」。正解。",
+   "intent：名詞「意図」/形容詞「熱心な」。意味が交渉の激しさと合わず不自然。不正解。",
+   "intend：動詞「意図する」。名詞を修飾できない。不正解。",
+   "intently：副詞「熱心に」。名詞 negotiations を修飾できない。不正解。"
+  ],
+  "vocab": [
+   [
+    "reach an agreement",
+    "合意に達する"
+   ],
+   [
+    "negotiation",
+    "交渉"
+   ],
+   [
+    "intense",
+    "激しい"
+   ]
+  ],
+  "translation": "その2社は、数回にわたる激しい交渉の末に合意に達した。"
+ },
+ {
+  "id": "p5_024",
+  "level": 730,
+  "category": "文法",
+  "sentence": "The new equipment allows workers to complete tasks ____ they could before.",
+  "choices": [
+   "faster than",
+   "as fast",
+   "faster as",
+   "more fast than"
+  ],
+  "answer": 0,
+  "explanation": "比較級＋than の形。「以前できたより速く」で faster than が正解。fast の比較級は faster（more fast は誤り）。",
+  "choiceNotes": [
+   "faster than：fast の比較級 faster＋than。「〜より速く」で自然。正解。",
+   "as fast：as ... as の相関が崩れており（than と混在も不可）不完全。不正解。",
+   "faster as：比較級 faster に as は不可（than が必要）。不正解。",
+   "more fast than：fast は1音節語で more を付けず faster にする。不正解。"
+  ],
+  "vocab": [
+   [
+    "equipment",
+    "機器"
+   ],
+   [
+    "allow O to do",
+    "Oが〜するのを可能にする"
+   ],
+   [
+    "task",
+    "作業"
+   ],
+   [
+    "faster than",
+    "〜より速く"
+   ]
+  ],
+  "translation": "その新しい機器のおかげで、作業員は以前より速く作業を完了できる。"
+ },
+ {
+  "id": "p5_025",
+  "level": 600,
+  "category": "品詞",
+  "sentence": "The customer service team responded to the complaint in a ____ manner.",
+  "choices": [
+   "profession",
+   "professional",
+   "professionally",
+   "professionalism"
+  ],
+  "answer": 1,
+  "explanation": "a ____ manner の形で、名詞 manner を修飾する形容詞が入る。「専門的な対応で」で professional（専門的な）が正解。冠詞 a と名詞 manner の間は形容詞。",
+  "choiceNotes": [
+   "profession：名詞「職業」。名詞は名詞 manner を修飾できない。不正解。",
+   "professional：形容詞「専門的な・プロの」。a ... manner で manner を修飾。正解。",
+   "professionally：副詞「専門的に」。冠詞と名詞の間（形容詞の位置）に副詞は不可。不正解。",
+   "professionalism：名詞「専門意識」。名詞は manner を修飾できない。不正解。"
+  ],
+  "vocab": [
+   [
+    "respond to",
+    "〜に対応する"
+   ],
+   [
+    "complaint",
+    "苦情"
+   ],
+   [
+    "manner",
+    "方法・態度"
+   ],
+   [
+    "professional",
+    "専門的な"
+   ]
+  ],
+  "translation": "顧客サービスチームは、その苦情に専門的な対応で応じた。"
+ },
+ {
+  "id": "p5_026",
+  "level": 730,
+  "category": "語彙",
+  "sentence": "The financial report provides a ____ overview of the company's performance.",
+  "choices": [
+   "comprehensive",
+   "comprehend",
+   "comprehension",
+   "comprehensively"
+  ],
+  "answer": 0,
+  "explanation": "名詞 overview を修飾する形容詞。「包括的な概要」で comprehensive（包括的な）が正解。品詞（形容詞）と意味の両面から選ぶ。",
+  "choiceNotes": [
+   "comprehensive：形容詞「包括的な」。overview を修飾し意味も自然。正解。",
+   "comprehend：動詞「理解する」。名詞を修飾できない。不正解。",
+   "comprehension：名詞「理解」。名詞は名詞 overview を修飾できない。不正解。",
+   "comprehensively：副詞「包括的に」。名詞 overview を修飾できない。不正解。"
+  ],
+  "vocab": [
+   [
+    "financial",
+    "財務の"
+   ],
+   [
+    "comprehensive",
+    "包括的な"
+   ],
+   [
+    "overview",
+    "概要"
+   ],
+   [
+    "performance",
+    "業績"
+   ]
+  ],
+  "translation": "その財務報告書は、会社の業績についての包括的な概要を提供している。"
+ },
+ {
+  "id": "p5_027",
+  "level": 860,
+  "category": "文法",
+  "sentence": "____ he had prepared thoroughly, the candidate felt confident during the interview.",
+  "choices": [
+   "Having",
+   "Being",
+   "Had",
+   "With"
+  ],
+  "answer": 0,
+  "explanation": "完了分詞構文。Because he had prepared ... を分詞構文にすると Having prepared ... となる。ここでは主語つきの形だが、Having が完了の分詞を導き「十分に準備していたので」の意味を作る。",
+  "choiceNotes": [
+   "Having：完了分詞。Having prepared で「準備していたので」と理由・時の先行を表す。正解。",
+   "Being：現在分詞。had prepared（完了）と組み合わさず、時制が合わない。不正解。",
+   "Had：仮定法倒置（Had he prepared）なら別だが、後半が仮定の帰結でなく不適。不正解。",
+   "With：前置詞。後ろに S＋had＋過去分詞の文構造を導けない。不正解。"
+  ],
+  "vocab": [
+   [
+    "thoroughly",
+    "徹底的に"
+   ],
+   [
+    "candidate",
+    "候補者・受験者"
+   ],
+   [
+    "confident",
+    "自信のある"
+   ],
+   [
+    "interview",
+    "面接"
+   ]
+  ],
+  "translation": "十分に準備していたので、その候補者は面接の間ずっと自信を感じていた。"
+ },
+ {
+  "id": "p5_028",
+  "level": 600,
+  "category": "語彙",
+  "sentence": "Please make sure to ____ the attached file before replying to this email.",
+  "choices": [
+   "review",
+   "reveal",
+   "remove",
+   "reserve"
+  ],
+  "answer": 0,
+  "explanation": "「添付ファイルを確認する」で review（見直す・確認する）が正解。メールで添付を確認してから返信、という自然な流れ。",
+  "choiceNotes": [
+   "review：動詞「確認する・見直す」。添付ファイルを確認する意味で自然。正解。",
+   "reveal：動詞「明らかにする」。ファイルを「暴く」では意味が不自然。不正解。",
+   "remove：動詞「取り除く」。返信前にファイルを「削除」では文脈に合わない。不正解。",
+   "reserve：動詞「予約する」。ファイルを「予約」では意味が通らない。不正解。"
+  ],
+  "vocab": [
+   [
+    "make sure to",
+    "必ず〜する"
+   ],
+   [
+    "attached",
+    "添付された"
+   ],
+   [
+    "review",
+    "確認する"
+   ],
+   [
+    "reply",
+    "返信する"
+   ]
+  ],
+  "translation": "このメールに返信する前に、必ず添付ファイルをご確認ください。"
+ },
+ {
+  "id": "p5_029",
+  "level": 730,
+  "category": "品詞",
+  "sentence": "The renovation project was completed on time, ____ to the careful planning of the team.",
+  "choices": [
+   "thank",
+   "thanks",
+   "thankful",
+   "thankfully"
+  ],
+  "answer": 1,
+  "explanation": "「〜のおかげで」は thanks to という前置詞句。thanks to the careful planning（入念な計画のおかげで）の形で覚える。",
+  "choiceNotes": [
+   "thank：動詞「感謝する」。ここは前置詞句が必要で動詞は不可。不正解。",
+   "thanks：thanks to（〜のおかげで）の定型。理由を表し文にちょうど合う。正解。",
+   "thankful：形容詞「感謝している」。thankful to では「〜のおかげで」の意味にならない。不正解。",
+   "thankfully：副詞「ありがたいことに」。to と結んで「〜のおかげで」にはならない。不正解。"
+  ],
+  "vocab": [
+   [
+    "renovation",
+    "改装"
+   ],
+   [
+    "on time",
+    "時間通りに"
+   ],
+   [
+    "thanks to",
+    "〜のおかげで"
+   ],
+   [
+    "careful",
+    "入念な"
+   ]
+  ],
+  "translation": "チームの入念な計画のおかげで、その改装事業は予定通りに完了した。"
+ },
+ {
+  "id": "p5_030",
+  "level": 860,
+  "category": "語彙",
+  "sentence": "The manager's decision to relocate the office was met with ____ reactions from staff.",
+  "choices": [
+   "mixed",
+   "mixing",
+   "mixture",
+   "mix"
+  ],
+  "answer": 0,
+  "explanation": "名詞 reactions を修飾する形容詞的過去分詞。「賛否入り混じった反応」で mixed（入り混じった）が正解。mixed reactions は「賛否両論」を表す定番の組み合わせ。",
+  "choiceNotes": [
+   "mixed：過去分詞「入り混じった」。reactions を修飾し「賛否両論の反応」。正解。",
+   "mixing：現在分詞「混ぜている」。能動で「反応が混ぜている」は不自然。不正解。",
+   "mixture：名詞「混合物」。名詞は名詞 reactions を修飾できない。不正解。",
+   "mix：動詞・名詞。名詞 reactions を修飾できず、意味も不自然。不正解。"
+  ],
+  "vocab": [
+   [
+    "relocate",
+    "移転する"
+   ],
+   [
+    "be met with",
+    "〜に迎えられる・〜が返ってくる"
+   ],
+   [
+    "mixed",
+    "入り混じった"
+   ],
+   [
+    "reaction",
+    "反応"
+   ]
+  ],
+  "translation": "事務所を移転するという部長の決定には、職員から賛否入り混じった反応が返ってきた。"
+ }
+]

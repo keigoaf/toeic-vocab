@@ -2,10 +2,38 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-23 21:55 (JST)
-  バージョン: 3.0.0
+  ファイル最終更新日時: 2026-07-24 10:30 (JST)
+  バージョン: 3.3.0
 --------------------------------------------------------------------
   【更新履歴】
+    v3.3.0 (2026-07-24 10:30 JST)
+      - TOEIC Part5 演習モードを新設（30問で試作）。
+        ヘッダー左上のボタンで「単語」⇄「Part5」を切り替える。
+        Part5は短文の空所補充4択問題。文法・品詞・語彙をバランス良く、
+        難易度は600/730/860点レベルを混在（各問に目安を表示）。
+        解答後に以下を表示: 正解の理由 / 各選択肢の説明(品詞・意味・
+        なぜ不正解か) / 問題文の頻出語の意味 / 全文和訳。
+        問題データは part5.json。全問レベル別・カテゴリ別に出題可能。
+    v3.2.0 (2026-07-24 09:00 JST)
+      - 新規単語 第2弾（169語）を toeic-new2.json として追加。合計2860語。
+        既存2691語すべてと重複なし・全語に和訳/例文/例文和訳つき・
+        カタカナのみ訳なし・複数品詞は併記、を検証済み。
+        インポート画面に「追加169問（第2弾）」ボタンを新設。
+        ※既存語が広範なため、品質を優先し169語で確定（造語や範囲外の
+          難語で数を埋めることはしない方針）。
+      - 【不具合修正】単語検索欄の日本語入力バグを修正。
+        従来は入力のたびに画面全体を再描画していたため、日本語のIME
+        変換中に入力欄が作り直され、二重入力・変換不可・削除不良が
+        起きていた。入力中はリスト部分だけを更新する方式に変更。
+      - 検索対象を拡張: 英単語・意味に加え、例文・例文和訳・読み方も
+        対象に（読み方フィールド reading があれば検索可能）。
+      - 派生語データ(family)を新語込みで再生成（375→402語）。
+    v3.1.0 (2026-07-23 22:10 JST)
+      - カード裏の「同じ語根の仲間」に各語の日本語の意味を併記。
+        従来は単語＋品詞のみだったが、意味も表示することで、
+        派生語をその場でまとめて覚えられるようにした。
+        表示を横並びチップから縦積みリストに変更（単語/品詞/意味）。
+        family データ(word-relations.json)の各語に meaning を追加。
     v3.0.0 (2026-07-23 21:55 JST)
       - 「今日解いた語」の一覧でも、語をタップすると裏面(答え)の詳細を
         表示するようにした。詳細から「← 一覧に戻る」で一覧へ戻れる。
@@ -259,12 +287,62 @@
   /* ---- ヘッダー ---- */
   header{
     padding:18px 20px 12px;
-    display:flex;align-items:baseline;justify-content:space-between;gap:8px;
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
   }
-  header h1{font-size:19px;margin:0;letter-spacing:.02em;}
-  header .ver{font-size:11px;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+  header h1{font-size:17px;margin:0;letter-spacing:.02em;flex:1;text-align:center;}
+  header .ver{display:none;}
+  /* v3.3.0: モード切替ボタン */
+  .mode-switch{
+    background:var(--primary-soft);color:var(--primary);border:1px solid var(--primary);
+    border-radius:999px;padding:6px 12px;font-size:13px;font-weight:800;cursor:pointer;
+    white-space:nowrap;flex-shrink:0;
+  }
+  .mode-switch:active{opacity:.7;}
 
   main{flex:1;padding:0 16px;}
+
+  /* ================= v3.3.0: Part5 ================= */
+  .p5-topbar{display:flex;align-items:center;gap:10px;padding:10px 4px 4px;font-size:12px;}
+  .p5-back{background:none;border:none;color:var(--primary);font-weight:700;cursor:pointer;font-size:13px;}
+  .p5-progress{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .p5-level{margin-left:auto;color:var(--ink-soft);background:var(--bg);padding:3px 10px;border-radius:999px;font-weight:700;}
+  .p5-question{margin-top:8px;}
+  .p5-sentence{font-family:var(--font-en);font-size:17px;line-height:1.85;color:var(--ink);}
+  .p5-blank{color:var(--primary);font-weight:800;letter-spacing:1px;}
+  .p5-choices{display:flex;flex-direction:column;gap:9px;margin-top:14px;}
+  .p5-choice{display:flex;align-items:center;gap:10px;text-align:left;width:100%;
+    background:var(--surface);border:1.5px solid var(--line);border-radius:12px;
+    padding:13px 14px;font-size:15px;font-family:var(--font-en);cursor:pointer;color:var(--ink);
+    transition:border-color .12s, background .12s;}
+  .p5-choice:active{background:var(--bg);}
+  .p5-mark{display:inline-flex;align-items:center;justify-content:center;
+    width:24px;height:24px;border-radius:50%;background:var(--bg);color:var(--ink-soft);
+    font-weight:800;font-size:13px;flex-shrink:0;font-family:var(--font-jp);}
+  .p5-choice.p5-correct{border-color:var(--good);background:var(--good-soft);}
+  .p5-choice.p5-correct .p5-mark{background:var(--good);color:#fff;}
+  .p5-choice.p5-wrong{border-color:var(--bad);background:var(--bad-soft);}
+  .p5-choice.p5-wrong .p5-mark{background:var(--bad);color:#fff;}
+  .p5-choice.p5-dim{opacity:.55;}
+  .p5-result{margin-top:16px;padding:12px 14px;border-radius:12px;font-weight:800;font-size:15px;}
+  .p5-result.ok{background:var(--good-soft);color:var(--good);}
+  .p5-result.ng{background:var(--bad-soft);color:var(--bad);}
+  .p5-section-title{font-size:12px;font-weight:800;color:var(--ink-soft);letter-spacing:.06em;margin:18px 4px 8px;}
+  .p5-explain{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:14px;line-height:1.85;}
+  .p5-notes{display:flex;flex-direction:column;gap:7px;}
+  .p5-note{display:flex;gap:9px;align-items:flex-start;background:var(--surface);
+    border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.7;}
+  .p5-note-correct{border-color:var(--good);background:var(--good-soft);}
+  .p5-note-mark{display:inline-flex;align-items:center;justify-content:center;
+    width:20px;height:20px;border-radius:50%;background:var(--bg);
+    font-weight:800;font-size:11px;flex-shrink:0;}
+  .p5-note-correct .p5-note-mark{background:var(--good);color:#fff;}
+  .p5-vocab{display:flex;flex-direction:column;gap:6px;}
+  .p5-vocab-row{display:flex;gap:10px;align-items:baseline;background:var(--surface);
+    border:1px solid var(--line);border-radius:10px;padding:9px 12px;}
+  .p5-vw{font-family:var(--font-en);font-weight:700;font-size:14px;flex-shrink:0;}
+  .p5-vm{font-size:13px;color:var(--ink-soft);}
+  .p5-trans{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:14px;font-size:14px;line-height:1.85;}
 
   /* ---- カード共通 ---- */
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);}
@@ -332,12 +410,14 @@
   /* v2.6.0: 派生語・語源解説 */
   .relations{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);text-align:left;}
   .rel-title{font-size:11px;font-weight:800;color:var(--ink-soft);letter-spacing:.08em;margin-bottom:8px;}
-  .rel-list{display:flex;flex-wrap:wrap;gap:6px;}
-  .rel-item{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-family:var(--font-en);
-    background:var(--bg-soft);border:1px solid var(--line);border-radius:8px;padding:4px 9px;}
-  .rel-item small{font-family:var(--font-jp);font-size:10px;color:var(--ink-soft);}
-  .rel-self{background:var(--primary-soft);border-color:var(--primary);font-weight:700;}
-  .rel-bulb{cursor:pointer;font-size:13px;}
+  .rel-list{display:flex;flex-direction:column;gap:5px;}
+  .rel-item{display:flex;align-items:baseline;gap:7px;font-size:13px;
+    background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;}
+  .rel-word{font-family:var(--font-en);font-weight:700;}
+  .rel-pos{font-size:10px;color:var(--primary);font-weight:700;flex-shrink:0;}
+  .rel-mean{font-size:12px;color:var(--ink-soft);flex:1;min-width:0;}
+  .rel-self{background:var(--primary-soft);border-color:var(--primary);}
+  .rel-bulb{cursor:pointer;font-size:14px;flex-shrink:0;}
   .rel-ety-btn{margin-top:10px;width:100%;background:none;border:1px solid var(--primary);
     color:var(--primary);border-radius:10px;padding:8px;font-size:13px;font-weight:700;cursor:pointer;}
   .rel-ety-btn:active{background:var(--primary-soft);}
@@ -349,7 +429,7 @@
   .rv-row{display:flex;gap:10px;align-items:flex-start;padding:9px 2px;border-bottom:1px solid var(--line);}
   /* v3.0.0: タップで詳細表示 */
   .rv-tappable{cursor:pointer;}
-  .rv-tappable:active{background:var(--bg-soft);}
+  .rv-tappable:active{background:var(--bg);}
   .rv-arrow{color:var(--ink-soft);font-size:20px;line-height:1;align-self:center;}
   .rv-o{color:var(--good);font-weight:800;}
   .rv-x{color:var(--bad);font-weight:800;}
@@ -432,7 +512,10 @@
 <body>
 <div class="app">
   <header>
-    <h1>TOEIC 単語トレーナー</h1>
+    <button class="mode-switch" id="modeSwitch" onclick="toggleMode()">
+      <span id="modeLabel">単語</span> ▼
+    </button>
+    <h1 id="appTitle">TOEIC 単語トレーナー</h1>
     <span class="ver" id="verStamp"></span>
   </header>
   <main id="main"></main>
@@ -454,8 +537,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "3.0.0";
-const LAST_UPDATED = "2026-07-23 21:55 JST"; // ファイル最終更新日時
+const APP_VERSION = "3.3.0";
+const LAST_UPDATED = "2026-07-24 10:30 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -587,6 +670,7 @@ let STATE = {
   cards: [],
   settings: null,
   view: 'home',
+  mode: 'vocab',      // v3.3.0: 'vocab'（単語） or 'part5'
   session: null,      // 学習セッション {queue:[], idx, revealed, done, correct}
   editingId: null
 };
@@ -728,15 +812,19 @@ function renderRelations(term){
   let html = '<div class="relations">';
   if(fam.length > 0){
     html += '<div class="rel-title">同じ語根の仲間</div><div class="rel-list">';
-    // 自分自身も含めて表示（品詞つき）
-    const self = { term: term, pos: (STATE.cards.find(c=>c.term.toLowerCase()===key)?.pos)||'' };
+    // 自分自身も含めて表示（品詞・意味つき）
+    const selfCard = STATE.cards.find(c=>c.term.toLowerCase()===key);
+    const self = { term: term, pos: selfCard?.pos||'', meaning: selfCard?.meaning||'' };
     const items = [self].concat(fam);
     for(const it of items){
       const isSelf = it.term.toLowerCase() === key;
       const ety = RELATIONS.etymology[it.term.toLowerCase()];
       const bulb = ety ? ` <span class="rel-bulb" onclick="showEtymology('${attrEsc(it.term)}')">💡</span>` : '';
-      html += `<span class="rel-item ${isSelf?'rel-self':''}">`
-            + `${escapeHtml(it.term)}${it.pos?`<small>${escapeHtml(it.pos)}</small>`:''}${bulb}</span>`;
+      html += `<div class="rel-item ${isSelf?'rel-self':''}">`
+            + `<span class="rel-word">${escapeHtml(it.term)}</span>`
+            + `${it.pos?`<span class="rel-pos">${escapeHtml(it.pos)}</span>`:''}`
+            + `${it.meaning?`<span class="rel-mean">${escapeHtml(it.meaning)}</span>`:''}`
+            + `${bulb}</div>`;
     }
     html += '</div>';
   }
@@ -833,11 +921,12 @@ function setView(v){
 
 function render(){
   const main = document.getElementById('main');
-  document.getElementById('verStamp').textContent = `v${APP_VERSION} · ${LAST_UPDATED}`;
   if(STATE.view === 'home')      main.innerHTML = viewHome();
   else if(STATE.view === 'study')main.innerHTML = viewStudy();
   else if(STATE.view === 'manage')main.innerHTML = viewManage();
   else if(STATE.view === 'settings')main.innerHTML = viewSettings();
+  else if(STATE.view === 'p5home')main.innerHTML = viewP5Home();
+  else if(STATE.view === 'p5quiz')main.innerHTML = viewP5Quiz();
   bindDynamic();
 }
 
@@ -1013,26 +1102,10 @@ function viewStudy(){
    --------------------------------------------------------------- */
 let manageSearch = '';
 function viewManage(){
-  const q = manageSearch.toLowerCase();
-  const list = STATE.cards
-    .filter(c=> !q || c.term.toLowerCase().includes(q) || c.meaning.toLowerCase().includes(q))
-    .sort((a,b)=> b.createdAt - a.createdAt);
-
-  const rows = list.map(c=>`
-    <div class="card word-item">
-      <div class="grow tappable" onclick="showWordDetail('${c.id}')">
-        <div class="wt">${escapeHtml(c.term)} ${c.type==='idiom'?'<span style="font-size:11px;color:var(--accent)">熟</span>':''}</div>
-        <div class="wm">${(c.type==='word'&&c.pos)?`<span style="font-size:11px;font-weight:700;color:var(--primary)">${escapeHtml(c.pos)}</span> ・ `:''}${escapeHtml(c.meaning)}</div>
-      </div>
-      <span class="boxchip">B${c.box}</span>
-      <button class="iconbtn" onclick="openEdit('${c.id}')">✏️</button>
-      <button class="iconbtn" onclick="delCard('${c.id}')">🗑️</button>
-    </div>`).join('');
-
   return `
   <div class="section-title">単語・熟語（${STATE.cards.length}）</div>
   <div class="toolbar">
-    <div class="search"><input type="text" id="searchBox" placeholder="検索…" value="${escapeHtml(manageSearch)}"></div>
+    <div class="search"><input type="text" id="searchBox" placeholder="検索（英語・意味・読み方）…" value="${escapeHtml(manageSearch)}"></div>
     <button class="btn btn-primary small" onclick="openEdit(null)">＋ 追加</button>
   </div>
   <div class="toolbar">
@@ -1040,7 +1113,7 @@ function viewManage(){
     <button class="btn btn-ghost small" onclick="openExport()" style="flex:1">📤 エクスポート</button>
   </div>
   <div class="word-list">
-    ${ list.length ? rows : `<div class="empty"><div class="big">📚</div><p>${manageSearch?'該当する語がありません':'まだ単語がありません。「＋ 追加」か「一括インポート」で登録しましょう。'}</p></div>` }
+    ${buildWordListHtml()}
   </div>
   <div class="foot">最終更新 ${LAST_UPDATED} ・ v${APP_VERSION}</div>
   `;
@@ -1096,6 +1169,167 @@ function viewSettings(){
 }
 
 /* ================================================================
+   v3.3.0: Part5 画面
+   ================================================================ */
+function viewP5Home(){
+  const total = PART5.questions.length;
+  const byLevel = {600:0, 730:0, 860:0};
+  const byCat = {};
+  PART5.questions.forEach(q=>{
+    byLevel[q.level] = (byLevel[q.level]||0)+1;
+    byCat[q.category] = (byCat[q.category]||0)+1;
+  });
+  const catText = Object.entries(byCat).map(([k,v])=>`${k} ${v}`).join(' ／ ');
+  return `
+  <div class="card today">
+    <div class="due-num">${total}</div>
+    <div class="due-label">Part 5 問題</div>
+    <div class="sub">${catText}</div>
+    <div class="sub" style="margin-top:4px">600点 ${byLevel[600]} ／ 730点 ${byLevel[730]} ／ 860点 ${byLevel[860]}</div>
+    <div style="margin-top:16px">
+      <button class="btn btn-primary" onclick="startP5('all')" style="width:100%">全${total}問を順番に解く</button>
+    </div>
+  </div>
+
+  <div class="section-title">レベル別に解く</div>
+  <div class="card pad">
+    <button class="btn btn-ghost small" onclick="startP5(600)" style="width:100%;margin-bottom:8px">600点レベル（${byLevel[600]}問）</button>
+    <button class="btn btn-ghost small" onclick="startP5(730)" style="width:100%;margin-bottom:8px">730点レベル（${byLevel[730]}問）</button>
+    <button class="btn btn-ghost small" onclick="startP5(860)" style="width:100%">860点レベル（${byLevel[860]}問）</button>
+  </div>
+
+  <div class="section-title">出題形式</div>
+  <div class="card pad">
+    <p class="note" style="margin:0">短文の空所に入る最も適切な語句を4つの選択肢から選びます。解答後に、正解の理由・各選択肢の説明・問題文の頻出語・全文和訳が表示されます。</p>
+  </div>
+
+  <div class="foot">TOEIC Part5 演習 ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* Part5 セッション開始（level='all' または 600/730/860） */
+function startP5(level){
+  let qs = PART5.questions.slice();
+  if(level !== 'all') qs = qs.filter(q=> q.level === level);
+  if(qs.length === 0){ toast('該当する問題がありません'); return; }
+  // 出題順をシャッフル
+  for(let i=qs.length-1; i>0; i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [qs[i],qs[j]] = [qs[j],qs[i]];
+  }
+  P5STATE.queue = qs;
+  P5STATE.idx = 0;
+  P5STATE.answered = false;
+  P5STATE.selected = null;
+  P5STATE.correct = 0;
+  P5STATE.done = false;
+  setView('p5quiz');
+}
+
+const P5_LEVEL_LABEL = {600:'600点レベル', 730:'730点レベル', 860:'860点レベル'};
+
+function viewP5Quiz(){
+  const s = P5STATE;
+  // 終了画面
+  if(s.done){
+    const rate = Math.round(s.correct / s.queue.length * 100);
+    return `
+    <div class="card today">
+      <div class="due-num">${s.correct}/${s.queue.length}</div>
+      <div class="due-label">正解数（正答率 ${rate}%）</div>
+      <div style="margin-top:16px">
+        <button class="btn btn-primary" onclick="setView('p5home')" style="width:100%">Part5ホームへ戻る</button>
+      </div>
+    </div>`;
+  }
+
+  const q = s.queue[s.idx];
+  const progress = `${s.idx+1} / ${s.queue.length}`;
+  const sentence = escapeHtml(q.sentence).replace('____', '<span class="p5-blank">____</span>');
+
+  // 選択肢ボタン
+  const choices = q.choices.map((c,i)=>{
+    let cls = 'p5-choice';
+    if(s.answered){
+      if(i === q.answer) cls += ' p5-correct';
+      else if(i === s.selected) cls += ' p5-wrong';
+      else cls += ' p5-dim';
+    }
+    const mark = ['A','B','C','D'][i];
+    return `<button class="${cls}" ${s.answered?'disabled':''} onclick="answerP5(${i})">
+      <span class="p5-mark">${mark}</span>${escapeHtml(c)}
+    </button>`;
+  }).join('');
+
+  // 解説（解答後のみ）
+  let explanation = '';
+  if(s.answered){
+    const vocabRows = q.vocab.map(([w,m])=>
+      `<div class="p5-vocab-row"><span class="p5-vw">${escapeHtml(w)}</span><span class="p5-vm">${escapeHtml(m)}</span></div>`
+    ).join('');
+    const noteRows = q.choiceNotes.map((n,i)=>{
+      const mark = ['A','B','C','D'][i];
+      const isAns = i === q.answer;
+      return `<div class="p5-note ${isAns?'p5-note-correct':''}">
+        <span class="p5-note-mark">${mark}</span>
+        <span>${escapeHtml(n)}</span>
+      </div>`;
+    }).join('');
+    const isCorrect = s.selected === q.answer;
+    explanation = `
+    <div class="p5-result ${isCorrect?'ok':'ng'}">
+      ${isCorrect?'✓ 正解':'✗ 不正解'}　正解は ${['A','B','C','D'][q.answer]}：${escapeHtml(q.choices[q.answer])}
+    </div>
+    <div class="p5-section-title">解説</div>
+    <div class="p5-explain">${escapeHtml(q.explanation)}</div>
+    <div class="p5-section-title">各選択肢</div>
+    <div class="p5-notes">${noteRows}</div>
+    <div class="p5-section-title">問題文の頻出語</div>
+    <div class="p5-vocab">${vocabRows}</div>
+    <div class="p5-section-title">全文和訳</div>
+    <div class="p5-trans">${escapeHtml(q.translation)}</div>
+    <button class="btn btn-primary" onclick="nextP5()" style="width:100%;margin-top:16px">
+      ${s.idx+1 >= s.queue.length ? '結果を見る' : '次の問題へ'}
+    </button>`;
+  }
+
+  return `
+  <div class="p5-topbar">
+    <button class="p5-back" onclick="setView('p5home')">← 中断</button>
+    <span class="p5-progress">${progress}</span>
+    <span class="p5-level">${P5_LEVEL_LABEL[q.level]}・${escapeHtml(q.category)}</span>
+  </div>
+  <div class="card pad p5-question">
+    <div class="p5-sentence">${sentence}</div>
+  </div>
+  <div class="p5-choices">${choices}</div>
+  ${explanation}
+  <div class="foot">TOEIC Part5 ・ v${APP_VERSION}</div>
+  `;
+}
+
+function answerP5(i){
+  if(P5STATE.answered) return;
+  P5STATE.selected = i;
+  P5STATE.answered = true;
+  if(i === P5STATE.queue[P5STATE.idx].answer) P5STATE.correct++;
+  render();
+  // 解説の先頭までスクロール
+  const el = document.querySelector('.p5-result');
+  if(el) el.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+function nextP5(){
+  const s = P5STATE;
+  s.idx++;
+  s.answered = false;
+  s.selected = null;
+  if(s.idx >= s.queue.length) s.done = true;
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ================================================================
    動的イベントのバインド（render後に呼ぶ）
    ================================================================ */
 function bindDynamic(){
@@ -1112,11 +1346,44 @@ function bindDynamic(){
   if(gy) gy.onclick = ()=> answer(true);
   if(gn) gn.onclick = ()=> answer(false);
 
-  // 検索
+  // 検索: v3.2.0 全体をrender()すると日本語IME変換中に入力欄が
+  // 作り直され、二重入力・変換不可・削除不良が起きる。
+  // そのため入力中はリスト部分(.word-list)のHTMLだけ差し替える。
   const sb = document.getElementById('searchBox');
   if(sb){
-    sb.oninput = ()=>{ manageSearch = sb.value; const list=document.querySelector('.word-list'); render(); const nb=document.getElementById('searchBox'); if(nb){nb.focus(); nb.setSelectionRange(nb.value.length,nb.value.length);} };
+    sb.oninput = ()=>{
+      manageSearch = sb.value;
+      const listEl = document.querySelector('.word-list');
+      if(listEl) listEl.innerHTML = buildWordListHtml();
+    };
   }
+}
+
+/* v3.2.0: 単語一覧の中身(行)だけを生成する。検索の絞り込みで
+   入力欄を作り直さずに済むよう、リスト部分を関数として切り出した。
+   検索対象: 英単語 / 意味 / 例文 / 例文和訳 / 読み方(かな) */
+function buildWordListHtml(){
+  const q = (manageSearch||'').trim().toLowerCase();
+  const list = STATE.cards.filter(c=>{
+    if(!q) return true;
+    const hay = [
+      c.term, c.meaning, c.example, c.exampleJa, c.reading
+    ].filter(Boolean).join(' ').toLowerCase();
+    return hay.includes(q);
+  }).sort((a,b)=> b.createdAt - a.createdAt);
+  if(list.length === 0){
+    return `<div class="empty"><div class="big">📚</div><p>${manageSearch?'該当する語がありません':'まだ単語がありません。「＋ 追加」か「一括インポート」で登録しましょう。'}</p></div>`;
+  }
+  return list.map(c=>`
+    <div class="card word-item">
+      <div class="grow tappable" onclick="showWordDetail('${c.id}')">
+        <div class="wt">${escapeHtml(c.term)} ${c.type==='idiom'?'<span style="font-size:11px;color:var(--accent)">熟</span>':''}</div>
+        <div class="wm">${(c.type==='word'&&c.pos)?`<span style="font-size:11px;font-weight:700;color:var(--primary)">${escapeHtml(c.pos)}</span> ・ `:''}${escapeHtml(c.meaning)}</div>
+      </div>
+      <span class="boxchip">B${c.box}</span>
+      <button class="iconbtn" onclick="openEdit('${c.id}')">✏️</button>
+      <button class="iconbtn" onclick="delCard('${c.id}')">🗑️</button>
+    </div>`).join('');
 }
 
 /* 採点処理 */
@@ -1229,6 +1496,7 @@ function openImport(){
     <button class="btn btn-primary" onclick="loadBundled('./toeic-extra.json')" style="margin-top:8px">追加54問を追加</button>
     <button class="btn btn-primary" onclick="loadBundled('./toeic-extra2.json')" style="margin-top:8px">法務・製造137問を追加</button>
     <button class="btn btn-primary" onclick="loadBundled('./toeic-new1000.json')" style="margin-top:8px">新規1000問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-new2.json')" style="margin-top:8px">追加169問（第2弾）を追加</button>
 
     <label class="fld" style="margin-top:16px">JSONファイルを読み込む</label>
     <input type="file" id="jsonFile" accept=".json,application/json" onchange="handleJsonFile(this)">
@@ -1480,7 +1748,7 @@ async function mergeBundledTranslations(){
   }
 
   for(const url of ['./toeic-500.json', './toeic-1000.json', './toeic-extra.json',
-                    './toeic-extra2.json', './toeic-new1000.json']){
+                    './toeic-extra2.json', './toeic-new1000.json', './toeic-new2.json']){
     try{
       const res = await fetch(url, { cache: 'no-store' });
       if(!res.ok) continue;
@@ -1686,6 +1954,7 @@ document.querySelectorAll('nav button').forEach(b=>{
 async function init(){
   STATE.settings = await loadSettings();
   await loadRelations();     // v2.6.0: 派生語・語源解説データを読み込む
+  await loadPart5();         // v3.3.0: Part5問題データを読み込む
   let cards = await loadCards();
   if(cards === null){
     // 初回起動: サンプル投入
@@ -1694,6 +1963,46 @@ async function init(){
   }
   STATE.cards = cards;
   setView('home');
+}
+
+/* ================================================================
+   v3.3.0: Part5モード
+   --------------------------------------------------------------
+   単語モード / Part5モード をヘッダー左上のボタンで切り替える。
+   Part5は文法・品詞・語彙の空所補充問題。1問ずつ4択で解答し、
+   解説・各選択肢の説明・頻出語・全文和訳を表示する。
+   ================================================================ */
+const PART5 = { questions: [] };
+const P5STATE = { queue:[], idx:0, answered:false, selected:null, correct:0, done:false };
+
+async function loadPart5(){
+  try{
+    const res = await fetch('./part5.json', { cache:'no-store' });
+    if(res.ok) PART5.questions = await res.json();
+  }catch(e){ console.warn('Part5データの読み込み失敗:', e); }
+}
+
+/* モード切替（単語 ⇄ Part5） */
+function toggleMode(){
+  STATE.mode = (STATE.mode === 'part5') ? 'vocab' : 'part5';
+  updateModeUI();
+  if(STATE.mode === 'part5'){ setView('p5home'); }
+  else { setView('home'); }
+}
+
+function updateModeUI(){
+  const label = document.getElementById('modeLabel');
+  const title = document.getElementById('appTitle');
+  const nav = document.querySelector('nav');
+  if(STATE.mode === 'part5'){
+    if(label) label.textContent = 'Part5';
+    if(title) title.textContent = 'TOEIC Part5 演習';
+    if(nav) nav.style.display = 'none';   // Part5は下部ナビを隠す
+  }else{
+    if(label) label.textContent = '単語';
+    if(title) title.textContent = 'TOEIC 単語トレーナー';
+    if(nav) nav.style.display = '';
+  }
 }
 init();
 

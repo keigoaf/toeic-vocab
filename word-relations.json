@@ -1,2409 +1,3057 @@
 {
  "family": {
-  "adequate": [
-   {
-    "term": "adequately",
-    "pos": "副詞"
-   }
-  ],
-  "adequately": [
-   {
-    "term": "adequate",
-    "pos": "形容詞"
-   }
-  ],
-  "exception": [
-   {
-    "term": "exceptional",
-    "pos": "形容詞"
-   }
-  ],
-  "exceptional": [
-   {
-    "term": "exception",
-    "pos": "名詞"
-   }
-  ],
-  "intention": [
-   {
-    "term": "intentional",
-    "pos": "形容詞"
-   },
-   {
-    "term": "intentionally",
-    "pos": "副詞"
-   }
-  ],
-  "intentional": [
-   {
-    "term": "intention",
-    "pos": "名詞"
-   },
-   {
-    "term": "intentionally",
-    "pos": "副詞"
-   }
-  ],
-  "intentionally": [
-   {
-    "term": "intention",
-    "pos": "名詞"
-   },
-   {
-    "term": "intentional",
-    "pos": "形容詞"
-   }
-  ],
-  "indicate": [
-   {
-    "term": "indication",
-    "pos": "名詞"
-   },
-   {
-    "term": "indicative",
-    "pos": "形容詞"
-   }
-  ],
-  "indication": [
-   {
-    "term": "indicate",
-    "pos": "動詞"
-   },
-   {
-    "term": "indicative",
-    "pos": "形容詞"
-   }
-  ],
-  "indicative": [
-   {
-    "term": "indicate",
-    "pos": "動詞"
-   },
-   {
-    "term": "indication",
-    "pos": "名詞"
-   }
-  ],
-  "operate": [
-   {
-    "term": "operator",
-    "pos": "名詞"
-   }
-  ],
-  "operator": [
-   {
-    "term": "operate",
-    "pos": "動詞"
-   }
-  ],
-  "generate": [
-   {
-    "term": "generation",
-    "pos": "名詞"
-   }
-  ],
-  "generation": [
-   {
-    "term": "generate",
-    "pos": "動詞"
-   }
-  ],
-  "reservation": [
-   {
-    "term": "reserve",
-    "pos": "名詞/動詞"
-   }
-  ],
-  "reserve": [
-   {
-    "term": "reservation",
-    "pos": "名詞"
-   }
-  ],
-  "complex": [
-   {
-    "term": "complexity",
-    "pos": "名詞"
-   }
-  ],
-  "complexity": [
-   {
-    "term": "complex",
-    "pos": "形容詞"
-   }
-  ],
-  "condition": [
-   {
-    "term": "conditional",
-    "pos": "形容詞"
-   }
-  ],
-  "conditional": [
-   {
-    "term": "condition",
-    "pos": "名詞"
-   }
-  ],
-  "advance": [
-   {
-    "term": "advancement",
-    "pos": "名詞"
-   }
-  ],
-  "advancement": [
-   {
-    "term": "advance",
-    "pos": "動詞"
-   }
-  ],
-  "migrate": [
-   {
-    "term": "migration",
-    "pos": "名詞"
-   }
-  ],
-  "migration": [
-   {
-    "term": "migrate",
-    "pos": "動詞"
-   }
-  ],
-  "fluctuate": [
-   {
-    "term": "fluctuating",
-    "pos": "形容詞"
-   },
-   {
-    "term": "fluctuation",
-    "pos": "名詞"
-   }
-  ],
-  "fluctuating": [
-   {
-    "term": "fluctuate",
-    "pos": "動詞"
-   },
-   {
-    "term": "fluctuation",
-    "pos": "名詞"
-   }
-  ],
-  "fluctuation": [
-   {
-    "term": "fluctuate",
-    "pos": "動詞"
-   },
-   {
-    "term": "fluctuating",
-    "pos": "形容詞"
-   }
-  ],
-  "contract": [
-   {
-    "term": "contractor",
-    "pos": "名詞"
-   }
-  ],
-  "contractor": [
-   {
-    "term": "contract",
-    "pos": "名詞/動詞"
-   }
-  ],
-  "arbitrate": [
-   {
-    "term": "arbitration",
-    "pos": "名詞"
-   },
-   {
-    "term": "arbitrator",
-    "pos": "名詞"
-   }
-  ],
-  "arbitration": [
-   {
-    "term": "arbitrate",
-    "pos": "動詞"
-   },
-   {
-    "term": "arbitrator",
-    "pos": "名詞"
-   }
-  ],
-  "arbitrator": [
-   {
-    "term": "arbitrate",
-    "pos": "動詞"
-   },
-   {
-    "term": "arbitration",
-    "pos": "名詞"
-   }
-  ],
-  "delegate": [
-   {
-    "term": "delegation",
-    "pos": "名詞"
-   }
-  ],
-  "delegation": [
-   {
-    "term": "delegate",
-    "pos": "名詞"
-   }
-  ],
-  "automatic": [
-   {
-    "term": "automatically",
-    "pos": "副詞"
-   }
-  ],
-  "automatically": [
-   {
-    "term": "automatic",
-    "pos": "形容詞"
-   }
-  ],
-  "compensate": [
-   {
-    "term": "compensation",
-    "pos": "名詞"
-   }
-  ],
-  "compensation": [
-   {
-    "term": "compensate",
-    "pos": "動詞"
-   }
-  ],
-  "allot": [
-   {
-    "term": "allotment",
-    "pos": "名詞"
-   }
-  ],
-  "allotment": [
-   {
-    "term": "allot",
-    "pos": "動詞"
-   }
-  ],
-  "respective": [
-   {
-    "term": "respectively",
-    "pos": "副詞"
-   }
-  ],
-  "respectively": [
-   {
-    "term": "respective",
-    "pos": "形容詞"
-   }
-  ],
-  "establish": [
-   {
-    "term": "establishment",
-    "pos": "名詞"
-   }
-  ],
-  "establishment": [
-   {
-    "term": "establish",
-    "pos": "動詞"
-   }
-  ],
-  "certificate": [
-   {
-    "term": "certification",
-    "pos": "名詞"
-   }
-  ],
-  "certification": [
-   {
-    "term": "certificate",
-    "pos": "名詞"
-   }
-  ],
-  "clear": [
-   {
-    "term": "clearance",
-    "pos": "名詞"
-   },
-   {
-    "term": "clearly",
-    "pos": "副詞"
-   }
-  ],
-  "clearance": [
-   {
-    "term": "clear",
-    "pos": "形容詞/動詞"
-   },
-   {
-    "term": "clearly",
-    "pos": "副詞"
-   }
-  ],
-  "clearly": [
-   {
-    "term": "clear",
-    "pos": "形容詞/動詞"
-   },
-   {
-    "term": "clearance",
-    "pos": "名詞"
-   }
-  ],
-  "innovate": [
-   {
-    "term": "innovation",
-    "pos": "名詞"
-   },
-   {
-    "term": "innovative",
-    "pos": "形容詞"
-   }
-  ],
-  "innovation": [
-   {
-    "term": "innovate",
-    "pos": "動詞"
-   },
-   {
-    "term": "innovative",
-    "pos": "形容詞"
-   }
-  ],
-  "innovative": [
-   {
-    "term": "innovate",
-    "pos": "動詞"
-   },
-   {
-    "term": "innovation",
-    "pos": "名詞"
-   }
-  ],
-  "limit": [
-   {
-    "term": "limitation",
-    "pos": "名詞"
-   }
-  ],
-  "limitation": [
-   {
-    "term": "limit",
-    "pos": "名詞/動詞"
-   }
-  ],
-  "account": [
-   {
-    "term": "accountable",
-    "pos": "形容詞"
-   }
-  ],
-  "accountable": [
-   {
-    "term": "account",
-    "pos": "名詞/動詞"
-   }
-  ],
-  "brief": [
-   {
-    "term": "briefly",
-    "pos": "副詞"
-   }
-  ],
-  "briefly": [
-   {
-    "term": "brief",
-    "pos": "形容詞"
-   }
-  ],
-  "invest": [
-   {
-    "term": "investment",
-    "pos": "名詞"
-   },
-   {
-    "term": "investor",
-    "pos": "名詞"
-   }
-  ],
-  "investment": [
-   {
-    "term": "invest",
-    "pos": "動詞"
-   },
-   {
-    "term": "investor",
-    "pos": "名詞"
-   }
-  ],
-  "investor": [
-   {
-    "term": "invest",
-    "pos": "動詞"
-   },
-   {
-    "term": "investment",
-    "pos": "名詞"
-   }
-  ],
-  "previous": [
-   {
-    "term": "previously",
-    "pos": "副詞"
-   }
-  ],
-  "previously": [
-   {
-    "term": "previous",
-    "pos": "形容詞"
-   }
-  ],
-  "constant": [
-   {
-    "term": "constantly",
-    "pos": "副詞"
-   }
-  ],
-  "constantly": [
-   {
-    "term": "constant",
-    "pos": "形容詞"
-   }
-  ],
-  "gradual": [
-   {
-    "term": "gradually",
-    "pos": "副詞"
-   }
-  ],
-  "gradually": [
-   {
-    "term": "gradual",
-    "pos": "形容詞"
-   }
-  ],
-  "entitle": [
-   {
-    "term": "entitlement",
-    "pos": "名詞"
-   }
-  ],
-  "entitlement": [
-   {
-    "term": "entitle",
-    "pos": "動詞"
-   }
-  ],
-  "present": [
-   {
-    "term": "presentation",
-    "pos": "名詞"
-   },
-   {
-    "term": "presently",
-    "pos": "副詞"
-   }
-  ],
-  "presentation": [
-   {
-    "term": "present",
-    "pos": "名詞/形容詞/動詞"
-   },
-   {
-    "term": "presently",
-    "pos": "副詞"
-   }
-  ],
-  "presently": [
-   {
-    "term": "present",
-    "pos": "名詞/形容詞/動詞"
-   },
-   {
-    "term": "presentation",
-    "pos": "名詞"
-   }
-  ],
-  "comfort": [
-   {
-    "term": "comfortable",
-    "pos": "形容詞"
-   }
-  ],
-  "comfortable": [
-   {
-    "term": "comfort",
-    "pos": "名詞"
-   }
-  ],
-  "employ": [
-   {
-    "term": "employer",
-    "pos": "名詞"
-   }
-  ],
-  "employer": [
-   {
-    "term": "employ",
-    "pos": "動詞"
-   }
-  ],
-  "authorization": [
-   {
-    "term": "authorize",
-    "pos": "動詞"
-   }
-  ],
-  "authorize": [
-   {
-    "term": "authorization",
-    "pos": "名詞"
-   }
-  ],
-  "prevent": [
-   {
-    "term": "preventable",
-    "pos": "形容詞"
-   },
-   {
-    "term": "preventive",
-    "pos": "形容詞"
-   }
-  ],
-  "preventable": [
-   {
-    "term": "prevent",
-    "pos": "動詞"
-   },
-   {
-    "term": "preventive",
-    "pos": "形容詞"
-   }
-  ],
-  "preventive": [
-   {
-    "term": "prevent",
-    "pos": "動詞"
-   },
-   {
-    "term": "preventable",
-    "pos": "形容詞"
-   }
-  ],
-  "renovate": [
-   {
-    "term": "renovation",
-    "pos": "名詞"
-   }
-  ],
-  "renovation": [
-   {
-    "term": "renovate",
-    "pos": "動詞"
-   }
-  ],
-  "deliberate": [
-   {
-    "term": "deliberately",
-    "pos": "副詞"
-   }
-  ],
-  "deliberately": [
-   {
-    "term": "deliberate",
-    "pos": "形容詞"
-   }
-  ],
-  "transfer": [
-   {
-    "term": "transferable",
-    "pos": "形容詞"
-   }
-  ],
-  "transferable": [
-   {
-    "term": "transfer",
-    "pos": "名詞/動詞"
-   }
-  ],
-  "retroactive": [
-   {
-    "term": "retroactively",
-    "pos": "副詞"
-   }
-  ],
-  "retroactively": [
-   {
-    "term": "retroactive",
-    "pos": "形容詞"
-   }
-  ],
-  "defect": [
-   {
-    "term": "defective",
-    "pos": "形容詞"
-   }
-  ],
-  "defective": [
-   {
-    "term": "defect",
-    "pos": "名詞"
-   }
-  ],
-  "illustrate": [
-   {
-    "term": "illustration",
-    "pos": "名詞"
-   }
-  ],
-  "illustration": [
-   {
-    "term": "illustrate",
-    "pos": "動詞"
-   }
-  ],
-  "exact": [
-   {
-    "term": "exactly",
-    "pos": "副詞"
-   }
-  ],
-  "exactly": [
-   {
-    "term": "exact",
-    "pos": "形容詞"
-   }
-  ],
-  "fulfill": [
-   {
-    "term": "fulfillment",
-    "pos": "名詞"
-   }
-  ],
-  "fulfillment": [
-   {
-    "term": "fulfill",
-    "pos": "動詞"
-   }
-  ],
-  "refund": [
-   {
-    "term": "refundable",
-    "pos": "形容詞"
-   }
-  ],
-  "refundable": [
-   {
-    "term": "refund",
-    "pos": "名詞"
-   }
-  ],
-  "organization": [
-   {
-    "term": "organize",
-    "pos": "動詞"
-   }
-  ],
-  "organize": [
-   {
-    "term": "organization",
-    "pos": "名詞"
-   }
-  ],
-  "impress": [
-   {
-    "term": "impressive",
-    "pos": "形容詞"
-   }
-  ],
-  "impressive": [
-   {
-    "term": "impress",
-    "pos": "動詞"
-   }
-  ],
-  "depart": [
-   {
-    "term": "department",
-    "pos": "名詞"
-   }
-  ],
-  "department": [
-   {
-    "term": "depart",
-    "pos": "動詞"
-   }
-  ],
-  "access": [
-   {
-    "term": "accessible",
-    "pos": "形容詞"
-   }
-  ],
-  "accessible": [
-   {
-    "term": "access",
-    "pos": "動詞"
-   }
-  ],
-  "evaluate": [
-   {
-    "term": "evaluation",
-    "pos": "名詞"
-   }
-  ],
-  "evaluation": [
-   {
-    "term": "evaluate",
-    "pos": "動詞"
-   }
-  ],
-  "invent": [
-   {
-    "term": "inventor",
-    "pos": "名詞"
-   }
-  ],
-  "inventor": [
-   {
-    "term": "invent",
-    "pos": "動詞"
-   }
-  ],
-  "apparent": [
-   {
-    "term": "apparently",
-    "pos": "副詞"
-   }
-  ],
-  "apparently": [
-   {
-    "term": "apparent",
-    "pos": "形容詞"
-   }
-  ],
-  "accredit": [
-   {
-    "term": "accreditation",
-    "pos": "名詞"
-   }
-  ],
-  "accreditation": [
-   {
-    "term": "accredit",
-    "pos": "動詞"
-   }
-  ],
-  "commence": [
-   {
-    "term": "commencement",
-    "pos": "名詞"
-   }
-  ],
-  "commencement": [
-   {
-    "term": "commence",
-    "pos": "動詞"
-   }
-  ],
-  "settle": [
-   {
-    "term": "settlement",
-    "pos": "名詞"
-   }
-  ],
-  "settlement": [
-   {
-    "term": "settle",
-    "pos": "動詞"
-   }
-  ],
-  "joint": [
-   {
-    "term": "jointly",
-    "pos": "副詞"
-   }
-  ],
-  "jointly": [
-   {
-    "term": "joint",
-    "pos": "形容詞"
-   }
-  ],
-  "retail": [
-   {
-    "term": "retailer",
-    "pos": "名詞"
-   }
-  ],
-  "retailer": [
-   {
-    "term": "retail",
-    "pos": "形容詞"
-   }
-  ],
-  "assist": [
-   {
-    "term": "assistance",
-    "pos": "名詞"
-   }
-  ],
-  "assistance": [
-   {
-    "term": "assist",
-    "pos": "動詞"
-   }
-  ],
-  "mutual": [
-   {
-    "term": "mutually",
-    "pos": "副詞"
-   }
-  ],
-  "mutually": [
-   {
-    "term": "mutual",
-    "pos": "形容詞"
-   }
-  ],
-  "merchandise": [
-   {
-    "term": "merchandising",
-    "pos": "名詞"
-   }
-  ],
-  "merchandising": [
-   {
-    "term": "merchandise",
-    "pos": "名詞"
-   }
-  ],
-  "thorough": [
-   {
-    "term": "thoroughly",
-    "pos": "副詞"
-   }
-  ],
-  "thoroughly": [
-   {
-    "term": "thorough",
-    "pos": "形容詞"
-   }
-  ],
-  "create": [
-   {
-    "term": "creative",
-    "pos": "形容詞"
-   }
-  ],
-  "creative": [
-   {
-    "term": "create",
-    "pos": "動詞"
-   }
-  ],
-  "final": [
-   {
-    "term": "finalize",
-    "pos": "動詞"
-   }
-  ],
-  "finalize": [
-   {
-    "term": "final",
-    "pos": "形容詞"
-   }
-  ],
-  "convenient": [
-   {
-    "term": "conveniently",
-    "pos": "副詞"
-   }
-  ],
-  "conveniently": [
-   {
-    "term": "convenient",
-    "pos": "形容詞"
-   }
-  ],
-  "expiration": [
-   {
-    "term": "expire",
-    "pos": "動詞"
-   }
-  ],
-  "expire": [
-   {
-    "term": "expiration",
-    "pos": "名詞"
-   }
-  ],
-  "endorse": [
-   {
-    "term": "endorsement",
-    "pos": "名詞"
-   }
-  ],
-  "endorsement": [
-   {
-    "term": "endorse",
-    "pos": "動詞"
-   }
-  ],
-  "exhaust": [
-   {
-    "term": "exhaustive",
-    "pos": "形容詞"
-   }
-  ],
-  "exhaustive": [
-   {
-    "term": "exhaust",
-    "pos": "動詞"
-   }
-  ],
-  "circulate": [
-   {
-    "term": "circulation",
-    "pos": "名詞"
-   }
-  ],
-  "circulation": [
-   {
-    "term": "circulate",
-    "pos": "動詞"
-   }
-  ],
-  "execute": [
-   {
-    "term": "executive",
-    "pos": "名詞/形容詞"
-   }
-  ],
-  "executive": [
-   {
-    "term": "execute",
-    "pos": "動詞"
-   }
-  ],
-  "interpret": [
-   {
-    "term": "interpretation",
-    "pos": "名詞"
-   }
-  ],
-  "interpretation": [
-   {
-    "term": "interpret",
-    "pos": "動詞"
-   }
-  ],
-  "abrupt": [
-   {
-    "term": "abruptly",
-    "pos": "副詞"
-   }
-  ],
-  "abruptly": [
-   {
-    "term": "abrupt",
-    "pos": "形容詞"
-   }
-  ],
-  "integrate": [
-   {
-    "term": "integration",
-    "pos": "名詞"
-   }
-  ],
-  "integration": [
-   {
-    "term": "integrate",
-    "pos": "動詞"
-   }
-  ],
-  "regulate": [
-   {
-    "term": "regulation",
-    "pos": "名詞"
-   }
-  ],
-  "regulation": [
-   {
-    "term": "regulate",
-    "pos": "動詞"
-   }
-  ],
-  "observation": [
-   {
-    "term": "observe",
-    "pos": "動詞"
-   }
-  ],
-  "observe": [
-   {
-    "term": "observation",
-    "pos": "名詞"
-   }
-  ],
-  "equip": [
-   {
-    "term": "equipment",
-    "pos": "名詞"
-   }
-  ],
-  "equipment": [
-   {
-    "term": "equip",
-    "pos": "動詞"
-   }
-  ],
-  "depreciate": [
-   {
-    "term": "depreciation",
-    "pos": "名詞"
-   }
-  ],
-  "depreciation": [
-   {
-    "term": "depreciate",
-    "pos": "動詞"
-   }
-  ],
-  "current": [
-   {
-    "term": "currently",
-    "pos": "副詞"
-   }
-  ],
-  "currently": [
-   {
-    "term": "current",
-    "pos": "形容詞"
-   }
-  ],
-  "attract": [
-   {
-    "term": "attractive",
-    "pos": "形容詞"
-   }
-  ],
-  "attractive": [
-   {
-    "term": "attract",
-    "pos": "動詞"
-   }
-  ],
-  "firm": [
-   {
-    "term": "firmly",
-    "pos": "副詞"
-   }
-  ],
-  "firmly": [
-   {
-    "term": "firm",
-    "pos": "名詞/形容詞"
-   }
-  ],
   "disposable": [
    {
     "term": "dispose",
-    "pos": "動詞"
+    "pos": "動詞",
+    "meaning": "処分する"
    }
   ],
   "dispose": [
    {
     "term": "disposable",
-    "pos": "形容詞"
-   }
-  ],
-  "effective": [
-   {
-    "term": "effectively",
-    "pos": "副詞"
-   }
-  ],
-  "effectively": [
-   {
-    "term": "effective",
-    "pos": "形容詞"
-   }
-  ],
-  "direct": [
-   {
-    "term": "directly",
-    "pos": "副詞"
-   }
-  ],
-  "directly": [
-   {
-    "term": "direct",
-    "pos": "動詞"
-   }
-  ],
-  "prohibit": [
-   {
-    "term": "prohibitive",
-    "pos": "形容詞"
-   }
-  ],
-  "prohibitive": [
-   {
-    "term": "prohibit",
-    "pos": "動詞"
-   }
-  ],
-  "install": [
-   {
-    "term": "installation",
-    "pos": "名詞"
-   },
-   {
-    "term": "installment",
-    "pos": "名詞"
-   }
-  ],
-  "installation": [
-   {
-    "term": "install",
-    "pos": "動詞"
-   },
-   {
-    "term": "installment",
-    "pos": "名詞"
-   }
-  ],
-  "installment": [
-   {
-    "term": "install",
-    "pos": "動詞"
-   },
-   {
-    "term": "installation",
-    "pos": "名詞"
-   }
-  ],
-  "contaminate": [
-   {
-    "term": "contamination",
-    "pos": "名詞"
-   }
-  ],
-  "contamination": [
-   {
-    "term": "contaminate",
-    "pos": "動詞"
-   }
-  ],
-  "accurate": [
-   {
-    "term": "accurately",
-    "pos": "副詞"
-   }
-  ],
-  "accurately": [
-   {
-    "term": "accurate",
-    "pos": "形容詞"
-   }
-  ],
-  "require": [
-   {
-    "term": "requirement",
-    "pos": "名詞"
-   }
-  ],
-  "requirement": [
-   {
-    "term": "require",
-    "pos": "動詞"
-   }
-  ],
-  "alternative": [
-   {
-    "term": "alternatively",
-    "pos": "副詞"
-   }
-  ],
-  "alternatively": [
-   {
-    "term": "alternative",
-    "pos": "形容詞/名詞"
-   }
-  ],
-  "enroll": [
-   {
-    "term": "enrollment",
-    "pos": "名詞"
-   }
-  ],
-  "enrollment": [
-   {
-    "term": "enroll",
-    "pos": "動詞"
-   }
-  ],
-  "moderate": [
-   {
-    "term": "moderator",
-    "pos": "名詞"
-   }
-  ],
-  "moderator": [
-   {
-    "term": "moderate",
-    "pos": "形容詞"
-   }
-  ],
-  "indefinite": [
-   {
-    "term": "indefinitely",
-    "pos": "副詞"
-   }
-  ],
-  "indefinitely": [
-   {
-    "term": "indefinite",
-    "pos": "形容詞"
-   }
-  ],
-  "cooperate": [
-   {
-    "term": "cooperation",
-    "pos": "名詞"
-   }
-  ],
-  "cooperation": [
-   {
-    "term": "cooperate",
-    "pos": "動詞"
-   }
-  ],
-  "annual": [
-   {
-    "term": "annually",
-    "pos": "副詞"
-   }
-  ],
-  "annually": [
-   {
-    "term": "annual",
-    "pos": "形容詞"
+    "pos": "形容詞",
+    "meaning": "使い捨ての"
    }
   ],
   "streamline": [
    {
     "term": "streamlining",
-    "pos": "名詞"
+    "pos": "名詞",
+    "meaning": "効率化"
    }
   ],
   "streamlining": [
    {
     "term": "streamline",
-    "pos": "動詞"
+    "pos": "動詞",
+    "meaning": "効率化する"
    }
   ],
-  "aware": [
+  "consecutive": [
    {
-    "term": "awareness",
-    "pos": "名詞"
+    "term": "consecutively",
+    "pos": "副詞",
+    "meaning": "連続して"
    }
   ],
-  "awareness": [
+  "consecutively": [
    {
-    "term": "aware",
-    "pos": "形容詞"
+    "term": "consecutive",
+    "pos": "形容詞",
+    "meaning": "連続した"
    }
   ],
-  "subsequent": [
+  "explicit": [
    {
-    "term": "subsequently",
-    "pos": "副詞"
+    "term": "explicitly",
+    "pos": "副詞",
+    "meaning": "明確に"
    }
   ],
-  "subsequently": [
+  "explicitly": [
    {
-    "term": "subsequent",
-    "pos": "形容詞"
+    "term": "explicit",
+    "pos": "形容詞",
+    "meaning": "明確な"
    }
   ],
-  "inspect": [
+  "annual": [
    {
-    "term": "inspector",
-    "pos": "名詞"
+    "term": "annually",
+    "pos": "副詞",
+    "meaning": "毎年"
    }
   ],
-  "inspector": [
+  "annually": [
    {
-    "term": "inspect",
-    "pos": "動詞"
+    "term": "annual",
+    "pos": "形容詞",
+    "meaning": "年間の"
    }
   ],
-  "document": [
+  "assist": [
    {
-    "term": "documentation",
-    "pos": "名詞"
+    "term": "assistance",
+    "pos": "名詞",
+    "meaning": "支援/援助"
    }
   ],
-  "documentation": [
+  "assistance": [
    {
-    "term": "document",
-    "pos": "動詞"
+    "term": "assist",
+    "pos": "動詞",
+    "meaning": "手伝う"
    }
   ],
-  "reimbursable": [
+  "indicate": [
    {
-    "term": "reimburse",
-    "pos": "動詞"
+    "term": "indication",
+    "pos": "名詞",
+    "meaning": "兆候"
    },
    {
-    "term": "reimbursement",
-    "pos": "名詞"
+    "term": "indicative",
+    "pos": "形容詞",
+    "meaning": "示唆する"
    }
   ],
-  "reimburse": [
+  "indication": [
    {
-    "term": "reimbursable",
-    "pos": "形容詞"
+    "term": "indicate",
+    "pos": "動詞",
+    "meaning": "示す"
    },
    {
-    "term": "reimbursement",
-    "pos": "名詞"
+    "term": "indicative",
+    "pos": "形容詞",
+    "meaning": "示唆する"
    }
   ],
-  "reimbursement": [
+  "indicative": [
    {
-    "term": "reimbursable",
-    "pos": "形容詞"
+    "term": "indicate",
+    "pos": "動詞",
+    "meaning": "示す"
    },
    {
-    "term": "reimburse",
-    "pos": "動詞"
+    "term": "indication",
+    "pos": "名詞",
+    "meaning": "兆候"
    }
   ],
-  "consistent": [
+  "provision": [
    {
-    "term": "consistently",
-    "pos": "副詞"
+    "term": "provisional",
+    "pos": "形容詞",
+    "meaning": "暫定の"
    }
   ],
-  "consistently": [
+  "provisional": [
    {
-    "term": "consistent",
-    "pos": "形容詞"
-   }
-  ],
-  "consult": [
-   {
-    "term": "consultation",
-    "pos": "名詞"
-   }
-  ],
-  "consultation": [
-   {
-    "term": "consult",
-    "pos": "動詞"
-   }
-  ],
-  "involve": [
-   {
-    "term": "involvement",
-    "pos": "名詞"
-   }
-  ],
-  "involvement": [
-   {
-    "term": "involve",
-    "pos": "動詞"
-   }
-  ],
-  "refurbish": [
-   {
-    "term": "refurbishment",
-    "pos": "名詞"
-   }
-  ],
-  "refurbishment": [
-   {
-    "term": "refurbish",
-    "pos": "動詞"
-   }
-  ],
-  "perform": [
-   {
-    "term": "performance",
-    "pos": "名詞"
-   }
-  ],
-  "performance": [
-   {
-    "term": "perform",
-    "pos": "動詞"
-   }
-  ],
-  "procure": [
-   {
-    "term": "procurement",
-    "pos": "名詞"
-   }
-  ],
-  "procurement": [
-   {
-    "term": "procure",
-    "pos": "動詞"
-   }
-  ],
-  "initial": [
-   {
-    "term": "initially",
-    "pos": "副詞"
-   }
-  ],
-  "initially": [
-   {
-    "term": "initial",
-    "pos": "形容詞"
-   }
-  ],
-  "instrument": [
-   {
-    "term": "instrumental",
-    "pos": "形容詞"
-   }
-  ],
-  "instrumental": [
-   {
-    "term": "instrument",
-    "pos": "名詞"
+    "term": "provision",
+    "pos": "名詞",
+    "meaning": "条項/規定"
    }
   ],
   "significant": [
    {
     "term": "significantly",
-    "pos": "副詞"
+    "pos": "副詞",
+    "meaning": "著しく"
    }
   ],
   "significantly": [
    {
     "term": "significant",
-    "pos": "形容詞"
+    "pos": "形容詞",
+    "meaning": "重要な"
    }
   ],
-  "infringe": [
+  "execute": [
    {
-    "term": "infringement",
-    "pos": "名詞"
+    "term": "executive",
+    "pos": "名詞/形容詞",
+    "meaning": "幹部（名）、経営の（形）"
    }
   ],
-  "infringement": [
+  "executive": [
    {
-    "term": "infringe",
-    "pos": "動詞"
-   }
-  ],
-  "discern": [
-   {
-    "term": "discernible",
-    "pos": "形容詞"
-   }
-  ],
-  "discernible": [
-   {
-    "term": "discern",
-    "pos": "動詞"
-   }
-  ],
-  "expense": [
-   {
-    "term": "expensive",
-    "pos": "形容詞"
-   }
-  ],
-  "expensive": [
-   {
-    "term": "expense",
-    "pos": "名詞"
-   }
-  ],
-  "convention": [
-   {
-    "term": "conventional",
-    "pos": "形容詞"
-   }
-  ],
-  "conventional": [
-   {
-    "term": "convention",
-    "pos": "名詞"
-   }
-  ],
-  "substantial": [
-   {
-    "term": "substantially",
-    "pos": "副詞"
-   }
-  ],
-  "substantially": [
-   {
-    "term": "substantial",
-    "pos": "形容詞"
-   }
-  ],
-  "hesitate": [
-   {
-    "term": "hesitation",
-    "pos": "名詞"
-   }
-  ],
-  "hesitation": [
-   {
-    "term": "hesitate",
-    "pos": "動詞"
-   }
-  ],
-  "coordinate": [
-   {
-    "term": "coordinator",
-    "pos": "名詞"
-   }
-  ],
-  "coordinator": [
-   {
-    "term": "coordinate",
-    "pos": "動詞"
-   }
-  ],
-  "attach": [
-   {
-    "term": "attachment",
-    "pos": "名詞"
-   }
-  ],
-  "attachment": [
-   {
-    "term": "attach",
-    "pos": "動詞"
-   }
-  ],
-  "nominate": [
-   {
-    "term": "nomination",
-    "pos": "名詞"
-   }
-  ],
-  "nomination": [
-   {
-    "term": "nominate",
-    "pos": "動詞"
-   }
-  ],
-  "formal": [
-   {
-    "term": "formalize",
-    "pos": "動詞"
-   },
-   {
-    "term": "formally",
-    "pos": "副詞"
-   }
-  ],
-  "formalize": [
-   {
-    "term": "formal",
-    "pos": "形容詞"
-   },
-   {
-    "term": "formally",
-    "pos": "副詞"
-   }
-  ],
-  "formally": [
-   {
-    "term": "formal",
-    "pos": "形容詞"
-   },
-   {
-    "term": "formalize",
-    "pos": "動詞"
-   }
-  ],
-  "fabricate": [
-   {
-    "term": "fabrication",
-    "pos": "名詞"
-   }
-  ],
-  "fabrication": [
-   {
-    "term": "fabricate",
-    "pos": "動詞"
-   }
-  ],
-  "reluctant": [
-   {
-    "term": "reluctantly",
-    "pos": "副詞"
-   }
-  ],
-  "reluctantly": [
-   {
-    "term": "reluctant",
-    "pos": "形容詞"
-   }
-  ],
-  "concurrent": [
-   {
-    "term": "concurrently",
-    "pos": "副詞"
-   }
-  ],
-  "concurrently": [
-   {
-    "term": "concurrent",
-    "pos": "形容詞"
-   }
-  ],
-  "confirm": [
-   {
-    "term": "confirmation",
-    "pos": "名詞"
-   }
-  ],
-  "confirmation": [
-   {
-    "term": "confirm",
-    "pos": "動詞"
-   }
-  ],
-  "promotion": [
-   {
-    "term": "promotional",
-    "pos": "形容詞"
-   }
-  ],
-  "promotional": [
-   {
-    "term": "promotion",
-    "pos": "名詞"
-   }
-  ],
-  "immediate": [
-   {
-    "term": "immediately",
-    "pos": "副詞"
-   }
-  ],
-  "immediately": [
-   {
-    "term": "immediate",
-    "pos": "形容詞"
-   }
-  ],
-  "efficient": [
-   {
-    "term": "efficiently",
-    "pos": "副詞"
-   }
-  ],
-  "efficiently": [
-   {
-    "term": "efficient",
-    "pos": "形容詞"
-   }
-  ],
-  "renew": [
-   {
-    "term": "renewal",
-    "pos": "名詞"
-   }
-  ],
-  "renewal": [
-   {
-    "term": "renew",
-    "pos": "動詞"
-   }
-  ],
-  "adjourn": [
-   {
-    "term": "adjournment",
-    "pos": "名詞"
-   }
-  ],
-  "adjournment": [
-   {
-    "term": "adjourn",
-    "pos": "動詞"
-   }
-  ],
-  "periodical": [
-   {
-    "term": "periodically",
-    "pos": "副詞"
-   }
-  ],
-  "periodically": [
-   {
-    "term": "periodical",
-    "pos": "名詞"
-   }
-  ],
-  "demonstrate": [
-   {
-    "term": "demonstration",
-    "pos": "名詞"
-   }
-  ],
-  "demonstration": [
-   {
-    "term": "demonstrate",
-    "pos": "動詞"
-   }
-  ],
-  "supervise": [
-   {
-    "term": "supervisor",
-    "pos": "名詞"
-   }
-  ],
-  "supervisor": [
-   {
-    "term": "supervise",
-    "pos": "動詞"
-   }
-  ],
-  "attain": [
-   {
-    "term": "attainable",
-    "pos": "形容詞"
-   }
-  ],
-  "attainable": [
-   {
-    "term": "attain",
-    "pos": "動詞"
-   }
-  ],
-  "unanimous": [
-   {
-    "term": "unanimously",
-    "pos": "副詞"
-   }
-  ],
-  "unanimously": [
-   {
-    "term": "unanimous",
-    "pos": "形容詞"
-   }
-  ],
-  "correspond": [
-   {
-    "term": "correspondence",
-    "pos": "名詞"
-   }
-  ],
-  "correspondence": [
-   {
-    "term": "correspond",
-    "pos": "動詞"
-   }
-  ],
-  "amend": [
-   {
-    "term": "amendment",
-    "pos": "名詞"
-   }
-  ],
-  "amendment": [
-   {
-    "term": "amend",
-    "pos": "動詞"
-   }
-  ],
-  "advertise": [
-   {
-    "term": "advertisement",
-    "pos": "名詞"
-   }
-  ],
-  "advertisement": [
-   {
-    "term": "advertise",
-    "pos": "動詞"
-   }
-  ],
-  "prompt": [
-   {
-    "term": "promptly",
-    "pos": "副詞"
-   }
-  ],
-  "promptly": [
-   {
-    "term": "prompt",
-    "pos": "形容詞"
-   }
-  ],
-  "distribute": [
-   {
-    "term": "distributor",
-    "pos": "名詞"
-   }
-  ],
-  "distributor": [
-   {
-    "term": "distribute",
-    "pos": "動詞"
-   }
-  ],
-  "distinct": [
-   {
-    "term": "distinctive",
-    "pos": "形容詞"
-   }
-  ],
-  "distinctive": [
-   {
-    "term": "distinct",
-    "pos": "形容詞"
-   }
-  ],
-  "alter": [
-   {
-    "term": "alteration",
-    "pos": "名詞"
-   }
-  ],
-  "alteration": [
-   {
-    "term": "alter",
-    "pos": "動詞"
-   }
-  ],
-  "depend": [
-   {
-    "term": "dependable",
-    "pos": "形容詞"
-   }
-  ],
-  "dependable": [
-   {
-    "term": "depend",
-    "pos": "動詞"
-   }
-  ],
-  "attend": [
-   {
-    "term": "attendance",
-    "pos": "名詞"
-   }
-  ],
-  "attendance": [
-   {
-    "term": "attend",
-    "pos": "動詞"
-   }
-  ],
-  "dispatch": [
-   {
-    "term": "dispatcher",
-    "pos": "名詞"
-   }
-  ],
-  "dispatcher": [
-   {
-    "term": "dispatch",
-    "pos": "名詞/動詞"
-   }
-  ],
-  "adverse": [
-   {
-    "term": "adversely",
-    "pos": "副詞"
-   }
-  ],
-  "adversely": [
-   {
-    "term": "adverse",
-    "pos": "形容詞"
-   }
-  ],
-  "inform": [
-   {
-    "term": "informal",
-    "pos": "形容詞"
-   }
-  ],
-  "informal": [
-   {
-    "term": "inform",
-    "pos": "動詞"
-   }
-  ],
-  "collaborate": [
-   {
-    "term": "collaboration",
-    "pos": "名詞"
-   }
-  ],
-  "collaboration": [
-   {
-    "term": "collaborate",
-    "pos": "動詞"
-   }
-  ],
-  "function": [
-   {
-    "term": "functional",
-    "pos": "形容詞"
-   }
-  ],
-  "functional": [
-   {
-    "term": "function",
-    "pos": "名詞/動詞"
-   }
-  ],
-  "confidential": [
-   {
-    "term": "confidentiality",
-    "pos": "名詞"
-   }
-  ],
-  "confidentiality": [
-   {
-    "term": "confidential",
-    "pos": "形容詞"
-   }
-  ],
-  "entire": [
-   {
-    "term": "entirely",
-    "pos": "副詞"
-   }
-  ],
-  "entirely": [
-   {
-    "term": "entire",
-    "pos": "形容詞"
-   }
-  ],
-  "fortunate": [
-   {
-    "term": "fortunately",
-    "pos": "副詞"
-   }
-  ],
-  "fortunately": [
-   {
-    "term": "fortunate",
-    "pos": "形容詞"
-   }
-  ],
-  "confer": [
-   {
-    "term": "conference",
-    "pos": "名詞"
-   }
-  ],
-  "conference": [
-   {
-    "term": "confer",
-    "pos": "動詞"
-   }
-  ],
-  "contain": [
-   {
-    "term": "container",
-    "pos": "名詞"
-   }
-  ],
-  "container": [
-   {
-    "term": "contain",
-    "pos": "動詞"
-   }
-  ],
-  "resign": [
-   {
-    "term": "resignation",
-    "pos": "名詞"
-   }
-  ],
-  "resignation": [
-   {
-    "term": "resign",
-    "pos": "動詞"
-   }
-  ],
-  "exclusive": [
-   {
-    "term": "exclusively",
-    "pos": "副詞"
-   }
-  ],
-  "exclusively": [
-   {
-    "term": "exclusive",
-    "pos": "形容詞"
+    "term": "execute",
+    "pos": "動詞",
+    "meaning": "実行する"
    }
   ],
   "locate": [
    {
     "term": "location",
-    "pos": "名詞"
+    "pos": "名詞",
+    "meaning": "場所/所在地"
    }
   ],
   "location": [
    {
     "term": "locate",
-    "pos": "動詞"
+    "pos": "動詞",
+    "meaning": "見つける/設置する"
    }
   ],
-  "recruit": [
+  "nominate": [
    {
-    "term": "recruiter",
-    "pos": "名詞"
-   },
-   {
-    "term": "recruitment",
-    "pos": "名詞"
+    "term": "nomination",
+    "pos": "名詞",
+    "meaning": "指名"
    }
   ],
-  "recruiter": [
+  "nomination": [
    {
-    "term": "recruit",
-    "pos": "動詞"
-   },
-   {
-    "term": "recruitment",
-    "pos": "名詞"
+    "term": "nominate",
+    "pos": "動詞",
+    "meaning": "指名する"
    }
   ],
-  "recruitment": [
+  "depreciate": [
    {
-    "term": "recruit",
-    "pos": "動詞"
-   },
-   {
-    "term": "recruiter",
-    "pos": "名詞"
+    "term": "depreciation",
+    "pos": "名詞",
+    "meaning": "減価償却"
    }
   ],
-  "appoint": [
+  "depreciation": [
    {
-    "term": "appointment",
-    "pos": "名詞"
+    "term": "depreciate",
+    "pos": "動詞",
+    "meaning": "価値が下がる"
    }
   ],
-  "appointment": [
+  "abrupt": [
    {
-    "term": "appoint",
-    "pos": "動詞"
+    "term": "abruptly",
+    "pos": "副詞",
+    "meaning": "突然に"
    }
   ],
-  "frequent": [
+  "abruptly": [
    {
-    "term": "frequently",
-    "pos": "副詞"
+    "term": "abrupt",
+    "pos": "形容詞",
+    "meaning": "突然の"
    }
   ],
-  "frequently": [
+  "joint": [
    {
-    "term": "frequent",
-    "pos": "形容詞"
+    "term": "jointly",
+    "pos": "副詞",
+    "meaning": "共同で"
    }
   ],
-  "quotation": [
+  "jointly": [
    {
-    "term": "quote",
-    "pos": "名詞/動詞"
+    "term": "joint",
+    "pos": "形容詞",
+    "meaning": "共同の"
    }
   ],
-  "quote": [
+  "require": [
    {
-    "term": "quotation",
-    "pos": "名詞"
+    "term": "requirement",
+    "pos": "名詞",
+    "meaning": "要件"
    }
   ],
-  "intense": [
+  "requirement": [
    {
-    "term": "intensive",
-    "pos": "形容詞"
+    "term": "require",
+    "pos": "動詞",
+    "meaning": "必要とする"
    }
   ],
-  "intensive": [
+  "demonstrate": [
    {
-    "term": "intense",
-    "pos": "形容詞"
+    "term": "demonstration",
+    "pos": "名詞",
+    "meaning": "実演"
    }
   ],
-  "dramatic": [
+  "demonstration": [
    {
-    "term": "dramatically",
-    "pos": "副詞"
+    "term": "demonstrate",
+    "pos": "動詞",
+    "meaning": "実演する/示す"
    }
   ],
-  "dramatically": [
+  "transfer": [
    {
-    "term": "dramatic",
-    "pos": "形容詞"
+    "term": "transferable",
+    "pos": "形容詞",
+    "meaning": "譲渡可能な"
    }
   ],
-  "afford": [
+  "transferable": [
    {
-    "term": "affordable",
-    "pos": "形容詞"
+    "term": "transfer",
+    "pos": "名詞/動詞",
+    "meaning": "移動/異動（名）、移す/異動する（動）※強勢が異なる"
    }
   ],
-  "affordable": [
+  "aware": [
    {
-    "term": "afford",
-    "pos": "動詞"
+    "term": "awareness",
+    "pos": "名詞",
+    "meaning": "認識"
    }
   ],
-  "favor": [
+  "awareness": [
    {
-    "term": "favorable",
-    "pos": "形容詞"
-   }
-  ],
-  "favorable": [
-   {
-    "term": "favor",
-    "pos": "動詞"
-   }
-  ],
-  "negotiate": [
-   {
-    "term": "negotiation",
-    "pos": "名詞"
-   }
-  ],
-  "negotiation": [
-   {
-    "term": "negotiate",
-    "pos": "動詞"
-   }
-  ],
-  "mediate": [
-   {
-    "term": "mediation",
-    "pos": "名詞"
-   }
-  ],
-  "mediation": [
-   {
-    "term": "mediate",
-    "pos": "動詞"
+    "term": "aware",
+    "pos": "形容詞",
+    "meaning": "気づいている"
    }
   ],
   "commend": [
    {
     "term": "commendable",
-    "pos": "形容詞"
+    "pos": "形容詞",
+    "meaning": "称賛に値する"
    }
   ],
   "commendable": [
    {
     "term": "commend",
-    "pos": "動詞"
+    "pos": "動詞",
+    "meaning": "称賛する"
    }
   ],
-  "challenge": [
+  "advance": [
    {
-    "term": "challenging",
-    "pos": "形容詞"
+    "term": "advancement",
+    "pos": "名詞",
+    "meaning": "昇進/進歩"
    }
   ],
-  "challenging": [
+  "advancement": [
    {
-    "term": "challenge",
-    "pos": "名詞/動詞"
+    "term": "advance",
+    "pos": "動詞",
+    "meaning": "前進させる"
    }
   ],
-  "accomplish": [
+  "limit": [
    {
-    "term": "accomplishment",
-    "pos": "名詞"
+    "term": "limitation",
+    "pos": "名詞",
+    "meaning": "制限"
    }
   ],
-  "accomplishment": [
+  "limitation": [
    {
-    "term": "accomplish",
-    "pos": "動詞"
+    "term": "limit",
+    "pos": "名詞/動詞",
+    "meaning": "限界/制限（名）、制限する（動）"
    }
   ],
-  "profit": [
+  "contaminate": [
    {
-    "term": "profitable",
-    "pos": "形容詞"
+    "term": "contamination",
+    "pos": "名詞",
+    "meaning": "汚染"
    }
   ],
-  "profitable": [
+  "contamination": [
    {
-    "term": "profit",
-    "pos": "名詞/動詞"
+    "term": "contaminate",
+    "pos": "動詞",
+    "meaning": "汚染する"
+   }
+  ],
+  "confidential": [
+   {
+    "term": "confidentiality",
+    "pos": "名詞",
+    "meaning": "機密保持"
+   }
+  ],
+  "confidentiality": [
+   {
+    "term": "confidential",
+    "pos": "形容詞",
+    "meaning": "機密の"
+   }
+  ],
+  "fluctuate": [
+   {
+    "term": "fluctuating",
+    "pos": "形容詞",
+    "meaning": "変動する"
+   },
+   {
+    "term": "fluctuation",
+    "pos": "名詞",
+    "meaning": "変動"
+   }
+  ],
+  "fluctuating": [
+   {
+    "term": "fluctuate",
+    "pos": "動詞",
+    "meaning": "変動する"
+   },
+   {
+    "term": "fluctuation",
+    "pos": "名詞",
+    "meaning": "変動"
+   }
+  ],
+  "fluctuation": [
+   {
+    "term": "fluctuate",
+    "pos": "動詞",
+    "meaning": "変動する"
+   },
+   {
+    "term": "fluctuating",
+    "pos": "形容詞",
+    "meaning": "変動する"
+   }
+  ],
+  "intense": [
+   {
+    "term": "intensive",
+    "pos": "形容詞",
+    "meaning": "集中的な"
+   }
+  ],
+  "intensive": [
+   {
+    "term": "intense",
+    "pos": "形容詞",
+    "meaning": "激しい"
+   }
+  ],
+  "confirm": [
+   {
+    "term": "confirmation",
+    "pos": "名詞",
+    "meaning": "確認"
+   }
+  ],
+  "confirmation": [
+   {
+    "term": "confirm",
+    "pos": "動詞",
+    "meaning": "確認する"
+   }
+  ],
+  "adverse": [
+   {
+    "term": "adversely",
+    "pos": "副詞",
+    "meaning": "不利に"
+   }
+  ],
+  "adversely": [
+   {
+    "term": "adverse",
+    "pos": "形容詞",
+    "meaning": "不利な"
+   }
+  ],
+  "certificate": [
+   {
+    "term": "certification",
+    "pos": "名詞",
+    "meaning": "認証/証明"
+   }
+  ],
+  "certification": [
+   {
+    "term": "certificate",
+    "pos": "名詞",
+    "meaning": "証明書"
+   }
+  ],
+  "mutual": [
+   {
+    "term": "mutually",
+    "pos": "副詞",
+    "meaning": "相互に"
+   }
+  ],
+  "mutually": [
+   {
+    "term": "mutual",
+    "pos": "形容詞",
+    "meaning": "相互の"
+   }
+  ],
+  "appoint": [
+   {
+    "term": "appointment",
+    "pos": "名詞",
+    "meaning": "予約/約束"
+   }
+  ],
+  "appointment": [
+   {
+    "term": "appoint",
+    "pos": "動詞",
+    "meaning": "任命する"
+   }
+  ],
+  "frequent": [
+   {
+    "term": "frequently",
+    "pos": "副詞",
+    "meaning": "頻繁に"
+   }
+  ],
+  "frequently": [
+   {
+    "term": "frequent",
+    "pos": "形容詞",
+    "meaning": "頻繁な"
+   }
+  ],
+  "attract": [
+   {
+    "term": "attractive",
+    "pos": "形容詞",
+    "meaning": "魅力的な"
+   }
+  ],
+  "attractive": [
+   {
+    "term": "attract",
+    "pos": "動詞",
+    "meaning": "引きつける"
+   }
+  ],
+  "compensate": [
+   {
+    "term": "compensation",
+    "pos": "名詞",
+    "meaning": "報酬/補償"
+   }
+  ],
+  "compensation": [
+   {
+    "term": "compensate",
+    "pos": "動詞",
+    "meaning": "補償する"
+   }
+  ],
+  "mediate": [
+   {
+    "term": "mediation",
+    "pos": "名詞",
+    "meaning": "調停"
+   },
+   {
+    "term": "mediator",
+    "pos": "名詞",
+    "meaning": "調停者"
+   }
+  ],
+  "mediation": [
+   {
+    "term": "mediate",
+    "pos": "動詞",
+    "meaning": "仲裁する"
+   },
+   {
+    "term": "mediator",
+    "pos": "名詞",
+    "meaning": "調停者"
+   }
+  ],
+  "mediator": [
+   {
+    "term": "mediate",
+    "pos": "動詞",
+    "meaning": "仲裁する"
+   },
+   {
+    "term": "mediation",
+    "pos": "名詞",
+    "meaning": "調停"
+   }
+  ],
+  "prompt": [
+   {
+    "term": "promptly",
+    "pos": "副詞",
+    "meaning": "迅速に"
+   }
+  ],
+  "promptly": [
+   {
+    "term": "prompt",
+    "pos": "形容詞",
+    "meaning": "迅速な"
+   }
+  ],
+  "exact": [
+   {
+    "term": "exactly",
+    "pos": "副詞",
+    "meaning": "正確に"
+   }
+  ],
+  "exactly": [
+   {
+    "term": "exact",
+    "pos": "形容詞",
+    "meaning": "正確な"
+   }
+  ],
+  "adequate": [
+   {
+    "term": "adequately",
+    "pos": "副詞",
+    "meaning": "十分に"
+   }
+  ],
+  "adequately": [
+   {
+    "term": "adequate",
+    "pos": "形容詞",
+    "meaning": "十分な"
+   }
+  ],
+  "reservation": [
+   {
+    "term": "reserve",
+    "pos": "名詞/動詞",
+    "meaning": "蓄え/予備（名）、予約する（動）"
+   }
+  ],
+  "reserve": [
+   {
+    "term": "reservation",
+    "pos": "名詞",
+    "meaning": "予約"
+   }
+  ],
+  "apparent": [
+   {
+    "term": "apparently",
+    "pos": "副詞",
+    "meaning": "どうやら"
+   }
+  ],
+  "apparently": [
+   {
+    "term": "apparent",
+    "pos": "形容詞",
+    "meaning": "明らかな"
    }
   ],
   "accommodate": [
    {
     "term": "accommodation",
-    "pos": "名詞"
+    "pos": "名詞",
+    "meaning": "宿泊施設"
    }
   ],
   "accommodation": [
    {
     "term": "accommodate",
-    "pos": "動詞"
+    "pos": "動詞",
+    "meaning": "収容する/対応する"
    }
   ],
-  "assign": [
+  "efficient": [
    {
-    "term": "assignment",
-    "pos": "名詞"
+    "term": "efficiently",
+    "pos": "副詞",
+    "meaning": "効率的に"
    }
   ],
-  "assignment": [
+  "efficiently": [
    {
-    "term": "assign",
-    "pos": "動詞"
+    "term": "efficient",
+    "pos": "形容詞",
+    "meaning": "効率的な"
+   }
+  ],
+  "recruit": [
+   {
+    "term": "recruiter",
+    "pos": "名詞",
+    "meaning": "採用担当者"
+   },
+   {
+    "term": "recruitment",
+    "pos": "名詞",
+    "meaning": "採用"
+   }
+  ],
+  "recruiter": [
+   {
+    "term": "recruit",
+    "pos": "動詞",
+    "meaning": "採用する"
+   },
+   {
+    "term": "recruitment",
+    "pos": "名詞",
+    "meaning": "採用"
+   }
+  ],
+  "recruitment": [
+   {
+    "term": "recruit",
+    "pos": "動詞",
+    "meaning": "採用する"
+   },
+   {
+    "term": "recruiter",
+    "pos": "名詞",
+    "meaning": "採用担当者"
+   }
+  ],
+  "reimbursable": [
+   {
+    "term": "reimburse",
+    "pos": "動詞",
+    "meaning": "払い戻す"
+   },
+   {
+    "term": "reimbursement",
+    "pos": "名詞",
+    "meaning": "払い戻し"
+   }
+  ],
+  "reimburse": [
+   {
+    "term": "reimbursable",
+    "pos": "形容詞",
+    "meaning": "払い戻し可能な"
+   },
+   {
+    "term": "reimbursement",
+    "pos": "名詞",
+    "meaning": "払い戻し"
+   }
+  ],
+  "reimbursement": [
+   {
+    "term": "reimbursable",
+    "pos": "形容詞",
+    "meaning": "払い戻し可能な"
+   },
+   {
+    "term": "reimburse",
+    "pos": "動詞",
+    "meaning": "払い戻す"
+   }
+  ],
+  "attach": [
+   {
+    "term": "attachment",
+    "pos": "名詞",
+    "meaning": "添付ファイル"
+   }
+  ],
+  "attachment": [
+   {
+    "term": "attach",
+    "pos": "動詞",
+    "meaning": "添付する"
+   }
+  ],
+  "package": [
+   {
+    "term": "packaging",
+    "pos": "名詞",
+    "meaning": "包装"
+   }
+  ],
+  "packaging": [
+   {
+    "term": "package",
+    "pos": "名詞",
+    "meaning": "小包"
+   }
+  ],
+  "deploy": [
+   {
+    "term": "deployment",
+    "pos": "名詞",
+    "meaning": "配置/展開"
+   }
+  ],
+  "deployment": [
+   {
+    "term": "deploy",
+    "pos": "動詞",
+    "meaning": "配置する/展開する"
    }
   ],
   "recent": [
    {
     "term": "recently",
-    "pos": "副詞"
+    "pos": "副詞",
+    "meaning": "最近"
    }
   ],
   "recently": [
    {
     "term": "recent",
-    "pos": "形容詞"
+    "pos": "形容詞",
+    "meaning": "最近の"
    }
   ],
-  "complete": [
+  "gradual": [
    {
-    "term": "completely",
-    "pos": "副詞"
+    "term": "gradually",
+    "pos": "副詞",
+    "meaning": "徐々に"
    }
   ],
-  "completely": [
+  "gradually": [
    {
-    "term": "complete",
-    "pos": "形容詞/動詞"
+    "term": "gradual",
+    "pos": "形容詞",
+    "meaning": "徐々の"
    }
   ],
-  "arrange": [
+  "depend": [
    {
-    "term": "arrangement",
-    "pos": "名詞"
+    "term": "dependable",
+    "pos": "形容詞",
+    "meaning": "頼れる"
    }
   ],
-  "arrangement": [
+  "dependable": [
    {
-    "term": "arrange",
-    "pos": "動詞"
+    "term": "depend",
+    "pos": "動詞",
+    "meaning": "頼る"
    }
   ],
-  "accept": [
+  "clear": [
    {
-    "term": "acceptance",
-    "pos": "名詞"
+    "term": "clearance",
+    "pos": "名詞",
+    "meaning": "在庫一掃/許可"
+   },
+   {
+    "term": "clearly",
+    "pos": "副詞",
+    "meaning": "明らかに"
    }
   ],
-  "acceptance": [
+  "clearance": [
    {
-    "term": "accept",
-    "pos": "動詞"
+    "term": "clear",
+    "pos": "形容詞/動詞",
+    "meaning": "明確な（形）、取り除く/片付ける（動）"
+   },
+   {
+    "term": "clearly",
+    "pos": "副詞",
+    "meaning": "明らかに"
    }
   ],
-  "participate": [
+  "clearly": [
    {
-    "term": "participation",
-    "pos": "名詞"
+    "term": "clear",
+    "pos": "形容詞/動詞",
+    "meaning": "明確な（形）、取り除く/片付ける（動）"
+   },
+   {
+    "term": "clearance",
+    "pos": "名詞",
+    "meaning": "在庫一掃/許可"
    }
   ],
-  "participation": [
+  "correspond": [
    {
-    "term": "participate",
-    "pos": "動詞"
+    "term": "correspondence",
+    "pos": "名詞",
+    "meaning": "通信/文通"
    }
   ],
-  "assess": [
+  "correspondence": [
    {
-    "term": "assessment",
-    "pos": "名詞"
+    "term": "correspond",
+    "pos": "動詞",
+    "meaning": "一致する/文通する"
    }
   ],
-  "assessment": [
+  "present": [
    {
-    "term": "assess",
-    "pos": "動詞"
+    "term": "presentation",
+    "pos": "名詞",
+    "meaning": "発表/提示"
+   },
+   {
+    "term": "presently",
+    "pos": "副詞",
+    "meaning": "まもなく"
+   }
+  ],
+  "presentation": [
+   {
+    "term": "present",
+    "pos": "名詞/形容詞/動詞",
+    "meaning": "贈り物/現在（名）、現在の/出席の（形）、提示する（動）"
+   },
+   {
+    "term": "presently",
+    "pos": "副詞",
+    "meaning": "まもなく"
+   }
+  ],
+  "presently": [
+   {
+    "term": "present",
+    "pos": "名詞/形容詞/動詞",
+    "meaning": "贈り物/現在（名）、現在の/出席の（形）、提示する（動）"
+   },
+   {
+    "term": "presentation",
+    "pos": "名詞",
+    "meaning": "発表/提示"
+   }
+  ],
+  "exception": [
+   {
+    "term": "exceptional",
+    "pos": "形容詞",
+    "meaning": "例外的な"
+   }
+  ],
+  "exceptional": [
+   {
+    "term": "exception",
+    "pos": "名詞",
+    "meaning": "例外"
+   }
+  ],
+  "innovate": [
+   {
+    "term": "innovation",
+    "pos": "名詞",
+    "meaning": "革新"
+   },
+   {
+    "term": "innovative",
+    "pos": "形容詞",
+    "meaning": "革新的な"
+   }
+  ],
+  "innovation": [
+   {
+    "term": "innovate",
+    "pos": "動詞",
+    "meaning": "革新する"
+   },
+   {
+    "term": "innovative",
+    "pos": "形容詞",
+    "meaning": "革新的な"
+   }
+  ],
+  "innovative": [
+   {
+    "term": "innovate",
+    "pos": "動詞",
+    "meaning": "革新する"
+   },
+   {
+    "term": "innovation",
+    "pos": "名詞",
+    "meaning": "革新"
+   }
+  ],
+  "direct": [
+   {
+    "term": "directive",
+    "pos": "名詞",
+    "meaning": "指令"
+   },
+   {
+    "term": "directly",
+    "pos": "副詞",
+    "meaning": "直接に"
+   }
+  ],
+  "directive": [
+   {
+    "term": "direct",
+    "pos": "動詞",
+    "meaning": "指揮する"
+   },
+   {
+    "term": "directly",
+    "pos": "副詞",
+    "meaning": "直接に"
+   }
+  ],
+  "directly": [
+   {
+    "term": "direct",
+    "pos": "動詞",
+    "meaning": "指揮する"
+   },
+   {
+    "term": "directive",
+    "pos": "名詞",
+    "meaning": "指令"
+   }
+  ],
+  "migrate": [
+   {
+    "term": "migration",
+    "pos": "名詞",
+    "meaning": "移動/移住"
+   }
+  ],
+  "migration": [
+   {
+    "term": "migrate",
+    "pos": "動詞",
+    "meaning": "移行する"
+   }
+  ],
+  "formal": [
+   {
+    "term": "formalize",
+    "pos": "動詞",
+    "meaning": "正式化する"
+   },
+   {
+    "term": "formally",
+    "pos": "副詞",
+    "meaning": "正式に"
+   }
+  ],
+  "formalize": [
+   {
+    "term": "formal",
+    "pos": "形容詞",
+    "meaning": "正式な"
+   },
+   {
+    "term": "formally",
+    "pos": "副詞",
+    "meaning": "正式に"
+   }
+  ],
+  "formally": [
+   {
+    "term": "formal",
+    "pos": "形容詞",
+    "meaning": "正式な"
+   },
+   {
+    "term": "formalize",
+    "pos": "動詞",
+    "meaning": "正式化する"
+   }
+  ],
+  "merchandise": [
+   {
+    "term": "merchandising",
+    "pos": "名詞",
+    "meaning": "商品展示"
+   }
+  ],
+  "merchandising": [
+   {
+    "term": "merchandise",
+    "pos": "名詞",
+    "meaning": "商品"
+   }
+  ],
+  "current": [
+   {
+    "term": "currently",
+    "pos": "副詞",
+    "meaning": "現在"
+   }
+  ],
+  "currently": [
+   {
+    "term": "current",
+    "pos": "形容詞",
+    "meaning": "現在の"
+   }
+  ],
+  "moderate": [
+   {
+    "term": "moderator",
+    "pos": "名詞",
+    "meaning": "司会者"
+   }
+  ],
+  "moderator": [
+   {
+    "term": "moderate",
+    "pos": "形容詞",
+    "meaning": "適度な"
+   }
+  ],
+  "function": [
+   {
+    "term": "functional",
+    "pos": "形容詞",
+    "meaning": "機能的な"
+   }
+  ],
+  "functional": [
+   {
+    "term": "function",
+    "pos": "名詞/動詞",
+    "meaning": "機能/式典（名）、機能する（動）"
+   }
+  ],
+  "access": [
+   {
+    "term": "accessible",
+    "pos": "形容詞",
+    "meaning": "利用しやすい"
+   }
+  ],
+  "accessible": [
+   {
+    "term": "access",
+    "pos": "動詞",
+    "meaning": "利用する/アクセスする"
+   }
+  ],
+  "designate": [
+   {
+    "term": "designation",
+    "pos": "名詞",
+    "meaning": "指定/名称"
+   }
+  ],
+  "designation": [
+   {
+    "term": "designate",
+    "pos": "動詞",
+    "meaning": "指定する"
+   }
+  ],
+  "negotiate": [
+   {
+    "term": "negotiation",
+    "pos": "名詞",
+    "meaning": "交渉"
+   }
+  ],
+  "negotiation": [
+   {
+    "term": "negotiate",
+    "pos": "動詞",
+    "meaning": "交渉する"
    }
   ],
   "aspiration": [
    {
     "term": "aspire",
-    "pos": "動詞"
+    "pos": "動詞",
+    "meaning": "熱望する"
    }
   ],
   "aspire": [
    {
     "term": "aspiration",
-    "pos": "名詞"
+    "pos": "名詞",
+    "meaning": "願望"
    }
   ],
-  "initiate": [
+  "adjourn": [
    {
-    "term": "initiative",
-    "pos": "名詞"
+    "term": "adjournment",
+    "pos": "名詞",
+    "meaning": "休会"
    }
   ],
-  "initiative": [
+  "adjournment": [
    {
-    "term": "initiate",
-    "pos": "動詞"
+    "term": "adjourn",
+    "pos": "動詞",
+    "meaning": "（会議を）休会する"
    }
   ],
-  "express": [
+  "complete": [
    {
-    "term": "expressly",
-    "pos": "副詞"
+    "term": "completely",
+    "pos": "副詞",
+    "meaning": "完全に"
    }
   ],
-  "expressly": [
+  "completely": [
    {
-    "term": "express",
-    "pos": "動詞"
+    "term": "complete",
+    "pos": "形容詞/動詞",
+    "meaning": "完全な（形）、完成させる（動）"
+   }
+  ],
+  "discern": [
+   {
+    "term": "discernible",
+    "pos": "形容詞",
+    "meaning": "認識できる"
+   }
+  ],
+  "discernible": [
+   {
+    "term": "discern",
+    "pos": "動詞",
+    "meaning": "見分ける"
+   }
+  ],
+  "commence": [
+   {
+    "term": "commencement",
+    "pos": "名詞",
+    "meaning": "開始/卒業式"
+   }
+  ],
+  "commencement": [
+   {
+    "term": "commence",
+    "pos": "動詞",
+    "meaning": "開始する"
+   }
+  ],
+  "thorough": [
+   {
+    "term": "thoroughly",
+    "pos": "副詞",
+    "meaning": "徹底的に"
+   }
+  ],
+  "thoroughly": [
+   {
+    "term": "thorough",
+    "pos": "形容詞",
+    "meaning": "徹底的な"
+   }
+  ],
+  "periodical": [
+   {
+    "term": "periodically",
+    "pos": "副詞",
+    "meaning": "定期的に"
+   }
+  ],
+  "periodically": [
+   {
+    "term": "periodical",
+    "pos": "名詞",
+    "meaning": "定期刊行物"
+   }
+  ],
+  "expense": [
+   {
+    "term": "expensive",
+    "pos": "形容詞",
+    "meaning": "高価な"
+   }
+  ],
+  "expensive": [
+   {
+    "term": "expense",
+    "pos": "名詞",
+    "meaning": "費用"
+   }
+  ],
+  "attend": [
+   {
+    "term": "attendance",
+    "pos": "名詞",
+    "meaning": "出席"
+   }
+  ],
+  "attendance": [
+   {
+    "term": "attend",
+    "pos": "動詞",
+    "meaning": "出席する"
+   }
+  ],
+  "generate": [
+   {
+    "term": "generation",
+    "pos": "名詞",
+    "meaning": "世代"
+   }
+  ],
+  "generation": [
+   {
+    "term": "generate",
+    "pos": "動詞",
+    "meaning": "生み出す"
+   }
+  ],
+  "exclusive": [
+   {
+    "term": "exclusively",
+    "pos": "副詞",
+    "meaning": "限定して"
+   }
+  ],
+  "exclusively": [
+   {
+    "term": "exclusive",
+    "pos": "形容詞",
+    "meaning": "独占的な"
+   }
+  ],
+  "refund": [
+   {
+    "term": "refundable",
+    "pos": "形容詞",
+    "meaning": "払い戻し可能な"
+   }
+  ],
+  "refundable": [
+   {
+    "term": "refund",
+    "pos": "名詞",
+    "meaning": "返金"
+   }
+  ],
+  "settle": [
+   {
+    "term": "settlement",
+    "pos": "名詞",
+    "meaning": "解決/和解"
+   }
+  ],
+  "settlement": [
+   {
+    "term": "settle",
+    "pos": "動詞",
+    "meaning": "解決する/精算する"
+   }
+  ],
+  "hesitate": [
+   {
+    "term": "hesitation",
+    "pos": "名詞",
+    "meaning": "ためらい"
+   }
+  ],
+  "hesitation": [
+   {
+    "term": "hesitate",
+    "pos": "動詞",
+    "meaning": "ためらう"
+   }
+  ],
+  "effective": [
+   {
+    "term": "effectively",
+    "pos": "副詞",
+    "meaning": "効果的に"
+   }
+  ],
+  "effectively": [
+   {
+    "term": "effective",
+    "pos": "形容詞",
+    "meaning": "効果的な"
+   }
+  ],
+  "fabricate": [
+   {
+    "term": "fabrication",
+    "pos": "名詞",
+    "meaning": "製造"
+   }
+  ],
+  "fabrication": [
+   {
+    "term": "fabricate",
+    "pos": "動詞",
+    "meaning": "製造する/でっち上げる"
+   }
+  ],
+  "compilation": [
+   {
+    "term": "compile",
+    "pos": "動詞",
+    "meaning": "まとめる"
+   }
+  ],
+  "compile": [
+   {
+    "term": "compilation",
+    "pos": "名詞",
+    "meaning": "編集/収集物"
+   }
+  ],
+  "final": [
+   {
+    "term": "finalize",
+    "pos": "動詞",
+    "meaning": "最終決定する"
+   }
+  ],
+  "finalize": [
+   {
+    "term": "final",
+    "pos": "形容詞",
+    "meaning": "最終の"
+   }
+  ],
+  "enroll": [
+   {
+    "term": "enrollment",
+    "pos": "名詞",
+    "meaning": "登録/入会"
+   }
+  ],
+  "enrollment": [
+   {
+    "term": "enroll",
+    "pos": "動詞",
+    "meaning": "登録する"
+   }
+  ],
+  "infringe": [
+   {
+    "term": "infringement",
+    "pos": "名詞",
+    "meaning": "侵害"
+   }
+  ],
+  "infringement": [
+   {
+    "term": "infringe",
+    "pos": "動詞",
+    "meaning": "侵害する"
+   }
+  ],
+  "supervise": [
+   {
+    "term": "supervisor",
+    "pos": "名詞",
+    "meaning": "監督者"
+   }
+  ],
+  "supervisor": [
+   {
+    "term": "supervise",
+    "pos": "動詞",
+    "meaning": "監督する"
+   }
+  ],
+  "vocation": [
+   {
+    "term": "vocational",
+    "pos": "形容詞",
+    "meaning": "職業訓練の"
+   }
+  ],
+  "vocational": [
+   {
+    "term": "vocation",
+    "pos": "名詞",
+    "meaning": "天職/職業"
+   }
+  ],
+  "collaborate": [
+   {
+    "term": "collaboration",
+    "pos": "名詞",
+    "meaning": "協力"
+   },
+   {
+    "term": "collaborator",
+    "pos": "名詞",
+    "meaning": "協力者/共同制作者"
+   }
+  ],
+  "collaboration": [
+   {
+    "term": "collaborate",
+    "pos": "動詞",
+    "meaning": "協力する"
+   },
+   {
+    "term": "collaborator",
+    "pos": "名詞",
+    "meaning": "協力者/共同制作者"
+   }
+  ],
+  "collaborator": [
+   {
+    "term": "collaborate",
+    "pos": "動詞",
+    "meaning": "協力する"
+   },
+   {
+    "term": "collaboration",
+    "pos": "名詞",
+    "meaning": "協力"
+   }
+  ],
+  "alternative": [
+   {
+    "term": "alternatively",
+    "pos": "副詞",
+    "meaning": "あるいは"
+   }
+  ],
+  "alternatively": [
+   {
+    "term": "alternative",
+    "pos": "形容詞/名詞",
+    "meaning": "代替の（形）、代替案（名）"
+   }
+  ],
+  "depart": [
+   {
+    "term": "department",
+    "pos": "名詞",
+    "meaning": "部門"
+   }
+  ],
+  "department": [
+   {
+    "term": "depart",
+    "pos": "動詞",
+    "meaning": "出発する"
+   }
+  ],
+  "deliver": [
+   {
+    "term": "deliverable",
+    "pos": "名詞",
+    "meaning": "成果物"
+   }
+  ],
+  "deliverable": [
+   {
+    "term": "deliver",
+    "pos": "動詞",
+    "meaning": "配達する"
+   }
+  ],
+  "interpret": [
+   {
+    "term": "interpretation",
+    "pos": "名詞",
+    "meaning": "解釈/通訳"
+   }
+  ],
+  "interpretation": [
+   {
+    "term": "interpret",
+    "pos": "動詞",
+    "meaning": "解釈する/通訳する"
+   }
+  ],
+  "establish": [
+   {
+    "term": "establishment",
+    "pos": "名詞",
+    "meaning": "施設/設立"
+   }
+  ],
+  "establishment": [
+   {
+    "term": "establish",
+    "pos": "動詞",
+    "meaning": "確立する"
+   }
+  ],
+  "expiration": [
+   {
+    "term": "expire",
+    "pos": "動詞",
+    "meaning": "期限が切れる"
+   }
+  ],
+  "expire": [
+   {
+    "term": "expiration",
+    "pos": "名詞",
+    "meaning": "満了"
+   }
+  ],
+  "favor": [
+   {
+    "term": "favorable",
+    "pos": "形容詞",
+    "meaning": "好意的な"
+   }
+  ],
+  "favorable": [
+   {
+    "term": "favor",
+    "pos": "動詞",
+    "meaning": "好む"
+   }
+  ],
+  "distribute": [
+   {
+    "term": "distributor",
+    "pos": "名詞",
+    "meaning": "販売代理店"
+   }
+  ],
+  "distributor": [
+   {
+    "term": "distribute",
+    "pos": "動詞",
+    "meaning": "配布する"
+   }
+  ],
+  "respective": [
+   {
+    "term": "respectively",
+    "pos": "副詞",
+    "meaning": "それぞれ"
+   }
+  ],
+  "respectively": [
+   {
+    "term": "respective",
+    "pos": "形容詞",
+    "meaning": "それぞれの"
+   }
+  ],
+  "convention": [
+   {
+    "term": "conventional",
+    "pos": "形容詞",
+    "meaning": "従来の"
+   }
+  ],
+  "conventional": [
+   {
+    "term": "convention",
+    "pos": "名詞",
+    "meaning": "大会/慣習"
+   }
+  ],
+  "entire": [
+   {
+    "term": "entirely",
+    "pos": "副詞",
+    "meaning": "完全に"
+   }
+  ],
+  "entirely": [
+   {
+    "term": "entire",
+    "pos": "形容詞",
+    "meaning": "全体の"
+   }
+  ],
+  "inspect": [
+   {
+    "term": "inspector",
+    "pos": "名詞",
+    "meaning": "検査官"
+   }
+  ],
+  "inspector": [
+   {
+    "term": "inspect",
+    "pos": "動詞",
+    "meaning": "検査する"
+   }
+  ],
+  "substantial": [
+   {
+    "term": "substantially",
+    "pos": "副詞",
+    "meaning": "大幅に"
+   }
+  ],
+  "substantially": [
+   {
+    "term": "substantial",
+    "pos": "形容詞",
+    "meaning": "かなりの"
+   }
+  ],
+  "invest": [
+   {
+    "term": "investment",
+    "pos": "名詞",
+    "meaning": "投資"
+   },
+   {
+    "term": "investor",
+    "pos": "名詞",
+    "meaning": "投資家"
+   }
+  ],
+  "investment": [
+   {
+    "term": "invest",
+    "pos": "動詞",
+    "meaning": "投資する"
+   },
+   {
+    "term": "investor",
+    "pos": "名詞",
+    "meaning": "投資家"
+   }
+  ],
+  "investor": [
+   {
+    "term": "invest",
+    "pos": "動詞",
+    "meaning": "投資する"
+   },
+   {
+    "term": "investment",
+    "pos": "名詞",
+    "meaning": "投資"
+   }
+  ],
+  "unanimous": [
+   {
+    "term": "unanimously",
+    "pos": "副詞",
+    "meaning": "満場一致で"
+   }
+  ],
+  "unanimously": [
+   {
+    "term": "unanimous",
+    "pos": "形容詞",
+    "meaning": "満場一致の"
+   }
+  ],
+  "impress": [
+   {
+    "term": "impressive",
+    "pos": "形容詞",
+    "meaning": "印象的な"
+   }
+  ],
+  "impressive": [
+   {
+    "term": "impress",
+    "pos": "動詞",
+    "meaning": "感銘を与える"
+   }
+  ],
+  "firm": [
+   {
+    "term": "firmly",
+    "pos": "副詞",
+    "meaning": "しっかりと"
+   }
+  ],
+  "firmly": [
+   {
+    "term": "firm",
+    "pos": "名詞/形容詞",
+    "meaning": "会社（名）、堅い/確固たる（形）"
+   }
+  ],
+  "employ": [
+   {
+    "term": "employer",
+    "pos": "名詞",
+    "meaning": "雇用主"
+   }
+  ],
+  "employer": [
+   {
+    "term": "employ",
+    "pos": "動詞",
+    "meaning": "雇う/使う"
+   }
+  ],
+  "evaluate": [
+   {
+    "term": "evaluation",
+    "pos": "名詞",
+    "meaning": "評価"
+   }
+  ],
+  "evaluation": [
+   {
+    "term": "evaluate",
+    "pos": "動詞",
+    "meaning": "評価する"
+   }
+  ],
+  "entitle": [
+   {
+    "term": "entitlement",
+    "pos": "名詞",
+    "meaning": "受給権"
+   }
+  ],
+  "entitlement": [
+   {
+    "term": "entitle",
+    "pos": "動詞",
+    "meaning": "権利を与える"
+   }
+  ],
+  "afford": [
+   {
+    "term": "affordable",
+    "pos": "形容詞",
+    "meaning": "手頃な"
+   }
+  ],
+  "affordable": [
+   {
+    "term": "afford",
+    "pos": "動詞",
+    "meaning": "余裕がある"
+   }
+  ],
+  "install": [
+   {
+    "term": "installation",
+    "pos": "名詞",
+    "meaning": "設置"
+   },
+   {
+    "term": "installment",
+    "pos": "名詞",
+    "meaning": "分割払い"
+   }
+  ],
+  "installation": [
+   {
+    "term": "install",
+    "pos": "動詞",
+    "meaning": "設置する"
+   },
+   {
+    "term": "installment",
+    "pos": "名詞",
+    "meaning": "分割払い"
+   }
+  ],
+  "installment": [
+   {
+    "term": "install",
+    "pos": "動詞",
+    "meaning": "設置する"
+   },
+   {
+    "term": "installation",
+    "pos": "名詞",
+    "meaning": "設置"
+   }
+  ],
+  "organization": [
+   {
+    "term": "organize",
+    "pos": "動詞",
+    "meaning": "準備する/整理する"
+   }
+  ],
+  "organize": [
+   {
+    "term": "organization",
+    "pos": "名詞",
+    "meaning": "組織"
+   }
+  ],
+  "condition": [
+   {
+    "term": "conditional",
+    "pos": "形容詞",
+    "meaning": "条件付きの"
+   }
+  ],
+  "conditional": [
+   {
+    "term": "condition",
+    "pos": "名詞",
+    "meaning": "状態/条件"
+   }
+  ],
+  "perform": [
+   {
+    "term": "performance",
+    "pos": "名詞",
+    "meaning": "業績/公演"
+   }
+  ],
+  "performance": [
+   {
+    "term": "perform",
+    "pos": "動詞",
+    "meaning": "実行する/演じる"
+   }
+  ],
+  "procure": [
+   {
+    "term": "procurement",
+    "pos": "名詞",
+    "meaning": "調達"
+   }
+  ],
+  "procurement": [
+   {
+    "term": "procure",
+    "pos": "動詞",
+    "meaning": "調達する"
+   }
+  ],
+  "concurrent": [
+   {
+    "term": "concurrently",
+    "pos": "副詞",
+    "meaning": "同時に"
+   }
+  ],
+  "concurrently": [
+   {
+    "term": "concurrent",
+    "pos": "形容詞",
+    "meaning": "同時の"
    }
   ],
   "donate": [
    {
     "term": "donation",
-    "pos": "名詞"
+    "pos": "名詞",
+    "meaning": "寄付"
    }
   ],
   "donation": [
    {
     "term": "donate",
-    "pos": "動詞"
+    "pos": "動詞",
+    "meaning": "寄付する"
+   }
+  ],
+  "amend": [
+   {
+    "term": "amendment",
+    "pos": "名詞",
+    "meaning": "修正/改正"
+   }
+  ],
+  "amendment": [
+   {
+    "term": "amend",
+    "pos": "動詞",
+    "meaning": "修正する"
+   }
+  ],
+  "subsequent": [
+   {
+    "term": "subsequently",
+    "pos": "副詞",
+    "meaning": "その後"
+   }
+  ],
+  "subsequently": [
+   {
+    "term": "subsequent",
+    "pos": "形容詞",
+    "meaning": "その後の"
+   }
+  ],
+  "convey": [
+   {
+    "term": "conveyor",
+    "pos": "名詞",
+    "meaning": "搬送装置"
+   }
+  ],
+  "conveyor": [
+   {
+    "term": "convey",
+    "pos": "動詞",
+    "meaning": "伝える"
+   }
+  ],
+  "confer": [
+   {
+    "term": "conference",
+    "pos": "名詞",
+    "meaning": "会議"
+   }
+  ],
+  "conference": [
+   {
+    "term": "confer",
+    "pos": "動詞",
+    "meaning": "協議する/授与する"
+   }
+  ],
+  "retroactive": [
+   {
+    "term": "retroactively",
+    "pos": "副詞",
+    "meaning": "遡って"
+   }
+  ],
+  "retroactively": [
+   {
+    "term": "retroactive",
+    "pos": "形容詞",
+    "meaning": "遡及する"
+   }
+  ],
+  "indefinite": [
+   {
+    "term": "indefinitely",
+    "pos": "副詞",
+    "meaning": "無期限に"
+   }
+  ],
+  "indefinitely": [
+   {
+    "term": "indefinite",
+    "pos": "形容詞",
+    "meaning": "期限のない"
+   }
+  ],
+  "participate": [
+   {
+    "term": "participation",
+    "pos": "名詞",
+    "meaning": "参加"
+   }
+  ],
+  "participation": [
+   {
+    "term": "participate",
+    "pos": "動詞",
+    "meaning": "参加する"
+   }
+  ],
+  "initiate": [
+   {
+    "term": "initiative",
+    "pos": "名詞",
+    "meaning": "主導/新構想"
+   }
+  ],
+  "initiative": [
+   {
+    "term": "initiate",
+    "pos": "動詞",
+    "meaning": "開始する"
+   }
+  ],
+  "dispatch": [
+   {
+    "term": "dispatcher",
+    "pos": "名詞",
+    "meaning": "配車係"
+   }
+  ],
+  "dispatcher": [
+   {
+    "term": "dispatch",
+    "pos": "名詞/動詞",
+    "meaning": "発送（名）、発送する（動）"
+   }
+  ],
+  "coordinate": [
+   {
+    "term": "coordinator",
+    "pos": "名詞",
+    "meaning": "調整役"
+   }
+  ],
+  "coordinator": [
+   {
+    "term": "coordinate",
+    "pos": "動詞",
+    "meaning": "調整する"
+   }
+  ],
+  "immediate": [
+   {
+    "term": "immediately",
+    "pos": "副詞",
+    "meaning": "すぐに"
+   }
+  ],
+  "immediately": [
+   {
+    "term": "immediate",
+    "pos": "形容詞",
+    "meaning": "即座の"
+   }
+  ],
+  "accurate": [
+   {
+    "term": "accurately",
+    "pos": "副詞",
+    "meaning": "正確に"
+   }
+  ],
+  "accurately": [
+   {
+    "term": "accurate",
+    "pos": "形容詞",
+    "meaning": "正確な"
+   }
+  ],
+  "stipulate": [
+   {
+    "term": "stipulation",
+    "pos": "名詞",
+    "meaning": "規定/条件"
+   }
+  ],
+  "stipulation": [
+   {
+    "term": "stipulate",
+    "pos": "動詞",
+    "meaning": "規定する"
+   }
+  ],
+  "promotion": [
+   {
+    "term": "promotional",
+    "pos": "形容詞",
+    "meaning": "販促の"
+   }
+  ],
+  "promotional": [
+   {
+    "term": "promotion",
+    "pos": "名詞",
+    "meaning": "昇進/販促"
+   }
+  ],
+  "retail": [
+   {
+    "term": "retailer",
+    "pos": "名詞",
+    "meaning": "小売業者"
+   }
+  ],
+  "retailer": [
+   {
+    "term": "retail",
+    "pos": "形容詞",
+    "meaning": "小売りの"
+   }
+  ],
+  "attain": [
+   {
+    "term": "attainable",
+    "pos": "形容詞",
+    "meaning": "達成可能な"
+   }
+  ],
+  "attainable": [
+   {
+    "term": "attain",
+    "pos": "動詞",
+    "meaning": "達成する"
+   }
+  ],
+  "deliberate": [
+   {
+    "term": "deliberately",
+    "pos": "副詞",
+    "meaning": "故意に"
+   }
+  ],
+  "deliberately": [
+   {
+    "term": "deliberate",
+    "pos": "形容詞",
+    "meaning": "意図的な"
    }
   ],
   "active": [
    {
     "term": "actively",
-    "pos": "副詞"
+    "pos": "副詞",
+    "meaning": "積極的に"
    }
   ],
   "actively": [
    {
     "term": "active",
-    "pos": "形容詞"
+    "pos": "形容詞",
+    "meaning": "活発な"
+   }
+  ],
+  "accredit": [
+   {
+    "term": "accreditation",
+    "pos": "名詞",
+    "meaning": "認定"
+   }
+  ],
+  "accreditation": [
+   {
+    "term": "accredit",
+    "pos": "動詞",
+    "meaning": "認定する"
+   }
+  ],
+  "alter": [
+   {
+    "term": "alteration",
+    "pos": "名詞",
+    "meaning": "変更/修繕"
+   }
+  ],
+  "alteration": [
+   {
+    "term": "alter",
+    "pos": "動詞",
+    "meaning": "変える"
+   }
+  ],
+  "arbitrate": [
+   {
+    "term": "arbitration",
+    "pos": "名詞",
+    "meaning": "仲裁"
+   },
+   {
+    "term": "arbitrator",
+    "pos": "名詞",
+    "meaning": "仲裁人"
+   }
+  ],
+  "arbitration": [
+   {
+    "term": "arbitrate",
+    "pos": "動詞",
+    "meaning": "仲裁する"
+   },
+   {
+    "term": "arbitrator",
+    "pos": "名詞",
+    "meaning": "仲裁人"
+   }
+  ],
+  "arbitrator": [
+   {
+    "term": "arbitrate",
+    "pos": "動詞",
+    "meaning": "仲裁する"
+   },
+   {
+    "term": "arbitration",
+    "pos": "名詞",
+    "meaning": "仲裁"
+   }
+  ],
+  "comfort": [
+   {
+    "term": "comfortable",
+    "pos": "形容詞",
+    "meaning": "快適な"
+   }
+  ],
+  "comfortable": [
+   {
+    "term": "comfort",
+    "pos": "名詞",
+    "meaning": "快適さ"
+   }
+  ],
+  "equip": [
+   {
+    "term": "equipment",
+    "pos": "名詞",
+    "meaning": "設備/機器"
+   }
+  ],
+  "equipment": [
+   {
+    "term": "equip",
+    "pos": "動詞",
+    "meaning": "備え付ける"
+   }
+  ],
+  "consistent": [
+   {
+    "term": "consistently",
+    "pos": "副詞",
+    "meaning": "一貫して"
+   }
+  ],
+  "consistently": [
+   {
+    "term": "consistent",
+    "pos": "形容詞",
+    "meaning": "一貫した"
+   }
+  ],
+  "regulate": [
+   {
+    "term": "regulation",
+    "pos": "名詞",
+    "meaning": "規則"
+   }
+  ],
+  "regulation": [
+   {
+    "term": "regulate",
+    "pos": "動詞",
+    "meaning": "規制する"
+   }
+  ],
+  "express": [
+   {
+    "term": "expressly",
+    "pos": "副詞",
+    "meaning": "明確に"
+   }
+  ],
+  "expressly": [
+   {
+    "term": "express",
+    "pos": "動詞",
+    "meaning": "表現する"
+   }
+  ],
+  "exhaust": [
+   {
+    "term": "exhaustive",
+    "pos": "形容詞",
+    "meaning": "徹底的な"
+   }
+  ],
+  "exhaustive": [
+   {
+    "term": "exhaust",
+    "pos": "動詞",
+    "meaning": "使い果たす"
+   }
+  ],
+  "account": [
+   {
+    "term": "accountable",
+    "pos": "形容詞",
+    "meaning": "責任がある"
+   }
+  ],
+  "accountable": [
+   {
+    "term": "account",
+    "pos": "名詞/動詞",
+    "meaning": "口座/取引先（名）、説明する（動, ～ for）"
+   }
+  ],
+  "contain": [
+   {
+    "term": "container",
+    "pos": "名詞",
+    "meaning": "コンテナ/容器"
+   }
+  ],
+  "container": [
+   {
+    "term": "contain",
+    "pos": "動詞",
+    "meaning": "含む"
+   }
+  ],
+  "assess": [
+   {
+    "term": "assessment",
+    "pos": "名詞",
+    "meaning": "評価"
+   }
+  ],
+  "assessment": [
+   {
+    "term": "assess",
+    "pos": "動詞",
+    "meaning": "評価する"
+   }
+  ],
+  "reluctant": [
+   {
+    "term": "reluctantly",
+    "pos": "副詞",
+    "meaning": "しぶしぶ"
+   }
+  ],
+  "reluctantly": [
+   {
+    "term": "reluctant",
+    "pos": "形容詞",
+    "meaning": "気が進まない"
+   }
+  ],
+  "renovate": [
+   {
+    "term": "renovation",
+    "pos": "名詞",
+    "meaning": "改装"
+   }
+  ],
+  "renovation": [
+   {
+    "term": "renovate",
+    "pos": "動詞",
+    "meaning": "改装する"
+   }
+  ],
+  "prevent": [
+   {
+    "term": "preventable",
+    "pos": "形容詞",
+    "meaning": "防げる"
+   },
+   {
+    "term": "preventive",
+    "pos": "形容詞",
+    "meaning": "予防の"
+   }
+  ],
+  "preventable": [
+   {
+    "term": "prevent",
+    "pos": "動詞",
+    "meaning": "防ぐ"
+   },
+   {
+    "term": "preventive",
+    "pos": "形容詞",
+    "meaning": "予防の"
+   }
+  ],
+  "preventive": [
+   {
+    "term": "prevent",
+    "pos": "動詞",
+    "meaning": "防ぐ"
+   },
+   {
+    "term": "preventable",
+    "pos": "形容詞",
+    "meaning": "防げる"
+   }
+  ],
+  "intention": [
+   {
+    "term": "intentional",
+    "pos": "形容詞",
+    "meaning": "意図的な"
+   },
+   {
+    "term": "intentionally",
+    "pos": "副詞",
+    "meaning": "意図的に"
+   }
+  ],
+  "intentional": [
+   {
+    "term": "intention",
+    "pos": "名詞",
+    "meaning": "意図"
+   },
+   {
+    "term": "intentionally",
+    "pos": "副詞",
+    "meaning": "意図的に"
+   }
+  ],
+  "intentionally": [
+   {
+    "term": "intention",
+    "pos": "名詞",
+    "meaning": "意図"
+   },
+   {
+    "term": "intentional",
+    "pos": "形容詞",
+    "meaning": "意図的な"
+   }
+  ],
+  "initial": [
+   {
+    "term": "initially",
+    "pos": "副詞",
+    "meaning": "最初は"
+   }
+  ],
+  "initially": [
+   {
+    "term": "initial",
+    "pos": "形容詞",
+    "meaning": "最初の"
+   }
+  ],
+  "accomplish": [
+   {
+    "term": "accomplishment",
+    "pos": "名詞",
+    "meaning": "達成/成果"
+   }
+  ],
+  "accomplishment": [
+   {
+    "term": "accomplish",
+    "pos": "動詞",
+    "meaning": "達成する"
+   }
+  ],
+  "consult": [
+   {
+    "term": "consultation",
+    "pos": "名詞",
+    "meaning": "相談"
+   }
+  ],
+  "consultation": [
+   {
+    "term": "consult",
+    "pos": "動詞",
+    "meaning": "相談する"
+   }
+  ],
+  "distinct": [
+   {
+    "term": "distinctive",
+    "pos": "形容詞",
+    "meaning": "独特の"
+   }
+  ],
+  "distinctive": [
+   {
+    "term": "distinct",
+    "pos": "形容詞",
+    "meaning": "明確な/別個の"
+   }
+  ],
+  "invent": [
+   {
+    "term": "inventor",
+    "pos": "名詞",
+    "meaning": "発明者"
+   }
+  ],
+  "inventor": [
+   {
+    "term": "invent",
+    "pos": "動詞",
+    "meaning": "発明する"
+   }
+  ],
+  "authorization": [
+   {
+    "term": "authorize",
+    "pos": "動詞",
+    "meaning": "許可する"
+   }
+  ],
+  "authorize": [
+   {
+    "term": "authorization",
+    "pos": "名詞",
+    "meaning": "認可"
+   }
+  ],
+  "accept": [
+   {
+    "term": "acceptance",
+    "pos": "名詞",
+    "meaning": "受領/承諾"
+   }
+  ],
+  "acceptance": [
+   {
+    "term": "accept",
+    "pos": "動詞",
+    "meaning": "受け入れる"
+   }
+  ],
+  "circulate": [
+   {
+    "term": "circulation",
+    "pos": "名詞",
+    "meaning": "発行部数/循環"
+   }
+  ],
+  "circulation": [
+   {
+    "term": "circulate",
+    "pos": "動詞",
+    "meaning": "回覧する/配布する"
+   }
+  ],
+  "resign": [
+   {
+    "term": "resignation",
+    "pos": "名詞",
+    "meaning": "辞職"
+   }
+  ],
+  "resignation": [
+   {
+    "term": "resign",
+    "pos": "動詞",
+    "meaning": "辞職する"
+   }
+  ],
+  "endorse": [
+   {
+    "term": "endorsement",
+    "pos": "名詞",
+    "meaning": "支持/推薦"
+   }
+  ],
+  "endorsement": [
+   {
+    "term": "endorse",
+    "pos": "動詞",
+    "meaning": "支持する"
+   }
+  ],
+  "renew": [
+   {
+    "term": "renewal",
+    "pos": "名詞",
+    "meaning": "更新"
+   }
+  ],
+  "renewal": [
+   {
+    "term": "renew",
+    "pos": "動詞",
+    "meaning": "更新する"
+   }
+  ],
+  "prohibit": [
+   {
+    "term": "prohibitive",
+    "pos": "形容詞",
+    "meaning": "法外な"
+   }
+  ],
+  "prohibitive": [
+   {
+    "term": "prohibit",
+    "pos": "動詞",
+    "meaning": "禁止する"
+   }
+  ],
+  "complex": [
+   {
+    "term": "complexity",
+    "pos": "名詞",
+    "meaning": "複雑さ"
+   }
+  ],
+  "complexity": [
+   {
+    "term": "complex",
+    "pos": "形容詞",
+    "meaning": "複雑な"
+   }
+  ],
+  "refurbish": [
+   {
+    "term": "refurbishment",
+    "pos": "名詞",
+    "meaning": "改修"
+   }
+  ],
+  "refurbishment": [
+   {
+    "term": "refurbish",
+    "pos": "動詞",
+    "meaning": "改修する"
+   }
+  ],
+  "illustrate": [
+   {
+    "term": "illustration",
+    "pos": "名詞",
+    "meaning": "図解"
+   }
+  ],
+  "illustration": [
+   {
+    "term": "illustrate",
+    "pos": "動詞",
+    "meaning": "説明する"
+   }
+  ],
+  "challenge": [
+   {
+    "term": "challenging",
+    "pos": "形容詞",
+    "meaning": "困難な"
+   }
+  ],
+  "challenging": [
+   {
+    "term": "challenge",
+    "pos": "名詞/動詞",
+    "meaning": "課題/挑戦（名）、異議を唱える/挑む（動）"
+   }
+  ],
+  "inform": [
+   {
+    "term": "informal",
+    "pos": "形容詞",
+    "meaning": "略式の"
+   }
+  ],
+  "informal": [
+   {
+    "term": "inform",
+    "pos": "動詞",
+    "meaning": "知らせる"
+   }
+  ],
+  "advertise": [
+   {
+    "term": "advertisement",
+    "pos": "名詞",
+    "meaning": "広告"
+   }
+  ],
+  "advertisement": [
+   {
+    "term": "advertise",
+    "pos": "動詞",
+    "meaning": "宣伝する"
+   }
+  ],
+  "contract": [
+   {
+    "term": "contractor",
+    "pos": "名詞",
+    "meaning": "請負業者"
+   }
+  ],
+  "contractor": [
+   {
+    "term": "contract",
+    "pos": "名詞/動詞",
+    "meaning": "契約（名）、契約する/収縮する（動）"
+   }
+  ],
+  "profit": [
+   {
+    "term": "profitable",
+    "pos": "形容詞",
+    "meaning": "利益のある"
+   }
+  ],
+  "profitable": [
+   {
+    "term": "profit",
+    "pos": "名詞/動詞",
+    "meaning": "利益（名）、利益を得る（動, ～ from）"
+   }
+  ],
+  "arrange": [
+   {
+    "term": "arrangement",
+    "pos": "名詞",
+    "meaning": "手配/取り決め"
+   }
+  ],
+  "arrangement": [
+   {
+    "term": "arrange",
+    "pos": "動詞",
+    "meaning": "手配する"
+   }
+  ],
+  "observation": [
+   {
+    "term": "observe",
+    "pos": "動詞",
+    "meaning": "観察する/守る"
+   }
+  ],
+  "observe": [
+   {
+    "term": "observation",
+    "pos": "名詞",
+    "meaning": "観察"
+   }
+  ],
+  "previous": [
+   {
+    "term": "previously",
+    "pos": "副詞",
+    "meaning": "以前に"
+   }
+  ],
+  "previously": [
+   {
+    "term": "previous",
+    "pos": "形容詞",
+    "meaning": "以前の"
+   }
+  ],
+  "operate": [
+   {
+    "term": "operator",
+    "pos": "名詞",
+    "meaning": "機械操作者"
+   }
+  ],
+  "operator": [
+   {
+    "term": "operate",
+    "pos": "動詞",
+    "meaning": "運営する/操作する"
+   }
+  ],
+  "assign": [
+   {
+    "term": "assignment",
+    "pos": "名詞",
+    "meaning": "任務/課題"
+   }
+  ],
+  "assignment": [
+   {
+    "term": "assign",
+    "pos": "動詞",
+    "meaning": "割り当てる"
+   }
+  ],
+  "cooperate": [
+   {
+    "term": "cooperation",
+    "pos": "名詞",
+    "meaning": "協力"
+   }
+  ],
+  "cooperation": [
+   {
+    "term": "cooperate",
+    "pos": "動詞",
+    "meaning": "協力する"
+   }
+  ],
+  "dramatic": [
+   {
+    "term": "dramatically",
+    "pos": "副詞",
+    "meaning": "劇的に"
+   }
+  ],
+  "dramatically": [
+   {
+    "term": "dramatic",
+    "pos": "形容詞",
+    "meaning": "劇的な"
+   }
+  ],
+  "delegate": [
+   {
+    "term": "delegation",
+    "pos": "名詞",
+    "meaning": "代表団"
+   }
+  ],
+  "delegation": [
+   {
+    "term": "delegate",
+    "pos": "名詞",
+    "meaning": "代表者"
+   }
+  ],
+  "integrate": [
+   {
+    "term": "integration",
+    "pos": "名詞",
+    "meaning": "統合"
+   }
+  ],
+  "integration": [
+   {
+    "term": "integrate",
+    "pos": "動詞",
+    "meaning": "統合する"
+   }
+  ],
+  "fulfill": [
+   {
+    "term": "fulfillment",
+    "pos": "名詞",
+    "meaning": "履行/達成感"
+   }
+  ],
+  "fulfillment": [
+   {
+    "term": "fulfill",
+    "pos": "動詞",
+    "meaning": "果たす"
+   }
+  ],
+  "fortunate": [
+   {
+    "term": "fortunately",
+    "pos": "副詞",
+    "meaning": "幸運にも"
+   }
+  ],
+  "fortunately": [
+   {
+    "term": "fortunate",
+    "pos": "形容詞",
+    "meaning": "幸運な"
+   }
+  ],
+  "undertake": [
+   {
+    "term": "undertaking",
+    "pos": "名詞",
+    "meaning": "事業/約束"
+   }
+  ],
+  "undertaking": [
+   {
+    "term": "undertake",
+    "pos": "動詞",
+    "meaning": "引き受ける"
+   }
+  ],
+  "defect": [
+   {
+    "term": "defective",
+    "pos": "形容詞",
+    "meaning": "欠陥のある"
+   }
+  ],
+  "defective": [
+   {
+    "term": "defect",
+    "pos": "名詞",
+    "meaning": "欠陥"
+   }
+  ],
+  "create": [
+   {
+    "term": "creative",
+    "pos": "形容詞",
+    "meaning": "創造的な"
+   }
+  ],
+  "creative": [
+   {
+    "term": "create",
+    "pos": "動詞",
+    "meaning": "創造する"
+   }
+  ],
+  "quotation": [
+   {
+    "term": "quote",
+    "pos": "名詞/動詞",
+    "meaning": "見積もり/引用（名）、見積もる/引用する（動）"
+   }
+  ],
+  "quote": [
+   {
+    "term": "quotation",
+    "pos": "名詞",
+    "meaning": "見積もり"
+   }
+  ],
+  "convenient": [
+   {
+    "term": "conveniently",
+    "pos": "副詞",
+    "meaning": "便利に"
+   }
+  ],
+  "conveniently": [
+   {
+    "term": "convenient",
+    "pos": "形容詞",
+    "meaning": "便利な"
+   }
+  ],
+  "instrument": [
+   {
+    "term": "instrumental",
+    "pos": "形容詞",
+    "meaning": "重要な役割を果たす"
+   }
+  ],
+  "instrumental": [
+   {
+    "term": "instrument",
+    "pos": "名詞",
+    "meaning": "器具/楽器"
+   }
+  ],
+  "document": [
+   {
+    "term": "documentation",
+    "pos": "名詞",
+    "meaning": "文書"
+   }
+  ],
+  "documentation": [
+   {
+    "term": "document",
+    "pos": "動詞",
+    "meaning": "記録する"
+   }
+  ],
+  "allot": [
+   {
+    "term": "allotment",
+    "pos": "名詞",
+    "meaning": "割当分"
+   }
+  ],
+  "allotment": [
+   {
+    "term": "allot",
+    "pos": "動詞",
+    "meaning": "割り当てる"
+   }
+  ],
+  "involve": [
+   {
+    "term": "involvement",
+    "pos": "名詞",
+    "meaning": "関与"
+   }
+  ],
+  "involvement": [
+   {
+    "term": "involve",
+    "pos": "動詞",
+    "meaning": "巻き込む/含む"
+   }
+  ],
+  "brief": [
+   {
+    "term": "briefly",
+    "pos": "副詞",
+    "meaning": "手短に"
+   }
+  ],
+  "briefly": [
+   {
+    "term": "brief",
+    "pos": "形容詞",
+    "meaning": "短い"
+   }
+  ],
+  "automatic": [
+   {
+    "term": "automatically",
+    "pos": "副詞",
+    "meaning": "自動的に"
+   }
+  ],
+  "automatically": [
+   {
+    "term": "automatic",
+    "pos": "形容詞",
+    "meaning": "自動の"
+   }
+  ],
+  "constant": [
+   {
+    "term": "constantly",
+    "pos": "副詞",
+    "meaning": "絶えず"
+   }
+  ],
+  "constantly": [
+   {
+    "term": "constant",
+    "pos": "形容詞",
+    "meaning": "絶え間ない"
    }
   ]
  },
