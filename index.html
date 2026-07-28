@@ -2,10 +2,29 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-24 15:00 (JST)
-  バージョン: 3.6.0
+  ファイル最終更新日時: 2026-07-29 10:00 (JST)
+  バージョン: 3.7.0
 --------------------------------------------------------------------
   【更新履歴】
+    v3.7.0 (2026-07-29 10:00 JST)
+      - 【新機能: 単語Tips】カード裏（および単語一覧の詳細）に
+        「Tips」ボタンを追加。タップするとポップアップで解説が出る。
+        追加の経緯: 日本語では同じ訳になる語の微妙なニュアンス差
+        （例: congestion と crowd）や、同じ語幹なのに意味の繋がりが
+        分かりにくい語（例: commence「開始する」なのに commencement が
+        「卒業式」）を、その場で解消できるようにしたいという要望による。
+        Tips は2種類:
+          nuance … 「使い分け」（似た訳語の比較。オレンジ色のボタン）
+          origin … 「意味のつながり」（多義語・語源。青色のボタン）
+        従来の 💡 語源解説(etymology) は1語1解説だったのに対し、
+        Tips は1件を複数の見出し語に紐づけられるため、比較系の解説を
+        重複なく持てる。両者は併存し、目的で使い分ける。
+      - データは word-relations.json にトップレベルキー "tips" を新設。
+        形式: [{ id, kind:"nuance"|"origin", title, terms:[語...], body }]
+        アプリ起動時に 語 → Tips の索引(RELATIONS.tipIndex)を組み立てる。
+        初版は89件のTipsを収録し、既存語彙280語に紐づけた。
+      - Tips が付いている語は、単語一覧・卒業ボックスの行に
+        小さな「Tips」バッジを表示し、読める語をひと目で分かるようにした。
     v3.6.0 (2026-07-24 15:00 JST)
       - Part6にタイマーバーを追加（1問30秒・1文書4問で約2分の目安。
         経過しても自動遷移・採点はしない）。
@@ -548,6 +567,27 @@
     color:var(--primary);border-radius:10px;padding:8px;font-size:13px;font-weight:700;cursor:pointer;}
   .rel-ety-btn:active{background:var(--primary-soft);}
   .ety-text{font-size:14px;line-height:1.85;color:var(--ink);margin-top:6px;}
+  /* v3.7.0: 単語Tips（使い分け / 意味のつながり）
+     - 語源解説(.rel-ety-btn)と並べても区別できるよう、
+       nuance=オレンジ系、origin=青系で色分けする。 */
+  .tips-box{margin-top:10px;display:flex;flex-direction:column;gap:6px;}
+  .tip-btn{width:100%;text-align:left;background:var(--surface);cursor:pointer;
+    border:1px solid var(--line);border-radius:10px;padding:9px 11px;
+    font-family:inherit;font-size:12.5px;font-weight:700;color:var(--ink);line-height:1.45;}
+  .tip-btn:active{opacity:.7;}
+  .tip-btn .tip-kind{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;
+    border-radius:5px;padding:1px 6px;margin-right:7px;vertical-align:1px;white-space:nowrap;}
+  .tip-nuance{border-color:#E08A2E;}
+  .tip-nuance .tip-kind{background:#FBEEDD;color:#B36A16;}
+  .tip-origin{border-color:var(--primary);}
+  .tip-origin .tip-kind{background:var(--primary-soft);color:var(--primary);}
+  /* Tips 本文: 改行(\n)を活かすため pre-wrap にする */
+  .tip-text{font-size:14px;line-height:1.9;color:var(--ink);margin-top:8px;white-space:pre-wrap;}
+  .tip-terms{margin-top:12px;font-size:11px;color:var(--ink-soft);line-height:1.7;}
+  .tip-terms b{font-family:var(--font-en);color:var(--ink);}
+  /* 単語一覧に出す小バッジ（Tipsのある語をひと目で分かるように） */
+  .tip-badge{display:inline-block;font-size:9px;font-weight:800;margin-left:6px;
+    background:#FBEEDD;color:#B36A16;border-radius:4px;padding:1px 5px;vertical-align:2px;}
   /* v2.6.0: 今日解いた語 */
   .today-done .done-head{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:800;}
   .today-done .done-head b{font-size:20px;color:var(--primary);}
@@ -670,8 +710,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "3.6.0";
-const LAST_UPDATED = "2026-07-24 15:00 JST"; // ファイル最終更新日時
+const APP_VERSION = "3.7.0";
+const LAST_UPDATED = "2026-07-29 10:00 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -940,7 +980,9 @@ function renderRelations(term){
   const key = term.trim().toLowerCase();
   const fam = RELATIONS.family[key] || [];
   const hasEty = !!RELATIONS.etymology[key];
-  if(fam.length === 0 && !hasEty) return '';
+  // v3.7.0: 派生語・語源が無くても Tips だけ持つ語があるため、条件に加える
+  const hasTip = tipsFor(key).length > 0;
+  if(fam.length === 0 && !hasEty && !hasTip) return '';
 
   let html = '<div class="relations">';
   if(fam.length > 0){
@@ -964,8 +1006,55 @@ function renderRelations(term){
   if(hasEty){
     html += `<button class="rel-ety-btn" onclick="showEtymology('${attrEsc(term)}')">💡 意味の成り立ちを見る</button>`;
   }
+  html += renderTipButtons(key);   // v3.7.0: 使い分け・意味のつながりTips
   html += '</div>';
   return html;
+}
+
+/* ================================================================
+   v3.7.0: 単語Tips
+   ----------------------------------------------------------------
+   経緯:
+     「congestion と crowd の違いは？」「commence は"開始"なのに
+     なぜ commencement が"卒業式"？」のような疑問を、その語を見た
+     その場で解消できるようにするために追加した。
+   既存の etymology（語源解説）との違い:
+     - etymology は 1語 = 1解説。その語の意味の成り立ちを説明する。
+     - tips は 1件を複数の語に紐づけられる。似た訳語の比較を
+       1件で書けるので、比較系はこちらに置く。
+   kind:
+     nuance … 使い分け（オレンジ）  origin … 意味のつながり（青）
+   ================================================================ */
+function tipsFor(term){
+  return RELATIONS.tipIndex[String(term||'').trim().toLowerCase()] || [];
+}
+function renderTipButtons(key){
+  const tips = tipsFor(key);
+  if(tips.length === 0) return '';
+  let h = '<div class="tips-box">';
+  for(const t of tips){
+    const isN = t.kind === 'nuance';
+    h += `<button class="tip-btn ${isN?'tip-nuance':'tip-origin'}" onclick="showTip('${attrEsc(t.id)}')">`
+       + `<span class="tip-kind">${isN?'使い分け':'意味のつながり'}</span>`
+       + `${escapeHtml(t.title)}</button>`;
+  }
+  return h + '</div>';
+}
+function showTip(id){
+  const t = (RELATIONS.tips || []).find(x => x.id === id);
+  if(!t) return;
+  const isN = t.kind === 'nuance';
+  // この Tips が付いている見出し語（相互に行き来できるよう一覧表示）
+  const terms = t.terms.map(w=>`<b>${escapeHtml(w)}</b>`).join(' / ');
+  const html = `
+    <h3>${isN?'🔍 使い分け':'🔗 意味のつながり'}</h3>
+    <p style="font-size:15px;font-weight:800;line-height:1.6;margin:8px 0 0">${escapeHtml(t.title)}</p>
+    <div class="tip-text">${escapeHtml(t.body)}</div>
+    <div class="tip-terms">この Tips が付いている語: ${terms}</div>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
 }
 
 function showEtymology(term){
@@ -2117,7 +2206,7 @@ function buildWordListHtml(){
   return list.map(c=>`
     <div class="card word-item">
       <div class="grow tappable" onclick="showWordDetail('${c.id}')">
-        <div class="wt">${escapeHtml(c.term)} ${c.type==='idiom'?'<span style="font-size:11px;color:var(--accent)">熟</span>':''}</div>
+        <div class="wt">${escapeHtml(c.term)} ${c.type==='idiom'?'<span style="font-size:11px;color:var(--accent)">熟</span>':''}${tipsFor(c.term).length?'<span class="tip-badge">Tips</span>':''}</div>
         <div class="wm">${(c.type==='word'&&c.pos)?`<span style="font-size:11px;font-weight:700;color:var(--primary)">${escapeHtml(c.pos)}</span> ・ `:''}${escapeHtml(c.meaning)}</div>
       </div>
       <span class="boxchip">B${c.box}</span>
@@ -2816,9 +2905,10 @@ init();
    word-relations.json から以下を読み込む:
      - family: 各語 → 同じ語根の派生語リスト（品詞つき）
      - etymology: 意味が派生・変化した語の解説文
+     - tips (v3.7.0): 使い分け／意味のつながりの解説（1件に複数語を紐づけ）
    カード裏で関連語を並べ、見出し語タップで解説ポップアップを出す。
    ================================================================ */
-const RELATIONS = { family:{}, etymology:{} };
+const RELATIONS = { family:{}, etymology:{}, tips:[], tipIndex:{} };
 async function loadRelations(){
   try{
     const res = await fetch('./word-relations.json', { cache:'no-store' });
@@ -2826,6 +2916,17 @@ async function loadRelations(){
       const j = await res.json();
       RELATIONS.family = j.family || {};
       RELATIONS.etymology = j.etymology || {};
+      RELATIONS.tips = j.tips || [];
+      // v3.7.0: 語 → Tips[] の索引を組み立てる。
+      // 1件のTipsを複数語に紐づけているため、ここで逆引きを作る。
+      const idx = {};
+      for(const t of RELATIONS.tips){
+        for(const w of (t.terms||[])){
+          const k = String(w).trim().toLowerCase();
+          (idx[k] = idx[k] || []).push(t);
+        }
+      }
+      RELATIONS.tipIndex = idx;
     }
   }catch(e){ console.warn('関連語データの読み込み失敗:', e); }
 }

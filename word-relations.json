@@ -3125,5 +3125,1009 @@
   "minimize": "min(小さい)+ize=「最小にする」→「最小化する・軽視する」。min(小さい)の仲間: minimum(最小)、minor(小さい方の)、diminish(減少する)、minute(微小な)。反対語は maximize(最大化する)。",
   "modify": "mod(型・尺度)+fy(する)=「型に合わせて変える」→「修正する・変更する」。mod(型)の仲間: mode(方式)、model(模型)、moderate(適度な)、modest(控えめな)、modern(現代の)。名詞 modification は「修正」。",
   "justify": "just(正しい)+fy(する)=「正しいと示す」→「正当化する」。just(正しい)の仲間: justice(正義)、just(公正な・ちょうど)、adjust(調整する=正しく合わせる)。名詞 justification は「正当化」。"
- }
+ },
+ "tips": [
+  {
+   "id": "congestion-crowd",
+   "kind": "nuance",
+   "title": "congestion / crowd / traffic jam — 同じ「混雑」でも視点が違う",
+   "terms": [
+    "congestion",
+    "congested"
+   ],
+   "body": "congestion は con(共に)+gest(運ぶ)で「一か所に運び込まれて詰まった状態」。人でも車でも通信回線でも、「流れが滞っている状態」そのものを指す不可算名詞です（traffic congestion / network congestion）。\n\ncrowd は「人の集まり＝群衆」という集団そのもの（可算名詞）。a crowd of tourists のように人にしか使わず、車や回線には使いません。形容詞 crowded は「（場所が）人でいっぱいの」。\n\ntraffic jam は道路限定で、口語寄りの具体的表現。\n\nTOEICでは掲示・交通情報で traffic congestion、congested roads の形が定番。「混雑を緩和する」は ease/relieve congestion と言います。"
+  },
+  {
+   "id": "attend-participate",
+   "kind": "nuance",
+   "title": "attend / participate in — 同じ「参加する」でも前置詞と関与度が違う",
+   "terms": [
+    "attend",
+    "participate",
+    "attendance",
+    "attendee"
+   ],
+   "body": "attend は他動詞なので前置詞は不要（attend the meeting）。中心の意味は「その場に居合わせる」で、座って聞いているだけでも attend です。\n\nparticipate は自動詞で participate in が必須。「加わって一緒に何かをする」＝能動的な関与を含みます。同義の take part in も in が要ります。\n\nTOEICの文法問題は、まさにこの「in が要るか要らないか」を狙ってきます。\n\n注意: attend to ~ になると意味が変わり「〜に対応する・世話をする」（attend to a customer / I have matters to attend to.）。attendance は「出席（率）」、attendant は「係員」です。"
+  },
+  {
+   "id": "reserve-book-arrange",
+   "kind": "nuance",
+   "title": "reserve / book / arrange — 「予約」の3語",
+   "terms": [
+    "reserve",
+    "book",
+    "arrangement",
+    "reservation"
+   ],
+   "body": "reserve は re(後ろに)+serve(取っておく)で「席・部屋を取り置く」。名詞は reservation で、make a reservation が定型。\n\nbook はもともと「帳簿(book)に書き込む」。fully booked（満席・満室）、booked up のように、英国英語では特によく使われます。\n\narrange は予約に限らず「段取りをつける・手配する」。travel arrangements（旅行の手配）のように、予約＋交通＋日程といった準備全体を指すのが違いです。\n\nTOEICのホテル・レストラン・出張の文脈で3語とも頻出します。"
+  },
+  {
+   "id": "fee-fare-charge",
+   "kind": "nuance",
+   "title": "fee / fare / charge / rate / expense / cost — 「料金」の使い分け",
+   "terms": [
+    "fee",
+    "fare",
+    "charge",
+    "expense",
+    "expenditure"
+   ],
+   "body": "fare … 乗り物の運賃だけ（bus fare / airfare / taxi fare）。\nfee … 専門サービスや手続きに払う料金（admission fee 入場料 / membership fee / late fee 延滞料 / legal fees）。\ncharge … その都度請求される料金。動詞でも使え、free of charge（無料で）、an additional charge、charge it to my account が定番。\nrate … 単位あたりの料金・率（hourly rate / exchange rate / at a discounted rate）。\nexpense … 会社や個人が負担する「経費・支出」（travel expenses / expense report 経費精算書）。\ncost … 何かを得るのに必要な「原価・費用」全般。\n\nTOEICでは請求書・出張精算の文書で、この6語が選択肢に並ぶ形で狙われます。"
+  },
+  {
+   "id": "employee-personnel",
+   "kind": "nuance",
+   "title": "employee / personnel / workforce / colleague — 「従業員」の見え方",
+   "terms": [
+    "employee",
+    "personnel",
+    "workforce",
+    "colleague"
+   ],
+   "body": "employee は数えられる「個々の従業員」。\n\npersonnel は組織全体の「人員・職員」を集合的に指し、単数扱いの集合名詞。personnels とは言いません。Personnel Department＝人事部（＝Human Resources）。\n\nworkforce は「全労働力」で規模を語るときの語（expand / reduce the workforce）。\n\ncolleague は雇用関係ではなく「同僚」という人間関係を表します。\n\n発音注意: personnel は最後にアクセント [pərsənél]、personal は最初 [pə́ːrsənl] で全く別の語。Part 1・2の聞き分けでも出ます。"
+  },
+  {
+   "id": "client-patron-consumer",
+   "kind": "nuance",
+   "title": "customer / client / patron / consumer — 「客」の4語",
+   "terms": [
+    "client",
+    "patron",
+    "consumer",
+    "clientele"
+   ],
+   "body": "customer … 物を買う一般の客。\nclient … 弁護士・会計士・広告代理店・コンサルなど、専門サービスを継続的に受ける顧客。集合的には clientele（顧客層）。\npatron … 店・劇場・図書館の利用客。掲示の丁寧語としてよく出ます（Patrons are asked to refrain from ...）。同じ語に「後援者」の意味もあり、patronage（愛顧・後援）、patronize（ひいきにする）と繋がります。語源は pater(父)＝「面倒を見てくれる人」。\nconsumer … 統計・市場の話での「最終消費者」（consumer demand / consumer electronics）。"
+  },
+  {
+   "id": "revenue-profit",
+   "kind": "nuance",
+   "title": "revenue / earnings / profit / income / proceeds / turnover — 「収益」の階層",
+   "terms": [
+    "revenue",
+    "profit",
+    "proceeds",
+    "earnings",
+    "turnover",
+    "income"
+   ],
+   "body": "revenue … 費用を引く前の「売上高・総収入」。会社の一番上の数字。\nearnings / profit … 費用を引いたあとの「利益」。\nincome … 個人の「所得」にも会社の net income（純利益）にも使える広い語。\nproceeds … 催しや売却で得られた「収益金」。The proceeds will go to charity. のように使い、常に複数形。\nturnover … ①売上高（主に英）②離職率（employee turnover）。TOEICでは②が頻出で、「人の入れ替わり」の意味で出たら要注意。"
+  },
+  {
+   "id": "increase-rise-raise",
+   "kind": "nuance",
+   "title": "increase / rise / raise — 目的語を取るか取らないか",
+   "terms": [
+    "increase",
+    "surge"
+   ],
+   "body": "increase は自動詞でも他動詞でも使える便利な語（Sales increased. / We increased prices.）。\n\nrise は自動詞のみ。目的語を取れません（Prices rose.）。\nraise は他動詞のみ。必ず目的語が要ります（raise prices / raise funds 資金を集める）。\n\n名詞の「昇給」は米 a raise、英 a rise。\n\n強勢の移動にも注意: 名詞の increase は前 [ínkriːs]、動詞は後ろ [inkríːs]。同じ型の語に record / present / transfer / decrease があります。\n\n急増を表すなら surge / soar / skyrocket、緩やかなら climb / edge up。"
+  },
+  {
+   "id": "resign-dismiss-layoff",
+   "kind": "nuance",
+   "title": "resign / step down / retire / dismiss / lay off — 辞める・辞めさせる",
+   "terms": [
+    "resign",
+    "dismiss",
+    "layoff",
+    "lay off",
+    "step down",
+    "resignation"
+   ],
+   "body": "resign … 本人の意思で辞職する（resign from the position）。名詞 resignation。\nstep down … 役職から「身を引く」。婉曲で、TOEICのニュース調の文で好まれます。\nretire … 定年・引退。\ndismiss … 会社が「解雇する」フォーマル語。ほかに「（会議を）解散する」「（意見を）退ける」の意味も。\nlay off / layoff … 業績悪化による一時解雇・人員削減。本人に落ち度がない点が fire と違います。\n\nTOEICは穏当な表現を好むため fire はほとんど出ず、resign / step down / lay off が使われます。"
+  },
+  {
+   "id": "assure-ensure-insure",
+   "kind": "nuance",
+   "title": "assure / ensure / insure — sure(確か)の三兄弟",
+   "terms": [
+    "assure",
+    "ensure",
+    "insure",
+    "assurance",
+    "insurance"
+   ],
+   "body": "共通の語根は sure（確か）。目的語に何を取るかで見分けます。\n\nassure … 「人」を安心させる。目的語は人（I assure you that the order will arrive.）。名詞 assurance（確約）。\nensure … 「事」が確実に起こるようにする。目的語は事柄や that節（ensure safety / ensure that all forms are signed）。\ninsure … 保険をかける（insure the shipment against damage）。名詞 insurance（保険）。\n\n空所の後ろが人なら assure、that節や物事なら ensure、保険の話なら insure、と判断できます。"
+  },
+  {
+   "id": "affect-effect-impact",
+   "kind": "nuance",
+   "title": "affect / effect / influence / impact — 「影響」の品詞と強さ",
+   "terms": [
+    "affect",
+    "influence",
+    "impact"
+   ],
+   "body": "affect … 動詞「〜に影響を及ぼす」。\neffect … 名詞「影響・効果」。take effect（発効する）、side effect（副作用）、in effect（実施中で）。ただし effect には他動詞「（変化を）もたらす・実現する」(effect a change) もあり、難問で出ます。\ninfluence … じわじわ考えや行動を左右する影響力。動詞・名詞どちらも。\nimpact … 衝撃を伴う強い影響。have an impact on ~ の形が定番。\n\n落とし穴: affect の名詞形 affection は「愛情」で意味が離れます。「影響」の名詞が欲しいときに affection を選ばないこと。"
+  },
+  {
+   "id": "adapt-adopt-adept",
+   "kind": "nuance",
+   "title": "adapt / adopt / adept — 一字違いの3語",
+   "terms": [
+    "adapt",
+    "adept"
+   ],
+   "body": "adapt（動詞・適応させる/する）… apt(適した)から。adapt to the new system（新制度に適応する）、adapt a novel for the screen（脚色する）。名詞 adaptation。\n\nadopt（動詞・採用する/養子にする）… adopt a new policy。名詞 adoption。\n\nadept（形容詞・熟達した）… be adept at ~。名詞ではありません。\n\nTOEIC Part 5 で3語が選択肢に並ぶ定番セット。「制度を〜する」なら adopt、「制度に〜する」なら adapt to、と前置詞で見分けられます。"
+  },
+  {
+   "id": "considerable-considerate",
+   "kind": "nuance",
+   "title": "considerable / considerate — -able と -ate で意味が別物",
+   "terms": [
+    "considerable",
+    "considerably"
+   ],
+   "body": "considerable … 「かなりの・相当な」量や程度（a considerable amount of time / considerable damage）。副詞 considerably（かなり）は比較級を強めるのに使います（considerably higher）。\n\nconsiderate … 「思いやりのある」人柄（It was considerate of you to call.）。\n\nどちらも consider（よく考える）から出ていますが、「考慮に値するほど大きい」→ considerable、「相手のことを考える」→ considerate と分かれました。\n\n同じ型の紛らわしいペア: respectable(立派な)/respectful(敬意を払う)/respective(それぞれの)、sensible(分別のある)/sensitive(敏感な)、economic(経済の)/economical(節約になる)。"
+  },
+  {
+   "id": "respective-respectable",
+   "kind": "nuance",
+   "title": "respective / respectable / respectful — respect の3つの顔",
+   "terms": [
+    "respective",
+    "respectable",
+    "respectively"
+   ],
+   "body": "respective … 「それぞれの」。必ず複数のものを受けます（They returned to their respective offices.）。副詞 respectively は「順に」（A and B are 10 and 20 dollars, respectively.）。\n\nrespectable … 「（世間に）恥ずかしくない・立派な」。a respectable income。\n\nrespectful … 「（相手に）敬意を払う」。be respectful of others' opinions。\n\n語根 spect は「見る」。re(再び)+spect＝「振り返って見る」→ 敬意。inspect(中を見る＝検査)、prospect(前を見る＝見込み)、perspective(通して見る＝視点)も同じ家族です。"
+  },
+  {
+   "id": "comprehensive-comprehensible",
+   "kind": "nuance",
+   "title": "comprehensive / comprehensible — 「包括的」と「理解できる」",
+   "terms": [
+    "comprehensive",
+    "comprehend",
+    "comprise"
+   ],
+   "body": "語根 prehend は「つかむ」。com(すべて)+prehend＝「全部つかむ」。\n\ncomprehensive … 全部つかんでいる＝「包括的な・総合的な」（a comprehensive review / comprehensive insurance 総合保険）。\n\ncomprehensible … つかめる＝「理解できる」。反対は incomprehensible。\n\ncomprise … 「〜から成る／〜を構成する」。The team comprises five members. のように受動態にしないのが原則（× is comprised of は避けられる）。同義の consist of / be composed of / be made up of と合わせて覚えます。"
+  },
+  {
+   "id": "confident-confidential",
+   "kind": "nuance",
+   "title": "confident / confidential — 「自信」と「機密」がなぜ同じ語根？",
+   "terms": [
+    "confidential",
+    "confide"
+   ],
+   "body": "語根 fid は「信じる」（fidelity＝忠実、faith＝信仰と同族）。con(強め)+fid＝「強く信じる」。\n\nconfident … 自分を信じている＝「自信のある」。\n\nconfidential … 「信じて打ち明けた」内容＝他人に漏らさない＝「機密の」。confide in someone（人に秘密を打ち明ける）が原点です。\n\nTOEICでは Confidential の透かしが入った社内文書、keep the information confidential、confidentiality agreement（秘密保持契約）の形で出ます。"
+  },
+  {
+   "id": "complement-compliment",
+   "kind": "nuance",
+   "title": "complement / compliment / complimentary — 同音異義の要注意ペア",
+   "terms": [
+    "complement",
+    "complimentary"
+   ],
+   "body": "発音はどちらもほぼ同じ [kάmpləmənt] ですが意味は別。\n\ncomplement（e）… complete と同語源で「補って完全にする・引き立てる」（The wine complements the dish. / a complement of staff 定員）。形容詞 complementary＝補完的な。\n\ncompliment（i）… 「褒め言葉・賛辞」。動詞なら「褒める」。\n\nそして complimentary は「褒める」から派生して「無料の・招待の」の意味になります。店が好意で差し上げる＝「褒めるように贈る」という発想。TOEICではcomplimentary breakfast（無料の朝食）、complimentary shuttle service が超頻出。「無料」の意味で出たら compliment 系だと思い出してください。"
+  },
+  {
+   "id": "stationery-stationary",
+   "kind": "nuance",
+   "title": "stationery / stationary — 文房具と「動かない」が同語源",
+   "terms": [
+    "stationery"
+   ],
+   "body": "どちらも station（立つ場所）から。中世の商人は移動して売り歩くのが普通でしたが、大学の前などに「定位置の店」を構えた業者を stationer と呼びました。彼らが主に扱ったのが紙・ペン・本。そこから stationery＝文房具になりました。\n\nstationary（a）… 「動かない・据え置きの」。a stationary bike（エアロバイク）。\n\n覚え方: stationery は papER の e、stationary は stAy の a。\n\nTOEICではオフィス用品発注の文書で office supplies / stationery が並んで出ます。"
+  },
+  {
+   "id": "postpone-defer-delay",
+   "kind": "nuance",
+   "title": "postpone / defer / delay / put off / reschedule / cancel",
+   "terms": [
+    "postpone",
+    "defer",
+    "delay",
+    "cancel",
+    "reschedule"
+   ],
+   "body": "postpone … 意図的に「後の日時へずらす」。post(後)+pone(置く)。\ndefer … よりフォーマルに「延期する・先送りする」。de(離れて)+fer(運ぶ)。defer to ~ になると「〜に従う・敬意を払って譲る」と別の意味に。\ndelay … 意図とは関係なく「遅れる・遅らせる」。The flight was delayed. のように受動で頻出。\nput off … 口語の「延期する」。\nreschedule … 日程を組み直す。TOEICのメールで最頻出。\ncancel … 中止（延期ではない）。call off も同義。\n\n「延期されただけか、中止か」は Part 3・4 の設問でよく問われる区別です。"
+  },
+  {
+   "id": "inform-notify-announce",
+   "kind": "nuance",
+   "title": "inform / notify / announce / advise — 「知らせる」と語法",
+   "terms": [
+    "inform",
+    "notify",
+    "announce",
+    "advise",
+    "notification"
+   ],
+   "body": "型が違うので Part 5 で狙われます。\n\ninform 人 of/about 事 … inform employees of the change。人が直接目的語。\nnotify 人 of 事 … notify us of any changes。inform と同型ですが、より事務的・公式。名詞 notification。\nannounce 事 (to 人) … announce the merger to the press。× announce us the news は不可。\nadvise 人 (of 事 / to do) … 「助言する」だけでなく「通知する」の意味でも使われます（Please advise us of the arrival date.）。\n\n「人を目的語に取れるか」で選択肢を絞れます。"
+  },
+  {
+   "id": "provide-supply-furnish",
+   "kind": "nuance",
+   "title": "provide / supply / furnish / offer / present — 「与える」の語法",
+   "terms": [
+    "provide",
+    "supply",
+    "furnish",
+    "offer",
+    "present"
+   ],
+   "body": "provide 人 with 物 ／ provide 物 for/to 人 … 2通りの型があります。\nsupply 人 with 物 ／ supply 物 to 人 … provide とほぼ同型。「継続的に供給する」響き。\nfurnish 人 with 物 … フォーマル。「家具を備え付ける」から「必要な物を備えさせる」へ。a furnished apartment（家具付きアパート）。\noffer 人 物 … 二重目的語が取れる（offer him a job）。「申し出る」なので相手が断る余地がある。\npresent 人 with 物 … 正式に「贈呈する」。\n\nwith が要るか for/to が要るかが Part 5 の頻出ポイントです。"
+  },
+  {
+   "id": "acquire-obtain-purchase",
+   "kind": "nuance",
+   "title": "purchase / acquire / obtain / procure — 「手に入れる」",
+   "terms": [
+    "purchase",
+    "acquire",
+    "obtain",
+    "acquisition",
+    "procure"
+   ],
+   "body": "purchase … 「金銭で買う」フォーマル語。buy の改まった形で、領収書・注文書に出ます。\nacquire … 「（時間や努力をかけて）獲得する」。企業買収の acquisition（M&A の A）、acquire skills（技能を身につける）。\nobtain … 「（手続きを経て）入手する」。obtain a permit / obtain approval。ob(向かって)+tain(保つ)。\nprocure … 調達する（企業の購買部門 procurement department）。\n\nTOEICでは「許可を得る」なら obtain、「会社を買う」なら acquire、「備品を買う」なら purchase、と相手によって選び分けます。"
+  },
+  {
+   "id": "estimate-quote-bid",
+   "kind": "nuance",
+   "title": "estimate / quote / bid / budget — 見積もりまわり",
+   "terms": [
+    "estimate",
+    "quote",
+    "bid",
+    "budget",
+    "quotation"
+   ],
+   "body": "estimate … 「概算見積もり」。あくまで見込みで、変わりうる。\nquote / quotation … 「正式な見積価格」。提示したら通常その額で契約できます。動詞 quote には「引用する」の意味もあります。\nbid … 入札・入札額（submit a bid / the winning bid 落札）。オークションの「付け値」も同じ。\nbudget … 「予算」。動詞で「予算を組む」、形容詞で「格安の」(a budget hotel)。\n\n工事・発注の文脈で3語が同じ文書に出るので、「見込み（estimate）→ 正式提示（quote）→ 入札（bid）」の流れで整理すると混乱しません。"
+  },
+  {
+   "id": "shipment-cargo-freight",
+   "kind": "nuance",
+   "title": "shipment / delivery / freight / cargo / parcel — 物流の語",
+   "terms": [
+    "shipment",
+    "delivery",
+    "freight",
+    "cargo",
+    "parcel",
+    "package"
+   ],
+   "body": "shipment … 「発送（すること）／発送品」。船に限らずトラック・航空便でも ship を使います。\ndelivery … 「配達（して届くこと）」。受け取る側の視点。\nfreight … 「貨物・輸送貨物（およびその運賃）」。freight charges。\ncargo … 船・飛行機に積む「積み荷」。\nparcel / package … 小包。package は「一括の商品・パッケージ」の意味でも出ます（a benefits package 福利厚生一式）。\n\nTOEICの配送遅延メールでは be shipped / be delivered / tracking number がセットで出ます。"
+  },
+  {
+   "id": "renovate-remodel-refurbish",
+   "kind": "nuance",
+   "title": "renovate / remodel / refurbish / restore / repair — 直す・改装する",
+   "terms": [
+    "renovate",
+    "remodel",
+    "refurbish",
+    "restore",
+    "renovation",
+    "maintenance"
+   ],
+   "body": "renovate … 古い建物を「改装して新しくする」。nov(新しい)＝novel/innovate と同族。\nremodel … 「（間取りや形を）作り替える」。\nrefurbish … 「（塗り替え・什器交換で）きれいに整え直す」。中古品を整備した refurbished products も頻出。\nrestore … 「元の状態に戻す」。歴史的建造物や、サービスの復旧（restore power 電力を復旧する）。\nrepair … 壊れた箇所を「修理する」。\nmaintenance … 壊れる前の「保守・点検」。\n\nTOEICの掲示では under renovation（改装中）、scheduled maintenance（定期点検）が定番表現です。"
+  },
+  {
+   "id": "efficient-effective",
+   "kind": "nuance",
+   "title": "efficient / effective — 「効率」と「効果」",
+   "terms": [
+    "efficient",
+    "effective",
+    "efficiency",
+    "efficiently",
+    "effectively"
+   ],
+   "body": "どちらも fect/fic（作る・なす。factory, manufacture と同族）から。\n\nefficient … 少ない時間・費用・労力でこなす＝「効率的な」。エネルギーやプロセスに使う（an energy-efficient building / work efficiently）。\n\neffective … 狙った結果が出る＝「効果的な」。加えて「（法律・料金が）有効な・発効する」の意味が重要で、effective immediately（即日発効で）、effective January 1（1月1日付で）はTOEIC頻出の定型です。\n\n「速く安くできる」なら efficient、「ちゃんと結果が出る／発効する」なら effective。"
+  },
+  {
+   "id": "competent-competitive",
+   "kind": "nuance",
+   "title": "compete 一族 — competent / competitive / competitive price の罠",
+   "terms": [
+    "competent",
+    "competitive",
+    "competition",
+    "compete",
+    "competitor"
+   ],
+   "body": "compete は com(共に)+pete(求める)＝「同じものを一緒に求め合う」。\n\ncompetitive … ①競争の激しい（a competitive market）②競争力のある。ここから competitive prices は「安い・お得な価格」の意味になります。「競争的な価格」と直訳すると意味を取り違えるので注意。competitive salary＝好待遇の給与も同じ発想。\n\ncompetent … 「有能な・（職務を果たす）能力がある」。名詞 competence / competency。competitive と形が似ていますが「競争」とは関係ありません。\n\ncompetitor は「競合他社・競技者」、competition は「競争」と「コンテスト」の両方。"
+  },
+  {
+   "id": "apply-family",
+   "kind": "nuance",
+   "title": "apply / applicant / application / appliance / applicable — 同じ語根の別物",
+   "terms": [
+    "apply",
+    "applicant",
+    "application",
+    "appliance",
+    "applicable"
+   ],
+   "body": "語根 ply/plic は「折る・重ねる」。ap(=to)+ply＝「（ぴったり）当てる」が原義です。\n\napply for ~ … 〜に応募・申請する（応募先が for）。apply to ~ … 〜に当てはまる／〜（機関）に出願する。apply A to B … AをBに塗る・適用する。前置詞で意味が変わります。\n\napplicant … 応募者。application … 申請・応募（＋アプリ）。\nappliance … 「（家庭用）電化製品」。「当てて使う道具」から。home appliances は超頻出。\napplicable … 「適用される」（applicable to all members / where applicable 該当する場合は）。\n\nply の仲間: imply(中に折り込む→ほのめかす)、reply(折り返す→返答)、comply(一緒に折れる→従う)、supply(下から満たす→供給)。"
+  },
+  {
+   "id": "imply-infer",
+   "kind": "nuance",
+   "title": "imply / infer / suggest / indicate — ほのめかす人と読み取る人",
+   "terms": [
+    "imply",
+    "infer",
+    "indicate",
+    "implication",
+    "explicit"
+   ],
+   "body": "imply … 「話し手が」言外に含める＝ほのめかす。\ninfer … 「聞き手が」そこから推論する。主語が逆になるのがポイントです。\nsuggest … 提案する／示唆する。\nindicate … データや標識が「示す」。\n\nTOEIC Part 7 の設問 What is implied about ~? / What can be inferred about ~? は「本文に直接書かれていないが読み取れること」を問う型。\n\n反対語は explicit（明示された）で、explicitly stated（はっきり書かれている）。implicit（暗黙の）と対で覚えます。"
+  },
+  {
+   "id": "eligible-liable-feasible",
+   "kind": "nuance",
+   "title": "eligible / liable / feasible / reliable — -ible/-able の意味",
+   "terms": [
+    "eligible",
+    "liable",
+    "feasible",
+    "reliable",
+    "eligibility"
+   ],
+   "body": "eligible … 「資格がある」。be eligible for a discount / be eligible to apply。leg(選ぶ)から＝「選ばれうる」。select / elect と同族。\n\nliable … ①法的に責任がある（be liable for damages）②〜しがちだ（be liable to break）。名詞 liability は「責任・負債」。\n\nfeasible … 「実行可能な」。a feasible plan / feasibility study（実現可能性調査）。\n\nreliable … 「信頼できる」。rely on から。\n\nTOEICでは「割引の対象になる」を be eligible for、「〜する資格を満たす」を qualify for と言い換える出題が定番です。"
+  },
+  {
+   "id": "vacancy-opening",
+   "kind": "nuance",
+   "title": "opening / vacancy / position / candidate / applicant — 求人まわり",
+   "terms": [
+    "candidate",
+    "applicant",
+    "recruit",
+    "recruitment",
+    "vacant"
+   ],
+   "body": "opening / vacancy … 「空きポスト」。ホテルなら vacancy は「空室」。vacant は形容詞（a vacant seat）。\nposition / post … 職・ポスト。\napplicant … 応募した人（応募という行為が基準）。\ncandidate … 選考の候補者（選ばれる可能性が基準）。選挙の「立候補者」も candidate。\nrecruit … 動詞「採用する」／名詞「新人」。recruitment＝採用活動。\nrésumé（米）/ CV（英）… 履歴書。cover letter＝添え状。reference＝推薦者・照会先。\n\n求人広告と面接メールはTOEICで最頻出のセットです。"
+  },
+  {
+   "id": "shortage-scarcity",
+   "kind": "nuance",
+   "title": "shortage / scarcity / insufficient / lack — 「足りない」",
+   "terms": [
+    "shortage",
+    "scarcity",
+    "insufficient",
+    "deficit",
+    "scarce"
+   ],
+   "body": "shortage … 必要量に対して「不足している状態」（a labor shortage / a shortage of parts）。\nscarcity … そもそも「めったにない・希少」。形容詞 scarce。scarcity value＝希少価値。\ninsufficient … 「（量・程度が）不十分な」形容詞。insufficient funds（残高不足）は銀行文書の定型。\ndeficit … 収支の「赤字・不足額」。trade deficit（貿易赤字）。\n\ndue to a shortage of ~（〜不足のため）はTOEICの遅延・欠品のお知らせで頻出します。"
+  },
+  {
+   "id": "conference-convention",
+   "kind": "nuance",
+   "title": "conference / convention / seminar / workshop — 集まりの種類",
+   "terms": [
+    "conference",
+    "convention",
+    "workshop",
+    "keynote"
+   ],
+   "body": "conference … 発表と討議を伴う「会議・学会」。規模は中〜大。\nconvention … 業界団体などの「大会・総会」。同じ語に「慣習・しきたり」の意味もあり（con＝共に + ven＝来る、「一緒に来ること」→ 集まり／みんなで守る約束事）。\nseminar … 少人数の「講習会」。\nworkshop … 参加者が手を動かす「実習型の講座」。もとは「作業場」。\nsession … 会期中の個々の「時間枠」。\nkeynote (speech/speaker) … 基調講演（者）。\n\nTOEICのイベント案内では registration（登録）、venue（会場）、agenda（議題）、handout（配付資料）がセットで登場します。"
+  },
+  {
+   "id": "venue-facility-premises",
+   "kind": "nuance",
+   "title": "venue / facility / premises / property / site — 「場所」の言い分け",
+   "terms": [
+    "venue",
+    "facility",
+    "premises",
+    "property",
+    "location"
+   ],
+   "body": "venue … イベントの「開催会場」。\nfacility … 目的のための「施設・設備」（a manufacturing facility 工場）。動詞 facilitate は「（事を）容易にする・進行役を務める」。\npremises … 建物と敷地を合わせた「構内」。常に複数形で、on the premises（構内で）は掲示の定型（No smoking on the premises.）。\nproperty … 「所有地・不動産」および「特性」。\nlocation / site … 立地・用地。construction site（建設現場）。\n\n掲示文の premises は「前提」ではないので注意（premise 単数だと「前提」）。"
+  },
+  {
+   "id": "warranty-guarantee",
+   "kind": "nuance",
+   "title": "warranty / guarantee — 保証書と保証すること",
+   "terms": [
+    "warranty",
+    "guarantee"
+   ],
+   "body": "実はどちらも同じゲルマン語源で、フランス語経由で w- と g- に分かれた双子の語です。\n\nwarranty … 主に製品の「保証（書）」。期間つきの契約。under warranty（保証期間内で）、a one-year warranty。名詞で使うのが普通。\n\nguarantee … 「保証する」動詞としても、「保証・請け合い」名詞としても使えます。a money-back guarantee（返金保証）、guarantee satisfaction。\n\nTOEICの製品案内では「保証期間内なら無償修理」の形で warranty が、広告文では guarantee が使われる傾向です。"
+  },
+  {
+   "id": "merchandise-commodity",
+   "kind": "nuance",
+   "title": "merchandise / goods / commodity / product / inventory — 「商品」",
+   "terms": [
+    "merchandise",
+    "commodity",
+    "inventory"
+   ],
+   "body": "merchandise … 店で売る「商品（全体）」。不可算で、merchandises とは言いません。動詞では「販売促進する」。merchant（商人）と同族。\ngoods … 商品・品物（常に複数扱い）。\ncommodity … 「日用品」および相場で取引される「一次産品」（穀物・原油など）。\nproduct … 生産された製品。\ninventory / stock … 在庫。take inventory（棚卸しをする）、out of stock（在庫切れ）、in stock（在庫あり）。\n\nTOEICでは inventory が「在庫」と「棚卸し」の両方で出るのが要注意点です。"
+  },
+  {
+   "id": "receipt-invoice",
+   "kind": "nuance",
+   "title": "invoice / receipt / bill / statement / voucher — 紙の種類",
+   "terms": [
+    "invoice",
+    "receipt",
+    "voucher",
+    "statement",
+    "reimbursement",
+    "reimburse"
+   ],
+   "body": "invoice … 「請求書」。支払いの前に届くもの。\nreceipt … 「領収書」。支払いの後にもらうもの。動詞 receive の名詞ですが、upon receipt of ~（〜を受け取り次第）という「受領」の意味でも頻出（発音は [risíːt]、p は無音）。\nbill … 請求書（米）／紙幣（米）。動詞で「請求する」。\nstatement … 明細書（bank statement）。「声明」の意味も。\nvoucher … 引換券・クーポン、経費の証憑。\n\n経費精算では submit receipts for reimbursement（払い戻しのため領収書を提出する）が定型。reimburse は「立て替え分を払い戻す」、refund は「支払った代金を返す」、compensate は「損失を埋め合わせる」と使い分けます。"
+  },
+  {
+   "id": "brochure-catalog",
+   "kind": "nuance",
+   "title": "brochure / booklet / catalog / leaflet / manual — 印刷物",
+   "terms": [
+    "brochure",
+    "booklet",
+    "catalog",
+    "leaflet",
+    "handout"
+   ],
+   "body": "brochure … 写真入りの「案内パンフレット」。旅行・不動産で頻出。\nbooklet … 小さな冊子（数十ページ）。\ncatalog(ue) … 商品を並べた「カタログ」。\nleaflet / flyer … 1枚もののチラシ。\nmanual … 取扱説明書。instructions ともいう。\nhandout … 会議・講座の配付資料。\n\nTOEIC Part 7 では、文書の冒頭で「何の印刷物か」を掴めると設問が速く解けます。"
+  },
+  {
+   "id": "policy-regulation",
+   "kind": "nuance",
+   "title": "policy / regulation / procedure / guideline / terms — 決まりごと",
+   "terms": [
+    "policy",
+    "regulation",
+    "procedure",
+    "guideline",
+    "compliance"
+   ],
+   "body": "policy … 会社や国の「方針」。a return policy（返品規定）、an insurance policy（保険証券）。\nregulation … 法的な「規則・規制」。government regulations。\nprocedure … 「手順」。follow the proper procedure。\nguideline … 拘束力の弱い「指針」。\nprotocol … 手順・儀礼上の作法。\nterms and conditions … 契約の「条件」。\n\n「守る」は comply with / adhere to / abide by / observe。compliance（法令順守）はTOEICの社内文書で頻出です。"
+  },
+  {
+   "id": "approve-endorse-certify",
+   "kind": "nuance",
+   "title": "approve / authorize / endorse / certify / ratify — 認める",
+   "terms": [
+    "approve",
+    "authorize",
+    "endorse",
+    "certify",
+    "approval",
+    "authorization"
+   ],
+   "body": "approve … 上位者が「承認する」。approve the budget。approve of ~ だと「〜をよいと思う」。\nauthorize … 「権限を与える・許可する」。authorized personnel only（関係者以外立入禁止）は掲示の定型。\nendorse … ①（有名人が）「推奨する」②「（小切手に）裏書きする」。en(上に)+dors(背中)＝「背中に書く」が原義で、裏書きが本来の意味です。\ncertify … 証明書を出して「証明・認定する」。certified public accountant（公認会計士）。\nratify … 条約などを正式に「批准する」。\n\nTOEICでは「誰の承認が要るか」が Part 7 の設問になります。"
+  },
+  {
+   "id": "expand-extend",
+   "kind": "nuance",
+   "title": "expand / extend / enhance / broaden — 「広げる」の方向",
+   "terms": [
+    "expand",
+    "extend",
+    "enhance",
+    "broaden",
+    "expansion",
+    "extension"
+   ],
+   "body": "expand … 全体が「膨らむ・拡大する」（expand the business / expand into Asia）。ex(外へ)+pand(広げる)。\nextend … 「（線・期間を）伸ばす」。extend the deadline（締切を延ばす）、extend an invitation（招待する＝手を差し伸べる）。名詞 extension は「延長」と「内線番号」。\nenhance … 「（質・価値を）高める」。量ではなく質。\nbroaden … 幅を広げる（broaden your knowledge）。\n\n「期間」なら extend、「規模」なら expand、「質」なら enhance と選び分けます。"
+  },
+  {
+   "id": "reduce-decline",
+   "kind": "nuance",
+   "title": "reduce / decrease / decline / lower / cut back — 「減らす」",
+   "terms": [
+    "reduce",
+    "decrease",
+    "decline",
+    "lower"
+   ],
+   "body": "reduce … 他動詞「減らす」（reduce costs）。re(戻す)+duce(導く)。\ndecrease … 自動詞「減る」・他動詞「減らす」の両方。名詞は強勢が前 [díːkriːs]。\ndecline … ①自動詞「減少する」②他動詞「（申し出を）丁重に断る」。de(下)+cline(傾く)＝「下に傾く」。Part 7 で「断った」の意味で出ると意外性があります。\nlower … 「（価格・水準を）下げる」。\ncut back (on) … 「切り詰める」。\n\n同義の断る系: decline / turn down / refuse / reject（reject は強い拒絶）。"
+  },
+  {
+   "id": "anticipate-expect",
+   "kind": "nuance",
+   "title": "anticipate / expect / look forward to — 「予期する」と「楽しみ」",
+   "terms": [
+    "anticipate",
+    "expect",
+    "look forward to"
+   ],
+   "body": "expect … 「（起こると）予期する」。良い事でも悪い事でも使える中立語。expect 人 to do の型が重要。\n\nanticipate … ante(前に)+cip(取る)＝「先回りして手を打つ」。単に予想するだけでなく「見越して備える」ニュアンスがあります。anticipate doing の形（× anticipate to do）に注意。\n\nlook forward to … 「楽しみに待つ」。to は前置詞なので後ろは名詞か動名詞（look forward to hearing from you）。メールの結びの定番で、TOEICでも to の後ろに動詞の原形を置かせる誤答が用意されます。"
+  },
+  {
+   "id": "notice-notify-note",
+   "kind": "nuance",
+   "title": "notice / notify / note / notable — not(知る)の一族",
+   "terms": [
+    "notice",
+    "notify",
+    "note"
+   ],
+   "body": "語根 not は「知る」（know と同族）。\n\nnotice … 動詞「気づく」／名詞「通知・掲示」。until further notice（追って通知があるまで）、two weeks' notice（2週間前の予告）は掲示・退職の定型。\nnoticeable … 「目立つ・はっきり分かる」。\nnotify … 正式に「通知する」（notify 人 of 事）。\nnote … 動詞「注目する・書き留める」／名詞「メモ・注記」。Please note that ~ は案内文の定型。\nnotable / noteworthy … 「注目に値する」。\n\n同じ not の仲間に notion（考え）、notorious（悪名高い＝よく知られた）があります。"
+  },
+  {
+   "id": "handle-cope-address",
+   "kind": "nuance",
+   "title": "handle / deal with / cope with / address — 「対処する」",
+   "terms": [
+    "handle",
+    "deal with",
+    "cope with",
+    "address"
+   ],
+   "body": "handle … 手（hand）で扱う＝「（業務・苦情を）処理する」。Handle with care（取扱注意）。\ndeal with … 最も広く「〜を扱う・処理する」。\ncope with … 「（困難に）なんとか対処する」。困難であることが前提。\naddress … 「（問題に）取り組む・言及する」。もとは「向ける」で、「宛先を向ける→住所」「言葉を向ける→演説する」「注意を向ける→対処する」と広がりました。address the issue（問題に対処する）はTOEIC頻出。\ntackle … 正面から「取り組む」。\n\nattend to（対応する）も同じグループとして押さえておくと言い換え問題に強くなります。"
+  },
+  {
+   "id": "substitute-replace",
+   "kind": "nuance",
+   "title": "substitute / replace / alternative — 入れ替えの語法",
+   "terms": [
+    "substitute",
+    "replace",
+    "alternative"
+   ],
+   "body": "replace A with B … 「AをBに取り替える」。古い方が目的語。\nsubstitute B for A … 「A の代わりに B を使う」。新しい方が目的語で、順序が逆になります。現代英語では substitute A with B も使われますが、TOEICは古典的な for の型を好みます。\n名詞の substitute は「代役・代用品」（a substitute teacher）。\nalternative … 「代替案・別の選択肢」／形容詞「代わりの」。alternate は「交互の・一つおきの」で別語（on alternate days＝1日おきに）。\n\nreplacement は「後任者」「交換部品」の両方で出ます。"
+  },
+  {
+   "id": "opportunity-occasion",
+   "kind": "nuance",
+   "title": "opportunity / chance / occasion — 「機会」",
+   "terms": [
+    "opportunity",
+    "occasion",
+    "occasionally"
+   ],
+   "body": "opportunity … 目的を果たすのに「好都合な機会」。語源は ob(向かって)+port(港)＝「（風向きがよく）船が港に入れる」。port(運ぶ・港)の仲間に export / import / transport / portable がいます。\n\nchance … 偶然の機会、および「見込み・可能性」。\n\noccasion … 「（特定の）場合・行事」。on this occasion、a special occasion（特別な行事）。occasionally は「時々」。\n\nTOEICの求人広告では career opportunities（キャリアの機会）が定番表現です。"
+  },
+  {
+   "id": "goal-objective",
+   "kind": "nuance",
+   "title": "goal / objective / aim / purpose / target — 「目的」",
+   "terms": [
+    "goal",
+    "objective",
+    "aim"
+   ],
+   "body": "goal … 到達したい「目標」。長期でも短期でも。\nobjective … 具体的で測定可能な「達成目標」。ビジネス文書でフォーマルに使われます。形容詞では「客観的な」（⇔ subjective 主観的な）。\naim … 「狙い」。動詞 aim to do / aim at ~。\npurpose … 「目的・意図」。for the purpose of ~。\ntarget … 数値目標（sales target）。動詞で「対象とする」（target young consumers）。\n\nmeet / achieve / exceed a target（目標を達成する・上回る）はTOEICの決まり文句です。"
+  },
+  {
+   "id": "apparel-attire",
+   "kind": "nuance",
+   "title": "apparel / attire / garment / outfit — 「衣類」",
+   "terms": [
+    "apparel",
+    "attire",
+    "garment",
+    "outfit"
+   ],
+   "body": "apparel … 商業用語としての「衣料品」。the apparel industry（アパレル産業）。\nattire … 「（場にふさわしい）服装」。business attire / formal attire は招待状や社内規定の定型で、TOEICのドレスコード案内に出ます。\ngarment … 「衣服1点」を指す製造・小売の語。a garment factory。\noutfit … 上下そろいの「ひとそろいの服装」。\n\nclothing（衣類・不可算）、clothes（衣服・複数）との違いも押さえておきましょう。"
+  },
+  {
+   "id": "overlook-oversee",
+   "kind": "nuance",
+   "title": "overlook / oversee — over が付いて意味が正反対",
+   "terms": [
+    "overlook",
+    "oversee",
+    "supervise",
+    "supervisor"
+   ],
+   "body": "overlook … ①「見落とす」②「見下ろす（眺望がある）」。a room overlooking the ocean（海を見渡す部屋）はホテル案内の定番。「上から見る」→「（細部を）見過ごす」と「（景色を）見渡す」に分かれました。\n\noversee … 「監督する・管理する」。over(上から)+see(見る)で、部下の仕事を見張るイメージ。supervise（super＝上から + vise＝見る）と同義です。\n\n形が似ていて意味が違うので Part 5 で狙われます。「見落とす」なら overlook、「統括する」なら oversee / supervise。"
+  },
+  {
+   "id": "access-assess-excess",
+   "kind": "nuance",
+   "title": "access / assess / excess — 発音も綴りも紛らわしい3語",
+   "terms": [
+    "access",
+    "assess",
+    "assessment",
+    "accessible",
+    "excessive"
+   ],
+   "body": "access … 名詞「利用・接近」／動詞「利用する」。have access to ~（〜を利用できる）。accessible は「利用しやすい・（車椅子等で）行きやすい」。\n\nassess … 「評価・査定する」。ad(に向かって)+sess(座る)＝「（裁判官の）そばに座って値を定める」。名詞 assessment。\n\nexcess … 名詞「超過」／形容詞「超過の」（excess baggage 超過手荷物）。excessive は「過度の」。in excess of ~（〜を超えて）。\n\nTOEICでは access to、assess the damage、excess charges の形で出ます。"
+  },
+  {
+   "id": "morale-moral",
+   "kind": "nuance",
+   "title": "morale / moral — 「士気」と「道徳」",
+   "terms": [
+    "morale"
+   ],
+   "body": "morale [məræl] … 「士気・意欲」。boost / improve employee morale（従業員の士気を高める）はTOEICの人事・社内制度の文書で頻出します。アクセントは後ろ。\n\nmoral [mɔ́ːrəl] … 「道徳（上の）」。アクセントは前。名詞 morals は「道徳観」、morality は「道徳性」。\n\n綴りは e が1つ多いだけですが、意味も発音位置も違います。「福利厚生で士気が上がった」という文脈なら必ず morale の方です。"
+  },
+  {
+   "id": "brief-briefing",
+   "kind": "nuance",
+   "title": "brief — 「短い」から「説明する」へ",
+   "terms": [
+    "brief",
+    "briefly"
+   ],
+   "body": "brief の原義は「短い」（形容詞）。a brief meeting、in brief（要するに）、briefly（手短に・少しの間）。\n\nそこから動詞「（要点を短く）説明する・指示を与える」が生まれました。brief the team on the new procedure。名詞 briefing は「（事前の）説明会」。\n\ndebrief は逆に「（任務の後で）報告を受ける・事後聞き取りをする」。\n\n同じ「短い」の語根 brev から abbreviate（略す）、abbreviation（略語）、そして音楽の「ブレーヴェ」も来ています。"
+  },
+  {
+   "id": "premium-premier",
+   "kind": "nuance",
+   "title": "premium / premier — 「割増」と「第一の」",
+   "terms": [
+    "premium"
+   ],
+   "body": "premium … ①「保険料」（insurance premium）②「割増金・上乗せ料金」（pay a premium for next-day delivery）③形容詞「高級な・上質の」（premium coffee）。pre(前に)+em(取る)＝「先に取るもの＝褒賞」が原義。\n\npremier … 「第一の・最高の」（the premier hotel in the city）／名詞では「首相」。prime(第一の)と同族。premiere は「初演・初日」。\n\nTOEICでは「割増料金を払えば翌日配送」「プレミアム会員」の形で premium が出ます。"
+  },
+  {
+   "id": "commencement-graduation",
+   "kind": "origin",
+   "title": "commence は「始める」なのに、なぜ commencement が「卒業式」？",
+   "terms": [
+    "commence",
+    "commencement"
+   ],
+   "body": "commence は com(共に)+ initiare(始める)から来たフォーマルな「開始する」。The ceremony will commence at 10 A.M. のように使います。\n\nでは、なぜ名詞 commencement に「卒業式」の意味があるのか。\n鍵は「学生生活の終わり」ではなく「新しい人生の始まり」と捉える発想です。中世の大学では、学位を授かった者がその日から正式に『教える資格を持つ者として活動を開始する』とされ、その式を inceptio（開始）＝ commencement と呼びました。つまり卒業式は本来『資格者としてのキャリア開始式』なのです。\n\nこの用法は主にアメリカ英語で、イギリスでは graduation ceremony が普通。TOEICのビジネス文書では commencement of construction（着工）、commencement date（開始日）のように本来の「開始」の意味で出る方が多いので、両方を押さえておきましょう。"
+  },
+  {
+   "id": "board-origin",
+   "kind": "origin",
+   "title": "board — なぜ「板」が「役員会」にも「搭乗」にもなる？",
+   "terms": [
+    "board",
+    "boarding pass"
+   ],
+   "body": "board の原義は「板」。ここから意味が枝分かれしました。\n\n① 板 → 食卓（テーブルの板）→ その食卓を囲む人たち → board of directors（取締役会）。会議室 boardroom も同じ発想です。\n\n② 板 → 食事そのもの → room and board（部屋と食事＝下宿）。boarding school（寄宿学校）もここから。\n\n③ 板 → 船の甲板 → 「船・乗り物に乗り込む」動詞 board。boarding pass（搭乗券）、Now boarding at Gate 5（5番ゲートで搭乗中）はTOEIC Part 4 の定番。on board は「乗って」から転じて「（チームに）加わって」の意味でも使われます。\n\n一枚の板から、役員会・下宿・搭乗が生まれたと考えると忘れません。"
+  },
+  {
+   "id": "address-origin",
+   "kind": "origin",
+   "title": "address — 「住所」と「演説」と「対処する」が同じ語なのはなぜ？",
+   "terms": [
+    "address"
+   ],
+   "body": "address の原義は ad(〜へ)+dress(まっすぐ向ける)＝「向ける」。何を向けるかで意味が分かれます。\n\n・手紙を人へ向ける → 宛先を書く → 「住所」\n・言葉を聴衆へ向ける → 「演説する／演説」\n・注意と労力を問題へ向ける → 「（問題に）取り組む・対処する」\n\nTOEICで一番狙われるのは3番目で、address the concerns/issue（懸念・問題に対処する）の形。「住所」しか知らないと Part 5 で選べません。\n\nまた「敬称で呼ぶ」意味もあります（Address her as Dr. Kim.）。"
+  },
+  {
+   "id": "issue-origin",
+   "kind": "origin",
+   "title": "issue — 「問題」「発行」「号」がなぜ一つの語？",
+   "terms": [
+    "issue"
+   ],
+   "body": "issue の原義はラテン語 ex(外へ)+ire(行く)＝「外へ出る・出て行くもの」。\n\n・（機関から）外へ出す → 「発行する・支給する」（issue a permit / issue a refund / issue an ID card）\n・外へ出たもの → 雑誌の「（第〜）号」（the July issue）\n・（議論から）外へ出てきたもの → 「論点・問題」（address the issue）\n\nTOEICでは3つとも出ます。特に issue a refund（返金する）と the latest issue（最新号）は頻出。動詞なら「発行する」、名詞で雑誌の話なら「号」、困りごとの文脈なら「問題」と、周辺の語で判断しましょう。"
+  },
+  {
+   "id": "outstanding-origin",
+   "kind": "origin",
+   "title": "outstanding — 「傑出した」と「未払いの」が同居する理由",
+   "terms": [
+    "outstanding"
+   ],
+   "body": "outstanding は out(外に)+standing(立っている)＝「外に突き出している」。\n\n・他より突き出ている → 「傑出した・優秀な」（an outstanding performance）\n・処理の列から突き出たまま残っている → 「未処理の・未払いの」（an outstanding balance 未払い残高 / outstanding invoices）\n\nTOEICの請求書リマインダーでは後者の意味で出ます。「優秀な請求書」ではないので注意。\n\n同じ発想の語に pending（保留中の）、overdue（期限を過ぎた）、unpaid（未払いの）があり、言い換え問題で入れ替わります。"
+  },
+  {
+   "id": "cover-origin",
+   "kind": "origin",
+   "title": "cover — 「覆う」から広がる多義語",
+   "terms": [
+    "cover",
+    "coverage"
+   ],
+   "body": "「覆う」を土台に、TOEICで問われる意味が枝分かれします。\n\n・費用を覆う → 「（費用を）賄う」（The budget covers travel expenses.）\n・保険が覆う → 「補償する」（The warranty covers parts and labor.）名詞 coverage（補償範囲）\n・不在を覆う → 「代役を務める」（Can you cover for me on Friday?）\n・報道が対象を覆う → 「取材する」。coverage は「報道」の意味にも\n・範囲を覆う → 「（内容を）扱う」（The manual covers all models.）\n\ncover letter（添え状）は「書類の上に載せる紙」から。Part 7 の言い換えでは cover ⇄ pay for / include が定番です。"
+  },
+  {
+   "id": "account-origin",
+   "kind": "origin",
+   "title": "account — 「口座」「説明」「占める」が繋がる理由",
+   "terms": [
+    "account",
+    "account for"
+   ],
+   "body": "account の原義は「数える(count)こと」。ac(=to)+count です。\n\n・数えた記録 → 「勘定・口座」（a bank account）。accountant（会計士）、accounting（経理）。\n・数え上げて筋道を述べる → 「説明・報告」（a detailed account of the incident）\n・account for ~ → ①「〜を説明する」②「（割合を）占める」（Exports account for 40% of sales.）\n・take ~ into account → 「〜を考慮に入れる」\n・on account of ~ → 「〜のせいで」\n\nTOEICでは account for が「占める」の意味で図表問題に、take into account が社内文書に出ます。"
+  },
+  {
+   "id": "figure-origin",
+   "kind": "origin",
+   "title": "figure — 「形」から「数字」「人物」「理解する」へ",
+   "terms": [
+    "figure",
+    "figure out"
+   ],
+   "body": "原義は「形・かたち」（figurative＝比喩的な、configure＝形を整える と同族）。\n\n・書かれた形 → 「数字・（統計の）値」（sales figures 売上高）\n・図示した形 → 「図・図表」（see Figure 2）\n・人の形 → 「人物」（a leading figure in the industry 業界の第一人者）\n・体の形 → 「体型」\n・頭の中で形にする → 「理解する・（答えを）割り出す」（figure out the cause）\n\nTOEICで一番出るのは sales figures（売上高の数字）と figure out（解明する）です。"
+  },
+  {
+   "id": "concern-origin",
+   "kind": "origin",
+   "title": "concern — 「関係する」から「懸念」「会社」まで",
+   "terms": [
+    "concern"
+   ],
+   "body": "原義は con(共に)+cern(ふるいにかける・区別する)＝「関わり合う」。\n\n・関わる → 「〜に関係する」（This memo concerns the new policy.）\n・関わって気にかける → 「心配・懸念」（raise concerns about safety）\n・利害が関わる集団 → 「事業・会社」（a going concern 継続企業）\n\n語法にも注意: concerned は名詞の後ろに置くと「関係している」（the department concerned＝担当部署）、前に置くと「心配している」（a concerned parent）。concerning は前置詞で「〜に関して」（regarding / with regard to と同義）。\n\nTo Whom It May Concern（ご担当者様）はカバーレターの定型です。"
+  },
+  {
+   "id": "deliver-origin",
+   "kind": "origin",
+   "title": "deliver — 「配達する」だけではない",
+   "terms": [
+    "deliver",
+    "delivery"
+   ],
+   "body": "de(離す)+liber(自由にする)＝「手放して相手に渡す」が原義。liberty(自由)と同族です。\n\n・物を渡す → 「配達する」\n・言葉を渡す → 「（演説・講演を）行う」（deliver a speech / deliver the keynote address）\n・約束したものを渡す → 「（成果を）出す・期待に応える」（deliver results / deliver on a promise）\n\nTOEIC Part 4 のイベント案内では deliver a presentation、求人広告では deliver excellent customer service の形で出ます。「配達」以外の用法を知らないと聞き取れても意味が取れません。"
+  },
+  {
+   "id": "observe-origin",
+   "kind": "origin",
+   "title": "observe — 「観察する」がなぜ「順守する」「祝う」にもなる？",
+   "terms": [
+    "observe",
+    "observation"
+   ],
+   "body": "ob(向かって)+serve(保つ)＝「目を向けて保ち続ける」が原義。「じっと目を離さない」というイメージが3つの意味を生みました。\n\n・対象から目を離さない → 「観察する」（observe the process）\n・規則から目を離さない → 「（規則・慣習を）順守する」（observe safety regulations）＝comply with / adhere to と同義\n・記念日を守り続ける → 「（祝日・行事を）祝う・執り行う」（The office will be closed to observe the national holiday.）\n\n3つ目はTOEICの休業案内で実際に使われる表現です。\n\nserve(保つ)の仲間: preserve(保存する)、reserve(取っておく)、conserve(節約する)、deserve(値する)。"
+  },
+  {
+   "id": "carry-out-origin",
+   "kind": "origin",
+   "title": "carry の熟語 — carry out / carry on / carry over",
+   "terms": [
+    "carry out",
+    "carry on"
+   ],
+   "body": "carry は「運ぶ」。前置詞・副詞で意味が決まります。\n\ncarry out … 「（計画・調査を）実行する」。外へ運び出して形にする＝conduct / implement / perform と同義。TOEIC最頻出。\ncarry on … 「続ける」（continue）。\ncarry over … 「（翌期・翌年に）繰り越す」。unused vacation days carry over to the next year（未消化の休暇は翌年に繰り越される）は社内規定の定型文です。\n\nまた店が主語のとき carry は「（商品を）取り扱う」（Do you carry this model?）。買い物の会話で出ます。"
+  },
+  {
+   "id": "commit-committee",
+   "kind": "origin",
+   "title": "commit / committee / commission — mit(送る)の一族",
+   "terms": [
+    "commit",
+    "committee",
+    "commission"
+   ],
+   "body": "語根 mit/miss は「送る」。com(共に)+mit＝「（人・事を）託して送り込む」。\n\ncommit … ①「（罪を）犯す」②「委ねる・専念させる」（be committed to ~ 〜に尽力している）。名詞 commitment は「約束・献身」。\n\ncommittee … 「仕事を託された人たち」＝委員会。-ee は「〜される人」（employee 雇われる人、attendee 出席者、interviewee 面接される人）。\n\ncommission … 「（任務を）託すこと」→ ①委員会・委託 ②「歩合・手数料」（work on commission 歩合制で働く）③「（作品を）依頼する」。\n\nmit の仲間: submit(下へ送る＝提出する)、transmit(向こうへ送る)、remit(送金する)、omit(省く)、permit(通させる＝許可する)、admit(中へ入れる)。"
+  },
+  {
+   "id": "terminal-terminate",
+   "kind": "origin",
+   "title": "term / terminal / terminate / determine — term(境界)の一族",
+   "terms": [
+    "terminate",
+    "determine"
+   ],
+   "body": "語根 term は「境界・限界」。\n\nterm … 境界で区切られた「期間」（a three-year term）、境界を定めた言葉＝「用語」、複数形 terms で「（契約）条件」（terms and conditions）。in terms of ~＝〜の観点で。\n\nterminal … 路線の終点＝「終着駅・ターミナル」。\n\nterminate … 境界で断ち切る＝「終了する・（契約を）解除する」。terminate the contract、名詞 termination。\n\ndetermine … de(完全に)+termine＝「境界をきっちり定める」→「決定する・特定する」。\n\n「期間・用語・条件」が同じ term なのは、どれも『線を引いて区切る』発想だからです。"
+  },
+  {
+   "id": "current-currency",
+   "kind": "origin",
+   "title": "current / currency / occur — cur(走る)の一族",
+   "terms": [
+    "current",
+    "currently",
+    "occur",
+    "occurrence",
+    "concurrent"
+   ],
+   "body": "語根 cur/course は「走る・流れる」。\n\ncurrent … 今まさに流れている → ①形容詞「現在の」（the current issue 最新号）②名詞「流れ・電流」（an ocean current）。currently＝現在。\n\ncurrency … 世の中を流通して走り回るもの → 「通貨」。foreign currency exchange（外貨両替）。\n\noccur … ob(向かって)+cur＝「走ってやって来る」→「起こる」。It occurred to me that ~＝「ふと思いついた」（考えが走ってくる）。名詞 occurrence（綴り注意）。\n\n仲間: concurrent(同時に走る＝同時発生の)、recur(再び走る＝再発する)、excursion(外へ走る＝小旅行)、course(進路)、courier(走る人＝宅配便)。"
+  },
+  {
+   "id": "process-proceed-precede",
+   "kind": "origin",
+   "title": "process / proceed / procedure / precede — ced(行く)の一族",
+   "terms": [
+    "process",
+    "proceed",
+    "procedure",
+    "proceeds",
+    "unprecedented"
+   ],
+   "body": "語根 ced/ceed/cess は「行く」。pro は「前へ」、pre は「先に」。\n\nproceed … 前へ行く →「進む・続行する」（Please proceed to Gate 12.）\nprocess … 前へ進む道筋 →「過程」／動詞「処理する」（process an order）\nprocedure … 進め方 →「手順」\nproceeds … 前へ出てきた結果 →「収益金」（名詞・複数形、発音は前アクセント）\nprecede … 先に行く →「先行する」。preceding（前の）⇔ following（次の）\nunprecedented … 「前例のない」（先に行ったものがない）\n\n同じ ced の仲間: exceed(超えて行く＝上回る)、access(近づいて行く)、recession(後ろへ行く＝景気後退)、concede(譲歩する)、predecessor(前任者)。\n\nproceed と precede は綴りも意味も紛らわしいので Part 5 の定番です。"
+  },
+  {
+   "id": "occupy-occupation",
+   "kind": "origin",
+   "title": "occupy / occupation / occupancy — 「占める」から「職業」へ",
+   "terms": [
+    "occupy",
+    "occupation",
+    "occupant"
+   ],
+   "body": "occupy は ob(向かって)+cap(つかむ)＝「（場所・時間を）つかんで占める」。cap(つかむ)は capture / capable / accept / receive と同族です。\n\n・場所を占める →「占有する」（The desk occupies too much space.）掲示の Occupied は「使用中」。occupant＝居住者・使用者。occupancy＝入居率・稼働率。\n\n・時間を占める →「（人を）従事させる」（be occupied with paperwork 書類仕事で手一杯）\n\n・生活時間の大半を占めるもの →「職業」occupation。申込書の Occupation 欄はここから来ています。\n\njob（個々の仕事）、position（職位）、profession（専門職）、career（経歴）との違いも意識しましょう。"
+  },
+  {
+   "id": "resume-origin",
+   "kind": "origin",
+   "title": "resume — 「再開する」と「履歴書」が同じ綴りなのはなぜ？",
+   "terms": [
+    "resume"
+   ],
+   "body": "語源は re(再び)+sume(取る)＝「取り戻す・再び取り上げる」。\n\n動詞 resume [rizúːm] … 「再開する」（Service will resume at 9 A.M.）。名詞は resumption（再開）。\n\n名詞 résumé [rézumei] … フランス語の過去分詞で「要約されたもの」。経歴を要約した紙＝「履歴書」（米）。英国では CV（curriculum vitae）。アクセント記号は省かれることも多く、綴りだけでは見分けられません。\n\nsume(取る)の仲間: consume(すっかり取る＝消費する)、assume(自分に取り込む＝想定する・引き受ける)、presume(前もって取る＝推定する)。\n\nTOEICでは動詞「再開する」が Part 4 のアナウンスで、名詞「履歴書」が求人メールで、どちらも高頻度で出ます。"
+  },
+  {
+   "id": "firm-origin",
+   "kind": "origin",
+   "title": "firm — 「固い」がなぜ「会社」？",
+   "terms": [
+    "firm",
+    "confirm",
+    "firmly"
+   ],
+   "body": "firm の原義は「固い・しっかりした」（形容詞）。a firm handshake、firm prices（値崩れしない価格）、stand firm（断固とした態度を取る）。\n\n名詞の「会社」は、イタリア語 firma（署名）を経由した語。商取引で「署名して確定させた商号」＝会社そのものを指すようになりました。つまり『署名＝確かに固めたもの』という同じ発想です。法律事務所・会計事務所など専門サービス業に firm を使うのが典型（a law firm / a consulting firm）。\n\nconfirm は con(強め)+firm＝「固める」→「確認する・確定する」。confirm a reservation（予約を確定する）、confirmation email はTOEIC頻出です。"
+  },
+  {
+   "id": "last-origin",
+   "kind": "origin",
+   "title": "last — 「最後の」なのに動詞だと「続く」？",
+   "terms": [
+    "last",
+    "lasting"
+   ],
+   "body": "形容詞 last（最後の・この前の）と、動詞 last（続く・持ちこたえる）は実は別系統の語が同じ形になったものです。\n\n動詞の last は古英語 læstan（follow, continue＝ついて行く・持続する）から。The meeting lasted two hours.（会議は2時間続いた）、The battery lasts up to 10 hours.（電池は最大10時間もつ）。\n\n形容詞 lasting は「長続きする」（a lasting impression 忘れがたい印象）、long-lasting は「長持ちする」で製品広告の定番です。\n\nTOEICでは Part 3・4 で「イベントはどれくらい続くか」を問う設問にlast が使われます。「最後の」だけで覚えていると聞き逃します。"
+  },
+  {
+   "id": "deadline-origin",
+   "kind": "origin",
+   "title": "deadline — なぜ「死の線」が「締切」なのか",
+   "terms": [
+    "deadline",
+    "overdue"
+   ],
+   "body": "諸説ありますが、有力なのは19世紀アメリカの捕虜収容所で「これを越えたら射殺される境界線」を dead line と呼んだという説です。そこから「絶対に越えてはいけない線」の比喩になり、20世紀初頭の新聞業界で「印刷機を回す時刻＝原稿の締切」を指すようになりました。\n\nTOEIC頻出の関連表現:\n・meet the deadline（締切に間に合わせる）⇔ miss the deadline\n・extend the deadline（締切を延ばす）\n・due（期限の）… The report is due on Friday. / due date（期日）\n・overdue（期限を過ぎた）… an overdue payment / overdue books\n・no later than ~（〜までに）… by と同義でメールに頻出"
+  },
+  {
+   "id": "retail-wholesale",
+   "kind": "origin",
+   "title": "retail / wholesale — 「切り分けて売る」と「丸ごと売る」",
+   "terms": [
+    "retail",
+    "wholesale",
+    "retailer",
+    "distributor"
+   ],
+   "body": "retail は re(再び)+tail(切る。tailor＝仕立屋、と同じ「切る」)。仕入れた品を「小さく切り分けて客に売る」＝小売です。\n\nwholesale は whole(丸ごと)+sale＝「まとめて大量に売る」＝卸売。wholesale prices は「卸値＝安い」。\n\n流通の流れ: manufacturer（製造業者）→ distributor / wholesaler（卸）→ retailer（小売店）→ consumer（消費者）。\n\nTOEICでは retail outlet（小売店舗）、at retail price、wholesale distributor がよく出ます。"
+  },
+  {
+   "id": "salary-origin",
+   "kind": "origin",
+   "title": "salary / compensation / payroll — 給与まわりの語源と使い分け",
+   "terms": [
+    "compensation",
+    "payroll"
+   ],
+   "body": "salary の語源はラテン語 salarium＝「塩(sal)を買うための手当」。古代ローマの兵士に塩の代金が支給されたことに由来し、salt と同じ語根です。salad（塩をかけた野菜）も同族。\n\n使い分け:\n・salary … 月給・年俸（固定給）。salaried employee＝月給制の社員。\n・wage … 時給・日給（働いた分だけ）。hourly wage。\n・compensation … 給与＋手当＋福利厚生を含む「報酬全体」。また「損害の賠償」の意味もあります（compensate＝埋め合わせる）。\n・payroll … 「給与支払名簿・人件費」。be on the payroll＝雇われている。\n・benefits … 福利厚生（保険・年金など）。\n\n求人広告では competitive salary and benefits の形が定番です。"
+  },
+  {
+   "id": "company-accompany",
+   "kind": "origin",
+   "title": "company — 「会社」と「同行」と「客」が同じ語である理由",
+   "terms": [
+    "accompany"
+   ],
+   "body": "company は com(共に)+pan(パン)＝「パンを分け合う仲間」が原義。pan はスペイン語の pan、フランス語 pain と同じ「パン」で、英語の pantry（食料庫）も同族です。\n\n・仲間の集まり → 「会社」\n・一緒にいること → 「同席・付き合い」（enjoy your company）\n・家に来た仲間 → 「来客」（We're having company tonight.）\n・仲間として付き添う → accompany（同行する・付随する）。accompanying documents＝添付書類。\n・companion → 連れ・仲間\n\nTOEICでは accompanying（添付の・同伴の）と、Children must be accompanied by an adult.（子どもは大人の同伴が必要）が頻出です。"
+  },
+  {
+   "id": "secretary-origin",
+   "kind": "origin",
+   "title": "secretary — 「秘密(secret)」を預かる人",
+   "terms": [
+    "confidential"
+   ],
+   "body": "secretary はラテン語 secretarius＝「秘密(secretum)を託された人」。つまり『機密を扱える信頼された人』が原義で、secret と同じ語根です（se＝離す + cern＝ふるい分ける →「選り分けて隠す」）。\n\n同じ発想の語:\n・discreet … 「口が堅い・思慮深い」（be discreet about the negotiation）\n・confidential … 打ち明けられた＝「機密の」\n・classified … 分類された＝「機密扱いの」\n\nなお、国の Secretary は「長官・大臣」（Secretary of State）。『王の機密を預かる高官』から発展した用法です。"
+  },
+  {
+   "id": "host-origin",
+   "kind": "origin",
+   "title": "host / hospitality / hotel — 全部同じ語源",
+   "terms": [
+    "host",
+    "hospitality",
+    "hospitable"
+   ],
+   "body": "ラテン語 hospes は「客をもてなす主人」と「客」の両方を意味しました。そこから枝分かれしたのが host（主人・主催者）、hospitality（もてなし）、hospital（もとは巡礼者を泊める施設）、hostel、hotel、そして hospice。\n\nTOEICでの使い方:\n・host … 動詞「主催する」（The company will host a reception.）＝hold / organize と言い換えられます。名詞は「主催者・司会者」。\n・hospitality … 「もてなし」。the hospitality industry＝ホテル・飲食などの接客業。求人広告で頻出の業界名です。\n・hospitable … 「もてなしのよい・友好的な」。\n\n「病院」と「ホテル」が親戚だと知ると、hospitality industry が覚えやすくなります。"
+  },
+  {
+   "id": "commemorate-anniversary",
+   "kind": "origin",
+   "title": "commemorate / anniversary — 記念の語",
+   "terms": [
+    "commemorate",
+    "anniversary"
+   ],
+   "body": "commemorate は com(共に)+memor(記憶)＝「みんなで記憶にとどめる」→「記念する」。memory / memorial / memorable / memorandum(memo) と同族です。形容詞 commemorative（記念の）＝ a commemorative plaque（記念銘板）。\n\nanniversary は annus(年)+vers(回る)＝「1年が巡ってくること」。annual（年次の）、annually（毎年）と同じ ann、そして vers/vert（回る）は reverse（逆転する）、convert（転換する）、versatile（多用途の＝あちこち回れる）と同族です。\n\nTOEICでは the company's 50th anniversary をcommemorate / celebrate / mark するイベント案内が定番です。"
+  },
+  {
+   "id": "premises-premise",
+   "kind": "origin",
+   "title": "premises — なぜ複数形で「敷地」を意味する？",
+   "terms": [
+    "premises"
+   ],
+   "body": "premise は pre(前に)+miss(置く)＝「前もって置かれたもの」＝論理の「前提」。\n\nでは、なぜ複数形 premises が「建物・構内」なのか。昔の法律文書では、契約書の冒頭で対象となる土地・建物を先に列挙し、本文ではそれを「the aforesaid premises（前述の事項）」と受けました。この『前に述べた事項』という言い回しが、そのまま「（その）不動産・構内」の意味に固定されたのです。\n\nTOEICでの定型:\n・on the premises（構内で）… Smoking is prohibited on the premises.\n・off the premises（構外へ）… Equipment may not be taken off the premises.\n\nmit/miss(送る・置く)の仲間: submit、permit、dismiss、omit、promise（前に出す約束）。"
+  },
+  {
+   "id": "utilize-utility",
+   "kind": "origin",
+   "title": "utilize / utility — 「使う」から「公共料金」へ",
+   "terms": [
+    "utilize"
+   ],
+   "body": "語根 ut は「使う」。use と同族です。\n\nutilize … 「（有効に）活用する」。use のフォーマル版で、TOEICでは use の言い換えとして選択肢に並びます。\n\nutility … 「有用性」から転じて、電気・ガス・水道といった「公共サービス（事業）」を指します。utility bills（光熱費）、utility company（電力・ガス会社）はオフィス移転や請求書の文書で頻出。\n\nutensil（台所用具）、utilitarian（実用本位の）も同じ ut の仲間。\n\n「ユーティリティ」をカタカナのまま覚えていると、「光熱費」の意味で出たときに読み違えるので注意しましょう。"
+  },
+  {
+   "id": "credentials-credit",
+   "kind": "origin",
+   "title": "credit / credential / accredited — cred(信じる)の一族",
+   "terms": [
+    "credit",
+    "credential"
+   ],
+   "body": "語根 cred は「信じる」。\n\ncredit … 「信用」が原点。そこから①信用取引＝クレジット（buy on credit）②「功績・称賛」（take credit for ~ 〜を自分の手柄にする / give credit to ~）③会計の「貸方」、④大学の「単位」へ広がりました。\n\ncredentials … 「信用させる書類」＝資格・経歴証明。求人で頻出。\naccredited … 「公認された」（an accredited institution 認定機関）。\ncreditor（債権者）⇔ debtor（債務者）。\nincredible … 「信じられない」。\n\nTOEICで狙われるのは credit を「クレジットカード」以外の意味――特に「功績」と「（返金を現金でなく）店のクレジットで返す」用法です（store credit＝店内で使える返金）。"
+  },
+  {
+   "id": "inaugurate-origin",
+   "kind": "origin",
+   "title": "inaugural / ceremony 系 — 開始の儀式にまつわる語",
+   "terms": [
+    "unveil",
+    "launch"
+   ],
+   "body": "inaugural … 「就任の・開始の」。an inaugural address（就任演説）、the inaugural flight（就航第一便）。語源は古代ローマの鳥占い師 augur が吉兆を見てから事を始めたことに由来し、「占いで承認して始める」が原義です。\n\n関連してTOEICで出る「始まりの行事」の語:\n・grand opening … 開店・開業\n・ribbon-cutting ceremony … テープカット式\n・groundbreaking (ceremony) … 起工式。形容詞では「画期的な」\n・unveil … ベール(veil)を外す →「（新製品・計画を）発表する」\n・launch … （船を進水させる →）「（製品・事業を）開始する・売り出す」\n・debut … 初登場\n\n新製品発表の記事は Part 7 の定番題材です。"
+  },
+  {
+   "id": "complimentary-free",
+   "kind": "origin",
+   "title": "「無料」のいろいろ — complimentary / free of charge / on the house",
+   "terms": [
+    "complimentary",
+    "waive",
+    "voucher"
+   ],
+   "body": "complimentary … 「（好意で）無料の」。ホテル・航空会社の案内で最も使われる語で、complimentary breakfast / complimentary Wi-Fi / a complimentary upgrade。compliment（賛辞・好意）から来ています。\n\nfree of charge … 「無料で」。at no cost / at no additional charge も同義。\non the house … 店のおごりで（口語）。\nwaive … 「（料金・権利を）免除する・放棄する」。The fee will be waived for members.（会員は手数料が免除されます）はTOEIC頻出。\nvoucher / coupon … 引換券。\n\nPart 7 では「何が無料か」を問う設問が多く、complimentary＝free と即座に結びつけられるかが勝負です。"
+  },
+  {
+   "id": "annual-biannual",
+   "kind": "nuance",
+   "title": "annual / biannual / biennial / semiannual — 紛らわしい周期",
+   "terms": [
+    "annual",
+    "annually",
+    "quarterly"
+   ],
+   "body": "annual … 年1回の・年間の（an annual report 年次報告書）。\nsemiannual / biannual … 年2回（semi＝半分）。bi- は紛らわしく、biannual は「年2回」の意味で使われるのが普通です。\nbiennial … 2年に1回（enni が付くと『年』が単位）。\nquarterly … 四半期ごと（年4回）。quarterly earnings。\nmonthly / weekly / daily … 月次・週次・日次。\nbiweekly … 「隔週」と「週2回」の両方で使われる要注意語。\n\nTOEICでは annual と quarterly が圧倒的に頻出。会議・報告書・健康診断の案内で使われます。\n\nann(年)の仲間: anniversary、annuity(年金)、perennial(多年生の・絶え間ない)。"
+  },
+  {
+   "id": "although-despite",
+   "kind": "nuance",
+   "title": "although / despite / nevertheless — 接続詞か前置詞か",
+   "terms": [
+    "nevertheless",
+    "nonetheless"
+   ],
+   "body": "TOEIC Part 5・6 で最も狙われる区別です。後ろに何が来るかで決まります。\n\n【後ろに文(SV)】although / though / even though / while / whereas\n【後ろに名詞句】despite / in spite of / notwithstanding\n【文と文をつなぐ副詞（; か . が必要）】however / nevertheless / nonetheless / still / even so\n\nregardless of ~ … 「〜に関わらず」（後ろは名詞）。regardless of the weather。\nwhereas … 「〜である一方」。対比を表す接続詞で、契約書の前文にも使われます。\n\n空所の後ろが名詞だけなら despite、SVが続くなら although、前に文が終わっているなら however、と機械的に判定できます。"
+  },
+  {
+   "id": "by-until",
+   "kind": "nuance",
+   "title": "by / until / within / throughout — 期限と期間",
+   "terms": [
+    "within",
+    "prior to",
+    "no later than"
+   ],
+   "body": "by … 「〜までに」（動作の完了期限）。Submit the form by Friday.\nuntil / till … 「〜まで（ずっと）」（状態の継続）。The office is closed until Monday.\n「提出する」など一回で終わる動作は by、「開いている・待つ」など続く状態は until。\n\nwithin … 「〜以内に」。within three business days。\nthroughout … 「〜の間ずっと・〜の至る所で」。throughout the year / throughout the store。\nprior to ~ / ahead of ~ … 「〜より前に」（before のフォーマル版）。\nno later than ~ … 「遅くとも〜までに」＝by の強調。\nas of ~ … 「〜付けで・〜現在で」。as of July 1。\n\nメールの依頼文はこれらの前置詞の宝庫で、Part 7 の日付設問に直結します。"
+  }
+ ]
 }
