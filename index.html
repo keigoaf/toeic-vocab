@@ -2,10 +2,25 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-24 10:30 (JST)
-  バージョン: 3.3.0
+  ファイル最終更新日時: 2026-07-24 12:00 (JST)
+  バージョン: 3.4.0
 --------------------------------------------------------------------
   【更新履歴】
+    v3.4.0 (2026-07-24 12:00 JST)
+      - Part5問題を30問→330問に大幅追加（新規300問。文法・品詞・
+        語彙をバランスよく、600/730/860点レベルを混在）。
+      - 【改善1】目安スコア(level)は問題画面に表示せず、解説画面に
+        のみ表示するようにした。
+      - 【改善2】問題画面に20秒の目安タイマーバーを追加。20秒経過
+        しても自動遷移・正誤確定はせず、あくまで目安。
+      - 【改善3】再出題ロジック（連続正解カウント方式）を実装:
+        3回連続正解で「卒業」（通常出題から外れる）。不正解で連続
+        正解を0にリセットし、同セッション内で再度出題。正解時は
+        1回→翌学習日、2回→3日後に再出題（朝6時基準の学習日）。
+        進捗は localStorage('toeic-p5-progress') に保存。
+      - 【改善4】1セッション=10問に分割（330問→33セッション）。
+        セッション選択画面と進捗バーを追加。
+      - 卒業した問題を確認できる「卒業ボックス」画面を新設。
     v3.3.0 (2026-07-24 10:30 JST)
       - TOEIC Part5 演習モードを新設（30問で試作）。
         ヘッダー左上のボタンで「単語」⇄「Part5」を切り替える。
@@ -344,6 +359,34 @@
   .p5-trans{background:var(--surface);border:1px solid var(--line);border-radius:12px;
     padding:14px;font-size:14px;line-height:1.85;}
 
+  /* v3.4.0: セッション一覧 */
+  .p5-session-list{display:flex;flex-direction:column;gap:9px;}
+  .p5-session{display:block;width:100%;text-align:left;background:var(--surface);
+    border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;cursor:pointer;}
+  .p5-session:active{background:var(--bg);}
+  .p5-session-done{border-color:var(--good);background:var(--good-soft);}
+  .p5-session-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+  .p5-session-title{font-weight:800;font-size:15px;color:var(--ink);}
+  .p5-session-count{font-size:12px;color:var(--ink-soft);font-weight:700;}
+  .p5-session-badge{font-size:12px;color:var(--good);font-weight:800;}
+  .p5-session-bar{height:6px;background:var(--bg);border-radius:999px;overflow:hidden;}
+  .p5-session-fill{height:100%;background:var(--good);border-radius:999px;transition:width .3s;}
+  .p5-session-tag{margin-left:auto;color:var(--ink-soft);background:var(--bg);padding:3px 10px;border-radius:999px;font-weight:700;font-size:12px;}
+  /* v3.4.0: タイマーバー */
+  .p5-timer{height:8px;background:var(--bg);border-radius:999px;overflow:hidden;margin-bottom:4px;}
+  .p5-timer-fill{height:100%;width:100%;background:var(--good);border-radius:999px;}
+  .p5-timer-label{font-size:11px;color:var(--ink-soft);text-align:right;margin-bottom:12px;font-weight:700;}
+  /* v3.4.0: 連続正解・レベル表示（解説内） */
+  .p5-streak{font-size:13px;font-weight:700;color:var(--primary);background:var(--primary-soft);
+    border-radius:10px;padding:9px 12px;margin-top:10px;}
+  .p5-levelbox{font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--bg);
+    border-radius:10px;padding:8px 12px;margin-top:8px;}
+  /* v3.4.0: 卒業ボックス */
+  .p5-grad-item{margin-bottom:10px;}
+  .p5-grad-sentence{font-family:var(--font-en);font-size:15px;line-height:1.7;color:var(--ink);}
+  .p5-grad-meta{font-size:11px;color:var(--ink-soft);font-weight:700;margin-top:6px;}
+  .p5-grad-trans{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.7;}
+
   /* ---- カード共通 ---- */
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);}
   .pad{padding:18px;}
@@ -537,8 +580,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "3.3.0";
-const LAST_UPDATED = "2026-07-24 10:30 JST"; // ファイル最終更新日時
+const APP_VERSION = "3.4.0";
+const LAST_UPDATED = "2026-07-24 12:00 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -927,7 +970,12 @@ function render(){
   else if(STATE.view === 'settings')main.innerHTML = viewSettings();
   else if(STATE.view === 'p5home')main.innerHTML = viewP5Home();
   else if(STATE.view === 'p5quiz')main.innerHTML = viewP5Quiz();
+  else if(STATE.view === 'p5graduated')main.innerHTML = viewP5Graduated();
   bindDynamic();
+  // v3.4.0: Part5の問題表示中はタイマーバーを起動（未解答時のみ）
+  if(STATE.view === 'p5quiz' && !P5STATE.done && !P5STATE.answered){
+    startP5Timer();
+  }
 }
 
 /* ---------------------------------------------------------------
@@ -1169,60 +1217,146 @@ function viewSettings(){
 }
 
 /* ================================================================
-   v3.3.0: Part5 画面
+   v3.4.0: Part5 画面（改良版）
+   --------------------------------------------------------------
+   変更点:
+   1. 目安スコア(level)は問題ページに出さず、解説ページのみに表示。
+   2. 問題画面に20秒のタイマーバーを表示（目安のみ。経過しても
+      自動遷移や正誤確定はしない）。
+   3. 再出題ロジック（連続正解カウント方式）:
+        - 各問に streak（連続正解数）を持たせる。
+        - 3回連続正解で「卒業」（通常出題から外れる）。
+        - 不正解で streak を0にリセットし、同セッション内で再度出題。
+        - 正解で streak=1→翌学習日以降、2→3日後以降に再出題（分散学習）。
+        - 学習日は単語モードと同じ朝6時基準（dayStart/todayStart/addDays）。
+   4. 1セッション=10問に分割。330問→33セッション。
+   5. 卒業した問題は「卒業ボックス」画面でいつでも確認可能。
+   進捗は localStorage キー 'toeic-p5-progress' に保存:
+     { [id]: {streak, nextDue(学習日ts), graduated(bool)} }
    ================================================================ */
+const P5_SESSION_SIZE = 10;         // 1セッションの問題数
+const P5_GRADUATE_STREAK = 3;       // 卒業に必要な連続正解数
+const P5_PROGRESS_KEY = 'toeic-p5-progress';
+
+let P5PROG = {};                    // id -> {streak, nextDue, graduated}
+
+function loadP5Progress(){
+  try{
+    const raw = localStorage.getItem(P5_PROGRESS_KEY);
+    P5PROG = raw ? JSON.parse(raw) : {};
+  }catch(e){ P5PROG = {}; }
+}
+function saveP5Progress(){
+  try{ localStorage.setItem(P5_PROGRESS_KEY, JSON.stringify(P5PROG)); }catch(e){}
+}
+function p5rec(id){
+  if(!P5PROG[id]) P5PROG[id] = { streak:0, nextDue:0, graduated:false };
+  return P5PROG[id];
+}
+
+/* セッション一覧（10問ずつ順番に区切る） */
+function p5Sessions(){
+  const qs = PART5.questions;
+  const sessions = [];
+  for(let i=0; i<qs.length; i += P5_SESSION_SIZE){
+    sessions.push(qs.slice(i, i + P5_SESSION_SIZE));
+  }
+  return sessions;
+}
+
+/* あるセッションの学習状況を集計 */
+function p5SessionStatus(sessionQs){
+  let grad=0, due=0, learning=0;
+  const today = todayStart();
+  sessionQs.forEach(q=>{
+    const r = p5rec(q.id);
+    if(r.graduated){ grad++; }
+    else if(r.streak>0 && r.nextDue>today){ learning++; }  // 正解済みで次回待ち
+    else { due++; }  // 未着手 or 今日出題対象
+  });
+  return { grad, due, learning, total:sessionQs.length };
+}
+
 function viewP5Home(){
   const total = PART5.questions.length;
-  const byLevel = {600:0, 730:0, 860:0};
-  const byCat = {};
-  PART5.questions.forEach(q=>{
-    byLevel[q.level] = (byLevel[q.level]||0)+1;
-    byCat[q.category] = (byCat[q.category]||0)+1;
-  });
-  const catText = Object.entries(byCat).map(([k,v])=>`${k} ${v}`).join(' ／ ');
+  const sessions = p5Sessions();
+  // 全体の卒業数
+  let totalGrad = 0;
+  PART5.questions.forEach(q=>{ if(p5rec(q.id).graduated) totalGrad++; });
+
+  const sessionCards = sessions.map((sq,idx)=>{
+    const st = p5SessionStatus(sq);
+    const allGrad = st.grad === st.total;
+    const pct = Math.round(st.grad / st.total * 100);
+    return `
+    <button class="p5-session ${allGrad?'p5-session-done':''}" onclick="startP5Session(${idx})">
+      <div class="p5-session-head">
+        <span class="p5-session-title">セッション ${idx+1}</span>
+        ${allGrad?'<span class="p5-session-badge">✓ 卒業</span>':`<span class="p5-session-count">${st.grad}/${st.total} 卒業</span>`}
+      </div>
+      <div class="p5-session-bar"><div class="p5-session-fill" style="width:${pct}%"></div></div>
+    </button>`;
+  }).join('');
+
   return `
   <div class="card today">
     <div class="due-num">${total}</div>
-    <div class="due-label">Part 5 問題</div>
-    <div class="sub">${catText}</div>
-    <div class="sub" style="margin-top:4px">600点 ${byLevel[600]} ／ 730点 ${byLevel[730]} ／ 860点 ${byLevel[860]}</div>
-    <div style="margin-top:16px">
-      <button class="btn btn-primary" onclick="startP5('all')" style="width:100%">全${total}問を順番に解く</button>
-    </div>
+    <div class="due-label">Part 5 問題 ・ 全${sessions.length}セッション</div>
+    <div class="sub" style="margin-top:6px">3回連続で正解すると卒業です</div>
   </div>
 
-  <div class="section-title">レベル別に解く</div>
+  <div class="section-title">卒業ボックス</div>
   <div class="card pad">
-    <button class="btn btn-ghost small" onclick="startP5(600)" style="width:100%;margin-bottom:8px">600点レベル（${byLevel[600]}問）</button>
-    <button class="btn btn-ghost small" onclick="startP5(730)" style="width:100%;margin-bottom:8px">730点レベル（${byLevel[730]}問）</button>
-    <button class="btn btn-ghost small" onclick="startP5(860)" style="width:100%">860点レベル（${byLevel[860]}問）</button>
+    <button class="btn btn-ghost small" onclick="setView('p5graduated')" style="width:100%">
+      🎓 卒業した問題を確認（${totalGrad}問）
+    </button>
   </div>
 
-  <div class="section-title">出題形式</div>
-  <div class="card pad">
-    <p class="note" style="margin:0">短文の空所に入る最も適切な語句を4つの選択肢から選びます。解答後に、正解の理由・各選択肢の説明・問題文の頻出語・全文和訳が表示されます。</p>
+  <div class="section-title">セッションを選ぶ（各${P5_SESSION_SIZE}問）</div>
+  <div class="p5-session-list">
+    ${sessionCards}
   </div>
 
   <div class="foot">TOEIC Part5 演習 ・ v${APP_VERSION}</div>
   `;
 }
 
-/* Part5 セッション開始（level='all' または 600/730/860） */
-function startP5(level){
-  let qs = PART5.questions.slice();
-  if(level !== 'all') qs = qs.filter(q=> q.level === level);
-  if(qs.length === 0){ toast('該当する問題がありません'); return; }
-  // 出題順をシャッフル
-  for(let i=qs.length-1; i>0; i--){
-    const j = Math.floor(Math.random()*(i+1));
-    [qs[i],qs[j]] = [qs[j],qs[i]];
+/* セッション開始
+   出題対象: そのセッションの問題のうち「卒業していない」もの。
+   ただし streak>0 で nextDue が未来の問題は今回は除外（分散学習）。
+   全問が待機中/卒業なら、確認のため全未卒業問題を出す。 */
+function startP5Session(sessionIdx){
+  const sessions = p5Sessions();
+  const sq = sessions[sessionIdx];
+  if(!sq){ toast('セッションが見つかりません'); return; }
+  const today = todayStart();
+
+  let due = sq.filter(q=>{
+    const r = p5rec(q.id);
+    if(r.graduated) return false;
+    if(r.streak>0 && r.nextDue>today) return false; // 次回出題日待ち
+    return true;
+  });
+  // 今日出題できるものが無ければ、未卒業の全問を復習として出す
+  if(due.length === 0){
+    due = sq.filter(q=> !p5rec(q.id).graduated);
+    if(due.length === 0){ toast('このセッションはすべて卒業済みです🎓'); return; }
+    toast('本日の対象がないため復習として出題します');
   }
+
+  // シャッフル
+  const qs = due.slice();
+  for(let i=qs.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [qs[i],qs[j]]=[qs[j],qs[i]]; }
+
+  P5STATE.sessionIdx = sessionIdx;
   P5STATE.queue = qs;
   P5STATE.idx = 0;
   P5STATE.answered = false;
   P5STATE.selected = null;
   P5STATE.correct = 0;
+  P5STATE.answeredCount = 0;
   P5STATE.done = false;
+  P5STATE.retryPool = [];   // 同セッション内で再挑戦する問題
   setView('p5quiz');
 }
 
@@ -1232,13 +1366,14 @@ function viewP5Quiz(){
   const s = P5STATE;
   // 終了画面
   if(s.done){
-    const rate = Math.round(s.correct / s.queue.length * 100);
+    const rate = s.answeredCount ? Math.round(s.correct / s.answeredCount * 100) : 0;
     return `
     <div class="card today">
-      <div class="due-num">${s.correct}/${s.queue.length}</div>
+      <div class="due-num">${s.correct}/${s.answeredCount}</div>
       <div class="due-label">正解数（正答率 ${rate}%）</div>
+      <div class="sub" style="margin-top:6px">セッション ${s.sessionIdx+1} 完了</div>
       <div style="margin-top:16px">
-        <button class="btn btn-primary" onclick="setView('p5home')" style="width:100%">Part5ホームへ戻る</button>
+        <button class="btn btn-primary" onclick="setView('p5home')" style="width:100%">セッション一覧へ戻る</button>
       </div>
     </div>`;
   }
@@ -1247,7 +1382,6 @@ function viewP5Quiz(){
   const progress = `${s.idx+1} / ${s.queue.length}`;
   const sentence = escapeHtml(q.sentence).replace('____', '<span class="p5-blank">____</span>');
 
-  // 選択肢ボタン
   const choices = q.choices.map((c,i)=>{
     let cls = 'p5-choice';
     if(s.answered){
@@ -1261,9 +1395,14 @@ function viewP5Quiz(){
     </button>`;
   }).join('');
 
-  // 解説（解答後のみ）
+  // タイマーバー（問題画面のみ・目安）
+  const timerBar = s.answered ? '' : `
+    <div class="p5-timer"><div class="p5-timer-fill" id="p5TimerFill"></div></div>
+    <div class="p5-timer-label">目安 20秒</div>`;
+
   let explanation = '';
   if(s.answered){
+    const r = p5rec(q.id);
     const vocabRows = q.vocab.map(([w,m])=>
       `<div class="p5-vocab-row"><span class="p5-vw">${escapeHtml(w)}</span><span class="p5-vm">${escapeHtml(m)}</span></div>`
     ).join('');
@@ -1271,15 +1410,22 @@ function viewP5Quiz(){
       const mark = ['A','B','C','D'][i];
       const isAns = i === q.answer;
       return `<div class="p5-note ${isAns?'p5-note-correct':''}">
-        <span class="p5-note-mark">${mark}</span>
-        <span>${escapeHtml(n)}</span>
+        <span class="p5-note-mark">${mark}</span><span>${escapeHtml(n)}</span>
       </div>`;
     }).join('');
     const isCorrect = s.selected === q.answer;
+    // 連続正解・卒業の状況表示
+    let streakMsg;
+    if(r.graduated){ streakMsg = '🎓 3回連続正解！この問題は卒業しました'; }
+    else if(isCorrect){ streakMsg = `連続正解 ${r.streak}/${P5_GRADUATE_STREAK}（あと${P5_GRADUATE_STREAK-r.streak}回で卒業）`; }
+    else { streakMsg = '不正解のため連続正解はリセット。このセッション内でもう一度出題します'; }
+
     explanation = `
     <div class="p5-result ${isCorrect?'ok':'ng'}">
       ${isCorrect?'✓ 正解':'✗ 不正解'}　正解は ${['A','B','C','D'][q.answer]}：${escapeHtml(q.choices[q.answer])}
     </div>
+    <div class="p5-streak">${streakMsg}</div>
+    <div class="p5-levelbox">目安スコア：${P5_LEVEL_LABEL[q.level]} ・ ${escapeHtml(q.category)}</div>
     <div class="p5-section-title">解説</div>
     <div class="p5-explain">${escapeHtml(q.explanation)}</div>
     <div class="p5-section-title">各選択肢</div>
@@ -1289,17 +1435,19 @@ function viewP5Quiz(){
     <div class="p5-section-title">全文和訳</div>
     <div class="p5-trans">${escapeHtml(q.translation)}</div>
     <button class="btn btn-primary" onclick="nextP5()" style="width:100%;margin-top:16px">
-      ${s.idx+1 >= s.queue.length ? '結果を見る' : '次の問題へ'}
+      ${(s.idx+1 >= s.queue.length && s.retryPool.length===0) ? '結果を見る' : '次の問題へ'}
     </button>`;
   }
 
+  // 問題画面ではレベルを出さない（進捗のみ）
   return `
   <div class="p5-topbar">
     <button class="p5-back" onclick="setView('p5home')">← 中断</button>
     <span class="p5-progress">${progress}</span>
-    <span class="p5-level">${P5_LEVEL_LABEL[q.level]}・${escapeHtml(q.category)}</span>
+    <span class="p5-session-tag">セッション ${s.sessionIdx+1}</span>
   </div>
   <div class="card pad p5-question">
+    ${timerBar}
     <div class="p5-sentence">${sentence}</div>
   </div>
   <div class="p5-choices">${choices}</div>
@@ -1308,13 +1456,55 @@ function viewP5Quiz(){
   `;
 }
 
+/* タイマーバーのアニメーション開始（20秒。経過しても何もしない） */
+let p5TimerRAF = null;
+function startP5Timer(){
+  cancelAnimationFrame(p5TimerRAF);
+  const fill = document.getElementById('p5TimerFill');
+  if(!fill) return;
+  const dur = 20000;
+  const start = performance.now();
+  function step(t){
+    const elapsed = t - start;
+    const ratio = Math.min(elapsed/dur, 1);
+    fill.style.width = (100 - ratio*100) + '%';
+    // 残り時間で色を変える（目安。経過後も自動遷移はしない）
+    if(ratio < 0.6) fill.style.background = 'var(--good)';
+    else if(ratio < 0.85) fill.style.background = 'var(--accent)';
+    else fill.style.background = 'var(--bad)';
+    if(ratio < 1) p5TimerRAF = requestAnimationFrame(step);
+  }
+  p5TimerRAF = requestAnimationFrame(step);
+}
+
 function answerP5(i){
-  if(P5STATE.answered) return;
-  P5STATE.selected = i;
-  P5STATE.answered = true;
-  if(i === P5STATE.queue[P5STATE.idx].answer) P5STATE.correct++;
+  const s = P5STATE;
+  if(s.answered) return;
+  cancelAnimationFrame(p5TimerRAF);
+  s.selected = i;
+  s.answered = true;
+  s.answeredCount++;
+  const q = s.queue[s.idx];
+  const r = p5rec(q.id);
+  const isCorrect = (i === q.answer);
+  if(isCorrect){
+    s.correct++;
+    r.streak = (r.streak||0) + 1;
+    if(r.streak >= P5_GRADUATE_STREAK){
+      r.graduated = true;
+    }else{
+      // 正解: streak=1→翌学習日, 2→3日後 に再出題
+      const addN = (r.streak === 1) ? 1 : 3;
+      r.nextDue = addDays(todayStart(), addN);
+    }
+  }else{
+    r.streak = 0;
+    r.nextDue = 0;
+    // 不正解: 同セッション内で再挑戦（キュー末尾に積む）
+    s.retryPool.push(q);
+  }
+  saveP5Progress();
   render();
-  // 解説の先頭までスクロール
   const el = document.querySelector('.p5-result');
   if(el) el.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
@@ -1324,9 +1514,42 @@ function nextP5(){
   s.idx++;
   s.answered = false;
   s.selected = null;
-  if(s.idx >= s.queue.length) s.done = true;
+  // キューを進めきったら、不正解の再挑戦プールを次のキューにする
+  if(s.idx >= s.queue.length){
+    if(s.retryPool.length > 0){
+      const rp = s.retryPool.slice();
+      for(let i=rp.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [rp[i],rp[j]]=[rp[j],rp[i]]; }
+      s.queue = rp;
+      s.retryPool = [];
+      s.idx = 0;
+    }else{
+      s.done = true;
+    }
+  }
   render();
   window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* 卒業ボックス画面 */
+function viewP5Graduated(){
+  const grad = PART5.questions.filter(q=> p5rec(q.id).graduated);
+  const rows = grad.map(q=>{
+    const ans = q.choices[q.answer];
+    const sentence = escapeHtml(q.sentence).replace('____', `<span class="p5-blank">${escapeHtml(ans)}</span>`);
+    return `<div class="card pad p5-grad-item">
+      <div class="p5-grad-sentence">${sentence}</div>
+      <div class="p5-grad-meta">${P5_LEVEL_LABEL[q.level]} ・ ${escapeHtml(q.category)}</div>
+      <div class="p5-grad-trans">${escapeHtml(q.translation)}</div>
+    </div>`;
+  }).join('');
+  return `
+  <div class="p5-topbar">
+    <button class="p5-back" onclick="setView('p5home')">← 戻る</button>
+    <span class="p5-progress">🎓 卒業ボックス（${grad.length}問）</span>
+  </div>
+  ${ grad.length ? rows : '<div class="card pad"><p class="note" style="margin:0">まだ卒業した問題はありません。各問題を3回連続で正解すると、ここに追加されます。</p></div>' }
+  <div class="foot">TOEIC Part5 ・ v${APP_VERSION}</div>
+  `;
 }
 
 /* ================================================================
@@ -1973,9 +2196,10 @@ async function init(){
    解説・各選択肢の説明・頻出語・全文和訳を表示する。
    ================================================================ */
 const PART5 = { questions: [] };
-const P5STATE = { queue:[], idx:0, answered:false, selected:null, correct:0, done:false };
+const P5STATE = { sessionIdx:0, queue:[], idx:0, answered:false, selected:null, correct:0, answeredCount:0, done:false, retryPool:[] };
 
 async function loadPart5(){
+  loadP5Progress();   // v3.4.0: 再出題の進捗を読み込む
   try{
     const res = await fetch('./part5.json', { cache:'no-store' });
     if(res.ok) PART5.questions = await res.json();
