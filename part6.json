@@ -1,0 +1,545 @@
+[
+ {
+  "id": "p6_001",
+  "docType": "email",
+  "title": "社内メール（歓迎）",
+  "passage": "Dear Team,\n\nWe are pleased to announce that Ms. Karen Lee will be joining our marketing department next Monday. Karen has over ten years of experience in digital advertising and has [1] several award-winning campaigns.\n\nDuring her first week, she will [2] a series of orientation sessions to become familiar with our procedures. [3] Please make her feel welcome and offer any assistance she may need.\n\nWe are confident that her expertise will be a valuable [4] to our team.\n\nBest regards,\nDaniel Cho\nMarketing Director",
+  "blanks": [
+   {
+    "level": 730,
+    "category": "語彙",
+    "choices": [
+     "led",
+     "followed",
+     "attended",
+     "joined"
+    ],
+    "answer": 0,
+    "explanation": "「several award-winning campaigns（複数の受賞歴のあるキャンペーン）」を目的語に取り、経験豊富な人物の実績を表すのは led（主導した）。has led で現在完了。",
+    "choiceNotes": [
+     "led：動詞「主導した」。campaigns を導き実績を表す。正解。",
+     "followed：「後を追った」で実績としては弱く不自然。不正解。",
+     "attended：「出席した」でキャンペーンの主導とは合わない。不正解。",
+     "joined：「参加した」で受賞実績の主体を表さない。不正解。"
+    ]
+   },
+   {
+    "level": 600,
+    "category": "文法",
+    "choices": [
+     "attend",
+     "attends",
+     "attended",
+     "attending"
+    ],
+    "answer": 0,
+    "explanation": "助動詞 will の後ろは動詞の原形。「オリエンテーションに参加する」で attend が正解。",
+    "choiceNotes": [
+     "attend：動詞の原形。will の後ろで正しい。正解。",
+     "attends：三単現。will の後ろに原形が必要。不正解。",
+     "attended：過去形。will の後ろは原形。不正解。",
+     "attending：分詞。will の後ろに単独では不可。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "文選択",
+    "choices": [
+     "These sessions will cover company policies, tools, and team workflows.",
+     "The marketing budget will be reduced next quarter.",
+     "Applications for the position are still being accepted.",
+     "The office will be closed during the national holiday."
+    ],
+    "answer": 0,
+    "explanation": "空所前は「オリエンテーションで手順に慣れる」という流れ。直後も歓迎の話が続く。オリエンテーションの中身を具体化する第1文が文脈に最も合う。",
+    "choiceNotes": [
+     "会社の方針・ツール・作業の流れを扱う、という内容。前文のオリエンテーション説明を自然に補足する。正解。",
+     "来四半期の予算削減の話。歓迎メールの流れと無関係。不正解。",
+     "その職の応募をまだ受付中、という内容。すでに着任が決まった人の話と矛盾。不正解。",
+     "祝日の休業の話。文脈と無関係。不正解。"
+    ]
+   },
+   {
+    "level": 600,
+    "category": "語彙",
+    "choices": [
+     "addition",
+     "additive",
+     "additional",
+     "additionally"
+    ],
+    "answer": 0,
+    "explanation": "a valuable ____ で形容詞 valuable に修飾される名詞。「貴重な戦力（加入）」で addition が正解。a valuable addition to（〜への貴重な加入）は定型。",
+    "choiceNotes": [
+     "addition：名詞「加入・追加」。valuable addition to の定型。正解。",
+     "additive：名詞「添加物」／形容詞。意味が合わない。不正解。",
+     "additional：形容詞「追加の」。valuable の後ろの名詞位置に不適。不正解。",
+     "additionally：副詞。名詞位置に不適。不正解。"
+    ]
+   }
+  ],
+  "vocab": [
+   [
+    "marketing department",
+    "マーケティング部"
+   ],
+   [
+    "digital advertising",
+    "デジタル広告"
+   ],
+   [
+    "award-winning",
+    "受賞歴のある"
+   ],
+   [
+    "orientation",
+    "オリエンテーション"
+   ],
+   [
+    "procedure",
+    "手順"
+   ],
+   [
+    "expertise",
+    "専門知識"
+   ],
+   [
+    "valuable",
+    "貴重な"
+   ]
+  ],
+  "translation": "チームの皆さんへ\n\nカレン・リーさんが来週月曜日に当社のマーケティング部に加わることをお知らせでき、うれしく思います。カレンはデジタル広告で10年以上の経験があり、いくつもの受賞歴のあるキャンペーンを主導してきました。\n\n最初の1週間は、当社の手順に慣れるための一連のオリエンテーションに参加します。これらのオリエンテーションでは、会社の方針、ツール、チームの作業の流れを扱います。どうか彼女を温かく迎え、必要な手助けをしてあげてください。\n\n彼女の専門知識は、私たちのチームにとって貴重な戦力になると確信しています。\n\n敬具\nダニエル・チョー\nマーケティング部長"
+ },
+ {
+  "id": "p6_002",
+  "docType": "notice",
+  "title": "館内告知（改装）",
+  "passage": "NOTICE TO ALL VISITORS\n\nThe main lobby of the Central Library will be closed for renovation [1] March 3 to March 17. During this period, visitors should use the side entrance on Oak Street.\n\nThe renovation is intended to improve accessibility and [2] a more comfortable reading area. [3] We apologize for any inconvenience this may cause.\n\nAll library services, including book borrowing and computer access, will [4] available at the temporary help desk near the side entrance.\n\nThank you for your understanding.",
+  "blanks": [
+   {
+    "level": 600,
+    "category": "文法",
+    "choices": [
+     "from",
+     "since",
+     "by",
+     "within"
+    ],
+    "answer": 0,
+    "explanation": "from A to B（AからBまで）の形。「3月3日から3月17日まで」で from が正解。後ろに to があるのが手がかり。",
+    "choiceNotes": [
+     "from：from ... to ... の起点。正解。",
+     "since：「〜以来」で to と対にならない。不正解。",
+     "by：「〜までに」で from to の形にならない。不正解。",
+     "within：「〜以内に」で to と結ばない。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "語彙",
+    "choices": [
+     "create",
+     "destroy",
+     "reduce",
+     "delay"
+    ],
+    "answer": 0,
+    "explanation": "and で improve（改善する）と並び、「より快適な読書空間を作る」で create（作る）が正解。改装の前向きな目的に合う。",
+    "choiceNotes": [
+     "create：動詞「作る」。快適な空間を生む意味で自然。正解。",
+     "destroy：「破壊する」で目的として不自然。不正解。",
+     "reduce：「減らす」で快適な空間には合わない。不正解。",
+     "delay：「遅らせる」で意味が合わない。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "文選択",
+    "choices": [
+     "The work is scheduled to be completed on time.",
+     "New membership cards will be issued next year.",
+     "The library will permanently close in March.",
+     "Visitors may return books by mail instead."
+    ],
+    "answer": 0,
+    "explanation": "空所前は改装の目的、直後は「ご不便をお詫びします」。工事が予定通り終わる見込みを伝える第1文が、謝罪への自然なつなぎになる。",
+    "choiceNotes": [
+     "工事は予定通り完了予定、という内容。改装告知の流れに自然に収まる。正解。",
+     "来年の新しい会員証発行の話。文脈と無関係。不正解。",
+     "3月に恒久閉館する、という内容。一時的な改装という本文と矛盾。不正解。",
+     "本を郵送で返却できる、という話。ここでは触れられておらず唐突。不正解。"
+    ]
+   },
+   {
+    "level": 600,
+    "category": "文法",
+    "choices": [
+     "remain",
+     "remains",
+     "remained",
+     "remaining"
+    ],
+    "answer": 0,
+    "explanation": "助動詞 will の後ろは動詞の原形。「利用可能なままである」で remain が正解。remain＋形容詞（available）の第2文型。",
+    "choiceNotes": [
+     "remain：原形。will の後ろで正しく、available を補語に取る。正解。",
+     "remains：三単現。will の後ろは原形。不正解。",
+     "remained：過去形。will の後ろは原形。不正解。",
+     "remaining：分詞。will の後ろに単独では不可。不正解。"
+    ]
+   }
+  ],
+  "vocab": [
+   [
+    "renovation",
+    "改装"
+   ],
+   [
+    "accessibility",
+    "利用しやすさ"
+   ],
+   [
+    "inconvenience",
+    "不便"
+   ],
+   [
+    "borrow",
+    "借りる"
+   ],
+   [
+    "temporary",
+    "一時的な"
+   ],
+   [
+    "side entrance",
+    "脇の入口"
+   ]
+  ],
+  "translation": "来館者の皆様へお知らせ\n\n中央図書館の正面ロビーは、3月3日から3月17日まで改装のため閉鎖されます。この期間中、来館者はオーク通り側の脇の入口をご利用ください。\n\nこの改装は、利用しやすさを高め、より快適な読書空間を作ることを目的としています。工事は予定通り完了する見込みです。ご不便をおかけして申し訳ございません。\n\n本の貸出やコンピューターの利用を含むすべての図書館サービスは、脇の入口近くの臨時受付でご利用いただけます。\n\nご理解に感謝します。"
+ },
+ {
+  "id": "p6_003",
+  "docType": "article",
+  "title": "社内報（記事）",
+  "passage": "Greenfield Manufacturing has announced a new initiative to reduce energy consumption across all its factories. The program, which begins in June, aims to cut electricity use by 20 percent [1] the next two years.\n\nUnder the plan, older machines will be gradually replaced with energy-efficient models. [2] the company will install solar panels on factory rooftops. [3]\n\nEmployees are encouraged to [4] to the effort by turning off equipment when it is not in use. Management believes that these combined measures will lead to significant savings in operating costs.",
+  "blanks": [
+   {
+    "level": 600,
+    "category": "文法",
+    "choices": [
+     "over",
+     "since",
+     "until",
+     "among"
+    ],
+    "answer": 0,
+    "explanation": "「今後2年間にわたって」という期間で over（〜にわたって）が正解。over the next two years は定型。",
+    "choiceNotes": [
+     "over：「〜にわたって」。期間を表す。正解。",
+     "since：「〜以来」で未来の期間に合わない。不正解。",
+     "until：「〜まで」で幅のある期間には over が自然。不正解。",
+     "among：「〜の中で」で時に使わない。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "接続語",
+    "choices": [
+     "In addition",
+     "However",
+     "Nevertheless",
+     "Otherwise"
+    ],
+    "answer": 0,
+    "explanation": "前文「古い機械を省エネ型に交換」に、後文「太陽光パネルを設置」を追加している。追加を表す In addition（さらに）が正解。",
+    "choiceNotes": [
+     "In addition：「さらに」。前の施策に別の施策を追加。正解。",
+     "However：「しかし」で逆接。追加の文脈に合わない。不正解。",
+     "Nevertheless：「それにもかかわらず」で逆接。不適。不正解。",
+     "Otherwise：「さもなければ」で条件・対比。不適。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "文選択",
+    "choices": [
+     "These panels are expected to supply a significant portion of each factory's power.",
+     "The company plans to close two of its factories.",
+     "Sales of the new product have exceeded expectations.",
+     "The initiative was canceled due to budget cuts."
+    ],
+    "answer": 0,
+    "explanation": "直前が「屋上に太陽光パネルを設置」。その効果を具体的に述べる第1文が自然につながる。",
+    "choiceNotes": [
+     "これらのパネルが各工場の電力のかなりの部分を供給する見込み、という内容。前文のパネル設置を補足。正解。",
+     "工場2つを閉鎖する予定、という話。省エネ策の文脈と無関係で唐突。不正解。",
+     "新製品の売上が予想を超えた、という話。エネルギー削減の記事と無関係。不正解。",
+     "予算削減で計画が中止された、という内容。プログラム開始を伝える本文と矛盾。不正解。"
+    ]
+   },
+   {
+    "level": 600,
+    "category": "語彙",
+    "choices": [
+     "contribute",
+     "attribute",
+     "distribute",
+     "substitute"
+    ],
+    "answer": 0,
+    "explanation": "「〜に貢献する」で contribute to が正解。省エネの取り組みに従業員が貢献する、という文脈。",
+    "choiceNotes": [
+     "contribute：動詞「貢献する」。contribute to the effort で自然。正解。",
+     "attribute：「〜のせいにする」で意味が合わない。不正解。",
+     "distribute：「分配する」で意味が合わない。不正解。",
+     "substitute：「代用する」で意味が合わない。不正解。"
+    ]
+   }
+  ],
+  "vocab": [
+   [
+    "initiative",
+    "取り組み"
+   ],
+   [
+    "energy consumption",
+    "エネルギー消費"
+   ],
+   [
+    "electricity",
+    "電力"
+   ],
+   [
+    "energy-efficient",
+    "省エネの"
+   ],
+   [
+    "solar panel",
+    "太陽光パネル"
+   ],
+   [
+    "operating cost",
+    "運営費"
+   ],
+   [
+    "savings",
+    "節約"
+   ]
+  ],
+  "translation": "グリーンフィールド製造は、すべての工場でエネルギー消費を削減する新しい取り組みを発表した。6月に始まるこのプログラムは、今後2年間で電力使用量を20パーセント削減することを目指している。\n\nこの計画のもと、古い機械は徐々に省エネ型に交換される。さらに、同社は工場の屋上に太陽光パネルを設置する。これらのパネルは、各工場の電力のかなりの部分を供給する見込みだ。\n\n従業員は、使っていない機器の電源を切ることでこの取り組みに貢献するよう促されている。経営陣は、これらを組み合わせた対策が運営費の大きな節約につながると考えている。"
+ },
+ {
+  "id": "p6_004",
+  "docType": "letter",
+  "title": "取引先への手紙",
+  "passage": "Dear Mr. Thompson,\n\nThank you for your recent order of office supplies. We are writing to inform you that your shipment has been [1] and will arrive at your office by Friday.\n\nUnfortunately, one item—the wireless keyboard—is currently out of stock. [2] We expect it to be restocked within two weeks, and we will send it to you [3] no additional charge.\n\nWe value your business and appreciate your patience. [4] you have any questions, please do not hesitate to contact our customer service team.\n\nSincerely,\nOrder Fulfillment Team",
+  "blanks": [
+   {
+    "level": 600,
+    "category": "文法",
+    "choices": [
+     "processed",
+     "processing",
+     "process",
+     "processes"
+    ],
+    "answer": 0,
+    "explanation": "has been ____ で受け身の完了形。「発送が処理された」で過去分詞 processed が正解。",
+    "choiceNotes": [
+     "processed：過去分詞。has been processed で受け身の完了。正解。",
+     "processing：現在分詞。受け身にならず不適。不正解。",
+     "process：原形。has been の後ろは過去分詞。不正解。",
+     "processes：三単現。受け身の形にならない。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "文選択",
+    "choices": [
+     "We apologize for the delay in shipping this particular item.",
+     "The keyboard is available in three different colors.",
+     "Your membership has been successfully renewed.",
+     "We are pleased to offer you a full refund for the entire order."
+    ],
+    "answer": 0,
+    "explanation": "前文は「キーボードが在庫切れ」、後文は「2週間以内に再入荷し追加料金なしで送る」。在庫切れをお詫びする第1文が自然につながる。",
+    "choiceNotes": [
+     "この品目の発送の遅れをお詫びする、という内容。在庫切れの流れに自然。正解。",
+     "キーボードが3色から選べる、という話。在庫切れの文脈と無関係で唐突。不正解。",
+     "会員資格が更新された、という話。注文の内容と無関係。不正解。",
+     "注文全体を全額返金する、という内容。一部が在庫切れという本文と合わず過剰。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "語彙",
+    "choices": [
+     "at",
+     "for",
+     "in",
+     "with"
+    ],
+    "answer": 0,
+    "explanation": "「追加料金なしで」は at no additional charge が定型。前置詞 at が正解。",
+    "choiceNotes": [
+     "at：at no additional charge「追加料金なしで」の定型。正解。",
+     "for：この定型では at を使う。不正解。",
+     "in：この定型では at を使う。不正解。",
+     "with：この定型では at を使う。不正解。"
+    ]
+   },
+   {
+    "level": 600,
+    "category": "文法",
+    "choices": [
+     "Should",
+     "Despite",
+     "During",
+     "Unless"
+    ],
+    "answer": 0,
+    "explanation": "If you have any questions の if を省いた倒置 Should you have any questions（もしご質問があれば）。丁寧な条件表現で Should が正解。",
+    "choiceNotes": [
+     "Should：条件の倒置「もし〜なら」。Should you have で自然。正解。",
+     "Despite：前置詞で後ろに文を取れない。不正解。",
+     "During：前置詞で文を取れない。不正解。",
+     "Unless：「〜でない限り」で意味が逆。不正解。"
+    ]
+   }
+  ],
+  "vocab": [
+   [
+    "office supplies",
+    "事務用品"
+   ],
+   [
+    "shipment",
+    "発送品"
+   ],
+   [
+    "out of stock",
+    "在庫切れ"
+   ],
+   [
+    "restock",
+    "再入荷する"
+   ],
+   [
+    "additional charge",
+    "追加料金"
+   ],
+   [
+    "hesitate",
+    "ためらう"
+   ]
+  ],
+  "translation": "トンプソン様\n\nこのたびは事務用品をご注文いただきありがとうございます。お客様の発送品の処理が完了し、金曜日までにオフィスに到着することをお知らせします。\n\nあいにく、1点――ワイヤレスキーボード――が現在在庫切れとなっております。この品目の発送が遅れますことをお詫び申し上げます。2週間以内に再入荷する見込みで、追加料金なしでお送りいたします。\n\nお取引を大切に思い、お待ちいただくことに感謝します。ご質問がございましたら、遠慮なく当社の顧客サービスチームまでご連絡ください。\n\n敬具\n注文処理チーム"
+ },
+ {
+  "id": "p6_005",
+  "docType": "memo",
+  "title": "社内連絡（メモ）",
+  "passage": "To: All Staff\nFrom: Human Resources\nSubject: Updated Remote Work Policy\n\nBeginning next month, employees will be allowed to work from home up to three days per week. This change reflects our commitment to [1] a better work-life balance for our staff.\n\nTo ensure smooth communication, all remote employees are [2] to be available online during core hours, from 10 a.m. to 3 p.m. [3]\n\nEmployees who wish to work remotely must submit a request to their supervisor [4] approval. Further details will be shared during next week's staff meeting.",
+  "blanks": [
+   {
+    "level": 730,
+    "category": "語彙",
+    "choices": [
+     "promoting",
+     "preventing",
+     "reducing",
+     "refusing"
+    ],
+    "answer": 0,
+    "explanation": "「より良いワークライフバランスを促進すること」で promoting（促進する）が正解。会社の前向きな姿勢を表す。",
+    "choiceNotes": [
+     "promoting：動詞「促進する」。better balance を促す意味で自然。正解。",
+     "preventing：「妨げる」で意味が逆。不正解。",
+     "reducing：「減らす」でバランスには合わない。不正解。",
+     "refusing：「拒否する」で意味が合わない。不正解。"
+    ]
+   },
+   {
+    "level": 600,
+    "category": "文法",
+    "choices": [
+     "expected",
+     "expecting",
+     "expect",
+     "expects"
+    ],
+    "answer": 0,
+    "explanation": "are ____ to be で受け身。「オンラインでいることが求められる」で be expected to do の過去分詞 expected が正解。",
+    "choiceNotes": [
+     "expected：過去分詞。be expected to do「〜すると期待される」。正解。",
+     "expecting：現在分詞。受け身にならず不適。不正解。",
+     "expect：原形。are の後ろは過去分詞。不正解。",
+     "expects：三単現。受け身の形にならない。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "文選択",
+    "choices": [
+     "Outside these hours, employees may manage their own schedules.",
+     "The company will no longer allow any remote work.",
+     "All meetings must now be held in person.",
+     "The new office building will open next spring."
+    ],
+    "answer": 0,
+    "explanation": "直前が「コアタイム（午前10時〜午後3時）はオンラインで対応」。その時間外の扱いを述べる第1文が自然な補足になる。",
+    "choiceNotes": [
+     "これらの時間外は自分で予定を管理してよい、という内容。コアタイムの説明を補い流れが自然。正解。",
+     "今後は在宅勤務を一切認めない、という話。在宅を認める本文と矛盾。不正解。",
+     "すべての会議を対面で行う、という話。本文の在宅方針と合わず唐突。不正解。",
+     "新社屋が来春開業する、という話。文脈と無関係。不正解。"
+    ]
+   },
+   {
+    "level": 730,
+    "category": "文法",
+    "choices": [
+     "for",
+     "to",
+     "of",
+     "with"
+    ],
+    "answer": 0,
+    "explanation": "「承認を得るために上司に申請する」と目的を表す for。submit a request ... for approval（承認を求めて申請する）で for が正解。",
+    "choiceNotes": [
+     "for：「〜を求めて」。for approval で目的を表す。正解。",
+     "to：submit a request to は「〜に申請する」で相手を示すが、ここは既に supervisor が示され approval には for が自然。不正解。",
+     "of：approval と結んで目的を表さない。不正解。",
+     "with：意味が合わない。不正解。"
+    ]
+   }
+  ],
+  "vocab": [
+   [
+    "remote work",
+    "在宅勤務"
+   ],
+   [
+    "work-life balance",
+    "仕事と生活の調和"
+   ],
+   [
+    "core hours",
+    "コアタイム"
+   ],
+   [
+    "submit",
+    "提出する"
+   ],
+   [
+    "supervisor",
+    "上司"
+   ],
+   [
+    "approval",
+    "承認"
+   ]
+  ],
+  "translation": "宛先：全職員\n差出人：人事部\n件名：在宅勤務方針の更新\n\n来月から、従業員は週に最大3日まで在宅勤務ができるようになります。この変更は、職員のより良い仕事と生活の調和を促進するという当社の取り組みを反映したものです。\n\n円滑な意思疎通を確保するため、在宅勤務の従業員は全員、コアタイムである午前10時から午後3時の間、オンラインで対応できるようにしておくことが求められます。これらの時間外は、各自で予定を管理してかまいません。\n\n在宅勤務を希望する従業員は、承認を得るために上司へ申請を提出しなければなりません。詳細は来週の職員会議でお伝えします。"
+ }
+]

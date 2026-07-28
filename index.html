@@ -2,10 +2,25 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-24 12:00 (JST)
-  バージョン: 3.4.0
+  ファイル最終更新日時: 2026-07-24 13:30 (JST)
+  バージョン: 3.5.0
 --------------------------------------------------------------------
   【更新履歴】
+    v3.5.0 (2026-07-24 13:30 JST)
+      - TOEIC Part6 演習モードを新設（5文書＝20問で試作）。
+        ヘッダーのモード切替を「単語→Part5→Part6→単語」の3循環に拡張。
+        Part6は1文書に空所4つ。文脈を踏まえて各空所を4択で解く。
+        カテゴリは語彙・文法・接続語・文選択（Part6特有の一文選択）。
+        本文を表示し空所[1]〜[4]をハイライト、各空所を解くごとに
+        正解の理由・各選択肢の説明・目安スコアを表示。文書の最後の
+        空所を解いたら、頻出語と全文和訳を表示。
+      - Part6の卒業・再出題は「文書単位」:
+        4問すべて正解できた回を1カウントし、3回連続で全問正解したら
+        文書ごと卒業。1問でも間違えたらカウントを0にリセットし同
+        セッション内で再挑戦。全問正解1回→翌学習日、2回→3日後に再出題。
+      - 1セッション＝3文書（12問）。卒業した文書を確認できる
+        「卒業ボックス」も新設。進捗は localStorage('toeic-p6-progress')。
+      - 問題データは part6.json。
     v3.4.0 (2026-07-24 12:00 JST)
       - Part5問題を30問→330問に大幅追加（新規300問。文法・品詞・
         語彙をバランスよく、600/730/860点レベルを混在）。
@@ -387,6 +402,20 @@
   .p5-grad-meta{font-size:11px;color:var(--ink-soft);font-weight:700;margin-top:6px;}
   .p5-grad-trans{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.7;}
 
+  /* v3.5.0: Part6 本文 */
+  .p6-passage{margin-top:8px;}
+  .p6-doctype{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:.04em;margin-bottom:10px;}
+  .p6-text{font-family:var(--font-en);font-size:15px;line-height:2.0;color:var(--ink);}
+  .p6-blank-active{display:inline-block;min-width:34px;text-align:center;color:var(--primary);
+    font-weight:800;background:var(--primary-soft);border-radius:6px;padding:0 6px;border:1.5px solid var(--primary);}
+  .p6-blank-pending{display:inline-block;min-width:34px;text-align:center;color:var(--ink-soft);
+    font-weight:700;background:var(--bg);border-radius:6px;padding:0 6px;}
+  .p6-blank-filled{display:inline-block;color:var(--good);font-weight:700;background:var(--good-soft);
+    border-radius:6px;padding:0 6px;}
+  .p6-qlabel{font-size:13px;font-weight:800;color:var(--ink);margin:16px 4px 8px;}
+  .p6-choice-sentence{font-size:13px;line-height:1.6;align-items:flex-start;}
+  .p6-choice-sentence .p5-mark{margin-top:1px;}
+
   /* ---- カード共通 ---- */
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);}
   .pad{padding:18px;}
@@ -580,8 +609,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "3.4.0";
-const LAST_UPDATED = "2026-07-24 12:00 JST"; // ファイル最終更新日時
+const APP_VERSION = "3.5.0";
+const LAST_UPDATED = "2026-07-24 13:30 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -971,6 +1000,9 @@ function render(){
   else if(STATE.view === 'p5home')main.innerHTML = viewP5Home();
   else if(STATE.view === 'p5quiz')main.innerHTML = viewP5Quiz();
   else if(STATE.view === 'p5graduated')main.innerHTML = viewP5Graduated();
+  else if(STATE.view === 'p6home')main.innerHTML = viewP6Home();
+  else if(STATE.view === 'p6quiz')main.innerHTML = viewP6Quiz();
+  else if(STATE.view === 'p6graduated')main.innerHTML = viewP6Graduated();
   bindDynamic();
   // v3.4.0: Part5の問題表示中はタイマーバーを起動（未解答時のみ）
   if(STATE.view === 'p5quiz' && !P5STATE.done && !P5STATE.answered){
@@ -1549,6 +1581,303 @@ function viewP5Graduated(){
   </div>
   ${ grad.length ? rows : '<div class="card pad"><p class="note" style="margin:0">まだ卒業した問題はありません。各問題を3回連続で正解すると、ここに追加されます。</p></div>' }
   <div class="foot">TOEIC Part5 ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* ================================================================
+   v3.5.0: Part6 画面
+   ================================================================ */
+function p6Sessions(){
+  const docs = PART6.docs;
+  const sessions = [];
+  for(let i=0;i<docs.length;i+=P6_SESSION_DOCS){
+    sessions.push(docs.slice(i, i+P6_SESSION_DOCS));
+  }
+  return sessions;
+}
+function p6SessionStatus(sessionDocs){
+  let grad=0, due=0;
+  const today = todayStart();
+  sessionDocs.forEach(d=>{
+    const r = p6rec(d.id);
+    if(r.graduated) grad++;
+    else if(!(r.docStreak>0 && r.nextDue>today)) due++;
+  });
+  return { grad, due, total:sessionDocs.length };
+}
+
+function viewP6Home(){
+  const docs = PART6.docs;
+  const sessions = p6Sessions();
+  let totalGrad = 0;
+  docs.forEach(d=>{ if(p6rec(d.id).graduated) totalGrad++; });
+
+  const sessionCards = sessions.map((sd,idx)=>{
+    const st = p6SessionStatus(sd);
+    const allGrad = st.grad === st.total;
+    const pct = Math.round(st.grad / st.total * 100);
+    return `
+    <button class="p5-session ${allGrad?'p5-session-done':''}" onclick="startP6Session(${idx})">
+      <div class="p5-session-head">
+        <span class="p5-session-title">セッション ${idx+1}</span>
+        ${allGrad?'<span class="p5-session-badge">✓ 卒業</span>':`<span class="p5-session-count">${st.grad}/${st.total} 文書卒業</span>`}
+      </div>
+      <div class="p5-session-bar"><div class="p5-session-fill" style="width:${pct}%"></div></div>
+    </button>`;
+  }).join('');
+
+  return `
+  <div class="card today">
+    <div class="due-num">${docs.length}</div>
+    <div class="due-label">Part 6 文書（各4問）・ 全${sessions.length}セッション</div>
+    <div class="sub" style="margin-top:6px">1文書を3回連続で全問正解すると卒業です</div>
+  </div>
+
+  <div class="section-title">卒業ボックス</div>
+  <div class="card pad">
+    <button class="btn btn-ghost small" onclick="setView('p6graduated')" style="width:100%">
+      🎓 卒業した文書を確認（${totalGrad}文書）
+    </button>
+  </div>
+
+  <div class="section-title">セッションを選ぶ（各${P6_SESSION_DOCS}文書）</div>
+  <div class="p5-session-list">
+    ${sessionCards}
+  </div>
+
+  <div class="foot">TOEIC Part6 演習 ・ v${APP_VERSION}</div>
+  `;
+}
+
+function startP6Session(sessionIdx){
+  const sessions = p6Sessions();
+  const sd = sessions[sessionIdx];
+  if(!sd){ toast('セッションが見つかりません'); return; }
+  const today = todayStart();
+  let due = sd.filter(d=>{
+    const r = p6rec(d.id);
+    if(r.graduated) return false;
+    if(r.docStreak>0 && r.nextDue>today) return false;
+    return true;
+  });
+  if(due.length === 0){
+    due = sd.filter(d=> !p6rec(d.id).graduated);
+    if(due.length === 0){ toast('このセッションはすべて卒業済みです🎓'); return; }
+    toast('本日の対象がないため復習として出題します');
+  }
+  const dq = due.slice();
+  for(let i=dq.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [dq[i],dq[j]]=[dq[j],dq[i]]; }
+
+  P6STATE.sessionIdx = sessionIdx;
+  P6STATE.docQueue = dq;
+  P6STATE.docIdx = 0;
+  P6STATE.blankIdx = 0;
+  P6STATE.answered = false;
+  P6STATE.selected = null;
+  P6STATE.docCorrect = 0;         // 現在の文書での正解数
+  P6STATE.sessionCorrect = 0;
+  P6STATE.sessionAnswered = 0;
+  P6STATE.retryDocs = [];
+  P6STATE.done = false;
+  setView('p6quiz');
+}
+
+/* 本文を組み立て、空所をハイライト。解答済みの空所には選んだ語を入れる。 */
+function p6RenderPassage(doc, currentBlank, answeredMap){
+  let html = escapeHtml(doc.passage);
+  for(let i=0;i<4;i++){
+    const marker = `[${i+1}]`;
+    let rep;
+    if(answeredMap[i] !== undefined){
+      // 解答済み: 正解の語（文選択は「文が入った」ことを示す）
+      const b = doc.blanks[i];
+      if(b.category === '文選択'){
+        rep = `<span class="p6-blank-filled">［文${i+1}］</span>`;
+      }else{
+        rep = `<span class="p6-blank-filled">${escapeHtml(b.choices[b.answer])}</span>`;
+      }
+    }else if(i === currentBlank){
+      rep = `<span class="p6-blank-active">（${i+1}）</span>`;
+    }else{
+      rep = `<span class="p6-blank-pending">（${i+1}）</span>`;
+    }
+    html = html.replace(marker, rep);
+  }
+  return html.replace(/\n/g, '<br>');
+}
+
+function viewP6Quiz(){
+  const s = P6STATE;
+  if(s.done){
+    const rate = s.sessionAnswered ? Math.round(s.sessionCorrect/s.sessionAnswered*100) : 0;
+    return `
+    <div class="card today">
+      <div class="due-num">${s.sessionCorrect}/${s.sessionAnswered}</div>
+      <div class="due-label">正解数（正答率 ${rate}%）</div>
+      <div class="sub" style="margin-top:6px">セッション ${s.sessionIdx+1} 完了</div>
+      <div style="margin-top:16px">
+        <button class="btn btn-primary" onclick="setView('p6home')" style="width:100%">セッション一覧へ戻る</button>
+      </div>
+    </div>`;
+  }
+
+  const doc = s.docQueue[s.docIdx];
+  const b = doc.blanks[s.blankIdx];
+  // 解答済みマップ（この文書で既に解いた空所→選択）
+  const answeredMap = s._answeredMap || {};
+  const passageHtml = p6RenderPassage(doc, s.answered?-1:s.blankIdx, answeredMap);
+
+  const isSentence = (b.category === '文選択');
+  const choices = b.choices.map((c,i)=>{
+    let cls = 'p5-choice' + (isSentence ? ' p6-choice-sentence' : '');
+    if(s.answered){
+      if(i === b.answer) cls += ' p5-correct';
+      else if(i === s.selected) cls += ' p5-wrong';
+      else cls += ' p5-dim';
+    }
+    const mark = ['A','B','C','D'][i];
+    return `<button class="${cls}" ${s.answered?'disabled':''} onclick="answerP6(${i})">
+      <span class="p5-mark">${mark}</span>${escapeHtml(c)}
+    </button>`;
+  }).join('');
+
+  let explanation = '';
+  if(s.answered){
+    const noteRows = b.choiceNotes.map((n,i)=>{
+      const mark = ['A','B','C','D'][i];
+      const isAns = i === b.answer;
+      return `<div class="p5-note ${isAns?'p5-note-correct':''}">
+        <span class="p5-note-mark">${mark}</span><span>${escapeHtml(n)}</span>
+      </div>`;
+    }).join('');
+    const isCorrect = s.selected === b.answer;
+    const lastBlank = (s.blankIdx >= 3);
+    // 文書の頻出語・和訳は最後の空所を解いた後に表示
+    let docExtra = '';
+    if(lastBlank){
+      const vocabRows = doc.vocab.map(([w,m])=>
+        `<div class="p5-vocab-row"><span class="p5-vw">${escapeHtml(w)}</span><span class="p5-vm">${escapeHtml(m)}</span></div>`
+      ).join('');
+      docExtra = `
+      <div class="p5-section-title">文書の頻出語</div>
+      <div class="p5-vocab">${vocabRows}</div>
+      <div class="p5-section-title">全文和訳</div>
+      <div class="p5-trans">${escapeHtml(doc.translation).replace(/\n/g,'<br>')}</div>`;
+    }
+    explanation = `
+    <div class="p5-result ${isCorrect?'ok':'ng'}">
+      ${isCorrect?'✓ 正解':'✗ 不正解'}　空所(${s.blankIdx+1}) の正解は ${['A','B','C','D'][b.answer]}
+    </div>
+    <div class="p5-levelbox">目安スコア：${P5_LEVEL_LABEL[b.level]} ・ ${escapeHtml(b.category)}</div>
+    <div class="p5-section-title">解説</div>
+    <div class="p5-explain">${escapeHtml(b.explanation)}</div>
+    <div class="p5-section-title">各選択肢</div>
+    <div class="p5-notes">${noteRows}</div>
+    ${docExtra}
+    <button class="btn btn-primary" onclick="nextP6()" style="width:100%;margin-top:16px">
+      ${ lastBlank ? (s.docIdx+1>=s.docQueue.length && s.retryDocs.length===0 ? '結果を見る' : '次の文書へ') : '次の空所へ' }
+    </button>`;
+  }
+
+  return `
+  <div class="p5-topbar">
+    <button class="p5-back" onclick="setView('p6home')">← 中断</button>
+    <span class="p5-progress">文書 ${s.docIdx+1}/${s.docQueue.length} ・ 空所 ${s.blankIdx+1}/4</span>
+    <span class="p5-session-tag">セッション ${s.sessionIdx+1}</span>
+  </div>
+  <div class="card pad p6-passage">
+    <div class="p6-doctype">${escapeHtml(doc.title)}</div>
+    <div class="p6-text">${passageHtml}</div>
+  </div>
+  <div class="p6-qlabel">空所（${s.blankIdx+1}）に入るもの${isSentence?'（文を選ぶ）':''}</div>
+  <div class="p5-choices">${choices}</div>
+  ${explanation}
+  <div class="foot">TOEIC Part6 ・ v${APP_VERSION}</div>
+  `;
+}
+
+function answerP6(i){
+  const s = P6STATE;
+  if(s.answered) return;
+  const doc = s.docQueue[s.docIdx];
+  const b = doc.blanks[s.blankIdx];
+  s.selected = i;
+  s.answered = true;
+  s.sessionAnswered++;
+  if(!s._answeredMap) s._answeredMap = {};
+  s._answeredMap[s.blankIdx] = i;
+  if(i === b.answer){ s.docCorrect++; s.sessionCorrect++; }
+  render();
+  const el = document.querySelector('.p5-result');
+  if(el) el.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+function nextP6(){
+  const s = P6STATE;
+  s.answered = false;
+  s.selected = null;
+  if(s.blankIdx < 3){
+    // 同じ文書の次の空所へ
+    s.blankIdx++;
+  }else{
+    // 文書を解き終えた: 文書単位の卒業判定
+    const doc = s.docQueue[s.docIdx];
+    const r = p6rec(doc.id);
+    const allCorrect = (s.docCorrect === 4);
+    if(allCorrect){
+      r.docStreak = (r.docStreak||0) + 1;
+      if(r.docStreak >= P6_GRADUATE_STREAK){
+        r.graduated = true;
+        toast('🎓 この文書を卒業しました！');
+      }else{
+        const addN = (r.docStreak === 1) ? 1 : 3;
+        r.nextDue = addDays(todayStart(), addN);
+      }
+    }else{
+      r.docStreak = 0;
+      r.nextDue = 0;
+      s.retryDocs.push(doc);   // 同セッション内で再挑戦
+      toast('全問正解ならず。この文書は後ほど再挑戦します');
+    }
+    saveP6Progress();
+    // 次の文書へ
+    s.docIdx++;
+    s.blankIdx = 0;
+    s.docCorrect = 0;
+    s._answeredMap = {};
+    if(s.docIdx >= s.docQueue.length){
+      if(s.retryDocs.length > 0){
+        const rd = s.retryDocs.slice();
+        for(let i=rd.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [rd[i],rd[j]]=[rd[j],rd[i]]; }
+        s.docQueue = rd; s.retryDocs = []; s.docIdx = 0;
+      }else{
+        s.done = true;
+      }
+    }
+  }
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function viewP6Graduated(){
+  const grad = PART6.docs.filter(d=> p6rec(d.id).graduated);
+  const rows = grad.map(d=>{
+    // 全空所を正解で埋めた本文
+    const map = {}; d.blanks.forEach((b,i)=> map[i]=b.answer);
+    const passageHtml = p6RenderPassage(d, -1, map);
+    return `<div class="card pad p5-grad-item">
+      <div class="p6-doctype">${escapeHtml(d.title)}</div>
+      <div class="p6-text" style="font-size:13px">${passageHtml}</div>
+      <div class="p5-grad-trans">${escapeHtml(d.translation).replace(/\n/g,'<br>')}</div>
+    </div>`;
+  }).join('');
+  return `
+  <div class="p5-topbar">
+    <button class="p5-back" onclick="setView('p6home')">← 戻る</button>
+    <span class="p5-progress">🎓 卒業ボックス（${grad.length}文書）</span>
+  </div>
+  ${ grad.length ? rows : '<div class="card pad"><p class="note" style="margin:0">まだ卒業した文書はありません。1文書を3回連続で全問正解すると、ここに追加されます。</p></div>' }
+  <div class="foot">TOEIC Part6 ・ v${APP_VERSION}</div>
   `;
 }
 
@@ -2178,6 +2507,7 @@ async function init(){
   STATE.settings = await loadSettings();
   await loadRelations();     // v2.6.0: 派生語・語源解説データを読み込む
   await loadPart5();         // v3.3.0: Part5問題データを読み込む
+  await loadPart6();         // v3.5.0: Part6問題データを読み込む
   let cards = await loadCards();
   if(cards === null){
     // 初回起動: サンプル投入
@@ -2206,12 +2536,58 @@ async function loadPart5(){
   }catch(e){ console.warn('Part5データの読み込み失敗:', e); }
 }
 
-/* モード切替（単語 ⇄ Part5） */
+/* ================================================================
+   v3.5.0: Part6 モード
+   --------------------------------------------------------------
+   1文書＝4空所。文脈を踏まえて各空所を4択で解く（文選択問題含む）。
+   卒業・再出題は「文書単位」:
+     - 4問すべて正解できた回を1カウント（docStreak）。
+     - 3回連続で全問正解したら文書ごと卒業。
+     - 1問でも間違えたら docStreak を0にリセットし、同セッション内で
+       その文書を再挑戦。
+     - 全問正解1回→翌学習日、2回→3日後に再出題（朝6時基準）。
+   1セッション＝3文書（12問）。
+   進捗は localStorage('toeic-p6-progress') に保存:
+     { [docId]: {docStreak, nextDue, graduated} }
+   ================================================================ */
+const PART6 = { docs: [] };
+const P6_SESSION_DOCS = 3;          // 1セッションの文書数
+const P6_GRADUATE_STREAK = 3;       // 卒業に必要な連続全問正解数
+const P6_PROGRESS_KEY = 'toeic-p6-progress';
+let P6PROG = {};
+const P6STATE = { sessionIdx:0, docQueue:[], docIdx:0, blankIdx:0,
+                  answered:false, selected:null,
+                  docCorrect:0, sessionCorrect:0, sessionAnswered:0,
+                  retryDocs:[], done:false };
+
+function loadP6Progress(){
+  try{ const raw=localStorage.getItem(P6_PROGRESS_KEY); P6PROG = raw?JSON.parse(raw):{}; }
+  catch(e){ P6PROG={}; }
+}
+function saveP6Progress(){
+  try{ localStorage.setItem(P6_PROGRESS_KEY, JSON.stringify(P6PROG)); }catch(e){}
+}
+function p6rec(id){
+  if(!P6PROG[id]) P6PROG[id]={ docStreak:0, nextDue:0, graduated:false };
+  return P6PROG[id];
+}
+async function loadPart6(){
+  loadP6Progress();
+  try{
+    const res = await fetch('./part6.json', { cache:'no-store' });
+    if(res.ok) PART6.docs = await res.json();
+  }catch(e){ console.warn('Part6データの読み込み失敗:', e); }
+}
+
+/* モード切替（単語 → Part5 → Part6 → 単語 の循環） */
 function toggleMode(){
-  STATE.mode = (STATE.mode === 'part5') ? 'vocab' : 'part5';
+  if(STATE.mode === 'vocab') STATE.mode = 'part5';
+  else if(STATE.mode === 'part5') STATE.mode = 'part6';
+  else STATE.mode = 'vocab';
   updateModeUI();
-  if(STATE.mode === 'part5'){ setView('p5home'); }
-  else { setView('home'); }
+  if(STATE.mode === 'part5') setView('p5home');
+  else if(STATE.mode === 'part6') setView('p6home');
+  else setView('home');
 }
 
 function updateModeUI(){
@@ -2221,7 +2597,11 @@ function updateModeUI(){
   if(STATE.mode === 'part5'){
     if(label) label.textContent = 'Part5';
     if(title) title.textContent = 'TOEIC Part5 演習';
-    if(nav) nav.style.display = 'none';   // Part5は下部ナビを隠す
+    if(nav) nav.style.display = 'none';
+  }else if(STATE.mode === 'part6'){
+    if(label) label.textContent = 'Part6';
+    if(title) title.textContent = 'TOEIC Part6 演習';
+    if(nav) nav.style.display = 'none';
   }else{
     if(label) label.textContent = '単語';
     if(title) title.textContent = 'TOEIC 単語トレーナー';
