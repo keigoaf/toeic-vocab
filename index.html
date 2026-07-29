@@ -2,10 +2,28 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-29 14:20 (JST)
-  バージョン: 3.8.0
+  ファイル最終更新日時: 2026-07-29 16:30 (JST)
+  バージョン: 3.9.0
 --------------------------------------------------------------------
   【更新履歴】
+    v3.9.0 (2026-07-29 16:30 JST)
+      - 【Part5の成績集計を修正】従来は「復習（同セッション内で間違えた
+        問題の解き直し）」も正解数に足していたため、10問のセッションでも
+        結果が 10/13 のように母数が毎回変わり、セッション間で比較できな
+        かった。成績は「初回に解いた分だけ」で数えるように変更し、
+        常に X/初回出題数（通常は X/10）になるようにした。
+        復習で解いた回数は「復習で◯問 解き直しました」と別途表示する。
+      - 【Part5ホームに学習記録を表示】各セッションのカードに、最後に
+        学習した日と、そのときの正解数（初回分のみ）を表示するようにした。
+        記録は localStorage('toeic-p5-sessions') に
+        { sessionIdx: {last, correct, total, retry} } の形で保存。
+        セッションを最後まで終えた時点で記録する（中断時は記録しない）。
+      - 【復習であることを明示】復習ラウンドに入ると、上部の進捗が
+        「🔁 復習 1/3」になり、問題の上にオレンジの帯で
+        「復習：さきほど間違えた問題です／この回答は成績には含まれません」
+        と表示する。初回ラウンドの最終問題では、次へ進むボタンが
+        「🔁 復習へ（間違えた◯問）」に変わり、これから復習に入ることが
+        分かるようにした。
     v3.8.0 (2026-07-29 14:20 JST)
       - 【新機能: シャドーイング】モード選択メニューに「シャドーイング」を
         追加し、別ページ shadowing.html を開くようにした。
@@ -445,6 +463,19 @@
   .p5-session-badge{font-size:12px;color:var(--good);font-weight:800;}
   .p5-session-bar{height:6px;background:var(--bg);border-radius:999px;overflow:hidden;}
   .p5-session-fill{height:100%;background:var(--good);border-radius:999px;transition:width .3s;}
+  /* v3.9.0: セッションの最終学習日と正解数 */
+  .p5-session-log{display:flex;align-items:center;gap:8px;margin-top:9px;font-size:11.5px;flex-wrap:wrap;}
+  .p5-log-date{font-weight:800;color:var(--ink-soft);background:var(--bg);border-radius:6px;padding:2px 7px;}
+  .p5-log-score{color:var(--ink-soft);font-weight:700;}
+  .p5-log-score b{color:var(--primary);font-size:13px;font-family:var(--font-en);}
+  .p5-log-retry{color:var(--accent);font-weight:700;}
+  .p5-log-none{color:var(--ink-soft);opacity:.75;}
+  /* v3.9.0: 復習ラウンドであることの表示 */
+  .p5-topbar-review .p5-progress{color:var(--accent);font-weight:800;}
+  .p5-review-note{background:var(--accent-soft);border:1px solid var(--accent);color:#8A4F0B;
+    border-radius:12px;padding:9px 12px;margin-bottom:10px;font-size:13px;font-weight:800;line-height:1.5;}
+  .p5-review-note small{display:block;font-weight:400;font-size:11px;color:#8A4F0B;opacity:.85;margin-top:3px;}
+  .p5-question-review{border:1px solid var(--accent);}
   .p5-session-tag{margin-left:auto;color:var(--ink-soft);background:var(--bg);padding:3px 10px;border-radius:999px;font-weight:700;font-size:12px;}
   /* v3.4.0: タイマーバー */
   .p5-timer{height:8px;background:var(--bg);border-radius:999px;overflow:hidden;margin-bottom:4px;}
@@ -725,8 +756,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "3.8.0";
-const LAST_UPDATED = "2026-07-29 14:20 JST"; // ファイル最終更新日時
+const APP_VERSION = "3.9.0";
+const LAST_UPDATED = "2026-07-29 16:30 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -1474,6 +1505,40 @@ function p5rec(id){
   return P5PROG[id];
 }
 
+/* ================================================================
+   v3.9.0: セッションごとの学習記録
+   ----------------------------------------------------------------
+   経緯:
+     ホーム画面のセッション一覧に「最後に学習した日」と「そのときの
+     正解数」を出したい、という要望から追加。
+   保存形式: localStorage 'toeic-p5-sessions'
+     { [sessionIdx]: { last:ts, correct:初回正解数, total:初回出題数,
+                       retry:復習した回数 } }
+   ※ correct/total は「初回に解いた分だけ」。復習(間違えた問題の
+     再挑戦)は含めない。含めると母数が毎回変わって比較できないため。
+   ================================================================ */
+const P5_SESSION_LOG_KEY = 'toeic-p5-sessions';
+let P5SLOG = {};
+function loadP5SessionLog(){
+  try{
+    const raw = localStorage.getItem(P5_SESSION_LOG_KEY);
+    P5SLOG = raw ? JSON.parse(raw) : {};
+  }catch(e){ P5SLOG = {}; }
+}
+function saveP5SessionLog(){
+  try{ localStorage.setItem(P5_SESSION_LOG_KEY, JSON.stringify(P5SLOG)); }catch(e){}
+}
+/* 「7/29」形式の短い日付。今日/昨日は文字で出す。 */
+function fmtShortDate(ts){
+  if(!ts) return '';
+  const t = todayStart();
+  const d = dayStart(ts);
+  if(d === t) return '今日';
+  if(d === addDays(t,-1)) return '昨日';
+  const dt = new Date(ts);
+  return `${dt.getMonth()+1}/${dt.getDate()}`;
+}
+
 /* セッション一覧（10問ずつ順番に区切る） */
 function p5Sessions(){
   const qs = PART5.questions;
@@ -1508,6 +1573,15 @@ function viewP5Home(){
     const st = p5SessionStatus(sq);
     const allGrad = st.grad === st.total;
     const pct = Math.round(st.grad / st.total * 100);
+    // v3.9.0: 最後に学習した日と、そのときの正解数（初回分のみ）
+    const lg = P5SLOG[idx];
+    const logLine = lg
+      ? `<div class="p5-session-log">
+           <span class="p5-log-date">${fmtShortDate(lg.last)}</span>
+           <span class="p5-log-score">正解 <b>${lg.correct}/${lg.total}</b></span>
+           ${lg.retry ? `<span class="p5-log-retry">復習 ${lg.retry}問</span>` : ''}
+         </div>`
+      : `<div class="p5-session-log p5-log-none">まだ学習していません</div>`;
     return `
     <button class="p5-session ${allGrad?'p5-session-done':''}" onclick="startP5Session(${idx})">
       <div class="p5-session-head">
@@ -1515,6 +1589,7 @@ function viewP5Home(){
         ${allGrad?'<span class="p5-session-badge">✓ 卒業</span>':`<span class="p5-session-count">${st.grad}/${st.total} 卒業</span>`}
       </div>
       <div class="p5-session-bar"><div class="p5-session-fill" style="width:${pct}%"></div></div>
+      ${logLine}
     </button>`;
   }).join('');
 
@@ -1577,6 +1652,14 @@ function startP5Session(sessionIdx){
   P5STATE.answeredCount = 0;
   P5STATE.done = false;
   P5STATE.retryPool = [];   // 同セッション内で再挑戦する問題
+  // v3.9.0: 成績は「初回に解いた分」だけで数える。
+  //   復習(間違えた問題の再挑戦)まで数えると母数が毎回変わり、
+  //   セッション間で比較できなくなるため。
+  P5STATE.baseCount   = qs.length;   // このセッションで初回に出す問題数
+  P5STATE.firstCorrect= 0;           // うち初回で正解した数
+  P5STATE.seen        = [];          // 初回を解き終えた問題id
+  P5STATE.retryCount  = 0;           // 復習として解いた回数
+  P5STATE.round       = 0;           // 0=初回, 1以上=復習ラウンド
   setView('p5quiz');
 }
 
@@ -1586,12 +1669,16 @@ function viewP5Quiz(){
   const s = P5STATE;
   // 終了画面
   if(s.done){
-    const rate = s.answeredCount ? Math.round(s.correct / s.answeredCount * 100) : 0;
+    // v3.9.0: 復習(再挑戦)は成績に含めず、初回に解いた分だけで表示する
+    const rate = s.baseCount ? Math.round(s.firstCorrect / s.baseCount * 100) : 0;
     return `
     <div class="card today">
-      <div class="due-num">${s.correct}/${s.answeredCount}</div>
+      <div class="due-num">${s.firstCorrect}/${s.baseCount}</div>
       <div class="due-label">正解数（正答率 ${rate}%）</div>
       <div class="sub" style="margin-top:6px">セッション ${s.sessionIdx+1} 完了</div>
+      <div class="sub" style="margin-top:4px">
+        ${s.retryCount ? `このあと復習で ${s.retryCount}問 解き直しました（成績には含めていません）` : '間違いなし。復習はありませんでした'}
+      </div>
       <div style="margin-top:16px">
         <button class="btn btn-primary" onclick="setView('p5home')" style="width:100%">セッション一覧へ戻る</button>
       </div>
@@ -1599,7 +1686,13 @@ function viewP5Quiz(){
   }
 
   const q = s.queue[s.idx];
+  // v3.9.0: 復習ラウンド（間違えた問題の解き直し）だと分かるようにする。
+  //   成績に入らないことも明示して、正答率の見え方に迷わないようにした。
+  const isReview = s.round > 0;
   const progress = `${s.idx+1} / ${s.queue.length}`;
+  const reviewNote = isReview
+    ? `<div class="p5-review-note">🔁 復習：さきほど間違えた問題です<small>この回答は成績（正解数）には含まれません</small></div>`
+    : '';
   const sentence = escapeHtml(q.sentence).replace('____', '<span class="p5-blank">____</span>');
 
   const choices = q.choices.map((c,i)=>{
@@ -1655,18 +1748,22 @@ function viewP5Quiz(){
     <div class="p5-section-title">全文和訳</div>
     <div class="p5-trans">${escapeHtml(q.translation)}</div>
     <button class="btn btn-primary" onclick="nextP5()" style="width:100%;margin-top:16px">
-      ${(s.idx+1 >= s.queue.length && s.retryPool.length===0) ? '結果を見る' : '次の問題へ'}
+      ${ (s.idx+1 >= s.queue.length && s.retryPool.length === 0) ? '結果を見る'
+         : (s.idx+1 >= s.queue.length && s.retryPool.length > 0)
+           ? `🔁 復習へ（間違えた ${s.retryPool.length}問）`   /* v3.9.0: 次が復習だと分かるように */
+           : '次の問題へ' }
     </button>`;
   }
 
   // 問題画面ではレベルを出さない（進捗のみ）
   return `
-  <div class="p5-topbar">
+  <div class="p5-topbar ${isReview?'p5-topbar-review':''}">
     <button class="p5-back" onclick="setView('p5home')">← 中断</button>
-    <span class="p5-progress">${progress}</span>
+    <span class="p5-progress">${isReview?'🔁 復習 ':''}${progress}</span>
     <span class="p5-session-tag">セッション ${s.sessionIdx+1}</span>
   </div>
-  <div class="card pad p5-question">
+  ${reviewNote}
+  <div class="card pad p5-question ${isReview?'p5-question-review':''}">
     ${timerBar}
     <div class="p5-sentence">${sentence}</div>
   </div>
@@ -1708,6 +1805,13 @@ function answerP5(i){
   const q = s.queue[s.idx];
   const r = p5rec(q.id);
   const isCorrect = (i === q.answer);
+  // v3.9.0: 成績集計は初回のみ。2回目以降(復習)はカウントしない。
+  if(s.seen.indexOf(q.id) === -1){
+    s.seen.push(q.id);
+    if(isCorrect) s.firstCorrect++;
+  }else{
+    s.retryCount++;
+  }
   if(isCorrect){
     s.correct++;
     r.streak = (r.streak||0) + 1;
@@ -1743,8 +1847,17 @@ function nextP5(){
       s.queue = rp;
       s.retryPool = [];
       s.idx = 0;
+      s.round++;            // v3.9.0: ここから先は復習ラウンド
     }else{
       s.done = true;
+      // v3.9.0: セッションの成績を記録し、ホームに出せるようにする
+      P5SLOG[s.sessionIdx] = {
+        last: now(),
+        correct: s.firstCorrect,
+        total: s.baseCount,
+        retry: s.retryCount
+      };
+      saveP5SessionLog();
     }
   }
   render();
@@ -2818,10 +2931,13 @@ async function init(){
    解説・各選択肢の説明・頻出語・全文和訳を表示する。
    ================================================================ */
 const PART5 = { questions: [] };
-const P5STATE = { sessionIdx:0, queue:[], idx:0, answered:false, selected:null, correct:0, answeredCount:0, done:false, retryPool:[] };
+const P5STATE = { sessionIdx:0, queue:[], idx:0, answered:false, selected:null, correct:0, answeredCount:0, done:false, retryPool:[],
+                  /* v3.9.0: 成績は初回分のみで集計する */
+                  baseCount:0, firstCorrect:0, seen:[], retryCount:0, round:0 };
 
 async function loadPart5(){
-  loadP5Progress();   // v3.4.0: 再出題の進捗を読み込む
+  loadP5Progress();      // v3.4.0: 再出題の進捗を読み込む
+  loadP5SessionLog();    // v3.9.0: セッションごとの学習記録を読み込む
   try{
     const res = await fetch('./part5.json', { cache:'no-store' });
     if(res.ok) PART5.questions = await res.json();
