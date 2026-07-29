@@ -2,10 +2,24 @@
 <!--
 ====================================================================
   TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
-  ファイル最終更新日時: 2026-07-29 10:00 (JST)
-  バージョン: 3.7.0
+  ファイル最終更新日時: 2026-07-29 14:20 (JST)
+  バージョン: 3.8.0
 --------------------------------------------------------------------
   【更新履歴】
+    v3.8.0 (2026-07-29 14:20 JST)
+      - 【新機能: シャドーイング】モード選択メニューに「シャドーイング」を
+        追加し、別ページ shadowing.html を開くようにした。
+        追加の経緯: 単語だけでなく、TOEICのリスニングを意識した
+        30秒〜2分の英文で音読・シャドーイング練習をしたいという要望による。
+        主な仕様（詳細は shadowing.html の先頭コメント参照）:
+          ・再生ボタンで開始。速度は0.5〜1.3倍で変更可
+          ・英文/和訳それぞれ表示ON/OFF。ONなら読み上げに合わせて
+            語ごとに色が動く（カラオケ式）
+          ・練習ステップ（聞く→重ねる→追う→再現）をワンタップ切替
+          ・文タップでその文から再生、文ごとのくり返し・文間の間・ループ
+        教材データは shadowing.json（初版5本）。
+        別ページにしたのは、index.html が既に大きく、音声再生の状態管理を
+        単語学習と混ぜると副作用が出やすいため（imagevocab.html と同じ方針）。
     v3.7.0 (2026-07-29 10:00 JST)
       - 【新機能: 単語Tips】カード裏（および単語一覧の詳細）に
         「Tips」ボタンを追加。タップするとポップアップで解説が出る。
@@ -684,6 +698,7 @@
       </button>
       <div class="mode-menu" id="modeMenu" style="display:none">
         <button onclick="selectMode('vocab')">単語</button>
+        <button onclick="selectMode('shadow')">シャドーイング</button>
         <button onclick="selectMode('part5')">Part 5</button>
         <button onclick="selectMode('part6')">Part 6</button>
       </div>
@@ -710,8 +725,8 @@
    - 起動時、コンソールへ最初に出力する。
    - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
    ================================================================ */
-const APP_VERSION = "3.7.0";
-const LAST_UPDATED = "2026-07-29 10:00 JST"; // ファイル最終更新日時
+const APP_VERSION = "3.8.0";
+const LAST_UPDATED = "2026-07-29 14:20 JST"; // ファイル最終更新日時
 console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -2862,6 +2877,9 @@ function toggleModeMenu(){
   if(m) m.style.display = (m.style.display === 'none') ? 'flex' : 'none';
 }
 function selectMode(mode){
+  // v3.8.0: シャドーイングは別ページ。音声再生の状態管理を単語学習と
+  // 混ぜないため、モードを切り替えるのではなく画面ごと移動する。
+  if(mode === 'shadow'){ location.href = './shadowing.html'; return; }
   STATE.mode = mode;
   const m = document.getElementById('modeMenu');
   if(m) m.style.display = 'none';

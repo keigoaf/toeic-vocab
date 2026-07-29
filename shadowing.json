@@ -1,0 +1,209 @@
+{
+ "_meta": {
+  "file": "shadowing.json",
+  "updated": "2026-07-29 14:20 JST",
+  "version": "1.0.0",
+  "purpose": "シャドーイング教材（TOEIC Part3/4 を意識した英文）。shadowing.html が読み込む。",
+  "format": [
+   "passages[] = 1教材",
+   "  id       : 一意ID",
+   "  title    : 日本語タイトル",
+   "  category : 出題形式（Part4 アナウンス 等）",
+   "  scene    : 場面",
+   "  level    : 目安スコア（600/730/860）",
+   "  sentences[] : { en: 英文1文, ja: その和訳 }  ※1文ずつ区切って持つ",
+   "                （再生・ハイライト・リピートの単位が「文」なので、",
+   "                  ここで区切っておくと訳と確実に対応が取れる）",
+   "  vocab[]  : { term, meaning } この教材のキーフレーズ",
+   "  tip      : 音の変化・発音のコツ（シャドーイング用の一言）"
+  ]
+ },
+ "passages": [
+  {
+   "id": "sh001",
+   "title": "搭乗ゲート変更のアナウンス",
+   "category": "Part 4 / アナウンス",
+   "scene": "空港",
+   "level": 600,
+   "sentences": [
+    { "en": "Good afternoon, passengers.",
+      "ja": "ご搭乗のお客様、こんにちは。" },
+    { "en": "This is an announcement for all travelers on Pacific Airways Flight seven eighty-two to Vancouver.",
+      "ja": "バンクーバー行きパシフィック航空782便をご利用の皆様へのご案内です。" },
+    { "en": "Due to a mechanical issue with the aircraft, the departure gate has been changed from Gate fourteen to Gate thirty-two.",
+      "ja": "機材の整備上の問題により、出発ゲートが14番ゲートから32番ゲートに変更となりました。" },
+    { "en": "Boarding will now begin at three fifteen, approximately forty minutes later than originally scheduled.",
+      "ja": "ご搭乗の開始は3時15分、当初の予定より約40分遅れとなります。" },
+    { "en": "Passengers with connecting flights should speak with a gate agent as soon as possible so that we can make alternative arrangements for you.",
+      "ja": "乗り継ぎ便をご利用のお客様は、代替の手配をいたしますので、できるだけ早くゲート係員にお声がけください。" },
+    { "en": "We also invite passengers seated in rows twenty and above to check any oversized carry-on bags at the counter, free of charge.",
+      "ja": "また、20列目以降のお座席のお客様は、規定を超える機内持ち込み手荷物を無料でカウンターにお預けいただけます。" },
+    { "en": "We apologize for the inconvenience and thank you for your patience.",
+      "ja": "ご不便をおかけして申し訳ございません。ご理解に感謝いたします。" }
+   ],
+   "vocab": [
+    { "term": "due to ~", "meaning": "〜が原因で" },
+    { "term": "departure gate", "meaning": "出発ゲート" },
+    { "term": "connecting flight", "meaning": "乗り継ぎ便" },
+    { "term": "alternative arrangements", "meaning": "代替の手配" },
+    { "term": "carry-on bag", "meaning": "機内持ち込み手荷物" },
+    { "term": "free of charge", "meaning": "無料で" },
+    { "term": "We apologize for the inconvenience.", "meaning": "ご不便をおかけして申し訳ありません" }
+   ],
+   "tip": "has been changed の has been は「ハズビーン」ではなく弱く「(h)əz bɪn」。announcement は「アナウンスメント」ではなく nounce に強勢。空港アナウンスは文末が下がりきらず、次の情報へ続く抑揚になります。"
+  },
+
+  {
+   "id": "sh002",
+   "title": "納期遅延を知らせる留守番電話",
+   "category": "Part 4 / 電話メッセージ",
+   "scene": "オフィス用品会社からの折り返し",
+   "level": 730,
+   "sentences": [
+    { "en": "Hello, this is Daniel Ortega calling from Brightline Office Supplies.",
+      "ja": "もしもし、ブライトライン・オフィス用品のダニエル・オルテガと申します。" },
+    { "en": "I'm returning your call about the order you placed last Thursday, order number four five two nine.",
+      "ja": "先週木曜日にご注文いただいた件、注文番号4529についての折り返しのお電話です。" },
+    { "en": "Unfortunately, the ergonomic chairs you requested are currently out of stock.",
+      "ja": "あいにく、ご希望の人間工学に基づいた椅子は現在在庫切れとなっております。" },
+    { "en": "Our supplier tells us they won't arrive at our warehouse until the twenty-second.",
+      "ja": "仕入先によりますと、当社の倉庫に届くのは22日以降になるとのことです。" },
+    { "en": "I do have two options for you.",
+      "ja": "そこで、2つの選択肢をご用意しました。" },
+    { "en": "We can ship the rest of your order right away and send the chairs separately at no additional charge.",
+      "ja": "1つは、残りのご注文分をすぐに発送し、椅子は追加料金なしで別便でお送りする方法です。" },
+    { "en": "Or, we can substitute a similar model that's available now at the same price.",
+      "ja": "もう1つは、今すぐご用意できる同価格の類似モデルに差し替える方法です。" },
+    { "en": "Please give me a call back at your convenience so we can decide how to proceed.",
+      "ja": "今後の進め方を決めたいので、ご都合のよいときに折り返しお電話ください。" },
+    { "en": "My extension is one one four. Thanks very much.",
+      "ja": "内線は114です。よろしくお願いいたします。" }
+   ],
+   "vocab": [
+    { "term": "return one's call", "meaning": "折り返し電話する" },
+    { "term": "place an order", "meaning": "注文する" },
+    { "term": "out of stock", "meaning": "在庫切れで" },
+    { "term": "supplier", "meaning": "仕入先・納入業者" },
+    { "term": "at no additional charge", "meaning": "追加料金なしで" },
+    { "term": "substitute", "meaning": "〜を代わりに使う・差し替える" },
+    { "term": "at your convenience", "meaning": "ご都合のよいときに" },
+    { "term": "extension", "meaning": "内線（番号）" }
+   ],
+   "tip": "留守電は名乗り→用件→選択肢→依頼の順。this is ~ calling from ~ は一息で言い切ります。won't arrive until ~ は「〜まで届かない」＝「〜になってようやく届く」。until の前後で区切って練習を。"
+  },
+
+  {
+   "id": "sh003",
+   "title": "本社移転の社内説明",
+   "category": "Part 4 / 会議の冒頭スピーチ",
+   "scene": "社内ブリーフィング",
+   "level": 730,
+   "sentences": [
+    { "en": "Good morning, everyone, and thank you for making time for this briefing.",
+      "ja": "皆さん、おはようございます。この説明会のためにお時間をいただきありがとうございます。" },
+    { "en": "As most of you have already heard, our company will be relocating its headquarters to the Riverside Business Park in early October.",
+      "ja": "すでにお聞き及びの方も多いと思いますが、当社は10月上旬にリバーサイド・ビジネスパークへ本社を移転します。" },
+    { "en": "I know a move like this raises a lot of questions, so let me walk you through what we know so far.",
+      "ja": "このような移転には疑問が多く出るものですので、現時点で分かっていることをご説明します。" },
+    { "en": "First, the new building is about a fifteen-minute walk from Central Station, and there's a shuttle service that runs every ten minutes during peak hours.",
+      "ja": "まず、新しいビルはセントラル駅から徒歩約15分で、ピーク時には10分間隔でシャトルバスが運行しています。" },
+    { "en": "Second, each department will have its own floor, which should make collaboration a great deal easier than our current layout allows.",
+      "ja": "次に、各部署がそれぞれ1フロアを使えるようになり、現在の配置よりも部署間の連携がはるかに取りやすくなるはずです。" },
+    { "en": "Finally, the company will cover moving expenses for employees who need to relocate more than thirty kilometers.",
+      "ja": "最後に、30キロを超えて引っ越す必要のある従業員には、会社が引越し費用を負担します。" },
+    { "en": "Human Resources will send out a detailed information packet by the end of this week.",
+      "ja": "人事部より、今週末までに詳しい案内資料一式をお送りします。" },
+    { "en": "If you have concerns in the meantime, please don't hesitate to speak with your supervisor.",
+      "ja": "それまでの間に気になることがあれば、遠慮なく上司にご相談ください。" }
+   ],
+   "vocab": [
+    { "term": "briefing", "meaning": "説明会・状況説明" },
+    { "term": "relocate", "meaning": "移転する・転居する" },
+    { "term": "headquarters", "meaning": "本社" },
+    { "term": "walk ~ through ...", "meaning": "〜に…を順を追って説明する" },
+    { "term": "cover expenses", "meaning": "費用を負担する" },
+    { "term": "Human Resources", "meaning": "人事部" },
+    { "term": "in the meantime", "meaning": "その間に・それまでは" },
+    { "term": "don't hesitate to ~", "meaning": "遠慮なく〜してください" }
+   ],
+   "tip": "First / Second / Finally の3点構成。ここを強く高めに出すと、聞き手にも自分にも構造が見えます。TOEICの設問も「何点挙げたか」「2番目は何か」を問うので、序数のマーカーを聞き逃さない練習になります。"
+  },
+
+  {
+   "id": "sh004",
+   "title": "園芸用品店の週末セール広告",
+   "category": "Part 4 / ラジオ広告",
+   "scene": "ラジオCM",
+   "level": 600,
+   "sentences": [
+    { "en": "Are you ready to bring your garden back to life?",
+      "ja": "お庭をよみがえらせる準備はできていますか。" },
+    { "en": "This weekend only, Greenfield Garden Center is holding its biggest spring sale of the year.",
+      "ja": "今週末限定で、グリーンフィールド園芸センターが年に一度の最大の春のセールを開催します。" },
+    { "en": "All outdoor furniture is thirty percent off, and when you spend fifty dollars or more, you'll receive a free bag of premium potting soil.",
+      "ja": "屋外用家具はすべて30パーセント引き、さらに50ドル以上お買い上げで、高級培養土を1袋無料で差し上げます。" },
+    { "en": "Our staff of certified gardeners will be on hand all weekend to answer your questions and help you choose the right plants for your space.",
+      "ja": "資格を持つ園芸スタッフが週末ずっと待機し、ご質問にお答えし、お住まいに合った植物選びをお手伝いします。" },
+    { "en": "And don't forget, we now offer free delivery within the city for purchases over one hundred dollars.",
+      "ja": "そしてお忘れなく、100ドルを超えるお買い物なら市内配送が無料になりました。" },
+    { "en": "Greenfield Garden Center, at the corner of Maple and Fifth.",
+      "ja": "グリーンフィールド園芸センターは、メープル通りと5番街の角にございます。" },
+    { "en": "Open Saturday and Sunday, from eight to six.",
+      "ja": "土曜・日曜、8時から6時まで営業しております。" }
+   ],
+   "vocab": [
+    { "term": "bring ~ back to life", "meaning": "〜をよみがえらせる" },
+    { "term": "this weekend only", "meaning": "今週末限定で" },
+    { "term": "thirty percent off", "meaning": "30パーセント引き" },
+    { "term": "certified", "meaning": "資格を持つ・認定された" },
+    { "term": "on hand", "meaning": "その場に控えて・手元に" },
+    { "term": "free delivery", "meaning": "配送無料" },
+    { "term": "purchase", "meaning": "購入（品）" }
+   ],
+   "tip": "広告は語尾を上げ気味に、テンポよく。thirty percent off の off、fifty dollars or more の or more のように、割引条件は必ず強く読まれます。TOEICでは「割引を受ける条件」が設問になるので、数字の直後に耳を残す練習を。"
+  },
+
+  {
+   "id": "sh005",
+   "title": "工場見学ツアーの案内",
+   "category": "Part 4 / ツアーガイド",
+   "scene": "製造工場の受付前",
+   "level": 860,
+   "sentences": [
+    { "en": "Welcome to the Lakeside Manufacturing facility, and thank you for joining today's tour.",
+      "ja": "レイクサイド製造工場へようこそ。本日のツアーにご参加いただきありがとうございます。" },
+    { "en": "Before we begin, I'd like to go over a few safety procedures.",
+      "ja": "始める前に、いくつかの安全手順を確認させてください。" },
+    { "en": "Please put on the hard hat and safety glasses you were given at the reception desk, and keep them on for the entire tour.",
+      "ja": "受付でお渡ししたヘルメットと保護メガネを着用し、ツアーの間はずっと外さないでください。" },
+    { "en": "You'll notice yellow lines painted on the factory floor; please stay between them at all times, since forklifts operate throughout this area.",
+      "ja": "工場の床に黄色い線が引かれているのにお気づきになると思います。この区域全体でフォークリフトが稼働していますので、常に線の内側をお歩きください。" },
+    { "en": "Photography is permitted in the assembly hall, but not in the research wing, where several products are still under development.",
+      "ja": "組立棟での写真撮影は可能ですが、まだ開発中の製品がいくつかある研究棟では禁止されています。" },
+    { "en": "Our tour will last approximately ninety minutes.",
+      "ja": "ツアーの所要時間は約90分です。" },
+    { "en": "We'll start in the warehouse, where raw materials arrive and are inspected, then move on to the assembly line, and finish in the packaging department.",
+      "ja": "まず原材料が届いて検査される倉庫から始め、次に組立ラインへ進み、最後は梱包部門で終わります。" },
+    { "en": "At the end, you'll have a chance to speak with some of our engineers, so please save your questions until then.",
+      "ja": "最後に当社の技術者と話す機会がありますので、ご質問はそれまでお取り置きください。" },
+    { "en": "If you need to step out at any point, one of our staff members will be happy to escort you.",
+      "ja": "途中で退出が必要になった場合は、スタッフが喜んでご案内いたします。" },
+    { "en": "Now, if everyone will follow me through the double doors on your left, we'll get started.",
+      "ja": "それでは、左手の両開きの扉から私についてお越しください。始めましょう。" }
+   ],
+   "vocab": [
+    { "term": "go over ~", "meaning": "〜を確認する・見直す" },
+    { "term": "safety procedures", "meaning": "安全手順" },
+    { "term": "put on / keep ~ on", "meaning": "身に着ける／着けたままにする" },
+    { "term": "at all times", "meaning": "常に" },
+    { "term": "under development", "meaning": "開発中で" },
+    { "term": "raw materials", "meaning": "原材料" },
+    { "term": "inspect", "meaning": "検査する" },
+    { "term": "assembly line", "meaning": "組立ライン" },
+    { "term": "step out", "meaning": "（一時的に）席を外す・外に出る" },
+    { "term": "escort", "meaning": "付き添う・案内する" }
+   ],
+   "tip": "長文かつ関係詞（where / which）が多い上級素材。where raw materials arrive and are inspected のような後置修飾は、まとまりごとに区切って追いかけると崩れません。安全説明→所要時間→順路→注意、という Part 4 頻出の流れです。"
+  }
+ ]
+}
