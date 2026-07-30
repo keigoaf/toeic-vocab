@@ -3,7 +3,7 @@
 TOEICの単語・熟語を **間隔反復（Leitnerボックス方式）** で暗記するためのアプリです。
 スマホのホーム画面に置いて、ネイティブアプリのように使えます（オフライン対応・端末内に進捗を永続保存）。
 
-最終更新: 2026-07-30 09:40 (JST) / バージョン **3.9.2**
+最終更新: 2026-07-30 10:20 (JST) / バージョン **3.9.2**
 
 ---
 
@@ -66,7 +66,8 @@ toeic-vocab/
 ├─ icon-512.png              アイコン
 ├─ icon-180.png              iOSホーム画面用アイコン
 ├─ icon-maskable-512.png     Android maskable用アイコン
-├─ deploy.sh                 更新をGitHub Pagesへ反映するスクリプト
+├─ deploy.ps1                更新をGitHub Pagesへ反映するスクリプト（Windows）
+├─ deploy.sh                 同上（Mac / Linux）
 └─ README.md                 このファイル
 ```
 
@@ -244,41 +245,98 @@ tentative, 仮の, adj.
 
 開発側では、ファイルを更新したら `sw.js` の `CACHE` のバージョンを必ず上げてください。
 
-### 毎回のデプロイ（`deploy.sh`）
+### 毎回のデプロイ
 
-更新のたびに手で `cp` → `git` を打つとコピー漏れや `sw.js` のキャッシュ名の上げ忘れが起きるため、
-まとめて実行するスクリプトを用意しています。**初回だけ** 実行権限を付けてください。
+更新のたびに手で `cp` → `git` を打つと、コピー漏れや `sw.js` のキャッシュ名の上げ忘れが起きます
+（キャッシュ名を上げ忘れると、ホーム画面アプリが古いまま更新されません）。
+これらをまとめて実行・検査するスクリプトを用意しています。
 
-```bash
-cd ~/toeic-vocab
-chmod +x deploy.sh          # 初回のみ
+- **Windows（PowerShell）… `deploy.ps1`**
+- Mac / Linux（bash）… `deploy.sh`
+
+#### 初回だけ行うこと（Windows）
+
+1. チャットからダウンロードした **`deploy.ps1` をリポジトリ直下に置く**
+
+```powershell
+cd ~\toeic-vocab
+Copy-Item ~\Downloads\deploy.ps1 .
 ```
 
-以降は、チャットからダウンロードしたファイルを `~/Downloads` に置いたまま、次を実行するだけです。
+2. PowerShell で `.ps1` の実行を許可する（下は「現在のウィンドウだけ許可」なので安全）
 
-```bash
-cd ~/toeic-vocab && ./deploy.sh
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+毎回このコマンドを打つのが面倒なら、次を一度だけ実行しておけば以後不要です。
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+#### 2回目以降（毎回これだけ）
+
+チャットからダウンロードしたファイルを `~\Downloads` に置いたまま、次を実行します。
+
+```powershell
+cd ~\toeic-vocab
+.\deploy.ps1
 ```
 
 | オプション | 意味 |
 |---|---|
-| `./deploy.sh -n` | コピーと検査だけ行い、pushしない（確認用） |
-| `./deploy.sh -m "説明"` | コミットメッセージを指定する |
+| `.\deploy.ps1 -DryRun` | コピーと検査だけ行い、pushしない（確認用） |
+| `.\deploy.ps1 -Message "説明"` | コミットメッセージを指定する |
+| `.\deploy.ps1 -SrcDir D:\dl` | ダウンロード先が `~\Downloads` 以外のとき |
+| `.\deploy.ps1 -RepoDir C:\work\toeic-vocab` | リポジトリの場所が違うとき |
 
-スクリプトは push の前に次を検査し、問題があれば中止します。
+スクリプトは push の前に次を検査し、問題があれば **push せずに中止** します。
 
 - `index.html` の `APP_VERSION` と `sw.js` の `CACHE` 名が食い違っていないか
-  （ここがずれると、ホーム画面アプリが古いまま更新されません）
 - 同梱JSONが壊れていないか
 
-パスが違う場合は環境変数で上書きできます。
+#### スクリプトを使わず手で適用する場合（Windows）
+
+`deploy.ps1` が手元にないときは、次のように打てば同じことができます。
+**PowerShell の `Copy-Item` は複数ファイルを空白区切りで並べられません。必ずカンマ区切りにしてください**
+（`cp a b c .` はエラーになります）。
+
+```powershell
+cd ~\toeic-vocab
+
+# 1. ダウンロードしたファイルを配置（カンマ区切り）
+Copy-Item ~\Downloads\index.html,~\Downloads\sw.js,~\Downloads\README.md .
+
+# 2. 版が揃っているか確認（同じバージョン番号が出ればOK）
+Select-String -Path index.html -Pattern 'APP_VERSION' | Select-Object -First 1
+Select-String -Path sw.js      -Pattern 'const CACHE' | Select-Object -First 1
+
+# 3. 公開
+git add -A
+git commit -m "更新の説明"
+git push origin main
+```
+
+#### Mac / Linux の場合
 
 ```bash
-REPO_DIR=~/dev/toeic-vocab SRC_DIR=~/Desktop ./deploy.sh
+cd ~/toeic-vocab
+chmod +x deploy.sh          # 初回のみ
+./deploy.sh                 # 以降は毎回これだけ
 ```
+
+| オプション | 意味 |
+|---|---|
+| `./deploy.sh -n` | コピーと検査だけ行い、pushしない |
+| `./deploy.sh -m "説明"` | コミットメッセージを指定する |
+| `REPO_DIR=~/dev/toeic-vocab SRC_DIR=~/Desktop ./deploy.sh` | パスを変える |
 
 ## 更新履歴
 
+- **ドキュメント更新 (2026-07-30 10:20 JST)**
+  - Windows（PowerShell）用のデプロイ手順を「アプリの更新のしかた」に追記し、`deploy.ps1` を同梱しました。
+    `deploy.sh` は Mac / Linux 用として残しています。スクリプトを使わず手で適用する場合のコマンドも記載しました。
 - **v3.9.2 (2026-07-30 09:40 JST)**
   - **不具合修正**：シャドーイング画面で下にスクロールすると、画面下に固定されているはずの操作バーが画面の途中に取り残される（上部ヘッダーも上に張り付かなくなる）問題を修正しました。
     - 原因は、文が変わるたびに `scrollIntoView({behavior:'smooth'})` を呼んでいたこと。iOS Safari では、このなめらかスクロールの最中に指で手動スクロールするとスクロール処理の状態が壊れ、`position:fixed` / `sticky` の要素が再配置されなくなります。
