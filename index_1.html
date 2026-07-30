@@ -1,0 +1,3133 @@
+<!DOCTYPE html>
+<!--
+====================================================================
+  TOEIC 単語・熟語 暗記アプリ (TOEIC Vocab Trainer)
+  ファイル最終更新日時: 2026-07-30 09:40 (JST)
+  バージョン: 3.9.2
+--------------------------------------------------------------------
+  【更新履歴】
+    v3.9.2 (2026-07-30 09:40 JST)
+      - シャドーイング画面で、下にスクロールすると画面下の操作バーが
+        画面の途中に取り残される不具合を修正（shadowing.html v1.2.0）。
+        原因と対策は shadowing.html の先頭コメント参照。
+      - index.html 自体の変更はバージョン表記のみ。sw.js のキャッシュ名と
+        版を揃える必要があるため（deploy スクリプトの整合チェック対象）
+        ここも上げている。
+    v3.9.1 (2026-07-29 18:00 JST)
+      - シャドーイングの教材を5本から30本に増補（shadowing.json v1.1.0）。
+        会話形式(Part3想定)3本を含む。一覧をレベル・形式で絞り込めるように
+        したほか、最後まで読み終えたあと▶︎を押すと最終文だけが読まれて
+        終わる不具合を修正（shadowing.html v1.1.0）。
+      - index.html 自体の変更はバージョン表記のみ。sw.js のキャッシュ名と
+        版を揃える必要があるため（deploy スクリプトの整合チェック対象）
+        ここも上げている。
+    v3.9.0 (2026-07-29 16:30 JST)
+      - 【Part5の成績集計を修正】従来は「復習（同セッション内で間違えた
+        問題の解き直し）」も正解数に足していたため、10問のセッションでも
+        結果が 10/13 のように母数が毎回変わり、セッション間で比較できな
+        かった。成績は「初回に解いた分だけ」で数えるように変更し、
+        常に X/初回出題数（通常は X/10）になるようにした。
+        復習で解いた回数は「復習で◯問 解き直しました」と別途表示する。
+      - 【Part5ホームに学習記録を表示】各セッションのカードに、最後に
+        学習した日と、そのときの正解数（初回分のみ）を表示するようにした。
+        記録は localStorage('toeic-p5-sessions') に
+        { sessionIdx: {last, correct, total, retry} } の形で保存。
+        セッションを最後まで終えた時点で記録する（中断時は記録しない）。
+      - 【復習であることを明示】復習ラウンドに入ると、上部の進捗が
+        「🔁 復習 1/3」になり、問題の上にオレンジの帯で
+        「復習：さきほど間違えた問題です／この回答は成績には含まれません」
+        と表示する。初回ラウンドの最終問題では、次へ進むボタンが
+        「🔁 復習へ（間違えた◯問）」に変わり、これから復習に入ることが
+        分かるようにした。
+    v3.8.0 (2026-07-29 14:20 JST)
+      - 【新機能: シャドーイング】モード選択メニューに「シャドーイング」を
+        追加し、別ページ shadowing.html を開くようにした。
+        追加の経緯: 単語だけでなく、TOEICのリスニングを意識した
+        30秒〜2分の英文で音読・シャドーイング練習をしたいという要望による。
+        主な仕様（詳細は shadowing.html の先頭コメント参照）:
+          ・再生ボタンで開始。速度は0.5〜1.3倍で変更可
+          ・英文/和訳それぞれ表示ON/OFF。ONなら読み上げに合わせて
+            語ごとに色が動く（カラオケ式）
+          ・練習ステップ（聞く→重ねる→追う→再現）をワンタップ切替
+          ・文タップでその文から再生、文ごとのくり返し・文間の間・ループ
+        教材データは shadowing.json（初版5本）。
+        別ページにしたのは、index.html が既に大きく、音声再生の状態管理を
+        単語学習と混ぜると副作用が出やすいため（imagevocab.html と同じ方針）。
+    v3.7.0 (2026-07-29 10:00 JST)
+      - 【新機能: 単語Tips】カード裏（および単語一覧の詳細）に
+        「Tips」ボタンを追加。タップするとポップアップで解説が出る。
+        追加の経緯: 日本語では同じ訳になる語の微妙なニュアンス差
+        （例: congestion と crowd）や、同じ語幹なのに意味の繋がりが
+        分かりにくい語（例: commence「開始する」なのに commencement が
+        「卒業式」）を、その場で解消できるようにしたいという要望による。
+        Tips は2種類:
+          nuance … 「使い分け」（似た訳語の比較。オレンジ色のボタン）
+          origin … 「意味のつながり」（多義語・語源。青色のボタン）
+        従来の 💡 語源解説(etymology) は1語1解説だったのに対し、
+        Tips は1件を複数の見出し語に紐づけられるため、比較系の解説を
+        重複なく持てる。両者は併存し、目的で使い分ける。
+      - データは word-relations.json にトップレベルキー "tips" を新設。
+        形式: [{ id, kind:"nuance"|"origin", title, terms:[語...], body }]
+        アプリ起動時に 語 → Tips の索引(RELATIONS.tipIndex)を組み立てる。
+        初版は89件のTipsを収録し、既存語彙280語に紐づけた。
+      - Tips が付いている語は、単語一覧・卒業ボックスの行に
+        小さな「Tips」バッジを表示し、読める語をひと目で分かるようにした。
+    v3.6.0 (2026-07-24 15:00 JST)
+      - Part6にタイマーバーを追加（1問30秒・1文書4問で約2分の目安。
+        経過しても自動遷移・採点はしない）。
+      - 左上のモード切替を「循環」から「選択式メニュー」に変更。
+        単語を一番上に、パートは数字順（単語 / Part5 / Part6）で並べ、
+        タップで直接選べるようにした。メニュー外タップで閉じる。
+      - 【Part6を本番仕様に変更】従来は空所を1つずつ解いて即座に
+        正誤が出たが、本番のPart6は4問すべてを正解が分からない状態で
+        解く。そこで、4空所すべてを選んでから「まとめて採点」する
+        方式に変更。採点前は空所間を自由に行き来して選び直せる。
+      - 【Part6の採点結果画面】上部に全空所の正解を埋め込んだ本文を
+        固定表示。中央に空所ごとの解説カードを置き、左右スワイプ
+        （またはドット/ボタン）で空所1〜4を切り替えられる。各カードは
+        Part5と同じく正誤・正解・各選択肢の説明・目安スコアを表示。
+        下部の頻出語と全文和訳はスワイプ不要の共通表示にした。
+      - Part6文書を5→75文書（300問）に拡張。1セッション3文書なので
+        全25セッションになった。
+    v3.5.0 (2026-07-24 13:30 JST)
+      - TOEIC Part6 演習モードを新設（5文書＝20問で試作）。
+        ヘッダーのモード切替を「単語→Part5→Part6→単語」の3循環に拡張。
+        Part6は1文書に空所4つ。文脈を踏まえて各空所を4択で解く。
+        カテゴリは語彙・文法・接続語・文選択（Part6特有の一文選択）。
+        本文を表示し空所[1]〜[4]をハイライト、各空所を解くごとに
+        正解の理由・各選択肢の説明・目安スコアを表示。文書の最後の
+        空所を解いたら、頻出語と全文和訳を表示。
+      - Part6の卒業・再出題は「文書単位」:
+        4問すべて正解できた回を1カウントし、3回連続で全問正解したら
+        文書ごと卒業。1問でも間違えたらカウントを0にリセットし同
+        セッション内で再挑戦。全問正解1回→翌学習日、2回→3日後に再出題。
+      - 1セッション＝3文書（12問）。卒業した文書を確認できる
+        「卒業ボックス」も新設。進捗は localStorage('toeic-p6-progress')。
+      - 問題データは part6.json。
+    v3.4.0 (2026-07-24 12:00 JST)
+      - Part5問題を30問→330問に大幅追加（新規300問。文法・品詞・
+        語彙をバランスよく、600/730/860点レベルを混在）。
+      - 【改善1】目安スコア(level)は問題画面に表示せず、解説画面に
+        のみ表示するようにした。
+      - 【改善2】問題画面に20秒の目安タイマーバーを追加。20秒経過
+        しても自動遷移・正誤確定はせず、あくまで目安。
+      - 【改善3】再出題ロジック（連続正解カウント方式）を実装:
+        3回連続正解で「卒業」（通常出題から外れる）。不正解で連続
+        正解を0にリセットし、同セッション内で再度出題。正解時は
+        1回→翌学習日、2回→3日後に再出題（朝6時基準の学習日）。
+        進捗は localStorage('toeic-p5-progress') に保存。
+      - 【改善4】1セッション=10問に分割（330問→33セッション）。
+        セッション選択画面と進捗バーを追加。
+      - 卒業した問題を確認できる「卒業ボックス」画面を新設。
+    v3.3.0 (2026-07-24 10:30 JST)
+      - TOEIC Part5 演習モードを新設（30問で試作）。
+        ヘッダー左上のボタンで「単語」⇄「Part5」を切り替える。
+        Part5は短文の空所補充4択問題。文法・品詞・語彙をバランス良く、
+        難易度は600/730/860点レベルを混在（各問に目安を表示）。
+        解答後に以下を表示: 正解の理由 / 各選択肢の説明(品詞・意味・
+        なぜ不正解か) / 問題文の頻出語の意味 / 全文和訳。
+        問題データは part5.json。全問レベル別・カテゴリ別に出題可能。
+    v3.2.0 (2026-07-24 09:00 JST)
+      - 新規単語 第2弾（169語）を toeic-new2.json として追加。合計2860語。
+        既存2691語すべてと重複なし・全語に和訳/例文/例文和訳つき・
+        カタカナのみ訳なし・複数品詞は併記、を検証済み。
+        インポート画面に「追加169問（第2弾）」ボタンを新設。
+        ※既存語が広範なため、品質を優先し169語で確定（造語や範囲外の
+          難語で数を埋めることはしない方針）。
+      - 【不具合修正】単語検索欄の日本語入力バグを修正。
+        従来は入力のたびに画面全体を再描画していたため、日本語のIME
+        変換中に入力欄が作り直され、二重入力・変換不可・削除不良が
+        起きていた。入力中はリスト部分だけを更新する方式に変更。
+      - 検索対象を拡張: 英単語・意味に加え、例文・例文和訳・読み方も
+        対象に（読み方フィールド reading があれば検索可能）。
+      - 派生語データ(family)を新語込みで再生成（375→402語）。
+    v3.1.0 (2026-07-23 22:10 JST)
+      - カード裏の「同じ語根の仲間」に各語の日本語の意味を併記。
+        従来は単語＋品詞のみだったが、意味も表示することで、
+        派生語をその場でまとめて覚えられるようにした。
+        表示を横並びチップから縦積みリストに変更（単語/品詞/意味）。
+        family データ(word-relations.json)の各語に meaning を追加。
+    v3.0.0 (2026-07-23 21:55 JST)
+      - 「今日解いた語」の一覧でも、語をタップすると裏面(答え)の詳細を
+        表示するようにした。詳細から「← 一覧に戻る」で一覧へ戻れる。
+        showWordDetail に戻り先(backTo)引数を追加して実現。
+    v2.9.0 (2026-07-23 21:40 JST)
+      - 語源解説を44語→69語にさらに拡充。
+      - 解説内で挙げる同語根の単語すべてに日本語の意味を併記。
+        例:「fer(運ぶ)の仲間: refer(参照する)、offer(提供する)、
+            confer(協議する)」のように、語根の共通性だけでなく
+            各語の意味も同時に確認できるようにした。
+        追加した語根グループ: loc(場所)=allocate/relocate、
+        gen(生む)=generate、cip(取る)=anticipate/participate、
+        tribute(与える)=contribute/distribute、sign(印)=assign/resign、
+        vis(見る)=revise/supervise、min(小さい)=minimize/diminish ほか。
+    v2.8.0 (2026-07-23 21:20 JST)
+      - 語源解説を10語→44語に拡充（word-relations.json）。
+        接頭辞・語根から意味を読み解ける語を追加。共通の語根を持つ
+        語をまとめて覚えられるよう相互に言及。
+        例: mit(送る)=submit/remit、pos/pon(置く)=postpone/impose/dispose、
+            tain(保つ)=retain/sustain/obtain、fer(運ぶ)=transfer/refer/confer、
+            ceed(行く)=proceed/exceed、sume(取る)=presume/assume など。
+    v2.7.0 (2026-07-23 21:00 JST)
+      - 単語一覧で語をタップすると、学習時の裏面(答え)と同じ詳細を
+        ポップアップ表示するようにした。品詞・意味・例文・和訳・発音・
+        派生語・語源解説をまとめて確認できる。
+        裏面の描画を cardBackInner() に共通化し、学習画面と共用。
+    v2.6.0 (2026-07-23 20:40 JST)
+      - 派生語をまとめて学習する機能を追加。カード裏に「同じ語根の
+        仲間」を品詞つきで表示（例: exclusive の裏に exclusively）。
+        word-relations.json に181グループ375語の派生関係を収録。
+      - 意味が派生・変化した語に語源解説を追加（代表10語で試行）。
+        見出し語の💡または「意味の成り立ちを見る」をタップすると
+        ポップアップで表示。例: appreciate(感謝する/理解する/値上がりする)、
+        comprehend(つかむ→理解する)、economy(家計→経済)など。
+        対象: appreciate/accompany/economy/define/novelty/custom/
+              apparent/comprehend/substantial/initiative
+      - 「今日解いた語」機能を追加。学習した日と正誤を記録し、
+        ホームから当日分の一覧（正誤つき）を見返せるようにした。
+    v2.5.0 (2026-07-23 20:05 JST)
+      - 複数品詞を持つ語の品詞・意味を補完（108語）。
+        例: account「名詞」→「名詞/動詞」、present→「名詞/形容詞/動詞」、
+            budget→「名詞/動詞/形容詞」。
+        英語として複数品詞を持ち、かつTOEICでその用法が問われる語のみを
+        対象とし、意味も品詞に対応させて併記した。
+        （例文の意味とずれないよう、名詞・動詞など同形語を優先）
+      - 品詞バッジが複数でも折り返して収まるようスタイルを調整。
+        意味も更新したため、設定「和訳・意味を最新に更新」で
+        取り込み済みカードにも反映できる。
+    v2.4.0 (2026-07-23 19:40 JST)
+      - 【不具合修正】例文と和訳が食い違う問題を修正。
+        症状: "I am writing on behalf of my manager." に
+              "私はチームを代表して話します。" という別例文の訳が
+              表示されていた。
+        原因: 初期サンプル10語は和訳が空だったため、後から和訳を
+              マージする際に「見出し語が同じなら付ける」という判定で
+              同じ語(on behalf of)の別例文の訳が入ってしまっていた。
+        対策: (1) サンプル10語に正しい和訳を付与。
+              (2) 和訳マージの照合条件に例文の一致を追加し、
+                  例文が違う場合は訳を付けないようにした。
+              (3) 既に誤訳が付いたカードを正しい訳へ戻す修復処理を
+                  mergeBundledTranslations に追加。
+    v2.3.0 (2026-07-23 19:25 JST)
+      - カタカナだけの訳を日本語の説明入りに修正（全28語）。
+        経緯: 「プレゼンテーション」「スケジュール」のような訳は
+        読み方を示しているだけで意味の説明になっておらず、
+        学習効果がないという指摘を受けたため。
+        例: presentation「プレゼンテーション」→「発表/提示」
+            brochure「パンフレット」→「商品案内の小冊子/パンフレット」
+        カタカナ語として定着しているものは補足として残した。
+      - 和訳マージ機能を拡張し、意味(meaning)の更新にも対応。
+        既に端末へ取り込み済みのカードにも修正を反映できる。
+        設定画面のボタン名を「和訳・意味を最新に更新」に変更。
+    v2.2.0 (2026-07-23 19:10 JST)
+      - 【重要】出題の仕組みを「学習日」単位に変更。
+        経緯: 従来は dueDate を時刻で比較していたため、前日21時に
+        学習すると翌日21時まで復習分が出ず、朝に開くと未習の語ばかり
+        並んだ。「翌朝には前日の復習から始めたい」という要望に対応。
+        ・1日の境目を朝6時(DAY_START_HOUR)に設定。深夜は前日扱い。
+        ・dueDateを学習日の開始時刻に丸め、isDueを日付比較に変更。
+          → 同じ日なら何時に開いても同じ顔ぶれが出る。
+      - 出題順を「復習優先」に変更（buildQueue）。
+        1) Box2以上の復習分（Box降順・期限が古い順）
+        2) 前回不正解だった語
+        3) 未習の語（登録順）
+      - 不正解の語を当日セッション内で繰り返す挙動を廃止し、翌日回しに。
+        当日中に正解するまで繰り返すと復習間隔が空かず定着しないため。
+      - 1日の新規語数の上限(dailyNewLimit)を実際に機能させた。
+        復習分と再挑戦分は上限の対象外とし、必ず出題する。
+      - ホーム画面に今日の内訳(復習/再挑戦/新規)を表示。
+      - 和訳マージの対象に extra/extra2/new1000 を追加。
+        既に取り込み済みで和訳のないカードを後から補える。
+    v2.1.0 (2026-07-23 18:55 JST)
+      - 新規1000語を toeic-new1000.json として追加（全て和訳付き）。
+        既存1691語と重複ゼロを検証済み。
+        内訳: 熟語450 / 動詞229 / 名詞145 / 形容詞144 / 副詞32。
+        テーマ: 人事・財務・IT・マーケティング・物流・オフィス業務・
+                会議・出張・法務ほか、TOEIC頻出の実務場面を網羅。
+        インポート画面に「新規1000問を追加」ボタンを新設。
+        同梱データは合計2691問に。
+      - sw.js のキャッシュに toeic-new1000.json を追加、CACHEを更新。
+    v2.0.0 (2026-07-23 18:40 JST)
+      - 外部AI生成データ第2弾(法務/契約/製造/品質管理テーマ)232件を点検し、
+        137件を toeic-extra2.json として追加（和訳付き）。
+        ※ 62件が既存と重複、33件を品質基準で除外
+          (実在しない語 inspectional/implementable、TOEIC範囲外の
+           専門語 viscosity/anneal 等、文形式のもの、意味重複)。
+        インポート画面に「法務・製造137問を追加」ボタンを新設。
+        同梱データは合計1691問に。
+      - sw.js のキャッシュに toeic-extra2.json を追加、CACHEを更新。
+    v1.9.0 (2026-07-23 18:15 JST)
+      - 外部AI生成データ287件を点検し、既存1500問と重複しない54件を
+        toeic-extra.json として追加（和訳付き）。
+        ※ 提供287件のうち229件が既存と重複、4件が表記ゆれの実質重複
+          (follow up on/take part in/be aware of/catch up on)のため除外。
+        インポート画面に「追加54問を追加」ボタンを新設。
+      - sw.js のキャッシュに toeic-extra.json を追加、CACHEを更新。
+    v1.8.0 (2026-07-23 10:10 JST)
+      - 【重要】アプリが更新されない問題を修正。
+        iOSのホーム画面アプリで古いキャッシュが返り続けたため、
+        Service Worker を全面改訂（HTML/JSONはネットワーク優先、
+        cache:'no-store'/'reload' でHTTPキャッシュも迂回）。
+        登録側も updateViaCache:'none' + update() + SKIP_WAITING +
+        controllerchange での自動リロードに対応し、
+        起動・復帰のたびに最新版へ自動で切り替わるようにした。
+      - 設定画面に「🔄 最新版に更新する」ボタン(forceUpdate)を追加。
+        キャッシュとSWを破棄して再読み込みする。localStorageには
+        触れないため学習履歴は保持される。
+    v1.7.0 (2026-07-23 09:50 JST)
+      - 例文の和訳(exampleJa)に対応。裏面の例文の下に日本語訳を表示。
+        makeCard/JSON取り込みが exampleJa を受け取れるよう拡張。
+      - 既存カードの学習履歴を保ったまま和訳だけを追加できる
+        mergeBundledTranslations() / mergeTranslations() を追加。
+        term をキーに突き合わせ、box/dueDate/正誤回数は変更しない。
+      - バックアップ/復元機能を追加（openBackup/downloadBackup/
+        handleRestoreFile）。学習履歴ごとJSONに書き出し・読み戻し可能。
+        端末変更やデータ消失時の復旧手段として設定画面に配置。
+    v1.6.0 (2026-07-23 09:35 JST)
+      - 発音機能を追加。カードをめくった裏面のスピーカーボタンで
+        単語・例文を読み上げる（Web Speech API / speak()）。
+        追加ファイルや通信は不要で、オフラインでも動作する。
+        英語音声(en-US)を優先選択、無ければ既定音声にフォールバック。
+      - onclick埋め込み用のエスケープ関数 attrEsc() を追加。
+    v1.5.0 (2026-07-23 09:20 JST)
+      - 追加の同梱データ toeic-1000.json（既存500と重複しない1000問）を追加。
+        インポート画面に「追加1000問を追加」ボタンを新設。
+        loadBundled(url) に汎用化し、500/1000どちらもワンタップ取り込み可。
+      - sw.js のキャッシュに toeic-1000.json を追加、CACHEを更新。
+    v1.4.0 (2026-07-23 02:10 JST)
+      - 出題順を明確化。ボックスの大きい順（Box7→Box1）に出題し、
+        上位ボックスが尽きたら下位（最後にBox1）へ進む。
+        同一ボックス内は期限が古い順。従来のシャッフルは廃止。
+      - JSONを「貼り付けて取り込む」導線を追加（runJsonPaste）。
+        AI出力の ```json 囲みは自動除去。ファイル保存不要で取り込める。
+    v1.3.0 (2026-07-23 01:52 JST)
+      - JSONによる一括取り込みに対応（importCardObjects）。
+        ・「TOEIC頻出500問を追加」ボタンで同梱 toeic-500.json を
+          ワンタップ取り込み（loadBundled500）。
+        ・自作JSONファイルの読み込みにも対応（handleJsonFile）。
+        ・既存と同じ term は重複としてスキップ（増殖防止）。
+      - sw.js のキャッシュに toeic-500.json を追加、CACHEを更新。
+    v1.2.0 (2026-07-23 01:21 JST)
+      - PWA化。ホーム画面に置ける単体アプリとして動作。
+        manifest.json / sw.js / アイコン群を追加し、head に
+        theme-color・manifest・apple-touch-icon 等を追加。
+      - 保存先を window.storage から localStorage へ変更。
+        端末内に進捗が永続保存される（携帯での常用が前提）。
+      - Service Worker によるオフライン動作に対応。
+      ※ このファイルは配信フォルダ toeic-vocab/index.html。
+    v1.1.0 (2026-07-23 01:11 JST)
+      - 単語カードに「品詞(pos)」を追加。めくった裏面で、種別が単語の
+        ときに品詞を表示するように変更（ユーザー要望）。
+      - 永続ストレージ(window.storage)が使えない環境で
+        "Storage set failed: Unexpected response type" エラーが多発した
+        ため、ストレージ層を耐障害化。失敗時はセッション内メモリへ
+        自動フォールバックし、エラーを撒き散らさず1回だけ通知する。
+      - 追加/編集フォーム・一括インポート・エクスポートを品詞対応に更新。
+    v1.0.0 (2026-07-23)
+      - 初版。Leitner間隔反復・単語管理・出題周期設定。
+--------------------------------------------------------------------
+  【このアプリの目的】
+    TOEIC学習用の単語・熟語を間隔反復（スペースド・リピティション）で
+    効率的に暗記するためのアプリ。
+
+  【主な機能と設計意図】
+    1. Leitnerボックス方式による間隔反復
+       - 正解した単語は上位ボックスへ移動し、次回出題までの間隔が延びる
+       - 不正解ならボックス1へ戻り、すぐ再出題される
+       - 各ボックスの「出題周期（日数）」は設定画面から自由に変更可能
+         → ユーザー要望「特定の周期で出題タイミングを設定」に対応
+    2. 単語管理（追加 / 編集 / 削除 / 検索）
+    3. 一括インポート / エクスポート（テキスト貼り付け）
+       → ユーザー要望「簡単に単語を入れ替え」に対応
+    4. データはブラウザの永続ストレージ(window.storage)に保存。
+       アプリを閉じても進捗が残る。
+
+  【デバッグ】
+    - 読み込み時にコンソールへ「最終更新日時・バージョン」を最初に出力する
+      (どのバージョンのファイルを動かしているか後から追跡できるように)
+====================================================================
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>TOEIC 単語トレーナー</title>
+<!-- ===== PWA（ホーム画面に置けるアプリ化）設定 v1.2.0 ===== -->
+<meta name="theme-color" content="#2F4BC4">
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="単語トレーナー">
+<style>
+  /* ============================================================
+     デザイントークン
+     - 学習に集中できる落ち着いた配色。
+     - primary(藍) = 操作/現在地、accent(琥珀) = 出題待ち(due)、
+       good(緑) = 正解/習得、bad(ロゼ) = 不正解。
+     ============================================================ */
+  :root{
+    --bg:#EEF1F5;
+    --surface:#FFFFFF;
+    --ink:#17223B;
+    --ink-soft:#5A6683;
+    --line:#DBE0EA;
+    --primary:#2F4BC4;
+    --primary-soft:#EAEDFB;
+    --accent:#E08A2B;
+    --accent-soft:#FBEFDD;
+    --good:#1F9E6E;
+    --good-soft:#E1F4EC;
+    --bad:#D8536B;
+    --bad-soft:#FBE6EB;
+    --radius:16px;
+    --shadow:0 2px 14px rgba(23,34,59,.08);
+    --font-jp:'Hiragino Kaku Gothic ProN','Hiragino Sans','Noto Sans JP','Yu Gothic',Meiryo,system-ui,sans-serif;
+    --font-en:'Georgia','Times New Roman',serif;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:var(--font-jp);
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .app{max-width:560px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;padding-bottom:76px;}
+
+  /* ---- ヘッダー ---- */
+  header{
+    padding:18px 20px 12px;
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+  }
+  header h1{font-size:17px;margin:0;letter-spacing:.02em;flex:1;text-align:center;}
+  header .ver{display:none;}
+  /* v3.3.0: モード切替ボタン */
+  .mode-switch{
+    background:var(--primary-soft);color:var(--primary);border:1px solid var(--primary);
+    border-radius:999px;padding:6px 12px;font-size:13px;font-weight:800;cursor:pointer;
+    white-space:nowrap;flex-shrink:0;
+  }
+  .mode-switch:active{opacity:.7;}
+  /* v3.6.0: モード選択メニュー */
+  .mode-wrap{position:relative;flex-shrink:0;}
+  .mode-menu{position:absolute;top:calc(100% + 6px);left:0;z-index:50;
+    background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    box-shadow:var(--shadow);flex-direction:column;overflow:hidden;min-width:120px;}
+  .mode-menu button{background:none;border:none;text-align:left;padding:12px 16px;
+    font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;font-family:var(--font-jp);}
+  .mode-menu button:active{background:var(--primary-soft);}
+  .mode-menu button + button{border-top:1px solid var(--line);}
+
+  main{flex:1;padding:0 16px;}
+
+  /* ================= v3.3.0: Part5 ================= */
+  .p5-topbar{display:flex;align-items:center;gap:10px;padding:10px 4px 4px;font-size:12px;}
+  .p5-back{background:none;border:none;color:var(--primary);font-weight:700;cursor:pointer;font-size:13px;}
+  .p5-progress{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .p5-level{margin-left:auto;color:var(--ink-soft);background:var(--bg);padding:3px 10px;border-radius:999px;font-weight:700;}
+  .p5-question{margin-top:8px;}
+  .p5-sentence{font-family:var(--font-en);font-size:17px;line-height:1.85;color:var(--ink);}
+  .p5-blank{color:var(--primary);font-weight:800;letter-spacing:1px;}
+  .p5-choices{display:flex;flex-direction:column;gap:9px;margin-top:14px;}
+  .p5-choice{display:flex;align-items:center;gap:10px;text-align:left;width:100%;
+    background:var(--surface);border:1.5px solid var(--line);border-radius:12px;
+    padding:13px 14px;font-size:15px;font-family:var(--font-en);cursor:pointer;color:var(--ink);
+    transition:border-color .12s, background .12s;}
+  .p5-choice:active{background:var(--bg);}
+  .p5-mark{display:inline-flex;align-items:center;justify-content:center;
+    width:24px;height:24px;border-radius:50%;background:var(--bg);color:var(--ink-soft);
+    font-weight:800;font-size:13px;flex-shrink:0;font-family:var(--font-jp);}
+  .p5-choice.p5-correct{border-color:var(--good);background:var(--good-soft);}
+  .p5-choice.p5-correct .p5-mark{background:var(--good);color:#fff;}
+  .p5-choice.p5-wrong{border-color:var(--bad);background:var(--bad-soft);}
+  .p5-choice.p5-wrong .p5-mark{background:var(--bad);color:#fff;}
+  .p5-choice.p5-dim{opacity:.55;}
+  .p5-result{margin-top:16px;padding:12px 14px;border-radius:12px;font-weight:800;font-size:15px;}
+  .p5-result.ok{background:var(--good-soft);color:var(--good);}
+  .p5-result.ng{background:var(--bad-soft);color:var(--bad);}
+  .p5-section-title{font-size:12px;font-weight:800;color:var(--ink-soft);letter-spacing:.06em;margin:18px 4px 8px;}
+  .p5-explain{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:14px;line-height:1.85;}
+  .p5-notes{display:flex;flex-direction:column;gap:7px;}
+  .p5-note{display:flex;gap:9px;align-items:flex-start;background:var(--surface);
+    border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.7;}
+  .p5-note-correct{border-color:var(--good);background:var(--good-soft);}
+  .p5-note-mark{display:inline-flex;align-items:center;justify-content:center;
+    width:20px;height:20px;border-radius:50%;background:var(--bg);
+    font-weight:800;font-size:11px;flex-shrink:0;}
+  .p5-note-correct .p5-note-mark{background:var(--good);color:#fff;}
+  .p5-vocab{display:flex;flex-direction:column;gap:6px;}
+  .p5-vocab-row{display:flex;gap:10px;align-items:baseline;background:var(--surface);
+    border:1px solid var(--line);border-radius:10px;padding:9px 12px;}
+  .p5-vw{font-family:var(--font-en);font-weight:700;font-size:14px;flex-shrink:0;}
+  .p5-vm{font-size:13px;color:var(--ink-soft);}
+  .p5-trans{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:14px;font-size:14px;line-height:1.85;}
+
+  /* v3.4.0: セッション一覧 */
+  .p5-session-list{display:flex;flex-direction:column;gap:9px;}
+  .p5-session{display:block;width:100%;text-align:left;background:var(--surface);
+    border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;cursor:pointer;}
+  .p5-session:active{background:var(--bg);}
+  .p5-session-done{border-color:var(--good);background:var(--good-soft);}
+  .p5-session-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+  .p5-session-title{font-weight:800;font-size:15px;color:var(--ink);}
+  .p5-session-count{font-size:12px;color:var(--ink-soft);font-weight:700;}
+  .p5-session-badge{font-size:12px;color:var(--good);font-weight:800;}
+  .p5-session-bar{height:6px;background:var(--bg);border-radius:999px;overflow:hidden;}
+  .p5-session-fill{height:100%;background:var(--good);border-radius:999px;transition:width .3s;}
+  /* v3.9.0: セッションの最終学習日と正解数 */
+  .p5-session-log{display:flex;align-items:center;gap:8px;margin-top:9px;font-size:11.5px;flex-wrap:wrap;}
+  .p5-log-date{font-weight:800;color:var(--ink-soft);background:var(--bg);border-radius:6px;padding:2px 7px;}
+  .p5-log-score{color:var(--ink-soft);font-weight:700;}
+  .p5-log-score b{color:var(--primary);font-size:13px;font-family:var(--font-en);}
+  .p5-log-retry{color:var(--accent);font-weight:700;}
+  .p5-log-none{color:var(--ink-soft);opacity:.75;}
+  /* v3.9.0: 復習ラウンドであることの表示 */
+  .p5-topbar-review .p5-progress{color:var(--accent);font-weight:800;}
+  .p5-review-note{background:var(--accent-soft);border:1px solid var(--accent);color:#8A4F0B;
+    border-radius:12px;padding:9px 12px;margin-bottom:10px;font-size:13px;font-weight:800;line-height:1.5;}
+  .p5-review-note small{display:block;font-weight:400;font-size:11px;color:#8A4F0B;opacity:.85;margin-top:3px;}
+  .p5-question-review{border:1px solid var(--accent);}
+  .p5-session-tag{margin-left:auto;color:var(--ink-soft);background:var(--bg);padding:3px 10px;border-radius:999px;font-weight:700;font-size:12px;}
+  /* v3.4.0: タイマーバー */
+  .p5-timer{height:8px;background:var(--bg);border-radius:999px;overflow:hidden;margin-bottom:4px;}
+  .p5-timer-fill{height:100%;width:100%;background:var(--good);border-radius:999px;}
+  .p5-timer-label{font-size:11px;color:var(--ink-soft);text-align:right;margin-bottom:12px;font-weight:700;}
+  /* v3.4.0: 連続正解・レベル表示（解説内） */
+  .p5-streak{font-size:13px;font-weight:700;color:var(--primary);background:var(--primary-soft);
+    border-radius:10px;padding:9px 12px;margin-top:10px;}
+  .p5-levelbox{font-size:12px;font-weight:700;color:var(--ink-soft);background:var(--bg);
+    border-radius:10px;padding:8px 12px;margin-top:8px;}
+  /* v3.4.0: 卒業ボックス */
+  .p5-grad-item{margin-bottom:10px;}
+  .p5-grad-sentence{font-family:var(--font-en);font-size:15px;line-height:1.7;color:var(--ink);}
+  .p5-grad-meta{font-size:11px;color:var(--ink-soft);font-weight:700;margin-top:6px;}
+  .p5-grad-trans{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.7;}
+
+  /* v3.5.0: Part6 本文 */
+  .p6-passage{margin-top:8px;}
+  .p6-doctype{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:.04em;margin-bottom:10px;}
+  .p6-text{font-family:var(--font-en);font-size:15px;line-height:2.0;color:var(--ink);}
+  .p6-blank-active{display:inline-block;min-width:34px;text-align:center;color:var(--primary);
+    font-weight:800;background:var(--primary-soft);border-radius:6px;padding:0 6px;border:1.5px solid var(--primary);}
+  .p6-blank-pending{display:inline-block;min-width:34px;text-align:center;color:var(--ink-soft);
+    font-weight:700;background:var(--bg);border-radius:6px;padding:0 6px;}
+  .p6-blank-filled{display:inline-block;color:var(--good);font-weight:700;background:var(--good-soft);
+    border-radius:6px;padding:0 6px;}
+  .p6-qlabel{font-size:13px;font-weight:800;color:var(--ink);margin:16px 4px 8px;}
+  .p6-choice-sentence{font-size:13px;line-height:1.6;align-items:flex-start;}
+  .p6-choice-sentence .p5-mark{margin-top:1px;}
+  /* v3.6.0: Part6 選択中の強調（正誤は出さない） */
+  .p6-choice-selected{border-color:var(--primary)!important;background:var(--primary-soft)!important;}
+  .p6-blank-chosen{display:inline-block;color:var(--primary);font-weight:700;background:var(--primary-soft);
+    border-radius:6px;padding:0 6px;cursor:pointer;}
+  /* v3.6.0: 進捗ドット */
+  .p6-dots{display:flex;gap:8px;justify-content:center;margin:12px 0;}
+  .p6-dot{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line);background:var(--surface);
+    font-weight:800;font-size:14px;color:var(--ink-soft);cursor:pointer;}
+  .p6-dot-active{transform:scale(1.12);box-shadow:0 0 0 2px var(--primary);}
+  .p6-dot-chosen{border-color:var(--primary);color:var(--primary);background:var(--primary-soft);}
+  .p6-dot-ok{border-color:var(--good);color:#fff;background:var(--good);}
+  .p6-dot-ng{border-color:var(--bad);color:#fff;background:var(--bad);}
+  /* v3.6.0: 選択フェーズのナビ */
+  .p6-solve-nav,.p6-swipe-nav{display:flex;gap:10px;margin-top:12px;}
+  .p6-nav-btn{flex:1;padding:11px;border-radius:10px;border:1.5px solid var(--line);
+    background:var(--surface);font-weight:700;font-size:13px;color:var(--ink);cursor:pointer;font-family:var(--font-jp);}
+  .p6-nav-btn:disabled{opacity:.4;cursor:default;}
+  /* v3.6.0: 解説カード（スワイプ） */
+  .p6-explain-head{display:flex;align-items:baseline;justify-content:space-between;margin:18px 2px 6px;}
+  .p6-explain-title{font-size:14px;font-weight:800;color:var(--ink);}
+  .p6-swipe-hint{font-size:11px;color:var(--ink-soft);font-weight:700;}
+  .p6-explain-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:14px;box-shadow:var(--shadow);}
+  .p6-explain-top{font-size:14px;font-weight:800;border-radius:10px;padding:10px 12px;margin-bottom:4px;}
+  .p6-explain-top.ok{background:var(--good-soft);color:var(--good);}
+  .p6-explain-top.ng{background:var(--bad-soft);color:var(--bad);}
+  .p6-your-pick{display:inline-block;margin-left:6px;font-size:11px;font-weight:800;color:var(--bad);
+    border:1px solid var(--bad);border-radius:6px;padding:0 6px;}
+
+  /* ---- カード共通 ---- */
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);}
+  .pad{padding:18px;}
+  .section-title{font-size:13px;font-weight:700;color:var(--ink-soft);letter-spacing:.06em;margin:22px 4px 10px;text-transform:uppercase;}
+
+  /* ---- ホーム: 今日の学習サマリ ---- */
+  .today{padding:22px 20px;text-align:center;}
+  .today .due-num{font-size:56px;font-weight:800;line-height:1;color:var(--primary);font-variant-numeric:tabular-nums;}
+  .today .due-label{font-size:13px;color:var(--ink-soft);margin-top:4px;}
+  .today .sub{font-size:13px;color:var(--ink-soft);margin-top:10px;}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    border:none;border-radius:12px;font-family:inherit;font-size:15px;font-weight:700;
+    padding:14px 18px;cursor:pointer;width:100%;transition:transform .06s ease, opacity .2s;
+  }
+  .btn:active{transform:scale(.985);}
+  .btn-primary{background:var(--primary);color:#fff;}
+  .btn-accent{background:var(--accent);color:#fff;}
+  .btn-ghost{background:transparent;color:var(--primary);border:1.5px solid var(--line);}
+  .btn-good{background:var(--good);color:#fff;}
+  .btn-bad{background:var(--bad);color:#fff;}
+  .btn:disabled{opacity:.4;cursor:default;}
+  .btn.small{width:auto;padding:9px 14px;font-size:13px;border-radius:10px;}
+
+  /* ---- Leitnerボックスの可視化（このアプリの目印） ---- */
+  .ladder{display:flex;gap:6px;align-items:flex-end;justify-content:space-between;margin-top:6px;}
+  .ladder .box{flex:1;text-align:center;}
+  .ladder .bar{
+    background:var(--primary-soft);border:1px solid var(--line);border-radius:8px 8px 4px 4px;
+    display:flex;align-items:flex-end;justify-content:center;overflow:hidden;position:relative;
+  }
+  .ladder .fill{width:100%;background:var(--primary);border-radius:0 0 3px 3px;transition:height .4s ease;}
+  .ladder .cnt{font-size:15px;font-weight:800;color:var(--ink);padding:2px 0;position:relative;z-index:1;mix-blend-mode:normal;}
+  .ladder .lv{font-size:10px;color:var(--ink-soft);margin-top:4px;}
+  .ladder .lv b{display:block;font-size:11px;color:var(--ink);}
+
+  /* ---- 学習(フラッシュカード) ---- */
+  .study-wrap{padding-top:8px;}
+  .progress-row{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--ink-soft);margin:4px 4px 12px;}
+  .flash{
+    min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:28px 22px;text-align:center;cursor:pointer;position:relative;
+  }
+  .flash .tag{position:absolute;top:14px;left:14px;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--primary-soft);color:var(--primary);}
+  .flash .tag.idiom{background:var(--accent-soft);color:var(--accent);}
+  .flash .term{font-family:var(--font-en);font-size:34px;font-weight:600;line-height:1.25;word-break:break-word;}
+  .flash .hint{font-size:12px;color:var(--ink-soft);margin-top:18px;}
+  .flash .divider{width:44px;height:2px;background:var(--line);margin:18px 0;border-radius:2px;}
+  /* v1.6.0: 発音ボタン。単語の右に並べる */
+  .flash .term-row{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;}
+  .speaker{
+    border:1.5px solid var(--line);background:var(--surface);color:var(--primary);
+    font-size:20px;line-height:1;padding:8px 12px;border-radius:12px;cursor:pointer;
+    transition:transform .06s ease, background .15s;
+  }
+  .speaker:active{transform:scale(.92);background:var(--primary-soft);}
+  .speaker.small{font-size:14px;padding:4px 8px;border-radius:9px;vertical-align:middle;}
+  .flash .pos{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--primary);background:var(--primary-soft);border-radius:999px;padding:3px 12px;margin-bottom:12px;max-width:90%;line-height:1.5;}
+  .flash .meaning{font-size:22px;font-weight:700;}
+  .flash .example{font-size:14px;color:var(--ink-soft);margin-top:14px;font-family:var(--font-en);font-style:italic;}
+  /* v1.7.0: 例文の和訳 */
+  .flash .example-ja{font-size:13px;color:var(--ink-soft);margin-top:6px;line-height:1.6;}
+  /* v2.6.0: 派生語・語源解説 */
+  .relations{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);text-align:left;}
+  .rel-title{font-size:11px;font-weight:800;color:var(--ink-soft);letter-spacing:.08em;margin-bottom:8px;}
+  .rel-list{display:flex;flex-direction:column;gap:5px;}
+  .rel-item{display:flex;align-items:baseline;gap:7px;font-size:13px;
+    background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;}
+  .rel-word{font-family:var(--font-en);font-weight:700;}
+  .rel-pos{font-size:10px;color:var(--primary);font-weight:700;flex-shrink:0;}
+  .rel-mean{font-size:12px;color:var(--ink-soft);flex:1;min-width:0;}
+  .rel-self{background:var(--primary-soft);border-color:var(--primary);}
+  .rel-bulb{cursor:pointer;font-size:14px;flex-shrink:0;}
+  .rel-ety-btn{margin-top:10px;width:100%;background:none;border:1px solid var(--primary);
+    color:var(--primary);border-radius:10px;padding:8px;font-size:13px;font-weight:700;cursor:pointer;}
+  .rel-ety-btn:active{background:var(--primary-soft);}
+  .ety-text{font-size:14px;line-height:1.85;color:var(--ink);margin-top:6px;}
+  /* v3.7.0: 単語Tips（使い分け / 意味のつながり）
+     - 語源解説(.rel-ety-btn)と並べても区別できるよう、
+       nuance=オレンジ系、origin=青系で色分けする。 */
+  .tips-box{margin-top:10px;display:flex;flex-direction:column;gap:6px;}
+  .tip-btn{width:100%;text-align:left;background:var(--surface);cursor:pointer;
+    border:1px solid var(--line);border-radius:10px;padding:9px 11px;
+    font-family:inherit;font-size:12.5px;font-weight:700;color:var(--ink);line-height:1.45;}
+  .tip-btn:active{opacity:.7;}
+  .tip-btn .tip-kind{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;
+    border-radius:5px;padding:1px 6px;margin-right:7px;vertical-align:1px;white-space:nowrap;}
+  .tip-nuance{border-color:#E08A2E;}
+  .tip-nuance .tip-kind{background:#FBEEDD;color:#B36A16;}
+  .tip-origin{border-color:var(--primary);}
+  .tip-origin .tip-kind{background:var(--primary-soft);color:var(--primary);}
+  /* Tips 本文: 改行(\n)を活かすため pre-wrap にする */
+  .tip-text{font-size:14px;line-height:1.9;color:var(--ink);margin-top:8px;white-space:pre-wrap;}
+  .tip-terms{margin-top:12px;font-size:11px;color:var(--ink-soft);line-height:1.7;}
+  .tip-terms b{font-family:var(--font-en);color:var(--ink);}
+  /* 単語一覧に出す小バッジ（Tipsのある語をひと目で分かるように） */
+  .tip-badge{display:inline-block;font-size:9px;font-weight:800;margin-left:6px;
+    background:#FBEEDD;color:#B36A16;border-radius:4px;padding:1px 5px;vertical-align:2px;}
+  /* v2.6.0: 今日解いた語 */
+  .today-done .done-head{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:800;}
+  .today-done .done-head b{font-size:20px;color:var(--primary);}
+  .rv-list{max-height:52vh;overflow-y:auto;margin-top:8px;}
+  .rv-row{display:flex;gap:10px;align-items:flex-start;padding:9px 2px;border-bottom:1px solid var(--line);}
+  /* v3.0.0: タップで詳細表示 */
+  .rv-tappable{cursor:pointer;}
+  .rv-tappable:active{background:var(--bg);}
+  .rv-arrow{color:var(--ink-soft);font-size:20px;line-height:1;align-self:center;}
+  .rv-o{color:var(--good);font-weight:800;}
+  .rv-x{color:var(--bad);font-weight:800;}
+  .rv-body{flex:1;}
+  .rv-term{font-family:var(--font-en);font-weight:700;font-size:15px;}
+  .rv-term small{font-family:var(--font-jp);font-size:10px;color:var(--ink-soft);font-weight:400;margin-left:4px;}
+  .rv-mean{font-size:13px;color:var(--ink-soft);margin-top:2px;}
+  .grade-row{display:flex;gap:10px;margin-top:14px;}
+  .grade-row .btn{flex:1;}
+
+  .empty{
+    text-align:center;padding:40px 24px;color:var(--ink-soft);
+  }
+  .empty .big{font-size:40px;margin-bottom:8px;}
+
+  /* ---- 単語管理 ---- */
+  .toolbar{display:flex;gap:8px;margin-bottom:12px;}
+  .search{flex:1;}
+  input[type=text],textarea,select{
+    width:100%;font-family:inherit;font-size:15px;color:var(--ink);
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 12px;
+  }
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--primary-soft);border-color:var(--primary);}
+  label.fld{display:block;font-size:12px;font-weight:700;color:var(--ink-soft);margin:12px 2px 5px;}
+  .row2{display:flex;gap:10px;}
+  .row2>div{flex:1;}
+
+  .word-list{display:flex;flex-direction:column;gap:8px;}
+  .word-item{display:flex;align-items:center;gap:10px;padding:12px 14px;}
+  .word-item .wt{font-family:var(--font-en);font-weight:600;font-size:16px;}
+  .word-item .wm{font-size:13px;color:var(--ink-soft);}
+  .word-item .grow{flex:1;min-width:0;}
+  .word-item .grow>div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  /* v2.7.0: タップで詳細表示 */
+  .word-item .tappable{cursor:pointer;}
+  .word-item .tappable:active{opacity:.6;}
+  .detail-flash{box-shadow:none;margin:0;}
+  .detail-flash .term{font-size:26px;}
+  .boxchip{font-size:11px;font-weight:800;color:var(--primary);background:var(--primary-soft);border-radius:8px;padding:3px 8px;white-space:nowrap;}
+  .iconbtn{border:none;background:transparent;color:var(--ink-soft);font-size:18px;padding:6px;cursor:pointer;border-radius:8px;}
+  .iconbtn:active{background:var(--bg);}
+
+  /* ---- 設定 ---- */
+  .interval-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);}
+  .interval-row:last-child{border-bottom:none;}
+  .interval-row .lbl{width:74px;font-weight:700;font-size:13px;}
+  .interval-row input{width:90px;text-align:center;}
+  .interval-row .unit{font-size:13px;color:var(--ink-soft);}
+  .note{font-size:12px;color:var(--ink-soft);margin:8px 2px;line-height:1.7;}
+
+  /* ---- モーダル ---- */
+  .modal-bg{position:fixed;inset:0;background:rgba(23,34,59,.45);display:flex;align-items:flex-end;justify-content:center;z-index:50;padding:0;}
+  .modal{background:var(--surface);width:100%;max-width:560px;border-radius:20px 20px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));max-height:90vh;overflow:auto;}
+  .modal h3{margin:2px 0 6px;font-size:17px;}
+  .modal-actions{display:flex;gap:10px;margin-top:16px;}
+  .modal-actions .btn{flex:1;}
+
+  /* ---- 下部ナビ ---- */
+  nav{
+    position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--line);
+    display:flex;max-width:560px;margin:0 auto;padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:40;
+  }
+  nav button{
+    flex:1;border:none;background:transparent;font-family:inherit;color:var(--ink-soft);
+    font-size:11px;font-weight:700;padding:6px 2px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;border-radius:10px;
+  }
+  nav button .ico{font-size:20px;line-height:1;}
+  nav button.active{color:var(--primary);}
+
+  .hidden{display:none !important;}
+  .toast{
+    position:fixed;bottom:88px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:#fff;font-size:13px;padding:10px 18px;border-radius:999px;z-index:60;
+    opacity:0;transition:opacity .25s;pointer-events:none;white-space:nowrap;
+  }
+  .toast.show{opacity:1;}
+  .foot{font-size:11px;color:var(--ink-soft);text-align:center;padding:18px 0 4px;}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="mode-wrap">
+      <button class="mode-switch" id="modeSwitch" onclick="toggleModeMenu()">
+        <span id="modeLabel">単語</span> ▼
+      </button>
+      <div class="mode-menu" id="modeMenu" style="display:none">
+        <button onclick="selectMode('vocab')">単語</button>
+        <button onclick="selectMode('shadow')">シャドーイング</button>
+        <button onclick="selectMode('part5')">Part 5</button>
+        <button onclick="selectMode('part6')">Part 6</button>
+      </div>
+    </div>
+    <h1 id="appTitle">TOEIC 単語トレーナー</h1>
+    <span class="ver" id="verStamp"></span>
+  </header>
+  <main id="main"></main>
+</div>
+
+<!-- 下部ナビゲーション -->
+<nav>
+  <button data-view="home" class="active"><span class="ico">🏠</span>ホーム</button>
+  <button data-view="study"><span class="ico">🎴</span>学習</button>
+  <button data-view="manage"><span class="ico">📚</span>単語</button>
+  <button data-view="settings"><span class="ico">⚙️</span>設定</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================================================================
+   バージョン情報（デバッグ用）
+   - 起動時、コンソールへ最初に出力する。
+   - 画面右上にも表示し、どのバージョンを動かしているか常に確認可能。
+   ================================================================ */
+const APP_VERSION = "3.9.2";
+const LAST_UPDATED = "2026-07-30 09:40 JST"; // ファイル最終更新日時
+console.log(`%c[TOEIC単語トレーナー] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
+            "color:#2F4BC4;font-weight:bold;");
+
+/* ================================================================
+   デフォルト設定
+   - intervals: 各ボックスの「次回出題までの日数」。配列長=ボックス数。
+     box1=index0。box1の0は「同日中に再度出題可」を意味する。
+     → 設定画面から自由に変更でき、これが出題周期の設定にあたる。
+   - dailyNewLimit: 1回の学習で投入する新規カードの上限。
+   ================================================================ */
+const DEFAULT_SETTINGS = {
+  intervals: [0, 1, 3, 7, 14, 30, 60], // 7段階。box1〜box7
+  dailyNewLimit: 20
+};
+
+/* 品詞(pos)の選択肢。単語カードのめくった裏面に表示する（v1.1.0で追加） */
+const POS_OPTIONS = ['名詞','動詞','形容詞','副詞','前置詞','接続詞','代名詞','その他'];
+
+/* インポート時、英語略記の品詞も受け付けるためのマッピング */
+const POS_EN_MAP = {
+  'n.':'名詞','n':'名詞','v.':'動詞','v':'動詞',
+  'adj.':'形容詞','adj':'形容詞','adv.':'副詞','adv':'副詞',
+  'prep.':'前置詞','prep':'前置詞','conj.':'接続詞','conj':'接続詞',
+  'pron.':'代名詞','pron':'代名詞'
+};
+
+/* 一括インポートの「種別/品詞」列を解釈する。
+   - idiom / 熟語        → {type:'idiom', pos:''}
+   - word / 空           → {type:'word',  pos:''}
+   - 名詞・動詞… / n.・v.… → {type:'word',  pos:品詞}
+   - それ以外の文字列     → {type:'word',  pos:その文字列}       */
+function normalizeTypePos(raw){
+  const s = (raw||'').trim();
+  const low = s.toLowerCase();
+  if(low === 'idiom' || s === '熟語') return {type:'idiom', pos:''};
+  if(low === 'word'  || s === '')     return {type:'word',  pos:''};
+  if(POS_OPTIONS.includes(s))         return {type:'word',  pos:s};
+  if(POS_EN_MAP[low])                 return {type:'word',  pos:POS_EN_MAP[low]};
+  return {type:'word', pos:s};
+}
+
+/* サンプル単語（初回起動時のみ投入。TOEIC頻出語の一例）
+   形式: [英語, 意味, 種別, 例文, 品詞, 例文の和訳]
+   v2.4.0: 和訳を追加。従来は和訳が空だったため、後から和訳マージを
+   行うと同じ見出し語の別例文の訳が誤って付く不具合があった。
+   (例: "I am writing on behalf of my manager." に
+        "私はチームを代表して話します。" が付いてしまう) */
+const SAMPLE_CARDS = [
+  ["acquire","獲得する、身につける","word","The company plans to acquire a smaller firm.","動詞","その会社はより小さな会社を買収する計画だ。"],
+  ["comply with","〜に従う、順守する","idiom","All staff must comply with the safety rules.","","全職員は安全規則を順守しなければならない。"],
+  ["invoice","請求書","word","Please send the invoice by the end of the month.","名詞","月末までに請求書を送ってください。"],
+  ["in charge of","〜を担当して","idiom","She is in charge of the marketing team.","","彼女は販売促進チームを担当している。"],
+  ["reimburse","払い戻す、返済する","word","We will reimburse your travel expenses.","動詞","私たちはあなたの旅費を払い戻します。"],
+  ["on behalf of","〜を代表して、〜の代わりに","idiom","I am writing on behalf of my manager.","","私は上司の代理でこの手紙を書いています。"],
+  ["itinerary","旅程表","word","Here is the itinerary for your business trip.","名詞","こちらがあなたの出張の旅程表です。"],
+  ["take place","開催される、起こる","idiom","The conference will take place next Friday.","","その会議は次の金曜日に開催される。"],
+  ["tentative","仮の、暫定的な","word","We set a tentative date for the meeting.","形容詞","私たちはその会議の仮の日程を設定した。"],
+  ["deal with","〜に対処する、〜を扱う","idiom","Our support team will deal with the issue.","","当社の支援チームがその問題に対処します。"]
+];
+
+/* ================================================================
+   永続ストレージ ヘルパー（localStorage版 v1.2.0）
+   --------------------------------------------------------------
+   経緯:
+     v1.1.0まではClaude内artifact用の window.storage を使っていたが、
+     その環境で "Unexpected response type" エラーが多発した。
+     v1.2.0からは「ホスティングした単体PWAとして端末で使う」前提に変更。
+     → ブラウザ標準の localStorage に保存する。これで端末内に進捗が
+       永続保存され、アプリを閉じても残る（同一ドメイン内で保持）。
+   フォールバック:
+     プライベートモード等で localStorage が使えない場合のみ、
+     セッション内メモリ(memStore)へ切替え、1回だけ通知する。
+   キー:
+     'toeic_cards' / 'toeic_settings'（他アプリと衝突しないよう接頭辞付き）
+   ================================================================ */
+const KEY_CARDS    = 'toeic_cards';
+const KEY_SETTINGS = 'toeic_settings';
+let STORAGE_OK = true;      // localStorage が使えるか（失敗で false）
+let storageWarned = false;  // 通知は1回だけ
+const memStore = {};        // フォールバック用のセッション内保存
+
+function warnStorageOnce(e){
+  if(storageWarned) return;
+  storageWarned = true;
+  console.warn('[ストレージ] localStorageが使えないため、セッション内メモリで動作します。'
+             + 'アプリを閉じると進捗が保存されません。', e);
+  toast('この環境では進捗を永続保存できません（プライベートモード等）');
+}
+
+/* 低レベル: 文字列で保存 */
+function lsSet(key, value){
+  if(STORAGE_OK){
+    try{ localStorage.setItem(key, value); memStore[key] = value; return true; }
+    catch(e){ STORAGE_OK = false; warnStorageOnce(e); }
+  }
+  memStore[key] = value;
+  return false;
+}
+/* 低レベル: 文字列を取得（無ければ null） */
+function lsGet(key){
+  if(STORAGE_OK){
+    try{ const v = localStorage.getItem(key); if(v !== null) return v; }
+    catch(e){ STORAGE_OK = false; warnStorageOnce(e); }
+  }
+  return (key in memStore) ? memStore[key] : null;
+}
+
+/* 高レベル: カード / 設定（呼び出し側の await 互換のため async のまま） */
+async function loadCards(){
+  const v = lsGet(KEY_CARDS);
+  try{ return v ? JSON.parse(v) : null; }catch(e){ return null; }
+}
+async function saveCards(cards){
+  lsSet(KEY_CARDS, JSON.stringify(cards));
+}
+async function loadSettings(){
+  const v = lsGet(KEY_SETTINGS);
+  try{ if(v) return Object.assign({}, DEFAULT_SETTINGS, JSON.parse(v)); }catch(e){}
+  return Object.assign({}, DEFAULT_SETTINGS);
+}
+async function saveSettings(s){
+  lsSet(KEY_SETTINGS, JSON.stringify(s));
+}
+
+/* ================================================================
+   アプリ状態
+   ================================================================ */
+let STATE = {
+  cards: [],
+  settings: null,
+  view: 'home',
+  mode: 'vocab',      // v3.3.0: 'vocab'（単語） or 'part5'
+  session: null,      // 学習セッション {queue:[], idx, revealed, done, correct}
+  editingId: null
+};
+
+const DAY = 86400000; // 1日のミリ秒
+const now = () => Date.now();
+const uid = () => 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2,6);
+
+/* 期限到来（due）判定: dueDate が現在時刻以下なら出題対象 */
+/* ================================================================
+   v2.2.0: 「学習日」の概念（1日の境目 = 朝6時）
+   --------------------------------------------------------------
+   経緯:
+     従来は dueDate を「時刻」で比較していたため、前日21時に学習すると
+     翌日21時までBox2の語が出てこず、朝に開くと未習の語ばかりが並んだ。
+     「翌朝になったら前日の復習分から始めたい」という要望に合わせ、
+     判定を時刻ではなく「学習日」単位に変更する。
+   仕様:
+     - 毎日 DAY_START_HOUR(既定6時) を1日の境目とする。
+       例: 深夜1時に開いた場合は「前日」の学習日として扱う。
+     - カードの dueDate は「その学習日の開始時刻」に丸めて保存する。
+     - isDue は「dueDateの学習日 <= 今日の学習日」で判定する。
+       → 同じ日のうちは何時に開いても同じ顔ぶれが出る。
+   ================================================================ */
+const DAY_START_HOUR = 6;   // 1日の境目（朝6時）
+
+/* 指定時刻が属する「学習日」の開始時刻(ms)を返す */
+function dayStart(ts){
+  const d = new Date(ts);
+  if(d.getHours() < DAY_START_HOUR) d.setDate(d.getDate() - 1); // 深夜は前日扱い
+  d.setHours(DAY_START_HOUR, 0, 0, 0);
+  return d.getTime();
+}
+/* 今日の学習日の開始時刻 */
+function todayStart(){ return dayStart(now()); }
+/* n日後の学習日の開始時刻 */
+function addDays(ts, n){
+  const d = new Date(ts);
+  d.setDate(d.getDate() + n);
+  return d.getTime();
+}
+
+/* 期限到来の判定（時刻ではなく学習日で比較） */
+function isDue(card){ return dayStart(card.dueDate) <= todayStart(); }
+function boxCount(){ return STATE.settings.intervals.length; }
+
+/* 新規カード生成（v1.1.0: 品詞 pos を追加）
+   pos は単語のときのみ意味を持つ。熟語では空にする。 */
+/* v2.6.0: 今日解いた語の一覧を表示（正誤つき） */
+function showTodayReview(){
+  const done = STATE.cards.filter(c=> c.lastStudied === todayStart());
+  if(done.length === 0){ toast('今日はまだ学習していません'); return; }
+  // 不正解を先に、その後正解。各内は語順（登録順）
+  done.sort((a,b)=>{
+    if(a.lastResult !== b.lastResult) return a.lastResult==='x' ? -1 : 1;
+    return a.createdAt - b.createdAt;
+  });
+  const rows = done.map(c=>{
+    const mark = c.lastResult==='o'
+      ? '<span class="rv-o">○</span>' : '<span class="rv-x">×</span>';
+    const pos = c.pos ? `<small>${escapeHtml(c.pos)}</small>` : '';
+    return `<div class="rv-row rv-tappable" onclick="showWordDetail('${c.id}','today')">
+      ${mark}
+      <div class="rv-body">
+        <div class="rv-term">${escapeHtml(c.term)} ${pos}</div>
+        <div class="rv-mean">${escapeHtml(c.meaning)}</div>
+      </div>
+      <span class="rv-arrow">›</span>
+    </div>`;
+  }).join('');
+  const ok = done.filter(c=>c.lastResult==='o').length;
+  const html = `
+    <h3>今日解いた語（${done.length}）</h3>
+    <p class="note" style="margin-top:2px">正解 ${ok} ／ 不正解 ${done.length-ok}　※タップで解説を表示</p>
+    <div class="rv-list">${rows}</div>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+}
+
+/* ================================================================
+   v2.6.0: 派生語・語源解説の表示
+   --------------------------------------------------------------
+   - renderRelations: カード裏に「同じ語根の仲間」を品詞つきで並べる。
+     語源解説がある語には 💡 を付け、タップでポップアップ表示。
+   - showEtymology: 語源・意味の派生の解説をポップアップで出す。
+   ================================================================ */
+/* ================================================================
+   v2.7.0: カード裏面（答え）の中身を共通化
+   学習画面のフラッシュカード裏と、単語一覧のタップ詳細で
+   同じ表示を再利用するために関数化する。
+   ================================================================ */
+function cardBackInner(card){
+  const tagCls = card.type==='idiom' ? 'tag idiom' : 'tag';
+  const tagTxt = card.type==='idiom' ? '熟語' : '単語';
+  const posLabel = (card.type==='word' && card.pos)
+    ? `<div class="pos">${escapeHtml(card.pos)}</div>` : '';
+  const speakTerm = `<button class="speaker" onclick="speak('${attrEsc(card.term)}')" aria-label="単語を読み上げる">🔊</button>`;
+  const speakEx = card.example
+    ? `<button class="speaker small" onclick="speak('${attrEsc(card.example)}')" aria-label="例文を読み上げる">🔊</button>` : '';
+  return `
+      <span class="${tagCls}">${tagTxt}</span>
+      <div class="term-row">
+        <div class="term">${escapeHtml(card.term)}</div>
+        ${speakTerm}
+      </div>
+      <div class="divider"></div>
+      ${posLabel}
+      <div class="meaning">${escapeHtml(card.meaning)}</div>
+      ${card.example?`<div class="example">${escapeHtml(card.example)} ${speakEx}</div>`:''}
+      ${card.exampleJa?`<div class="example-ja">${escapeHtml(card.exampleJa)}</div>`:''}
+      ${renderRelations(card.term)}`;
+}
+
+/* v2.7.0: 単語一覧で語をタップしたとき、答えをポップアップ表示 */
+function showWordDetail(id, backTo){
+  const card = STATE.cards.find(c=> c.id === id);
+  if(!card) return;
+  const backBtn = backTo === 'today'
+    ? `<button class="btn btn-ghost" onclick="showTodayReview()">← 一覧に戻る</button>`
+    : `<button class="btn btn-ghost" onclick="openEdit('${card.id}')">✏️ 編集</button>`;
+  const html = `
+    <div class="card flash detail-flash">${cardBackInner(card)}
+    </div>
+    <div class="modal-actions">
+      ${backBtn}
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+}
+
+function renderRelations(term){
+  const key = term.trim().toLowerCase();
+  const fam = RELATIONS.family[key] || [];
+  const hasEty = !!RELATIONS.etymology[key];
+  // v3.7.0: 派生語・語源が無くても Tips だけ持つ語があるため、条件に加える
+  const hasTip = tipsFor(key).length > 0;
+  if(fam.length === 0 && !hasEty && !hasTip) return '';
+
+  let html = '<div class="relations">';
+  if(fam.length > 0){
+    html += '<div class="rel-title">同じ語根の仲間</div><div class="rel-list">';
+    // 自分自身も含めて表示（品詞・意味つき）
+    const selfCard = STATE.cards.find(c=>c.term.toLowerCase()===key);
+    const self = { term: term, pos: selfCard?.pos||'', meaning: selfCard?.meaning||'' };
+    const items = [self].concat(fam);
+    for(const it of items){
+      const isSelf = it.term.toLowerCase() === key;
+      const ety = RELATIONS.etymology[it.term.toLowerCase()];
+      const bulb = ety ? ` <span class="rel-bulb" onclick="showEtymology('${attrEsc(it.term)}')">💡</span>` : '';
+      html += `<div class="rel-item ${isSelf?'rel-self':''}">`
+            + `<span class="rel-word">${escapeHtml(it.term)}</span>`
+            + `${it.pos?`<span class="rel-pos">${escapeHtml(it.pos)}</span>`:''}`
+            + `${it.meaning?`<span class="rel-mean">${escapeHtml(it.meaning)}</span>`:''}`
+            + `${bulb}</div>`;
+    }
+    html += '</div>';
+  }
+  if(hasEty){
+    html += `<button class="rel-ety-btn" onclick="showEtymology('${attrEsc(term)}')">💡 意味の成り立ちを見る</button>`;
+  }
+  html += renderTipButtons(key);   // v3.7.0: 使い分け・意味のつながりTips
+  html += '</div>';
+  return html;
+}
+
+/* ================================================================
+   v3.7.0: 単語Tips
+   ----------------------------------------------------------------
+   経緯:
+     「congestion と crowd の違いは？」「commence は"開始"なのに
+     なぜ commencement が"卒業式"？」のような疑問を、その語を見た
+     その場で解消できるようにするために追加した。
+   既存の etymology（語源解説）との違い:
+     - etymology は 1語 = 1解説。その語の意味の成り立ちを説明する。
+     - tips は 1件を複数の語に紐づけられる。似た訳語の比較を
+       1件で書けるので、比較系はこちらに置く。
+   kind:
+     nuance … 使い分け（オレンジ）  origin … 意味のつながり（青）
+   ================================================================ */
+function tipsFor(term){
+  return RELATIONS.tipIndex[String(term||'').trim().toLowerCase()] || [];
+}
+function renderTipButtons(key){
+  const tips = tipsFor(key);
+  if(tips.length === 0) return '';
+  let h = '<div class="tips-box">';
+  for(const t of tips){
+    const isN = t.kind === 'nuance';
+    h += `<button class="tip-btn ${isN?'tip-nuance':'tip-origin'}" onclick="showTip('${attrEsc(t.id)}')">`
+       + `<span class="tip-kind">${isN?'使い分け':'意味のつながり'}</span>`
+       + `${escapeHtml(t.title)}</button>`;
+  }
+  return h + '</div>';
+}
+function showTip(id){
+  const t = (RELATIONS.tips || []).find(x => x.id === id);
+  if(!t) return;
+  const isN = t.kind === 'nuance';
+  // この Tips が付いている見出し語（相互に行き来できるよう一覧表示）
+  const terms = t.terms.map(w=>`<b>${escapeHtml(w)}</b>`).join(' / ');
+  const html = `
+    <h3>${isN?'🔍 使い分け':'🔗 意味のつながり'}</h3>
+    <p style="font-size:15px;font-weight:800;line-height:1.6;margin:8px 0 0">${escapeHtml(t.title)}</p>
+    <div class="tip-text">${escapeHtml(t.body)}</div>
+    <div class="tip-terms">この Tips が付いている語: ${terms}</div>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+}
+
+function showEtymology(term){
+  const ety = RELATIONS.etymology[term.trim().toLowerCase()];
+  if(!ety) return;
+  const html = `
+    <h3>💡 ${escapeHtml(term)} の成り立ち</h3>
+    <p class="ety-text">${escapeHtml(ety)}</p>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+}
+
+function makeCard(term, meaning, type, example, pos, exampleJa){
+  const t = (type === 'idiom') ? 'idiom' : 'word';
+  return {
+    id: uid(),
+    term: term.trim(),
+    meaning: meaning.trim(),
+    type: t,
+    pos: (t === 'word') ? (pos||'').trim() : '', // 熟語には品詞を持たせない
+    example: (example||'').trim(),
+    exampleJa: (exampleJa||'').trim(),           // v1.7.0: 例文の和訳
+    box: 1,
+    dueDate: now(),           // 追加直後から出題対象
+    createdAt: now(),
+    correct: 0,
+    wrong: 0
+  };
+}
+
+/* ================================================================
+   間隔反復（Leitner）ロジック
+   - 正解(know=true): ボックスを1つ上げ、そのボックスの周期後に再出題。
+   - 不正解(know=false): ボックス1へ戻し、当日中に再出題。
+   ================================================================ */
+/* ================================================================
+   間隔反復（Leitner）ロジック
+   - 正解(know=true): ボックスを1つ上げ、そのボックスの周期後に再出題。
+   - 不正解(know=false): ボックス1へ戻し、翌日に再出題。
+   v2.2.0の変更:
+     dueDate を「学習日の開始時刻」に丸めて保存する。これにより
+     何時に学習しても、その日に解くべき語が同じ顔ぶれになる。
+     また不正解の語は当日セッション内で繰り返さず翌日に回す。
+     （当日中に正解するまで繰り返すと復習間隔が空かず定着しないため）
+   ================================================================ */
+function grade(card, know){
+  const N = boxCount();
+  const base = todayStart();
+  if(know){
+    card.correct++;
+    card.box = Math.min(card.box + 1, N);
+    const days = STATE.settings.intervals[card.box - 1];
+    // 周期0日の場合も翌日に回す（当日の無限ループを避ける）
+    card.dueDate = addDays(base, Math.max(1, days));
+  }else{
+    card.wrong++;
+    card.box = 1;
+    card.dueDate = addDays(base, 1);   // 翌日に再挑戦
+  }
+}
+
+/* ================================================================
+   トースト表示
+   ================================================================ */
+let toastTimer = null;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 1800);
+}
+
+/* ================================================================
+   画面切り替え
+   ================================================================ */
+function setView(v){
+  STATE.view = v;
+  document.querySelectorAll('nav button').forEach(b=>{
+    b.classList.toggle('active', b.dataset.view === v);
+  });
+  render();
+}
+
+function render(){
+  const main = document.getElementById('main');
+  if(STATE.view === 'home')      main.innerHTML = viewHome();
+  else if(STATE.view === 'study')main.innerHTML = viewStudy();
+  else if(STATE.view === 'manage')main.innerHTML = viewManage();
+  else if(STATE.view === 'settings')main.innerHTML = viewSettings();
+  else if(STATE.view === 'p5home')main.innerHTML = viewP5Home();
+  else if(STATE.view === 'p5quiz')main.innerHTML = viewP5Quiz();
+  else if(STATE.view === 'p5graduated')main.innerHTML = viewP5Graduated();
+  else if(STATE.view === 'p6home')main.innerHTML = viewP6Home();
+  else if(STATE.view === 'p6quiz')main.innerHTML = viewP6Quiz();
+  else if(STATE.view === 'p6graduated')main.innerHTML = viewP6Graduated();
+  bindDynamic();
+  // v3.4.0: Part5の問題表示中はタイマーバーを起動（未解答時のみ）
+  if(STATE.view === 'p5quiz' && !P5STATE.done && !P5STATE.answered){
+    startQuizTimer(20, 'p5TimerFill');
+  }
+  // v3.6.0: Part6の選択フェーズ中はタイマーバーを起動（採点前のみ）
+  if(STATE.view === 'p6quiz' && !P6STATE.done && !P6STATE.graded){
+    startQuizTimer(30, 'p6TimerFill');
+  }
+  // v3.6.0: Part6の採点後、解説カードを左右スワイプで切り替え
+  if(STATE.view === 'p6quiz' && P6STATE.graded){
+    const card = document.getElementById('p6ExplainCard');
+    if(card){
+      let sx = 0, sy = 0;
+      card.addEventListener('touchstart', (e)=>{
+        sx = e.changedTouches[0].clientX; sy = e.changedTouches[0].clientY;
+      }, {passive:true});
+      card.addEventListener('touchend', (e)=>{
+        const dx = e.changedTouches[0].clientX - sx;
+        const dy = e.changedTouches[0].clientY - sy;
+        // 横方向のスワイプのみ反応（縦スクロールと区別）
+        if(Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)){
+          if(dx < 0) setP6Explain(P6STATE.explainIdx + 1);  // 左スワイプ→次
+          else       setP6Explain(P6STATE.explainIdx - 1);  // 右スワイプ→前
+        }
+      }, {passive:true});
+    }
+  }
+}
+
+/* ---------------------------------------------------------------
+   ホーム画面
+   --------------------------------------------------------------- */
+function viewHome(){
+  const { queue, review, retry, brand } = buildQueue();
+  const dueCards = queue;
+  const total = STATE.cards.length;
+  const mastered = STATE.cards.filter(c=>c.box === boxCount()).length;
+
+  // ボックス別の枚数（ラダー可視化用）
+  const counts = Array(boxCount()).fill(0);
+  STATE.cards.forEach(c=> counts[c.box-1]++ );
+  const maxCnt = Math.max(1, ...counts);
+
+  const ladder = counts.map((cnt,i)=>{
+    const h = 20 + Math.round((cnt/maxCnt)*70); // 20〜90px
+    const fillH = cnt ? Math.round((cnt/maxCnt)*100) : 0;
+    const days = STATE.settings.intervals[i];
+    return `<div class="box">
+      <div class="bar" style="height:${h}px">
+        <div class="fill" style="height:${fillH}%"></div>
+        <span class="cnt">${cnt}</span>
+      </div>
+      <div class="lv"><b>Box${i+1}</b>${days===0?'当日':days+'日'}</div>
+    </div>`;
+  }).join('');
+
+  const startBtn = (dueCards.length || (total>0))
+    ? `<button class="btn ${dueCards.length?'btn-accent':'btn-ghost'}" id="startStudy">
+         ${dueCards.length? `学習をはじめる（${dueCards.length}語）` : '復習する語はありません'}
+       </button>`
+    : `<button class="btn btn-primary" id="goManage">まず単語を追加する</button>`;
+
+  return `
+  <div class="card today">
+    <div class="due-num">${dueCards.length}</div>
+    <div class="due-label">今日の学習</div>
+    <div class="sub">
+      復習 ${review.length}語 ／ 再挑戦 ${retry.length}語 ／ 新規 ${brand.length}語
+    </div>
+    <div class="sub" style="margin-top:4px">登録 ${total} 語 ／ 習得済み ${mastered} 語</div>
+    <div style="margin-top:16px">${startBtn}</div>
+  </div>
+
+  ${(()=>{
+    // v2.6.0: 今日解いた語（学習日が今日のもの）
+    const done = STATE.cards.filter(c=> c.lastStudied === todayStart());
+    if(done.length === 0) return '';
+    const ok = done.filter(c=>c.lastResult==='o').length;
+    return `<div class="card pad today-done">
+      <div class="done-head">
+        <span>今日解いた語</span>
+        <b>${done.length}語</b>
+      </div>
+      <div class="sub">正解 ${ok} ／ 不正解 ${done.length-ok}</div>
+      <button class="btn btn-ghost small" onclick="showTodayReview()" style="width:100%;margin-top:10px">一覧を見返す</button>
+    </div>`;
+  })()}
+
+  <div class="section-title">習得の進み具合</div>
+  <div class="card pad">
+    <div class="ladder">${ladder}</div>
+    <p class="note">正解するとひとつ上のボックスへ進み、次の出題までの間隔が延びます。不正解ならBox1へ戻ります。周期は「設定」で変更できます。</p>
+  </div>
+
+  <div class="foot">最終更新 ${LAST_UPDATED} ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* ---------------------------------------------------------------
+   学習セッションの準備
+   v2.2.0: 出題順を「復習優先」に変更。
+     1) まず Box2以上（前日までに一度正解した復習分）を出す。
+        その中はボックスの大きい順（Box7→Box2）。
+        同一ボックス内は期限が古い順。
+     2) 次に Box1（未習の語と、前回不正解だった語）を登録順に出す。
+        → 1〜50を解いた翌日は、前日の正解分(Box2)から始まり、
+          続いて前日の不正解分、その後51番以降へ自然に進む。
+   1日の境目は朝6時(DAY_START_HOUR)。同じ日のうちは何時に開いても
+   同じ顔ぶれが出る。
+   --------------------------------------------------------------- */
+function buildQueue(){
+  const due = STATE.cards.filter(isDue);
+  const review = due.filter(c => c.box >= 2).sort((a,b)=>{
+    if(b.box !== a.box) return b.box - a.box;   // ボックス降順（Box7が先）
+    return a.dueDate - b.dueDate;               // 同一ボックスは期限が古い順
+  });
+  let fresh = due.filter(c => c.box < 2).sort((a,b)=>{
+    // 前回不正解の語(wrong>0)を、未習の語より先に出す
+    if((b.wrong>0) !== (a.wrong>0)) return (b.wrong>0) ? 1 : -1;
+    return a.createdAt - b.createdAt;           // 登録順（1番→2番→…）
+  });
+
+  // v2.2.0: 1日に投入する「まだ一度も正解していない語」の上限を適用。
+  // 復習分(Box2以上)と、前回不正解だった語は制限せず必ず出す。
+  const limit = STATE.settings.dailyNewLimit || 20;
+  const retry  = fresh.filter(c => c.wrong > 0);
+  const brand  = fresh.filter(c => c.wrong === 0).slice(0, limit);
+  fresh = retry.concat(brand);
+
+  return { queue: review.concat(fresh), review, retry, brand };
+}
+
+function startSession(){
+  const { queue } = buildQueue();
+  if(queue.length === 0){ toast('今日の学習は完了しています'); return; }
+  STATE.session = { queue, idx:0, revealed:false, correct:0, answered:0, done:false };
+  setView('study');
+}
+
+/* ---------------------------------------------------------------
+   学習画面（フラッシュカード）
+   --------------------------------------------------------------- */
+function viewStudy(){
+  const s = STATE.session;
+  if(!s){
+    return `<div class="empty">
+      <div class="big">🎴</div>
+      <p>ホームから学習を開始してください。</p>
+      <button class="btn btn-primary" onclick="setView('home')" style="max-width:240px;margin:12px auto 0">ホームへ</button>
+    </div>`;
+  }
+  if(s.done || s.idx >= s.queue.length){
+    const pct = s.answered ? Math.round(s.correct/s.answered*100) : 0;
+    return `<div class="empty">
+      <div class="big">🎉</div>
+      <p><b>お疲れさまでした。</b><br>${s.answered} 語を復習（正答率 ${pct}%）</p>
+      <button class="btn btn-primary" onclick="setView('home')" style="max-width:240px;margin:16px auto 0">ホームへ戻る</button>
+    </div>`;
+  }
+
+  const card = s.queue[s.idx];
+  const tagCls = card.type==='idiom' ? 'tag idiom' : 'tag';
+  const tagTxt = card.type==='idiom' ? '熟語' : '単語';
+
+  const front = `
+    <div class="card flash" id="flashCard">
+      <span class="${tagCls}">${tagTxt}</span>
+      <div class="term">${escapeHtml(card.term)}</div>
+      <div class="hint">タップして意味を表示</div>
+    </div>`;
+
+  // v1.1.0: 単語かつ品詞があれば裏面に品詞を表示
+  const posLabel = (card.type==='word' && card.pos)
+    ? `<div class="pos">${escapeHtml(card.pos)}</div>` : '';
+  // v1.6.0: 発音ボタン。onclick内で引用符が壊れないようattrEsc()でエスケープする。
+  const speakTerm = `<button class="speaker" onclick="speak('${attrEsc(card.term)}')" aria-label="単語を読み上げる">🔊</button>`;
+  const speakEx = card.example
+    ? `<button class="speaker small" onclick="speak('${attrEsc(card.example)}')" aria-label="例文を読み上げる">🔊</button>` : '';
+  const back = `
+    <div class="card flash">${cardBackInner(card)}
+    </div>
+    <div class="grade-row">
+      <button class="btn btn-bad" id="gradeNo">わからなかった</button>
+      <button class="btn btn-good" id="gradeYes">わかった</button>
+    </div>`;
+
+  return `
+  <div class="study-wrap">
+    <div class="progress-row">
+      <span>${s.idx+1} / ${s.queue.length}</span>
+      <span>Box ${card.box} ・ 正解 ${s.correct}</span>
+    </div>
+    ${ s.revealed ? back : front }
+  </div>`;
+}
+
+/* ---------------------------------------------------------------
+   単語管理画面
+   --------------------------------------------------------------- */
+let manageSearch = '';
+function viewManage(){
+  return `
+  <div class="section-title">単語・熟語（${STATE.cards.length}）</div>
+  <div class="toolbar">
+    <div class="search"><input type="text" id="searchBox" placeholder="検索（英語・意味・読み方）…" value="${escapeHtml(manageSearch)}"></div>
+    <button class="btn btn-primary small" onclick="openEdit(null)">＋ 追加</button>
+  </div>
+  <div class="toolbar">
+    <button class="btn btn-ghost small" onclick="openImport()" style="flex:1">📥 一括インポート</button>
+    <button class="btn btn-ghost small" onclick="openExport()" style="flex:1">📤 エクスポート</button>
+  </div>
+  <div class="word-list">
+    ${buildWordListHtml()}
+  </div>
+  <div class="foot">最終更新 ${LAST_UPDATED} ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* ---------------------------------------------------------------
+   設定画面（出題周期の設定 = ユーザー要望の核）
+   --------------------------------------------------------------- */
+function viewSettings(){
+  const rows = STATE.settings.intervals.map((d,i)=>`
+    <div class="interval-row">
+      <span class="lbl">Box ${i+1}</span>
+      <input type="number" min="0" step="1" value="${d}" data-box="${i}" class="interval-input">
+      <span class="unit">日後に再出題</span>
+    </div>`).join('');
+
+  return `
+  <div class="section-title">出題周期（間隔反復の設定）</div>
+  <div class="card pad">
+    <p class="note">各ボックスで正解したとき、次にその語が出題されるまでの日数です。Box1は当日中の再出題用に0を推奨。数字を変えて「保存」を押すと反映されます。</p>
+    ${rows}
+    <div style="margin-top:14px">
+      <button class="btn btn-primary" onclick="saveIntervals()">周期を保存</button>
+    </div>
+  </div>
+
+  <div class="section-title">1日の新規語数</div>
+  <div class="card pad">
+    <label class="fld">1日に新しく取り組む語数の上限</label>
+    <input type="number" min="1" step="1" id="dailyLimit" value="${STATE.settings.dailyNewLimit}">
+    <p class="note">まだ一度も正解していない語を、1日にこの数だけ投入します。復習分（Box2以上）と前回不正解だった語は、この上限とは別に必ず出題されます。</p>
+    <button class="btn btn-ghost small" onclick="saveDailyLimit()" style="margin-top:10px">保存</button>
+  </div>
+
+  <div class="section-title">アプリの更新</div>
+  <div class="card pad">
+    <p class="note" style="margin:0 0 10px">現在のバージョン: <b>v${APP_VERSION}</b>（${LAST_UPDATED}）</p>
+    <button class="btn btn-primary small" onclick="forceUpdate()" style="width:100%">🔄 最新版に更新する</button>
+    <p class="note">更新が反映されないときに押してください。学習履歴は消えません。</p>
+  </div>
+
+  <div class="section-title">データ</div>
+  <div class="card pad">
+    <button class="btn btn-primary small" onclick="openBackup()" style="width:100%;margin-bottom:8px">💾 バックアップ / 復元（学習履歴ごと）</button>
+    <p class="note" style="margin:0 0 12px">端末を変えるときや、万一データが消えたときのために保存できます。</p>
+    <button class="btn btn-ghost small" onclick="mergeBundledTranslations()" style="width:100%;margin-bottom:8px">🈁 既存の語の和訳・意味を最新に更新</button>
+    <button class="btn btn-ghost small" onclick="openExport()" style="width:100%;margin-bottom:8px">全データをエクスポート（テキスト）</button>
+    <button class="btn btn-ghost small" onclick="confirmReset()" style="width:100%;color:var(--bad);border-color:var(--bad-soft)">進捗をリセット（ボックスを初期化）</button>
+  </div>
+
+  <div class="foot">TOEIC 単語トレーナー ・ v${APP_VERSION}<br>最終更新 ${LAST_UPDATED}</div>
+  `;
+}
+
+/* ================================================================
+   v3.4.0: Part5 画面（改良版）
+   --------------------------------------------------------------
+   変更点:
+   1. 目安スコア(level)は問題ページに出さず、解説ページのみに表示。
+   2. 問題画面に20秒のタイマーバーを表示（目安のみ。経過しても
+      自動遷移や正誤確定はしない）。
+   3. 再出題ロジック（連続正解カウント方式）:
+        - 各問に streak（連続正解数）を持たせる。
+        - 3回連続正解で「卒業」（通常出題から外れる）。
+        - 不正解で streak を0にリセットし、同セッション内で再度出題。
+        - 正解で streak=1→翌学習日以降、2→3日後以降に再出題（分散学習）。
+        - 学習日は単語モードと同じ朝6時基準（dayStart/todayStart/addDays）。
+   4. 1セッション=10問に分割。330問→33セッション。
+   5. 卒業した問題は「卒業ボックス」画面でいつでも確認可能。
+   進捗は localStorage キー 'toeic-p5-progress' に保存:
+     { [id]: {streak, nextDue(学習日ts), graduated(bool)} }
+   ================================================================ */
+const P5_SESSION_SIZE = 10;         // 1セッションの問題数
+const P5_GRADUATE_STREAK = 3;       // 卒業に必要な連続正解数
+const P5_PROGRESS_KEY = 'toeic-p5-progress';
+
+let P5PROG = {};                    // id -> {streak, nextDue, graduated}
+
+function loadP5Progress(){
+  try{
+    const raw = localStorage.getItem(P5_PROGRESS_KEY);
+    P5PROG = raw ? JSON.parse(raw) : {};
+  }catch(e){ P5PROG = {}; }
+}
+function saveP5Progress(){
+  try{ localStorage.setItem(P5_PROGRESS_KEY, JSON.stringify(P5PROG)); }catch(e){}
+}
+function p5rec(id){
+  if(!P5PROG[id]) P5PROG[id] = { streak:0, nextDue:0, graduated:false };
+  return P5PROG[id];
+}
+
+/* ================================================================
+   v3.9.0: セッションごとの学習記録
+   ----------------------------------------------------------------
+   経緯:
+     ホーム画面のセッション一覧に「最後に学習した日」と「そのときの
+     正解数」を出したい、という要望から追加。
+   保存形式: localStorage 'toeic-p5-sessions'
+     { [sessionIdx]: { last:ts, correct:初回正解数, total:初回出題数,
+                       retry:復習した回数 } }
+   ※ correct/total は「初回に解いた分だけ」。復習(間違えた問題の
+     再挑戦)は含めない。含めると母数が毎回変わって比較できないため。
+   ================================================================ */
+const P5_SESSION_LOG_KEY = 'toeic-p5-sessions';
+let P5SLOG = {};
+function loadP5SessionLog(){
+  try{
+    const raw = localStorage.getItem(P5_SESSION_LOG_KEY);
+    P5SLOG = raw ? JSON.parse(raw) : {};
+  }catch(e){ P5SLOG = {}; }
+}
+function saveP5SessionLog(){
+  try{ localStorage.setItem(P5_SESSION_LOG_KEY, JSON.stringify(P5SLOG)); }catch(e){}
+}
+/* 「7/29」形式の短い日付。今日/昨日は文字で出す。 */
+function fmtShortDate(ts){
+  if(!ts) return '';
+  const t = todayStart();
+  const d = dayStart(ts);
+  if(d === t) return '今日';
+  if(d === addDays(t,-1)) return '昨日';
+  const dt = new Date(ts);
+  return `${dt.getMonth()+1}/${dt.getDate()}`;
+}
+
+/* セッション一覧（10問ずつ順番に区切る） */
+function p5Sessions(){
+  const qs = PART5.questions;
+  const sessions = [];
+  for(let i=0; i<qs.length; i += P5_SESSION_SIZE){
+    sessions.push(qs.slice(i, i + P5_SESSION_SIZE));
+  }
+  return sessions;
+}
+
+/* あるセッションの学習状況を集計 */
+function p5SessionStatus(sessionQs){
+  let grad=0, due=0, learning=0;
+  const today = todayStart();
+  sessionQs.forEach(q=>{
+    const r = p5rec(q.id);
+    if(r.graduated){ grad++; }
+    else if(r.streak>0 && r.nextDue>today){ learning++; }  // 正解済みで次回待ち
+    else { due++; }  // 未着手 or 今日出題対象
+  });
+  return { grad, due, learning, total:sessionQs.length };
+}
+
+function viewP5Home(){
+  const total = PART5.questions.length;
+  const sessions = p5Sessions();
+  // 全体の卒業数
+  let totalGrad = 0;
+  PART5.questions.forEach(q=>{ if(p5rec(q.id).graduated) totalGrad++; });
+
+  const sessionCards = sessions.map((sq,idx)=>{
+    const st = p5SessionStatus(sq);
+    const allGrad = st.grad === st.total;
+    const pct = Math.round(st.grad / st.total * 100);
+    // v3.9.0: 最後に学習した日と、そのときの正解数（初回分のみ）
+    const lg = P5SLOG[idx];
+    const logLine = lg
+      ? `<div class="p5-session-log">
+           <span class="p5-log-date">${fmtShortDate(lg.last)}</span>
+           <span class="p5-log-score">正解 <b>${lg.correct}/${lg.total}</b></span>
+           ${lg.retry ? `<span class="p5-log-retry">復習 ${lg.retry}問</span>` : ''}
+         </div>`
+      : `<div class="p5-session-log p5-log-none">まだ学習していません</div>`;
+    return `
+    <button class="p5-session ${allGrad?'p5-session-done':''}" onclick="startP5Session(${idx})">
+      <div class="p5-session-head">
+        <span class="p5-session-title">セッション ${idx+1}</span>
+        ${allGrad?'<span class="p5-session-badge">✓ 卒業</span>':`<span class="p5-session-count">${st.grad}/${st.total} 卒業</span>`}
+      </div>
+      <div class="p5-session-bar"><div class="p5-session-fill" style="width:${pct}%"></div></div>
+      ${logLine}
+    </button>`;
+  }).join('');
+
+  return `
+  <div class="card today">
+    <div class="due-num">${total}</div>
+    <div class="due-label">Part 5 問題 ・ 全${sessions.length}セッション</div>
+    <div class="sub" style="margin-top:6px">3回連続で正解すると卒業です</div>
+  </div>
+
+  <div class="section-title">卒業ボックス</div>
+  <div class="card pad">
+    <button class="btn btn-ghost small" onclick="setView('p5graduated')" style="width:100%">
+      🎓 卒業した問題を確認（${totalGrad}問）
+    </button>
+  </div>
+
+  <div class="section-title">セッションを選ぶ（各${P5_SESSION_SIZE}問）</div>
+  <div class="p5-session-list">
+    ${sessionCards}
+  </div>
+
+  <div class="foot">TOEIC Part5 演習 ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* セッション開始
+   出題対象: そのセッションの問題のうち「卒業していない」もの。
+   ただし streak>0 で nextDue が未来の問題は今回は除外（分散学習）。
+   全問が待機中/卒業なら、確認のため全未卒業問題を出す。 */
+function startP5Session(sessionIdx){
+  const sessions = p5Sessions();
+  const sq = sessions[sessionIdx];
+  if(!sq){ toast('セッションが見つかりません'); return; }
+  const today = todayStart();
+
+  let due = sq.filter(q=>{
+    const r = p5rec(q.id);
+    if(r.graduated) return false;
+    if(r.streak>0 && r.nextDue>today) return false; // 次回出題日待ち
+    return true;
+  });
+  // 今日出題できるものが無ければ、未卒業の全問を復習として出す
+  if(due.length === 0){
+    due = sq.filter(q=> !p5rec(q.id).graduated);
+    if(due.length === 0){ toast('このセッションはすべて卒業済みです🎓'); return; }
+    toast('本日の対象がないため復習として出題します');
+  }
+
+  // シャッフル
+  const qs = due.slice();
+  for(let i=qs.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [qs[i],qs[j]]=[qs[j],qs[i]]; }
+
+  P5STATE.sessionIdx = sessionIdx;
+  P5STATE.queue = qs;
+  P5STATE.idx = 0;
+  P5STATE.answered = false;
+  P5STATE.selected = null;
+  P5STATE.correct = 0;
+  P5STATE.answeredCount = 0;
+  P5STATE.done = false;
+  P5STATE.retryPool = [];   // 同セッション内で再挑戦する問題
+  // v3.9.0: 成績は「初回に解いた分」だけで数える。
+  //   復習(間違えた問題の再挑戦)まで数えると母数が毎回変わり、
+  //   セッション間で比較できなくなるため。
+  P5STATE.baseCount   = qs.length;   // このセッションで初回に出す問題数
+  P5STATE.firstCorrect= 0;           // うち初回で正解した数
+  P5STATE.seen        = [];          // 初回を解き終えた問題id
+  P5STATE.retryCount  = 0;           // 復習として解いた回数
+  P5STATE.round       = 0;           // 0=初回, 1以上=復習ラウンド
+  setView('p5quiz');
+}
+
+const P5_LEVEL_LABEL = {600:'600点レベル', 730:'730点レベル', 860:'860点レベル'};
+
+function viewP5Quiz(){
+  const s = P5STATE;
+  // 終了画面
+  if(s.done){
+    // v3.9.0: 復習(再挑戦)は成績に含めず、初回に解いた分だけで表示する
+    const rate = s.baseCount ? Math.round(s.firstCorrect / s.baseCount * 100) : 0;
+    return `
+    <div class="card today">
+      <div class="due-num">${s.firstCorrect}/${s.baseCount}</div>
+      <div class="due-label">正解数（正答率 ${rate}%）</div>
+      <div class="sub" style="margin-top:6px">セッション ${s.sessionIdx+1} 完了</div>
+      <div class="sub" style="margin-top:4px">
+        ${s.retryCount ? `このあと復習で ${s.retryCount}問 解き直しました（成績には含めていません）` : '間違いなし。復習はありませんでした'}
+      </div>
+      <div style="margin-top:16px">
+        <button class="btn btn-primary" onclick="setView('p5home')" style="width:100%">セッション一覧へ戻る</button>
+      </div>
+    </div>`;
+  }
+
+  const q = s.queue[s.idx];
+  // v3.9.0: 復習ラウンド（間違えた問題の解き直し）だと分かるようにする。
+  //   成績に入らないことも明示して、正答率の見え方に迷わないようにした。
+  const isReview = s.round > 0;
+  const progress = `${s.idx+1} / ${s.queue.length}`;
+  const reviewNote = isReview
+    ? `<div class="p5-review-note">🔁 復習：さきほど間違えた問題です<small>この回答は成績（正解数）には含まれません</small></div>`
+    : '';
+  const sentence = escapeHtml(q.sentence).replace('____', '<span class="p5-blank">____</span>');
+
+  const choices = q.choices.map((c,i)=>{
+    let cls = 'p5-choice';
+    if(s.answered){
+      if(i === q.answer) cls += ' p5-correct';
+      else if(i === s.selected) cls += ' p5-wrong';
+      else cls += ' p5-dim';
+    }
+    const mark = ['A','B','C','D'][i];
+    return `<button class="${cls}" ${s.answered?'disabled':''} onclick="answerP5(${i})">
+      <span class="p5-mark">${mark}</span>${escapeHtml(c)}
+    </button>`;
+  }).join('');
+
+  // タイマーバー（問題画面のみ・目安）
+  const timerBar = s.answered ? '' : `
+    <div class="p5-timer"><div class="p5-timer-fill" id="p5TimerFill"></div></div>
+    <div class="p5-timer-label">目安 20秒</div>`;
+
+  let explanation = '';
+  if(s.answered){
+    const r = p5rec(q.id);
+    const vocabRows = q.vocab.map(([w,m])=>
+      `<div class="p5-vocab-row"><span class="p5-vw">${escapeHtml(w)}</span><span class="p5-vm">${escapeHtml(m)}</span></div>`
+    ).join('');
+    const noteRows = q.choiceNotes.map((n,i)=>{
+      const mark = ['A','B','C','D'][i];
+      const isAns = i === q.answer;
+      return `<div class="p5-note ${isAns?'p5-note-correct':''}">
+        <span class="p5-note-mark">${mark}</span><span>${escapeHtml(n)}</span>
+      </div>`;
+    }).join('');
+    const isCorrect = s.selected === q.answer;
+    // 連続正解・卒業の状況表示
+    let streakMsg;
+    if(r.graduated){ streakMsg = '🎓 3回連続正解！この問題は卒業しました'; }
+    else if(isCorrect){ streakMsg = `連続正解 ${r.streak}/${P5_GRADUATE_STREAK}（あと${P5_GRADUATE_STREAK-r.streak}回で卒業）`; }
+    else { streakMsg = '不正解のため連続正解はリセット。このセッション内でもう一度出題します'; }
+
+    explanation = `
+    <div class="p5-result ${isCorrect?'ok':'ng'}">
+      ${isCorrect?'✓ 正解':'✗ 不正解'}　正解は ${['A','B','C','D'][q.answer]}：${escapeHtml(q.choices[q.answer])}
+    </div>
+    <div class="p5-streak">${streakMsg}</div>
+    <div class="p5-levelbox">目安スコア：${P5_LEVEL_LABEL[q.level]} ・ ${escapeHtml(q.category)}</div>
+    <div class="p5-section-title">解説</div>
+    <div class="p5-explain">${escapeHtml(q.explanation)}</div>
+    <div class="p5-section-title">各選択肢</div>
+    <div class="p5-notes">${noteRows}</div>
+    <div class="p5-section-title">問題文の頻出語</div>
+    <div class="p5-vocab">${vocabRows}</div>
+    <div class="p5-section-title">全文和訳</div>
+    <div class="p5-trans">${escapeHtml(q.translation)}</div>
+    <button class="btn btn-primary" onclick="nextP5()" style="width:100%;margin-top:16px">
+      ${ (s.idx+1 >= s.queue.length && s.retryPool.length === 0) ? '結果を見る'
+         : (s.idx+1 >= s.queue.length && s.retryPool.length > 0)
+           ? `🔁 復習へ（間違えた ${s.retryPool.length}問）`   /* v3.9.0: 次が復習だと分かるように */
+           : '次の問題へ' }
+    </button>`;
+  }
+
+  // 問題画面ではレベルを出さない（進捗のみ）
+  return `
+  <div class="p5-topbar ${isReview?'p5-topbar-review':''}">
+    <button class="p5-back" onclick="setView('p5home')">← 中断</button>
+    <span class="p5-progress">${isReview?'🔁 復習 ':''}${progress}</span>
+    <span class="p5-session-tag">セッション ${s.sessionIdx+1}</span>
+  </div>
+  ${reviewNote}
+  <div class="card pad p5-question ${isReview?'p5-question-review':''}">
+    ${timerBar}
+    <div class="p5-sentence">${sentence}</div>
+  </div>
+  <div class="p5-choices">${choices}</div>
+  ${explanation}
+  <div class="foot">TOEIC Part5 ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* タイマーバーのアニメーション開始（目安。経過しても何もしない）
+   v3.6.0: 秒数と対象要素を引数化し Part5/Part6 で共用。 */
+let quizTimerRAF = null;
+function startQuizTimer(durationSec, fillId){
+  cancelAnimationFrame(quizTimerRAF);
+  const fill = document.getElementById(fillId || 'p5TimerFill');
+  if(!fill) return;
+  const dur = (durationSec || 20) * 1000;
+  const start = performance.now();
+  function step(t){
+    const ratio = Math.min((t - start)/dur, 1);
+    fill.style.width = (100 - ratio*100) + '%';
+    if(ratio < 0.6) fill.style.background = 'var(--good)';
+    else if(ratio < 0.85) fill.style.background = 'var(--accent)';
+    else fill.style.background = 'var(--bad)';
+    if(ratio < 1) quizTimerRAF = requestAnimationFrame(step);
+  }
+  quizTimerRAF = requestAnimationFrame(step);
+}
+/* 後方互換 */
+function startP5Timer(){ startQuizTimer(20, 'p5TimerFill'); }
+
+function answerP5(i){
+  const s = P5STATE;
+  if(s.answered) return;
+  cancelAnimationFrame(quizTimerRAF);
+  s.selected = i;
+  s.answered = true;
+  s.answeredCount++;
+  const q = s.queue[s.idx];
+  const r = p5rec(q.id);
+  const isCorrect = (i === q.answer);
+  // v3.9.0: 成績集計は初回のみ。2回目以降(復習)はカウントしない。
+  if(s.seen.indexOf(q.id) === -1){
+    s.seen.push(q.id);
+    if(isCorrect) s.firstCorrect++;
+  }else{
+    s.retryCount++;
+  }
+  if(isCorrect){
+    s.correct++;
+    r.streak = (r.streak||0) + 1;
+    if(r.streak >= P5_GRADUATE_STREAK){
+      r.graduated = true;
+    }else{
+      // 正解: streak=1→翌学習日, 2→3日後 に再出題
+      const addN = (r.streak === 1) ? 1 : 3;
+      r.nextDue = addDays(todayStart(), addN);
+    }
+  }else{
+    r.streak = 0;
+    r.nextDue = 0;
+    // 不正解: 同セッション内で再挑戦（キュー末尾に積む）
+    s.retryPool.push(q);
+  }
+  saveP5Progress();
+  render();
+  const el = document.querySelector('.p5-result');
+  if(el) el.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+function nextP5(){
+  const s = P5STATE;
+  s.idx++;
+  s.answered = false;
+  s.selected = null;
+  // キューを進めきったら、不正解の再挑戦プールを次のキューにする
+  if(s.idx >= s.queue.length){
+    if(s.retryPool.length > 0){
+      const rp = s.retryPool.slice();
+      for(let i=rp.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [rp[i],rp[j]]=[rp[j],rp[i]]; }
+      s.queue = rp;
+      s.retryPool = [];
+      s.idx = 0;
+      s.round++;            // v3.9.0: ここから先は復習ラウンド
+    }else{
+      s.done = true;
+      // v3.9.0: セッションの成績を記録し、ホームに出せるようにする
+      P5SLOG[s.sessionIdx] = {
+        last: now(),
+        correct: s.firstCorrect,
+        total: s.baseCount,
+        retry: s.retryCount
+      };
+      saveP5SessionLog();
+    }
+  }
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* 卒業ボックス画面 */
+function viewP5Graduated(){
+  const grad = PART5.questions.filter(q=> p5rec(q.id).graduated);
+  const rows = grad.map(q=>{
+    const ans = q.choices[q.answer];
+    const sentence = escapeHtml(q.sentence).replace('____', `<span class="p5-blank">${escapeHtml(ans)}</span>`);
+    return `<div class="card pad p5-grad-item">
+      <div class="p5-grad-sentence">${sentence}</div>
+      <div class="p5-grad-meta">${P5_LEVEL_LABEL[q.level]} ・ ${escapeHtml(q.category)}</div>
+      <div class="p5-grad-trans">${escapeHtml(q.translation)}</div>
+    </div>`;
+  }).join('');
+  return `
+  <div class="p5-topbar">
+    <button class="p5-back" onclick="setView('p5home')">← 戻る</button>
+    <span class="p5-progress">🎓 卒業ボックス（${grad.length}問）</span>
+  </div>
+  ${ grad.length ? rows : '<div class="card pad"><p class="note" style="margin:0">まだ卒業した問題はありません。各問題を3回連続で正解すると、ここに追加されます。</p></div>' }
+  <div class="foot">TOEIC Part5 ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* ================================================================
+   v3.5.0: Part6 画面
+   ================================================================ */
+function p6Sessions(){
+  const docs = PART6.docs;
+  const sessions = [];
+  for(let i=0;i<docs.length;i+=P6_SESSION_DOCS){
+    sessions.push(docs.slice(i, i+P6_SESSION_DOCS));
+  }
+  return sessions;
+}
+function p6SessionStatus(sessionDocs){
+  let grad=0, due=0;
+  const today = todayStart();
+  sessionDocs.forEach(d=>{
+    const r = p6rec(d.id);
+    if(r.graduated) grad++;
+    else if(!(r.docStreak>0 && r.nextDue>today)) due++;
+  });
+  return { grad, due, total:sessionDocs.length };
+}
+
+function viewP6Home(){
+  const docs = PART6.docs;
+  const sessions = p6Sessions();
+  let totalGrad = 0;
+  docs.forEach(d=>{ if(p6rec(d.id).graduated) totalGrad++; });
+
+  const sessionCards = sessions.map((sd,idx)=>{
+    const st = p6SessionStatus(sd);
+    const allGrad = st.grad === st.total;
+    const pct = Math.round(st.grad / st.total * 100);
+    return `
+    <button class="p5-session ${allGrad?'p5-session-done':''}" onclick="startP6Session(${idx})">
+      <div class="p5-session-head">
+        <span class="p5-session-title">セッション ${idx+1}</span>
+        ${allGrad?'<span class="p5-session-badge">✓ 卒業</span>':`<span class="p5-session-count">${st.grad}/${st.total} 文書卒業</span>`}
+      </div>
+      <div class="p5-session-bar"><div class="p5-session-fill" style="width:${pct}%"></div></div>
+    </button>`;
+  }).join('');
+
+  return `
+  <div class="card today">
+    <div class="due-num">${docs.length}</div>
+    <div class="due-label">Part 6 文書（各4問）・ 全${sessions.length}セッション</div>
+    <div class="sub" style="margin-top:6px">1文書を3回連続で全問正解すると卒業です</div>
+  </div>
+
+  <div class="section-title">卒業ボックス</div>
+  <div class="card pad">
+    <button class="btn btn-ghost small" onclick="setView('p6graduated')" style="width:100%">
+      🎓 卒業した文書を確認（${totalGrad}文書）
+    </button>
+  </div>
+
+  <div class="section-title">セッションを選ぶ（各${P6_SESSION_DOCS}文書）</div>
+  <div class="p5-session-list">
+    ${sessionCards}
+  </div>
+
+  <div class="foot">TOEIC Part6 演習 ・ v${APP_VERSION}</div>
+  `;
+}
+
+function startP6Session(sessionIdx){
+  const sessions = p6Sessions();
+  const sd = sessions[sessionIdx];
+  if(!sd){ toast('セッションが見つかりません'); return; }
+  const today = todayStart();
+  let due = sd.filter(d=>{
+    const r = p6rec(d.id);
+    if(r.graduated) return false;
+    if(r.docStreak>0 && r.nextDue>today) return false;
+    return true;
+  });
+  if(due.length === 0){
+    due = sd.filter(d=> !p6rec(d.id).graduated);
+    if(due.length === 0){ toast('このセッションはすべて卒業済みです🎓'); return; }
+    toast('本日の対象がないため復習として出題します');
+  }
+  const dq = due.slice();
+  for(let i=dq.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [dq[i],dq[j]]=[dq[j],dq[i]]; }
+
+  P6STATE.sessionIdx = sessionIdx;
+  P6STATE.docQueue = dq;
+  P6STATE.docIdx = 0;
+  P6STATE.blankIdx = 0;
+  P6STATE.picks = [null,null,null,null];   // 各空所の選択（採点までは正誤を出さない）
+  P6STATE.graded = false;                  // 採点済みフラグ
+  P6STATE.explainIdx = 0;                  // 解説カードの表示位置
+  P6STATE.docCorrect = 0;                  // 現在の文書での正解数
+  P6STATE.sessionCorrect = 0;
+  P6STATE.sessionAnswered = 0;
+  P6STATE.retryDocs = [];
+  P6STATE.done = false;
+  setView('p6quiz');
+}
+
+/* 本文を組み立て、空所をハイライト。
+   mode='solving': 選択中フェーズ。選んだ空所は選択語を薄く表示、現在の空所は強調。
+   mode='result' : 採点後フェーズ。全空所に正解を埋め込む（固定表示）。 */
+function p6RenderPassage(doc, mode){
+  const s = P6STATE;
+  let html = escapeHtml(doc.passage);
+  for(let i=0;i<4;i++){
+    const marker = `[${i+1}]`;
+    const b = doc.blanks[i];
+    let rep;
+    if(mode === 'result'){
+      // 正解を埋め込む（文選択は「文N」と示す）
+      if(b.category === '文選択') rep = `<span class="p6-blank-filled">［文${i+1}］</span>`;
+      else rep = `<span class="p6-blank-filled">${escapeHtml(b.choices[b.answer])}</span>`;
+    }else{
+      // solving: 選択済みなら選んだ語、未選択は番号
+      const sel = s.picks[i];
+      if(sel !== undefined && sel !== null){
+        const word = (b.category === '文選択') ? `［文${i+1}］` : b.choices[sel];
+        const cls = (i === s.blankIdx) ? 'p6-blank-active' : 'p6-blank-chosen';
+        rep = `<span class="${cls}" onclick="gotoP6Blank(${i})">${escapeHtml(word)}</span>`;
+      }else if(i === s.blankIdx){
+        rep = `<span class="p6-blank-active" onclick="gotoP6Blank(${i})">（${i+1}）</span>`;
+      }else{
+        rep = `<span class="p6-blank-pending" onclick="gotoP6Blank(${i})">（${i+1}）</span>`;
+      }
+    }
+    html = html.replace(marker, rep);
+  }
+  return html.replace(/\n/g, '<br>');
+}
+
+function viewP6Quiz(){
+  const s = P6STATE;
+
+  // ---- セッション完了画面 ----
+  if(s.done){
+    const rate = s.sessionAnswered ? Math.round(s.sessionCorrect/s.sessionAnswered*100) : 0;
+    return `
+    <div class="card today">
+      <div class="due-num">${s.sessionCorrect}/${s.sessionAnswered}</div>
+      <div class="due-label">正解数（正答率 ${rate}%）</div>
+      <div class="sub" style="margin-top:6px">セッション ${s.sessionIdx+1} 完了</div>
+      <div style="margin-top:16px">
+        <button class="btn btn-primary" onclick="setView('p6home')" style="width:100%">セッション一覧へ戻る</button>
+      </div>
+    </div>`;
+  }
+
+  const doc = s.docQueue[s.docIdx];
+
+  // ================= 採点後フェーズ（結果画面） =================
+  if(s.graded){
+    const correctCount = doc.blanks.reduce((n,b,i)=> n + (s.picks[i]===b.answer?1:0), 0);
+    // 上部：正解入り本文（固定）
+    const passageHtml = p6RenderPassage(doc, 'result');
+    // 中央：空所ごとの解説カード（スワイプ）
+    const ei = s.explainIdx;
+    const b = doc.blanks[ei];
+    const picked = s.picks[ei];
+    const isCorrect = (picked === b.answer);
+    const noteRows = b.choiceNotes.map((n,i)=>{
+      const mark = ['A','B','C','D'][i];
+      let cls = 'p5-note';
+      if(i === b.answer) cls += ' p5-note-correct';
+      const youTag = (i === picked && i !== b.answer) ? '<span class="p6-your-pick">あなたの解答</span>' : '';
+      return `<div class="${cls}"><span class="p5-note-mark">${mark}</span><span>${escapeHtml(n)}${youTag}</span></div>`;
+    }).join('');
+    // ドット（現在の解説位置）
+    const dots = doc.blanks.map((bb,i)=>{
+      const ok = (s.picks[i]===bb.answer);
+      const active = (i===ei);
+      return `<button class="p6-dot ${active?'p6-dot-active':''} ${ok?'p6-dot-ok':'p6-dot-ng'}" onclick="setP6Explain(${i})">${i+1}</button>`;
+    }).join('');
+
+    const vocabRows = doc.vocab.map(([w,m])=>
+      `<div class="p5-vocab-row"><span class="p5-vw">${escapeHtml(w)}</span><span class="p5-vm">${escapeHtml(m)}</span></div>`
+    ).join('');
+
+    const lastDoc = (s.docIdx+1>=s.docQueue.length && s.retryDocs.length===0);
+
+    return `
+    <div class="p5-topbar">
+      <button class="p5-back" onclick="setView('p6home')">← 中断</button>
+      <span class="p5-progress">文書 ${s.docIdx+1}/${s.docQueue.length}</span>
+      <span class="p5-session-tag">セッション ${s.sessionIdx+1}</span>
+    </div>
+
+    <div class="p5-result ${correctCount===4?'ok':'ng'}" style="margin-bottom:12px">
+      この文書の正解数：${correctCount}/4${correctCount===4?'（全問正解！）':''}
+    </div>
+
+    <!-- 上部：正解入り本文（固定） -->
+    <div class="card pad p6-passage">
+      <div class="p6-doctype">${escapeHtml(doc.title)}・全問の正解</div>
+      <div class="p6-text">${passageHtml}</div>
+    </div>
+
+    <!-- 中央：空所ごとの解説（左右スワイプ） -->
+    <div class="p6-explain-head">
+      <span class="p6-explain-title">空所ごとの解説</span>
+      <span class="p6-swipe-hint">← スワイプで空所を切替 →</span>
+    </div>
+    <div class="p6-dots">${dots}</div>
+    <div class="p6-explain-card" id="p6ExplainCard">
+      <div class="p6-explain-top ${isCorrect?'ok':'ng'}">
+        空所（${ei+1}）　${isCorrect?'✓ 正解':'✗ 不正解'}　
+        正解は ${['A','B','C','D'][b.answer]}${picked!=null?`／あなたの解答 ${['A','B','C','D'][picked]}`:'／未選択'}
+      </div>
+      <div class="p5-levelbox">目安スコア：${P5_LEVEL_LABEL[b.level]} ・ ${escapeHtml(b.category)}</div>
+      <div class="p5-section-title">解説</div>
+      <div class="p5-explain">${escapeHtml(b.explanation)}</div>
+      <div class="p5-section-title">各選択肢</div>
+      <div class="p5-notes">${noteRows}</div>
+    </div>
+    <div class="p6-swipe-nav">
+      <button class="p6-nav-btn" ${ei===0?'disabled':''} onclick="setP6Explain(${ei-1})">← 前の空所</button>
+      <button class="p6-nav-btn" ${ei===3?'disabled':''} onclick="setP6Explain(${ei+1})">次の空所 →</button>
+    </div>
+
+    <!-- 下部：頻出語＋全文和訳（固定・共通） -->
+    <div class="p5-section-title">文書の頻出語</div>
+    <div class="p5-vocab">${vocabRows}</div>
+    <div class="p5-section-title">全文和訳</div>
+    <div class="p5-trans">${escapeHtml(doc.translation).replace(/\n/g,'<br>')}</div>
+
+    <button class="btn btn-primary" onclick="nextP6Doc()" style="width:100%;margin-top:16px">
+      ${ lastDoc ? '結果を見る' : '次の文書へ' }
+    </button>
+    <div class="foot">TOEIC Part6 ・ v${APP_VERSION}</div>
+    `;
+  }
+
+  // ================= 選択フェーズ（採点前） =================
+  const b = doc.blanks[s.blankIdx];
+  const passageHtml = p6RenderPassage(doc, 'solving');
+  const isSentence = (b.category === '文選択');
+  const choices = b.choices.map((c,i)=>{
+    let cls = 'p5-choice' + (isSentence ? ' p6-choice-sentence' : '');
+    if(s.picks[s.blankIdx] === i) cls += ' p6-choice-selected';  // 選択中を強調（正誤は出さない）
+    const mark = ['A','B','C','D'][i];
+    return `<button class="${cls}" onclick="pickP6(${i})">
+      <span class="p5-mark">${mark}</span>${escapeHtml(c)}
+    </button>`;
+  }).join('');
+
+  // 進捗ドット（選択済みか未選択か。正誤は出さない）
+  const dots = doc.blanks.map((bb,i)=>{
+    const chosen = (s.picks[i] !== undefined && s.picks[i] !== null);
+    const active = (i === s.blankIdx);
+    return `<button class="p6-dot ${active?'p6-dot-active':''} ${chosen?'p6-dot-chosen':''}" onclick="gotoP6Blank(${i})">${i+1}</button>`;
+  }).join('');
+
+  const allPicked = doc.blanks.every((bb,i)=> s.picks[i] !== undefined && s.picks[i] !== null);
+  const pickedCount = doc.blanks.filter((bb,i)=> s.picks[i] !== undefined && s.picks[i] !== null).length;
+
+  return `
+  <div class="p5-topbar">
+    <button class="p5-back" onclick="setView('p6home')">← 中断</button>
+    <span class="p5-progress">文書 ${s.docIdx+1}/${s.docQueue.length} ・ 空所 ${s.blankIdx+1}/4</span>
+    <span class="p5-session-tag">セッション ${s.sessionIdx+1}</span>
+  </div>
+  <div class="card pad p6-passage">
+    <div class="p6-doctype">${escapeHtml(doc.title)}</div>
+    <div class="p6-text">${passageHtml}</div>
+  </div>
+  <div class="p5-timer" style="margin-top:12px"><div class="p5-timer-fill" id="p6TimerFill"></div></div>
+  <div class="p5-timer-label">目安 30秒（1文書4問で約2分）</div>
+  <div class="p6-dots">${dots}</div>
+  <div class="p6-qlabel">空所（${s.blankIdx+1}）に入るもの${isSentence?'（文を選ぶ）':''}</div>
+  <div class="p5-choices">${choices}</div>
+  <div class="p6-solve-nav">
+    <button class="p6-nav-btn" ${s.blankIdx===0?'disabled':''} onclick="gotoP6Blank(${s.blankIdx-1})">← 前へ</button>
+    <button class="p6-nav-btn" ${s.blankIdx===3?'disabled':''} onclick="gotoP6Blank(${s.blankIdx+1})">次へ →</button>
+  </div>
+  <button class="btn ${allPicked?'btn-primary':'btn-ghost'}" onclick="gradeP6()" style="width:100%;margin-top:14px" ${allPicked?'':'disabled'}>
+    ${ allPicked ? '4問すべて採点する' : `あと${4-pickedCount}問で採点できます` }
+  </button>
+  <div class="foot">TOEIC Part6 ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* 選択肢を選ぶ（正誤は出さず記録のみ）。選んだら自動で次の空所へ進む。 */
+function pickP6(i){
+  const s = P6STATE;
+  s.picks[s.blankIdx] = i;
+  // まだ未選択の次の空所があれば自動で進む（無ければその場に留まる）
+  if(s.blankIdx < 3){
+    s.blankIdx++;
+  }
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* 空所間を自由に移動 */
+function gotoP6Blank(i){
+  const s = P6STATE;
+  if(s.graded) return;
+  if(i < 0 || i > 3) return;
+  s.blankIdx = i;
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* 4問まとめて採点 */
+function gradeP6(){
+  const s = P6STATE;
+  const doc = s.docQueue[s.docIdx];
+  if(!doc.blanks.every((b,i)=> s.picks[i] !== undefined && s.picks[i] !== null)){
+    toast('4問すべて選んでください'); return;
+  }
+  cancelAnimationFrame(quizTimerRAF);
+  // 集計
+  let correct = 0;
+  doc.blanks.forEach((b,i)=>{ if(s.picks[i]===b.answer) correct++; });
+  s.docCorrect = correct;
+  s.sessionCorrect += correct;
+  s.sessionAnswered += 4;
+  s.graded = true;
+  s.explainIdx = 0;   // 解説は空所1から
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* 解説カードの表示切替（スワイプ/ドット/ボタン共通） */
+function setP6Explain(i){
+  const s = P6STATE;
+  if(i < 0 || i > 3) return;
+  s.explainIdx = i;
+  render();
+}
+
+/* 採点結果を見終えて次の文書へ（卒業判定はここで行う） */
+function nextP6Doc(){
+  const s = P6STATE;
+  const doc = s.docQueue[s.docIdx];
+  const r = p6rec(doc.id);
+  const allCorrect = (s.docCorrect === 4);
+  if(allCorrect){
+    r.docStreak = (r.docStreak||0) + 1;
+    if(r.docStreak >= P6_GRADUATE_STREAK){
+      r.graduated = true;
+      toast('🎓 この文書を卒業しました！');
+    }else{
+      const addN = (r.docStreak === 1) ? 1 : 3;
+      r.nextDue = addDays(todayStart(), addN);
+    }
+  }else{
+    r.docStreak = 0;
+    r.nextDue = 0;
+    s.retryDocs.push(doc);
+    toast('全問正解ならず。この文書は後ほど再挑戦します');
+  }
+  saveP6Progress();
+  // 次の文書へ
+  s.docIdx++;
+  s.blankIdx = 0;
+  s.docCorrect = 0;
+  s.picks = [null,null,null,null];
+  s.graded = false;
+  s.explainIdx = 0;
+  if(s.docIdx >= s.docQueue.length){
+    if(s.retryDocs.length > 0){
+      const rd = s.retryDocs.slice();
+      for(let i=rd.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [rd[i],rd[j]]=[rd[j],rd[i]]; }
+      s.docQueue = rd; s.retryDocs = []; s.docIdx = 0;
+    }else{
+      s.done = true;
+    }
+  }
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function viewP6Graduated(){
+  const grad = PART6.docs.filter(d=> p6rec(d.id).graduated);
+  const rows = grad.map(d=>{
+    // 全空所を正解で埋めた本文（P6STATEに依存しない独立生成）
+    let html = escapeHtml(d.passage);
+    for(let i=0;i<4;i++){
+      const b = d.blanks[i];
+      const word = (b.category === '文選択') ? `［文${i+1}］` : b.choices[b.answer];
+      html = html.replace(`[${i+1}]`, `<span class="p6-blank-filled">${escapeHtml(word)}</span>`);
+    }
+    const passageHtml = html.replace(/\n/g,'<br>');
+    return `<div class="card pad p5-grad-item">
+      <div class="p6-doctype">${escapeHtml(d.title)}</div>
+      <div class="p6-text" style="font-size:13px">${passageHtml}</div>
+      <div class="p5-grad-trans">${escapeHtml(d.translation).replace(/\n/g,'<br>')}</div>
+    </div>`;
+  }).join('');
+  return `
+  <div class="p5-topbar">
+    <button class="p5-back" onclick="setView('p6home')">← 戻る</button>
+    <span class="p5-progress">🎓 卒業ボックス（${grad.length}文書）</span>
+  </div>
+  ${ grad.length ? rows : '<div class="card pad"><p class="note" style="margin:0">まだ卒業した文書はありません。1文書を3回連続で全問正解すると、ここに追加されます。</p></div>' }
+  <div class="foot">TOEIC Part6 ・ v${APP_VERSION}</div>
+  `;
+}
+
+/* ================================================================
+   動的イベントのバインド（render後に呼ぶ）
+   ================================================================ */
+function bindDynamic(){
+  const startBtn = document.getElementById('startStudy');
+  if(startBtn) startBtn.onclick = startSession;
+  const goManage = document.getElementById('goManage');
+  if(goManage) goManage.onclick = ()=> setView('manage');
+
+  // 学習: カードめくり / 採点
+  const flash = document.getElementById('flashCard');
+  if(flash) flash.onclick = ()=>{ STATE.session.revealed = true; render(); };
+  const gy = document.getElementById('gradeYes');
+  const gn = document.getElementById('gradeNo');
+  if(gy) gy.onclick = ()=> answer(true);
+  if(gn) gn.onclick = ()=> answer(false);
+
+  // 検索: v3.2.0 全体をrender()すると日本語IME変換中に入力欄が
+  // 作り直され、二重入力・変換不可・削除不良が起きる。
+  // そのため入力中はリスト部分(.word-list)のHTMLだけ差し替える。
+  const sb = document.getElementById('searchBox');
+  if(sb){
+    sb.oninput = ()=>{
+      manageSearch = sb.value;
+      const listEl = document.querySelector('.word-list');
+      if(listEl) listEl.innerHTML = buildWordListHtml();
+    };
+  }
+}
+
+/* v3.2.0: 単語一覧の中身(行)だけを生成する。検索の絞り込みで
+   入力欄を作り直さずに済むよう、リスト部分を関数として切り出した。
+   検索対象: 英単語 / 意味 / 例文 / 例文和訳 / 読み方(かな) */
+function buildWordListHtml(){
+  const q = (manageSearch||'').trim().toLowerCase();
+  const list = STATE.cards.filter(c=>{
+    if(!q) return true;
+    const hay = [
+      c.term, c.meaning, c.example, c.exampleJa, c.reading
+    ].filter(Boolean).join(' ').toLowerCase();
+    return hay.includes(q);
+  }).sort((a,b)=> b.createdAt - a.createdAt);
+  if(list.length === 0){
+    return `<div class="empty"><div class="big">📚</div><p>${manageSearch?'該当する語がありません':'まだ単語がありません。「＋ 追加」か「一括インポート」で登録しましょう。'}</p></div>`;
+  }
+  return list.map(c=>`
+    <div class="card word-item">
+      <div class="grow tappable" onclick="showWordDetail('${c.id}')">
+        <div class="wt">${escapeHtml(c.term)} ${c.type==='idiom'?'<span style="font-size:11px;color:var(--accent)">熟</span>':''}${tipsFor(c.term).length?'<span class="tip-badge">Tips</span>':''}</div>
+        <div class="wm">${(c.type==='word'&&c.pos)?`<span style="font-size:11px;font-weight:700;color:var(--primary)">${escapeHtml(c.pos)}</span> ・ `:''}${escapeHtml(c.meaning)}</div>
+      </div>
+      <span class="boxchip">B${c.box}</span>
+      <button class="iconbtn" onclick="openEdit('${c.id}')">✏️</button>
+      <button class="iconbtn" onclick="delCard('${c.id}')">🗑️</button>
+    </div>`).join('');
+}
+
+/* 採点処理 */
+async function answer(know){
+  const s = STATE.session;
+  const card = s.queue[s.idx];
+  grade(card, know);
+  // v2.6.0: 「今日解いた語」を後で振り返れるよう、最後に学習した
+  // 学習日と、そのときの正誤を記録する。
+  card.lastStudied = todayStart();
+  card.lastResult = know ? 'o' : 'x';
+  s.answered++;
+  if(know) s.correct++;
+
+  await saveCards(STATE.cards);
+  s.idx++;
+  s.revealed = false;
+  if(s.idx >= s.queue.length) s.done = true;
+  render();
+}
+
+/* ================================================================
+   モーダル（追加/編集・インポート・エクスポート）
+   ================================================================ */
+function openModal(html){
+  const bg = document.createElement('div');
+  bg.className = 'modal-bg';
+  bg.innerHTML = `<div class="modal">${html}</div>`;
+  bg.addEventListener('click', e=>{ if(e.target===bg) bg.remove(); });
+  document.body.appendChild(bg);
+  return bg;
+}
+function closeModal(){ const m=document.querySelector('.modal-bg'); if(m) m.remove(); }
+
+/* --- 追加 / 編集 --- */
+function openEdit(id){
+  STATE.editingId = id;
+  const c = id ? STATE.cards.find(x=>x.id===id) : null;
+  const html = `
+    <h3>${c?'単語を編集':'単語を追加'}</h3>
+    <label class="fld">英単語・熟語</label>
+    <input type="text" id="f_term" value="${c?escapeHtml(c.term):''}" placeholder="例: acquire">
+    <label class="fld">意味（日本語）</label>
+    <input type="text" id="f_meaning" value="${c?escapeHtml(c.meaning):''}" placeholder="例: 獲得する">
+    <div class="row2">
+      <div>
+        <label class="fld">種別</label>
+        <select id="f_type">
+          <option value="word" ${c&&c.type==='word'?'selected':''}>単語</option>
+          <option value="idiom" ${c&&c.type==='idiom'?'selected':''}>熟語</option>
+        </select>
+      </div>
+      <div>
+        <label class="fld">品詞（単語のみ）</label>
+        <select id="f_pos">
+          <option value="">—</option>
+          ${POS_OPTIONS.map(p=>`<option value="${p}" ${c&&c.pos===p?'selected':''}>${p}</option>`).join('')}
+        </select>
+      </div>
+    </div>
+    <label class="fld">例文（任意）</label>
+    <input type="text" id="f_example" value="${c?escapeHtml(c.example):''}" placeholder="例: We plan to acquire a firm.">
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal()">キャンセル</button>
+      <button class="btn btn-primary" onclick="saveEdit()">保存</button>
+    </div>`;
+  openModal(html);
+  setTimeout(()=>{ const t=document.getElementById('f_term'); if(t) t.focus(); },50);
+}
+async function saveEdit(){
+  const term = document.getElementById('f_term').value.trim();
+  const meaning = document.getElementById('f_meaning').value.trim();
+  const type = document.getElementById('f_type').value;
+  const pos = document.getElementById('f_pos').value;       // v1.1.0: 品詞
+  const example = document.getElementById('f_example').value.trim();
+  if(!term || !meaning){ toast('英語と意味は必須です'); return; }
+
+  if(STATE.editingId){
+    const c = STATE.cards.find(x=>x.id===STATE.editingId);
+    // 熟語のときは品詞を持たせない（データの一貫性を保つ）
+    if(c){ c.term=term; c.meaning=meaning; c.type=type; c.example=example; c.pos=(type==='word')?pos:''; }
+    toast('更新しました');
+  }else{
+    STATE.cards.push(makeCard(term, meaning, type, example, pos));
+    toast('追加しました');
+  }
+  await saveCards(STATE.cards);
+  closeModal();
+  render();
+}
+async function delCard(id){
+  if(!confirm('この単語を削除しますか？')) return;
+  STATE.cards = STATE.cards.filter(c=>c.id!==id);
+  await saveCards(STATE.cards);
+  render();
+  toast('削除しました');
+}
+
+/* --- 一括インポート ---
+   1行1語。区切りはタブ / カンマ。 英語, 意味, 種別(word|熟語/idiom), 例文
+   例:  acquire, 獲得する, word, We plan to acquire a firm.
+   最低限「英語, 意味」があれば登録可。 */
+function openImport(){
+  const html = `
+    <h3>まとめて追加</h3>
+
+    <p class="note" style="margin-top:2px">同梱データをワンタップで取り込みます（既存と同じ語は自動でスキップ）。</p>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-500.json')">TOEIC頻出500問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-1000.json')" style="margin-top:8px">追加1000問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-extra.json')" style="margin-top:8px">追加54問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-extra2.json')" style="margin-top:8px">法務・製造137問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-new1000.json')" style="margin-top:8px">新規1000問を追加</button>
+    <button class="btn btn-primary" onclick="loadBundled('./toeic-new2.json')" style="margin-top:8px">追加169問（第2弾）を追加</button>
+
+    <label class="fld" style="margin-top:16px">JSONファイルを読み込む</label>
+    <input type="file" id="jsonFile" accept=".json,application/json" onchange="handleJsonFile(this)">
+    <p class="note">形式: <code>[{"term":"acquire","meaning":"獲得する","pos":"動詞","example":"..."}, ...]</code>。term と meaning が必須、熟語は <code>"type":"idiom"</code>。重複はスキップされます。</p>
+
+    <label class="fld" style="margin-top:16px">JSONを貼り付けて取り込む</label>
+    <p class="note" style="margin-top:2px">AIに作らせたJSON（配列）をそのまま貼り付けられます。<code>\`\`\`json</code> の囲みが付いていても自動で除去します。</p>
+    <textarea id="jsonPaste" rows="6" placeholder='[{"term":"acquire","meaning":"獲得する","pos":"動詞","example":"They acquired a firm."}]'></textarea>
+    <button class="btn btn-primary" onclick="runJsonPaste()" style="margin-top:8px">JSONを取り込む</button>
+
+    <hr style="border:none;border-top:1px solid var(--line);margin:16px 0">
+
+    <label class="fld">またはテキストで貼り付け（CSV）</label>
+    <p class="note" style="margin-top:2px">1行1語。<b>英語 , 意味 , 品詞/種別 , 例文</b>（カンマ or タブ区切り）。3列目は品詞か idiom/熟語（省略可）。</p>
+    <textarea id="importText" rows="6" placeholder="acquire, 獲得する, 動詞, We plan to acquire a firm.
+comply with, 順守する, 熟語
+invoice, 請求書, 名詞"></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal()">閉じる</button>
+      <button class="btn btn-primary" onclick="runImport()">テキストを取り込む</button>
+    </div>`;
+  openModal(html);
+}
+
+/* テキスト貼り付けからの取り込み（従来） */
+async function runImport(){
+  const raw = document.getElementById('importText').value;
+  const lines = raw.split('\n').map(l=>l.trim()).filter(Boolean);
+  let added = 0;
+  for(const line of lines){
+    const parts = line.split(/\t|,/).map(p=>p.trim());
+    if(parts.length < 2 || !parts[0] || !parts[1]) continue;
+    // 3列目は「品詞 or 種別」。normalizeTypePosで判定する。
+    const { type, pos } = normalizeTypePos(parts[2]||'');
+    STATE.cards.push(makeCard(parts[0], parts[1], type, parts[3]||'', pos));
+    added++;
+  }
+  await saveCards(STATE.cards);
+  closeModal();
+  render();
+  toast(`${added} 語を取り込みました`);
+}
+
+/* ================================================================
+   v1.3.0: JSONによる一括取り込み
+   --------------------------------------------------------------
+   - オブジェクト配列を受け取り、term/meaning があるものをカード化。
+   - 既存カードと同じ term（大小無視）は重複としてスキップする。
+     → 同梱500問ボタンを二度押ししても増殖しない。
+   - 各要素: {term, meaning, type?, pos?, example?}
+     type は 'idiom' か 'word'（省略時は word）。
+   ================================================================ */
+async function importCardObjects(arr){
+  if(!Array.isArray(arr)){ toast('JSONの形式が配列ではありません'); return; }
+  const existing = new Set(STATE.cards.map(c => c.term.trim().toLowerCase()));
+  let added = 0, skipped = 0;
+  for(const o of arr){
+    if(!o || typeof o !== 'object'){ skipped++; continue; }
+    const term = String(o.term || o.word || '').trim();
+    const meaning = String(o.meaning || o.ja || '').trim();
+    if(!term || !meaning){ skipped++; continue; }
+    if(existing.has(term.toLowerCase())){ skipped++; continue; } // 重複スキップ
+    const type = (o.type === 'idiom' || o.type === '熟語') ? 'idiom' : 'word';
+    STATE.cards.push(makeCard(term, meaning, type, o.example || '', o.pos || '', o.exampleJa || o.example_ja || o.exampleJapanese || ''));
+    existing.add(term.toLowerCase());
+    added++;
+  }
+  await saveCards(STATE.cards);
+  closeModal();
+  render();
+  toast(`${added}問を追加${skipped ? `（${skipped}件スキップ）` : ''}`);
+}
+
+/* v1.4.0: 貼り付けたJSONテキストから取り込む。
+   AI出力に付きがちな ```json ... ``` の囲みは自動で除去する。 */
+async function runJsonPaste(){
+  let raw = (document.getElementById('jsonPaste').value || '').trim();
+  if(!raw){ toast('JSONが空です'); return; }
+  // コードフェンス（```json ... ```）を除去
+  raw = raw.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/,'').trim();
+  let arr;
+  try{ arr = JSON.parse(raw); }
+  catch(e){ console.warn('JSON貼り付け解析失敗:', e); toast('JSONを解析できませんでした（形式を確認）'); return; }
+  await importCardObjects(arr);
+}
+
+/* ================================================================
+   v1.8.0: 手動での強制更新
+   --------------------------------------------------------------
+   自動更新が効かない環境（iOSのホーム画面アプリ等）向けの逃げ道。
+   キャッシュを削除し Service Worker を登録解除してから再読み込みする。
+   localStorage には触れないため、学習履歴は保持される。
+   ================================================================ */
+async function forceUpdate(){
+  toast('最新版を確認しています…');
+  try{
+    // 1) キャッシュを全削除（学習データはlocalStorageなので影響なし）
+    if(window.caches){
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+    }
+    // 2) Service Worker を登録解除（次回読み込みで新規に取り直す）
+    if(navigator.serviceWorker){
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+    }
+  }catch(e){
+    console.warn('更新処理で問題:', e);
+  }
+  // 3) キャッシュ回避のためクエリを付けて再読み込み
+  const url = location.origin + location.pathname + '?u=' + Date.now();
+  location.replace(url);
+}
+
+/* ================================================================
+   v1.7.0: バックアップ / 復元（学習履歴ごと）
+   --------------------------------------------------------------
+   端末やブラウザを変えると localStorage は引き継がれないため、
+   カード内容だけでなく box / dueDate / 正誤回数まで含めて
+   JSONで書き出し・読み戻しできるようにする。
+   これがあれば履歴が消えても復旧できる。
+   ================================================================ */
+function openBackup(){
+  const data = JSON.stringify({
+    app: 'toeic-vocab',
+    version: APP_VERSION,
+    exportedAt: new Date().toISOString(),
+    settings: STATE.settings,
+    cards: STATE.cards
+  });
+  const html = `
+    <h3>バックアップと復元</h3>
+    <p class="note" style="margin-top:2px">学習の進み具合（ボックス・出題日・正誤回数）ごと保存できます。端末を変えるときや、万一データが消えたときの復旧に使います。</p>
+
+    <label class="fld">バックアップを保存</label>
+    <button class="btn btn-primary" onclick="downloadBackup()">ファイルに保存（${STATE.cards.length}語）</button>
+    <p class="note">保存したファイルはメールやクラウドに置いておくと安心です。</p>
+
+    <label class="fld" style="margin-top:16px">バックアップから復元</label>
+    <input type="file" id="restoreFile" accept=".json,application/json" onchange="handleRestoreFile(this)">
+    <p class="note" style="color:var(--bad)">※ 復元すると現在のデータはすべて置き換わります。</p>
+
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal()">閉じる</button>
+    </div>`;
+  openModal(html);
+  window.__backupData = data;
+}
+
+/* バックアップをファイルとしてダウンロード */
+function downloadBackup(){
+  try{
+    const blob = new Blob([window.__backupData || '{}'], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const d = new Date();
+    const stamp = `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;
+    a.href = url;
+    a.download = `toeic-backup-${stamp}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(()=> URL.revokeObjectURL(url), 1000);
+    toast('バックアップを保存しました');
+  }catch(e){
+    console.warn('バックアップ保存失敗:', e);
+    toast('保存できませんでした');
+  }
+}
+
+/* バックアップファイルから復元 */
+function handleRestoreFile(input){
+  const f = input.files && input.files[0];
+  if(!f) return;
+  const reader = new FileReader();
+  reader.onload = async ()=>{
+    try{
+      const obj = JSON.parse(reader.result);
+      const cards = Array.isArray(obj) ? obj : obj.cards;
+      if(!Array.isArray(cards)) throw new Error('cardsが配列ではありません');
+      if(!confirm(`${cards.length}語を復元します。現在のデータは置き換わります。よろしいですか？`)) return;
+      STATE.cards = cards;
+      if(obj.settings && Array.isArray(obj.settings.intervals)){
+        STATE.settings = Object.assign({}, DEFAULT_SETTINGS, obj.settings);
+        await saveSettings(STATE.settings);
+      }
+      await saveCards(STATE.cards);
+      closeModal();
+      render();
+      toast(`${cards.length}語を復元しました`);
+    }catch(e){
+      console.warn('復元失敗:', e);
+      toast('復元できませんでした（ファイルを確認）');
+    }
+  };
+  reader.readAsText(f);
+}
+
+/* ================================================================
+   v1.7.0: 既存カードへの和訳マージ
+   --------------------------------------------------------------
+   すでに登録済みのカードを消さずに、例文の和訳(exampleJa)だけを
+   後から追加・更新する。term をキーに突き合わせるため、
+   学習履歴（box/dueDate/正誤回数）は一切変更しない。
+   ================================================================ */
+async function mergeTranslations(arr){
+  if(!Array.isArray(arr)){ toast('JSONの形式が配列ではありません'); return; }
+  const map = new Map();
+  for(const o of arr){
+    if(!o || !o.term) continue;
+    const ja = o.exampleJa || o.example_ja || '';
+    if(ja) map.set(String(o.term).trim().toLowerCase(), { ja, ex: o.example || '' });
+  }
+  let updated = 0;
+  for(const c of STATE.cards){
+    const hit = map.get(c.term.trim().toLowerCase());
+    if(!hit) continue;
+    if(c.exampleJa !== hit.ja){
+      c.exampleJa = hit.ja;
+      if(!c.example && hit.ex) c.example = hit.ex; // 例文が無い場合のみ補う
+      updated++;
+    }
+  }
+  await saveCards(STATE.cards);
+  closeModal();
+  render();
+  toast(`${updated}件に和訳を追加しました`);
+}
+
+/* 同梱データから和訳・意味をマージ（学習履歴はそのまま）
+   v2.3.0: 例文の和訳に加え、意味(meaning)の更新にも対応。
+   カタカナだけの訳を日本語の説明入りに差し替えた際、既に端末へ
+   取り込み済みのカードにも反映できるようにするため。 */
+async function mergeBundledTranslations(){
+  let jaCount = 0, meanCount = 0, fixCount = 0;
+
+  // v2.4.0: 先にサンプル10語を正しい和訳へ修復する。
+  // 初期サンプルは和訳が空だったため、以前の版で和訳マージを行うと
+  // 同じ見出し語の別例文の訳が誤って付いていた。
+  for(const [t,,,ex,,ja] of SAMPLE_CARDS){
+    if(!ja) continue;
+    for(const c of STATE.cards){
+      if(c.term.trim().toLowerCase() === t.toLowerCase()
+         && c.example.trim() === ex.trim()
+         && c.exampleJa !== ja){
+        c.exampleJa = ja; fixCount++;
+      }
+    }
+  }
+
+  for(const url of ['./toeic-500.json', './toeic-1000.json', './toeic-extra.json',
+                    './toeic-extra2.json', './toeic-new1000.json', './toeic-new2.json']){
+    try{
+      const res = await fetch(url, { cache: 'no-store' });
+      if(!res.ok) continue;
+      const arr = await res.json();
+      const map = new Map();
+      for(const o of arr){
+        if(!o.term) continue;
+        map.set(String(o.term).trim().toLowerCase(), {
+          ja: o.exampleJa || o.example_ja || '',
+          meaning: o.meaning || '',
+          example: o.example || ''
+        });
+      }
+      for(const c of STATE.cards){
+        const hit = map.get(c.term.trim().toLowerCase());
+        if(!hit) continue;
+        // v2.4.0: 例文が一致する場合のみ和訳を付ける。
+        // 同じ見出し語でも例文が異なることがあり(例: on behalf of)、
+        // 無条件に付けると別の例文の訳が入ってしまうため。
+        const sameExample = c.example.trim() === (hit.example||'').trim();
+        if(hit.ja && sameExample && c.exampleJa !== hit.ja){ c.exampleJa = hit.ja; jaCount++; }
+        if(hit.meaning && c.meaning !== hit.meaning){ c.meaning = hit.meaning; meanCount++; }
+      }
+    }catch(e){ console.warn('マージ失敗:', url, e); }
+  }
+  await saveCards(STATE.cards);
+  closeModal();
+  render();
+  const msg = [];
+  if(jaCount) msg.push(`和訳${jaCount}件`);
+  if(meanCount) msg.push(`意味${meanCount}件`);
+  if(fixCount) msg.push(`誤訳${fixCount}件を修正`);
+  toast(msg.length ? `${msg.join(' / ')}を更新しました` : '更新はありませんでした');
+}
+
+/* 同梱JSON（相対パス）を取得して取り込む（ワンタップ）。
+   v1.5.0: 500問・1000問など複数ファイルに対応するため汎用化。 */
+async function loadBundled(url){
+  try{
+    const res = await fetch(url, { cache: 'no-store' });
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const arr = await res.json();
+    await importCardObjects(arr);
+  }catch(e){
+    console.warn('同梱ファイルの読み込み失敗:', url, e);
+    toast('ファイルを読み込めませんでした（配置を確認）');
+  }
+}
+async function loadBundled500(){ return loadBundled('./toeic-500.json'); }
+
+/* ユーザーが選んだ .json ファイルを読み込む */
+function handleJsonFile(input){
+  const f = input.files && input.files[0];
+  if(!f) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const arr = JSON.parse(reader.result);
+      importCardObjects(arr);
+    }catch(e){
+      console.warn('JSON解析失敗:', e);
+      toast('JSONを読み込めませんでした（形式を確認）');
+    }
+  };
+  reader.onerror = ()=> toast('ファイルの読み込みに失敗しました');
+  reader.readAsText(f);
+}
+
+/* --- エクスポート（バックアップ / 差し替え用） --- */
+function openExport(){
+  // v1.1.0: 3列目は 熟語→「熟語」/ 単語→品詞（無ければ word）。インポートと往復可能。
+  const text = STATE.cards.map(c=>{
+    const typeCol = c.type==='idiom' ? '熟語' : (c.pos || 'word');
+    return [c.term, c.meaning, typeCol, c.example].join(', ');
+  }).join('\n');
+  const html = `
+    <h3>エクスポート</h3>
+    <p class="note">下のテキストをコピーして保存できます。別端末やバックアップからの復元は「一括インポート」に貼り付けてください。</p>
+    <textarea id="exportText" rows="9" readonly>${escapeHtml(text)}</textarea>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal()">閉じる</button>
+      <button class="btn btn-primary" onclick="copyExport()">コピー</button>
+    </div>`;
+  openModal(html);
+}
+function copyExport(){
+  const ta = document.getElementById('exportText');
+  ta.select();
+  try{ document.execCommand('copy'); toast('コピーしました'); }catch(e){ toast('コピーに失敗'); }
+}
+
+/* ================================================================
+   設定の保存
+   ================================================================ */
+async function saveIntervals(){
+  const inputs = document.querySelectorAll('.interval-input');
+  const arr = [];
+  inputs.forEach(inp=>{
+    let v = parseInt(inp.value,10);
+    if(isNaN(v) || v<0) v = 0;
+    arr.push(v);
+  });
+  STATE.settings.intervals = arr;
+  await saveSettings(STATE.settings);
+  toast('周期を保存しました');
+  render();
+}
+async function saveDailyLimit(){
+  let v = parseInt(document.getElementById('dailyLimit').value,10);
+  if(isNaN(v)||v<1) v = 1;
+  STATE.settings.dailyNewLimit = v;
+  await saveSettings(STATE.settings);
+  toast('保存しました');
+}
+async function confirmReset(){
+  if(!confirm('すべての単語のボックスをBox1に戻し、すぐ復習できる状態にします。単語自体は削除されません。よろしいですか？')) return;
+  STATE.cards.forEach(c=>{ c.box=1; c.dueDate=now(); });
+  await saveCards(STATE.cards);
+  toast('進捗をリセットしました');
+  render();
+}
+
+/* ================================================================
+   ユーティリティ
+   ================================================================ */
+/* ================================================================
+   v1.6.0: 発音（音声読み上げ）
+   --------------------------------------------------------------
+   ブラウザ標準の Web Speech API を使用。追加ファイル・通信は不要で
+   オフラインでも動作する（端末内蔵の音声エンジンを利用）。
+   - 英語音声(en-US等)を優先して選択。無ければ既定の音声にフォールバック。
+   - 連打対策として、話す前に cancel() で直前の発話を止める。
+   - iOSは音声リストの読み込みが遅延することがあるため、
+     voiceschanged で再取得する。
+   ================================================================ */
+let VOICES = [];
+function loadVoices(){
+  try{ VOICES = window.speechSynthesis ? window.speechSynthesis.getVoices() : []; }
+  catch(e){ VOICES = []; }
+}
+if(typeof window !== 'undefined' && window.speechSynthesis){
+  loadVoices();
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+/* 英語の音声を選ぶ（en-US優先 → 任意のen → null=既定） */
+function pickEnglishVoice(){
+  if(!VOICES.length) loadVoices();
+  return VOICES.find(v => v.lang === 'en-US')
+      || VOICES.find(v => (v.lang||'').toLowerCase().startsWith('en'))
+      || null;
+}
+
+/* 読み上げ実行。ボタンのonclickから呼ばれる。 */
+function speak(text){
+  if(!text) return;
+  if(!('speechSynthesis' in window)){
+    toast('この端末では音声読み上げに対応していません');
+    return;
+  }
+  try{
+    window.speechSynthesis.cancel();          // 連打時に前の発話を止める
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    const v = pickEnglishVoice();
+    if(v) u.voice = v;
+    u.rate = 0.95;                            // やや遅めで聞き取りやすく
+    window.speechSynthesis.speak(u);
+  }catch(e){
+    console.warn('読み上げ失敗:', e);
+    toast('読み上げできませんでした');
+  }
+}
+
+/* onclick属性に文字列を埋め込む際のエスケープ（引用符・改行対策） */
+function attrEsc(s){
+  return String(s||'')
+    .replace(/\\/g,'\\\\')
+    .replace(/'/g,"\\'")
+    .replace(/"/g,'&quot;')
+    .replace(/\r?\n/g,' ');
+}
+
+function escapeHtml(s){
+  return String(s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+/* ナビのバインド */
+document.querySelectorAll('nav button').forEach(b=>{
+  b.addEventListener('click', ()=>{
+    if(b.dataset.view === 'study' && !STATE.session){
+      // 学習タブ直押しならセッション開始を試みる
+      startSession();
+    }else{
+      setView(b.dataset.view);
+    }
+  });
+});
+
+/* ================================================================
+   初期化
+   ================================================================ */
+async function init(){
+  STATE.settings = await loadSettings();
+  await loadRelations();     // v2.6.0: 派生語・語源解説データを読み込む
+  await loadPart5();         // v3.3.0: Part5問題データを読み込む
+  await loadPart6();         // v3.5.0: Part6問題データを読み込む
+  let cards = await loadCards();
+  if(cards === null){
+    // 初回起動: サンプル投入
+    cards = SAMPLE_CARDS.map(([t,m,ty,ex,pos,ja])=> makeCard(t,m,ty,ex,pos,ja));
+    await saveCards(cards);
+  }
+  STATE.cards = cards;
+  setView('home');
+}
+
+/* ================================================================
+   v3.3.0: Part5モード
+   --------------------------------------------------------------
+   単語モード / Part5モード をヘッダー左上のボタンで切り替える。
+   Part5は文法・品詞・語彙の空所補充問題。1問ずつ4択で解答し、
+   解説・各選択肢の説明・頻出語・全文和訳を表示する。
+   ================================================================ */
+const PART5 = { questions: [] };
+const P5STATE = { sessionIdx:0, queue:[], idx:0, answered:false, selected:null, correct:0, answeredCount:0, done:false, retryPool:[],
+                  /* v3.9.0: 成績は初回分のみで集計する */
+                  baseCount:0, firstCorrect:0, seen:[], retryCount:0, round:0 };
+
+async function loadPart5(){
+  loadP5Progress();      // v3.4.0: 再出題の進捗を読み込む
+  loadP5SessionLog();    // v3.9.0: セッションごとの学習記録を読み込む
+  try{
+    const res = await fetch('./part5.json', { cache:'no-store' });
+    if(res.ok) PART5.questions = await res.json();
+  }catch(e){ console.warn('Part5データの読み込み失敗:', e); }
+}
+
+/* ================================================================
+   v3.5.0: Part6 モード
+   --------------------------------------------------------------
+   1文書＝4空所。文脈を踏まえて各空所を4択で解く（文選択問題含む）。
+   卒業・再出題は「文書単位」:
+     - 4問すべて正解できた回を1カウント（docStreak）。
+     - 3回連続で全問正解したら文書ごと卒業。
+     - 1問でも間違えたら docStreak を0にリセットし、同セッション内で
+       その文書を再挑戦。
+     - 全問正解1回→翌学習日、2回→3日後に再出題（朝6時基準）。
+   1セッション＝3文書（12問）。
+   進捗は localStorage('toeic-p6-progress') に保存:
+     { [docId]: {docStreak, nextDue, graduated} }
+   ================================================================ */
+const PART6 = { docs: [] };
+const P6_SESSION_DOCS = 3;          // 1セッションの文書数
+const P6_GRADUATE_STREAK = 3;       // 卒業に必要な連続全問正解数
+const P6_PROGRESS_KEY = 'toeic-p6-progress';
+let P6PROG = {};
+const P6STATE = { sessionIdx:0, docQueue:[], docIdx:0, blankIdx:0,
+                  picks:[null,null,null,null], graded:false, explainIdx:0,
+                  docCorrect:0, sessionCorrect:0, sessionAnswered:0,
+                  retryDocs:[], done:false };
+
+function loadP6Progress(){
+  try{ const raw=localStorage.getItem(P6_PROGRESS_KEY); P6PROG = raw?JSON.parse(raw):{}; }
+  catch(e){ P6PROG={}; }
+}
+function saveP6Progress(){
+  try{ localStorage.setItem(P6_PROGRESS_KEY, JSON.stringify(P6PROG)); }catch(e){}
+}
+function p6rec(id){
+  if(!P6PROG[id]) P6PROG[id]={ docStreak:0, nextDue:0, graduated:false };
+  return P6PROG[id];
+}
+async function loadPart6(){
+  loadP6Progress();
+  try{
+    const res = await fetch('./part6.json', { cache:'no-store' });
+    if(res.ok) PART6.docs = await res.json();
+  }catch(e){ console.warn('Part6データの読み込み失敗:', e); }
+}
+
+/* v3.6.0: モード選択メニュー（単語/Part5/Part6の選択式） */
+function toggleModeMenu(){
+  const m = document.getElementById('modeMenu');
+  if(m) m.style.display = (m.style.display === 'none') ? 'flex' : 'none';
+}
+function selectMode(mode){
+  // v3.8.0: シャドーイングは別ページ。音声再生の状態管理を単語学習と
+  // 混ぜないため、モードを切り替えるのではなく画面ごと移動する。
+  if(mode === 'shadow'){ location.href = './shadowing.html'; return; }
+  STATE.mode = mode;
+  const m = document.getElementById('modeMenu');
+  if(m) m.style.display = 'none';
+  updateModeUI();
+  if(mode === 'part5') setView('p5home');
+  else if(mode === 'part6') setView('p6home');
+  else setView('home');
+}
+/* メニュー外タップで閉じる */
+document.addEventListener('click', (e)=>{
+  const wrap = document.querySelector('.mode-wrap');
+  const menu = document.getElementById('modeMenu');
+  if(menu && menu.style.display !== 'none' && wrap && !wrap.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+
+function updateModeUI(){
+  const label = document.getElementById('modeLabel');
+  const title = document.getElementById('appTitle');
+  const nav = document.querySelector('nav');
+  if(STATE.mode === 'part5'){
+    if(label) label.textContent = 'Part 5';
+    if(title) title.textContent = 'TOEIC Part5 演習';
+    if(nav) nav.style.display = 'none';
+  }else if(STATE.mode === 'part6'){
+    if(label) label.textContent = 'Part 6';
+    if(title) title.textContent = 'TOEIC Part6 演習';
+    if(nav) nav.style.display = 'none';
+  }else{
+    if(label) label.textContent = '単語';
+    if(title) title.textContent = 'TOEIC 単語トレーナー';
+    if(nav) nav.style.display = '';
+  }
+}
+init();
+
+/* ================================================================
+   v2.6.0: 派生語ファミリー・語源解説の読み込み
+   --------------------------------------------------------------
+   word-relations.json から以下を読み込む:
+     - family: 各語 → 同じ語根の派生語リスト（品詞つき）
+     - etymology: 意味が派生・変化した語の解説文
+     - tips (v3.7.0): 使い分け／意味のつながりの解説（1件に複数語を紐づけ）
+   カード裏で関連語を並べ、見出し語タップで解説ポップアップを出す。
+   ================================================================ */
+const RELATIONS = { family:{}, etymology:{}, tips:[], tipIndex:{} };
+async function loadRelations(){
+  try{
+    const res = await fetch('./word-relations.json', { cache:'no-store' });
+    if(res.ok){
+      const j = await res.json();
+      RELATIONS.family = j.family || {};
+      RELATIONS.etymology = j.etymology || {};
+      RELATIONS.tips = j.tips || [];
+      // v3.7.0: 語 → Tips[] の索引を組み立てる。
+      // 1件のTipsを複数語に紐づけているため、ここで逆引きを作る。
+      const idx = {};
+      for(const t of RELATIONS.tips){
+        for(const w of (t.terms||[])){
+          const k = String(w).trim().toLowerCase();
+          (idx[k] = idx[k] || []).push(t);
+        }
+      }
+      RELATIONS.tipIndex = idx;
+    }
+  }catch(e){ console.warn('関連語データの読み込み失敗:', e); }
+}
+
+/* ================================================================
+   PWA: Service Worker 登録（v1.8.0で更新検知を強化）
+   --------------------------------------------------------------
+   経緯:
+     iOSのホーム画面アプリで古いキャッシュが返り続け、アプリが
+     更新されない問題が発生した。以下で確実に最新へ切り替える:
+       - updateViaCache:'none' … SW本体をHTTPキャッシュから読まない
+       - registration.update() … 起動のたびに新版の有無を確認
+       - updatefound → 新SWが待機したら即 SKIP_WAITING を送る
+       - controllerchange → 制御が新SWに移ったら1度だけ自動リロード
+   ================================================================ */
+if('serviceWorker' in navigator){
+  let reloading = false;
+  // 新しいSWが制御を取ったらページを1度だけ再読み込みして反映
+  navigator.serviceWorker.addEventListener('controllerchange', ()=>{
+    if(reloading) return;
+    reloading = true;
+    window.location.reload();
+  });
+
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' })
+      .then((reg)=>{
+        console.log('[PWA] Service Worker 登録済み');
+
+        // 待機中の新版があればすぐ切り替える
+        if(reg.waiting) reg.waiting.postMessage('SKIP_WAITING');
+
+        // 新版が見つかったら、インストール完了時点で切り替える
+        reg.addEventListener('updatefound', ()=>{
+          const sw = reg.installing;
+          if(!sw) return;
+          sw.addEventListener('statechange', ()=>{
+            if(sw.state === 'installed' && navigator.serviceWorker.controller){
+              sw.postMessage('SKIP_WAITING');
+            }
+          });
+        });
+
+        // 起動時とアプリ復帰時に更新を確認
+        reg.update().catch(()=>{});
+        document.addEventListener('visibilitychange', ()=>{
+          if(document.visibilityState === 'visible') reg.update().catch(()=>{});
+        });
+      })
+      .catch(err=> console.warn('[PWA] Service Worker 登録失敗（file://等では正常）', err));
+  });
+}
+</script>
+</body>
+</html>

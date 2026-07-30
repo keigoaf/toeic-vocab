@@ -2,8 +2,36 @@
 <!--
 ====================================================================
   TOEIC シャドーイング (TOEIC Shadowing Trainer)
-  ファイル最終更新日時: 2026-07-29 14:20 (JST)
-  バージョン: 1.0.0
+  ファイル最終更新日時: 2026-07-30 09:40 (JST)
+  バージョン: 1.2.0
+--------------------------------------------------------------------
+  【更新履歴】
+    v1.2.0 (2026-07-30 09:40 JST)
+      - 【不具合修正】下にスクロールすると、画面下に固定しているはずの
+        操作バーが画面の途中に取り残される（上部ヘッダーも上に張り付か
+        なくなる）問題を修正。
+        原因: 文が変わるたびに scrollIntoView({behavior:'smooth'}) を
+        呼んでいたため、iOS Safari でこのなめらかスクロールの最中に
+        指で手動スクロールするとスクロール処理の状態が壊れ、
+        position:fixed / sticky の要素が再配置されなくなっていた。
+        対策: 自動スクロールを autoScrollTo() に作り直し、
+          ①手動操作の直後4秒は自動スクロールしない
+          ②その文がすでに見えているなら動かさない
+          ③動かす場合もヘッダーと操作バーに隠れない範囲の中央へ寄せる
+          ④設定から自動スクロール自体をオフにできる
+        あわせて header / .dock を translateZ(0) で独立した描画レイヤーに
+        載せ、.app に min-height:100vh を付けて index.html と構成を揃えた。
+    v1.1.0 (2026-07-29 18:00 JST)
+      - 教材を5本から30本に増補（shadowing.json も v1.1.0）。
+      - 最後まで読み終わったあと▶︎を押すと、最終文だけが読まれて
+        終わってしまっていた不具合を修正。読了時に再生位置を先頭へ
+        戻すようにした（finish内）。
+      - 教材が30本になり一覧が長くなったため、レベル(600/730/860)と
+        形式(アナウンス/会話 など)で絞り込めるようにした。
+      - 会話素材(Part3想定)を追加。話者記号 sp を画面に表示し、
+        話者ごとに声の高さ(pitch)を変えて聞き分けやすくした。
+        sp は読み上げ文には含めない（含めると「M」と発音されるため）。
+    v1.0.0 (2026-07-29 14:20 JST) 初版
   ファイル: shadowing.html  （教材データ: shadowing.json）
 --------------------------------------------------------------------
   【作成の意図 / 経緯】
@@ -72,10 +100,15 @@
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:var(--font-jp);}
   body{padding-bottom:calc(150px + env(safe-area-inset-bottom));}
-  .app{max-width:640px;margin:0 auto;}
+  /* v1.2.0: 正常に動いている index.html と同じ構成に合わせる
+     （本文が短いときでもページ高さを確保し、固定要素の基準を安定させる） */
+  .app{max-width:640px;margin:0 auto;min-height:100vh;}
 
+  /* v1.2.0: iOSで固定要素が再配置されない不具合の対策として、
+     translateZ(0) で独立した描画レイヤーに載せておく */
   header{position:sticky;top:0;z-index:30;background:var(--primary);color:#fff;
-    padding:calc(10px + env(safe-area-inset-top)) 14px 10px;display:flex;align-items:center;gap:10px;}
+    padding:calc(10px + env(safe-area-inset-top)) 14px 10px;display:flex;align-items:center;gap:10px;
+    transform:translateZ(0);-webkit-backface-visibility:hidden;}
   header h1{font-size:16px;margin:0;font-weight:800;flex:1;}
   .backlink{background:rgba(255,255,255,.18);color:#fff;border:none;border-radius:9px;
     padding:6px 10px;font-size:12px;font-weight:700;font-family:inherit;cursor:pointer;}
@@ -105,6 +138,17 @@
   .sent:active{border-color:var(--line);}
   .sent .en{font-family:var(--font-en);font-size:17px;line-height:1.95;}
   .sent .ja{font-size:12.5px;color:var(--ink-soft);line-height:1.7;margin-top:5px;}
+  /* v1.1.0: 会話素材の話者ラベル。読み上げには含めず表示のみ */
+  .sp{display:inline-block;min-width:20px;text-align:center;font-size:10px;font-weight:800;
+    border-radius:5px;padding:1px 5px;margin-right:7px;vertical-align:2px;font-family:var(--font-jp);}
+  .sp-M{background:var(--primary-soft);color:var(--primary);}
+  .sp-W{background:var(--accent-soft);color:#B36A16;}
+  /* v1.1.0: 一覧の絞り込み */
+  .filters{display:flex;flex-direction:column;gap:7px;margin-bottom:12px;}
+  .frow{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;-webkit-overflow-scrolling:touch;}
+  .fchip{white-space:nowrap;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);
+    border-radius:99px;padding:6px 12px;font-size:12px;font-weight:800;font-family:inherit;cursor:pointer;}
+  .fchip.on{background:var(--primary);border-color:var(--primary);color:#fff;}
   .sent.active{background:var(--primary-soft);border-color:var(--primary);}
   /* 語ハイライト: 読んでいる語 / 読み終わった語 */
   .w{border-radius:4px;padding:1px 0;}
@@ -121,7 +165,9 @@
   /* ---- 操作パネル（画面下固定） ---- */
   .dock{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);
     border-top:1px solid var(--line);box-shadow:0 -3px 16px rgba(23,34,59,.10);
-    padding:9px 12px calc(9px + env(safe-area-inset-bottom));}
+    padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+    /* v1.2.0: 同上。iOSでの再配置漏れを防ぐ */
+    transform:translateZ(0);-webkit-backface-visibility:hidden;will-change:transform;}
   .dock-in{max-width:640px;margin:0 auto;}
   .row{display:flex;gap:8px;align-items:center;}
   .row + .row{margin-top:8px;}
@@ -182,8 +228,8 @@
    起動時にコンソールへ最初に出力し、ヘッダー右にも出す。
    どの版を動かしているか後から確認できるようにするため。
    ================================================================ */
-const APP_VERSION  = "1.0.0";
-const LAST_UPDATED = "2026-07-29 14:20 JST";
+const APP_VERSION  = "1.2.0";
+const LAST_UPDATED = "2026-07-30 09:40 JST";
 console.log(`%c[TOEICシャドーイング] 最終更新日時: ${LAST_UPDATED} / version ${APP_VERSION}`,
             "color:#2F4BC4;font-weight:bold;");
 
@@ -197,6 +243,7 @@ const DEFAULTS = {
   showJa: true,     // 和訳を表示するか
   wordHL: true,     // 語単位でハイライトするか（OFFなら文だけ光る）
   gap: 0,           // 文と文の間に入れる無音（ミリ秒）
+  autoScroll: true, // v1.2.0: 読んでいる文まで自動でスクロールするか
   repeat: 1,        // 各文を何回読むか
   loop: false,      // 最後まで行ったら先頭に戻るか
   msPerChar: 58,    // 推定ハイライト用の校正値（端末ごとに学習）
@@ -217,6 +264,9 @@ let gen = 0;                // 発話の世代番号（中断された発話を�
 let uttStart = 0;
 let panelOpen = false;
 let stepPreset = '';        // 選択中の練習ステップ
+/* v1.1.0: 教材が30本になったので一覧を絞り込めるようにする */
+let fLevel = 'all';        // 'all' | '600' | '730' | '860'
+let fKind  = 'all';        // 'all' | 'talk'(モノローグ) | 'conv'(会話)
 
 function loadCfg(){
   try{
@@ -288,7 +338,29 @@ function renderList(){
       <b>shadowing.json</b> を index.html と同じフォルダに置いてください。</p></div>`;
     return;
   }
-  const items = PASSAGES.map(p=>{
+  // 会話素材かどうか（話者記号を持つ文があるか）で判定
+  const isConv = p => p.sentences.some(x=>x.sp);
+  const shown = PASSAGES.filter(p=>
+    (fLevel==='all' || String(p.level)===fLevel) &&
+    (fKind==='all'  || (fKind==='conv' ? isConv(p) : !isConv(p)))
+  );
+  const chip = (cur,val,label,fn)=>
+    `<button class="fchip ${cur===val?'on':''}" onclick="${fn}('${val}')">${label}</button>`;
+  const filters = `
+    <div class="filters">
+      <div class="frow">
+        ${chip(fLevel,'all','すべて '+PASSAGES.length+'本','setFLevel')}
+        ${chip(fLevel,'600','600点','setFLevel')}
+        ${chip(fLevel,'730','730点','setFLevel')}
+        ${chip(fLevel,'860','860点','setFLevel')}
+      </div>
+      <div class="frow">
+        ${chip(fKind,'all','形式すべて','setFKind')}
+        ${chip(fKind,'talk','ひとり語り','setFKind')}
+        ${chip(fKind,'conv','会話','setFKind')}
+      </div>
+    </div>`;
+  const items = shown.map(p=>{
     const lg = LOG[p.id];
     return `<div class="pitem" onclick="open_('${p.id}')">
       <div class="pt">${esc(p.title)}</div>
@@ -312,12 +384,16 @@ function renderList(){
         教材を開くと、この4ステップをワンタップで切り替えられます。
       </p>
     </div>
-    <div class="plist">${items}</div>
+    ${filters}
+    <div class="plist">${items || '<div class="empty">該当する教材がありません</div>'}</div>
     <div class="card"><p class="note">
       音声は端末内蔵の音声合成を使っています（音声ファイルの通信なし・オフラインでも動作）。
       声の種類は下の⚙️から選べます。端末に英語音声が入っていないと再生できません。
     </p></div>`;
 }
+
+function setFLevel(v){ fLevel = v; renderList(); }
+function setFKind(v){  fKind  = v; renderList(); }
 
 function open_(id){
   cur = PASSAGES.find(p=>p.id===id);
@@ -390,8 +466,10 @@ function renderScript(){
     if(i===curIdx) cls.push('active');
     if(!CFG.showEn) cls.push('hidden-en');
     const en = CFG.wordHL ? tokenHtml(s.en, i) : esc(s.en);
+    // v1.1.0: 会話素材は話者ラベルを英文の前に出す（読み上げ対象外）
+    const spTag = s.sp ? `<span class="sp sp-${esc(s.sp)}">${esc(s.sp)}</span>` : '';
     return `<div class="${cls.join(' ')}" id="s${i}" onclick="jump(${i})">
-      <div class="en">${en}</div>
+      <div class="en">${spTag}${en}</div>
       ${CFG.showJa ? `<div class="ja">${esc(s.ja)}</div>` : ''}
     </div>`;
   }).join('');
@@ -452,6 +530,11 @@ function renderDock(){
       <div class="seg">
         ${[0,1000,2000,3000].map(g=>`<button class="${CFG.gap===g?'on':''}" onclick="setGap(${g})">${g===0?'なし':(g/1000)+'秒'}</button>`).join('')}
       </div>
+      <div class="flabel">自動スクロール</div>
+      <div class="seg">
+        <button class="${CFG.autoScroll?'on':''}" onclick="setAuto(true)">読んでいる文を追う</button>
+        <button class="${!CFG.autoScroll?'on':''}" onclick="setAuto(false)">動かさない</button>
+      </div>
       <div class="flabel">各文をくり返す回数</div>
       <div class="seg">
         ${[1,2,3].map(n=>`<button class="${CFG.repeat===n?'on':''}" onclick="setRep(${n})">${n}回</button>`).join('')}
@@ -484,6 +567,7 @@ function setRate(v){
 }
 function setHL(b){ CFG.wordHL=b; saveCfg(); document.getElementById('script').innerHTML=renderScript(); renderDock(); }
 function setGap(g){ CFG.gap=g; saveCfg(); renderDock(); }
+function setAuto(b){ CFG.autoScroll=b; saveCfg(); renderDock(); }
 function setRep(n){ CFG.repeat=n; saveCfg(); renderDock(); }
 
 /* ================================================================
@@ -577,7 +661,9 @@ function speakSentence(i){
   u.lang = 'en-US';
   const v = pickVoice(); if(v) u.voice = v;
   u.rate = CFG.rate;
-  u.pitch = 1.0;
+  // v1.1.0: 声は1種類しか使えないので、会話素材は話者で高さを変えて
+  //         聞き分けられるようにする（読み上げ文自体は変えない）
+  u.pitch = s.sp === 'W' ? 1.18 : (s.sp === 'M' ? 0.82 : 1.0);
 
   boundaryMode = false;
   const toks = tokenize(s.en);
@@ -625,6 +711,11 @@ function afterSentence(i, myGen){
 function finish(){
   playing = false; refreshPlayBtn(); clearTimers(); clearWordHL();
   countUp();
+  // v1.1.0: 最後まで読み終わったら再生位置を先頭に戻す。
+  //   以前は最終文のまま止まっていたため、もう一度▶︎を押しても
+  //   最後の1文だけが読まれて終わってしまっていた。
+  curIdx = 0; repeatLeft = 0;
+  highlightSentence(0); updateBar();
   toast('お疲れさまでした。もう1周すると定着します');
 }
 function countUp(){
@@ -638,8 +729,46 @@ function countUp(){
 function highlightSentence(i){
   document.querySelectorAll('.sent').forEach((el,k)=> el.classList.toggle('active', k===i));
   clearWordHL();
-  const el = document.getElementById('s'+i);
-  if(el) el.scrollIntoView({ behavior:'smooth', block:'center' });
+  autoScrollTo(document.getElementById('s'+i));
+}
+
+/* ================================================================
+   v1.2.0: 自動スクロールの作り直し
+   ----------------------------------------------------------------
+   【不具合】
+     下にスクロールすると、画面下に固定しているはずの操作バーが
+     画面の途中に取り残される（上部ヘッダーも上に張り付かなくなる）。
+   【原因】
+     文が変わるたびに scrollIntoView({behavior:'smooth'}) を呼んで
+     いた。iOS Safari では、この「プログラムによるなめらかスクロール」
+     の最中に指で手動スクロールすると、スクロール処理の状態が壊れ、
+     position:fixed / position:sticky の要素が再配置されなくなる。
+     結果、操作バーが画面中央に貼り付いたように見える。
+   【対策】
+     ① 手動スクロール(指で触った)直後は自動スクロールしない
+     ② その文がすでに見えているなら動かさない（無駄な発火をなくす）
+     ③ 動かす場合も、ヘッダーと操作バーに隠れない範囲の中央へ寄せる
+     ④ 設定から自動スクロール自体をオフにできるようにする
+   ================================================================ */
+// 初期値を0にすると、ページを開いて最初の4秒間は「たった今 手動操作した」と
+// 誤判定して自動スクロールが効かなくなる。十分に過去の値を入れておく。
+let lastTouch = -1e9;   // 最後に手動操作した時刻
+['touchstart','touchmove','wheel'].forEach(ev=>{
+  window.addEventListener(ev, ()=>{ lastTouch = performance.now(); }, { passive:true });
+});
+function autoScrollTo(el){
+  if(!el || !CFG.autoScroll) return;
+  // ①手動操作の直後は触らない（競合させない）
+  if(performance.now() - lastTouch < 4000) return;
+  const r = el.getBoundingClientRect();
+  const top    = 96;                      // ヘッダーの下端の目安
+  const bottom = window.innerHeight - 176; // 操作バーの上端の目安
+  if(bottom <= top) return;
+  // ②すでに読める位置にあるなら動かさない
+  if(r.top >= top && r.bottom <= bottom) return;
+  // ③ヘッダーと操作バーの間の中央へ寄せる
+  const delta = (r.top + r.height/2) - (top + bottom)/2;
+  window.scrollTo({ top: Math.max(0, window.scrollY + delta), behavior:'smooth' });
 }
 function clearWordHL(){
   document.querySelectorAll('.w.now').forEach(e=>e.classList.remove('now'));
