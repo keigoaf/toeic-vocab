@@ -1,7 +1,16 @@
-# =====================================================================
+﻿# =====================================================================
 #  TOEIC 単語トレーナー デプロイスクリプト（Windows PowerShell 版）
-#  ファイル最終更新日時: 2026-07-30 10:20 (JST)
-#  バージョン: 1.0.1
+#
+#  【重要・文字コードについて】
+#    このファイルは必ず「UTF-8 (BOM付き)」で保存すること。
+#    Windows PowerShell 5.1 は BOM の無い UTF-8 ファイルを
+#    Shift-JIS として読むため、日本語コメントが文字化けし、
+#    「式またはステートメントのトークン ')' を使用できません」等の
+#    構文エラーで起動しなくなる。
+#    メモ帳なら「UTF-8 (BOM付き)」、VS Codeなら右下の文字コード表示から
+#    「Save with Encoding → UTF-8 with BOM」を選ぶ。
+#  ファイル最終更新日時: 2026-07-30 11:30 (JST)
+#  バージョン: 1.1.1
 # ---------------------------------------------------------------------
 #  【作成の意図 / 経緯】
 #    もともと deploy.sh（bash用）を用意したが、実行環境が Windows の
@@ -32,6 +41,16 @@
 #  【v1.0.1 での変更】
 #    deploy.ps1 / deploy.sh 自身もコピー対象に追加した。
 #    スクリプトを更新したとき、手でコピーし直さずに済むようにするため。
+#
+#  【v1.1.0 での変更（重要）】
+#    ① 同名ファイルを何度もダウンロードすると、Windowsのブラウザは
+#       「index (1).html」「index (2).html」のように連番を付けて保存する。
+#       素直に index.html をコピーすると "最初にダウンロードした古い版" を
+#       コピーしてしまい、更新したつもりが反映されない事故が起きた。
+#       → 連番付きも含めて拾い、更新日時が最も新しいものを採用するようにした。
+#         連番付きを採用したときは、どのファイルを使ったか画面に出す。
+#    ② コピー後、直前のコミット(HEAD)の APP_VERSION と比べて版が下がって
+#       いたら警告して中止する（古い版で上書きする事故を止めるため）。
 # =====================================================================
 [CmdletBinding()]
 param(
@@ -61,6 +80,22 @@ $Files = @(
     'deploy.sh'
 )
 
+# ---------------------------------------------------------------------
+#  ダウンロードフォルダから「本当に使うべきファイル」を選ぶ
+#  index.html / index (1).html / index (2).html … を全部拾って
+#  更新日時が最も新しいものを返す。
+# ---------------------------------------------------------------------
+function Resolve-Source {
+    param([string]$Dir, [string]$Name)
+    $base = [IO.Path]::GetFileNameWithoutExtension($Name)
+    $ext  = [IO.Path]::GetExtension($Name)
+    $re   = '^' + [regex]::Escape($base) + '( \(\d+\))?' + [regex]::Escape($ext) + '$'
+    Get-ChildItem -LiteralPath $Dir -File -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -match $re } |
+        Sort-Object LastWriteTime -Descending |
+        Select-Object -First 1
+}
+
 Write-Host "-- リポジトリ : $RepoDir"
 Write-Host "-- コピー元   : $SrcDir"
 
@@ -74,9 +109,14 @@ Write-Host ''
 Write-Host '▼ ファイルをコピー'
 $copied = 0
 foreach ($f in $Files) {
-    $src = Join-Path $SrcDir  $f
+    $srcItem = Resolve-Source -Dir $SrcDir -Name $f
+    if ($null -eq $srcItem) { continue }
+    $src = $srcItem.FullName
     $dst = Join-Path $RepoDir $f
-    if (-not (Test-Path $src)) { continue }
+
+    # 連番付き（index (1).html など）を採用したときは、必ず知らせる
+    $note = ''
+    if ($srcItem.Name -ne $f) { $note = "  <- $($srcItem.Name) を使用" }
 
     # 中身が同じならスキップ（無駄なコミットを作らない）
     $same = $false
@@ -86,10 +126,11 @@ foreach ($f in $Files) {
         $same = ($a -eq $b)
     }
     if ($same) {
-        Write-Host "   = $f (変更なし)"
+        Write-Host "   = $f (変更なし)$note"
     } else {
-        Copy-Item -Path $src -Destination $dst -Force
-        Write-Host "   o $f" -ForegroundColor Green
+        Copy-Item -LiteralPath $src -Destination $dst -Force
+        if ($note) { Write-Host "   o $f$note" -ForegroundColor Yellow }
+        else       { Write-Host "   o $f"      -ForegroundColor Green }
         $copied++
     }
 }
@@ -125,6 +166,27 @@ if ($cache -notlike "*$ver*") {
     exit 1
 }
 Write-Host '   o キャッシュ名は最新版に一致' -ForegroundColor Green
+
+# 直前のコミットより版が下がっていないか（古いファイルで上書きする事故の検知）
+$prev = git show HEAD:index.html 2>$null
+if ($LASTEXITCODE -eq 0 -and $prev) {
+    $pm = [regex]::Match(($prev -join "`n"), 'const\s+APP_VERSION\s*=\s*"([^"]+)"')
+    if ($pm.Success) {
+        $prevVer = $pm.Groups[1].Value
+        try {
+            if ([version]$ver -lt [version]$prevVer) {
+                Write-Host "   x 版が下がっています（$prevVer -> $ver）。" -ForegroundColor Red
+                Write-Host '     古いファイルをコピーした可能性があります。' -ForegroundColor Red
+                Write-Host '     ダウンロードフォルダに古い同名ファイルが残っていないか確認してください。' -ForegroundColor Red
+                exit 1
+            } elseif ([version]$ver -eq [version]$prevVer) {
+                Write-Host "   - 版は据え置き（$prevVer）" -ForegroundColor DarkGray
+            } else {
+                Write-Host "   o 版が上がりました（$prevVer -> $ver）" -ForegroundColor Green
+            }
+        } catch { }
+    }
+}
 
 # JSONの構文チェック（壊れたJSONを公開しないため）
 foreach ($j in (Get-ChildItem -Filter *.json -File)) {
