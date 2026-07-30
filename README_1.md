@@ -3,7 +3,7 @@
 TOEICの単語・熟語を **間隔反復（Leitnerボックス方式）** で暗記するためのアプリです。
 スマホのホーム画面に置いて、ネイティブアプリのように使えます（オフライン対応・端末内に進捗を永続保存）。
 
-最終更新: 2026-07-30 10:20 (JST) / バージョン **3.9.2**
+最終更新: 2026-07-30 12:10 (JST) / バージョン **3.9.2**
 
 ---
 
@@ -275,6 +275,61 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
+#### ⚠️ `deploy.ps1` の文字コードに注意
+
+`deploy.ps1` は必ず **UTF-8 (BOM付き)** で保存してください。
+Windows PowerShell 5.1 は BOM の無い UTF-8 ファイルを Shift-JIS として読むため、
+日本語コメントが文字化けし、次のような構文エラーで起動しなくなります。
+
+```
+式またはステートメントのトークン ')' を使用できません。
+'[' の後に型名が存在しません。
+```
+
+配布している `deploy.ps1` は BOM 付きで保存済みです。
+エディタで編集して保存し直すときだけ注意してください
+（VS Code なら右下の文字コード表示 → Save with Encoding → **UTF-8 with BOM**）。
+BOM が付いているかは次で確認できます。
+
+```powershell
+# 先頭が 239 187 191 なら BOM 付き
+Get-Content .\deploy.ps1 -Encoding Byte -TotalCount 3
+```
+
+#### ⚠️ ダウンロードの連番に注意（よくある事故）
+
+同じファイルを何度もダウンロードすると、Windowsのブラウザは
+`index.html` → `index (1).html` → `index (2).html` のように**連番を付けて保存**します。
+このとき素直に `index.html` をコピーすると、**最初にダウンロードした古い版**を
+コピーしてしまい、「更新したのに反映されない」という事故になります。
+
+`deploy.ps1` は **v1.1.0 から連番付きも含めて探し、更新日時が最も新しいものを自動で採用**します。
+連番付きを使ったときは、その旨が画面に出ます。
+
+```
+   o index.html  <- index (1).html を使用
+```
+
+さらに、直前のコミットより**版が下がっていたら push せずに中止**します。
+
+```
+   x 版が下がっています（3.9.2 -> 3.9.1）。
+     古いファイルをコピーした可能性があります。
+```
+
+ダウンロードフォルダを確認したいときは次のコマンドが使えます。
+
+```powershell
+Get-ChildItem ~\Downloads -Filter *.html | Sort-Object LastWriteTime -Descending |
+  Select-Object Name, LastWriteTime
+```
+
+連番ファイルが溜まって紛らわしいときは、適用後にまとめて削除しておくと安全です。
+
+```powershell
+Remove-Item "~\Downloads\* (*).html","~\Downloads\* (*).js","~\Downloads\* (*).json" -ErrorAction SilentlyContinue
+```
+
 #### 2回目以降（毎回これだけ）
 
 チャットからダウンロードしたファイルを `~\Downloads` に置いたまま、次を実行します。
@@ -294,6 +349,7 @@ cd ~\toeic-vocab
 スクリプトは push の前に次を検査し、問題があれば **push せずに中止** します。
 
 - `index.html` の `APP_VERSION` と `sw.js` の `CACHE` 名が食い違っていないか
+- 直前のコミットより版が下がっていないか（古いファイルで上書きする事故の検知）
 - 同梱JSONが壊れていないか
 
 #### スクリプトを使わず手で適用する場合（Windows）
@@ -306,6 +362,7 @@ cd ~\toeic-vocab
 cd ~\toeic-vocab
 
 # 1. ダウンロードしたファイルを配置（カンマ区切り）
+#    ※連番（index (1).html など）がある場合は、必ず新しい方を指定すること
 Copy-Item ~\Downloads\index.html,~\Downloads\sw.js,~\Downloads\README.md .
 
 # 2. 版が揃っているか確認（同じバージョン番号が出ればOK）
@@ -334,6 +391,13 @@ chmod +x deploy.sh          # 初回のみ
 
 ## 更新履歴
 
+- **`deploy.ps1` v1.1.1 (2026-07-30 12:10 JST)**
+  - **UTF-8 (BOM付き) で保存し直しました。** Windows PowerShell 5.1 は BOM の無い UTF-8 を Shift-JIS として読むため、
+    日本語コメントが文字化けして構文エラーになり、スクリプトが起動しませんでした。
+- **`deploy.ps1` v1.1.0 (2026-07-30 11:30 JST)**
+  - **連番ダウンロード対応**：`index (1).html` のような連番付きファイルも探し、更新日時が最も新しいものを自動で採用するようにしました。
+    素の `index.html` をコピーして古い版を上書きしてしまう事故を防ぎます。連番付きを使ったときは画面に表示します。
+  - **版の下がりを検知**：直前のコミットより `APP_VERSION` が下がっていたら、push せずに中止します。
 - **ドキュメント更新 (2026-07-30 10:20 JST)**
   - Windows（PowerShell）用のデプロイ手順を「アプリの更新のしかた」に追記し、`deploy.ps1` を同梱しました。
     `deploy.sh` は Mac / Linux 用として残しています。スクリプトを使わず手で適用する場合のコマンドも記載しました。
